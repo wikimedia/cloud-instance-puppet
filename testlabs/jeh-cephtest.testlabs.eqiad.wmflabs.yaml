@@ -1,2 +1,5 @@
+profile::ceph::docker::settings:
+  log-driver: json-file
+profile::ceph::docker::version: 1.15.1
 puppetmaster: jeh-puppetmaster.testlabs.eqiad.wmflabs
 swap_partition: false
