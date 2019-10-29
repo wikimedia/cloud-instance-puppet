@@ -1,3 +1,6 @@
+profile::ceph::docker::settings:
+  log-driver: json-file
+profile::ceph::docker::version: 5:19.03.0~3-0~debian-stretch
 profile::ceph::etcd::bootstrap: false
 profile::ceph::k8s::apiserver: jeh-cephmon01.testlabs.eqiad.wmflabs
 profile::ceph::k8s::node_token: m7uakr.5iyq9aav1i2nsioj
