@@ -1,1 +1,1 @@
-- profile::ceph::docker
+- role::wmcs::ceph::mon
