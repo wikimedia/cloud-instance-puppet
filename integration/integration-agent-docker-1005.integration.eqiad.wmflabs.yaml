@@ -1,3 +1,1 @@
-profile::ldap::client::labs::client_stack: sssd
 role::ci::slave::labs::docker::docker_lvm_volume: 'true'
-sudo_flavor: sudo
