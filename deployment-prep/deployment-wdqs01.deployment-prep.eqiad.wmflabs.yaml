@@ -6,6 +6,7 @@ profile::query_service::blazegraph_options:
 profile::query_service::data_dir: /srv/wdqs
 profile::query_service::deploy_mode: manual
 profile::query_service::deploy_name: wdqs
+profile::query_service::endpoint: http://test.query.org
 profile::query_service::log_dir: /var/log/wdqs
 profile::query_service::nodes:
 - deployment-wdqs01.deployment-prep.eqiad.wmflabs
