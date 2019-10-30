@@ -1,0 +1,15 @@
+k8s_infrastructure_users:
+  client-infrastructure:
+    id: 1
+    token: dummy
+    type: infrastructure-readwrite
+  prometheus:
+    id: 3
+    token: dummy
+    type: infrastructure-readonly
+  proxy-infrastructure:
+    id: 2
+    token: dummy
+    type: infrastructure-readonly
+mount_nfs: false
+profile::toolforge::toolviews::mysql_password: test

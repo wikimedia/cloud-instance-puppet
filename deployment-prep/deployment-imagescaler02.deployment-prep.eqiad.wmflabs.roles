@@ -1,0 +1,2 @@
+puppetmaster: deployment-puppetmaster03.deployment-prep.eqiad.wmflabs
+role::salt::minions::salt_finger: ce:70:88:21:59:a6:3e:7d:90:a9:b4:8d:7d:63:7a:a8:2d:34:76:79:55:0a:9f:a9:e2:63:2e:05:63:0f:4d:19

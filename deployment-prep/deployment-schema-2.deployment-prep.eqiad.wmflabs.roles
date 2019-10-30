@@ -1,0 +1,2 @@
+profile::eventschemas::service::port: '80'
+profile::eventschemas::service::server_name: schema-beta.wmflabs.org

@@ -1,0 +1,6 @@
+role::labs::google_api_proxy::instances:
+  google-api-proxy.wmflabs.org:
+    default: true
+    proxied: https://www.googleapis.com
+  googlevision-api-proxy.wmflabs.org:
+    proxied: https://vision.googleapis.com

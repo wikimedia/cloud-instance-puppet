@@ -1,0 +1,29 @@
+elasticsearch::graylog_hosts: none
+elasticsearch::version: 5
+profile::base::remote_syslog: []
+profile::elasticsearch::common_settings:
+  auto_create_index: +logstash-*,-*
+  cluster_hosts:
+  - deployment-logstash03.deployment-prep.eqiad.wmflabs
+  cluster_name: labs-logstash-eqiad
+  expected_nodes: 1
+  heap_memory: 5G
+  minimum_master_nodes: 1
+  recover_after_nodes: 1
+  recover_after_time: 1m
+  short_cluster_name: labs-logstash-eqiad
+  unicast_hosts:
+  - deployment-logstash03.deployment-prep.eqiad.wmflabs
+profile::elasticsearch::config_version: '5'
+profile::elasticsearch::instances: {}
+profile::elasticsearch::version: '5.6'
+profile::kafka::broker::kafka_cluster_name: logging-eqiad
+profile::kafka::broker::ssl_enabled: true
+profile::kafka::broker::ssl_password: qwerty
+profile::logstash::collector::jmx_exporter_port: 7801
+role::kibana::auth_file: /etc/logstash/htpasswd
+role::kibana::auth_realm: Logstash (ssh deployment-deploy01.deployment-prep.eqiad.wmflabs
+  sudo cat /root/secrets.txt)
+role::kibana::auth_type: local
+role::kibana::serveradmin: root@deployment-logstash03.deployment-prep.eqiad.wmflabs
+role::kibana::vhost: logstash-beta.wmflabs.org

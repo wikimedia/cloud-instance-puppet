@@ -1,0 +1,8 @@
+profile::conftool::master::sync_dir: /etc/conftool/data-local
+profile::puppetmaster::common::puppetdb_host: deployment-puppetdb02.deployment-prep.eqiad.wmflabs
+profile::puppetmaster::common::storeconfigs: puppetdb
+puppet_major_version: 4
+puppetdb_major_version: 4
+puppetmaster: deployment-puppetmaster03.deployment-prep.eqiad.wmflabs
+role::puppetmaster::standalone::puppetdb_host: deployment-puppetdb02.deployment-prep.eqiad.wmflabs
+role::puppetmaster::standalone::storeconfigs: puppetdb

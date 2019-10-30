@@ -1,0 +1,15 @@
+director_db_host: localhost
+director_db_name: director
+director_password: labspass
+director_user_name: root
+gerrit::jetty::labs_ldap_object_class: inetOrgPerson
+icinga_api_password: 298af9c525f02e70
+icinga_ido_db_host: localhost
+icinga_ido_db_name: icinga
+icinga_ido_password: labspass
+icinga_ido_user_name: root
+icingaweb_db_host: localhost
+icingaweb_db_name: icingaweb2
+icingaweb_password: labspass
+icingaweb_user_name: root
+puppetdb_major_version: 6

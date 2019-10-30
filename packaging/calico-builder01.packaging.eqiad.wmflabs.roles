@@ -1,0 +1,10 @@
+docker::registry: ''
+docker::registry_user: ''
+profile::calico::builder::calico_release: v2.2.0
+profile::calico::builder::directory: /srv
+profile::calico::builder::proxy_address: ''
+profile::docker::engine::declare_service: true
+profile::docker::engine::settings:
+  live-restore: true
+profile::docker::engine::version: 1.12.6-0~debian-jessie
+profile::docker::storage::loopback::source_dir: /var/lib/docker/devicemapper

@@ -1,0 +1,5 @@
+role::labs::novaproxy::active_proxy: proxy-01
+role::labs::novaproxy::all_proxies:
+- proxy-01
+- proxy-02
+role::labs::novaproxy::blocked_referer_regex: koeri.boun.edu.tr

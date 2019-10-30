@@ -1,0 +1,2 @@
+puppetmaster: wikispore-prod.wikispore.eqiad.wmflabs
+role::puppetmaster::standalone::autosign: 'true'

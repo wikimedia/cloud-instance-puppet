@@ -1,0 +1,47 @@
+swift::hash_path_suffix: abcdef
+swift::params::accounts:
+  mw_media:
+    access: .admin
+    account_name: AUTH_mw
+    auth: http://deployment-ms-fe02.deployment-prep.eqiad.wmflabs
+    user: mw:media
+  mw_thumbor:
+    access: ''
+    account_name: AUTH_mw
+    auth: http://deployment-ms-fe02.deployment-prep.eqiad.wmflabs
+    stats_enabled: 'no'
+    user: mw:thumbor
+  pagecompilation_zim:
+    access: .admin
+    account_name: AUTH_pagecompilation
+    auth: http://deployment-ms-fe02.deployment-prep.eqiad.wmflabs
+    user: pagecompilation:zim
+  phabricator_files:
+    access: .admin
+    account_name: AUTH_phab
+    auth: http://deployment-ms-fe02.deployment-prep.eqiad.wmflabs
+    user: phabricator:files
+  swift_dispersion:
+    access: .admin
+    account_name: AUTH_dispersion
+    auth: http://deployment-ms-fe02.deployment-prep.eqiad.wmflabs
+    stats_enabled: 'no'
+    user: swift:dispersion
+swift::params::storage_policies: true
+swift::params::swift_cluster: deployment-prep
+swift::proxy::memcached_servers:
+- deployment-ms-fe02.eqiad.wmflabs
+swift::proxy::proxy_service_host: deployment-ms-fe02.eqiad.wmflabs
+swift::proxy::rewrite_account: mw_media
+swift::proxy::thumbor_wiki_list:
+- wikimedia-commons
+swift::proxy::thumborhost: deployment-imagescaler03.eqiad.wmflabs:8800
+swift::proxyhosts:
+- deployment-ms-fe03
+swift::storage::object_replicator_concurrency: 1
+swift::storagehosts:
+- deployment-ms-be05
+- deployment-ms-be06
+swift_aux_partitions: []
+swift_storage_drives:
+- lv-a

@@ -1,0 +1,64 @@
+authdns_servers:
+- 208.80.154.135
+- 208.80.154.11
+http_proxy: ''
+profile::acme_chief::accounts:
+  f0990a352564fba4ceed58fbde078965:
+    directory: https://acme-v02.api.letsencrypt.org/directory
+    regr: '{"body": {}, "uri": "https://acme-v02.api.letsencrypt.org/acme/acct/62787352"}'
+profile::acme_chief::active: traffic-acmechief01.traffic.eqiad.wmflabs
+profile::acme_chief::certificates:
+  unified:
+    CN: '*.wikimedia.traffic.wmflabs.org'
+    SNI:
+    - traffic.wmflabs.org
+    - upload.traffic.wmflabs.org
+    - m.wikidata.traffic.wmflabs.org
+    - wikidata.traffic.wmflabs.org
+    - '*.wikibooks.traffic.wmflabs.org'
+    - '*.wikimedia.traffic.wmflabs.org'
+    - '*.wikinews.traffic.wmflabs.org'
+    - '*.wikipedia.traffic.wmflabs.org'
+    - '*.wikiquote.traffic.wmflabs.org'
+    - '*.wikisource.traffic.wmflabs.org'
+    - '*.wikiversity.traffic.wmflabs.org'
+    - '*.wikivoyage.traffic.wmflabs.org'
+    - '*.wiktionary.traffic.wmflabs.org'
+    - '*.m.wikibooks.traffic.wmflabs.org'
+    - '*.m.wikimedia.traffic.wmflabs.org'
+    - '*.m.wikinews.traffic.wmflabs.org'
+    - '*.m.wikipedia.traffic.wmflabs.org'
+    - '*.m.wikiquote.traffic.wmflabs.org'
+    - '*.m.wikisource.traffic.wmflabs.org'
+    - '*.m.wikiversity.traffic.wmflabs.org'
+    - '*.m.wikivoyage.traffic.wmflabs.org'
+    - '*.m.wiktionary.traffic.wmflabs.org'
+    authorized_hosts:
+    - traffic-text-ats.traffic.eqiad.wmflabs
+    - traffic-upload-stretch.traffic.eqiad.wmflabs
+    authorized_regexes:
+    - ^traffic-cache-.*\.traffic\.eqiad\.wmflabs$
+    challenge: dns-01
+  wikibase:
+    CN: wikiba-se.traffic.wmflabs.org
+    SNI:
+    - wikiba-se.traffic.wmflabs.org
+    authorized_hosts:
+    - traffic-text-ats.traffic.eqiad.wmflabs
+    authorized_regexes:
+    - ^traffic-cache-.*\.traffic\.eqiad\.wmflabs$
+    challenge: dns-01
+profile::acme_chief::challenges:
+  dns-01:
+    issuing_ca: letsencrypt.org
+    ns_records:
+    - cloud-ns0.wikimedia.org.
+    - cloud-ns1.wikimedia.org.
+    zone_update_cmd: /usr/local/bin/acme-chief-designate-sync.py
+profile::acme_chief::cloud::designate_sync_auth_url: http://cloudcontrol1003.wikimedia.org:5000/v3
+profile::acme_chief::cloud::designate_sync_project_name: traffic
+profile::acme_chief::cloud::designate_sync_region_name: eqiad1-r
+profile::acme_chief::cloud::designate_sync_tidyup_enabled: true
+profile::acme_chief::cloud::designate_sync_username: traffic-cloud-dns-manager
+profile::acme_chief::passive: traffic-acmechief02.traffic.eqiad.wmflabs
+puppetmaster: traffic-puppetmaster.traffic.eqiad.wmflabs

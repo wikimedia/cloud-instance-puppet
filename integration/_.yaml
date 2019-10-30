@@ -1,0 +1,22 @@
+labs_keystone_host: ''
+labs_nova_controller: ''
+profile::openstack::eqiad1::cumin::project_masters:
+- 172.16.1.103
+profile::openstack::eqiad1::cumin::project_pub_key: ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIPPfdabE1Fej0X86QgjY72LXvA3Wawrg0ZcDL0PF56/A
+  root@integration-cumin
+puppetmaster: integration-puppetmaster01.integration.eqiad.wmflabs
+role::puppet::self::enc: yaml+ldap
+role::puppet::self::master: integration-puppetmaster
+swift::hash_path_suffix: NW5BvJGT
+swift::params::swift_cluster: integration
+swift::proxy::proxy_service_host: swift.integration.eqiad.wmflabs
+swift::proxy::wmf_filter_rewrite: false
+swift::proxyhosts:
+- swift.integration.eqiad.wmflabs
+swift::storagehosts:
+- swift-storage-01.integration.eqiad.wmflabs
+- swift-storage-02.integration.eqiad.wmflabs
+- swift-storage-03.integration.eqiad.wmflabs
+swift_aux_partitions: []
+swift_storage_drives:
+- /dev/mapper/vda4

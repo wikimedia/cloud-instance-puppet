@@ -1,0 +1,8 @@
+docker::registry: darmstadtium.eqiad.wmnet
+docker::registry::password: dummy
+docker::registry::username: dummy
+profile::docker::engine::declare_service: true
+profile::docker::engine::settings:
+  live-restore: true
+profile::docker::engine::version: 1.12.6-0~debian-jessie
+scap::deployment_server: deployment-tin.eqiad.wmflabs

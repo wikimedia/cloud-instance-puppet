@@ -1,0 +1,24 @@
+profile::docker::engine::declare_service: true
+profile::docker::engine::settings: {}
+profile::docker::engine::version: 1.12.6-0~debian-jessie
+profile::docker::runner::service_defs:
+  mediawiki-services-kask:
+    config:
+      base_uri: /sessions/v1
+      cassandra:
+        authentication:
+          password: cassandra
+          username: cassandra
+        hosts:
+        - deployment-sessionstore01.deployment-prep.eqiad.wmflabs
+        keyspace: sessions
+        table: values
+      default_ttl: 86400
+      listen_address: 0.0.0.0
+      listen_port: 8080
+      service_name: sessions
+    namespace: wikimedia
+    override_cmd: ./kask --config /etc/mediawiki-services-kask/config.yaml
+    port: 8080
+    version: 2019-10-03-182310-production
+puppetmaster: deployment-puppetmaster03.deployment-prep.eqiad.wmflabs

@@ -1,0 +1,58 @@
+profile::druid::broker::env:
+  JAVA_HOME: /usr/lib/jvm/java-1.8.0-openjdk-amd64
+profile::druid::broker::monitoring_enabled: true
+profile::druid::broker::properties:
+  druid.processing.buffer.sizeBytes: 30000000
+profile::druid::common::druid_cluster_name: analytics_test0
+profile::druid::common::metadata_storage_database_name: druid_analytics_test0
+profile::druid::common::properties:
+  druid.druid.extensions.loadList:
+  - druid-datasketches
+  - druid-hdfs-storage
+  - druid-histogram
+  - druid-lookups-cached-global
+  - mysql-metadata-storage
+  - druid-parquet-extensions
+  - druid-avro-extensions
+  - druid-kafka-indexing-service
+  - druid-kerberos
+  druid.emitter: composing
+  druid.emitter.composing.emitters:
+  - logging
+  - http
+  druid.emitter.http.recipientBaseUrl: http://localhost:8000/
+  druid.escalator.authorizerName:
+  - krb
+  druid.escalator.krb.internalClientKeytab: /etc/security/keytabs/druid/druid.keytab
+  druid.escalator.krb.internalClientPrincipal: druid/%{hostname}.analytics.eqiad.wmflabs@ANALYTICS.EQIAD.WMFLABS
+  druid.escalator.krb.type: kerberos
+  druid.hadoop.security.kerberos.keytab: /etc/security/keytabs/druid/druid.keytab
+  druid.hadoop.security.kerberos.principal: druid/%{hostname}.analytics.eqiad.wmflabs@ANALYTICS.EQIAD.WMFLABS
+  druid.indexer.runner.javaCommand: /usr/lib/jvm/java-1.8.0-openjdk-amd64/bin/java
+  druid.metadata.storage.connector.host: hadoop-coordinator-2.analytics.eqiad.wmflabs
+  druid.metadata.storage.type: mysql
+  druid.request.logging.dir: /var/log/druid
+  druid.request.logging.type: slf4j
+  druid.storage.storageDirectory: /user/druid/deep-storage
+  druid.storage.type: hdfs
+profile::druid::common::use_cdh_hadoop_config: true
+profile::druid::common::zookeeper_cluster_name: main-eqiad
+profile::druid::coordinator::env:
+  JAVA_HOME: /usr/lib/jvm/java-1.8.0-openjdk-amd64
+profile::druid::coordinator::monitoring_enabled: true
+profile::druid::historical::env:
+  JAVA_HOME: /usr/lib/jvm/java-1.8.0-openjdk-amd64
+profile::druid::historical::monitoring_enabled: true
+profile::druid::historical::properties:
+  druid.monitoring.monitors:
+  - io.druid.server.metrics.HistoricalMetricsMonitor
+  druid.processing.buffer.sizeBytes: 30000000
+profile::druid::middlemanager::env:
+  JAVA_HOME: /usr/lib/jvm/java-1.8.0-openjdk-amd64
+profile::druid::middlemanager::monitoring_enabled: true
+profile::druid::middlemanager::properties:
+  druid.processing.buffer.sizeBytes: 15000000
+profile::druid::overlord::env:
+  JAVA_HOME: /usr/lib/jvm/java-1.8.0-openjdk-amd64
+profile::druid::overlord::monitoring_enabled: true
+profile::hadoop::common::cluster_name: analytics-hadoop-labs

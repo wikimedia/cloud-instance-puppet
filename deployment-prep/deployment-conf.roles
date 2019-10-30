@@ -1,0 +1,4 @@
+etcd::auth::common::root_password: secret
+etcd::auth_enabled: true
+etcd::peers_list: deployment-conf03=http://deployment-conf03.deployment-prep.eqiad.wmflabs:2380
+etcd::use_client_certs: false

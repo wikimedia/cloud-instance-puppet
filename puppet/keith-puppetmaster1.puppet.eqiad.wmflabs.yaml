@@ -1,0 +1,3 @@
+puppet_major_version: 4
+puppetmaster: keith-puppetmaster.puppet.eqiad.wmflabs
+role::puppetmaster::standalone::gerrit_environments_enabled: true

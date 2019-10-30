@@ -1,0 +1,2 @@
+profile::kafka::mirror::destination_cluster_name: cloudtest
+profile::kafka::mirror::source_cluster_name: cloudtest

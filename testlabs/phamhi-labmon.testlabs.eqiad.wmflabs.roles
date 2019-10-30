@@ -1,0 +1,14 @@
+profile::grafana::admin_domain: test
+profile::grafana::admin_password: test
+profile::grafana::config: {}
+profile::grafana::ldap:
+  servers: []
+  servers.attributes: []
+  servers.group_mappings: []
+profile::grafana::ldap_edit_groups: test
+profile::grafana::ldap_editor_description: test
+profile::grafana::readonly_domain: test2
+profile::grafana::secret_key: test
+profile::wmcs::monitoring::statsd_master: test
+profile::wmcs::monitoring::statsd_standby: test
+puppetmaster: phamhi-puppetmaster.testlabs.eqiad.wmflabs

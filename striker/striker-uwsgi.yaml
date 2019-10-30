@@ -1,0 +1,75 @@
+memcached::ip: 127.0.0.1
+memcached::port: 11211
+memcached::size: 256
+nginx::variant: light
+striker::apache::docroot: /srv/deployment/striker/deploy/public_html
+striker::apache::port: 80
+striker::apache::server_name: striker.wmflabs.org
+striker::apache::servers:
+- http://127.0.0.1:8081
+striker::uwsgi::config:
+  cache:
+    LOCATION: 127.0.0.1:11211
+  db:
+    ENGINE: django.db.backends.mysql
+    HOST: striker-support01.striker.eqiad.wmflabs
+    NAME: striker
+    PORT: 3306
+    USER: striker
+  debug:
+    DEBUG: false
+  https:
+    REQUIRE_HTTPS: true
+    SSL_CANONICAL_HOST: striker.wmflabs.org
+  ldap:
+    BASE_DN: dc=wmftest,dc=net
+    BIND_USER: cn=writer,dc=wmftest,dc=net
+    SERVER_URI: ldap://striker-support01.striker.eqiad.wmflabs:1389
+    STAFF_GROUP_DN: cn=wmf,ou=groups,dc=wmftest,dc=net
+    SUPERUSER_GROUP_DN: cn=tools.admin,ou=servicegroups,dc=wmftest,dc=net
+    TLS: false
+    TOOLS_MAINTAINER_BASE_DN: ou=people,dc=wmftest,dc=net
+    TOOLS_TOOL_BASE_DN: ou=servicegroups,dc=wmftest,dc=net
+    USER_SEARCH_BASE: ou=People,dc=wmftest,dc=net
+  logging:
+    FILE_FILENAME: /srv/log/striker/striker.log
+    HANDLERS: file logstash
+    LEVEL: DEBUG
+    LOGSTASH_HOST: deployment-logstash2.eqiad.wmflabs
+    LOGSTASH_PORT: 11514
+  oauth:
+    CONSUMER_KEY: f077f4ee11b8392ee2df5e99e21821e5
+    MWURL: https://devwiki-striker.wmflabs.org/w/index.php
+  openstack:
+    URL: http://striker-support01.striker.eqiad.wmflabs:5000/v3
+  phabricator:
+    REPO_ADMIN_GROUP: PHID-PROJ-7ptcdp7zynqslnkjmq5n
+    SERVER_URL: https://phabricator-striker.wmflabs.org
+    USER: StrikerBot
+  static:
+    STATIC_ROOT: /srv/deployment/striker/deploy/public_html/static
+  wikitech:
+    SERVER_URL: https://ldapauth-striker.wmflabs.org
+  xff:
+    TRUSTED_PROXY_LIST: 172.16. 127.0.0.1
+    USE_XFF_HEADER: true
+striker::uwsgi::port: 8081
+striker::uwsgi::secret_config:
+  db:
+    PASSWORD: striker
+  ldap:
+    BIND_PASSWORD: vagrant_writer
+  oauth:
+    CONSUMER_SECRET: 3cbce501eb3d638395f04bbbcfd22f3fa85bd9bf
+  openstack:
+    PASSWORD: striker-vagrant
+    USER: admin
+  phabricator:
+    TOKEN: api-mpqonjcoe55rsvo4pdcvu7lce5kb
+  secrets:
+    SECRET_KEY: '&tse*xh73ad^#d+v%%rb18wp2ab%sj5xv1t7&zyj%bma=^h@g_'
+  wikitech:
+    ACCESS_SECRET: 02a8a95723f373e9a4cee68b1d5313c397190892
+    ACCESS_TOKEN: 41e42e26966db11c7f9ba131e335c996
+    CONSUMER_SECRET: dd44dbcca3cd0dfe2a504fe201f8c999e7ad3f56
+    CONSUMER_TOKEN: 621c0e27ecb5316720a859f7d34b6728

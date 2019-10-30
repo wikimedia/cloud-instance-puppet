@@ -1,0 +1,4 @@
+etcd::cluster_name: toolsbeta-flannel
+etcd::peers_list: toolsbeta-flannel-etcd-01=http://toolsbeta-flannel-etcd-01.toolsbeta.eqiad.wmflabs:2380
+etcd::use_ssl: true
+mount_nfs: false

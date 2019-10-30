@@ -1,0 +1,133 @@
+cache::cluster: upload
+cache::lua_support: true
+cache::nodes:
+  upload:
+    eqiad:
+    - localhost
+cache::req_handling:
+  maps.wikimedia.org:
+    director: kartotherian
+  upload.wikimedia.org:
+    director: swift
+    subpaths:
+      ^/+[^/]+/[^/]+/thumb/:
+        director: swift_thumbs
+do_acme: false
+http_proxy: ''
+kafka_clusters:
+  analytics-traffic:
+    api_version: 0.9
+    brokers:
+      deployment-kafka01.deployment-prep.eqiad.wmflabs:
+        id: 1
+      deployment-kafka03.deployment-prep.eqiad.wmflabs:
+        id: 2
+    zookeeper_cluster_name: main-deployment-prep
+  main-deployment-prep:
+    api_version: 0.9
+    brokers:
+      deployment-kafka04.deployment-prep.eqiad.wmflabs:
+        id: 4
+      deployment-kafka05.deployment-prep.eqiad.wmflabs:
+        id: 5
+    zookeeper_cluster_name: main-deployment-prep
+lvs::configuration::lvs_service_ips:
+  upload:
+    eqiad: 127.0.0.1
+lvs::configuration::lvs_services: {}
+mtail::service_ensure: absent
+profile::cache::kafka::webrequest::kafka_cluster_name: analytics-traffic
+profile::cache::ssl::unified::tls_port: 4443
+profile::cache::ssl::unified::use_trafficserver_tls: true
+profile::cache::varnish::backend::storage_parts:
+- dm-0
+- dm-0
+profile::cache::varnish::common_vcl_config:
+  allowed_methods: ^(GET|HEAD|OPTIONS|POST|PURGE|PUT|DELETE)$
+  maps_domain: maps.beta.wmflabs.org
+  pass_random: true
+  purge_host_regex: ^(?!(upload|maps)\.beta\.wmflabs\.org)
+  shortener_domain: w.wiki
+  static_host: en.wikipedia.org
+  top_domain: org
+  upload_domain: upload.beta.wmflabs.org
+  upload_webp_hits_threshold: 100
+profile::cache::varnish::frontend::fe_extra_vcl:
+- upload-common
+- normalize_path
+profile::trafficserver::backend::outbound_tls_settings:
+  cacert_dirpath: /etc/ssl/certs
+  cacert_filename: Puppet_Internal_CA.pem
+  common:
+    cipher_suite: -ALL:ECDHE-ECDSA-AES256-GCM-SHA384:ECDHE-RSA-AES256-GCM-SHA384
+    enable_tlsv1: 0
+    enable_tlsv1_1: 0
+    enable_tlsv1_2: 1
+    enable_tlsv1_3: 0
+  verify_origin: true
+profile::trafficserver::tls::debug_tags: ssl.error
+profile::trafficserver::tls::inbound_tls_settings:
+  cert_path: /etc/acmecerts
+  certificates:
+  - cert_files:
+    - unified/live/ec-prime256v1.chained.crt
+    - unified/live/rsa-2048.chained.crt
+    default: true
+    ocsp_stapling_files:
+    - unified/live/ec-prime256v1.client.ocsp
+    - unified/live/rsa-2048.client.ocsp
+    private_key_files:
+    - unified/live/ec-prime256v1.key
+    - unified/live/rsa-2048.key
+  common:
+    cipher_suite: -ALL:ECDHE-ECDSA-CHACHA20-POLY1305:ECDHE-ECDSA-AES256-GCM-SHA384:ECDHE-ECDSA-AES128-GCM-SHA256:ECDHE-RSA-CHACHA20-POLY1305:ECDHE-RSA-AES256-GCM-SHA384:ECDHE-RSA-AES128-GCM-SHA256:ECDHE-ECDSA-AES128-SHA:ECDHE-RSA-AES128-SHA:DHE-RSA-AES128-SHA
+    enable_tlsv1: 1
+    enable_tlsv1_1: 1
+    enable_tlsv1_2: 1
+    enable_tlsv1_3: 0
+  dhparams_file: /etc/ssl/dhparam.pem
+  do_ocsp: 1
+  load_elevated: 1
+  max_record_size: 16383
+  ocsp_stapling_path: /etc/acmecerts
+  private_key_path: /etc/acmecerts
+  session_cache: 2
+  session_cache_auto_clear: 1
+  session_cache_buckets: 256
+  session_cache_size: 102400
+  session_ticket_enable: 0
+profile::trafficserver::tls::log_formats:
+- format: Date:%<cqtd> Time:%<cqtt> HTTPVersion:%<cqhv> SSL:%<cqssl> SSLVersion:%<cqssv>
+    SSLCipher:%<cqssc> SSLCurve:%<cqssu> ReqMethod:%<cqhm> RespStatus:%<pssc> OriginStatus:%<sssc>
+    ReqURL:%<cquuc> BereqURL:%<cqtx> ReqHeader:User-Agent:%<{User-agent}cqh> ReqHeader:Host:%<{Host}cqh>
+    ReqHeader:X-Client-IP:%<{X-Client-IP}cqh> RespHeader:X-Cache-Int:%<{X-Cache-Int}psh>
+  name: wmf-tls
+profile::trafficserver::tls::logs:
+- filename: tls
+  format: wmf-tls
+  mode: ascii_pipe
+profile::trafficserver::tls::mapping_rules:
+- replacement: http://127.0.0.2:3120
+  target: /
+  type: map
+profile::trafficserver::tls::parent_rules:
+- dest_domain: .
+  parent:
+  - 127.0.0.2:3120
+  - 127.0.0.3:3121
+  - 127.0.0.4:3122
+  - 127.0.0.5:3123
+  - 127.0.0.6:3124
+  - 127.0.0.7:3125
+  - 127.0.0.8:3126
+  - 127.0.0.9:3127
+  parent_is_proxy: 'false'
+  round_robin: strict
+profile::trafficserver::tls::port: 443
+profile::trafficserver::tls::unified_acme_chief: true
+profile::trafficserver::tls::unified_certs: []
+puppetmaster: traffic-puppetmaster.traffic.eqiad.wmflabs
+zookeeper_clusters:
+  main-deployment-prep:
+    hosts:
+      deployment-zookeeper02.eqiad.wmflabs: '2'

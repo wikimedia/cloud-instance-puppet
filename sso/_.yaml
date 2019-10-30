@@ -1,0 +1,2 @@
+debmonitor: debmonitor01.sso.eqiad.wmflabs
+profile::openldap::backup: false

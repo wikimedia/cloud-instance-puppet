@@ -1,0 +1,9 @@
+profile::bird::advertise_vips:
+  foobar.anycast.wmnet:
+    address: 10.0.0.4
+  recdns.anycast.wmnet:
+    address: 10.0.0.3
+profile::bird::bind_service: anycast-healthchecker.service
+profile::bird::neighbors_list:
+- 10.0.0.1
+puppetmaster: traffic-puppetmaster.traffic.eqiad.wmflabs

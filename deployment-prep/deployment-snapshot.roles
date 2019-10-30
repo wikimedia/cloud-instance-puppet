@@ -1,0 +1,12 @@
+dumps_datadir_mount_type: labslvm
+dumps_managed_subdirs:
+- /mnt/dumpsdata/xmldatadumps
+- /mnt/dumpsdata/xmldatadumps/public
+- /mnt/dumpsdata/xmldatadumps/private
+- /mnt/dumpsdata/xmldatadumps/temp
+dumps_nfs_server: ''
+mediawiki_php7: true
+puppetmaster: deployment-dumps-puppetmaster02.deployment-prep.eqiad.wmflabs
+snapshot::dumps::nfs_extra_mountopts: ''
+snapshot::dumps::php: /usr/bin/php7.0
+snapshot::dumps::runtype: regular

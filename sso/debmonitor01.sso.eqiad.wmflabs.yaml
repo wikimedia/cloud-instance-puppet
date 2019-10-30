@@ -1,0 +1,3 @@
+profile::debmonitor::server::internal_server_name: debmonitor01.sso.eqiad.wmflabs
+profile::debmonitor::server::public_server_name: sso-debmonitor.wmflabs.org
+puppetmaster: debmonitor-pm.sso.eqiad.wmflabs

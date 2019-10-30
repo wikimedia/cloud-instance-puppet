@@ -1,0 +1,344 @@
+acmechief_host: deployment-acme-chief03.deployment-prep.eqiad.wmflabs
+cumin_masters:
+- 172.16.1.135
+- 172.16.5.1
+- 172.16.6.176
+- 172.16.4.46
+- 172.16.6.133
+http_proxy: ''
+kafka_clusters:
+  jumbo-deployment-prep:
+    brokers:
+      deployment-kafka-jumbo-1.deployment-prep.eqiad.wmflabs:
+        id: 1
+        rack: A
+      deployment-kafka-jumbo-2.deployment-prep.eqiad.wmflabs:
+        id: 2
+        rack: B
+    zookeeper_cluster_name: main-deployment-prep
+  logging-codfw:
+    brokers:
+      deployment-logstash03.deployment-prep.eqiad.wmflabs:
+        id: 2
+        rack: C
+      deployment-logstash2.deployment-prep.eqiad.wmflabs:
+        id: 1
+        rack: B
+    zookeeper_cluster_name: main-deployment-prep
+  logging-eqiad:
+    brokers:
+      deployment-logstash03.deployment-prep.eqiad.wmflabs:
+        id: 2
+        rack: C
+      deployment-logstash2.deployment-prep.eqiad.wmflabs:
+        id: 1
+        rack: B
+    zookeeper_cluster_name: main-deployment-prep
+  main-deployment-prep:
+    brokers:
+      deployment-kafka-main-1.deployment-prep.eqiad.wmflabs:
+        id: 1
+        rack: A
+      deployment-kafka-main-2.deployment-prep.eqiad.wmflabs:
+        id: 2
+        rack: B
+    zookeeper_cluster_name: main-deployment-prep
+kafka_message_max_bytes: 4194304
+keyholder::require_encrypted_keys: 'no'
+phabricator_active_server: deployment-phab01.deployment-prep.eqiad.wmflabs
+profile::base::enable_kafka_shipping: true
+profile::cache::kafka::certificate::certificate_name: varnishkafka-deployment-prep
+profile::cache::kafka::certificate::ssl_key_password: qwerty
+profile::cache::kafka::eventlogging::kafka_cluster_name: jumbo-deployment-prep
+profile::cache::kafka::eventlogging::ssl_enabled: true
+profile::cache::kafka::statsv::kafka_cluster_name: main-deployment-prep
+profile::cache::kafka::webrequest::kafka_cluster_name: jumbo-deployment-prep
+profile::cache::kafka::webrequest::ssl_enabled: true
+profile::cpjobqueue::jobrunner_host: http://deployment-jobrunner03.deployment-prep.eqiad.wmflabs:9006
+profile::cpjobqueue::redis_path: /var/run/nutcracker/redis_eqiad.sock
+profile::cpjobqueue::videoscaler_host: http://deployment-jobrunner03.deployment-prep.eqiad.wmflabs:9006
+profile::elasticsearch::base_data_dir: /srv/elasticsearch
+profile::elasticsearch::cirrus::tls_port: 9243
+profile::elasticsearch::dc_settings:
+  tls_port: 9243
+profile::kafka::broker::log_retention_bytes: 134217728
+profile::kafka::broker::log_segment_bytes: 134217728
+profile::kafka::broker::monitoring_enabled: true
+profile::logstash::collector::input_kafka_ssl_truststore_password: qwerty
+profile::mail::mx::dkim_domain: beta.wmflabs.org
+profile::maps::apps::tilerator_ncpu_ratio: 0.3
+profile::mediawiki::install_hhvm: false
+profile::mediawiki::php::monitoring::password: notarealpassword
+profile::mediawiki::php::monitoring::salt: 9sBweWh0J
+profile::openstack::eqiad1::cumin::project_masters:
+- 172.16.5.1
+- 172.16.6.176
+profile::openstack::eqiad1::cumin::project_pub_key: ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIHMS6pXywYSw1kaZQivozB8qUx0vd1gqiAnVqJuS365B
+  root@deployment-cumin
+profile::openstack::eqiad1::cumin::puppetdb_host: deployment-puppetdb02.deployment-prep.eqiad.wmflabs
+profile::openstack::eqiad1::region: eqiad1-r
+profile::openstack::main::cumin::project_masters:
+- 172.16.5.1
+- 172.16.6.176
+profile::openstack::main::cumin::project_pub_key: ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIHMS6pXywYSw1kaZQivozB8qUx0vd1gqiAnVqJuS365B
+  root@deployment-cumin
+profile::openstack::main::cumin::puppetdb_host: deployment-puppetdb02.deployment-prep.eqiad.wmflabs
+profile::openstack::main::region: eqiad1-r
+profile::prometheus::statsd_exporter::mappings: []
+profile::puppetdb::extra_authorized_hosts: deployment-cumin02.deployment-prep.eqiad.wmflabs
+profile::puppetdb::master: deployment-puppetdb02.deployment-prep.eqiad.wmflabs
+profile::puppetdb::slaves: []
+profile::puppetmaster::common::puppetdb_host: deployment-puppetdb02.deployment-prep.eqiad.wmflabs
+profile::rsyslog::kafka_shipper::kafka_brokers:
+- deployment-logstash2.deployment-prep.eqiad.wmflabs:9093
+puppetdb_host: deployment-puppetdb02.deployment-prep.eqiad.wmflabs
+puppetmaster::geoip::fetch_private: false
+puppetmaster::geoip::use_proxy: false
+redis::shards:
+  sessions:
+    eqiad:
+      shard01:
+        host: 172.16.5.76
+        port: 6379
+      shard02:
+        host: 172.16.5.17
+        port: 6379
+      shard03:
+        host: 172.16.5.12
+        port: 6379
+      shard04:
+        host: 172.16.5.2
+        port: 6379
+role::deployment::repo_config:
+  abacist/abacist:
+    upstream: https://gerrit.wikimedia.org/r/analytics/abacist
+  analytics/refinery:
+    gitfat_enabled: true
+    upstream: https://gerrit.wikimedia.org/r/analytics/refinery
+  cassandra/logstash-logback-encoder:
+    gitfat_enabled: true
+    upstream: https://gerrit.wikimedia.org/r/operations/software/logstash-logback-encoder
+  cassandra/metrics-collector:
+    gitfat_enabled: true
+    upstream: https://gerrit.wikimedia.org/r/operations/software/cassandra-metrics-collector
+  changeprop/deploy:
+    checkout_submodules: true
+    service_name: changeprop
+    upstream: https://gerrit.wikimedia.org/r/mediawiki/services/change-propagation/deploy
+  citoid/deploy:
+    checkout_submodules: true
+    service_name: citoid
+    upstream: https://gerrit.wikimedia.org/r/mediawiki/services/citoid/deploy
+  cxserver/deploy:
+    checkout_submodules: true
+    service_name: cxserver
+    upstream: https://gerrit.wikimedia.org/r/mediawiki/services/cxserver/deploy
+  dropwizard/metrics:
+    gitfat_enabled: true
+    upstream: https://gerrit.wikimedia.org/r/operations/software/dropwizard-metrics
+  elasticsearch/plugins:
+    gitfat_enabled: true
+    upstream: https://gerrit.wikimedia.org/r/operations/software/elasticsearch/plugins
+  eventlogging/eventbus:
+    checkout_submodules: true
+    upstream: https://gerrit.wikimedia.org/r/eventlogging
+  eventlogging/eventlogging:
+    checkout_submodules: true
+    upstream: https://gerrit.wikimedia.org/r/eventlogging
+  fluoride/fluoride:
+    upstream: https://gerrit.wikimedia.org/r/mediawiki/tools/fluoride
+  gdash/gdash:
+    upstream: https://gerrit.wikimedia.org/r/operations/software/gdash
+  grafana/grafana:
+    upstream: https://gerrit.wikimedia.org/r/operations/software/grafana
+  graphoid/deploy:
+    checkout_submodules: true
+    service_name: graphoid
+    upstream: https://gerrit.wikimedia.org/r/mediawiki/services/graphoid/deploy
+  iegreview/iegreview:
+    grain: iegreview
+    upstream: https://gerrit.wikimedia.org/r/wikimedia/iegreview
+  integration/mediawiki-tools-codesniffer:
+    upstream: https://gerrit.wikimedia.org/r/mediawiki/tools/codesniffer
+  integration/php-coveralls:
+    upstream: https://gerrit.wikimedia.org/r/integration/php-coveralls
+  integration/phpcs:
+    upstream: https://gerrit.wikimedia.org/r/integration/phpcs
+  integration/phpunit:
+    upstream: https://gerrit.wikimedia.org/r/integration/phpunit
+  integration/slave-scripts:
+    checkout_submodules: true
+    upstream: https://gerrit.wikimedia.org/r/integration/jenkins
+  jobrunner/jobrunner:
+    service_name: jobrunner
+    upstream: https://gerrit.wikimedia.org/r/mediawiki/services/jobrunner
+  kibana/kibana:
+    upstream: https://gerrit.wikimedia.org/r/operations/software/kibana
+  librenms/librenms:
+    upstream: https://gerrit.wikimedia.org/r/operations/software/librenms
+  logstash/plugins:
+    upstream: https://gerrit.wikimedia.org/r/operations/software/logstash/plugins
+  mathoid/deploy:
+    checkout_submodules: true
+    service_name: mathoid
+    upstream: https://gerrit.wikimedia.org/r/mediawiki/services/mathoid/deploy
+  ocg/ocg:
+    checkout_submodules: true
+    service_name: ocg
+    upstream: https://gerrit.wikimedia.org/r/mediawiki/services/ocg-collection
+  parsoid/deploy:
+    checkout_submodules: true
+    service_name: parsoid
+    upstream: https://gerrit.wikimedia.org/r/p/mediawiki/services/parsoid/deploy
+  rcstream/rcstream:
+    service_name: rcstream
+    upstream: https://gerrit.wikimedia.org/r/mediawiki/services/rcstream
+  restbase/deploy:
+    checkout_submodules: true
+    service_name: restbase
+    upstream: https://gerrit.wikimedia.org/r/mediawiki/services/restbase/deploy
+  scap/scap:
+    upstream: https://gerrit.wikimedia.org/r/mediawiki/tools/scap
+  scholarships/scholarships:
+    upstream: https://gerrit.wikimedia.org/r/wikimedia/wikimania-scholarships
+  servermon/servermon:
+    service_name: gunicorn
+  statsv/statsv:
+    upstream: https://gerrit.wikimedia.org/r/analytics/statsv
+  test/testrepo:
+    checkout_submodules: true
+    service_name: puppet
+  tilerator/deploy:
+    checkout_submodules: true
+    service_name: tilerator
+    upstream: https://gerrit.wikimedia.org/r/p/maps/tilerator/deploy
+  zotero/translation-server:
+    service_name: zotero
+    upstream: https://gerrit.wikimedia.org/r/mediawiki/services/zotero/translation-server
+  zotero/translators:
+    upstream: https://gerrit.wikimedia.org/r/mediawiki/services/zotero/translators
+role::logging::mediawiki::udp2log::rotate: 15
+role::ocg::redis_servers:
+  deployment-pdf01:
+    host: deployment-pdf01.deployment-prep.eqiad.wmflabs
+    port: 6379
+role::phabricator::labs::settings:
+  notification.servers:
+  - host: phab-01.wmflabs.org
+    port: 22280
+    protocol: https
+    type: client
+  - host: 127.0.0.1
+    port: 22281
+    protocol: http
+    type: admin
+scap::keyholder_agents:
+  analytics_deploy:
+    trusted_groups:
+    - project-deployment-prep
+  deploy-librenms:
+    trusted_groups:
+    - project-deployment-prep
+  deploy-service:
+    trusted_groups:
+    - deploy-service
+    - project-deployment-prep
+  dumpsdeploy:
+    trusted_groups:
+    - project-deployment-prep
+  eventbus:
+    trusted_groups:
+    - project-deployment-prep
+    - deploy-service
+  eventlogging:
+    trusted_groups:
+    - project-deployment-prep
+    - deploy-service
+  phabricator:
+    trusted_groups:
+    - project-deployment-prep
+scap::version: present
+service::configuration::logstash_host: deployment-logstash2.deployment-prep.eqiad.wmflabs
+service::configuration::logstash_port: 12201
+service::deploy::scap::public_key_file: puppet:///private/ssh/tin/servicedeploy_rsa.pub
+standard::mail::sender::route_wiki_mail: true
+swift::params::account_keys:
+  mw_media: abracadabra
+  mw_thumbor: OhdeaYuu4reoziichug6
+  netbox_attachments: iic0Phoozoh4pooquuy4
+  pagecompilation_zim: ohn2CoquahnaiNieWaen
+  phabricator_files: dummy
+  search_backup: uOnZcooW2ujoATIXANmtAz
+  swift_dispersion: ahshaenae3Hai3quipah
+swift::proxy::shard_container_list:
+- global-data-math-render
+- wikipedia-commons-local-public
+- wikipedia-commons-local-temp
+- wikipedia-commons-local-thumb
+- wikipedia-commons-local-transcoded
+- wikipedia-de-local-public
+- wikipedia-de-local-temp
+- wikipedia-de-local-thumb
+- wikipedia-de-local-transcoded
+- wikipedia-en-local-public
+- wikipedia-en-local-temp
+- wikipedia-en-local-thumb
+- wikipedia-en-local-transcoded
+- wikipedia-fi-local-public
+- wikipedia-fi-local-temp
+- wikipedia-fi-local-thumb
+- wikipedia-fi-local-transcoded
+- wikipedia-fr-local-public
+- wikipedia-fr-local-temp
+- wikipedia-fr-local-thumb
+- wikipedia-fr-local-transcoded
+- wikipedia-he-local-public
+- wikipedia-he-local-temp
+- wikipedia-he-local-thumb
+- wikipedia-he-local-transcoded
+- wikipedia-hu-local-public
+- wikipedia-hu-local-temp
+- wikipedia-hu-local-thumb
+- wikipedia-hu-local-transcoded
+- wikipedia-id-local-public
+- wikipedia-id-local-temp
+- wikipedia-id-local-thumb
+- wikipedia-id-local-transcoded
+- wikipedia-it-local-public
+- wikipedia-it-local-temp
+- wikipedia-it-local-thumb
+- wikipedia-it-local-transcoded
+- wikipedia-ja-local-public
+- wikipedia-ja-local-temp
+- wikipedia-ja-local-thumb
+- wikipedia-ja-local-transcoded
+- wikipedia-ro-local-public
+- wikipedia-ro-local-temp
+- wikipedia-ro-local-thumb
+- wikipedia-ro-local-transcoded
+- wikipedia-ru-local-public
+- wikipedia-ru-local-temp
+- wikipedia-ru-local-thumb
+- wikipedia-ru-local-transcoded
+- wikipedia-th-local-public
+- wikipedia-th-local-temp
+- wikipedia-th-local-thumb
+- wikipedia-th-local-transcoded
+- wikipedia-tr-local-public
+- wikipedia-tr-local-temp
+- wikipedia-tr-local-thumb
+- wikipedia-tr-local-transcoded
+- wikipedia-uk-local-public
+- wikipedia-uk-local-temp
+- wikipedia-uk-local-thumb
+- wikipedia-uk-local-transcoded
+- wikipedia-zh-local-public
+- wikipedia-zh-local-temp
+- wikipedia-zh-local-thumb
+- wikipedia-zh-local-transcoded
+swift::proxy::statsd_host: localhost
+swift::storage::statsd_host: localhost
+zookeeper_clusters:
+  main-deployment-prep:
+    hosts:
+      deployment-zookeeper02.deployment-prep.eqiad.wmflabs: '2'

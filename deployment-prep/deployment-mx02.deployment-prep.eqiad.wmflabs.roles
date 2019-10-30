@@ -1,0 +1,3 @@
+profile::mail::mx::cert_name: mail_beta_wmflabs_org
+profile::mail::mx::cert_subjects: mail.beta.wmflabs.org
+puppetmaster: deployment-puppetmaster03.deployment-prep.eqiad.wmflabs

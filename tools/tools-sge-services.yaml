@@ -1,0 +1,4 @@
+profile::ldap::client::labs::client_stack: sssd
+profile::toolforge::services::active_node: tools-sge-services-03.tools.eqiad.wmflabs
+profile::toolforge::services::standby_node: tools-sge-services-04.tools.eqiad.wmflabs
+sudo_flavor: sudo

@@ -1,0 +1,23 @@
+deployment_server: phab-tin.phabricator.eqiad.wmflabs
+gerrit::jetty::db_host: 172.16.1.180
+gerrit::jetty::java_home: /usr/lib/jvm/java-8-openjdk-amd64/jre
+gerrit::jetty::log_host: localhost
+gerrit::jetty::replication: {}
+gerrit::server::avatars_host: gerrit-cache.wmflabs.org
+gerrit::server::backup: false
+gerrit::server::bacula: srv-gerrit-git
+gerrit::server::config: gerrit.config.erb
+gerrit::server::host: phabricator-09.phabricator.wmflabs.org
+gerrit::server::master_host: phabricator-09.phabricator.eqiad.wmflabs
+gerrit::server::slave_hosts:
+- phabricator-09.phabricator.wmflabs.org
+gerrit::servers:
+- phabricator-10.phabricator.eqiad.wmflabs
+- phabricator-09.phabricator.wmflabs.org
+gerrit::service::ipv4: 172.16.7.16
+gerrit::service::ipv6: null
+gerrit::slave: false
+passwords::gerrit::gerrit_db_pass: labstest
+puppetmaster: puppet-paladox.git.eqiad.wmflabs
+scap::deployment_server: phab-tin.phabricator.eqiad.wmflabs
+scap::wmflabs_master: phab-tin.phabricator.eqiad.wmflabs

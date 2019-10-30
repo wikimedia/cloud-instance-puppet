@@ -1,0 +1,5 @@
+confd::running: false
+profile::conftool::state::ensure: absent
+profile::conftool::state::query_interval: 30
+profile::mariadb::maintenance::ensure: false
+profile::openldap::management::cron_active: false

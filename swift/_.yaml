@@ -1,0 +1,25 @@
+profile::prometheus::statsd_exporter::mappings: []
+swift::hash_path_suffix: abcdef
+swift::params::account_keys:
+  mw_media: abracadabra
+swift::params::accounts:
+  mw_media:
+    access: .admin
+    account_name: AUTH_mw
+    auth: http://localhost
+    user: mw:media
+swift::params::swift_cluster: labs
+swift::proxy::proxy_service_host: localhost
+swift::proxy::rewrite_account: mw_media
+swift::proxy::rewrite_thumb_server: localhost
+swift::proxy::shard_container_list:
+- a
+- b
+swift::proxyhosts:
+- swift-stretch-ms-fe01
+swift::storagehosts:
+- swift-stretch-ms-be01
+- swift-stretch-ms-be02
+swift_aux_partitions: []
+swift_storage_drives:
+- /dev/lv-a

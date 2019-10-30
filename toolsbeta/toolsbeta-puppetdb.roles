@@ -1,0 +1,7 @@
+profile::puppetdb::database::shared_buffers: 768MB
+profile::puppetdb::filter_job_id: true
+profile::puppetdb::master: toolsbeta-puppetdb-01.toolsbeta.eqiad.wmflabs
+profile::puppetdb::microservice::enabled: false
+profile::puppetdb::slaves: []
+puppetdb_major_version: 4
+puppetmaster: toolsbeta-puppetmaster-02.toolsbeta.eqiad.wmflabs

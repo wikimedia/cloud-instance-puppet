@@ -1,0 +1,91 @@
+cache::app_def_be_opts:
+  between_bytes_timeout: 31s
+  connect_timeout: 3s
+  first_byte_timeout: 63s
+  max_connections: 1000
+  port: 80
+cache::app_directors:
+  api:
+    backends:
+      eqiad: deployment-mediawiki-09.deployment-prep.eqiad.wmflabs
+  appservers:
+    backends:
+      eqiad: deployment-mediawiki-07.deployment-prep.eqiad.wmflabs
+  appservers_debug:
+    backends:
+      eqiad: deployment-mediawiki-07.deployment-prep.eqiad.wmflabs
+    be_opts:
+      max_connections: 20
+  citoid_backend:
+    backends:
+      eqiad: citoid-beta.wmflabs.org
+    be_opts:
+      port: 1970
+  cxserver_backend:
+    backends:
+      eqiad: cxserver-beta.wmflabs.org
+    be_opts:
+      port: 8080
+  parsoidphp:
+    backends:
+      eqiad: deployment-mediawiki-parsoid10.deployment-prep.eqiad.wmflabs
+  rendering:
+    backends:
+      eqiad: deployment-mediawiki-09.deployment-prep.eqiad.wmflabs
+  restbase_backend:
+    backends:
+      eqiad: deployment-restbase01.deployment-prep.eqiad.wmflabs
+    be_opts:
+      max_connections: 5000
+      port: 7231
+  security_audit:
+    backends:
+      eqiad: deployment-mediawiki-09.deployment-prep.eqiad.wmflabs
+cache::req_handling:
+  citoid.wikimedia.org:
+    caching: pass
+    director: citoid_backend
+  cxserver.wikimedia.org:
+    caching: pass
+    director: cxserver_backend
+  default:
+    debug_director: appservers_debug
+    director: appservers
+    subpaths:
+      ^/api/rest_v1/:
+        director: restbase_backend
+      ^/w/api\.php:
+        debug_director: appservers_debug
+        director: api
+      ^/w/rest\.php:
+        director: parsoidphp
+      ^/w/thumb(_handler)?\.php:
+        debug_director: appservers_debug
+        director: rendering
+profile::cache::varnish::backend::be_extra_vcl:
+- text-common
+- misc-common
+- normalize_path
+profile::cache::varnish::backend::be_vcl_config:
+  pass_random: true
+profile::cache::varnish::frontend::fe_extra_vcl:
+- text-common
+- misc-common
+- normalize_path
+- geoip
+profile::cache::varnish::frontend::fe_vcl_config:
+  admission_policy: none
+  enable_geoiplookup: true
+  keep: 1d
+  varnish_probe_ms: 100
+varnish_version4: true
+wikimedia_clusters:
+  cache_text:
+    description: Text caches
+    id: 20
+    sites:
+      codfw: []
+      eqiad: []
+      eqsin: []
+      esams: []
+      ulsfo: []

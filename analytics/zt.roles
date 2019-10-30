@@ -1,0 +1,2 @@
+profile::zookeeper::cluster_name: test-eqiad
+profile::zookeeper::zookeeper_version: 3.4.9-3~jessie

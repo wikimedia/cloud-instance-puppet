@@ -1,0 +1,4 @@
+profile::puppetmaster::common::storeconfigs: puppetdb
+puppet_major_version: 4
+puppetdb_major_version: 4
+puppetmaster: deployment-puppetmaster03.deployment-prep.eqiad.wmflabs

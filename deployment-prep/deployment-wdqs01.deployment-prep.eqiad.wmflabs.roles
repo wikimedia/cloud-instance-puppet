@@ -1,0 +1,9 @@
+profile::wdqs::blazegraph_extra_jvm_opts:
+- -Dwdqs.throttling-filter.time-bucket-capacity-in-seconds=240
+profile::wdqs::blazegraph_heap_size: 4g
+profile::wdqs::blazegraph_options:
+- -XX:+ExitOnOutOfMemoryError
+profile::wdqs::deploy_mode: manual
+profile::wdqs::nodes:
+- deployment-wdqs01.deployment-prep.eqiad.wmflabs
+profile::wdqs::use_revisions: false

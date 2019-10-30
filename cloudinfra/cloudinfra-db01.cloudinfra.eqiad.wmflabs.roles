@@ -1,0 +1,2 @@
+puppetmaster: cloudinfra-internal-puppetmaster01.cloudinfra.eqiad.wmflabs
+role::mariadb::cloudinfra::master: true

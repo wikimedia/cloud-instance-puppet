@@ -1,0 +1,5 @@
+ldap::role::client::labs::restricted_to: tools.admin
+mount_nfs: false
+openstack::version: mitaka
+puppet_major_version: 4
+puppetmaster: puppetmaster.cloudinfra.wmflabs.org

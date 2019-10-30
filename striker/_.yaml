@@ -1,0 +1,20 @@
+deployment_server: striker-deploy04.striker.eqiad.wmflabs
+has_lvs: false
+lvs::configuration::lvs_service_ips: {}
+lvs::configuration::lvs_services: {}
+profile::keyholder::server::agents:
+  deploy-service:
+    trusted_groups:
+    - wikidev
+profile::keyholder::server::require_encrypted_keys: nope
+profile::mediawiki::apc_shm_size: 128M
+profile::mediawiki::deployment::server::rsync_host: striker-deploy04.striker.eqiad.wmflabs
+profile::mediawiki::php::enable_fpm: false
+profile::mediawiki::php::php_version: '7.2'
+profile::rsyslog::kafka_shipper::kafka_brokers: []
+scap::deployment_server: striker-deploy04.striker.eqiad.wmflabs
+scap::sources:
+  striker/deploy:
+    repository: labs/striker/deploy
+scap::version: latest
+scap::wmflabs_master: striker-deploy04.striker.eqiad.wmflabs
