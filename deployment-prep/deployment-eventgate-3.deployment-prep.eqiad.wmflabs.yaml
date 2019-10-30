@@ -50,7 +50,7 @@ profile::docker::runner::service_defs:
     namespace: wikimedia
     override_cmd: /srv/service/node_modules/.bin/eventgate -c /etc/eventgate-analytics/config.yaml
     port: 8192
-    version: 2019-09-24-173906-production
+    version: 2019-10-28-185106-production
   eventgate-logging:
     config:
       logging:
@@ -75,7 +75,7 @@ profile::docker::runner::service_defs:
             topic_conf: {}
           port: 8992
           schema_base_uris:
-          - /etc/eventgate-logging/schemas
+          - /srv/service/schemas/mediawiki-event-schemas/jsonschema/
           schema_uri_field: $schema
           stream_field: meta.stream
           topic_prefix: eqiad.
@@ -158,5 +158,5 @@ profile::docker::runner::service_defs:
     namespace: wikimedia
     override_cmd: /srv/service/node_modules/.bin/eventgate -c /etc/eventgate-main/config.yaml
     port: 8292
-    version: 2019-09-24-173906-production
+    version: 2019-10-28-185106-production
 puppetmaster: deployment-puppetmaster03.deployment-prep.eqiad.wmflabs
