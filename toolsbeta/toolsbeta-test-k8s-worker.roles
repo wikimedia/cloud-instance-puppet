@@ -1,3 +1,2 @@
-profile::toolforge::k8s::apiserver: k8s.toolsbeta.wikimedia.cloud
-profile::toolforge::k8s::node_token: m7uakr.ern5lmlpv7gnkacw
-swap_partition: false
+- role::wmcs::toolforge::k8s::worker
+- role::wmcs::toolforge::k8s::node
