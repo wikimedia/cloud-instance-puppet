@@ -1,10 +1,5 @@
-profile::toolforge::k8s::apiserver: k8s.toolsbeta.eqiad1.wikimedia.cloud
 profile::toolforge::k8s::apiserver_fqdn: k8s.toolsbeta.eqiad1.wikimedia.cloud
 profile::toolforge::k8s::dns_domain: toolsbeta.eqiad.wmflabs
-profile::toolforge::k8s::etcd_hosts:
-- toolsbeta-test-k8s-etcd-1.toolsbeta.eqiad.wmflabs
-- toolsbeta-test-k8s-etcd-2.toolsbeta.eqiad.wmflabs
-- toolsbeta-test-k8s-etcd-3.toolsbeta.eqiad.wmflabs
 profile::toolforge::k8s::etcd_nodes:
 - toolsbeta-test-k8s-etcd-1.toolsbeta.eqiad.wmflabs
 - toolsbeta-test-k8s-etcd-2.toolsbeta.eqiad.wmflabs
