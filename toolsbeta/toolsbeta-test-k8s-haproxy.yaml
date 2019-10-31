@@ -1,14 +1,4 @@
-profile::toolforge::k8s::api_servers:
-  toolsbeta-test-k8s-control-1:
-    fqdn: toolsbeta-test-k8s-control-1.toolsbeta.eqiad.wmflabs
-    port: 6443
-  toolsbeta-test-k8s-control-2:
-    fqdn: toolsbeta-test-k8s-control-2.toolsbeta.eqiad.wmflabs
-    port: 6443
-  toolsbeta-test-k8s-control-3:
-    fqdn: toolsbeta-test-k8s-control-3.toolsbeta.eqiad.wmflabs
-    port: 6443
-profile::toolforge::k8s::apiserver_port: 30000
+profile::toolforge::k8s::apiserver_port: 6443
 profile::toolforge::k8s::control_nodes:
 - toolsbeta-test-k8s-control-1.toolsbeta.eqiad.wmflabs
 - toolsbeta-test-k8s-control-2.toolsbeta.eqiad.wmflabs
