@@ -1,2 +1,1 @@
 - role::wmcs::toolforge::k8s::worker
-- role::wmcs::toolforge::k8s::node
