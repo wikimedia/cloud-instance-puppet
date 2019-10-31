@@ -1,4 +1,1 @@
-etcd::cluster_name: toolsbeta-k8s
-etcd::peers_list: toolsbeta-k8s-etcd-01=http://toolsbeta-k8s-etcd-01.toolsbeta.eqiad.wmflabs:2380
-etcd::use_ssl: true
-mount_nfs: false
+[]
