@@ -1,4 +1,1 @@
-etcd::cluster_name: tools-k8s
-etcd::peers_list: tools-k8s-etcd-01=http://tools-k8s-etcd-01.tools.eqiad.wmflabs:2380,tools-k8s-etcd-02=http://tools-k8s-etcd-02.tools.eqiad.wmflabs:2380,tools-k8s-etcd-03=http://tools-k8s-etcd-03.tools.eqiad.wmflabs:2380
-etcd::use_ssl: true
-mount_nfs: false
+[]
