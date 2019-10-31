@@ -17,6 +17,8 @@ profile::acme_chief::certificates:
     - '*.tools.wmflabs.org'
     authorized_regexes:
     - ^tools-proxy-[0-9]+\.tools\.eqiad\.wmflabs$
+    - ^tools-docker-registry-[0-9]+\.tools\.eqiad\.wmflabs$
+    - ^tools-k8s-master-[0-9]+\.tools\.eqiad\.wmflabs$
     challenge: dns-01
 profile::acme_chief::challenges:
   dns-01:
