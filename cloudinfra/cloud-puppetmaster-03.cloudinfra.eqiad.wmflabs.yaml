@@ -1,1 +1,13 @@
+profile::openstack::eqiad1::puppetmaster::servers:
+  cloud-puppetmaster-03.cloudinfra.eqiad.wmflabs:
+  - loadfactor: 10
+    worker: cloud-puppetmaster-01.cloudinfra.eqiad.wmflabs
+  - loadfactor: 20
+    worker: cloud-puppetmaster-02.cloudinfra.eqiad.wmflabs
+  - canary: true
+    loadfactor: 10
+    worker: cloud-puppetmaster-03.cloudinfra.eqiad.wmflabs
+  - canary: true
+    loadfactor: 20
+    worker: cloud-puppetmaster-04.cloudinfra.eqiad.wmflabs
 puppetmaster::enable_geoip: false
