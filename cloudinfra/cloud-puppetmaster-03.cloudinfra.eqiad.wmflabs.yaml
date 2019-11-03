@@ -1,1 +1,1 @@
-{}
+puppetmaster::enable_geoip: false
