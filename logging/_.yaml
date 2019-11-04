@@ -35,7 +35,7 @@ profile::elasticsearch::common_settings:
   minimum_master_nodes: 1
   recover_after_nodes: 1
   recover_after_time: 1m
-  short_cluster_name: labs-logstash-eqiad
+  short_cluster_name: elk7-logstash-eqiad
   unicast_hosts:
   - elk7-fe1.logging.eqiad.wmflabs
 profile::elasticsearch::dc_settings: {}
