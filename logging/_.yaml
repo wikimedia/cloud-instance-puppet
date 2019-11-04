@@ -4,7 +4,7 @@ kafka_clusters:
       null.logging.eqiad.wmflabs:
         id: 20
         rack: A
-    zookeeper_cluster_name: none
+    zookeeper_cluster_name: fake-labs
   logging-eqiad:
     brokers:
       elk7-be1.logging.eqiad.wmflabs:
@@ -12,3 +12,7 @@ kafka_clusters:
         rack: A
     zookeeper_cluster_name: none
 profile::logstash::collector::input_kafka_ssl_truststore_password: secret
+zookeeper_clusters:
+  fake-labs:
+    hosts:
+      fake1.logging.eqiad.wmflabs: '1104'
