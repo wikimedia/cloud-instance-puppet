@@ -58,6 +58,12 @@ profile::prometheus::statsd_exporter::mappings:
     level: $3
   match: logstash.rate.*.*.*
   name: logstash_${1}_events_total
+wikimedia_clusters:
+  logstash:
+    description: Logstash cluster
+    id: 43
+    sites:
+      eqiad: []
 zookeeper_clusters:
   fake-labs:
     hosts:
