@@ -1,0 +1,11 @@
+role::labs::redirector::default_url: https://wikitech.wikimedia.org/wiki/Nova_Resource:Redirects/Host_not_configured
+role::labs::redirector::redirects:
+  grafana.wmflabs.org: https://grafana-labs.wikimedia.org
+  graphite.wmflabs.org: https://graphite-labs.wikimedia.org
+  hatjitsu.wmflabs.org: https://tools.wmflabs.org/hatjitsu
+  horizon.wmflabs.org: https://horizon.wikimedia.org
+  living-style-guide.wmflabs.org: https://design.wikimedia.org/style-guide
+  livingstyleguide.wmflabs.org: https://design.wikimedia.org/style-guide
+  partnermetrics.wmflabs.org: https://tools.wmflabs.org/mediaviews-api
+  reportcard.wmflabs.org: https://analytics.wikimedia.org/dashboards/reportcard
+  wdq.wmflabs.org: https://query.wikidata.org
