@@ -1,8 +1,14 @@
 kafka_clusters:
+  logging-codfw:
+    brokers:
+      null.logging.eqiad.wmflabs:
+        id: 20
+        rack: A
+    zookeeper_cluster_name: none
   logging-eqiad:
     brokers:
       elk7-be1.logging.eqiad.wmflabs:
-        id: 1
+        id: 10
         rack: A
     zookeeper_cluster_name: none
 profile::logstash::collector::input_kafka_ssl_truststore_password: secret
