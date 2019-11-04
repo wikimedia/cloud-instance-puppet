@@ -24,6 +24,7 @@ kafka_clusters:
         rack: A
     zookeeper_cluster_name: fake-labs
 logstash::heap_memory: 1g
+profile::elasticsearch::base_data_dir: /srv/elasticsearch
 profile::elasticsearch::common_settings:
   auto_create_index: true
   awareness_attributes: ''
@@ -39,7 +40,11 @@ profile::elasticsearch::common_settings:
   short_cluster_name: omega
   transport_tcp_port: 9300
 profile::elasticsearch::dc_settings: {}
+profile::elasticsearch::ferm_srange: ''
 profile::elasticsearch::instances: {}
+profile::elasticsearch::rack: ''
+profile::elasticsearch::row: ''
+profile::elasticsearch::version: '5.6'
 profile::logstash::collector::input_kafka_ssl_truststore_password: secret
 profile::prometheus::statsd_exporter::mappings:
 - labels:
