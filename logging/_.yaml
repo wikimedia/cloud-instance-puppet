@@ -27,25 +27,19 @@ kafka_clusters:
 logstash::heap_memory: 1g
 profile::elasticsearch::base_data_dir: /srv/elasticsearch
 profile::elasticsearch::common_settings:
-  auto_create_index: true
-  awareness_attributes: ''
-  curator_uses_unicast_hosts: false
-  expected_nodes: 6
-  heap_memory: 4G
-  holds_data: false
-  http_port: 9200
-  minimum_master_nodes: 2
-  recover_after_nodes: 2
-  recover_after_time: 1m
-  send_logs_to_logstash: false
-  short_cluster_name: omega
-  transport_tcp_port: 9300
-profile::elasticsearch::dc_settings:
+  auto_create_index: +logstash-*,-*
   cluster_hosts:
-  - etlk7-be1.logging.eqiad.wmflabs
-  cluster_name: logstash
+  - elk7-be1.logging.eqiad.wmflabs
+  cluster_name: elk7-logstash-eqiad
+  expected_nodes: 1
+  heap_memory: 2G
+  minimum_master_nodes: 1
+  recover_after_nodes: 1
+  recover_after_time: 1m
+  short_cluster_name: labs-logstash-eqiad
   unicast_hosts:
   - elk7-fe1.logging.eqiad.wmflabs
+profile::elasticsearch::dc_settings: {}
 profile::elasticsearch::ferm_srange: ''
 profile::elasticsearch::instances: {}
 profile::elasticsearch::rack: ''
