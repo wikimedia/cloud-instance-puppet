@@ -11,7 +11,7 @@ kafka_clusters:
         id: 20
         rack: A
     zookeeper_cluster_name: fake-labs
-  logging-eqiad:
+  loggingz-eqiad:
     brokers:
       elk7-be1.logging.eqiad.wmflabs:
         id: 10
