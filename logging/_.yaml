@@ -1,5 +1,5 @@
 kafka_clusters:
-  logging-labs-eqiad:
+  logging-eqiad:
     brokers:
       elk7-be1.logging.eqiad.wmflabs:
         id: 1
