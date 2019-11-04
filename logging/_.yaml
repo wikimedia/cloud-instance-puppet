@@ -23,6 +23,21 @@ kafka_clusters:
         id: 10
         rack: A
     zookeeper_cluster_name: fake-labs
+logstash::heap_memory: 1g
+profile::elasticsearch::common_settings:
+  auto_create_index: true
+  awareness_attributes: ''
+  curator_uses_unicast_hosts: false
+  expected_nodes: 6
+  heap_memory: 4G
+  holds_data: false
+  http_port: 9200
+  minimum_master_nodes: 2
+  recover_after_nodes: 2
+  recover_after_time: 1m
+  send_logs_to_logstash: false
+  short_cluster_name: omega
+  transport_tcp_port: 9300
 profile::elasticsearch::dc_settings: {}
 profile::elasticsearch::instances: {}
 profile::logstash::collector::input_kafka_ssl_truststore_password: secret
