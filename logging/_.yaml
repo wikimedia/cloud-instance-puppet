@@ -40,7 +40,12 @@ profile::elasticsearch::common_settings:
   send_logs_to_logstash: false
   short_cluster_name: omega
   transport_tcp_port: 9300
-profile::elasticsearch::dc_settings: {}
+profile::elasticsearch::dc_settings:
+  cluster_hosts:
+  - etlk7-be1.logging.eqiad.wmflabs
+  cluster_name: logstash-eqiad
+  unicast_hosts:
+  - elk7-fe1.logging.eqiad.wmflabs
 profile::elasticsearch::ferm_srange: ''
 profile::elasticsearch::instances: {}
 profile::elasticsearch::rack: ''
