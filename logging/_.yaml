@@ -24,6 +24,17 @@ kafka_clusters:
         rack: A
     zookeeper_cluster_name: fake-labs
 profile::logstash::collector::input_kafka_ssl_truststore_password: secret
+profile::prometheus::statsd_exporter::mappings:
+- labels:
+    channel: $1
+    level: $2
+  match: logstash.rate.*.*
+  name: logstash_events_total
+- labels:
+    channel: $2
+    level: $3
+  match: logstash.rate.*.*.*
+  name: logstash_${1}_events_total
 zookeeper_clusters:
   fake-labs:
     hosts:
