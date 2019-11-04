@@ -23,6 +23,7 @@ kafka_clusters:
         id: 10
         rack: A
     zookeeper_cluster_name: fake-labs
+profile::elasticsearch::dc_settings: {}
 profile::elasticsearch::instances: {}
 profile::logstash::collector::input_kafka_ssl_truststore_password: secret
 profile::prometheus::statsd_exporter::mappings:
