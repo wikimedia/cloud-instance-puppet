@@ -1,4 +1,3 @@
-cluster: logstash
 kafka_clusters:
   jumbo:
     brokers:
