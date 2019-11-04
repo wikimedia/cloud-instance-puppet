@@ -1,3 +1,227 @@
+cache::misc::nodes:
+  eqiad:
+  - phabricator.phabricator.eqiad.wmflabs
+cache::nodes:
+  text:
+    eqiad:
+    - 10.68.21.68
+    - 10.68.21.69
+    - 10.68.20.184
+    - 10.68.16.15
+    - 10.68.19.231
+    eqiad_ats: []
+cache::text::nodes:
+  eqiad:
+  - deployment-cache-text05.deployment-prep.eqiad.wmflabs
+cache::upload::nodes:
+  eqiad:
+  - deployment-cache-upload05.deployment-prep.eqiad.wmflabs
+deployment_server: phab-tin.phabricator.eqiad.wmflabs
 deployment_server_ipv6: false
+has_lvs: false
+hhvm::base_jit_size: 183500800
+keyholder::require_encrypted_keys: 'no'
+keyholder::trusted_groups:
+- wikidev
+- project-%{::labsproject}
+- phabricator
+- root
+lvs::configuration::lvs_service_ips:
+  text:
+    testsite:
+      textlb: 1.1.1.1
+      textlb6: 2620:0:861:102:1:1:1:1
+    testsite1:
+      textlb: 8.8.8.8
+      textlb6: 2620:0:861:102:8:8:8:8
+lvs::configuration::lvs_services:
+  text:
+    class: high-traffic1
+    conftool:
+      cluster: cache_text
+      service: nginx
+    depool-threshold: '.5'
+    description: Main wiki platform LVS service, text.%{::site}.wikimedia.org (Varnish)
+    ip:
+      testsite:
+        textlb: 1.1.1.1
+        textlb6: 2620:0:861:102:1:1:1:1
+      testsite1:
+        textlb: 8.8.8.8
+        textlb6: 2620:0:861:102:8:8:8:8
+    monitors:
+      IdleConnection:
+        max-delay: 300
+        timeout-clean-reconnect: 3
+    scheduler: sh
+    sites:
+    - testsite
+    - testsite1
+mediawiki::forward_syslog: deployment-logstash2.deployment-prep.eqiad.wmflabs:10514
+mediawiki::jobrunner::aggr_servers:
+- deployment-redis01.deployment-prep.eqiad.wmflabs
+mediawiki::jobrunner::queue_servers:
+- deployment-redis01.deployment-prep.eqiad.wmflabs
+mediawiki::jobrunner::runners_basic: 5
+mediawiki::jobrunner::runners_gwt: 1
+mediawiki::jobrunner::runners_restbase: 5
+mediawiki::jobrunner::runners_translate: 1
+mediawiki::jobrunner::runners_upload: 2
+mediawiki::jobrunner::statsd_server: labmon1001.eqiad.wmnet
+mediawiki::log_aggregator: deployment-fluorine.eqiad.wmflabs:8420
+mediawiki::redis_servers::eqiad:
+  shard01:
+    host: 10.68.16.177
+    port: 6379
+  shard02:
+    host: 10.68.16.231
+    port: 6379
+mediawiki_memcached_servers:
+- 10.68.23.25:11211:1
+- 10.68.23.49:11211:1
+monitoring_hosts:
+- 127.0.0.1
+- 172.16.1.180
+nfs_mounts:
+  dumps: false
+  home: false
+  project: false
+  scratch: false
+passwords::root::extra_keys:
+  krenair: ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDdYrWghgUYZZsdh8tw4mRfpsNWCW56ns6tKei3oSHEUNOXnxhAQwnwwkc1LeGYDdPglX3EAbtj0LAUf1muaC99mFYXw+e+7XjZCJYZ5cRrkvDXA/JvxaBvhOid8BZGImeoSqX2ZZ0HQSNRQfzVbs+7yAu0nMB3WSup9eoMnC3OfBsbPvQZ/WDD/OKIwuv8hnYyi8QmQgPngERqIf12ireGIXNn++IMncqu9Z6+skQHiuvkMsWlPjeYtg8gfIS8h8JY1QApVUyqkHuE4Fr/1n/NagsDu1WvE4zuEzQ3TmXZOtikPqSfsLDD5+gqxcaH1iiM+nEeG/RWD9/WyHnVUsIH
+    krenair@gmail.com ubuntu laptop
+  paladox: ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQDKfI5o6JD59/dYIy6rritqzXvwWsymy03k98pqFjiucs1t7BdomshtIUI0bigXDDEYttd5a5guMDFCpq/bRg8UdqyjNnKzCOEWP7GN2xrDlOxv83TUd8hOOWeBXG4hXh/EUbCkTUbypWNfyK93W7SFVHWvg/yjI6jrCS8CQTFK5vGnlKACme9hixUQTXVkkvbqvw5AP2i45YMJ9o48Ek7F5hPiTQ5y8+Ct+kD/42IsWBbSW3stoHv0bYXarks2Niej//g8VnVYH/3yrMRUzRJYtTBkgitG4FQtjlq64MRVSvBTKpGkeGrZa8rdlBfWauR39W3X4DeAoiiUrRMR0/cY1aZT6zTZgYW6PO16oUt9saXb4HZb4azc30QbbxcX+F2gttW95y3IFymvocJOq8xaAIQYlQzYX1c14PEpkG951SU8yUdI3z2MRJqdEF0wYHgw2H4ofL9yy8YyGSwj8Q6HI/ePSrCmg34p5HqBBcJd4ZGR2uNeCEYJxTThtYYBSPG1B1Lh2fNuY+kWEYNpqz7w6DAAtGFsmyr/J0NIETV/P94eQ8wdF1h4OC4iJTh7ylE640utqrfdP6/q80CKLC7uQk5RBDRaWF2rKrPl/hF3+Ip0XIxsFUomV2ookEEtDqSKK/r7QOkOxp6Zna9JfpnAKZRskW0XPgeERviQYuJrhw==
+    puppet@deployment-puppetmaster
+  twentyafterfour: ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDPe9i/PI48Xk3BwCBSJ3L/o4n8noRBEFrINAPLVw4SDPmMOgPu5/HyvdxWkS47li2PQnDx4EobYE4WErxdQ0nB/Fe43ZzWEFQ6RvWuuPAxUwEFcGhraDHFFQc/TLh7adtNA247jUhLCQN/O3Nb6Qq1RPuAZgF59UuWKPNwnSOCOyLV0zHvqhjUkWmDcCI7sln1Kbv+JiEKBrVyokpv18pgCgyKL54UvFRbVD/aU7qu1DyJCFZ0GTitqFX0OMHjEyCo2bGPFUAHBkbKn/lsNz4hXNjF9iorxBvl1ZXLCRMkdRJBA6xGgLGWPXBQOXbUTc+9ow05KH0kHmQu5lXez7CZ
+    twentyafterfour@wikiafterfour
+phabricator::mysql_admin_pass: phabricator
+phabricator::mysql_admin_user: root
+phabricator::trusted_proxies:
+- 10.68.21.68
+- 10.68.21.69
+- 10.68.20.184
+- 10.68.16.15
+- 10.68.19.231
+phabricator::vcs::address::v4: 10.68.16.15
+phabricator::vcs::listen_addresses: []
+phabricator_active_server: phabricator
+phabricator_active_server_fqdn: phabricator.phabricator.eqiad.wmflabs
+phabricator_admin_pass: phabricator
+phabricator_admin_user: root
+phabricator_altdomain: phabzilla.wmflabs.org
+phabricator_app_pass: phabricator
+phabricator_app_user: root
+phabricator_cluster_search:
+- hosts:
+  - host: localhost
+    protocol: http
+    roles:
+      read: true
+      write: true
+  path: /phabricator
+  port: 9200
+  type: elasticsearch
+  version: 5
+phabricator_daemons_pass: phabricator
+phabricator_daemons_user: root
+phabricator_diffusion_ssh_host: git-ssh.wmflabs.org
+phabricator_domain: phab.wmflabs.org
+phabricator_elasticsearch_version: '5'
+phabricator_enable_php_fpm: true
+phabricator_manifest_pass: phabricator
+phabricator_manifest_user: root
+phabricator_servers:
+- phabricator.phabricator.eqiad.wmflabs
+profile::backup::ferm_directors: []
+profile::mediawiki::apc_shm_size: 128M
+profile::mediawiki::deployment::server::rsync_host: phab-tin.phabricator.eqiad.wmflabs
+profile::mediawiki::php::enable_fpm: false
+profile::phabricator::httpd::enable_php_fpm: true
+profile::phabricator::main::rate_limits:
+  connection: 200
+  request: 200
+profile::puppetdb::master: puppet-phabricator.phabricator.eqiad.wmflabs
+profile::puppetdb::slaves: []
+profile::puppetmaster::common::puppetdb_host: puppet-phabricator.phabricator.eqiad.wmflabs
+profile::rsyslog::kafka_shipper::kafka_brokers: []
+puppet_major_version: 4
+puppetdb::password::replication: puppetdb
+puppetdb::password::rw: puppetdb
+puppetmaster: puppet-phabricator.phabricator.eqiad.wmflabs
+puppetmaster::config::puppetdb_host: puppet-phabricator.phabricator.eqiad.wmflabs
+puppetmaster::config::use_puppetdb: true
+role::deployment::repo_config:
+  gerrit/gerrit:
+    upstream: https://gerrit.wikimedia.org/r/operations/software/gerrit
+  gervert/deploy:
+    upstream: https://gerrit.wikimedia.org/r/operations/software/gerrit/tools/gervert/deploy
+  phabricator/deployment:
+    upstream: https://phabricator.wikimedia.org/diffusion/PHDEP/phabricator-deployment.git
+role::logging::mediawiki::log_directory: /data/project/logs
+role::mediawiki::webserver::pool: one-pool-to-rule-them-all
+role::phabricator::labs::settings:
+  notification.servers:
+  - host: phab-01.wmflabs.org
+    port: 22280
+    protocol: https
+    type: client
+  - host: 127.0.0.1
+    port: 22281
+    protocol: http
+    type: admin
+role::puppetmaster::puppetdb::shared_buffers: 0MB
+role::puppetmaster::standalone::autosign: true
+scap::deployment_server: phab-tin.phabricator.eqiad.wmflabs
 scap::dsh::groups: {}
+scap::keyholder_agents:
+  gerrit:
+    trusted_groups:
+    - project-%{::labsproject}
+    - phabricator
+    - wikidev
+    - root
+  phabricator:
+    trusted_groups:
+    - project-%{::labsproject}
+    - phabricator
+    - wikidev
+    - root
 scap::l10nupdate::run_l10nupdate: false
+scap::server::keyholder_agents:
+  gerrit:
+    trusted_groups:
+    - project-%{::labsproject}
+    - gerrit
+    - gerrit2
+    - git
+    - wikidev
+    - root
+  phabricator:
+    trusted_groups:
+    - project-%{::labsproject}
+    - gerrit
+    - gerrit2
+    - git
+    - wikidev
+    - root
+scap::server::sources:
+  gerrit/gerrit:
+    repository: gerrit/gerrit
+  phabricator/deployment:
+    repository: phabricator/deployment
+scap::sources:
+  gerrit/gerrit:
+    repository: operations/software/gerrit
+  gervert/deploy:
+    repository: operations/software/gerrit/tools/gervert/deploy
+  phabricator/deployment:
+    repository: phabricator/deployment
+scap::wmflabs_master: phab-tin.phabricator.eqiad.wmflabs
+settings::storeconfigs_backend: puppetdb
+swift::proxyhosts:
+- storage.phabricator.eqiad.wmflabs
+swift::storagehosts:
+- storage.phabricator.eqiad.wmflabs
+swift_aux_partitions: []
+swift_storage_drives:
+- /dev/vdd
