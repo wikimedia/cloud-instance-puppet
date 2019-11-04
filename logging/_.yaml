@@ -57,9 +57,9 @@ profile::prometheus::statsd_exporter::mappings:
   match: logstash.rate.*.*.*
   name: logstash_${1}_events_total
 wikimedia_clusters:
-  logstash:
-    description: Logstash cluster
-    id: 43
+  misc:
+    description: Miscellaneous
+    id: 8
     sites:
       eqiad: []
 zookeeper_clusters:
