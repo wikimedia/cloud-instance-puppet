@@ -1,1 +1,8 @@
+kafka_clusters:
+  logging-labs-eqiad:
+    brokers:
+      elk7-be1.logging.eqiad.wmflabs:
+        id: 1
+        rack: A
+    zookeeper_cluster_name: none
 profile::logstash::collector::input_kafka_ssl_truststore_password: secret
