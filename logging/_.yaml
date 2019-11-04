@@ -1,7 +1,7 @@
 kafka_clusters:
   jumbo-eqiad:
     brokers:
-      fake1.logging.eqiad.wmflabs:
+      fakebroker1.logging.eqiad.wmflabs:
         id: 10
         rack: A
     zookeeper_cluster_name: fake-labs
