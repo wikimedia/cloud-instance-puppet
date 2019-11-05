@@ -75,6 +75,7 @@ profile::tlsproxy::envoy::services:
   server_names:
   - '*'
 profile::tlsproxy::envoy::sni_support: 'no'
+puppetmaster: logging-puppetmaster.logging.eqiad.wmflabs
 role::kibana::auth_file: /etc/logstash/htpasswd
 role::kibana::auth_realm: elk7 upgrade testing
 role::kibana::auth_type: local
