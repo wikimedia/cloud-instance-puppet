@@ -38,7 +38,12 @@ profile::elasticsearch::common_settings:
   short_cluster_name: elk7-logstash-eqiad
   unicast_hosts:
   - elk7-fe1.logging.eqiad.wmflabs
-profile::elasticsearch::dc_settings: {}
+profile::elasticsearch::dc_settings:
+  cluster_hosts:
+  - elk7-fe1.logging.eqiad.wmflabs
+  cluster_name: elk7-logstash-eqiad
+  unicast_hosts:
+  - elk7-be1.logging.eqiad.wmflabs
 profile::elasticsearch::ferm_srange: ''
 profile::elasticsearch::instances:
   elk7-logstash-eqiad:
