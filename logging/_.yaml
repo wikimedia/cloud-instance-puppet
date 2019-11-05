@@ -24,6 +24,7 @@ kafka_clusters:
         rack: A
     zookeeper_cluster_name: fake-labs
 logstash::heap_memory: 1g
+logstash::java_package: openjdk-11-jdk
 profile::elasticsearch::base_data_dir: /srv/elasticsearch
 profile::elasticsearch::common_settings:
   auto_create_index: +logstash-*,-*
