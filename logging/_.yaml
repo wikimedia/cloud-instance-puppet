@@ -82,6 +82,7 @@ role::kibana::serveradmin: root@logging.eqiad.wmflabs
 role::kibana::vhost: elk7-fe1.logging.wmflabs.org
 role::logstash::apifeatureusage::elastic_hosts:
 - fakesearch.logging.eqiad.wmflabs
+scap::deployment_server: fakedeploy.logging.eqiad.wmflabs
 wikimedia_clusters:
   misc:
     description: Miscellaneous
