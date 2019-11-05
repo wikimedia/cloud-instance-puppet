@@ -40,7 +40,14 @@ profile::elasticsearch::common_settings:
   - elk7-fe1.logging.eqiad.wmflabs
 profile::elasticsearch::dc_settings: {}
 profile::elasticsearch::ferm_srange: ''
-profile::elasticsearch::instances: {}
+profile::elasticsearch::instances:
+  elk7-logstash-eqiad:
+    cluster_name: elk7-logstash-eqiad
+    heap_memory: 2G
+    http_port: 9200
+    short_cluster_name: elk7
+    tls_port: 9243
+    transport_tcp_port: 9300
 profile::elasticsearch::rack: ''
 profile::elasticsearch::row: ''
 profile::elasticsearch::version: '5.6'
