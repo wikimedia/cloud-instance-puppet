@@ -1,2 +1,2 @@
 puppet_major_version: 4
-puppetmaster: labs-puppetmaster-eqiad.wikimedia.org
+puppetmaster: puppetmaster.cloudinfra.wmflabs.org
