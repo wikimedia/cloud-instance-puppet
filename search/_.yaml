@@ -1,0 +1,6 @@
+elasticsearch::cluster_hosts::eqiad:
+- estest1001.search.eqiad.wmflabs
+- estest1002.search.eqiad.wmflabs
+- estest1003.search.eqiad.wmflabs
+- estest1004.search.eqiad.wmflabs
+elasticsearch::cluster_name: hypothesis-testing
