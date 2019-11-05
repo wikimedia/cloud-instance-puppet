@@ -1,7 +1,24 @@
+cassandra::instances:
+  a:
+    jmx_port: 7189
+    listen_address: 127.0.0.2
+    rpc_address: 127.0.0.2
+    rpc_interface: lo
+  b:
+    jmx_port: 7190
+    listen_address: 127.0.0.3
+    rpc_address: 127.0.0.3
+    rpc_interface: lo
+cassandra::seeds:
+- 10.68.16.41
+- 10.68.18.38
+- 10.68.18.29
+mariadb::config::p_s: 'on'
 profile::prometheus::statsd_exporter::mappings: []
+prometheus::graphite_exporter::config_file: graphite_exporter_labs.conf
 swift::hash_path_suffix: abcdef
 swift::params::account_keys:
-  thanos_thanos: kuTh5iethahg3Aa
+  thumbor: abracadabra
 swift::params::accounts:
   thanos_thanos:
     access: .admin
@@ -13,6 +30,7 @@ swift::proxy::memcached_servers:
 - thanos-fe01.eqiad.wmflabs
 swift::proxy::proxy_service_host: thanos-fe01.eqiad.wmflabs
 swift::proxy::rewrite_account: thanos_thanos
+swift::proxy::shard_container_list: []
 swift::proxyhosts:
 - thanos-fe01
 swift::storage::object_replicator_concurrency: 1
