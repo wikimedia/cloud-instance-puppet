@@ -1,5 +1,255 @@
+icinga::monitor::gsb::api_key: dummy_key
+icinga::monitor::gsb::client_id: dummy_id
 ircecho::ident_passwd_file: /srv/shinken_wm_freenode_pass
+lvs::configuration::lvs_service_ips:
+  text:
+    codfw:
+      textlb: 10.10.10.10
+    eqiad:
+      textlb: 10.20.20.20
+lvs::configuration::lvs_services:
+  text:
+    bgp: 'yes'
+    class: high-traffic1
+    conftool:
+      cluster: cache_text
+      service: varnish-fe
+    depool-threshold: '.5'
+    description: Main wiki platform LVS service, text.%{::site}.wikimedia.org (Varnish)
+    icinga:
+      sites:
+        codfw:
+          hostname: text-lb.codfw.wikimedia.org
+        eqiad:
+          hostname: text-lb.eqiad.wikimedia.org
+      uri: en.wikipedia.org!/wiki/Special:BlankPage
+    ip:
+      text:
+        codfw:
+          textlb: 10.10.10.10
+        eqiad:
+          textlb: 10.20.20.20
+    monitors:
+      IdleConnection:
+        max-delay: 300
+        timeout-clean-reconnect: 3
+    sites:
+    - codfw
+    - eqiad
+mail_smarthost:
+- mx-out01.wmflabs.org
+- mx-out02.wmflabs.org
+monitoring::groups:
+  analytics_eqiad:
+    description: analytics servers in eqiad
+  api_appserver_codfw:
+    description: codfw API application servers
+  api_appserver_eqiad:
+    description: eqiad API application servers
+  appserver_codfw:
+    description: codfw application servers
+  appserver_eqiad:
+    description: eqiad application servers
+  aqs_codfw:
+    description: Analytics Query Service codfw
+  aqs_eqiad:
+    description: Analytics Query Service eqiad
+  cache_maps_eqiad:
+    description: Maps caches eqiad
+  cache_misc_codfw:
+    description: Misc caches codfw
+  cache_misc_eqiad:
+    description: Misc caches eqiad
+  cache_misc_esams:
+    description: Misc caches esams
+  cache_misc_ulsfo:
+    description: Misc caches ulsfo
+  cache_mobile_codfw:
+    description: codfw mobile Varnish
+  cache_mobile_eqiad:
+    description: eqiad mobile Varnish
+  cache_mobile_esams:
+    description: esams mobile Varnish
+  cache_mobile_ulsfo:
+    description: ulsfo mobile Varnish
+  cache_parsoid_codfw:
+    description: Parsoid caches codfw
+  cache_parsoid_eqiad:
+    description: Parsoid caches eqiad
+  cache_text_codfw:
+    description: codfw text Varnish
+  cache_text_eqiad:
+    description: eqiad text Varnish
+  cache_text_esams:
+    description: esams text Varnish
+  cache_text_ulsfo:
+    description: ulsfo text Varnish
+  cache_upload_codfw:
+    description: codfw upload Varnish
+  cache_upload_eqiad:
+    description: eqiad upload Varnish
+  cache_upload_esams:
+    description: esams upload Varnish
+  cache_upload_ulsfo:
+    description: ulsfo upload Varnish
+  elasticsearch_codfw:
+    description: codfw elasticsearch servers
+  elasticsearch_eqiad:
+    description: eqiad elasticsearch servers
+  elasticsearch_esams:
+    description: esams elasticsearch servers
+  elasticsearch_ulsfo:
+    description: ulsfo elasticsearch servers
+  es_eqiad:
+    description: eqiad External Storage
+  etcd_eqiad:
+    description: eqiad Etcd
+  ganeti_codfw:
+    description: Ganeti virt cluster codfw
+  ganeti_eqiad:
+    description: Ganeti virt cluster eqiad
+  imagescaler_codfw:
+    description: codfw image scalers
+  imagescaler_eqiad:
+    description: eqiad image scalers
+  jobrunner_codfw:
+    description: codfw jobrunner application servers
+  jobrunner_eqiad:
+    description: eqiad jobrunner application servers
+  labsnfs_codfw:
+    description: codfw labsnfs server servers
+  labsnfs_eqiad:
+    description: eqiad labsnfs server servers
+  logstash_eqiad:
+    description: eqiad logstash
+  lvs:
+    description: LVS
+  lvs_codfw:
+    description: codfw LVS servers
+  lvs_eqiad:
+    description: eqiad LVS servers
+  lvs_esams:
+    description: esams LVS servers
+  lvs_ulsfo:
+    description: ulsfo LVS servers
+  maps_codfw:
+    description: codfw maps servers
+  maps_eqiad:
+    description: eqiad maps servers
+  memcached_codfw:
+    description: codfw memcached
+  memcached_eqiad:
+    description: eqiad memcached
+  misc_codfw:
+    description: codfw misc servers
+  misc_eqiad:
+    description: eqiad misc servers
+  misc_esams:
+    description: esams misc servers
+  misc_ulsfo:
+    description: ulsfo misc servers
+  mysql_codfw:
+    description: codfw mysql core
+  mysql_eqiad:
+    description: eqiad mysql core
+  ocg_eqiad:
+    description: offline content generator eqiad
+  openldap_corp_mirror_codfw:
+    description: Corp OIT LDAP Mirror codfw
+  openldap_corp_mirror_eqiad:
+    description: Corp OIT LDAP Mirror
+  parsoid_codfw:
+    description: codfw parsoid servers
+  parsoid_eqiad:
+    description: eqiad parsoid servers
+  pdus:
+    description: PDUs
+  rcstream_eqiad:
+    description: eqiad rcstream
+  redis_codfw:
+    description: codfw Redis
+  redis_eqiad:
+    description: eqiad Redis
+  restbase_codfw:
+    description: Restbase codfw
+  restbase_eqiad:
+    description: Restbase eqiad
+  routers:
+    description: IP routers
+  sca_eqiad:
+    description: Service Cluster A servers
+  scb_eqiad:
+    description: Service Cluster B servers
+  storage:
+    description: Storage equipment
+  swift:
+    description: swift servers
+  videoscaler_codfw:
+    description: codfw video scaler
+  videoscaler_eqiad:
+    description: eqiad video scaler
+  virt_codfw:
+    description: codfw virt servers
+  virt_eqiad:
+    description: eqiad virt servers
+  wdqs_eqiad:
+    description: Wikidata Query Service (eqiad)
+  zotero_codfw:
+    description: Zotero codfw
+  zotero_eqiad:
+    description: Zotero eqiad
+monitoring::shinken::daemons:
+  broker01:
+    address: 127.0.0.1
+    daemon_config:
+      manage_arbiters: 1
+      manage_sub_realms: 1
+    daemon_type: broker
+    modules:
+    - pickle-retention-broker
+  poller01:
+    address:
+      daemon_config:
+        manage_sub_realms: 0
+        max_workers: 0
+        min_workers: 0
+        polling_interval: 1
+        processes_by_worker: 256
+    daemon_type: poller
+  reactionner01:
+    address: 127.0.0.1
+    daemon_config:
+      manage_sub_realms: 0
+      max_workers: 0
+      min_workers: 0
+      polling_interval: 1
+      processes_by_worker: 256
+    daemon_type: reactionner
+  scheduler01:
+    address: 127.0.0.1
+    daemon_config:
+      weight: 1
+    daemon_type: scheduler
+    modules:
+    - pickle-retention-scheduler
+nagios_common::check::ganglia::config_dir: /etc/shinken/
+nagios_common::check::ganglia::group: shinken
+nagios_common::check::ganglia::owner: shinken
+nagios_common::commands::config_dir: /etc/shinken/
+nagios_common::commands::group: shinken
+nagios_common::commands::owner: shinken
+nagios_common::notification_commands::config_dir: /etc/shinken/
+nagios_common::notification_commands::group: shinken
+nagios_common::notification_commands::owner: shinken
+nagios_common::timeperiods::config_dir: /etc/shinken/
+nagios_common::timeperiods::group: shinken
+nagios_common::timeperiods::owner: shinken
+nagios_common::user_macros::config_dir: /etc/shinken/
+nagios_common::user_macros::group: shinken
+nagios_common::user_macros::owner: shinken
+openstack::version: mitaka
 passwords::root::extra_keys:
   alex: ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAICYxCqZkGys8gZB6Mq61Fw08CB7m1huxpnpII2ay3e0H
     krenair@gmail.com inspiron
+profile::openstack::main::version: mitaka
 puppetmaster: shinken-puppetmaster-01.shinken.eqiad.wmflabs
