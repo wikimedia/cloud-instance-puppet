@@ -1,8 +1,40 @@
+cache::nodes:
+  text:
+    eqiad:
+    - deployment-cache-text05.deployment-prep.eqiad.wmflabs
+cache::upload::nodes:
+  eqiad:
+  - deployment-cache-upload05.deployment-prep.eqiad.wmflabs
+deployment_server: phab-tin.phabricator.eqiad.wmflabs
 director_db_host: localhost
 director_db_name: director
 director_password: labspass
 director_user_name: root
+gerrit::jetty::db_host: 172.16.1.180
+gerrit::jetty::heap_limit: 1500m
+gerrit::jetty::java_home: /usr/lib/jvm/java-8-openjdk-amd64/jre
 gerrit::jetty::labs_ldap_object_class: inetOrgPerson
+gerrit::jetty::log_host: localhost
+gerrit::jetty::scap_deploy: false
+gerrit::jetty::use_prod_ldap: false
+gerrit::replica: false
+gerrit::server::backup: false
+gerrit::server::bacula: srv-gerrit-git
+gerrit::server::config: gerrit.config.erb
+gerrit::server::custom_ldap_base_dn: dc=wmftest,dc=net
+gerrit::server::custom_ldap_object_class: inetOrgPerson
+gerrit::server::custom_ldap_server: ldap://gerrit-test5.git.eqiad.wmflabs:1389
+gerrit::server::host: gerrit.git.wmflabs.org
+gerrit::server::master_host: gerrit-test5.git.eqiad.wmflabs
+gerrit::server::replica_hosts:
+- gerrit.git.wmflabs.org
+gerrit::server::rsync_data_dir: ''
+gerrit::server::rsync_dst_host: gerrit
+gerrit::server::rsync_src_host: gerrit
+gerrit::servers:
+- gerrit-test5.git.eqiad.wmflabs
+- gerrit.git.wmflabs.org
+gerrit::service::ipv4: 172.16.4.51
 icinga_api_password: 298af9c525f02e70
 icinga_ido_db_host: localhost
 icinga_ido_db_name: icinga
@@ -12,4 +44,57 @@ icingaweb_db_host: localhost
 icingaweb_db_name: icingaweb2
 icingaweb_password: labspass
 icingaweb_user_name: root
+logstash_host: localhost
+monitoring_hosts:
+- 127.0.0.1
+- 172.16.1.180
+nfs_mounts:
+  dumps: false
+  home: false
+  project: false
+  scratch: false
+passwords::gerrit2::extra_keys:
+  gerrit2: ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQDKfI5o6JD59/dYIy6rritqzXvwWsymy03k98pqFjiucs1t7BdomshtIUI0bigXDDEYttd5a5guMDFCpq/bRg8UdqyjNnKzCOEWP7GN2xrDlOxv83TUd8hOOWeBXG4hXh/EUbCkTUbypWNfyK93W7SFVHWvg/yjI6jrCS8CQTFK5vGnlKACme9hixUQTXVkkvbqvw5AP2i45YMJ9o48Ek7F5hPiTQ5y8+Ct+kD/42IsWBbSW3stoHv0bYXarks2Niej//g8VnVYH/3yrMRUzRJYtTBkgitG4FQtjlq64MRVSvBTKpGkeGrZa8rdlBfWauR39W3X4DeAoiiUrRMR0/cY1aZT6zTZgYW6PO16oUt9saXb4HZb4azc30QbbxcX+F2gttW95y3IFymvocJOq8xaAIQYlQzYX1c14PEpkG951SU8yUdI3z2MRJqdEF0wYHgw2H4ofL9yy8YyGSwj8Q6HI/ePSrCmg34p5HqBBcJd4ZGR2uNeCEYJxTThtYYBSPG1B1Lh2fNuY+kWEYNpqz7w6DAAtGFsmyr/J0NIETV/P94eQ8wdF1h4OC4iJTh7ylE640utqrfdP6/q80CKLC7uQk5RBDRaWF2rKrPl/hF3+Ip0XIxsFUomV2ookEEtDqSKK/r7QOkOxp6Zna9JfpnAKZRskW0XPgeERviQYuJrhw==
+    puppet@deployment-puppetmaster
+  paladox: ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQDKfI5o6JD59/dYIy6rritqzXvwWsymy03k98pqFjiucs1t7BdomshtIUI0bigXDDEYttd5a5guMDFCpq/bRg8UdqyjNnKzCOEWP7GN2xrDlOxv83TUd8hOOWeBXG4hXh/EUbCkTUbypWNfyK93W7SFVHWvg/yjI6jrCS8CQTFK5vGnlKACme9hixUQTXVkkvbqvw5AP2i45YMJ9o48Ek7F5hPiTQ5y8+Ct+kD/42IsWBbSW3stoHv0bYXarks2Niej//g8VnVYH/3yrMRUzRJYtTBkgitG4FQtjlq64MRVSvBTKpGkeGrZa8rdlBfWauR39W3X4DeAoiiUrRMR0/cY1aZT6zTZgYW6PO16oUt9saXb4HZb4azc30QbbxcX+F2gttW95y3IFymvocJOq8xaAIQYlQzYX1c14PEpkG951SU8yUdI3z2MRJqdEF0wYHgw2H4ofL9yy8YyGSwj8Q6HI/ePSrCmg34p5HqBBcJd4ZGR2uNeCEYJxTThtYYBSPG1B1Lh2fNuY+kWEYNpqz7w6DAAtGFsmyr/J0NIETV/P94eQ8wdF1h4OC4iJTh7ylE640utqrfdP6/q80CKLC7uQk5RBDRaWF2rKrPl/hF3+Ip0XIxsFUomV2ookEEtDqSKK/r7QOkOxp6Zna9JfpnAKZRskW0XPgeERviQYuJrhw==
+    puppet@deployment-puppetmaster
+passwords::gerrit::gerrit_db_pass: labstest
+profile::backup::ferm_directors: []
+profile::puppetdb::master: puppet-paladox.git.eqiad.wmflabs
+profile::puppetdb::slaves: []
+profile::puppetmaster::common::puppetdb_host: puppet-paladox.git.eqiad.wmflabs
+profile::rsyslog::kafka_shipper::kafka_brokers:
+- ''
+puppet_major_version: 4
+puppetdb::password::replication: puppetdb
+puppetdb::password::rw: puppetdb
 puppetdb_major_version: 6
+puppetmaster: puppet-paladox.git.eqiad.wmflabs
+puppetmaster::config::puppetdb_host: puppet-paladox.git.eqiad.wmflabs
+puppetmaster::config::use_puppetdb: true
+role::puppetmaster::puppetdb::shared_buffers: 0MB
+role::puppetmaster::standalone::autosign: true
+scap::deployment_server: phab-tin.phabricator.eqiad.wmflabs
+scap::keyholder_agents:
+  gerrit:
+    trusted_groups:
+    - project-%{::labsproject}
+    - gerrit
+    - gerrit2
+    - git
+    - wikidev
+    - root
+scap::server::keyholder_agents:
+  gerrit:
+    trusted_groups:
+    - project-%{::labsproject}
+    - gerrit
+    - gerrit2
+    - git
+    - wikidev
+    - root
+scap::wmflabs_master: phab-tin.phabricator.eqiad.wmflabs
+settings::storeconfigs_backend: puppetdb
+zuul::server::gearman_server: 127.0.0.1
+zuul::server::gerrit_server: 127.0.0.1
+zuul::server::gerrit_user: jenkins
