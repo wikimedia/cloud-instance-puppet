@@ -1,0 +1,7 @@
+cache::misc::nodes:
+  eqiad:
+  - 10.20.30.40
+  - 10.20.30.44
+otrs::otrs_database_host: localhost
+otrs::otrs_database_name: otrs
+standard::has_default_mail_relay: false
