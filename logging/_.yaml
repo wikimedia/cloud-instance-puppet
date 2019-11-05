@@ -73,6 +73,8 @@ role::kibana::auth_realm: elk7 upgrade testing
 role::kibana::auth_type: local
 role::kibana::serveradmin: root@logging.eqiad.wmflabs
 role::kibana::vhost: elk7-fe1.logging.wmflabs.org
+role::logstash::apifeatureusage::elastic_hosts:
+- fakesearch.logging.eqiad.wmflabs
 wikimedia_clusters:
   misc:
     description: Miscellaneous
