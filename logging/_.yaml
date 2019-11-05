@@ -69,12 +69,6 @@ profile::prometheus::statsd_exporter::mappings:
   match: logstash.rate.*.*.*
   name: logstash_${1}_events_total
 profile::tlsproxy::envoy::ensure: absent
-profile::tlsproxy::envoy::global_cert_name: fakekibana.logging.eqiad.wmflabs
-profile::tlsproxy::envoy::services:
-- port: 80
-  server_names:
-  - '*'
-profile::tlsproxy::envoy::sni_support: 'no'
 role::kibana::auth_file: /etc/logstash/htpasswd
 role::kibana::auth_realm: elk7 upgrade testing
 role::kibana::auth_type: local
