@@ -1,0 +1,5 @@
+nginx::variant: extras
+profile::wdqs::fetch_constraints: true
+role::labs::lvm::volume::mountat: /srv/data
+scap::deployment_server: deployment-tin.deployment-prep.eqiad.wmflabs
+wdqs::logstash_host: deployment-logstash2.deployment-prep.eqiad.wmflabs
