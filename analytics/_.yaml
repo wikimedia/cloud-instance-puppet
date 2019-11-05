@@ -1,4 +1,3 @@
-cluster: analytics_eqiad_wmflabs
 deployment_server: deployment-server.analytics.eqiad.wmflabs
 hadoop_clusters:
   analytics-hadoop-labs:
