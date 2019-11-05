@@ -1,10 +1,37 @@
 acmechief_host: deployment-acme-chief03.deployment-prep.eqiad.wmflabs
+apt::use_experimental: true
+aptly::group: wikidev
+aptly::manage_nginx: false
+aptly::owner: jenkins-deploy
+beta::syncsiteresources::user: www-data
+cache::misc::nodes:
+  eqiad:
+  - deployment-phab01.deployment-prep.eqiad.wmflabs
+classes:
+- apt::unattendedupgrades
+- role::aptly::client
+- role::prometheus::node_exporter
+confd::srv_dns: ''
+conftool::hosts: []
+conftool::password: a_secret
 cumin_masters:
 - 172.16.1.135
 - 172.16.5.1
 - 172.16.6.176
 - 172.16.4.46
 - 172.16.6.133
+elasticsearch::cluster_hosts:
+- deployment-elastic05.deployment-prep.eqiad.wmflabs
+- deployment-elastic06.deployment-prep.eqiad.wmflabs
+- deployment-elastic07.deployment-prep.eqiad.wmflabs
+- deployment-elastic08.deployment-prep.eqiad.wmflabs
+etcd::auth::common::root_password: secret
+etcd::use_ssl: true
+etcd_client_srv_domain: ''
+etcd_host: deployment-etcd-01.deployment-prep.eqiad.wmflabs
+etcd_port: 2379
+eventlogging_host: 10.68.18.111
+eventlogging_statsd_host: labmon1001.eqiad.wmnet
 http_proxy: ''
 kafka_clusters:
   jumbo-deployment-prep:
@@ -45,7 +72,44 @@ kafka_clusters:
     zookeeper_cluster_name: main-deployment-prep
 kafka_message_max_bytes: 4194304
 keyholder::require_encrypted_keys: 'no'
+mediawiki::redis_servers::codfw: []
+mediawiki::users::web: www-data
+mount_nfs: false
+ores::redis::cache_maxmemory: 512M
+ores::redis::queue_maxmemory: 256M
+ores::web::graphite_server: labmon1001.eqiad.wmnet
+parsoid::mwapi_proxy: ''
+passwords::root::extra_keys:
+  alex: ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAICYxCqZkGys8gZB6Mq61Fw08CB7m1huxpnpII2ay3e0H
+    krenair@gmail.com inspiron
+  bd808: ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDb8nsxA3thqd87nLu+1mA0Jc1KY90t5qW7N+jRQksc4NLzlFqBTrld+Qm2FRVbLm37HZ9TRBZb2nuTYJIZhkNU7rRPEKs3cIUbh1pB7BbYv0aJ3F0qBD6UtHqOUIJhqVNYJ/ssobzFh2QrcrOM3eS8PrIPtL/CQSUmKmUjG8zhCocAiQZDFeIQLSyGyCWVrRg14SPjED0+wIQTGoTtCabL4B5AlLcTf2L5ztDUtaoXDObUpDJ5Tw6VUUzDoUjV+Y5AtxK4erwLRHeFEcSzmWWl0Sruhnp/TzaF4vGijl6Wcyi2O9TClBhGmp7gTl4CtMj8MDDm+7NO3dQmQMseded1
+    bd808+labs@wmf-bd808-mbp01.local
+  hashar: ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDD4ubnKSlwi8C1V1JraoztiIae79gfD3s+n9l2EVNkgA6R/kcnJqi/2/oBkUaX1CpOLLWoj7TAQfNAnEt+O6HyQvNpJ8taA1RcssNwek+hDevg+YthBEQRpMhLIhC8WuW2fytc+ELQ903WL2+MKzeni5qH22LLSILkqYSHsb/aViE1JUo59PFLG26mcEluqpm8MogFCqYuFbfsM7RLzSTTZwHPhoKTpb7lPHKrdqfQP4q18SjcrRRf2HkkknF5iDRQv0ngHLAXG5o6H1iPVrDDc1lNY98eBYBwNlcSb73LQIvKDXvbLnpZZDExS6XJoZqHpyQPMtoNWHyJ2EN3RW7l
+    hashar@postwater_labs
+  mobrovac: ssh-rsa AAAAB3NzaC1yc2EAAAABIwAAAQEAr04C1g3grQJRwhOyrAic/xzW+2lxlxwjdTIY12HJs6aBvKTeUhwMLTxSMQ0nsFacnCcdTU1YcDYn0ypXxpd/v62uX4nbnw3goYSgKysmYlrHiQ+87GbQnBSe/j/0SvAF+oV9bB4EKGpGDK0hokfNKVzTpI2+0IbEAHK+Ag7+yIGYwWshLeoj1rTSzQCyFb1ELaXPt1OyAq37EYa+D9INA2aP4qHWHNSrAeG1FtJ3M4QDOIB/vB1UYE5i+XYeuugXlZzHXEkL5M1KbI5utPcBjpfncAmPGDLuiUKuBnDo85V75xpTmHQb485M4K1ZnqJ9XKnZT3NWDW2Fo+lvKU7VTw==
+    doorman@istria-wifi.irisa.fr
+  twentyafterfour: ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDPe9i/PI48Xk3BwCBSJ3L/o4n8noRBEFrINAPLVw4SDPmMOgPu5/HyvdxWkS47li2PQnDx4EobYE4WErxdQ0nB/Fe43ZzWEFQ6RvWuuPAxUwEFcGhraDHFFQc/TLh7adtNA247jUhLCQN/O3Nb6Qq1RPuAZgF59UuWKPNwnSOCOyLV0zHvqhjUkWmDcCI7sln1Kbv+JiEKBrVyokpv18pgCgyKL54UvFRbVD/aU7qu1DyJCFZ0GTitqFX0OMHjEyCo2bGPFUAHBkbKn/lsNz4hXNjF9iorxBvl1ZXLCRMkdRJBA6xGgLGWPXBQOXbUTc+9ow05KH0kHmQu5lXez7CZ
+    twentyafterfour@wikiafterfour
+phabricator::mysql_admin_pass: phabricator
+phabricator::mysql_admin_user: root
+phabricator::vcs::address::v4:
+- 10.68.18.216
+phabricator::vcs::listen_addresses:
+- 10.68.18.216
 phabricator_active_server: deployment-phab01.deployment-prep.eqiad.wmflabs
+phabricator_active_server_fqdn: deployment-phab01.deployment-prep.eqiad.wmflabs
+phabricator_admin_pass: phabricator
+phabricator_admin_user: root
+phabricator_altdomain: beta-phab.wmflabs.org
+phabricator_app_pass: phabricator
+phabricator_app_user: root
+phabricator_daemons_pass: phabricator
+phabricator_daemons_user: root
+phabricator_diffusion_ssh_host: beta-phab.wmflabs.org
+phabricator_domain: beta-phab.wmflabs.org
+phabricator_servers:
+- deployment-phab01.deployment-prep.eqiad.wmflabs
+profile::backup::ferm_directors: []
 profile::base::enable_kafka_shipping: true
 profile::cache::kafka::certificate::certificate_name: varnishkafka-deployment-prep
 profile::cache::kafka::certificate::ssl_key_password: qwerty
@@ -54,6 +118,9 @@ profile::cache::kafka::eventlogging::ssl_enabled: true
 profile::cache::kafka::statsv::kafka_cluster_name: main-deployment-prep
 profile::cache::kafka::webrequest::kafka_cluster_name: jumbo-deployment-prep
 profile::cache::kafka::webrequest::ssl_enabled: true
+profile::cassandra::rack: rack1
+profile::conftool::client::protocol: https
+profile::conftool::master::sync_dir: /etc/conftool/data-local
 profile::cpjobqueue::jobrunner_host: http://deployment-jobrunner03.deployment-prep.eqiad.wmflabs:9006
 profile::cpjobqueue::redis_path: /var/run/nutcracker/redis_eqiad.sock
 profile::cpjobqueue::videoscaler_host: http://deployment-jobrunner03.deployment-prep.eqiad.wmflabs:9006
@@ -68,8 +135,24 @@ profile::logstash::collector::input_kafka_ssl_truststore_password: qwerty
 profile::mail::mx::dkim_domain: beta.wmflabs.org
 profile::maps::apps::tilerator_ncpu_ratio: 0.3
 profile::mediawiki::install_hhvm: false
+profile::mediawiki::mcrouter_wancache::has_ssl: false
 profile::mediawiki::php::monitoring::password: notarealpassword
 profile::mediawiki::php::monitoring::salt: 9sBweWh0J
+profile::mediawiki::php::restarts::ensure: absent
+profile::mediawiki::php::restarts::opcache_limit: 100
+profile::nutcracker::memcached_pools: []
+profile::nutcracker::monitor_port: 0
+profile::nutcracker::redis_pools:
+  redis:
+    listen: /var/run/nutcracker/redis_chgprop.sock 0666
+    server_map:
+      cp-1:
+        host: 10.68.23.169
+        port: 6378
+      cp-2:
+        host: 10.68.23.169
+        port: 6379
+    server_retry_timeout: 10000
 profile::openstack::eqiad1::cumin::project_masters:
 - 172.16.5.1
 - 172.16.6.176
@@ -84,16 +167,45 @@ profile::openstack::main::cumin::project_pub_key: ssh-ed25519 AAAAC3NzaC1lZDI1NT
   root@deployment-cumin
 profile::openstack::main::cumin::puppetdb_host: deployment-puppetdb02.deployment-prep.eqiad.wmflabs
 profile::openstack::main::region: eqiad1-r
+profile::ores::redis::client_hosts:
+- deployment-ores01.deployment-prep.eqiad.wmflabs
+profile::ores::redis::password: areallysecretpassword
+profile::ores::redisproxy::server: deployment-ores01.deployment-prep.eqiad.wmflabs
+profile::ores::web::celery_workers: 7
+profile::ores::web::extra_config:
+  extractors:
+    enwiki_api:
+      host: https://en.wikipedia.beta.wmflabs.org
+profile::ores::web::graphite_server: labmon1001.eqiad.wmnet
+profile::ores::web::poolcounter_nodes:
+- deployment-poolcounter05:7531
+profile::ores::web::redis_host: deployment-ores01.deployment-prep.eqiad.wmflabs
+profile::ores::web::redis_password: areallysecretpassword
 profile::prometheus::statsd_exporter::mappings: []
 profile::puppetdb::extra_authorized_hosts: deployment-cumin02.deployment-prep.eqiad.wmflabs
 profile::puppetdb::master: deployment-puppetdb02.deployment-prep.eqiad.wmflabs
 profile::puppetdb::slaves: []
 profile::puppetmaster::common::puppetdb_host: deployment-puppetdb02.deployment-prep.eqiad.wmflabs
+profile::restbase::salt_key: secretkey
 profile::rsyslog::kafka_shipper::kafka_brokers:
 - deployment-logstash2.deployment-prep.eqiad.wmflabs:9093
+profile::services_proxy::ensure: absent
+profile::services_proxy::services:
+  dummy:
+    hostname: dummy.example.net
+    localport: 9999
+    port: 9999
+    scheme: https
+    timeout: 600
 puppetdb_host: deployment-puppetdb02.deployment-prep.eqiad.wmflabs
+puppetmaster: deployment-puppetmaster03.deployment-prep.eqiad.wmflabs
+puppetmaster::config::puppetdb_host: deployment-puppetdb01.deployment-prep.eqiad.wmflabs
+puppetmaster::config::use_puppetdb: true
 puppetmaster::geoip::fetch_private: false
 puppetmaster::geoip::use_proxy: false
+puppetmaster::puppetdb::master: deployment-puppetdb01.deployment-prep.eqiad.wmflabs
+puppetmaster::puppetdb::slaves: []
+pybal::configuration::config: etcd
 redis::shards:
   sessions:
     eqiad:
@@ -109,6 +221,11 @@ redis::shards:
       shard04:
         host: 172.16.5.2
         port: 6379
+restbase::deploy::public_key_file: puppet:///private/ssh/tin/servicedeploy_rsa.pub
+restbase::deploy::scap::public_key_file: puppet:///private/ssh/tin/servicedeploy_rsa.pub
+restbase::deployment: scap
+role::aptly::client::servername: deployment-deploy01.deployment-prep.eqiad.wmflabs
+role::cache::text::cluster: cache_text
 role::deployment::repo_config:
   abacist/abacist:
     upstream: https://gerrit.wikimedia.org/r/analytics/abacist
@@ -217,7 +334,13 @@ role::deployment::repo_config:
     upstream: https://gerrit.wikimedia.org/r/mediawiki/services/zotero/translation-server
   zotero/translators:
     upstream: https://gerrit.wikimedia.org/r/mediawiki/services/zotero/translators
+role::deployment::services::key_fingerprint: e6:d0:61:5e:e5:c7:5d:2d:3e:8e:c8:a5:eb:f3:c2:63
+role::labs::nfsclient:mode: hard
 role::logging::mediawiki::udp2log::rotate: 15
+role::mail::mx::verp_bounce_post_url: http://deployment.wikimedia.beta.wmflabs.org/w/api.php
+role::mail::mx::verp_domains:
+- beta.wmflabs.org
+role::mail::mx::verp_post_connect_server: deployment.wikimedia.beta.wmflabs.org
 role::ocg::redis_servers:
   deployment-pdf01:
     host: deployment-pdf01.deployment-prep.eqiad.wmflabs
@@ -232,6 +355,7 @@ role::phabricator::labs::settings:
     port: 22281
     protocol: http
     type: admin
+role::puppetmaster::puppetdb::shared_buffers: 768MB
 scap::keyholder_agents:
   analytics_deploy:
     trusted_groups:
@@ -338,7 +462,11 @@ swift::proxy::shard_container_list:
 - wikipedia-zh-local-transcoded
 swift::proxy::statsd_host: localhost
 swift::storage::statsd_host: localhost
+thumbor::swift::swift_host: http://deployment-ms-fe03.deployment-prep.eqiad.wmflabs
+use_dnsmasq: false
 zookeeper_clusters:
   main-deployment-prep:
     hosts:
       deployment-zookeeper02.deployment-prep.eqiad.wmflabs: '2'
+zookeeper_hosts:
+  deployment-zookeeper02.eqiad.wmflabs: '2'
