@@ -38,6 +38,7 @@ profile::elasticsearch::common_settings:
   short_cluster_name: elk7-logstash-eqiad
   unicast_hosts:
   - elk7-fe1.logging.eqiad.wmflabs
+profile::elasticsearch::config_version: 7
 profile::elasticsearch::dc_settings:
   cluster_hosts:
   - elk7-fe1.logging.eqiad.wmflabs
@@ -55,7 +56,7 @@ profile::elasticsearch::instances:
     transport_tcp_port: 9300
 profile::elasticsearch::rack: ''
 profile::elasticsearch::row: ''
-profile::elasticsearch::version: '5.6'
+profile::elasticsearch::version: '7.4'
 profile::logstash::collector::input_kafka_ssl_truststore_password: secret
 profile::prometheus::statsd_exporter::mappings:
 - labels:
