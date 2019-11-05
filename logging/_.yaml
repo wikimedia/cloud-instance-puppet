@@ -68,7 +68,7 @@ profile::prometheus::statsd_exporter::mappings:
     level: $3
   match: logstash.rate.*.*.*
   name: logstash_${1}_events_total
-profile::tlsproxy::envoy::ensure: present
+profile::tlsproxy::envoy::ensure: absent
 profile::tlsproxy::envoy::global_cert_name: fakekibana.logging.eqiad.wmflabs
 profile::tlsproxy::envoy::services:
 - port: 80
