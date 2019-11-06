@@ -1,1 +1,6 @@
 mount_nfs: false
+profile::toolforge::active_proxy_host: toolsbeta-proxy-1.toolsbeta.eqiad.wmflabs
+profile::toolforge::proxies:
+- toolsbeta-proxy-1.toolsbeta.eqiad.wmflabs
+profile::toolforge::proxy::do_https: false
+profile::toolforge::web_domain: toolsbeta.wmflabs.org
