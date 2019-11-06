@@ -83,6 +83,9 @@ profile::toolforge::grid::base::project_path: /data/project
 profile::toolforge::grid::base::sge_root: /var/lib/gridengine
 profile::toolforge::grid::base::sysdir: /data/project/.system_sge
 profile::toolforge::mailrelay::external_hostname: mail.tools.wmflabs.org
+profile::toolforge::proxies:
+- toolsbeta-proxy-1.toolsbeta.eqiad.wmflabs
+- toolsbeta-proxy-2.toolsbeta.eqiad.wmflabs
 profile::toolforge::services::active_node: tools-services-01.eqiad.wmflabs
 profile::toolforge::services::updatetools_enabled: false
 prometheus_nodes:
