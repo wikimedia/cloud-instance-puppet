@@ -1,0 +1,7 @@
+profile::toolforge::k8s::apiserver_fqdn: k8s.tools.eqiad1.wikimedia.cloud
+profile::toolforge::k8s::etcd_nodes:
+- tools-k8s-etcd-4.tools.eqiad.wmflabs
+- tools-k8s-etcd-5.tools.eqiad.wmflabs
+- tools-k8s-etcd-6.tools.eqiad.wmflabs
+profile::toolforge::k8s::node_token: m7uakr.ern5lmlpv7gnkacw
+swap_partition: false
