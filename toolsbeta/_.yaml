@@ -98,7 +98,8 @@ ssh::server::disable_nist_kex: false
 ssh::server::enable_hba: true
 ssh::server::explicit_macs: false
 toollabs::checker_hosts: []
-toollabs::proxy::proxies: []
+toollabs::proxy::proxies:
+- toolsbeta-proxy-1.toolsbeta.eqiad.wmflabs
 toollabs::proxy::ssl_certificate_name: false
 toollabs::proxy::ssl_install_certificate: false
 toollabs::proxy::web_domain: toolsbeta.wmflabs.org
