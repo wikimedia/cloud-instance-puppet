@@ -1,3 +1,4 @@
+elasticsearch::instance::version: '7'
 elasticsearch::java_package: openjdk-11-jdk
 kafka_clusters:
   jumbo:
