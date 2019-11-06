@@ -1,5 +1,5 @@
 active_cronrunner: toolsbeta-cron-01.toolsbeta.eqiad.wmflabs
-active_proxy_host: toolsbeta-proxy-01
+active_proxy_host: toolsbeta-proxy-1
 active_redis: tools-redis-1001.tools.eqiad.wmflabs
 docker::builder_host: tools-docker-builder-06.tools.eqiad.wmflabs
 docker::password: not a real password
@@ -101,4 +101,4 @@ toollabs::checker_hosts: []
 toollabs::proxy::proxies: []
 toollabs::proxy::ssl_certificate_name: false
 toollabs::proxy::ssl_install_certificate: false
-toollabs::proxy::web_domain: tools-beta.wmflabs.org
+toollabs::proxy::web_domain: toolsbeta.wmflabs.org
