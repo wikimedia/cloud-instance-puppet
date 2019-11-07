@@ -1,1 +1,1 @@
-[]
+- role::wmcs::toolforge::k8s::haproxy
