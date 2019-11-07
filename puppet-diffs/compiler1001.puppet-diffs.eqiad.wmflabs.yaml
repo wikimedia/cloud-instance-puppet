@@ -1,11 +1,4 @@
-base::resolving::labs_additional_domains: []
-etcd::peers_list: '%{::hostname}=http://127.0.0.1:2380'
-etcd::use_ssl: true
-profile::puppetdb::database::shared_buffers: 2048MB
 profile::puppetdb::filter_job_id: false
 profile::puppetdb::master: compiler1001.puppet-diffs.eqiad.wmflabs
-profile::puppetdb::slaves:
-- none
-puppetdb::password::replication: 8pQJEtt4JPJjNFIg
-puppetdb::password::rw: MhzXyxJyxUdzhvaU
-puppetdb_major_version: 4
+puppetdb::password::replication: YOD12JhSKce1Da9O
+puppetdb::password::rw: XQqNuK72ExPs9OIs
