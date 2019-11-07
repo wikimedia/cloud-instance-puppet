@@ -1,10 +1,4 @@
-base::resolving::labs_additional_domains:
-- eqiad.wmflabs
-- wikimedia.org
-- eqiad.wmnet
-- codfw.wmnet
-- esams.wmnet
-- ulsfo.wmnet eqsin.wmnet
+base::resolving::labs_additional_domains: []
 etcd::peers_list: '%{::hostname}=http://127.0.0.1:2380'
 etcd::use_ssl: true
 profile::puppetdb::database::shared_buffers: 2048MB
