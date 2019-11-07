@@ -171,6 +171,7 @@ role::phabricator::labs::settings:
     type: admin
 role::puppetmaster::puppetdb::shared_buffers: 0MB
 role::puppetmaster::standalone::autosign: true
+rsync::server::wrap_with_stunnel: false
 scap::deployment_server: phab-tin.phabricator.eqiad.wmflabs
 scap::dsh::groups: {}
 scap::keyholder_agents:
