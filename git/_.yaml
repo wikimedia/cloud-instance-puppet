@@ -11,7 +11,7 @@ director_db_name: director
 director_password: labspass
 director_user_name: root
 gerrit::jetty::db_host: 172.16.1.180
-gerrit::jetty::heap_limit: 1500m
+gerrit::jetty::heap_limit: 2g
 gerrit::jetty::java_home: /usr/lib/jvm/java-8-openjdk-amd64/jre
 gerrit::jetty::labs_ldap_object_class: inetOrgPerson
 gerrit::jetty::log_host: localhost
@@ -23,7 +23,7 @@ gerrit::server::bacula: srv-gerrit-git
 gerrit::server::config: gerrit.config.erb
 gerrit::server::custom_ldap_base_dn: dc=wmftest,dc=net
 gerrit::server::custom_ldap_object_class: inetOrgPerson
-gerrit::server::custom_ldap_server: ldap://gerrit-test6.git.eqiad.wmflabs:1389
+gerrit::server::custom_ldap_server: ldap://gerrit-test7.git.eqiad.wmflabs:1389
 gerrit::server::host: gerrit.git.wmflabs.org
 gerrit::server::master_host: gerrit-test6.git.eqiad.wmflabs
 gerrit::server::replica_hosts:
@@ -32,9 +32,9 @@ gerrit::server::rsync_data_dir: ''
 gerrit::server::rsync_dst_host: gerrit
 gerrit::server::rsync_src_host: gerrit
 gerrit::servers:
-- gerrit-test6.git.eqiad.wmflabs
+- gerrit-test7.git.eqiad.wmflabs
 - gerrit.git.wmflabs.org
-gerrit::service::ipv4: 172.16.0.114
+gerrit::service::ipv4: 172.16.0.84
 icinga_api_password: 298af9c525f02e70
 icinga_ido_db_host: localhost
 icinga_ido_db_name: icinga
