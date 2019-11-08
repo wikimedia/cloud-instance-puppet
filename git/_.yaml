@@ -32,7 +32,7 @@ gerrit::server::rsync_data_dir: ''
 gerrit::server::rsync_dst_host: gerrit
 gerrit::server::rsync_src_host: gerrit
 gerrit::servers:
-- gerrit-test5.git.eqiad.wmflabs
+- gerrit-test6.git.eqiad.wmflabs
 - gerrit.git.wmflabs.org
 gerrit::service::ipv4: 172.16.0.114
 icinga_api_password: 298af9c525f02e70
