@@ -23,9 +23,9 @@ gerrit::server::bacula: srv-gerrit-git
 gerrit::server::config: gerrit.config.erb
 gerrit::server::custom_ldap_base_dn: dc=wmftest,dc=net
 gerrit::server::custom_ldap_object_class: inetOrgPerson
-gerrit::server::custom_ldap_server: ldap://gerrit-test5.git.eqiad.wmflabs:1389
+gerrit::server::custom_ldap_server: ldap://gerrit-test6.git.eqiad.wmflabs:1389
 gerrit::server::host: gerrit.git.wmflabs.org
-gerrit::server::master_host: gerrit-test5.git.eqiad.wmflabs
+gerrit::server::master_host: gerrit-test6.git.eqiad.wmflabs
 gerrit::server::replica_hosts:
 - gerrit.git.wmflabs.org
 gerrit::server::rsync_data_dir: ''
@@ -34,7 +34,7 @@ gerrit::server::rsync_src_host: gerrit
 gerrit::servers:
 - gerrit-test5.git.eqiad.wmflabs
 - gerrit.git.wmflabs.org
-gerrit::service::ipv4: 172.16.4.51
+gerrit::service::ipv4: 172.16.0.114
 icinga_api_password: 298af9c525f02e70
 icinga_ido_db_host: localhost
 icinga_ido_db_name: icinga
