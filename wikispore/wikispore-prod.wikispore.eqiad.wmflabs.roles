@@ -1,2 +1,2 @@
-puppetmaster: wikispore-prod.wikispore.eqiad.wmflabs
-role::puppetmaster::standalone::autosign: 'true'
+- role::labs::mediawiki_vagrant
+- role::labs::lvm::srv
