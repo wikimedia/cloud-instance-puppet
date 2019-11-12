@@ -1,1 +1,1 @@
-profile::puppetdb::master: '%{facts.fqdn}'
+{}
