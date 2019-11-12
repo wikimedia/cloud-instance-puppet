@@ -1,2 +1,1 @@
-profile::query_service::log_dir: /var/log/
 profile::rsyslog::kafka_shipper::kafka_brokers: []
