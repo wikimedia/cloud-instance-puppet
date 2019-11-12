@@ -29,6 +29,21 @@ logstash::heap_memory: 1g
 logstash::java_package: openjdk-11-jdk
 logstash::logstash_version: '7'
 profile::elasticsearch::base_data_dir: /srv/elasticsearch
+profile::elasticsearch::common_settings:
+  auto_create_index: +logstash-*,-*
+  cluster_hosts:
+  - elk7-fe1.logging.eqiad.wmflabs
+  - elk7-be1.logging.eqiad.wmflabs
+  cluster_name: elk7-logstash-eqiad
+  expected_nodes: 1
+  heap_memory: 2G
+  minimum_master_nodes: 1
+  recover_after_nodes: 1
+  recover_after_time: 1m
+  send_logs_to_logstash: false
+  short_cluster_name: elk7-logstash-eqiad
+  unicast_hosts:
+  - elk7-be1.logging.eqiad.wmflabs
 profile::elasticsearch::config_version: '7'
 profile::elasticsearch::dc_settings:
   cluster_hosts:
