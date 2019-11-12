@@ -1,4 +1,1 @@
-profile::puppetdb::filter_job_id: false
-profile::puppetdb::master: compiler1001.puppet-diffs.eqiad.wmflabs
-puppetdb::password::replication: YOD12JhSKce1Da9O
-puppetdb::password::rw: XQqNuK72ExPs9OIs
+{}
