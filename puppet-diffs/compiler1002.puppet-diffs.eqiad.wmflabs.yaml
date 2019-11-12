@@ -1,1 +1,1 @@
-profile::puppetdb::master: compiler1002.puppet-diffs.eqiad.wmflabs
+profile::puppetdb::master: '%{facts.fqdn}'
