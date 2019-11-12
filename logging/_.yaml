@@ -48,6 +48,7 @@ profile::elasticsearch::config_version: '7'
 profile::elasticsearch::dc_settings:
   cluster_hosts:
   - elk7-fe1.logging.eqiad.wmflabs
+  - elk7-be1.logging.eqiad.wmflabs
   cluster_name: elk7-logstash-eqiad
   unicast_hosts:
   - elk7-be1.logging.eqiad.wmflabs
