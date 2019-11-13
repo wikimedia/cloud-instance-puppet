@@ -1,1 +1,1 @@
-role::labs::nfsclient::lookupcache: all
+- role::toollabs::k8s::worker
