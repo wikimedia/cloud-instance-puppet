@@ -1,1 +1,1 @@
-profile::openstack::main::clientlib::version: ocata
+- role::wmcs::toolforge::clush::master
