@@ -1,5 +1,1 @@
-profile::tlsproxy::envoy::ensure: absent
-profile::tlsproxy::envoy::global_cert_name: restbase.discovery.wmnet
-profile::tlsproxy::envoy::services: []
-profile::tlsproxy::envoy::sni_support: 'no'
-profile::tlsproxy::envoy::tls_port: 1024
+- role::restbase::production
