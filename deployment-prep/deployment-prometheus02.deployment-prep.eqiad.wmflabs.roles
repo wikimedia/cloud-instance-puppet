@@ -1,2 +1,2 @@
-prometheus::server::prometheus_v2: true
-prometheus::server::storage_retention: 730h
+- role::labs::lvm::srv
+- role::prometheus::beta
