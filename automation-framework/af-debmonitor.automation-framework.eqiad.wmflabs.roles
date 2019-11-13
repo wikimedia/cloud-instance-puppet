@@ -1,7 +1,2 @@
-profile::debmonitor::server::django_mysql_db_host: localhost
-profile::debmonitor::server::django_mysql_db_password: shd72kd2js72
-profile::debmonitor::server::django_secret_key: ekxb5k4#y2et%x@4iqf=m5nx(8)y3q*u_(mg-&6ydr5&evj3cx
-profile::debmonitor::server::internal_server_name: af-debmonitor.automation-framework.eqiad.wmflabs
-profile::debmonitor::server::public_server_name: af-debmonitor.wmflabs.org
-puppetmaster: af-puppetmaster02.automation-framework.eqiad.wmflabs
-scap::deployment_server: af-puppetmaster02.automation-framework.eqiad.wmflabs
+- role::debmonitor::server
+- profile::debmonitor::client
