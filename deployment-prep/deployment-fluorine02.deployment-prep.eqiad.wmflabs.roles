@@ -1,1 +1,2 @@
-puppetmaster: deployment-puppetmaster03.deployment-prep.eqiad.wmflabs
+- role::logging::mediawiki::udp2log
+- role::labs::lvm::srv
