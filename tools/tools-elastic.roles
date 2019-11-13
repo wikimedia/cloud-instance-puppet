@@ -1,2 +1,2 @@
-mount_nfs: false
-profile::rsyslog::kafka_shipper::kafka_brokers: []
+- role::toollabs::elasticsearch
+- role::labs::lvm::srv

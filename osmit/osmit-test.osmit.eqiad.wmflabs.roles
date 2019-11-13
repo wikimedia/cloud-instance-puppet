@@ -1,1 +1,2 @@
-{}
+- role::network::monitor
+- role::postgres::common

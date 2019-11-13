@@ -1,1 +1,2 @@
-{}
+- role::labs::ores::staging
+- role::poolcounter::server

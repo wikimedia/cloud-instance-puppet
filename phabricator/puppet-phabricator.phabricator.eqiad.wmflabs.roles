@@ -1,5 +1,1 @@
-puppetdb_major_version: 4
-puppetmaster: puppetmaster.cloudinfra.wmflabs.org
-role::puppetmaster::standalone::allow_from:
-- 172.16.0.0/21
-role::puppetmaster::standalone::autosign: 'true'
+- role::puppetmaster::standalone

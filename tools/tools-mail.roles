@@ -1,1 +1,1 @@
-profile::toolforge::base::is_mail_relay: true
+- role::wmcs::toolforge::mailrelay

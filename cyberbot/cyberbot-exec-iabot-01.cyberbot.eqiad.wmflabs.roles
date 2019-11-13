@@ -1,1 +1,2 @@
-{}
+- role::cyberbot::exec
+- role::cyberbot::db

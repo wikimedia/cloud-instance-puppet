@@ -1,1 +1,2 @@
-role::labs::lvm::mnt::mount_point: /var/lib/docker
+- role::labs::lvm::mnt
+- role::toollabs::base

@@ -1,2 +1,1 @@
-http_proxy: ''
-puppetmaster: traffic-puppetmaster.traffic.eqiad.wmflabs
+- role::rpkivalidator

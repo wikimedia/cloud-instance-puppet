@@ -1,1 +1,2 @@
-{}
+- profile::swift::storage::labs
+- role::swift::storage

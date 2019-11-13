@@ -1,1 +1,1 @@
-profile::openstack::main::clientlib::version: newton
+- role::wmcs::toolforge::clush::master

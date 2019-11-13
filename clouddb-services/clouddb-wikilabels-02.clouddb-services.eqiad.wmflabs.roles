@@ -1,1 +1,2 @@
-profile::wmcs::services::postgres::primary: clouddb-wikilabels-01.clouddb-services.eqiad.wmflabs
+- role::labs::lvm::srv
+- role::wmcs::db::wikilabels_secondary

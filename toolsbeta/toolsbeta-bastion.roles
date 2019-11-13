@@ -1,1 +1,2 @@
-{}
+- role::toollabs::bastion
+- role::toollabs::k8s::bastion

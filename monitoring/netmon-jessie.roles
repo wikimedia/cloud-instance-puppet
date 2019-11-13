@@ -1,2 +1,5 @@
-puppetmaster: netmon-jessie.monitoring.eqiad.wmflabs
-scap::deployment_server: netmon-jessie.monitoring.eqiad.wmflabs
+- role::rancid::server
+- role::librenms
+- role::servermon::wmf
+- role::smokeping
+- role::puppetmaster::standalone

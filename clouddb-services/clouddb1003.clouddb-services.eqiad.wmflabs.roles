@@ -1,1 +1,1 @@
-{}
+- role::wmcs::db::osmdb_primary

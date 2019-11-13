@@ -1,1 +1,3 @@
-{}
+- role::labs::quarry::database
+- role::labs::quarry::redis
+- role::labs::lvm::srv

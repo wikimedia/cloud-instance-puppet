@@ -1,1 +1,3 @@
-{}
+- striker::build
+- profile::mediawiki::deployment::server
+- profile::keyholder::server

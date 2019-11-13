@@ -1,1 +1,2 @@
-{}
+- role::simplelamp
+- role::labs::lvm::srv

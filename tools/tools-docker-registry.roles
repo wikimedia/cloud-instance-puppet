@@ -1,4 +1,1 @@
-profile::ldap::client::labs::client_stack: sssd
-profile::toolforge::docker::registry::active_node: tools-docker-registry-03.tools.eqiad.wmflabs
-profile::toolforge::docker::registry::standby_node: tools-docker-registry-04.tools.eqiad.wmflabs
-sudo_flavor: sudo
+- role::wmcs::toolforge::docker::registry

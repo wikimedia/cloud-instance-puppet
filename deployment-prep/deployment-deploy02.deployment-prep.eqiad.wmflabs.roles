@@ -1,1 +1,5 @@
-{}
+- role::ci::slave::labs::common
+- role::aptly::server
+- role::labs::lvm::srv
+- role::deployment_server
+- role::beta::deploymentserver

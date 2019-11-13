@@ -1,5 +1,1 @@
-profile::mail::smarthost::cert_name: mx-out02.wmflabs.org
-profile::mail::smarthost::cert_subjects: mx-out02.wmflabs.org
-profile::mail::smarthost::exim_primary_hostname: mx-out02.wmflabs.org
-profile::standard::has_default_mail_relay: false
-standard::has_default_mail_relay: false
+- role::mail::smarthost::wmcs

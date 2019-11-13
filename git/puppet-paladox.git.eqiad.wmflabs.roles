@@ -1,12 +1,1 @@
-profile::puppetdb::database::shared_buffers: 768MB
-profile::puppetdb::master: puppet-paladox.git.eqiad.wmflabs
-profile::puppetmaster::common::puppetdb_host: puppet-paladox.git.eqiad.wmflabs
-profile::puppetmaster::common::storeconfigs: puppetdb
-puppetdb::password::replication: ''
-puppetdb::password::rw: puppetdb
-puppetdb_major_version: 4
-puppetmaster: puppetmaster.cloudinfra.wmflabs.org
-puppetmaster::servers:
-  puppet-paladox.git.eqiad.wmflabs:
-  - puppet-paladox.git.eqiad.wmflabs
-role::puppetmaster::standalone::autosign: 'true'
+- role::puppetmaster::standalone

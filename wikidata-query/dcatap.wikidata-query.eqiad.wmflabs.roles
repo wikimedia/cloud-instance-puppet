@@ -1,1 +1,2 @@
-profile::rsyslog::kafka_shipper::kafka_brokers: []
+- role::labs::lvm::srv
+- role::wdqs::labs

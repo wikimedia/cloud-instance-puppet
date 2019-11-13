@@ -1,3 +1,1 @@
-deployment_server_ipv6: false
-scap::dsh::groups: {}
-scap::l10nupdate::run_l10nupdate: false
+[]
