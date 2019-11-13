@@ -1,1 +1,1 @@
-swap_partition: false
+- role::wmcs::toolforge::grid::compute::general
