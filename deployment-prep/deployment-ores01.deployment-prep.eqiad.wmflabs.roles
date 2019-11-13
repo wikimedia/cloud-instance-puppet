@@ -1,4 +1,5 @@
-profile::ores::celery::queue_maxsize: 100
-profile::ores::celery::workers: 4
-profile::ores::web::workers: 8
-puppetmaster: deployment-puppetmaster03.deployment-prep.eqiad.wmflabs
+- role::ores::redis
+- role::ores
+- profile::labs::lvm::srv
+- profile::ores::web
+- profile::ores::worker
