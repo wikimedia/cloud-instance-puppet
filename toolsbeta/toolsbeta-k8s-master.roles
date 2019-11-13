@@ -1,3 +1,1 @@
-base::puppet::dns_alt_names: kubernetes,kubernetes.svc
-etcd::use_ssl: true
-profile::base::puppet::dns_alt_names: kubernetes,kubernetes.svc
+- role::toollabs::k8s::master
