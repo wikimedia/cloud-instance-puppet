@@ -1,1 +1,2 @@
-changeprop::restbase_uri: http://deployment-restbase02.deployment-prep.eqiad.wmflabs:7231
+- profile::rsyslog::kafka_shipper
+- profile::rsyslog::udp_localhost_compat
