@@ -1,2 +1,2 @@
-profile::elastalert::ensure: present
-profile::rsyslog::udp_localhost_compat_port: 11514
+- profile::rsyslog::udp_localhost_compat
+- profile::rsyslog::kafka_shipper
