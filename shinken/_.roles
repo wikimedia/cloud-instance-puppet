@@ -1,5 +1,1 @@
-ircecho::ident_passwd_file: /srv/shinken_wm_freenode_pass
-passwords::root::extra_keys:
-  alex: ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAICYxCqZkGys8gZB6Mq61Fw08CB7m1huxpnpII2ay3e0H
-    krenair@gmail.com inspiron
-puppetmaster: shinken-puppetmaster-01.shinken.eqiad.wmflabs
+[]
