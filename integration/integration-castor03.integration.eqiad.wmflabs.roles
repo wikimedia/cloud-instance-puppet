@@ -1,1 +1,1 @@
-labstore::traffic_shaping::egress: 100mbps
+- role::ci::castor::server
