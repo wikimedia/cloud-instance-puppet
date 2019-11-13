@@ -1,1 +1,1 @@
-sudo_flavor: sudo
+- role::puppetmaster::standalone
