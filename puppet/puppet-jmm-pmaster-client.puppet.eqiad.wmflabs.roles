@@ -1,5 +1,1 @@
-kerberos::kadmin_server_fallback: foo.eqiad.wmflabs
-kerberos::kadmin_server_primary: foo.eqiad.wmflabs
-kerberos::kdc_servers: foo.eqiad.wmflabs
-kerberos::realm_name: analytics.eqiad.wmflabs
-puppetmaster: puppet-jmm-pmaster.puppet.eqiad.wmflabs
+[]
