@@ -1,13 +1,1 @@
-profile::puppetdb::database::shared_buffers: 768MB
-profile::puppetdb::filter_job_id: true
-profile::puppetdb::master: deployment-puppetdb02.deployment-prep.eqiad.wmflabs
-profile::puppetdb::microservice::enabled: false
-profile::puppetdb::microservice::port: 8090
-profile::puppetdb::microservice::uwsgi_port: 8091
-puppetdb_major_version: 4
-puppetmaster: deployment-puppetmaster03.deployment-prep.eqiad.wmflabs
-puppetmaster::servers:
-  deployment-dumps-puppetmaster02.deployment-prep.eqiad.wmflabs:
-  - worker: deployment-dumps-puppetmaster02.deployment-prep.eqiad.wmflabs
-  deployment-puppetmaster03.deployment-prep.eqiad.wmflabs:
-  - worker: deployment-puppetmaster03.deployment-prep.eqiad.wmflabs
+- role::puppetmaster::puppetdb
