@@ -1,5 +1,2 @@
-profile::phabricator::main::active_server: deployment-phab
-profile::phabricator::main::aphlict_enabled: 'true'
-profile::phabricator::main::domain: deployment-phab.wmflabs.org
-profile::phabricator::main::phab_daemons_user: phd
-standard::has_default_mail_relay: false
+- role::phabricator_server
+- profile::phabricator::main
