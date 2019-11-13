@@ -1,20 +1,6 @@
-elasticsearch::graylog_hosts: none
-elasticsearch::version: 5
-profile::elasticsearch::common_settings:
-  auto_create_index: +logstash-*,-*
-  cluster_hosts:
-  - deployment-logstash2.deployment-prep.eqiad.wmflabs
-  cluster_name: labs-logstash-eqiad
-  expected_nodes: 1
-  heap_memory: 5G
-  minimum_master_nodes: 1
-  recover_after_nodes: 1
-  recover_after_time: 1m
-  short_cluster_name: labs-logstash-eqiad
-  unicast_hosts:
-  - deployment-logstash2.deployment-prep.eqiad.wmflabs
-profile::kafka::broker::kafka_cluster_name: logging-eqiad
-profile::kafka::broker::ssl_enabled: true
-profile::kafka::broker::ssl_password: qwerty
-profile::logstash::collector::jmx_exporter_port: 7801
-puppetmaster: deployment-puppetmaster03.deployment-prep.eqiad.wmflabs
+- role::kibana
+- role::logstash::puppetreports
+- role::logstash::apifeatureusage
+- role::logstash::collector
+- role::labs::lvm::srv
+- role::kafka::logging
