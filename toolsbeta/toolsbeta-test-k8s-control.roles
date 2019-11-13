@@ -1,8 +1,1 @@
-profile::toolforge::k8s::apiserver: k8s.toolsbeta.eqiad1.wikimedia.cloud
-profile::toolforge::k8s::dns_domain: toolsbeta.eqiad.wmflabs
-profile::toolforge::k8s::etcd_hosts:
-- toolsbeta-test-k8s-etcd-1.toolsbeta.eqiad.wmflabs
-- toolsbeta-test-k8s-etcd-2.toolsbeta.eqiad.wmflabs
-- toolsbeta-test-k8s-etcd-3.toolsbeta.eqiad.wmflabs
-profile::toolforge::k8s::node_token: m7uakr.ern5lmlpv7gnkacw
-swap_partition: false
+- role::wmcs::toolforge::k8s::control
