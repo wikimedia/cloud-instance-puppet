@@ -1,1 +1,4 @@
-puppetmaster: deployment-puppetmaster03.deployment-prep.eqiad.wmflabs
+- profile::recommendation_api
+- role::graphoid
+- role::eventstreams
+- role::apertium
