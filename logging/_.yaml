@@ -36,7 +36,7 @@ profile::elasticsearch::common_settings:
   - elk7-be1.logging.eqiad.wmflabs
   cluster_name: elk7-logstash-eqiad
   expected_nodes: 1
-  heap_memory: 2G
+  heap_memory: 1G
   minimum_master_nodes: 1
   recover_after_nodes: 1
   recover_after_time: 1m
@@ -56,7 +56,7 @@ profile::elasticsearch::ferm_srange: ''
 profile::elasticsearch::instances:
   elk7-logstash-eqiad:
     cluster_name: elk7-logstash-eqiad
-    heap_memory: 2G
+    heap_memory: 1G
     http_port: 9200
     short_cluster_name: elk7
     tls_port: 9243
