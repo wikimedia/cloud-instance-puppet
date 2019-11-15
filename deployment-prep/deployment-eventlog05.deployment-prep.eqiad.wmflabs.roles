@@ -2,4 +2,3 @@
 - profile::eventlogging::analytics::files
 - profile::eventlogging::analytics::processor
 - profile::mariadb::misc::eventlogging::database
-- profile::mariadb::misc::eventlogging::sanitization
