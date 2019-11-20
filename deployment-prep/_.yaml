@@ -336,6 +336,7 @@ role::deployment::repo_config:
     upstream: https://gerrit.wikimedia.org/r/mediawiki/services/zotero/translators
 role::deployment::services::key_fingerprint: e6:d0:61:5e:e5:c7:5d:2d:3e:8e:c8:a5:eb:f3:c2:63
 role::labs::nfsclient:mode: hard
+role::logging::mediawiki::udp2log::logstash_host: deployment-logstash03.deployment-prep.eqiad.wmflabs
 role::logging::mediawiki::udp2log::rotate: 15
 role::mail::mx::verp_bounce_post_url: http://deployment.wikimedia.beta.wmflabs.org/w/api.php
 role::mail::mx::verp_domains:
