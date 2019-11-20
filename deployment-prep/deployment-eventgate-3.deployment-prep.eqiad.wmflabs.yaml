@@ -42,7 +42,7 @@ profile::docker::runner::service_defs:
         name: eventgate-analytics
       streams:
       - type: stdout
-      - host: deployment-logstash2.deployment-prep.eqiad.wmflabs
+      - host: deployment-logstash03.deployment-prep.eqiad.wmflabs
         port: 12201
         type: gelf
       worker_heap_limit_mb: 250
@@ -70,7 +70,7 @@ profile::docker::runner::service_defs:
           id_field: meta.id
           kafka:
             conf:
-              metadata.broker.list: deployment-logstash2.deployment-prep.eqiad.wmflabs:9092
+              metadata.broker.list: deployment-logstash03.deployment-prep.eqiad.wmflabs:9092
               statistics.interval.ms: 10000
             topic_conf: {}
           port: 8992
@@ -85,7 +85,7 @@ profile::docker::runner::service_defs:
         name: eventgate-logging
       streams:
       - type: stdout
-      - host: deployment-logstash2.deployment-prep.eqiad.wmflabs
+      - host: deployment-logstash03.deployment-prep.eqiad.wmflabs
         port: 12201
         type: gelf
       worker_heap_limit_mb: 250
@@ -150,7 +150,7 @@ profile::docker::runner::service_defs:
         name: eventgate-main
       streams:
       - type: stdout
-      - host: deployment-logstash2.deployment-prep.eqiad.wmflabs
+      - host: deployment-logstash03.deployment-prep.eqiad.wmflabs
         port: 12201
         type: gelf
       worker_heap_limit_mb: 250
