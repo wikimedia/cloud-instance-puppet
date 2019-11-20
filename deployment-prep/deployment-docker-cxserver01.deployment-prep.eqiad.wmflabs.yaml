@@ -8,7 +8,7 @@ profile::docker::runner::service_defs:
         level: trace
         name: cxserver
         streams:
-        - host: deployment-logstash2.deployment-prep.eqiad.wmflabs
+        - host: deployment-logstash03.deployment-prep.eqiad.wmflabs
           port: 12201
           type: gelf
         - type: stdout
