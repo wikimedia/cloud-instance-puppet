@@ -12,7 +12,7 @@ profile::aqs::druid_properties:
   scheme: http
 profile::aqs::druid_query_path: /druid/v2/
 profile::aqs::druid_uri_pattern: ^http:\/\/druid-public-broker.svc.eqiad.wmnet:8082\/druid\/v2
-profile::aqs::logstash_host: deployment-logstash2.deployment-prep.eqiad.wmflabs
+profile::aqs::logstash_host: deployment-logstash03.deployment-prep.eqiad.wmflabs
 profile::aqs::monitoring_enabled: false
 profile::aqs::seeds:
 - deployment-aqs01.deployment-prep.eqiad.wmflabs
@@ -30,5 +30,5 @@ profile::cassandra::settings:
   default_instance_params:
     rpc_address: '%{::ipaddress}'
   listen_address: '%{::ipaddress}'
-  logstash_host: deployment-logstash2.deployment-prep.eqiad.wmflabs
+  logstash_host: deployment-logstash03.deployment-prep.eqiad.wmflabs
   target_version: '2.2'
