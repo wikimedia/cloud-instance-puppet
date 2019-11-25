@@ -1,3 +1,5 @@
+profile::base::puppet::dns_alt_names: toolsbeta-test-k8s-etcd-1.toolsbeta.eqiad.wmflabs.
+  toolsbeta-test-k8s-etcd-2.toolsbeta.eqiad.wmflabs, toolsbeta-test-k8s-etcd-3.toolsbeta.eqiad.wmflabs
 profile::etcd::cluster_bootstrap: false
 profile::toolforge::k8s::control_nodes:
 - toolsbeta-test-k8s-control-1.toolsbeta.eqiad.wmflabs
