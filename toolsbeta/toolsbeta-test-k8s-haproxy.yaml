@@ -7,3 +7,4 @@ profile::toolforge::k8s::ingress_port: 30000
 profile::toolforge::k8s::worker_nodes:
 - toolsbeta-test-k8s-worker-1.toolsbeta.eqiad.wmflabs
 - toolsbeta-test-k8s-worker-2.toolsbeta.eqiad.wmflabs
+prometheus::haproxy_exporter::endpoint: http://localhost:8404/stats;csv
