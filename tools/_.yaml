@@ -113,6 +113,9 @@ profile::toolforge::grid::base::project_path: /data/project
 profile::toolforge::grid::base::sge_root: /var/lib/gridengine
 profile::toolforge::grid::base::sysdir: /data/project/.system_sge
 profile::toolforge::mailrelay::external_hostname: mail.tools.wmflabs.org
+profile::toolforge::proxies:
+- tools-proxy-05.tools.eqiad.wmflabs
+- tools-proxy-06.tools.eqiad.wmflabs
 prometheus_nodes:
 - tools-prometheus-01.tools.eqiad.wmflabs
 - tools-prometheus-02.tools.eqiad.wmflabs
@@ -134,4 +137,3 @@ toollabs::checker_hosts:
 toollabs::proxy::proxies:
 - tools-proxy-05.tools.eqiad.wmflabs
 - tools-proxy-06.tools.eqiad.wmflabs
-- tools-test-proxy-01.tools.eqiad.wmflabs
