@@ -112,6 +112,7 @@ profile::trafficserver::tls::available_unified_certs:
     - acmecerts/unified/live/ec-prime256v1.key
 profile::trafficserver::tls::unified_acme_chief: true
 prometheus_nodes: []
+public_tls_unified_cert_vendor: lets-encrypt
 puppetmaster: traffic-puppetmaster.traffic.eqiad.wmflabs
 zookeeper_clusters:
   main-deployment-prep:
