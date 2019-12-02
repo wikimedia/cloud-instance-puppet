@@ -1,6 +1,6 @@
 authdns_addrs:
   ns0-v4:
-    address: 192.0.2.1
+    address: 127.0.0.55
 authdns_servers:
 - traffic-dnsbox.traffic.eqiad.wmflabs
 cluster: dnsbox
