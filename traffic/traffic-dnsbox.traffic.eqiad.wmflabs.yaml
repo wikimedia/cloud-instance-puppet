@@ -4,6 +4,129 @@ authdns_addrs:
 authdns_servers:
 - traffic-dnsbox.traffic.eqiad.wmflabs
 cluster: dnsbox
+discovery::app_routes:
+  aqs: eqiad
+discovery::services:
+  apertium:
+    active_active: true
+    lvs: apertium
+  api-ro:
+    active_active: true
+    lvs: api
+  api-rw:
+    active_active: false
+    lvs: api
+  appservers-ro:
+    active_active: true
+    lvs: apaches
+  appservers-rw:
+    active_active: false
+    lvs: apaches
+  blubberoid:
+    active_active: true
+    lvs: blubberoid
+  citoid:
+    active_active: true
+    lvs: citoid
+  cxserver:
+    active_active: true
+    lvs: cxserver
+  docker-registry:
+    active_active: false
+    lvs: docker-registry
+  echostore:
+    active_active: true
+    lvs: echostore
+  eventgate-analytics:
+    active_active: true
+    lvs: eventgate-analytics
+  eventgate-logging-external:
+    active_active: true
+    lvs: eventgate-logging-external
+  eventgate-main:
+    active_active: true
+    lvs: eventgate-main
+  eventstreams:
+    active_active: true
+    lvs: eventstreams
+  graphoid:
+    active_active: true
+    lvs: graphoid
+  jobrunner:
+    active_active: false
+    lvs: jobrunner
+  kartotherian:
+    active_active: true
+    lvs: kartotherian
+  kibana:
+    active_active: false
+    lvs: kibana
+  mathoid:
+    active_active: true
+    lvs: mathoid
+  mobileapps:
+    active_active: true
+    lvs: mobileapps
+  ores:
+    active_active: true
+    lvs: ores
+  parsoid:
+    active_active: true
+    lvs: parsoid
+  parsoid-php:
+    active_active: false
+    lvs: parsoid-php
+  proton:
+    active_active: true
+    lvs: proton
+  recommendation-api:
+    active_active: true
+    lvs: recommendation-api
+  restbase:
+    active_active: true
+    lvs: restbase
+  restbase-async:
+    active_active: true
+    lvs: restbase
+  restrouter:
+    active_active: true
+    lvs: restrouter
+  schema:
+    active_active: true
+    lvs: schema
+  search:
+    active_active: true
+    lvs: search
+  sessionstore:
+    active_active: true
+    lvs: sessionstore
+  swift:
+    active_active: true
+    lvs: swift
+  swift-ro:
+    active_active: true
+    lvs: swift
+  swift-rw:
+    active_active: false
+    lvs: swift
+  termbox:
+    active_active: true
+    lvs: termbox
+  videoscaler:
+    active_active: false
+    lvs: videoscaler
+  wdqs:
+    active_active: true
+    lvs: wdqs
+  wdqs-internal:
+    active_active: true
+    lvs: wdqs-internal
+  wikifeeds:
+    active_active: true
+    lvs: wikifeeds
+  zotero:
+    active_active: true
+    lvs: zotero
 lvs::configuration::lvs_service_ips:
   dns_rec:
     eqiad:
