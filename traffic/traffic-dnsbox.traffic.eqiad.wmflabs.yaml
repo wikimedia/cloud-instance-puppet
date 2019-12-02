@@ -4,6 +4,10 @@ authdns_addrs:
 authdns_servers:
 - traffic-dnsbox.traffic.eqiad.wmflabs
 cluster: dnsbox
+lvs::configuration::lvs_service_ips:
+  dns_rec:
+    eqiad:
+      dns_rec: 192.0.2.2
 profile::bird::advertise_vips:
   recdns.anycast.wmnet:
     address: 192.0.2.1
