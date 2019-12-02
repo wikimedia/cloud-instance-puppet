@@ -23,6 +23,7 @@ profile::dns::auth::acmechief_target::acmechief_hosts:
 - acmechief-test1001.eqiad.wmnet
 - acmechief-test2001.codfw.wmnet
 profile::dns::auth::gitrepo: https://gerrit.wikimedia.org/r/operations/dns.git
+profile::dnsbox::include_auth: true
 prometheus::node_exporter::collectors_extra:
 - ntp
 wikimedia_clusters:
