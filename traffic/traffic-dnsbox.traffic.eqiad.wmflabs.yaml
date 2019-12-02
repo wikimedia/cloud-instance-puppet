@@ -18,3 +18,16 @@ profile::dns::auth::acmechief_target::acmechief_hosts:
 profile::dns::auth::gitrepo: https://gerrit.wikimedia.org/r/operations/dns.git
 prometheus::node_exporter::collectors_extra:
 - ntp
+wikimedia_clusters:
+  dnsbox:
+    description: DNS and NTP Combo Infra Boxes
+    id: 69
+    sites:
+      codfw: []
+      eqiad: []
+  misc:
+    description: Miscellaneous
+    id: 8
+    sites:
+      codfw: []
+      eqiad: []
