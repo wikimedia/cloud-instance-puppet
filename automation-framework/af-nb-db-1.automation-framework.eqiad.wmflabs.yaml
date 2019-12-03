@@ -1,9 +1,0 @@
-profile::netbox::active_server: af-nb-fe.automation-framework.eqiad.wmflabs
-profile::netbox::db::password: 0Quoquovik
-profile::netbox::db::primary: af-nb-db-2.automation-framework.eqiad.wmflabs
-profile::netbox::db::replication_password: 0Quoquovik
-profile::netbox::db::secondaries:
-- af-nb-db-1.automation-framework.eqiad.wmflabs
-profile::netbox::frontends:
-- af-nb-fe.automation-framework.eqiad.wmflabs
-puppetmaster: af-puppetmaster02.automation-framework.eqiad.wmflabs
