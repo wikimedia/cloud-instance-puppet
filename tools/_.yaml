@@ -101,7 +101,6 @@ profile::kubernetes::master_fqdn: k8s-master.tools.wmflabs.org
 profile::kubernetes::master_hosts:
 - k8s-master.tools.wmflabs.org
 profile::kubernetes::node::disable_rsyslog: true
-profile::kubernetes::node::kubeproxy_metrics_bind_address: undef
 profile::rsyslog::kubernetes::enable: false
 profile::toolforge::active_cronrunner: tools-sgecron-01.tools.eqiad.wmflabs
 profile::toolforge::active_mail_relay: tools-mail-02.tools.eqiad.wmflabs
