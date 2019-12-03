@@ -11,7 +11,7 @@ profile::netbox::redis::host: localhost
 profile::netbox::redis::password: foobar
 profile::netbox::redis::port: 6379
 profile::netbox::secret_key: anotheuntoheunte
-profile::netbox::service_hostname: af-netbox.automation-framework.eqiad.wmflabs
+profile::netbox::service_hostname: af-netbox.wmflabs.org
 profile::netbox::tokens::read_only: DUMMY
 profile::netbox::tokens::read_write: DUMMY
 puppetmaster: af-puppetmaster02.automation-framework.eqiad.wmflabs
