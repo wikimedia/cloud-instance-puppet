@@ -1,1 +1,1 @@
-- role::wmcs::ceph::mon
+- profile::ceph::mon
