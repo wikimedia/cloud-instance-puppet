@@ -1,3 +1,4 @@
+profile::netbox::db::ipv6_ok: false
 profile::netbox::db::password: 0Quoquovik
 profile::netbox::db::primary: af-nb-db-1.automation-framework.eqiad.wmflabs
 profile::netbox::db::replication_password: 0Quoquovik
