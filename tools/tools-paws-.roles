@@ -1,2 +1,2 @@
 - role::labs::lvm::mnt
-- role::toollabs::base
+- profile::toolforge::apt_pinning
