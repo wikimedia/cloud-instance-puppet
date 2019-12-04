@@ -1,3 +1,4 @@
+profile::ceph::data_dir: /var/lib/ceph
 profile::ceph::fsid: 51e4dcdc-78b5-4dc9-9b06-d7c677f633ab
 profile::ceph::mon_hosts:
 - jeh-cephmon01.testlabs.eqiad.wmflabs
