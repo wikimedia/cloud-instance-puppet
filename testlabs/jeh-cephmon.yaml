@@ -1,6 +1,6 @@
 profile::ceph::data_dir: /var/lib/ceph
 profile::ceph::fsid: 51e4dcdc-78b5-4dc9-9b06-d7c677f633ab
-profile::ceph::mon_addresses:
+profile::ceph::mon_addrs:
 - 172.16.0.118
 - 172.16.0.114
 - 172.16.0.52
