@@ -1,3 +1,0 @@
-- role::netbox::database
-- role::netbox
-- profile::debmonitor::client
