@@ -6,7 +6,7 @@ profile::ceph::mon::hosts:
 - jeh-cephmon02.testlabs.eqiad.wmflabs
 - jeh-cephmon03.testlabs.eqiad.wmflabs
 profile::ceph::mon_addrs:
-- 172.16.0.118
-- 172.16.0.114
-- 172.16.0.52
+- v2:172.16.0.118:3300/0,v1:172.16.0.118:6789/0
+- v2:172.16.0.114:3300/0,v1:172.16.0.114:6789/0
+- v2:172.16.0.52:3300/0,v1:172.16.0.52:6789/0
 puppetmaster: jeh-puppetmaster.testlabs.eqiad.wmflabs
