@@ -2,6 +2,10 @@ profile::ceph::admin_keyring: /etc/ceph/ceph.client.admin.keyring
 profile::ceph::data_dir: /var/lib/ceph
 profile::ceph::fsid: 51e4dcdc-78b5-4dc9-9b06-d7c677f633ab
 profile::ceph::mon::addrs:
+- 172.16.0.118
+- 172.16.0.114
+- 172.16.0.52
+profile::ceph::mon::addrs_test:
 - v2:172.16.0.118:3300/0,v1:172.16.0.118:6789/0
 - v2:172.16.0.114:3300/0,v1:172.16.0.114:6789/0
 - v2:172.16.0.52:3300/0,v1:172.16.0.52:6789/0
