@@ -132,6 +132,7 @@ phabricator_manifest_pass: phabricator
 phabricator_manifest_user: root
 phabricator_servers:
 - phabricator.phabricator.eqiad.wmflabs
+profile::backup::director_seed: ''
 profile::backup::ferm_directors: []
 profile::mediawiki::apc_shm_size: 128M
 profile::mediawiki::deployment::server::rsync_host: phab-tin.phabricator.eqiad.wmflabs
