@@ -2,7 +2,7 @@ profile::docker::engine::declare_service: true
 profile::docker::engine::settings: {}
 profile::docker::engine::version: 1.12.6-0~debian-jessie
 profile::docker::runner::service_defs:
-  mediawiki-services-wikifeeds:
+  wikifeeds:
     config:
       logging:
         level: trace
@@ -38,6 +38,6 @@ profile::docker::runner::service_defs:
         module: ./app.js
         name: wikifeeds
     namespace: wikimedia
-    override_cmd: -c /etc/mediawiki-services-wikifeeds/config.yaml
+    override_cmd: -c /etc/wikifeeds/config.yaml
     port: 8889
     version: 2019-12-05-202925-production
