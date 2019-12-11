@@ -13,4 +13,8 @@ profile::ceph::mon::hosts:
 - jeh-cephmon01.testlabs.eqiad.wmflabs
 - jeh-cephmon02.testlabs.eqiad.wmflabs
 - jeh-cephmon03.testlabs.eqiad.wmflabs
+profile::ceph::osd::addrs:
+- 192.16.0.118
+- 192.16.0.114
+- 192.16.0.52
 puppetmaster: jeh-puppetmaster.testlabs.eqiad.wmflabs
