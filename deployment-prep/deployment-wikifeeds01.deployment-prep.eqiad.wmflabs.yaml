@@ -2,7 +2,7 @@ profile::docker::engine::declare_service: true
 profile::docker::engine::settings: {}
 profile::docker::engine::version: 1.12.6-0~debian-jessie
 profile::docker::runner::service_defs:
-  wikifeeds:
+  mediawiki-services-wikifeeds:
     config:
       logging:
         level: trace
