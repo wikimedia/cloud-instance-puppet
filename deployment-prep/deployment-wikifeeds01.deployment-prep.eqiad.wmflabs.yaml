@@ -11,6 +11,14 @@ profile::docker::runner::service_defs:
       services:
       - conf:
           cors: '*'
+          mw_req:
+            headers:
+              accept-language: '{{accept-language}}'
+              user-agent: '{{user-agent}}'
+            method: get
+            query:
+              title: '{{request.params.title}}'
+            uri: http://deployment-mediawiki-07.deployment-prep.eqiad.wmflabs/w/index.php
           mwapi_req:
             body: '{{ default(request.query, {}) }}'
             headers:
