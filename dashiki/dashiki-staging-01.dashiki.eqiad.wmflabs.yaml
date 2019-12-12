@@ -1,9 +1,0 @@
-role::simplestatic::base_path: /srv/static
-role::simplestatic::host_names:
-- edit-analysis-test.wmflabs.org
-- language-reportcard-test.wmflabs.org
-- vital-signs-test.wmflabs.org
-- browser-reports-test.wmflabs.org
-- flow-reportcard-test.wmflabs.org
-- analytics-prototype.wmflabs.org
-- wikistats-canary.wmflabs.org
