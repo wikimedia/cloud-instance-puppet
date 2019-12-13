@@ -1,1 +1,2 @@
+profile::webperf::site::xhgui_host: deployment-xhgui01.deployment-prep.eqiad.wmflabs
 puppetmaster: deployment-puppetmaster03.deployment-prep.eqiad.wmflabs
