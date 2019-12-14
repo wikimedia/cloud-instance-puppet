@@ -1,4 +1,5 @@
 profile::puppetdb::database::shared_buffers: 768MB
+profile::puppetdb::elk_logging: false
 profile::puppetdb::filter_job_id: true
 profile::puppetdb::master: deployment-puppetdb02.deployment-prep.eqiad.wmflabs
 profile::puppetdb::microservice::enabled: false
