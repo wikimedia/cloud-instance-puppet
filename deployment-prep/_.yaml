@@ -109,6 +109,7 @@ phabricator_diffusion_ssh_host: beta-phab.wmflabs.org
 phabricator_domain: beta-phab.wmflabs.org
 phabricator_servers:
 - deployment-phab01.deployment-prep.eqiad.wmflabs
+profile::backup::director_seed: ''
 profile::backup::ferm_directors: []
 profile::base::enable_kafka_shipping: true
 profile::cache::kafka::certificate::certificate_name: varnishkafka-deployment-prep
