@@ -1,5 +1,7 @@
 profile::cassandra::instances:
   deployment-sessionstore03.deployment-prep.eqiad.wmflabs: {}
+profile::cassandra::settings:
+  cluster_name: sessions-dp
 profile::docker::engine::declare_service: true
 profile::docker::engine::settings: {}
 profile::docker::engine::version: 1.12.6-0~debian-jessie
