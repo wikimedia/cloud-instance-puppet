@@ -12,7 +12,7 @@ profile::ceph::mon::hosts:
     public:
       addr: 172.16.0.52
 profile::ceph::osd::hosts:
-  jeh-cephmon01.testlabs.eqiad.wmflabs:
+  jeh-cephosd01.testlabs.eqiad.wmflabs:
     cluster:
       addr: 192.16.0.118
       iface: eth1
