@@ -18,5 +18,19 @@ profile::ceph::osd::hosts:
       iface: eth1
       prefix: /24
     public:
+      addr: 192.16.0.118
+  jeh-cephosd02.testlabs.eqiad.wmflabs:
+    cluster:
+      addr: 192.16.0.118
+      iface: eth1
+      prefix: /24
+    public:
+      addr: 192.16.0.114
+  jeh-cephosd03.testlabs.eqiad.wmflabs:
+    cluster:
+      addr: 192.16.0.118
+      iface: eth1
+      prefix: /24
+    public:
       addr: 192.16.0.52
 puppetmaster: jeh-puppetmaster.testlabs.eqiad.wmflabs
