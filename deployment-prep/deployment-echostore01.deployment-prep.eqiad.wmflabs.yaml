@@ -1,5 +1,5 @@
 profile::cassandra::instances:
-  deployment-sessionstore02.deployment-prep.eqiad.wmflabs: {}
+  deployment-echostore01.deployment-prep.eqiad.wmflabs: {}
 profile::cassandra::rack: rack1
 profile::cassandra::settings:
   cluster_name: echostore-beta
