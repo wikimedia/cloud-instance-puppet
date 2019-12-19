@@ -13,6 +13,10 @@ profile::ceph::mon::hosts:
       addr: 172.16.0.52
 profile::ceph::osd::hosts:
   jeh-cephmon01.testlabs.eqiad.wmflabs:
+    cluster:
+      addr: 192.16.0.118
+      iface: eth1
+      prefix: /24
     public:
       addr: 192.16.0.52
 puppetmaster: jeh-puppetmaster.testlabs.eqiad.wmflabs
