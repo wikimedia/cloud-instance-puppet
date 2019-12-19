@@ -21,9 +21,9 @@ profile::docker::runner::service_defs:
           username: cassandra
         hosts:
         - deployment-echostore01.deployment-prep.eqiad.wmflabs
-        keyspace: sessions
+        keyspace: echoseen
         table: values
-      default_ttl: 86400
+      default_ttl: 31536000
       listen_address: 0.0.0.0
       listen_port: 8080
       openapi_spec: /go/src/gerrit.wikimedia.org/r/mediawiki/services/kask/openapi.yaml
