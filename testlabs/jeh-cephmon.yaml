@@ -11,8 +11,8 @@ profile::ceph::mon::hosts:
   jeh-cephmon03.testlabs.eqiad.wmflabs:
     public:
       addr: 172.16.0.52
-profile::ceph::osd::addrs:
-- 192.16.0.118
-- 192.16.0.114
-- 192.16.0.52
+profile::ceph::osd::hosts:
+  jeh-cephmon01.testlabs.eqiad.wmflabs:
+    public:
+      addr: 192.16.0.52
 puppetmaster: jeh-puppetmaster.testlabs.eqiad.wmflabs
