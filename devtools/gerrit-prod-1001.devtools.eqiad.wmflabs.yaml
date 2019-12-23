@@ -20,7 +20,7 @@ gerrit::jetty::replication:
     replicateHiddenProjects: true
     replicateProjectDeletions: true
     replicationDelay: 5
-    url: gerrit2@gerrit2001.wikimedia.org:/srv/gerrit/git/${name}.git
+    url: gerrit2@gerrit-prod-2001.devtools.wmflabs.org:/srv/gerrit/git/${name}.git
 gerrit::jetty::ssh_host_key: ssh_host_key
 gerrit::server::bacula: srv-gerrit-git
 gerrit::server::config: gerrit.config.erb
