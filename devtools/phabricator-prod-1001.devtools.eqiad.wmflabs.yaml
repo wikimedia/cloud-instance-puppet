@@ -39,7 +39,7 @@ profile::phabricator::main::phd_service_ensure: running
 profile::phabricator::main::rate_limits:
   connection: 0
   request: 0
-profile::standard::has_default_mail_relay: false\
+profile::standard::has_default_mail_relay: false
 profile::tlsproxy::envoy::ensure: present
 profile::tlsproxy::envoy::global_cert_name: prod-1001.devtools.eqiad.wmflabs
 profile::tlsproxy::envoy::services:
