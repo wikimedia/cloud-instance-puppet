@@ -1,0 +1,42 @@
+apache::logrotate::period: daily
+apache::logrotate::rotate: 3
+phabricator_cluster_search:
+- hosts:
+  - host: search.svc.eqiad.wmnet
+    protocol: https
+    roles:
+      read: true
+      write: true
+  path: /phabricator
+  port: 9243
+  type: elasticsearch
+  version: 5
+- hosts:
+  - host: search.svc.codfw.wmnet
+    protocol: https
+    roles:
+      read: true
+      write: true
+  path: /phabricator
+  port: 9243
+  type: elasticsearch
+  version: 5
+phabricator_phd_taskmasters: 4
+phabricator_server: phab-prod-1001.devtools.eqiad.wmflabs
+phabricator_servers:
+- prod-1001.devtools.eqiad.wmflabs
+profile::base::domain_search:
+- eqiad.wmflabs
+- codfw.wmflabs
+profile::phabricator::main::rate_limits:
+  connection: 0
+  request: 0
+profile::standard::has_default_mail_relay: false\
+profile::tlsproxy::envoy::ensure: present
+profile::tlsproxy::envoy::global_cert_name: prod-1001.devtools.eqiad.wmflabs
+profile::tlsproxy::envoy::services:
+- port: 80
+  server_names:
+  - '*'
+profile::tlsproxy::envoy::sni_support: 'no'
+profile::tlsproxy::envoy::websockets: true
