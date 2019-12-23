@@ -35,5 +35,6 @@ gerrit::server::rsync_user_name: gerrit2
 gerrit::server::use_acmechief: true
 gerrit::servers:
 - gerrit-prod-1001.devtools.wmflabs.org
+profile::backup::director_seed: changeme
 profile::base::ssh_server_settings:
   authorized_keys_file: /etc/ssh/userkeys/%u /etc/ssh/userkeys/%u.d/cumin /etc/ssh/userkeys/%u.d/gerrit-scap
