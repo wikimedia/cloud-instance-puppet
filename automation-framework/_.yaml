@@ -1,6 +1,7 @@
 debmonitor: af-debmonitor.automation-framework.eqiad.wmflabs
 profile::openstack::eqiad1::cumin::project_masters:
 - 172.16.2.166
+- 172.16.2.159
 profile::openstack::eqiad1::cumin::project_pub_key: ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAICmbOXHiWOsLtnrLY3RJFCg3gmuD9MYmT1sXyvNP51e+
   root@af-puppetmaster02
 profile::openstack::eqiad1::region: eqiad-r1
