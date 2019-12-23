@@ -1,5 +1,9 @@
 apache::logrotate::period: daily
 apache::logrotate::rotate: 3
+phabricator::vcs::address::v4: 172.16.0.173
+phabricator::vcs::address::v6: fe80::f816:3eff:feeb:ffdd
+phabricator::vcs::listen_addresses:
+- 172.16.0.173
 phabricator_cluster_search:
 - hosts:
   - host: search.svc.eqiad.wmnet
@@ -21,6 +25,7 @@ phabricator_cluster_search:
   port: 9243
   type: elasticsearch
   version: 5
+phabricator_logmail: false
 phabricator_phd_taskmasters: 4
 phabricator_server: phab-prod-1001.devtools.eqiad.wmflabs
 phabricator_servers:
@@ -28,6 +33,9 @@ phabricator_servers:
 profile::base::domain_search:
 - eqiad.wmflabs
 - codfw.wmflabs
+profile::base::ssh_server_settings:
+  listen_address: 172.16.0.173
+profile::phabricator::main::phd_service_ensure: running
 profile::phabricator::main::rate_limits:
   connection: 0
   request: 0
