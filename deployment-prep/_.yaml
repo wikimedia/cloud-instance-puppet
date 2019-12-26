@@ -31,7 +31,7 @@ etcd_client_srv_domain: ''
 etcd_host: deployment-etcd-01.deployment-prep.eqiad.wmflabs
 etcd_port: 2379
 eventlogging_host: 10.68.18.111
-eventlogging_statsd_host: labmon1001.eqiad.wmnet
+eventlogging_statsd_host: cloudmonitor1002.eqiad.wmnet
 http_proxy: ''
 kafka_clusters:
   jumbo-deployment-prep:
