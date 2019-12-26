@@ -16,7 +16,7 @@ profile::docker::runner::service_defs:
           path: /etc/mediawiki-services-cxserver/main.log
           type: file
       metrics:
-        host: labmon1001.eqiad.wmnet
+        host: cloudmetrics1002.eqiad.wmnet
         name: cxserver
         port: 8125
         type: statsd
