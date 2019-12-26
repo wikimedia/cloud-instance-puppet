@@ -77,7 +77,7 @@ mediawiki::users::web: www-data
 mount_nfs: false
 ores::redis::cache_maxmemory: 512M
 ores::redis::queue_maxmemory: 256M
-ores::web::graphite_server: labmon1001.eqiad.wmnet
+ores::web::graphite_server: cloudmetrics1002.eqiad.wmnet
 parsoid::mwapi_proxy: ''
 passwords::root::extra_keys:
   alex: ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAICYxCqZkGys8gZB6Mq61Fw08CB7m1huxpnpII2ay3e0H
@@ -177,7 +177,7 @@ profile::ores::web::extra_config:
   extractors:
     enwiki_api:
       host: https://en.wikipedia.beta.wmflabs.org
-profile::ores::web::graphite_server: labmon1001.eqiad.wmnet
+profile::ores::web::graphite_server: cloudmetrics1002.eqiad.wmnet
 profile::ores::web::poolcounter_nodes:
 - deployment-poolcounter05:7531
 profile::ores::web::redis_host: deployment-ores01.deployment-prep.eqiad.wmflabs
