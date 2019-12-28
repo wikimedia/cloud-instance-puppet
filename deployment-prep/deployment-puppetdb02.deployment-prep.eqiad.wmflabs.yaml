@@ -2,7 +2,7 @@ profile::puppetdb::ca_path: /etc/ssl/certs/Puppet_Internal_CA.pem
 profile::puppetdb::database::shared_buffers: 768MB
 profile::puppetdb::elk_logging: false
 profile::puppetdb::filter_job_id: true
-profile::puppetdb::java_opts: -Xmx4G
+profile::puppetdb::jvm_opts: -Xmx4G
 profile::puppetdb::master: deployment-puppetdb02.deployment-prep.eqiad.wmflabs
 profile::puppetdb::microservice::enabled: false
 profile::puppetdb::microservice::port: 8090
