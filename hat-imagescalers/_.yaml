@@ -1,17 +1,1 @@
-nginx::variant: light
-profile::prometheus::haproxy_exporter::listen_port: 9901
-profile::prometheus::statsd_exporter::mappings:
-- match: thumbor.*.result_storage.incoming_time
-  name: thumbor_result_storage_receive_milliseconds
-prometheus::haproxy_exporter::endpoint: http://localhost:9900/?stats;csv
-scap::deployment_server: deployment-deploy01.deployment-prep.eqiad.wmflabs
-swift::proxy::private_container_list:
-- wikimedia-ec-local-public
-swift::proxy::shard_container_list:
-- wikipedia-commons-local-public
-- wikipedia-commons-local-temp
-thumbor::mediawiki::shared_secret: dummy
-thumbor_memcached_servers:
-- localhost
-thumbor_memcached_servers_nutcracker:
-- localhost:11211:1 "shard01"
+{}
