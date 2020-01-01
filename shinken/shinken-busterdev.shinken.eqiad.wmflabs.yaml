@@ -1,7 +1,7 @@
 profile::openstack::eqiad1::keystone_host: cloudcontrol1003.wikimedia.org
 profile::openstack::eqiad1::region: eqiad1-r
-profile::wmcs::shinken::auth_secret: not_a_real_password
-profile::wmcs::shinken::ircbot: false
-profile::wmcs::shinken::ircbot_nick: shinken-wm
-profile::wmcs::shinken::ircbot_server: chat.freenode.net +6697
-profile::wmcs::shinken::puppet_enc_host: puppetmaster.cloudinfra.wmflabs.org
+profile::wmcs::shinken_scap::auth_secret: not_a_real_password
+profile::wmcs::shinken_scap::ircbot: false
+profile::wmcs::shinken_scap::ircbot_nick: shinken-wm
+profile::wmcs::shinken_scap::ircbot_server: chat.freenode.net +6697
+profile::wmcs::shinken_scap::puppet_enc_host: puppetmaster.cloudinfra.wmflabs.org
