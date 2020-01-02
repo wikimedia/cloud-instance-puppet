@@ -1,5 +1,5 @@
 profile::puppetdb::database::shared_buffers: 768MB
-profile::puppetdb::master: puppetmaster1001.devtools.eqiad.wmflabs
+profile::puppetdb::master: puppetmaster-1001.devtools.eqiad.wmflabs
 profile::puppetmaster::common::puppetdb_host: puppetmaster-1001.devtools.eqiad.wmflabs
 profile::puppetmaster::common::storeconfigs: puppetdb
 puppetdb::password::replication: ''
