@@ -1,6 +1,7 @@
 acmechief_host: traffic-acmechief01.traffic.eqiad.wmflabs
 apt::use_experimental: true
 profile::cache::base::varnish_version: 5
+puppetmaster::enable_geoip: true
 shared_acme_certificates:
   non-canonical-redirect-1:
     CN: wikipedia.com.traffic.wmflabs.org
