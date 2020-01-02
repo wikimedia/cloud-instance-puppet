@@ -132,7 +132,7 @@ profile::trafficserver::tls::inbound_tls_settings:
 profile::trafficserver::tls::unified_acme_chief: true
 prometheus_nodes: []
 public_tls_unified_cert_vendor: lets-encrypt
-puppetmaster: traffic-puppetmaster.traffic.eqiad.wmflabs
+puppetmaster: traffic-puppetmaster-buster.traffic.eqiad.wmflabs
 zookeeper_clusters:
   main-deployment-prep:
     hosts:
