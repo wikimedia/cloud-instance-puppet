@@ -1,1 +1,21 @@
-profile::backup::director_seed: changeme
+phabricator_cluster_search:
+- hosts:
+  - host: search.svc.eqiad.wmnet
+    protocol: https
+    roles:
+      read: true
+      write: true
+  path: /phabricator
+  port: 9243
+  type: elasticsearch
+  version: 5
+- hosts:
+  - host: search.svc.codfw.wmnet
+    protocol: https
+    roles:
+      read: true
+      write: true
+  path: /phabricator
+  port: 9243
+  type: elasticsearch
+  version: 5
