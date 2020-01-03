@@ -19,3 +19,4 @@ phabricator_cluster_search:
   port: 9243
   type: elasticsearch
   version: 5
+puppetmaster: puppetmaster-1001.devtools.eqiad.wmflabs
