@@ -1,2 +1,2 @@
-- role::labs::lvm::srv
 - role::phabricator
+- role::labs::lvm::srv
