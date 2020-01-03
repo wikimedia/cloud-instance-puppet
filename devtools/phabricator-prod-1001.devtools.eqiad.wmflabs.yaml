@@ -1,5 +1,3 @@
-apache::logrotate::period: daily
-apache::logrotate::rotate: 3
 phabricator::vcs::address::v4: 172.16.0.173
 phabricator::vcs::address::v6: fe80::f816:3eff:feeb:ffdd
 phabricator::vcs::listen_addresses:
@@ -26,27 +24,11 @@ phabricator_cluster_search:
   type: elasticsearch
   version: 5
 phabricator_logmail: false
-phabricator_phd_taskmasters: 4
 phabricator_server: phabricator-prod-1001.devtools.eqiad.wmflabs
 phabricator_servers:
 - phabricator-prod-1001.devtools.eqiad.wmflabs
 profile::backup::director_seed: changeme
-profile::base::domain_search:
-- eqiad.wmflabs
-- codfw.wmflabs
 profile::base::ssh_server_settings:
   listen_address: 172.16.0.173
 profile::phabricator::main::phd_service_ensure: running
-profile::phabricator::main::rate_limits:
-  connection: 0
-  request: 0
-profile::standard::has_default_mail_relay: false
-profile::tlsproxy::envoy::ensure: present
-profile::tlsproxy::envoy::global_cert_name: phabricator.discovery.wmnet
-profile::tlsproxy::envoy::services:
-- port: 80
-  server_names:
-  - '*'
-profile::tlsproxy::envoy::sni_support: 'no'
-profile::tlsproxy::envoy::websockets: true
 scap::deployment_server: deploy1001.devtools.eqiad.wmflabs
