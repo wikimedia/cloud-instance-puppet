@@ -27,9 +27,9 @@ phabricator_cluster_search:
   version: 5
 phabricator_logmail: false
 phabricator_phd_taskmasters: 4
-phabricator_server: phab-prod-1001.devtools.eqiad.wmflabs
+phabricator_server: phabricator-prod-1001.devtools.eqiad.wmflabs
 phabricator_servers:
-- prod-1001.devtools.eqiad.wmflabs
+- phabricator-prod-1001.devtools.eqiad.wmflabs
 profile::backup::director_seed: changeme
 profile::base::domain_search:
 - eqiad.wmflabs
