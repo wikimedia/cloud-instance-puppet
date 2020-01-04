@@ -19,6 +19,13 @@ profile::mediawiki::deployment::server::rsync_host: deploy1001.devtools.eqiad.wm
 profile::mediawiki::php::enable_fpm: true
 profile::rsyslog::kafka_shipper::kafka_brokers: []
 profile::services_proxy::ensure: absent
+profile::services_proxy::services:
+  dummy:
+    hostname: dummy.example.net
+    localport: 9999
+    port: 9999
+    scheme: https
+    timeout: 600
 redis::shards:
   sessions:
     eqiad:
