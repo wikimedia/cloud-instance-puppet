@@ -63,7 +63,6 @@ k8s::worker_hosts:
 - tools-worker-1026.tools.eqiad.wmflabs
 - tools-worker-1027.tools.eqiad.wmflabs
 - tools-worker-1028.tools.eqiad.wmflabs
-- tools-worker-1029.tools.eqiad.wmflabs
 - tools-worker-1030.tools.eqiad.wmflabs
 - tools-worker-1031.tools.eqiad.wmflabs
 - tools-worker-1032.tools.eqiad.wmflabs
