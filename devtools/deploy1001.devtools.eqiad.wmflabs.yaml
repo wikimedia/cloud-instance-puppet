@@ -1,1 +1,2 @@
+profile::mediawiki::php::enable_fpm: true
 profile::rsyslog::kafka_shipper::kafka_brokers: []
