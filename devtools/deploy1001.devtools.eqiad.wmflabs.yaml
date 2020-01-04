@@ -1,3 +1,4 @@
+mcrouter::port: 11213
 mcrouter::shards:
   wancache:
     eqiad:
