@@ -1,3 +1,15 @@
+mcrouter::shards:
+  wancache:
+    eqiad:
+      shard01:
+        host: deployment-memc04
+        port: 11211
+      shard02:
+        host: deployment-memc05
+        port: 11211
+      shard03:
+        host: deployment-memc08
+        port: 11211
 profile::mediawiki::apc_shm_size: 128M
 profile::mediawiki::php::enable_fpm: true
 profile::rsyslog::kafka_shipper::kafka_brokers: []
