@@ -13,6 +13,7 @@ mcrouter::shards:
         host: deployment-memc08
         port: 11211
 profile::mediawiki::apc_shm_size: 128M
+profile::mediawiki::deployment::server::rsync_host: deploy1001.devtools.eqiad.wmflabs
 profile::mediawiki::php::enable_fpm: true
 profile::rsyslog::kafka_shipper::kafka_brokers: []
 redis::shards:
