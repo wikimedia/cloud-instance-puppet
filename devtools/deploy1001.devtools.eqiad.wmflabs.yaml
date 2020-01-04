@@ -15,3 +15,18 @@ mcrouter::shards:
 profile::mediawiki::apc_shm_size: 128M
 profile::mediawiki::php::enable_fpm: true
 profile::rsyslog::kafka_shipper::kafka_brokers: []
+redis::shards:
+  sessions:
+    eqiad:
+      shard01:
+        host: 172.16.5.76
+        port: 6379
+      shard02:
+        host: 172.16.5.17
+        port: 6379
+      shard03:
+        host: 172.16.5.12
+        port: 6379
+      shard04:
+        host: 172.16.5.2
+        port: 6379
