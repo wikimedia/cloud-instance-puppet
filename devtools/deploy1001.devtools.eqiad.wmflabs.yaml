@@ -18,6 +18,7 @@ profile::mediawiki::apc_shm_size: 128M
 profile::mediawiki::deployment::server::rsync_host: deploy1001.devtools.eqiad.wmflabs
 profile::mediawiki::php::enable_fpm: true
 profile::rsyslog::kafka_shipper::kafka_brokers: []
+profile::services_proxy::ensure: absent
 redis::shards:
   sessions:
     eqiad:
