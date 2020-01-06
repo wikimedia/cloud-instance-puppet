@@ -22,9 +22,8 @@ profile::docker::runner::service_defs:
           csp: default-src 'none'; script-src 'self' 'unsafe-inline'; connect-src
             *; style-src 'self' 'unsafe-inline'; img-src 'self'; font-src 'self'
           kafka:
-            conf:
-              metadata.broker.list: deployment-kafka-main-1.deployment-prep.eqiad.wmflabs:9092,deployment-kafka-main-2.deployment-prep.eqiad.wmflabs:9092
-              statistics.interval.ms: 10000
+            metadata.broker.list: deployment-kafka-main-1.deployment-prep.eqiad.wmflabs:9092,deployment-kafka-main-2.deployment-prep.eqiad.wmflabs:9092
+            statistics.interval.ms: 10000
           port: 8092
           spec: ./spec.yaml
           streams:
