@@ -105,7 +105,9 @@ profile::docker::runner::service_defs:
 
                 (the ones returned by https://ores.wikimedia.org/v3/precache).
 
-                Schema: https://github.com/wikimedia/mediawiki-event-schemas/tree/master/jsonschema/mediawiki/revision/score'
+                Schema: https://github.com/wikimedia/mediawiki-event-schemas/tree/master/jsonschema/mediawiki/revision/score
+
+                '
               topics:
               - eqiad.mediawiki.revision-score
               - codfw.mediawiki.revision-score
@@ -121,7 +123,7 @@ profile::docker::runner::service_defs:
         module: app.js
         name: eventstreams
       worker_heap_limit_mb: 250
-    image_name: wikimedia/mediawiki-services-eventstreams
+    image_name: mediawiki-services-eventstreams
     namespace: wikimedia
     port: 8092
     version: 2019-12-19-161005-production
