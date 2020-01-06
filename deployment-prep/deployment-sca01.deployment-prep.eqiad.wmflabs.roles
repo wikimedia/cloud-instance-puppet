@@ -1,4 +1,3 @@
 - profile::recommendation_api
 - role::graphoid
-- role::eventstreams
 - role::apertium
