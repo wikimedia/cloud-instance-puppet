@@ -37,56 +37,48 @@ profile::docker::runner::service_defs:
                 Schema: https://github.com/wikimedia/mediawiki-event-schemas/blob/master/jsonschema/mediawiki/revision/create'
               topics:
               - eqiad.mediawiki.page-create
-              - codfw.mediawiki.page-create
             page-delete:
               description: 'Mediawiki Page delete events.
 
                 Schema: https://github.com/wikimedia/mediawiki-event-schemas/blob/master/jsonschema/mediawiki/page/delete'
               topics:
               - eqiad.mediawiki.page-delete
-              - codfw.mediawiki.page-delete
             page-links-change:
               description: 'Mediawiki Page Links change events.
 
                 Schema: https://github.com/wikimedia/mediawiki-event-schemas/blob/master/jsonschema/mediawiki/page/links-change'
               topics:
               - eqiad.mediawiki.page-links-change
-              - codfw.mediawiki.page-links-change
             page-move:
               description: 'Mediawiki Page move (rename) events.
 
                 Schema: https://github.com/wikimedia/mediawiki-event-schemas/blob/master/jsonschema/mediawiki/page/move'
               topics:
               - eqiad.mediawiki.page-move
-              - codfw.mediawiki.page-move
             page-properties-change:
               description: 'Mediawiki Page Properties change events.
 
                 Schema: https://github.com/wikimedia/mediawiki-event-schemas/blob/master/jsonschema/mediawiki/page/properties-change'
               topics:
               - eqiad.mediawiki.page-properties-change
-              - codfw.mediawiki.page-properties-change
             page-undelete:
               description: 'Mediawiki Page un-delete events.
 
                 Schema: https://github.com/wikimedia/mediawiki-event-schemas/blob/master/jsonschema/mediawiki/page/undelete'
               topics:
               - eqiad.mediawiki.page-undelete
-              - codfw.mediawiki.page-undelete
             recentchange:
               description: 'Mediawiki RecentChanges feed.
 
                 Schema: https://github.com/wikimedia/mediawiki-event-schemas/tree/master/jsonschema/mediawiki/recentchange'
               topics:
               - eqiad.mediawiki.recentchange
-              - codfw.mediawiki.recentchange
             revision-create:
               description: 'Mediawiki Revision create events.
 
                 Schema: https://github.com/wikimedia/mediawiki-event-schemas/tree/master/jsonschema/mediawiki/revision/create'
               topics:
               - eqiad.mediawiki.revision-create
-              - codfw.mediawiki.revision-create
             revision-score:
               description: 'Mediawiki Revision Score feed. Every new revision in an
                 ORES enabled wiki should have a
@@ -109,7 +101,6 @@ profile::docker::runner::service_defs:
                 '
               topics:
               - eqiad.mediawiki.revision-score
-              - codfw.mediawiki.revision-score
             test:
               description: 'A test event stream. A new event is posted about once
                 a minute.
@@ -117,7 +108,6 @@ profile::docker::runner::service_defs:
                 Schema: https://github.com/wikimedia/mediawiki-event-schemas/tree/master/jsonschema/test/event'
               topics:
               - eqiad.test.event
-              - codfw.test.event
           user_agent: eventstreams-beta
         module: app.js
         name: eventstreams
