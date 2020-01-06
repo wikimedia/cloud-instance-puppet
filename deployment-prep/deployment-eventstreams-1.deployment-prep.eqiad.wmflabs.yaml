@@ -125,4 +125,3 @@ profile::docker::runner::service_defs:
     namespace: wikimedia
     port: 8092
     version: 2019-12-19-161005-production
-puppetmaster: deployment-puppetmaster03.deployment-prep.eqiad.wmflabs
