@@ -125,6 +125,7 @@ profile::docker::runner::service_defs:
       worker_heap_limit_mb: 250
     image_name: mediawiki-services-eventstreams
     namespace: wikimedia
+    override_cmd: /srv/service/server.js -c /etc/eventstreams/config.yaml
     port: 8092
     version: 2019-12-19-161005-production
 puppetmaster: deployment-puppetmaster03.deployment-prep.eqiad.wmflabs
