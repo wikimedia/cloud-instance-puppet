@@ -1,3 +1,4 @@
+mount_nfs: false
 profile::toolforge::k8s::apiserver_port: 6443
 profile::toolforge::k8s::control_nodes:
 - tools-k8s-control-1.tools.eqiad.wmflabs
