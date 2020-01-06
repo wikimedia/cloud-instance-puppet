@@ -2,7 +2,7 @@ profile::docker::engine::declare_service: true
 profile::docker::engine::settings: {}
 profile::docker::engine::version: 1.12.6-0~debian-jessie
 profile::docker::runner::service_defs:
-  eventgate-main:
+  eventstreams:
     config:
       logging:
         level: info
@@ -119,9 +119,10 @@ profile::docker::runner::service_defs:
               - codfw.test.event
           user_agent: eventstreams-beta
         module: app.js
-        name: eventgate-main
+        name: eventstreams
       worker_heap_limit_mb: 250
-    image_name: mediawiki-services-eventstreams
+    image_name: wikimedia/mediawiki-services-eventstreams
     namespace: wikimedia
     port: 8092
     version: 2019-12-19-161005-production
+puppetmaster: deployment-puppetmaster03.deployment-prep.eqiad.wmflabs
