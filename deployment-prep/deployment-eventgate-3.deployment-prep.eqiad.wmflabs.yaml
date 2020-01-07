@@ -33,7 +33,7 @@ profile::docker::runner::service_defs:
           - /error/0.0.3
           - /test/event/0.0.2
           - /mediawiki/api/request/0.0.1
-          - /mediawiki/cirrusseaarch/request/0.0.1
+          - /mediawiki/cirrussearch/request/0.0.1
           schema_uri_field: $schema
           stream_field: meta.stream
           topic_prefix: eqiad.
@@ -76,7 +76,9 @@ profile::docker::runner::service_defs:
             topic_conf: {}
           port: 8992
           schema_base_uris:
-          - /srv/service/schemas/mediawiki-event-schemas/jsonschema/
+          - file:///srv/service/schemas/event/primary/jsonschema/
+          schema_precache_uris:
+          - /mediawiki/client/error/1.0.0
           schema_uri_field: $schema
           stream_field: meta.stream
           topic_prefix: eqiad.
@@ -94,7 +96,7 @@ profile::docker::runner::service_defs:
     namespace: wikimedia
     override_cmd: /srv/service/node_modules/.bin/eventgate -c /etc/eventgate-logging/config.yaml
     port: 8992
-    version: 2019-10-28-185106-production
+    version: 2020-01-07-204419-production
   eventgate-main:
     config:
       logging:
@@ -119,7 +121,7 @@ profile::docker::runner::service_defs:
             topic_conf: {}
           port: 8292
           schema_base_uris:
-          - /srv/service/schemas/mediawiki-event-schemas/jsonschema/
+          - file:///srv/service/schemas/event/primary/jsonschema/
           schema_precache_uris:
           - /error/0.0.3
           - /test/event/0.0.3
@@ -159,5 +161,5 @@ profile::docker::runner::service_defs:
     namespace: wikimedia
     override_cmd: /srv/service/node_modules/.bin/eventgate -c /etc/eventgate-main/config.yaml
     port: 8292
-    version: 2019-10-28-185106-production
+    version: 2020-01-07-204419-production
 puppetmaster: deployment-puppetmaster03.deployment-prep.eqiad.wmflabs
