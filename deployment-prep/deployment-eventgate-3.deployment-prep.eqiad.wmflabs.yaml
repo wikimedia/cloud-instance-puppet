@@ -26,7 +26,7 @@ profile::docker::runner::service_defs:
             topic_conf: {}
           port: 8192
           schema_base_uris:
-          - /srv/service/schemas/event/secondary
+          - file:///srv/service/schemas/event/secondary/jsonschema/
           - http://schema-beta.wmflabs.org/repositories/secondary/jsonschema/
           schema_precache_uris:
           - /error/0.0.3
