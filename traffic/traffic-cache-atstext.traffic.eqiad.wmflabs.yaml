@@ -33,7 +33,7 @@ cache::text::nodes:
   eqiad:
   - localhost
   eqiad_ats:
-  - cp1071.eqiad.wmnet
+  - localhost
 cluster: cache_text
 do_acme: false
 kafka_cluster_name: analytics-traffic
