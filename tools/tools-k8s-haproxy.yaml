@@ -11,4 +11,13 @@ profile::toolforge::k8s::worker_nodes:
 - tools-k8s-worker-3.tools.eqiad.wmflabs
 - tools-k8s-worker-4.tools.eqiad.wmflabs
 - tools-k8s-worker-5.tools.eqiad.wmflabs
+- tools-k8s-worker-6.tools.eqiad.wmflabs
+- tools-k8s-worker-7.tools.eqiad.wmflabs
+- tools-k8s-worker-8.tools.eqiad.wmflabs
+- tools-k8s-worker-9.tools.eqiad.wmflabs
+- tools-k8s-worker-10.tools.eqiad.wmflabs
+- tools-k8s-worker-11.tools.eqiad.wmflabs
+- tools-k8s-worker-12.tools.eqiad.wmflabs
+- tools-k8s-worker-13.tools.eqiad.wmflabs
+- tools-k8s-worker-14.tools.eqiad.wmflabs
 prometheus::haproxy_exporter::endpoint: http://localhost:8404/stats;csv
