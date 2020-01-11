@@ -1,3 +1,4 @@
+has_lvs: false
 mcrouter::has_ssl: false
 mcrouter::port: 11213
 mcrouter::shards:
