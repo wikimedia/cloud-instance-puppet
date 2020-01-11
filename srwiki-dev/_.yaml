@@ -1,1 +1,6 @@
-{}
+role::labs::novaproxy::active_proxy: None
+role::labs::novaproxy::all_proxies: None
+role::labs::novaproxy::banned_ips: '[]'
+role::labs::novaproxy::blocked_referer_regex: ''''''
+role::labs::novaproxy::blocked_user_agent_regex: ''''''
+role::labs::novaproxy::use_ssl: 'true'
