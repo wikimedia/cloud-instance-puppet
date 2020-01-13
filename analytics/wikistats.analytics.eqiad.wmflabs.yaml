@@ -1,3 +1,6 @@
+admin::groups:
+- statistics-web-users
+- statistics-admins
 profile::tlsproxy::instance::ssl_compatibility_mode: strong
 profile::tlsproxy::service::cert_domain_name: yarn.wikimedia.org
 profile::tlsproxy::service::check_service: analytics.wikimedia.org
