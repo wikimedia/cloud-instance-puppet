@@ -2,5 +2,5 @@ profile::puppetdb::database::shared_buffers: 768MB
 profile::puppetdb::master: jbond-stretch-pdb.puppet.eqiad.wmflabs
 puppetmaster: jbond-stretch-pm.puppet.eqiad.wmflabs
 puppetmaster::servers:
-  toolsbeta-puppetmaster-02.toolsbeta.eqiad.wmflabs:
+  jbond-stretch-pm.puppet.eqiad.wmflabs:
   - worker: jbond-stretch-pm.puppet.eqiad.wmflabs
