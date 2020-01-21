@@ -1,3 +1,5 @@
+profile::ci::docker::settings:
+  iptables: false
 profile::ci::firewall::zuul_merger_hosts:
 - ::1
 - 127.0.0.1
