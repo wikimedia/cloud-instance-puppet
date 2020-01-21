@@ -1,4 +1,5 @@
 cache::cluster: upload
+cache::lua_support: true
 cache::nodes:
   upload:
     eqiad_ats:
