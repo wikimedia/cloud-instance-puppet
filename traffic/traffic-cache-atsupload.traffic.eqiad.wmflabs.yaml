@@ -27,3 +27,4 @@ profile::trafficserver::tls::available_unified_certs:
     private_key_files:
     - acmecerts/unified/live/rsa-2048.key
     - acmecerts/unified/live/ec-prime256v1.key
+public_tls_unified_cert_vendor: lets-encrypt
