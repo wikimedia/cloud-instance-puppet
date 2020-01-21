@@ -1,6 +1,6 @@
 cache::cluster: upload
 cache::nodes:
-  text:
+  upload:
     eqiad_ats:
     - localhost
 cache::req_handling:
