@@ -47,4 +47,5 @@ profile::trafficserver::tls::inbound_tls_settings:
   session_cache_timeout: 7200
   session_ticket_enable: 0
   ssl_handshake_timeout_in: 60
+profile::trafficserver::tls::unified_acme_chief: true
 public_tls_unified_cert_vendor: lets-encrypt
