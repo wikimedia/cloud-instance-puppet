@@ -1,1 +1,5 @@
 cache::cluster: upload
+cache::nodes:
+  text:
+    eqiad_ats:
+    - localhost
