@@ -3,3 +3,6 @@ cache::nodes:
   text:
     eqiad_ats:
     - localhost
+profile::cache::varnish::frontend::fe_extra_vcl:
+- upload-common
+- normalize_path
