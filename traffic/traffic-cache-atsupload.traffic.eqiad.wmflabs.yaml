@@ -3,6 +3,14 @@ cache::nodes:
   text:
     eqiad_ats:
     - localhost
+cache::req_handling:
+  maps.wikimedia.org:
+    director: kartotherian
+  upload.wikimedia.org:
+    director: swift
+    subpaths:
+      ^/+[^/]+/[^/]+/thumb/:
+        director: swift_thumbs
 profile::cache::varnish::frontend::fe_extra_vcl:
 - upload-common
 - normalize_path
