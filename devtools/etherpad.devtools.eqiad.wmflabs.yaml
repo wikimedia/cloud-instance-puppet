@@ -3,6 +3,9 @@ profile::ci::firewall::zuul_merger_hosts:
 - 127.0.0.1
 profile::ci::jenkins::builds_dir: /srv/jenkins/builds/${ITEM_FULL_NAME}
 profile::ci::jenkins::prefix: /ci
+profile::ci::jenkins::service_enable: false
+profile::ci::jenkins::service_ensure: unmanaged
+profile::ci::jenkins::service_monitor: false
 profile::ci::jenkins::workspaces_dir: /srv/jenkins/workspace/${ITEM_FULL_NAME}
 profile::ci::proxy_jenkins::http_port: 8080
 profile::ci::proxy_jenkins::prefix: /ci
