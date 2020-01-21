@@ -1,0 +1,20 @@
+profile::puppetdb::ca_path: /etc/ssl/certs/Puppet_Internal_CA.pem
+profile::puppetdb::database::shared_buffers: 768MB
+profile::puppetdb::elk_logging: false
+profile::puppetdb::filter_job_id: true
+profile::puppetdb::jvm_opts: -Xmx4G
+profile::puppetdb::master: deployment-puppetdb03.deployment-prep.eqiad.wmflabs
+profile::puppetdb::microservice::allowed_hosts: []
+profile::puppetdb::microservice::enabled: false
+profile::puppetdb::microservice::port: 8090
+profile::puppetdb::microservice::uwsgi_port: 8091
+profile::puppetdb::puppetboard_hosts: ''
+puppetdb_major_version: 4
+puppetmaster: deployment-puppetmaster03.deployment-prep.eqiad.wmflabs
+puppetmaster::servers:
+  deployment-dumps-puppetmaster02.deployment-prep.eqiad.wmflabs:
+  - loadfactor: 1
+    worker: deployment-dumps-puppetmaster02.deployment-prep.eqiad.wmflabs
+  deployment-puppetmaster03.deployment-prep.eqiad.wmflabs:
+  - loadfactor: 1
+    worker: deployment-puppetmaster03.deployment-prep.eqiad.wmflabs
