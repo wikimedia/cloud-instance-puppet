@@ -11,6 +11,7 @@ cache::req_handling:
     subpaths:
       ^/+[^/]+/[^/]+/thumb/:
         director: swift_thumbs
+do_acme: false
 profile::cache::varnish::frontend::fe_extra_vcl:
 - upload-common
 - normalize_path
