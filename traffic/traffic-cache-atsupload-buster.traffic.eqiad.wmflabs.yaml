@@ -13,10 +13,21 @@ cache::req_handling:
       ^/+[^/]+/[^/]+/thumb/:
         director: swift_thumbs
 do_acme: false
-enable_geoiplookup: false
 profile::cache::varnish::frontend::fe_extra_vcl:
 - upload-common
 - normalize_path
+profile::cache::varnish::frontend::fe_vcl_config:
+  allowed_methods: ^(GET|HEAD|OPTIONS|POST|PURGE|PUT|DELETE)$
+  enable_geoiplookup: false
+  keep: 1d
+  maps_domain: maps.beta.wmflabs.org
+  purge_host_regex: ^(?!(upload|maps)\.beta\.wmflabs\.org)
+  shortener_domain: w-beta.wmflabs.org
+  static_host: en.wikipedia.beta.wmflabs.org
+  top_domain: beta.wmflabs.org
+  upload_domain: upload.beta.wmflabs.org
+  upload_webp_hits_threshold: 1000
+  varnish_probe_ms: 100
 profile::trafficserver::tls::available_unified_certs:
   lets-encrypt:
     acme_chief: true
