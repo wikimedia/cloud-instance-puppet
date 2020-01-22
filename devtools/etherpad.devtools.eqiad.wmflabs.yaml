@@ -14,3 +14,6 @@ profile::ci::jenkins::service_monitor: false
 profile::ci::jenkins::workspaces_dir: /srv/jenkins/workspace/${ITEM_FULL_NAME}
 profile::ci::proxy_jenkins::http_port: 8080
 profile::ci::proxy_jenkins::prefix: /ci
+zuul::common:
+  gerrit_server: gerrit.wikimedia.org
+  gerrit_user: jenkins-bot
