@@ -1,4 +1,5 @@
 docker::registry: docker-registry.discovery.wmnet
+docker::registry::password: somesecret
 docker::registry::username: uploader
 profile::ci::docker::settings:
   iptables: false
