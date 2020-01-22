@@ -1,3 +1,5 @@
+docker::registry: docker-registry.discovery.wmnet
+docker::registry::username: uploader
 profile::ci::docker::settings:
   iptables: false
 profile::ci::firewall::zuul_merger_hosts:
