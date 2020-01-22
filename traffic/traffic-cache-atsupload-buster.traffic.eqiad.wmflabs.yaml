@@ -13,6 +13,7 @@ cache::req_handling:
       ^/+[^/]+/[^/]+/thumb/:
         director: swift_thumbs
 do_acme: false
+enable_geoiplookup: false
 profile::cache::varnish::frontend::fe_extra_vcl:
 - upload-common
 - normalize_path
