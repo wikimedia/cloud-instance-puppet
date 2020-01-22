@@ -21,6 +21,7 @@ profile::zuul::merger::conf:
   git_email: zuul-merger@%{::hostname}
   git_name: Wikimedia Zuul Merger
   zuul_url: git://%{::fqdn}
+profile::zuul::merger::ferm_srange: (($LABS_NETWORKS
 profile::zuul::server::conf:
   config_git_branch: master
   gearman_server: 127.0.0.1
@@ -28,6 +29,7 @@ profile::zuul::server::conf:
   statsd_host: localhost
   status_url: https://integration.wikimedia.org/zuul/
   url_pattern: https://integration.wikimedia.org/ci/job/{job.name}/{build.number}/console
+profile::zuul::server::email_server: localhost
 zuul::common:
   gerrit_server: gerrit.wikimedia.org
   gerrit_user: jenkins-bot
