@@ -14,6 +14,20 @@ profile::ci::jenkins::service_monitor: false
 profile::ci::jenkins::workspaces_dir: /srv/jenkins/workspace/${ITEM_FULL_NAME}
 profile::ci::proxy_jenkins::http_port: 8080
 profile::ci::proxy_jenkins::prefix: /ci
+profile::zuul::merger::conf:
+  gearman_server: 208.80.154.17
+  gerrit_ssh_key_file: ssh/ci/jenkins-bot_gerrit_id_rsa
+  git_dir: /srv/zuul/git
+  git_email: zuul-merger@%{::hostname}
+  git_name: Wikimedia Zuul Merger
+  zuul_url: git://%{::fqdn}
+profile::zuul::server::conf:
+  config_git_branch: master
+  gearman_server: 127.0.0.1
+  gearman_server_start: true
+  statsd_host: localhost
+  status_url: https://integration.wikimedia.org/zuul/
+  url_pattern: https://integration.wikimedia.org/ci/job/{job.name}/{build.number}/console
 zuul::common:
   gerrit_server: gerrit.wikimedia.org
   gerrit_user: jenkins-bot
