@@ -1,1 +1,2 @@
+profile::standard::has_default_mail_relay: true
 puppetmaster: jbond-stretch-pm.puppet.eqiad.wmflabs
