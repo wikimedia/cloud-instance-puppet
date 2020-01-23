@@ -65,15 +65,8 @@ profile::cache::kafka::webrequest::kafka_cluster_name: jumbo-eqiad
 profile::cache::ssl::wikibase::acme_chief: false
 profile::cache::ssl::wikibase::le_subjects:
 - whatever.org
-profile::cache::varnish::backend::be_extra_vcl:
-- text-common
-- misc-common
-- normalize_path
-profile::cache::varnish::backend::be_vcl_config:
-  pass_random: false
 profile::cache::varnish::frontend::fe_extra_vcl:
 - text-common
-- misc-common
 - normalize_path
 - geoip
 profile::cache::varnish::separate_vcl:
