@@ -14,6 +14,7 @@ profile::ci::jenkins::service_monitor: false
 profile::ci::jenkins::workspaces_dir: /srv/jenkins/workspace/${ITEM_FULL_NAME}
 profile::ci::kubernetes_config::master: neon.eqiad.wmnet
 profile::ci::kubernetes_config::namespace: ci
+profile::ci::kubernetes_config::token: foo
 profile::ci::kubernetes_config::user: jenkins
 profile::ci::proxy_jenkins::http_port: 8080
 profile::ci::proxy_jenkins::prefix: /ci
