@@ -3,3 +3,4 @@ profile::wmcs::nfs::test::nfs_host1: cloudstore-dev-01
 profile::wmcs::nfs::test::nfs_host1_ip: 172.16.4.252
 profile::wmcs::nfs::test::nfs_host2: cloudstore-dev-02
 profile::wmcs::nfs::test::nfs_host2_ip: 172.16.4.254
+puppetmaster: cloudstore-puppetmaster-01.cloudstore.eqiad.wmflabs
