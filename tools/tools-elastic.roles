@@ -1,2 +1,2 @@
-- role::toollabs::elasticsearch
+- role::wmcs::toolforge::elastic
 - role::labs::lvm::srv
