@@ -91,6 +91,7 @@ profile::toolforge::services::updatetools_enabled: false
 prometheus_nodes:
 - tools-prometheus-01.tools.eqiad.wmflabs
 - tools-prometheus-02.tools.eqiad.wmflabs
+- tools-prometheus-03.tools.eqiad.wmflabs
 puppetmaster: toolsbeta-puppetmaster-02.toolsbeta.eqiad.wmflabs
 role::aptly::client::servername: tools-sge-services-03.tools.eqiad.wmflabs
 role::labs::nfsclient::lookupcache: all
