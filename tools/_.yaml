@@ -34,6 +34,7 @@ k8s::master_hosts:
 - tools-k8s-master-01.tools.eqiad.wmflabs
 - tools-prometheus-01.tools.eqiad.wmflabs
 - tools-prometheus-02.tools.eqiad.wmflabs
+- tools-prometheus-03.tools.eqiad.wmflabs
 k8s::version: v1.3.3wmf1
 k8s::worker_hosts:
 - tools-worker-1001.tools.eqiad.wmflabs
@@ -119,6 +120,7 @@ profile::toolforge::proxies:
 prometheus_nodes:
 - tools-prometheus-01.tools.eqiad.wmflabs
 - tools-prometheus-02.tools.eqiad.wmflabs
+- tools-prometheus-03.tools.eqiad.wmflabs
 puppetmaster: tools-puppetmaster-01.tools.eqiad.wmflabs
 role::aptly::client::servername: tools-sge-services-03.tools.eqiad.wmflabs
 role::labs::nfsclient::lookupcache: all
