@@ -158,14 +158,14 @@ profile::openstack::eqiad1::cumin::project_masters:
 - 172.16.6.176
 profile::openstack::eqiad1::cumin::project_pub_key: ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIHMS6pXywYSw1kaZQivozB8qUx0vd1gqiAnVqJuS365B
   root@deployment-cumin
-profile::openstack::eqiad1::cumin::puppetdb_host: deployment-puppetdb02.deployment-prep.eqiad.wmflabs
+profile::openstack::eqiad1::cumin::puppetdb_host: deployment-puppetdb03.deployment-prep.eqiad.wmflabs
 profile::openstack::eqiad1::region: eqiad1-r
 profile::openstack::main::cumin::project_masters:
 - 172.16.5.1
 - 172.16.6.176
 profile::openstack::main::cumin::project_pub_key: ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIHMS6pXywYSw1kaZQivozB8qUx0vd1gqiAnVqJuS365B
   root@deployment-cumin
-profile::openstack::main::cumin::puppetdb_host: deployment-puppetdb02.deployment-prep.eqiad.wmflabs
+profile::openstack::main::cumin::puppetdb_host: deployment-puppetdb03.deployment-prep.eqiad.wmflabs
 profile::openstack::main::region: eqiad1-r
 profile::ores::redis::client_hosts:
 - deployment-ores01.deployment-prep.eqiad.wmflabs
@@ -186,7 +186,7 @@ profile::puppetdb::extra_authorized_hosts: deployment-cumin02.deployment-prep.eq
 profile::puppetdb::master: deployment-puppetdb02.deployment-prep.eqiad.wmflabs
 profile::puppetdb::slaves: []
 profile::puppetmaster::common::command_broadcast: true
-profile::puppetmaster::common::puppetdb_host: deployment-puppetdb02.deployment-prep.eqiad.wmflabs
+profile::puppetmaster::common::puppetdb_host: deployment-puppetdb03.deployment-prep.eqiad.wmflabs
 profile::puppetmaster::common::puppetdb_hosts:
 - deployment-puppetdb03.deployment-prep.eqiad.wmflabs
 - deployment-puppetdb02.deployment-prep.eqiad.wmflabs
@@ -201,14 +201,10 @@ profile::services_proxy::services:
     port: 9999
     scheme: https
     timeout: 600
-puppetdb_host: deployment-puppetdb02.deployment-prep.eqiad.wmflabs
+puppetdb_host: deployment-puppetdb03.deployment-prep.eqiad.wmflabs
 puppetmaster: deployment-puppetmaster03.deployment-prep.eqiad.wmflabs
-puppetmaster::config::puppetdb_host: deployment-puppetdb01.deployment-prep.eqiad.wmflabs
-puppetmaster::config::use_puppetdb: true
 puppetmaster::geoip::fetch_private: false
 puppetmaster::geoip::use_proxy: false
-puppetmaster::puppetdb::master: deployment-puppetdb01.deployment-prep.eqiad.wmflabs
-puppetmaster::puppetdb::slaves: []
 pybal::configuration::config: etcd
 redis::shards:
   sessions:
