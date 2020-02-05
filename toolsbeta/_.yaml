@@ -32,6 +32,9 @@ k8s::master_hosts:
 k8s::version: v1.3.3wmf1
 k8s::worker_hosts:
 - toolsbeta-worker-1001.toolsbeta.eqiad.wmflabs
+k8s_admin_users:
+- joe
+- yuvipanda
 k8s_infrastructure_users:
   client-infrastructure:
     id: 1
@@ -46,6 +49,10 @@ k8s_infrastructure_users:
     token: faketoken2
     type: infrastructure-readonly
 k8s_master: toolsbeta-k8s-master-01.toolsbeta.eqiad.wmflabs
+k8s_regular_users:
+- lolrrit-wm
+- nagf
+kubelet::pod_infra_container_image: docker-registry.tools.wmflabs.org/pause:2.0
 passwords::root::extra_keys:
   alex: ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAICYxCqZkGys8gZB6Mq61Fw08CB7m1huxpnpII2ay3e0H
     krenair@gmail.com inspiron
@@ -61,6 +68,7 @@ passwords::root::extra_keys:
     42:3a:c1:ab:15:5e:22:71:39:c6:a0:65:fe:a9:d2:2b valhallasw tool labs root key
   zhuyifei1999: ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCdm+Kiet0U2AjfPLFKIZLh57pXruVzlIfSypwSt7GRlZ+0sGhExYWvXdreW5zgZRJ3aXzR84qaZOqpwgHuVFlfMszXzq3E6p9dZ/bATP/lvIkucJJ2RL5C4ABvfwd4MHs68rW9UGwPVWn1qQftvoNpeDCu4t50uLbP9vcEXzaXrVioHROPoEpqk4YofHQS9F4HIKDbfjTFwUb5YQ/lsajuK0EZXlAELoaZ7s+uBolyBmXkIjWOjyGwHCoBU1FPiufLwLYuMZz0iAqw930dgoi89VgaPhlu12j2yP+2BZ3XkEgpzNBmZ/3lwVvRPyUnWw2pBU4qvs00FUARzx/WTRSJ
     zhuyifei1999@zhuyifei1999-ThinkPad-X260
+profile::base::core_dump_pattern: core
 profile::base::labs::unattended_distro: absent
 profile::base::labs::unattended_wmf: absent
 profile::base::ssh_server_settings:
@@ -69,9 +77,42 @@ profile::base::ssh_server_settings:
   disable_nist_kex: false
   enable_hba: true
   explicit_macs: false
+profile::elasticsearch::base_config_dir: /etc/elasticsearch
+profile::elasticsearch::base_data_dir: /srv/elasticsearch
+profile::elasticsearch::common_settings:
+  auto_create_index: true
+  awareness_attributes: ''
+  cluster_hosts:
+  - tools-elastic-01.tools.eqiad.wmflabs
+  - tools-elastic-02.tools.eqiad.wmflabs
+  - tools-elastic-03.tools.eqiad.wmflabs
+  cluster_name: labs-tools
+  curator_uses_unicast_hosts: false
+  expected_nodes: 3
+  heap_memory: 8G
+  http_port: 9200
+  minimum_master_nodes: 2
+  recover_after_nodes: 2
+  recover_after_time: 1m
+  send_logs_to_logstash: false
+  short_cluster_name: omega
+  transport_tcp_port: 9300
+  unicast_hosts:
+  - tools-elastic-01.tools.eqiad.wmflabs
+  - tools-elastic-02.tools.eqiad.wmflabs
+  - tools-elastic-03.tools.eqiad.wmflabs
+profile::elasticsearch::dc_settings:
+  awareness_attributes: ''
+profile::elasticsearch::instances: {}
+profile::elasticsearch::rack: placeholder
+profile::elasticsearch::row: placeholder
+profile::kubernetes::master::runtime_config: batch/v2alpha1
 profile::kubernetes::master_fqdn: toolsbeta-k8s-master-01.toolsbeta.eqiad.wmflabs
 profile::kubernetes::master_hosts:
 - toolsbeta-k8s-master-01.toolsbeta.eqiad.wmflabs
+profile::kubernetes::node::kubelet_extra_params:
+- --require-kubeconfig
+profile::standard::has_default_mail_relay: false
 profile::toolforge::active_cronrunner: toolsbeta-sgecron-01.toolsbeta.eqiad.wmflabs
 profile::toolforge::active_mail_relay: tools-mail-02.tools.eqiad.wmflabs
 profile::toolforge::active_proxy_host: toolsbeta-proxy-1
