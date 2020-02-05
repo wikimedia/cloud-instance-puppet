@@ -1,2 +1,5 @@
 profile::ldap::client::labs::client_stack: sssd
+prometheus::node_exporter::collectors_extra:
+- mountstats
+- qdisc
 sudo_flavor: sudo
