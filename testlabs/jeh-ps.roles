@@ -1,2 +1,2 @@
 - role::prometheus::labs_project
-- ::httpd
+- httpd
