@@ -1,7 +1,0 @@
-role::puppetmaster::standalone::allow_from:
-- 10.0.0.0/8
-- 172.16.0.0/21
-role::puppetmaster::standalone::autosign: 'true'
-role::puppetmaster::standalone::git_sync_minutes: 123
-role::puppetmaster::standalone::server_name: foo.bar
-role::puppetmaster::standalone::storeconfigs: false
