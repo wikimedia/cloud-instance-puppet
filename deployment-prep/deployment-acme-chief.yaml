@@ -57,6 +57,7 @@ profile::acme_chief::challenges:
     ns_records:
     - cloud-ns0.wikimedia.org.
     - cloud-ns1.wikimedia.org.
+    resolver_port: 5353
     zone_update_cmd: /usr/local/bin/acme-chief-designate-sync.py
 profile::acme_chief::cloud::designate_sync_auth_url: http://cloudcontrol1003.wikimedia.org:5000/v3
 profile::acme_chief::cloud::designate_sync_project_name: deployment-prep
