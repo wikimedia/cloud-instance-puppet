@@ -66,6 +66,7 @@ cache::req_handling:
       ^/w/thumb(_handler)?\.php:
         debug_director: appservers_debug
         director: rendering
+profile::cache::base::purge_host_regex: ''
 profile::cache::varnish::backend::be_extra_vcl:
 - text-common
 - normalize_path
