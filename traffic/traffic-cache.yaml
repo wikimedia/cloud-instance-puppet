@@ -101,7 +101,7 @@ profile::trafficserver::tls::log_filters:
   condition: '%<{X-WMF-ATS-ML}cqh> MATCH 1'
   name: milestone
 - action: accept
-  condition: Client-IP:%<chi> MATCH 127.0.0.1,::1,%{::ipaddress}
+  condition: '%<chi> MATCH 127.0.0.1,::1,%{::ipaddress}'
   name: localhost
 profile::trafficserver::tls::log_formats:
 - format: Date:%<cqtd> Time:%<cqtt> Client-IP:%<chi> HTTPVersion:%<cqhv> SSL:%<cqssl>
