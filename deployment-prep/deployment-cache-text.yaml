@@ -64,13 +64,11 @@ cache::req_handling:
         director: rendering
 profile::cache::varnish::backend::be_extra_vcl:
 - text-common
-- misc-common
 - normalize_path
 profile::cache::varnish::backend::be_vcl_config:
   pass_random: true
 profile::cache::varnish::frontend::fe_extra_vcl:
 - text-common
-- misc-common
 - normalize_path
 - geoip
 profile::cache::varnish::frontend::fe_vcl_config:
