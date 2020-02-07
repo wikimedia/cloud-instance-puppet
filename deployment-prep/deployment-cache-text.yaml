@@ -80,6 +80,7 @@ profile::cache::varnish::frontend::fe_vcl_config:
   admission_policy: none
   enable_geoiplookup: true
   keep: 1d
+  purge_host_regex: ^(?!(upload|maps)\.beta\.wmflabs\.org)
   varnish_probe_ms: 100
 varnish_version4: true
 wikimedia_clusters:
