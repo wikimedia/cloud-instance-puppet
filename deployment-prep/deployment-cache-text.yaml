@@ -41,6 +41,10 @@ cache::app_directors:
   security_audit:
     backends:
       eqiad: deployment-mediawiki-09.deployment-prep.eqiad.wmflabs
+cache::nodes:
+  text:
+    eqiad_ats:
+    - deployment-cache-text05.deployment-prep.eqiad.wmflabs
 cache::req_handling:
   citoid.wikimedia.org:
     caching: pass
