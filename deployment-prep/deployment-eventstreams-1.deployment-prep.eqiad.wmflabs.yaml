@@ -117,4 +117,4 @@ profile::docker::runner::service_defs:
     override_cmd: /srv/service/server.js -c /etc/eventstreams/config.yaml
     port: 8092
     version: 2019-12-19-161005-production
-puppetmaster: deployment-puppetmaster03.deployment-prep.eqiad.wmflabs
+puppetmaster: deployment-puppetmaster04.deployment-prep.eqiad.wmflabs
