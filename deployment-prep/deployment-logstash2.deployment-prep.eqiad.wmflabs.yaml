@@ -17,4 +17,4 @@ profile::kafka::broker::kafka_cluster_name: logging-eqiad
 profile::kafka::broker::ssl_enabled: true
 profile::kafka::broker::ssl_password: qwerty
 profile::logstash::collector::jmx_exporter_port: 7801
-puppetmaster: deployment-puppetmaster03.deployment-prep.eqiad.wmflabs
+puppetmaster: deployment-puppetmaster04.deployment-prep.eqiad.wmflabs
