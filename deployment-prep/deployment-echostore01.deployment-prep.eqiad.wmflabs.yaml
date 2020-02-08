@@ -32,3 +32,4 @@ profile::docker::runner::service_defs:
     override_cmd: ./kask --config /etc/mediawiki-services-kask/config.yaml
     port: 8080
     version: 2019-10-03-182310-production
+puppetmaster: deployment-puppetmaster04.deployment-prep.eqiad.wmflabs
