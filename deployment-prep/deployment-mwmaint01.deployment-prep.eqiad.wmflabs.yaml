@@ -7,3 +7,4 @@ profile::tlsproxy::envoy::ensure: absent
 profile::tlsproxy::envoy::global_cert_name: mwmaint.discovery.wmnet
 profile::tlsproxy::envoy::services: []
 profile::tlsproxy::envoy::sni_support: 'no'
+puppetmaster: deployment-puppetmaster04.deployment-prep.eqiad.wmflabs
