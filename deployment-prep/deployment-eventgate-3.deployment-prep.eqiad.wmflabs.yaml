@@ -162,4 +162,4 @@ profile::docker::runner::service_defs:
     override_cmd: /srv/service/node_modules/.bin/eventgate -c /etc/eventgate-main/config.yaml
     port: 8292
     version: 2020-01-07-204419-production
-puppetmaster: deployment-puppetmaster03.deployment-prep.eqiad.wmflabs
+puppetmaster: deployment-puppetmaster04.deployment-prep.eqiad.wmflabs
