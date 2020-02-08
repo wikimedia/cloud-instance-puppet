@@ -9,4 +9,4 @@ profile::nutcracker::redis_pools:
         host: 10.68.23.169
         port: 6379
     server_retry_timeout: 10000
-puppetmaster: deployment-puppetmaster03.deployment-prep.eqiad.wmflabs
+puppetmaster: deployment-puppetmaster04.deployment-prep.eqiad.wmflabs
