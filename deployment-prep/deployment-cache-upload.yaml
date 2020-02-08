@@ -11,6 +11,10 @@ cache::app_directors:
   swift_thumbs:
     backends:
       eqiad: deployment-ms-fe03.deployment-prep.eqiad.wmflabs
+cache::nodes:
+  upload:
+    eqiad_ats:
+    - deployment-cache-upload05.deployment-prep.eqiad.wmflabs
 cache::req_handling:
   default:
     director: swift
