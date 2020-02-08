@@ -21,6 +21,7 @@ profile::kafka::broker::kafka_cluster_name: logging-eqiad
 profile::kafka::broker::ssl_enabled: true
 profile::kafka::broker::ssl_password: qwerty
 profile::logstash::collector::jmx_exporter_port: 7801
+puppetmaster: deployment-puppetmaster04.deployment-prep.eqiad.wmflabs
 role::kibana::auth_file: /etc/logstash/htpasswd
 role::kibana::auth_realm: Logstash (ssh deployment-deploy01.deployment-prep.eqiad.wmflabs
   sudo cat /root/secrets.txt)
