@@ -1,1 +1,2 @@
 aptly::manage_nginx: false
+puppetmaster: deployment-puppetmaster04.deployment-prep.eqiad.wmflabs
