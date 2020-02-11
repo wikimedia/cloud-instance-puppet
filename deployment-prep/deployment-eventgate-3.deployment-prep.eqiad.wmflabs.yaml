@@ -1,36 +1,23 @@
 definitions:
 - 2020-01-07-204419-production
-- eventgate_default_conf:
-    allow_absolute_schema_uris: false
-    csp: false
-    eventgate_factory_module: /srv/service/eventgate-wikimedia.js
-    id_field: meta.id
-    schema_uri_field: $schema
-    stream_field: meta.stream
-    topic_prefix: eqiad.
-- eventgate_service_runner_default_conf:
-    logging: &id001
-      level: info
-      streams:
-      - type: stdout
-      - host: deployment-logstash03.deployment-prep.eqiad.wmflabs
-        port: 12201
-        type: gelf
-    metrics: &id002
-      host: cloudmetrics1002.eqiad.wmnet
-      name: eventgate-analytics
-      port: 8125
-      type: statsd
-    num_workers: 0
-    worker_heap_limit_mb: 250
 profile::docker::engine::declare_service: true
 profile::docker::engine::settings: {}
 profile::docker::engine::version: 1.12.6-0~debian-jessie
 profile::docker::runner::service_defs:
   eventgate-analytics:
     config:
-      logging: *id001
-      metrics: *id002
+      logging:
+        level: info
+        streams:
+        - type: stdout
+        - host: deployment-logstash03.deployment-prep.eqiad.wmflabs
+          port: 12201
+          type: gelf
+      metrics:
+        host: cloudmetrics1002.eqiad.wmnet
+        name: eventgate-analytics
+        port: 8125
+        type: statsd
       num_workers: 0
       services:
       - conf:
@@ -69,15 +56,26 @@ profile::docker::runner::service_defs:
     version: 2020-01-07-204419-production
   eventgate-logging:
     config:
-      logging: *id001
-      metrics: *id002
+      logging:
+        level: info
+        name: eventgate-logging
+        streams:
+        - type: stdout
+        - host: deployment-logstash03.deployment-prep.eqiad.wmflabs
+          port: 12201
+          type: gelf
+      metrics:
+        host: cloudmetrics1002.eqiad.wmnet
+        name: eventgate-logging
+        port: 8125
+        type: statsd
       num_workers: 0
       services:
       - conf:
-          allow_absolute_schema_uris: false
+          allow_absolute_schema_uris: true
           csp: false
           error_stream: eventgate-logging.error.validation
-          eventgate_factory_module: /srv/service/eventgate-wikimedia.js
+          eventgate_factory_module: ../lib/factories/wikimedia-eventgate
           id_field: meta.id
           kafka:
             conf:
@@ -95,7 +93,6 @@ profile::docker::runner::service_defs:
           user_agent: eventgate-logging
         entrypoint: app
         module: eventgate
-        name: eventgate-logging
       worker_heap_limit_mb: 250
     image_name: eventgate-wikimedia
     namespace: wikimedia
@@ -104,15 +101,25 @@ profile::docker::runner::service_defs:
     version: 2020-01-07-204419-production
   eventgate-main:
     config:
-      logging: *id001
-      metrics: *id002
+      logging:
+        level: info
+        streams:
+        - type: stdout
+        - host: deployment-logstash03.deployment-prep.eqiad.wmflabs
+          port: 12201
+          type: gelf
+      metrics:
+        host: cloudmetrics1002.eqiad.wmnet
+        name: eventgate-main
+        port: 8125
+        type: statsd
       num_workers: 0
       services:
       - conf:
           allow_absolute_schema_uris: false
           csp: false
           error_stream: eventgate-main.error.validation
-          eventgate_factory_module: /srv/service/eventgate-wikimedia.js
+          eventgate_factory_module: ../lib/factories/wikimedia-eventgate
           id_field: meta.id
           kafka:
             conf:
