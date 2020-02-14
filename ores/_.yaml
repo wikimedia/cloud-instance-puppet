@@ -31,6 +31,7 @@ profile::ores::web::redis_host: ores-redis-02
 profile::ores::web::workers: 36
 profile::ores::web::workers_per_core: 12
 profile::prometheus::statsd_exporter::mappings: []
+profile::rsyslog::kafka_shipper::kafka_brokers: []
 role::labs::ores::lb::realservers:
 - ores-web-04:8080
 - ores-web-05:8080
