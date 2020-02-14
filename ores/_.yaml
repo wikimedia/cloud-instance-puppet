@@ -19,6 +19,7 @@ profile::ores::base::config_path: /srv/ores/config
 profile::ores::base::venv_path: /srv/ores/venv
 profile::ores::celery::queue_maxsize: 100
 profile::ores::celery::workers: 35
+profile::ores::logstash_host: localhost
 profile::ores::redisproxy::server: ores-redis-02.ores.eqiad.wmflabs
 profile::ores::web::graphite_server: labmon1001.eqiad.wmnet
 profile::ores::web::ores_config_group: nogroup
