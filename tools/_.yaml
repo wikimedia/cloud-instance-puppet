@@ -32,8 +32,6 @@ k8s::kubelet::pod_infra_container_image: docker-registry.tools.wmflabs.org/pause
 k8s::master_host: k8s-master.tools.wmflabs.org
 k8s::master_hosts:
 - tools-k8s-master-01.tools.eqiad.wmflabs
-- tools-prometheus-01.tools.eqiad.wmflabs
-- tools-prometheus-02.tools.eqiad.wmflabs
 - tools-prometheus-03.tools.eqiad.wmflabs
 - tools-prometheus-04.tools.eqiad.wmflabs
 k8s::version: v1.3.3wmf1
@@ -162,8 +160,6 @@ profile::toolforge::proxies:
 - tools-proxy-05.tools.eqiad.wmflabs
 - tools-proxy-06.tools.eqiad.wmflabs
 prometheus_nodes:
-- tools-prometheus-01.tools.eqiad.wmflabs
-- tools-prometheus-02.tools.eqiad.wmflabs
 - tools-prometheus-03.tools.eqiad.wmflabs
 - tools-prometheus-04.tools.eqiad.wmflabs
 puppetmaster: tools-puppetmaster-01.tools.eqiad.wmflabs
