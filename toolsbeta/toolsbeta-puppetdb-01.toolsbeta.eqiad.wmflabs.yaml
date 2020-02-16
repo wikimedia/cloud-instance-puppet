@@ -7,4 +7,5 @@ puppetdb_major_version: 4
 puppetmaster: toolsbeta-puppetmaster-02.toolsbeta.eqiad.wmflabs
 puppetmaster::servers:
   toolsbeta-puppetmaster-02.toolsbeta.eqiad.wmflabs:
-  - worker: toolsbeta-puppetmaster-02.toolsbeta.eqiad.wmflabs
+  - loadfactor: 1
+    worker: toolsbeta-puppetmaster-02.toolsbeta.eqiad.wmflabs
