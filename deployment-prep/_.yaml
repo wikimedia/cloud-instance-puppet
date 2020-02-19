@@ -140,6 +140,7 @@ profile::mediawiki::php::monitoring::password: notarealpassword
 profile::mediawiki::php::monitoring::salt: 9sBweWh0J
 profile::mediawiki::php::restarts::ensure: absent
 profile::mediawiki::php::restarts::opcache_limit: 100
+profile::mediawiki::webserver::stream_to_logstash: true
 profile::nutcracker::memcached_pools: []
 profile::nutcracker::monitor_port: 0
 profile::nutcracker::redis_pools:
