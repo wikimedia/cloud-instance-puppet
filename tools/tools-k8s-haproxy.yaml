@@ -20,25 +20,25 @@ profile::toolforge::k8s::worker_nodes:
 - tools-k8s-worker-12.tools.eqiad.wmflabs
 - tools-k8s-worker-13.tools.eqiad.wmflabs
 - tools-k8s-worker-14.tools.eqiad.wmflabs
-- tools-k8s-worker-15.tools.eqiad.wmflabs                                       -
-  tools-k8s-worker-16.tools.eqiad.wmflabs                                       -
-  tools-k8s-worker-17.tools.eqiad.wmflabs                                       -
-  tools-k8s-worker-18.tools.eqiad.wmflabs                                       -
-  tools-k8s-worker-19.tools.eqiad.wmflabs                                       -
-  tools-k8s-worker-20.tools.eqiad.wmflabs                                       -
-  tools-k8s-worker-21.tools.eqiad.wmflabs                                       -
-  tools-k8s-worker-22.tools.eqiad.wmflabs                                       -
-  tools-k8s-worker-23.tools.eqiad.wmflabs                                       -
-  tools-k8s-worker-24.tools.eqiad.wmflabs                                       -
-  tools-k8s-worker-25.tools.eqiad.wmflabs                                       -
-  tools-k8s-worker-26.tools.eqiad.wmflabs                                       -
-  tools-k8s-worker-27.tools.eqiad.wmflabs                                       -
-  tools-k8s-worker-28.tools.eqiad.wmflabs                                       -
-  tools-k8s-worker-29.tools.eqiad.wmflabs                                       -
-  tools-k8s-worker-30.tools.eqiad.wmflabs                                       -
-  tools-k8s-worker-31.tools.eqiad.wmflabs                                       -
-  tools-k8s-worker-32.tools.eqiad.wmflabs                                       -
-  tools-k8s-worker-33.tools.eqiad.wmflabs                                       -
-  tools-k8s-worker-34.tools.eqiad.wmflabs                                       -
-  tools-k8s-worker-35.tools.eqiad.wmflabs
+- tools-k8s-worker-15.tools.eqiad.wmflabs
+- tools-k8s-worker-16.tools.eqiad.wmflabs
+- tools-k8s-worker-17.tools.eqiad.wmflabs
+- tools-k8s-worker-18.tools.eqiad.wmflabs
+- tools-k8s-worker-19.tools.eqiad.wmflabs
+- tools-k8s-worker-20.tools.eqiad.wmflabs
+- tools-k8s-worker-21.tools.eqiad.wmflabs
+- tools-k8s-worker-22.tools.eqiad.wmflabs
+- tools-k8s-worker-23.tools.eqiad.wmflabs
+- tools-k8s-worker-24.tools.eqiad.wmflabs
+- tools-k8s-worker-25.tools.eqiad.wmflabs
+- tools-k8s-worker-26.tools.eqiad.wmflabs
+- tools-k8s-worker-27.tools.eqiad.wmflabs
+- tools-k8s-worker-28.tools.eqiad.wmflabs
+- tools-k8s-worker-29.tools.eqiad.wmflabs
+- tools-k8s-worker-30.tools.eqiad.wmflabs
+- tools-k8s-worker-31.tools.eqiad.wmflabs
+- tools-k8s-worker-32.tools.eqiad.wmflabs
+- tools-k8s-worker-33.tools.eqiad.wmflabs
+- tools-k8s-worker-34.tools.eqiad.wmflabs
+- tools-k8s-worker-35.tools.eqiad.wmflabs
 prometheus::haproxy_exporter::endpoint: http://localhost:8404/stats;csv
