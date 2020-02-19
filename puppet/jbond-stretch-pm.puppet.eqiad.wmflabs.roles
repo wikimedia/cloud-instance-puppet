@@ -1,1 +1,2 @@
 - role::puppetmaster::standalone
+- profile::base::firewall
