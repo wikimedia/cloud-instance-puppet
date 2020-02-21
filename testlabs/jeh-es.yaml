@@ -5,23 +5,19 @@ profile::elasticsearch::common_settings:
   awareness_attributes: ''
   cluster_hosts:
   - jeh-es01.testlabs.eqiad.wmflabs
-  - jeh-es02.testlabs.eqiad.wmflabs
-  - jeh-es03.testlabs.eqiad.wmflabs
   cluster_name: labs-tools
   curator_uses_unicast_hosts: false
-  expected_nodes: 3
+  expected_nodes: 1
   heap_memory: 8G
   http_port: 9200
-  minimum_master_nodes: 2
-  recover_after_nodes: 2
+  minimum_master_nodes: 1
+  recover_after_nodes: 1
   recover_after_time: 1m
   send_logs_to_logstash: false
   short_cluster_name: omega
   transport_tcp_port: 9300
   unicast_hosts:
   - jeh-es01.testlabs.eqiad.wmflabs
-  - jeh-es02.testlabs.eqiad.wmflabs
-  - jeh-es03.testlabs.eqiad.wmflabs
 profile::elasticsearch::config_version: '7'
 profile::elasticsearch::dc_settings:
   awareness_attributes: ''
