@@ -1,5 +1,5 @@
 profile::openstack::main::cumin::aliases:
-  test: P{af-puppetdb01.automation-framework.eqiad.wmflabs}
+  test: P{af-puppetdb*.automation-framework.eqiad.wmflabs}
 profile::openstack::main::cumin::project_ssh_priv_key_path: /root/.ssh/cumin
 puppet_major_version: 4
 puppetdb_major_version: 4
