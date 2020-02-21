@@ -9,11 +9,11 @@ profile::elasticsearch::common_settings:
   - jeh-es03.testlabs.eqiad.wmflabs
   cluster_name: labs-tools
   curator_uses_unicast_hosts: false
-  expected_nodes: 1
+  expected_nodes: 3
   heap_memory: 8G
   http_port: 9200
-  minimum_master_nodes: 1
-  recover_after_nodes: 1
+  minimum_master_nodes: 2
+  recover_after_nodes: 2
   recover_after_time: 1m
   send_logs_to_logstash: false
   short_cluster_name: omega
