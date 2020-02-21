@@ -5,6 +5,8 @@ profile::elasticsearch::common_settings:
   awareness_attributes: ''
   cluster_hosts:
   - jeh-es01.testlabs.eqiad.wmflabs
+  - jeh-es02.testlabs.eqiad.wmflabs
+  - jeh-es03.testlabs.eqiad.wmflabs
   cluster_name: labs-tools
   curator_uses_unicast_hosts: false
   expected_nodes: 1
@@ -18,6 +20,8 @@ profile::elasticsearch::common_settings:
   transport_tcp_port: 9300
   unicast_hosts:
   - jeh-es01.testlabs.eqiad.wmflabs
+  - jeh-es02.testlabs.eqiad.wmflabs
+  - jeh-es03.testlabs.eqiad.wmflabs
 profile::elasticsearch::config_version: '7'
 profile::elasticsearch::dc_settings:
   awareness_attributes: ''
