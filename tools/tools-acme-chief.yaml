@@ -26,6 +26,7 @@ profile::acme_chief::challenges:
     ns_records:
     - cloud-ns0.wikimedia.org.
     - cloud-ns1.wikimedia.org.
+    resolver_port: 5353
     sync_dns_servers:
     - ignored_for_designate.
     validation_dns_servers:
