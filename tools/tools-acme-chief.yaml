@@ -29,9 +29,6 @@ profile::acme_chief::challenges:
     resolver_port: 53
     sync_dns_servers:
     - ignored_for_designate.
-    validation_dns_servers:
-    - 208.80.154.135
-    - 208.80.154.11
     zone_update_cmd: /usr/local/bin/acme-chief-designate-sync.py
 profile::acme_chief::cloud::designate_sync_auth_url: http://cloudcontrol1003.wikimedia.org:5000/v3
 profile::acme_chief::cloud::designate_sync_project_name: tools
