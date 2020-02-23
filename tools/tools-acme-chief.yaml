@@ -30,8 +30,8 @@ profile::acme_chief::challenges:
     sync_dns_servers:
     - ignored_for_designate.
     validation_dns_servers:
-    - cloud-ns0.wikimedia.org.
-    - cloud-ns1.wikimedia.org.
+    - 208.80.154.135
+    - 208.80.154.11
     zone_update_cmd: /usr/local/bin/acme-chief-designate-sync.py
 profile::acme_chief::cloud::designate_sync_auth_url: http://cloudcontrol1003.wikimedia.org:5000/v3
 profile::acme_chief::cloud::designate_sync_project_name: tools
