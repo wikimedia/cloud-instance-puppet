@@ -29,4 +29,5 @@ profile::elasticsearch::instances: {}
 profile::elasticsearch::rack: placeholder
 profile::elasticsearch::row: placeholder
 profile::elasticsearch::version: '7.4'
+profile::prometheus::haproxy_exporter::listen_port: 9901
 puppetmaster: jeh-puppetmaster.testlabs.eqiad.wmflabs
