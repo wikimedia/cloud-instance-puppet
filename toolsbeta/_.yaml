@@ -101,6 +101,7 @@ profile::elasticsearch::common_settings:
   - toolsbeta-elastic7-1.toolsbeta.eqiad.wmflabs
   - toolsbeta-elastic7-2.toolsbeta.eqiad.wmflabs
   - toolsbeta-elastic7-3.toolsbeta.eqiad.wmflabs
+profile::elasticsearch::config_version: '7'
 profile::elasticsearch::dc_settings:
   awareness_attributes: ''
 profile::elasticsearch::instances: {}
