@@ -83,13 +83,13 @@ profile::elasticsearch::common_settings:
   auto_create_index: true
   awareness_attributes: ''
   cluster_hosts:
-  - tools-elastic-01.tools.eqiad.wmflabs
-  - tools-elastic-02.tools.eqiad.wmflabs
-  - tools-elastic-03.tools.eqiad.wmflabs
+  - toolsbeta-elastic7-1.toolsbeta.eqiad.wmflabs
+  - toolsbeta-elastic7-2.toolsbeta.eqiad.wmflabs
+  - toolsbeta-elastic7-3.toolsbeta.eqiad.wmflabs
   cluster_name: labs-tools
   curator_uses_unicast_hosts: false
   expected_nodes: 3
-  heap_memory: 8G
+  heap_memory: 4G
   http_port: 9200
   minimum_master_nodes: 2
   recover_after_nodes: 2
@@ -98,20 +98,22 @@ profile::elasticsearch::common_settings:
   short_cluster_name: omega
   transport_tcp_port: 9300
   unicast_hosts:
-  - tools-elastic-01.tools.eqiad.wmflabs
-  - tools-elastic-02.tools.eqiad.wmflabs
-  - tools-elastic-03.tools.eqiad.wmflabs
+  - toolsbeta-elastic7-1.toolsbeta.eqiad.wmflabs
+  - toolsbeta-elastic7-2.toolsbeta.eqiad.wmflabs
+  - toolsbeta-elastic7-3.toolsbeta.eqiad.wmflabs
 profile::elasticsearch::dc_settings:
   awareness_attributes: ''
 profile::elasticsearch::instances: {}
 profile::elasticsearch::rack: placeholder
 profile::elasticsearch::row: placeholder
+profile::elasticsearch::version: '7.4'
 profile::kubernetes::master::runtime_config: batch/v2alpha1
 profile::kubernetes::master_fqdn: toolsbeta-k8s-master-01.toolsbeta.eqiad.wmflabs
 profile::kubernetes::master_hosts:
 - toolsbeta-k8s-master-01.toolsbeta.eqiad.wmflabs
 profile::kubernetes::node::kubelet_extra_params:
 - --require-kubeconfig
+profile::prometheus::haproxy_exporter::listen_port: 9901
 profile::standard::has_default_mail_relay: false
 profile::toolforge::active_cronrunner: toolsbeta-sgecron-01.toolsbeta.eqiad.wmflabs
 profile::toolforge::active_mail_relay: tools-mail-02.tools.eqiad.wmflabs
@@ -131,6 +133,7 @@ profile::toolforge::proxies:
 - toolsbeta-proxy-2.toolsbeta.eqiad.wmflabs
 profile::toolforge::services::active_node: tools-services-01.eqiad.wmflabs
 profile::toolforge::services::updatetools_enabled: false
+prometheus::haproxy_exporter::endpoint: http://localhost:9900/stats;csv
 prometheus_nodes:
 - tools-prometheus-01.tools.eqiad.wmflabs
 - tools-prometheus-02.tools.eqiad.wmflabs
