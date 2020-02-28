@@ -1,3 +1,0 @@
-- toollabs::infrastructure
-- toollabs::apt_pinning
-- role::puppetmaster::standalone
