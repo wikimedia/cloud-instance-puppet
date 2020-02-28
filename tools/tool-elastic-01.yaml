@@ -1,2 +1,0 @@
-mount_nfs: false
-profile::rsyslog::kafka_shipper::kafka_brokers: []
