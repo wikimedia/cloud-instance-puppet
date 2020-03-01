@@ -7,6 +7,8 @@ gerrit::server::config: gerrit.config.erb
 gerrit::server::db_pass: test
 gerrit::server::db_user: gerrit
 gerrit::server::rsync_data_dir: /srv/gerrit
+gerrit::server::rsync_dst_hosts:
+- gerrit-test8.git.eqiad.wmflabs
 gerrit::service::ipv6: null
 ldap:
   base-dn: dc=wmftest,dc=net
