@@ -1,3 +1,21 @@
+discovery::app_routes:
+  aqs: eqiad
+  docker-registry: codfw
+  eventgate-analytics: '%{::site}'
+  eventgate-analytics-http: '%{::site}'
+  eventgate-logging-external: '%{::site}'
+  eventgate-main: '%{::site}'
+  eventgate-main-http: '%{::site}'
+  graphoid: '%{::site}'
+  mathoid: '%{::site}'
+  mediawiki: '%{::site}'
+  mobileapps: '%{::site}'
+  parsoid: '%{::site}'
+  restbase: '%{::site}'
+  schema: '%{::site}'
+  sessionstore: '%{::site}'
+  termbox: '%{::site}'
+  wikifeeds: '%{::site}'
 gerrit::jetty::log_host: localhost
 gerrit::jetty::replication: {}
 gerrit::server::avatars_host: gerrit-cache.wmflabs.org
