@@ -32,4 +32,6 @@ profile::elasticsearch::row: placeholder
 profile::elasticsearch::version: '7.4'
 profile::prometheus::haproxy_exporter::listen_port: 9901
 profile::rsyslog::kafka_shipper::kafka_brokers: []
+profile::toolforge::elasticsearch::keepalived::host_priority: 110
+profile::toolforge::elasticsearch::keepalived::vip: 172.16.0.24
 prometheus::haproxy_exporter::endpoint: http://localhost:9900/stats;csv
