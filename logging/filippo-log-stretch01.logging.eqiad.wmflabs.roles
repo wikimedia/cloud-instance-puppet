@@ -1,2 +1,0 @@
-- role::puppetmaster::standalone
-- role::labs::lvm::srv
