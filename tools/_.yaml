@@ -38,24 +38,6 @@ k8s::version: v1.3.3wmf1
 k8s::worker_hosts:
 - tools-worker-1001.tools.eqiad.wmflabs
 - tools-worker-1002.tools.eqiad.wmflabs
-- tools-worker-1003.tools.eqiad.wmflabs
-- tools-worker-1004.tools.eqiad.wmflabs
-- tools-worker-1005.tools.eqiad.wmflabs
-- tools-worker-1006.tools.eqiad.wmflabs
-- tools-worker-1007.tools.eqiad.wmflabs
-- tools-worker-1008.tools.eqiad.wmflabs
-- tools-worker-1009.tools.eqiad.wmflabs
-- tools-worker-1010.tools.eqiad.wmflabs
-- tools-worker-1011.tools.eqiad.wmflabs
-- tools-worker-1012.tools.eqiad.wmflabs
-- tools-worker-1013.tools.eqiad.wmflabs
-- tools-worker-1014.tools.eqiad.wmflabs
-- tools-worker-1015.tools.eqiad.wmflabs
-- tools-worker-1016.tools.eqiad.wmflabs
-- tools-worker-1017.tools.eqiad.wmflabs
-- tools-worker-1018.tools.eqiad.wmflabs
-- tools-worker-1019.tools.eqiad.wmflabs
-- tools-worker-1020.tools.eqiad.wmflabs
 k8s_admin_users:
 - joe
 - yuvipanda
