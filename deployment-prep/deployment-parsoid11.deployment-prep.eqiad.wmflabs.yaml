@@ -1,3 +1,4 @@
+cluster: parsoid
 has_lvs: false
 nutcracker::verbosity: '4'
 profile::mediawiki::apc_shm_size: 4096M
