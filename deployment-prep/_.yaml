@@ -203,7 +203,7 @@ profile::services_proxy::services:
     scheme: https
     timeout: 600
 puppetdb_host: deployment-puppetdb03.deployment-prep.eqiad.wmflabs
-puppetmaster: deployment-puppetmaster03.deployment-prep.eqiad.wmflabs
+puppetmaster: deployment-puppetmaster04.deployment-prep.eqiad.wmflabs
 puppetmaster::geoip::fetch_private: false
 puppetmaster::geoip::use_proxy: false
 pybal::configuration::config: etcd
