@@ -31,5 +31,6 @@ profile::elasticsearch::row: placeholder
 profile::elasticsearch::version: '7.4'
 profile::prometheus::haproxy_exporter::listen_port: 9901
 profile::toolforge::elasticsearch::keepalived::host_priority: 100
+profile::toolforge::elasticsearch::keepalived::vip: 192.168.0.200
 prometheus::haproxy_exporter::endpoint: http://localhost:9900/stats;csv
 puppetmaster: jeh-puppet.testlabs.eqiad.wmflabs
