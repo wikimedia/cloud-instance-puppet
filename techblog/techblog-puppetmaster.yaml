@@ -1,0 +1,3 @@
+profile::base::puppet::facter_major_version: 3
+profile::base::puppet::puppet_major_version: 5
+role::puppetmaster::standalone::autosign: true
