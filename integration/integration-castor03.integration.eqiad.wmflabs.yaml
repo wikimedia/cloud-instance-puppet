@@ -1,1 +1,2 @@
 labstore::traffic_shaping::egress: 100mbps
+puppetmaster: integration-puppetmaster-02.integration.eqiad.wmflabs
