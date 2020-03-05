@@ -31,4 +31,4 @@ profile::elasticsearch::row: placeholder
 profile::elasticsearch::version: '7.4'
 profile::prometheus::haproxy_exporter::listen_port: 9901
 prometheus::haproxy_exporter::endpoint: http://localhost:9900/stats;csv
-puppetmaster: jeh-puppetmaster.testlabs.eqiad.wmflabs
+puppetmaster: jeh-puppet.testlabs.eqiad.wmflabs
