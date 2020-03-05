@@ -2,6 +2,7 @@ passwords::root::extra_keys:
   alex: ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAICYxCqZkGys8gZB6Mq61Fw08CB7m1huxpnpII2ay3e0H
     krenair@gmail.com inspiron
 puppet_major_version: 4
+puppetmaster: integration-puppetmaster-02.integration.eqiad.wmflabs
 puppetmaster::geoip::fetch_private: false
 puppetmaster::geoip::use_proxy: false
 role::puppetmaster::standalone::autosign: true
