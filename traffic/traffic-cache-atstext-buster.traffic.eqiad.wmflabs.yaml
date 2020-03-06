@@ -117,7 +117,7 @@ profile::trafficserver::tls::inbound_tls_settings:
   session_cache_buckets: 32768
   session_cache_size: 512000
   session_cache_timeout: 7200
-  session_ticket_enable: 0
+  session_ticket_enable: 1
   ssl_handshake_timeout_in: 60
 profile::trafficserver::tls::parent_rules: []
 profile::trafficserver::tls::unified_acme_chief: true
