@@ -13,6 +13,7 @@ profile::mediawiki::php::fpm_config:
 profile::mediawiki::php::php_version: '7.2'
 profile::mediawiki::php::request_timeout: 201
 profile::mediawiki::php::restarts::ensure: present
+profile::mediawiki::php::restarts::has_lvs: false
 profile::mediawiki::php::restarts::opcache_limit: 200
 profile::mediawiki::vhost_feature_flags: {}
 profile::mediawiki::webserver::has_tls: false
