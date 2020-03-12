@@ -1,1 +1,2 @@
+manage_puppet_ca_file: puppet:///files/puppet/ca.vault_signed_bundle.pem
 puppetmaster: pm.sso.eqiad.wmflabs
