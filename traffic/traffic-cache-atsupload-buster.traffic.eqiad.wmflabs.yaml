@@ -14,7 +14,6 @@ cache::req_handling:
         director: swift_thumbs
 do_acme: false
 profile::cache::varnish::frontend::fe_extra_vcl:
-- upload-common
 - normalize_path
 profile::cache::varnish::frontend::fe_vcl_config:
   allowed_methods: ^(GET|HEAD|OPTIONS|POST|PURGE|PUT|DELETE)$
