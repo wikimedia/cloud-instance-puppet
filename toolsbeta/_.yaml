@@ -11,48 +11,7 @@ dynamicproxy::banned_ips:
 - 70.179.6.9
 dynamicproxy::blocked_user_agent_regex: TweetmemeBot|Chrome/38\.0\.2125\.104|Applebot
 dynamicproxy::error_details: ''
-etcd::cluster_name: toolsbeta-k8s
-etcd::cluster_state: new
-etcd::host: '%{::fqdn}'
-etcd::peers_list: toolsbeta-k8s-master-01=http://toolsbeta-k8s-master-01.toolsbeta.eqiad.wmflabs:2380
-etcd::port: 2739
-etcd::ssl::puppet_cert_name: '%{::fqdn}'
-etcd::use_ssl: false
-flannel::etcd_hosts:
-- toolsbeta-flannel-etcd-01.toolsbeta.eqiad.wmflabs
 gridengine::gridmaster: toolsbeta-grid-master.toolsbeta.eqiad.wmflabs
-k8s::bastion_hosts:
-- toolsbeta-sgebastion-04.toolsbeta.eqiad.wmflabs
-k8s::etcd_hosts:
-- toolsbeta-k8s-etcd-01.toolsbeta.eqiad.wmflabs
-k8s::kubelet::pod_infra_container_image: docker-registry.tools.wmflabs.org/pause:2.0
-k8s::master_host: toolsbeta-k8s-master-01.toolsbeta.eqiad.wmflabs
-k8s::master_hosts:
-- toolsbeta-k8s-master-01.toolsbeta.eqiad.wmflabs
-k8s::version: v1.3.3wmf1
-k8s::worker_hosts:
-- toolsbeta-worker-1001.toolsbeta.eqiad.wmflabs
-k8s_admin_users:
-- joe
-- yuvipanda
-k8s_infrastructure_users:
-  client-infrastructure:
-    id: 1
-    token: faketoken1
-    type: infrastructure-readwrite
-  prometheus:
-    id: 3
-    token: faketoken3
-    type: infrastructure-readonly
-  proxy-infrastructure:
-    id: 2
-    token: faketoken2
-    type: infrastructure-readonly
-k8s_master: toolsbeta-k8s-master-01.toolsbeta.eqiad.wmflabs
-k8s_regular_users:
-- lolrrit-wm
-- nagf
-kubelet::pod_infra_container_image: docker-registry.tools.wmflabs.org/pause:2.0
 passwords::root::extra_keys:
   alex: ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAICYxCqZkGys8gZB6Mq61Fw08CB7m1huxpnpII2ay3e0H
     krenair@gmail.com inspiron
@@ -108,12 +67,6 @@ profile::elasticsearch::instances: {}
 profile::elasticsearch::rack: placeholder
 profile::elasticsearch::row: placeholder
 profile::elasticsearch::version: '7.4'
-profile::kubernetes::master::runtime_config: batch/v2alpha1
-profile::kubernetes::master_fqdn: toolsbeta-k8s-master-01.toolsbeta.eqiad.wmflabs
-profile::kubernetes::master_hosts:
-- toolsbeta-k8s-master-01.toolsbeta.eqiad.wmflabs
-profile::kubernetes::node::kubelet_extra_params:
-- --require-kubeconfig
 profile::prometheus::haproxy_exporter::listen_port: 9901
 profile::standard::has_default_mail_relay: false
 profile::toolforge::active_cronrunner: toolsbeta-sgecron-01.toolsbeta.eqiad.wmflabs
