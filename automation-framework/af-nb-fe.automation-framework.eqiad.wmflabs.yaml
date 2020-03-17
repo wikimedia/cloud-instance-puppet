@@ -1,4 +1,4 @@
-profile::backup::director_seed: 10202030
+profile::backup::director_seed: foo
 profile::netbox::acme: false
 profile::netbox::active_server: af-nb-fe.automation-framework.eqiad.wmflabs
 profile::netbox::db::master: af-nb-db-1.automation-framework.eqiad.wmflabs
