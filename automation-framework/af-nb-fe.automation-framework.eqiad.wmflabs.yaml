@@ -14,5 +14,6 @@ profile::netbox::secret_key: anotheuntoheunte
 profile::netbox::service_hostname: af-netbox.wmflabs.org
 profile::netbox::tokens::read_only: DUMMY
 profile::netbox::tokens::read_write: DUMMY
+profile::rsyslog::kafka_shipper::kafka_brokers: []
 puppetmaster: af-puppetmaster02.automation-framework.eqiad.wmflabs
 scap::deployment_server: af-puppetmaster02.automation-framework.eqiad.wmflabs
