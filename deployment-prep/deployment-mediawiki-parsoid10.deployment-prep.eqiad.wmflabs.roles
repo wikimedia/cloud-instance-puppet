@@ -1,5 +1,0 @@
-- role::parsoid
-- role::mediawiki::appserver
-- role::beta::mediawiki
-- profile::mediawiki::php
-- role::mediawiki::common
