@@ -1,7 +1,7 @@
 profile::backup::director_seed: FAKE
 profile::netbox::acme: false
 profile::netbox::active_server: af-nb-fe.automation-framework.eqiad.wmflabs
-profile::netbox::automation::dns_min_records: 0
+profile::netbox::automation::dns_min_records: 10
 profile::netbox::automation::git_hostname: af-netbox-git.wmflabs.org
 profile::netbox::db::master: af-nb-db-1.automation-framework.eqiad.wmflabs
 profile::netbox::db::password: 0Quoquovik
