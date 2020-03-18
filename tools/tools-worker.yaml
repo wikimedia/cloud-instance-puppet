@@ -1,3 +1,0 @@
-profile::ldap::client::labs::client_stack: classic
-role::labs::nfsclient::lookupcache: all
-sudo_flavor: sudoldap
