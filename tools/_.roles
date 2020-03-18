@@ -1,4 +1,3 @@
 - role::aptly::client
 - role::prometheus::node_exporter
-- role::toollabs::logging::sender
 - profile::toolforge::clush::target
