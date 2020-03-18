@@ -1,4 +1,0 @@
-etcd::cluster_name: tools-flannel
-etcd::peers_list: tools-flannel-etcd-01=http://tools-flannel-etcd-01.tools.eqiad.wmflabs:2380,tools-flannel-etcd-03=http://tools-flannel-etcd-03.tools.eqiad.wmflabs:2380,tools-flannel-etcd-02=http://tools-flannel-etcd-02.tools.eqiad.wmflabs:2380
-etcd::use_ssl: true
-mount_nfs: false
