@@ -9,43 +9,7 @@ dynamicproxy::banned_ips:
 - 70.179.6.9
 dynamicproxy::blocked_user_agent_regex: TweetmemeBot|Chrome/38\.0\.2125\.104|Applebot
 dynamicproxy::error_details: ''
-etcd::cluster_name: tools-k8s
-etcd::cluster_state: existing
-etcd::host: '%{::fqdn}'
-etcd::peers_list: tools-k8s-master-01=http://tools-k8s-master-01.tools.eqiad.wmflabs:2380
-etcd::port: 2739
-etcd::ssl::puppet_cert_name: '%{::fqdn}'
-etcd::use_ssl: false
-flannel::etcd_hosts:
-- tools-flannel-etcd-01.tools.eqiad.wmflabs
-- tools-flannel-etcd-02.tools.eqiad.wmflabs
-- tools-flannel-etcd-03.tools.eqiad.wmflabs
 gridengine::gridmaster: tools-grid-master.tools.eqiad.wmflabs
-k8s::bastion_hosts:
-- tools-sgebastion-07.tools.eqiad.wmflabs
-- tools-sgebastion-08.tools.eqiad.wmflabs
-k8s::etcd_hosts:
-- tools-k8s-etcd-01.tools.eqiad.wmflabs
-- tools-k8s-etcd-02.tools.eqiad.wmflabs
-- tools-k8s-etcd-03.tools.eqiad.wmflabs
-k8s::kubelet::pod_infra_container_image: docker-registry.tools.wmflabs.org/pause:2.0
-k8s::master_host: k8s-master.tools.wmflabs.org
-k8s::master_hosts:
-- tools-k8s-master-01.tools.eqiad.wmflabs
-- tools-prometheus-03.tools.eqiad.wmflabs
-- tools-prometheus-04.tools.eqiad.wmflabs
-k8s::version: v1.3.3wmf1
-k8s::worker_hosts:
-- tools-worker-1001.tools.eqiad.wmflabs
-- tools-worker-1002.tools.eqiad.wmflabs
-k8s_admin_users:
-- joe
-- yuvipanda
-k8s_master: k8s-master.tools.wmflabs.org
-k8s_regular_users:
-- lolrrit-wm
-- nagf
-kubelet::pod_infra_container_image: docker-registry.tools.wmflabs.org/pause:2.0
 network::allow_ssh_from_ips:
 - 10.68.21.162
 - 10.68.17.221
@@ -99,13 +63,7 @@ profile::elasticsearch::dc_settings:
 profile::elasticsearch::instances: {}
 profile::elasticsearch::rack: placeholder
 profile::elasticsearch::row: placeholder
-profile::kubernetes::master::runtime_config: batch/v2alpha1
-profile::kubernetes::master_fqdn: k8s-master.tools.wmflabs.org
-profile::kubernetes::master_hosts:
-- k8s-master.tools.wmflabs.org
 profile::kubernetes::node::disable_rsyslog: true
-profile::kubernetes::node::kubelet_extra_params:
-- --require-kubeconfig
 profile::rsyslog::kubernetes::enable: false
 profile::standard::has_default_mail_relay: false
 profile::toolforge::active_cronrunner: tools-sgecron-01.tools.eqiad.wmflabs
