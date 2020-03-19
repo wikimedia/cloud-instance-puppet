@@ -11,7 +11,7 @@ profile::puppetdb::microservice::enabled: false
 profile::puppetdb::slaves:
 - toolsbeta-puppetdb-02.toolsbeta.eqiad.wmflabs
 puppetdb_major_version: 4
-puppetmaster: toolsbeta-puppetmaster-02.toolsbeta.eqiad.wmflabs
+puppetmaster: toolsbeta-puppetmaster-03.toolsbeta.eqiad.wmflabs
 puppetmaster::servers:
   toolsbeta-puppetmaster-02.toolsbeta.eqiad.wmflabs:
   - loadfactor: 10
