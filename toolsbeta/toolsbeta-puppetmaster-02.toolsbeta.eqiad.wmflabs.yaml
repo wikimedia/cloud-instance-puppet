@@ -2,5 +2,8 @@ profile::puppetmaster::common::puppetdb_host: toolsbeta-puppetdb-01.toolsbeta.eq
 profile::puppetmaster::common::storeconfigs: puppetdb
 puppet_major_version: 4
 puppetdb_major_version: 4
-role::puppetmaster::standalone::puppetdb_host: toolsbeta-puppetdb-01.toolsbeta.eqiad.wmflabs
+role::puppetmaster::common::command_broadcast: true
+role::puppetmaster::standalone::puppetdb_host:
+- toolsbeta-puppetdb-01.toolsbeta.eqiad.wmflabs
+- toolsbeta-puppetdb-02.toolsbeta.eqiad.wmflabs
 role::puppetmaster::standalone::storeconfigs: puppetdb
