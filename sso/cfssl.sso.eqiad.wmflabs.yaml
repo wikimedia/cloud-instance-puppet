@@ -1,0 +1,11 @@
+cfssl::initca::ca_config:
+  key:
+    algo: rsa
+    size: 2048
+  names:
+    country: US
+    locality: San Francisco
+    organisation: technolagy
+    organisational_unit: PKI
+    state: CA
+cfssl::initca::ca_name: Wikimedia CFSSL CA
