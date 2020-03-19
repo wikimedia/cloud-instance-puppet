@@ -4,8 +4,4 @@ profile::puppetdb::microservice::port: 0
 profile::puppetdb::microservice::uwsgi_port: 0
 puppet_major_version: 4
 puppetdb_major_version: 4
-puppetmaster: toolsbeta-puppetmaster-02.toolsbeta.eqiad.wmflabs
-puppetmaster::servers:
-  toolsbeta-puppetmaster-02.toolsbeta.eqiad.wmflabs:
-  - loadfactor: 1
-    worker: toolsbeta-puppetmaster-02.toolsbeta.eqiad.wmflabs
+puppetmaster: toolsbeta-puppetmaster-03.toolsbeta.eqiad.wmflabs
