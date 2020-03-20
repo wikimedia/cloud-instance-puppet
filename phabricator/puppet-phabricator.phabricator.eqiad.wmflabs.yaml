@@ -1,3 +1,5 @@
+profile::base::puppet::facter_major_version: 3
+profile::base::puppet::puppet_major_version: 5
 puppetdb_major_version: 4
 puppetmaster: puppetmaster.cloudinfra.wmflabs.org
 role::puppetmaster::standalone::allow_from:
