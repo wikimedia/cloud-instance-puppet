@@ -75,6 +75,8 @@ profile::toolforge::active_proxy_host: toolsbeta-proxy-1
 profile::toolforge::clush::target::master: tools-clushmaster-02.tools.eqiad.wmflabs
 profile::toolforge::docker::registry::active_node: toolsbeta-docker-registry-01.toolsbeta.eqiad.wmflabs
 profile::toolforge::docker::registry::standby_node: undef
+profile::toolforge::elasticsearch::keepalived::host_priority: 100
+profile::toolforge::elasticsearch::keepalived::vip: 172.16.1.131
 profile::toolforge::etcdir: /var/lib/gridengine/etc
 profile::toolforge::grid::base::collectors: /data/project/.system_sge/gridengine/collectors
 profile::toolforge::grid::base::geconf: /data/project/.system_sge/gridengine
