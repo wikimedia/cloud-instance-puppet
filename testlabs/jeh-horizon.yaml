@@ -1,2 +1,3 @@
 mount_nfs: false
+profile::openstack::eqiad1::horizon_version: train
 puppetmaster: jeh-puppet.testlabs.eqiad.wmflabs
