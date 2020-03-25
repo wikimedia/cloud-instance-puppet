@@ -1,0 +1,2 @@
+mount_nfs: false
+puppetmaster: jeh-puppet.testlabs.eqiad.wmflabs
