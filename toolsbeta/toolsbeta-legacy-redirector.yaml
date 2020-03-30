@@ -1,2 +1,3 @@
 profile::toolforge::canonical_domain: toolsbeta.wmflabs.org
 profile::toolforge::canonical_scheme: http://
+profile::toolforge::proxy::do_https: false
