@@ -13,7 +13,6 @@ cache::req_handling:
       ^/+[^/]+/[^/]+/thumb/:
         director: swift_thumbs
 do_acme: false
-profile::cache::kafka::webrequest::atskafka_enabled: true
 profile::cache::varnish::frontend::fe_extra_vcl:
 - normalize_path
 profile::cache::varnish::frontend::fe_vcl_config:
