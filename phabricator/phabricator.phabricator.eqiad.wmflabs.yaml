@@ -4,6 +4,7 @@ profile::envoy::ensure: absent
 profile::rsyslog::kafka_shipper::kafka_brokers:
 - ''
 profile::tlsproxy::envoy::ensure: absent
+profile::tlsproxy::envoy::global_cert_name: phabricator.discovery.wmnet
 profile::tlsproxy::envoy::retries: true
 profile::tlsproxy::envoy::services:
 - port: 80
