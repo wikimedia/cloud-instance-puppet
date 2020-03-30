@@ -148,6 +148,7 @@ profile::puppetmaster::common::puppetdb_host: puppet-phabricator.phabricator.eqi
 profile::rsyslog::kafka_shipper::kafka_brokers: []
 profile::tlsproxy::envoy::retries: 3
 profile::tlsproxy::envoy::timeout: 60
+profile::tlsproxy::envoy::use_remote_address: false
 puppet_major_version: 4
 puppetdb::password::replication: puppetdb
 puppetdb::password::rw: puppetdb
