@@ -146,8 +146,8 @@ profile::puppetdb::master: puppet-phabricator.phabricator.eqiad.wmflabs
 profile::puppetdb::slaves: []
 profile::puppetmaster::common::puppetdb_host: puppet-phabricator.phabricator.eqiad.wmflabs
 profile::rsyslog::kafka_shipper::kafka_brokers: []
-profile::tlsproxy::envoy::retries: 3
-profile::tlsproxy::envoy::timeout: 60
+profile::tlsproxy::envoy::retries: true
+profile::tlsproxy::envoy::timeout: 60.0
 profile::tlsproxy::envoy::upstream_addr: 127.0.0.1
 profile::tlsproxy::envoy::use_remote_address: false
 puppet_major_version: 4
