@@ -146,6 +146,7 @@ profile::puppetdb::master: puppet-phabricator.phabricator.eqiad.wmflabs
 profile::puppetdb::slaves: []
 profile::puppetmaster::common::puppetdb_host: puppet-phabricator.phabricator.eqiad.wmflabs
 profile::rsyslog::kafka_shipper::kafka_brokers: []
+profile::tlsproxy::envoy::retries: 3
 profile::tlsproxy::envoy::timeout: 60
 puppet_major_version: 4
 puppetdb::password::replication: puppetdb
