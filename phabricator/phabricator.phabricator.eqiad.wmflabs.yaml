@@ -1,3 +1,4 @@
+profile::envoy::ensure: absent
 profile::rsyslog::kafka_shipper::kafka_brokers:
 - ''
 profile::tlsproxy::envoy::ensure: absent
