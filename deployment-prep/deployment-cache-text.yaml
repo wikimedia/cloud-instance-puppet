@@ -88,6 +88,7 @@ profile::cache::varnish::frontend::fe_vcl_config:
   upload_domain: upload.beta.wmflabs.org
   upload_webp_hits_threshold: 1000
   varnish_probe_ms: 100
+profile::prometheus::cadvisor_exporter::port: 4194
 varnish_version4: true
 wikimedia_clusters:
   cache_text:
