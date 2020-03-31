@@ -4,5 +4,6 @@ profile::debmonitor::server::django_secret_key: ekxb5k4#y2et%x@4iqf=m5nx(8)y3q*u
 profile::debmonitor::server::internal_server_name: af-debmonitor.automation-framework.eqiad.wmflabs
 profile::debmonitor::server::public_server_name: af-debmonitor.wmflabs.org
 profile::openstack::main::cumin::project_ssh_priv_key_path: /root/.ssh/cumin
+profile::rsyslog::kafka_shipper::kafka_brokers: []
 puppetmaster: af-puppetmaster02.automation-framework.eqiad.wmflabs
 scap::deployment_server: af-puppetmaster02.automation-framework.eqiad.wmflabs
