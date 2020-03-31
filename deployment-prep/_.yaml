@@ -124,6 +124,8 @@ profile::conftool::master::sync_dir: /etc/conftool/data-local
 profile::cpjobqueue::jobrunner_host: http://deployment-jobrunner03.deployment-prep.eqiad.wmflabs:9006
 profile::cpjobqueue::redis_path: /var/run/nutcracker/redis_eqiad.sock
 profile::cpjobqueue::videoscaler_host: http://deployment-jobrunner03.deployment-prep.eqiad.wmflabs:9006
+profile::docker::builder::prune_images: false
+profile::docker::engine::packagename: docker-engine
 profile::elasticsearch::base_data_dir: /srv/elasticsearch
 profile::elasticsearch::cirrus::tls_port: 9243
 profile::elasticsearch::dc_settings:
