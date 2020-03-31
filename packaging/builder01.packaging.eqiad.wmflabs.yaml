@@ -1,1 +1,2 @@
+profile::docker::builder::prune_images: false
 profile::docker::engine::packagename: docker-engine
