@@ -1,7 +1,7 @@
 acmechief_host: tools-acme-chief-01.tools.eqiad.wmflabs
 active_cronrunner: tools-cron-01.tools.eqiad.wmflabs
 active_proxy_host: tools-proxy-05
-active_redis: tools-redis-1002.tools.eqiad.wmflabs
+active_redis: tools-redis-1003.tools.eqiad.wmflabs
 docker::builder_host: tools-docker-imagebuilder-01.tools.eqiad.wmflabs
 docker::registry: docker-registry.tools.wmflabs.org
 docker::registry_url: https://tools-docker-registry.wmflabs.org/v2/
