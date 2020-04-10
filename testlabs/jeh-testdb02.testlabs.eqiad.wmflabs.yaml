@@ -1,1 +1,3 @@
+profile::openstack::base::mariadb::hosts:
+- jeh-testdb02.testlabs.eqiad.wmflabs
 puppetmaster: jeh-puppet.testlabs.eqiad.wmflabs
