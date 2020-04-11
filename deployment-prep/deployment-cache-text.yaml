@@ -99,3 +99,12 @@ wikimedia_clusters:
       eqsin: []
       esams: []
       ulsfo: []
+  misc:
+    description: Miscellaneous
+    id: 8
+    sites:
+      codfw: []
+      eqiad: []
+      eqsin: []
+      esams: []
+      ulsfo: []
