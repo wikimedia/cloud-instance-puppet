@@ -44,7 +44,7 @@ cache::app_directors:
 cache::nodes:
   text:
     eqiad_ats:
-    - deployment-cache-text05.deployment-prep.eqiad.wmflabs
+    - deployment-cache-text06.deployment-prep.eqiad.wmflabs
 cache::req_handling:
   citoid.wikimedia.org:
     caching: pass
