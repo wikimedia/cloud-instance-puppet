@@ -14,7 +14,7 @@ cache::app_directors:
 cache::nodes:
   upload:
     eqiad_ats:
-    - deployment-cache-upload05.deployment-prep.eqiad.wmflabs
+    - deployment-cache-upload06.deployment-prep.eqiad.wmflabs
 cache::req_handling:
   default:
     director: swift
