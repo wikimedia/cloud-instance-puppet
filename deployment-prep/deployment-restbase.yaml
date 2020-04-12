@@ -1,3 +1,15 @@
+profile::cassandra::instances:
+  deployment-restbase01.deployment-prep.eqiad.wmflabs: {}
+  deployment-restbase02.deployment-prep.eqiad.wmflabs: {}
+  deployment-restbase03.deployment-prep.eqiad.wmflabs: {}
+profile::restbase::hosts:
+- deployment-restbase01.deployment-prep.eqiad.wmflabs
+- deployment-restbase02.deployment-prep.eqiad.wmflabs
+- deployment-restbase03.deployment-prep.eqiad.wmflabs
+profile::restbase::seeds_ng:
+- deployment-restbase01.deployment-prep.eqiad.wmflabs
+- deployment-restbase02.deployment-prep.eqiad.wmflabs
+- deployment-restbase03.deployment-prep.eqiad.wmflabs
 profile::tlsproxy::envoy::capitalize_headers: false
 profile::tlsproxy::envoy::ensure: absent
 profile::tlsproxy::envoy::global_cert_name: restbase.discovery.wmnet
