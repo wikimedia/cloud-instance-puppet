@@ -1,12 +1,1 @@
-profile::cassandra::instances:
-  deployment-restbase01.deployment-prep.eqiad.wmflabs: {}
-  deployment-restbase02.deployment-prep.eqiad.wmflabs: {}
-  deployment-restbase03.deployment-prep.eqiad.wmflabs: {}
-profile::restbase::hosts:
-- deployment-restbase01.deployment-prep.eqiad.wmflabs
-- deployment-restbase02.deployment-prep.eqiad.wmflabs
-- deployment-restbase03.deployment-prep.eqiad.wmflabs
-profile::restbase::seeds_ng:
-- deployment-restbase01.deployment-prep.eqiad.wmflabs
-- deployment-restbase02.deployment-prep.eqiad.wmflabs
-- deployment-restbase03.deployment-prep.eqiad.wmflabs
+{}
