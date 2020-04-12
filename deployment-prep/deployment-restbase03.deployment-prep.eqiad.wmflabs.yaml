@@ -1,9 +1,7 @@
 profile::cassandra::instances:
   deployment-restbase01.deployment-prep.eqiad.wmflabs: {}
   deployment-restbase02.deployment-prep.eqiad.wmflabs: {}
-  deployment-restbase03.deployment-prep.eqiad.wmflabs:
-    a:
-      jmx_exporter_enabled: true
+  deployment-restbase03.deployment-prep.eqiad.wmflabs: {}
 profile::restbase::hosts:
 - deployment-restbase01.deployment-prep.eqiad.wmflabs
 - deployment-restbase02.deployment-prep.eqiad.wmflabs
