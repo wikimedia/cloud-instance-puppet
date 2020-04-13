@@ -1,1 +1,2 @@
 phabricator::vcs::address::v6: fe80::f816:3eff:fe41:b78e
+profile::tlsproxy::envoy::capitalize_headers: true
