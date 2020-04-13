@@ -1,2 +1,0 @@
-profile::ceph::data_dir: /var/lib/ceph
-puppetmaster: jeh-puppet.testlabs.eqiad.wmflabs
