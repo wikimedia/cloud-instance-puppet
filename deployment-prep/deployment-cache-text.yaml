@@ -81,6 +81,7 @@ profile::cache::varnish::frontend::fe_vcl_config:
   enable_geoiplookup: true
   keep: 1d
   maps_domain: maps.beta.wmflabs.org
+  public_clouds_shutdown: false
   purge_host_regex: ^(?!(upload|maps)\.beta\.wmflabs\.org)
   shortener_domain: w-beta.wmflabs.org
   static_host: en.wikipedia.beta.wmflabs.org
