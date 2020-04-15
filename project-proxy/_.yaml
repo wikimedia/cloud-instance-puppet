@@ -4,3 +4,10 @@ profile::wmcs::novaproxy::all_proxies:
 - proxy-02.project-proxy.eqiad.wmflabs
 profile::wmcs::novaproxy::block_ref_re: koeri.boun.edu.tr
 profile::wmcs::novaproxy::use_ssl: true
+profile::wmcs::novaproxy::xff_fqdns:
+- accounts.wmflabs.org
+- accounts-dev.wmflabs.org
+- utrs-beta.wmflabs.org
+- utrs.wmflabs.org
+- xtools.wmflabs.org
+- xtools-dev.wmflabs.org
