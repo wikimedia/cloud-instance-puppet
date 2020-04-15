@@ -1,6 +1,6 @@
 authdns_servers:
-  cloudservices1003.wikimedia.org: 208.80.154.135
-  cloudservices1004.wikimedia.org: 208.80.154.11
+  208.80.154.11: 208.80.154.11
+  208.80.154.135: 208.80.154.135
 http_proxy: ''
 profile::acme_chief::accounts:
   0f076461095e47a9dce5334db021a891:
