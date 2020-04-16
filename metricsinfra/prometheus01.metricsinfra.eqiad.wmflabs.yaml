@@ -1,0 +1,3 @@
+profile::wmcs::prometheus::eqiad1::metricsinfra::projects:
+- tools
+- cloudinfra
