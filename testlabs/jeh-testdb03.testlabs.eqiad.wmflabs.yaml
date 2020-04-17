@@ -1,1 +1,3 @@
+profile::wmcs::prometheus::metricsinfra::projects:
+- testlabs
 puppetmaster: jeh-puppet.testlabs.eqiad.wmflabs
