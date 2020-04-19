@@ -1,3 +1,6 @@
+cache::alternate_domains:
+  performance.wikimedia.org:
+    director: performance
 cache::cluster: text
 cache::lua_support: true
 cache::text::nodes:
@@ -22,6 +25,8 @@ profile::cache::varnish::common_vcl_config:
   top_domain: beta.wmflabs.org
   upload_domain: upload.beta.wmflabs.org
   upload_webp_hits_threshold: 1000
+profile::cache::varnish::separate_vcl:
+- misc
 profile::tlsproxy::instance::nginx_variant: extras
 profile::trafficserver::tls::available_unified_certs:
   lets-encrypt:
