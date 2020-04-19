@@ -4,9 +4,6 @@ aptly::group: wikidev
 aptly::manage_nginx: false
 aptly::owner: jenkins-deploy
 beta::syncsiteresources::user: www-data
-cache::misc::nodes:
-  eqiad:
-  - deployment-phab01.deployment-prep.eqiad.wmflabs
 classes:
 - apt::unattendedupgrades
 - role::aptly::client
