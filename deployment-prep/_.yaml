@@ -202,6 +202,7 @@ profile::services_proxy::services:
     port: 9999
     scheme: https
     timeout: 600
+profile::webperf::site::server_name: performance.wikimedia.beta.wmflabs.org
 puppetdb_host: deployment-puppetdb03.deployment-prep.eqiad.wmflabs
 puppetmaster: deployment-puppetmaster04.deployment-prep.eqiad.wmflabs
 puppetmaster::geoip::fetch_private: false
