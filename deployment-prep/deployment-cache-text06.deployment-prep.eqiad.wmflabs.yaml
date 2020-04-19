@@ -1,4 +1,3 @@
-cache::alternate_domains: {}
 cache::cluster: text
 cache::lua_support: true
 cache::text::nodes:
