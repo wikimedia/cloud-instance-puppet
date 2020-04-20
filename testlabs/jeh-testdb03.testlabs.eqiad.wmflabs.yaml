@@ -1,7 +1,4 @@
+profile::wmcs::prometheus::metricsinfra::ext_fqdn: prometheus.wmflabs.org
 profile::wmcs::prometheus::metricsinfra::projects:
 - name: testlabs
-  notify_email:
-  - jhedden@wikimedia.org
-  notify_irc:
-  - cloud-feed
 puppetmaster: jeh-puppet.testlabs.eqiad.wmflabs
