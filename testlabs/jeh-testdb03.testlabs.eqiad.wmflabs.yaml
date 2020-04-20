@@ -1,3 +1,7 @@
 profile::wmcs::prometheus::metricsinfra::projects:
-- testlabs
+- name: testlabs
+  notify_email:
+  - cloud-admin-feed@lists.wikimedia.org
+  notify_irc:
+  - cloud-feed
 puppetmaster: jeh-puppet.testlabs.eqiad.wmflabs
