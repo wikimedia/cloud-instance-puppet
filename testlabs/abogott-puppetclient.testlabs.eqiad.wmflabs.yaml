@@ -7,6 +7,7 @@ profile::openstack::eqiad1::designate::floating_ip_ptr_fqdn_matching_regex: ^(\d
 profile::openstack::eqiad1::designate::floating_ip_ptr_fqdn_replacement_pattern: \1.56.15.185.in-addr.arpa.
 profile::openstack::eqiad1::designate::floating_ip_ptr_zone: 56.15.185.in-addr.arpa.
 profile::openstack::eqiad1::designate::mcrouter_port: 11213
+profile::openstack::eqiad1::designate::pdns_db_pass: snakeoil
 profile::openstack::eqiad1::designate_hosts:
 - cloudservices1003.wikimedia.org
 - cloudservices1004.wikimedia.org
