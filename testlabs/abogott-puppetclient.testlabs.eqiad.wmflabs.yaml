@@ -12,6 +12,8 @@ profile::openstack::eqiad1::designate::pdns_db_pass: snakeoil
 profile::openstack::eqiad1::designate_hosts:
 - cloudservices1003.wikimedia.org
 - cloudservices1004.wikimedia.org
+profile::openstack::eqiad1::horizon::puppet_git_repo_name: instance-puppet
+profile::openstack::eqiad1::horizon::puppet_git_repo_user: instance-puppet-user
 profile::openstack::eqiad1::labweb_hosts:
 - labweb1001.wikimedia.org
 - labweb1002.wikimedia.org
