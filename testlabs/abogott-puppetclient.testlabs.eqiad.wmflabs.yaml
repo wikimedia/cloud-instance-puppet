@@ -56,4 +56,5 @@ profile::openstack::eqiad1::puppetmaster::servers:
 profile::openstack::eqiad1::puppetmaster::web_hostname: puppetmaster.cloudinfra.wmflabs.org
 profile::openstack::eqiad1::puppetmaster_hostname: puppetmaster.cloudinfra.wmflabs.org
 profile::openstack::eqiad1::region: eqiad1-r
+profile::openstack::eqiad1::version: rocky
 puppetmaster: abogott-puppetmaster.testlabs.eqiad.wmflabs
