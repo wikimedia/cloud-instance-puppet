@@ -4,6 +4,14 @@ profile::openstack::base::designate::db_user: designate
 profile::openstack::base::designate::mcrouter_port: 11213
 profile::openstack::base::designate::pdns_db_name: pdns
 profile::openstack::base::designate::pdns_db_user: pdns
+profile::openstack::base::keystone::admin_bind_port: 35357
+profile::openstack::base::keystone::auth_port: 35357
+profile::openstack::base::keystone::auth_protocol: http
+profile::openstack::base::keystone::daemon_active: true
+profile::openstack::base::keystone::public_bind_port: 5000
+profile::openstack::base::keystone::public_port: 5000
+profile::openstack::base::keystone::wiki_status_page_prefix: 'Nova_Resource:'
+profile::openstack::base::keystone::wsgi_server: keystone
 profile::openstack::base::nova::rabbit_user: nova
 profile::openstack::eqiad1::designate::db_admin_pass: snakeoil
 profile::openstack::eqiad1::designate::db_host: fake.host.eqiad.wmflabs
