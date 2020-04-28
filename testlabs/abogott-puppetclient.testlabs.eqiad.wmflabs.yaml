@@ -4,6 +4,7 @@ profile::openstack::base::designate::db_user: designate
 profile::openstack::base::designate::mcrouter_port: 11213
 profile::openstack::base::designate::pdns_db_name: pdns
 profile::openstack::base::designate::pdns_db_user: pdns
+profile::openstack::base::nova::rabbit_user: nova
 profile::openstack::eqiad1::designate::db_admin_pass: snakeoil
 profile::openstack::eqiad1::designate::db_host: fake.host.eqiad.wmflabs
 profile::openstack::eqiad1::designate::db_pass: snakeoil
