@@ -45,6 +45,7 @@ profile::openstack::eqiad1::pdns::db_pass: snakeoil
 profile::openstack::eqiad1::pdns::host: ns0.openstack.eqiad1.wikimediacloud.org
 profile::openstack::eqiad1::pdns::host_secondary: ns0.openstack.eqiad1.wikimediacloud.org
 profile::openstack::eqiad1::pdns::monitor_target_fqdn: foo.example.org
+profile::openstack::eqiad1::pdns::recursor: localhost
 profile::openstack::eqiad1::puppetmaster::ca: cloud-puppetmaster-03.cloudinfra.eqiad.wmflabs
 profile::openstack::eqiad1::puppetmaster::cert_secret_path: puppetmaster
 profile::openstack::eqiad1::puppetmaster::encapi::db_host: cloudinfra-db01.cloudinfra.eqiad.wmflabs
