@@ -1,3 +1,4 @@
+profile::openstack::eqiad1::designate::db_host: fake.host.eqiad.wmflabs
 profile::openstack::eqiad1::designate::db_pass: snakeoil
 profile::openstack::eqiad1::designate_hosts:
 - cloudservices1003.wikimedia.org
