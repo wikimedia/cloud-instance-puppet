@@ -16,6 +16,7 @@ profile::openstack::eqiad1::labweb_hosts:
 - labweb1001.wikimedia.org
 - labweb1002.wikimedia.org
 profile::openstack::eqiad1::ldap_user_pass: snakeoil
+profile::openstack::eqiad1::nova::rabbit_pass: snakeoil
 profile::openstack::eqiad1::openstack_controllers:
 - cloudcontrol1003.wikimedia.org
 - cloudcontrol1004.wikimedia.org
