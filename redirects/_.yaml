@@ -9,4 +9,4 @@ role::labs::redirector::redirects:
   partnermetrics.wmflabs.org: https://tools.wmflabs.org/mediaviews-api
   reportcard.wmflabs.org: https://analytics.wikimedia.org/dashboards/reportcard
   wdq.wmflabs.org: https://query.wikidata.org
-  wikistream.wmflabs.org: https://wikistream.toolforge.org/
+  wikistream.wmflabs.org: https://wikistream.toolforge.org
