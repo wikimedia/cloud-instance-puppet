@@ -7,4 +7,5 @@ deployment_server: deploy-1002.devtools.eqiad.wmflabs
 profile::mediawiki::deployment::server::rsync_host: deploy-1002.devtools.eqiad.wmflabs
 scap::deployment_server: deploy-1002.devtools.eqiad.wmflabs
 scap::wmflabs_master: deploy-1002.devtools.eqiad.wmflabs
+sslcert::certificate::ensure: absent
 sslcert::certificate::skip_private: true
