@@ -4,8 +4,8 @@ cache::nodes:
     - gerrit-prod-1001.devtools.eqiad.wmflabs
     - phabricator-prod-1001.devtools.eqiad.wmflabs
 deployment_server: deploy-1002.devtools.eqiad.wmflabs
+profile::envoy::ensure: absent
 profile::mediawiki::deployment::server::rsync_host: deploy-1002.devtools.eqiad.wmflabs
 scap::deployment_server: deploy-1002.devtools.eqiad.wmflabs
 scap::wmflabs_master: deploy-1002.devtools.eqiad.wmflabs
-sslcert::certificate::ensure: absent
 sslcert::certificate::skip_private: true
