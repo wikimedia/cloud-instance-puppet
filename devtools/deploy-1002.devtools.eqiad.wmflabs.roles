@@ -1,3 +1,2 @@
 - role::deployment_server
-- profile::quarry::database
 - role::labs::lvm::srv
