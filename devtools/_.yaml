@@ -1,3 +1,21 @@
+cache::misc::nodes:
+  eqiad:
+  - phabricator.phabricator.eqiad.wmflabs
+cache::nodes:
+  text:
+    eqiad:
+    - 10.68.21.68
+    - 10.68.21.69
+    - 10.68.20.184
+    - 10.68.16.15
+    - 10.68.19.231
+    eqiad_ats: []
+cache::text::nodes:
+  eqiad:
+  - deployment-cache-text05.deployment-prep.eqiad.wmflabs
+cache::upload::nodes:
+  eqiad:
+  - deployment-cache-upload05.deployment-prep.eqiad.wmflabs
 deployment_server: deploy-1002.devtools.eqiad.wmflabs
 profile::mediawiki::deployment::server::rsync_host: deploy-1002.devtools.eqiad.wmflabs
 scap::deployment_server: deploy-1002.devtools.eqiad.wmflabs
