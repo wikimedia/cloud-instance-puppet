@@ -103,6 +103,7 @@ phabricator::trusted_proxies:
 - 10.68.16.15
 - 10.68.19.231
 phabricator::vcs::address::v4: 10.68.16.15
+phabricator::vcs::address::v6: ::1
 phabricator::vcs::listen_addresses: []
 phabricator_active_server: phabricator
 phabricator_active_server_fqdn: phabricator.phabricator.eqiad.wmflabs
