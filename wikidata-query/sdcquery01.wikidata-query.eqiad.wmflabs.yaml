@@ -1,1 +1,2 @@
+profile::query_service::blazegraph_heap_size: 6g
 profile::rsyslog::kafka_shipper::kafka_brokers: []
