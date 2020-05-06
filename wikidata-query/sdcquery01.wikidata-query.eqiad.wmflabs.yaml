@@ -1,0 +1,5 @@
+profile::query_service::blazegraph_heap_size: 5g
+profile::query_service::data_dir: /srv/wdqs
+profile::query_service::load_categories: none
+profile::query_service::package_dir: /srv/wdqs
+profile::rsyslog::kafka_shipper::kafka_brokers: []
