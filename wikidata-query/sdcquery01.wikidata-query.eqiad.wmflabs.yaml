@@ -1,2 +1,4 @@
 profile::query_service::blazegraph_heap_size: 6g
+profile::query_service::data_dir: /srv/wdqs
+profile::query_service::package_dir: /srv/wdqs
 profile::rsyslog::kafka_shipper::kafka_brokers: []
