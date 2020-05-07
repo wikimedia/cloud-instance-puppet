@@ -1,3 +1,0 @@
-- role::labs::lvm::srv
-- profile::wmcs::mediawiki_vagrant
-- role::gerrit
