@@ -1,15 +1,1 @@
-phabricator::vcs::address::v4: 172.16.0.198
-phabricator::vcs::address::v6: fe80::f816:3eff:feeb:ffdd
-phabricator_altdomain: phab-prod-usercontent.wmflabs.org
-phabricator_cluster_search:
-- hosts:
-  - host: localhost
-    protocol: http
-    roles:
-      read: true
-      write: true
-  path: /phabricator
-  port: 9200
-  type: elasticsearch
-  version: 5
-phabricator_domain: phab.wmflabs.org
+{}
