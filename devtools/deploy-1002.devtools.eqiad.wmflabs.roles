@@ -1,2 +1,1 @@
 - role::deployment_server
-- role::labs::lvm::srv
