@@ -1,7 +1,8 @@
 mcrouter::has_ssl: false
 mcrouter::port: 11213
 mcrouter::shards:
-  gutter: null
+  gutter:
+    eqiad: []
   wancache:
     eqiad:
       shard01:
