@@ -1,7 +1,6 @@
 labs_keystone_host: ''
 labs_nova_controller: ''
 profile::openstack::eqiad1::cumin::project_masters:
-- 172.16.1.103
 - 172.16.1.185
 profile::openstack::eqiad1::cumin::project_pub_key: ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIPPfdabE1Fej0X86QgjY72LXvA3Wawrg0ZcDL0PF56/A
   root@integration-cumin
