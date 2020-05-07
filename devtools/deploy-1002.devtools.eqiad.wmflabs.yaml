@@ -1,5 +1,1 @@
-mcrouter::shards:
-  gutter:
-    eqiad: {}
-  wancache:
-    eqiad: {}
+{}
