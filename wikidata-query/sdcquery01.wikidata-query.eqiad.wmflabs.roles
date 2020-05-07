@@ -1,2 +1,2 @@
 - role::labs::lvm::srv
-- role::wdqs
+- role::wdqs::labs
