@@ -96,6 +96,9 @@ profile::trafficserver::backend::mapping_rules:
 - replacement: http://deployment-webperf11.deployment-prep.eqiad.wmflabs
   target: http://performance.wikimedia.beta.wmflabs.org
   type: map
+- replacement: http://deployment-eventgate-3.deployment-prep.eqiad.wmflabs
+  target: http://intake-event.wikimedia.beta.wmflabs.org
+  type: map
 - params:
   - '@plugin=/usr/lib/trafficserver/modules/tslua.so'
   - '@pparam=/etc/trafficserver/lua/normalize-path.lua'
