@@ -96,8 +96,11 @@ profile::trafficserver::backend::mapping_rules:
 - replacement: http://deployment-webperf11.deployment-prep.eqiad.wmflabs
   target: http://performance.wikimedia.beta.wmflabs.org
   type: map
-- replacement: http://deployment-eventgate-3.deployment-prep.eqiad.wmflabs
-  target: http://intake-event.wikimedia.beta.wmflabs.org
+- replacement: http://deployment-eventgate-3.deployment-prep.eqiad.wmflabs:8492
+  target: http://intake-analytics.wikimedia.beta.wmflabs.org
+  type: map
+- replacement: http://deployment-eventgate-3.deployment-prep.eqiad.wmflabs:8992
+  target: http://intake-logging.wikimedia.beta.wmflabs.org
   type: map
 - params:
   - '@plugin=/usr/lib/trafficserver/modules/tslua.so'
