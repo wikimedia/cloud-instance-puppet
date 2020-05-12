@@ -12,7 +12,6 @@ dynamicproxy::banned_ips:
 dynamicproxy::blocked_user_agent_regex: TweetmemeBot|Chrome/38\.0\.2125\.104|Applebot
 dynamicproxy::error_details: ''
 gridengine::gridmaster: toolsbeta-grid-master.toolsbeta.eqiad.wmflabs
-kubeadm::calico::typha_enabled: true
 passwords::root::extra_keys:
   alex: ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAICYxCqZkGys8gZB6Mq61Fw08CB7m1huxpnpII2ay3e0H
     krenair@gmail.com inspiron
