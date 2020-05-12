@@ -86,6 +86,7 @@ profile::toolforge::grid::base::project_path: /data/project
 profile::toolforge::grid::base::sge_root: /var/lib/gridengine
 profile::toolforge::grid::base::sysdir: /data/project/.system_sge
 profile::toolforge::k8s::calico_version: v3.14.0
+profile::toolforge::k8s::typha_enabled: true
 profile::toolforge::mailrelay::external_hostname: mail.tools.wmflabs.org
 profile::toolforge::proxies:
 - toolsbeta-proxy-1.toolsbeta.eqiad.wmflabs
