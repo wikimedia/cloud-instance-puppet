@@ -1,0 +1,36 @@
+authdns_servers:
+  208.80.154.11: 208.80.154.11
+  208.80.154.135: 208.80.154.135
+http_proxy: ''
+profile::acme_chief::accounts:
+  f0990a352564fba4ceed58fbde078965:
+    directory: https://acme-v02.api.letsencrypt.org/directory
+    regr: '{"body": {}, "uri": "https://acme-v02.api.letsencrypt.org/acme/acct/62787352"}'
+profile::acme_chief::active: maps-acmechief01.maps.eqiad.wmflabs
+profile::acme_chief::certificates:
+  unified:
+    CN: '*.maps.wmflabs.org'
+    SNI:
+    - maps.wmflabs.org
+    - foo.maps.wmflabs.org
+    - '*.bar.maps.wmflabs.org'
+    authorized_hosts:
+    - maps-proxy.maps.eqiad.wmflabs
+    authorized_regexes:
+    - ^maps-proxy.maps.eqiad.wmflabs$
+    challenge: dns-01
+profile::acme_chief::challenges:
+  dns-01:
+    issuing_ca: letsencrypt.org
+    ns_records:
+    - cloud-ns0.wikimedia.org.
+    - cloud-ns1.wikimedia.org.
+    resolver_port: 53
+    zone_update_cmd: /usr/local/bin/acme-chief-designate-sync.py
+profile::acme_chief::cloud::designate_sync_auth_url: http://cloudcontrol1003.wikimedia.org:5000/v3
+profile::acme_chief::cloud::designate_sync_project_name: maps
+profile::acme_chief::cloud::designate_sync_region_name: eqiad1-r
+profile::acme_chief::cloud::designate_sync_tidyup_enabled: true
+profile::acme_chief::cloud::designate_sync_username: maps-cloud-dns-manager
+profile::acme_chief::passive: maps-acmechief02.maps.eqiad.wmflabs
+puppetmaster: puppetmaster.cloudinfra.wmflabs.org
