@@ -1,5 +1,4 @@
 profile::wmcs::maps::proxy::proxy_mappings:
-  staticproxy-1.testlabs.wmflabs.org: abogott-proxy-canary.eqiad.wmflabs
-  staticproxy-2.testlabs.wmflabs.org: abogott-proxy-canary.eqiad.wmflabs
-  staticproxy-3.testlabs.wmflabs.org: abogott-proxy-canary.eqiad.wmflabs
+  1.maptest.wmflabs.org: maps-wma.maps.eqiad.wmflabs
+  maptest.wmflabs.org: maps-wma.maps.eqiad.wmflabs
 puppetmaster: abogott-puppetmaster.testlabs.eqiad.wmflabs
