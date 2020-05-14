@@ -1,3 +1,225 @@
 profile::docker::engine::declare_service: true
 profile::docker::engine::settings: {}
+profile::docker::runner::service_defs:
+  changeprop:
+    config:
+      logging:
+        level: warn
+        streams:
+        - named_levels: true
+          type: stdout
+      metrics:
+        host: cloudmetrics1002.eqiad.wmnet
+        name: changeprop
+        port: 8125
+        type: statsd
+      num_workers: 1
+      services:
+      - conf:
+          cors: '*'
+          port: 7272
+          proxy: null
+          spec: &id003
+            paths:
+              /sys/ores:
+                x-modules:
+                - options:
+                    event_service_uri: http://deployment-eventgate-3.deployment-prep.eqiad.wmflabs:8292/v1/events
+                    ores_precache_uris:
+                    - http://deployment-ores01.deployment-prep.eqiad.wmflabs:8081/v3/precache
+                  path: sys/ores_updates.js
+              /{api:sys}/links:
+                x-modules:
+                - options:
+                    templates:
+                      mw_api:
+                        body:
+                          formatversion: 2
+                        headers:
+                          host: '{{message.meta.domain}}'
+                        uri: http://deployment-mediawiki-07.deployment-prep.eqiad.wmflabs/w/api.php
+                  path: sys/dep_updates.js
+              /{api:sys}/queue:
+                x-modules:
+                - options:
+                    blacklist:
+                      ca.wikipedia.org:
+                      - Usuari:TronaBot/log:Activitat_reversors_per_hores
+                      ceb.wikipedia.org:
+                      - Gumagamit:Lsjbot/Anomalier-PRIVAT
+                      - Gumagamit:Lsjbot/Kartrutor2
+                      commons.wikimedia.org:
+                      - /Commons:Featured_picture_candidates\//
+                      - Commons:Quality_images/Subject/Places/Natural_structures
+                      - /Commons:Undeletion_requests\//
+                      - /Commons:WikiProject_Aviation\/recent_uploads\//
+                      - /\/(?:User|Benutzer):/
+                      de.wikipedia.org:
+                      - /The_Big_Bang_Theory\/Staffel/
+                      - "Wikipedia:Caf\xE9"
+                      - Wikipedia:Defekte_Weblinks/Bot2015-Problem
+                      - Wikipedia_Diskussion:Hauptseite/Schon_gewusst
+                      - Benutzer:Anglo-Araneophilus/Almigdad_Mojalli
+                      - Benutzer:Wartungsstube/Berlin
+                      - Benutzer:Wartungsstube/Musik
+                      - Benutzer:Wartungsstube/Unternehmen
+                      - Benutzer:Wartungsstube/Schifffahrt
+                      - Benutzer:Verum/ege
+                      - "Benutzer:Septembermorgen/Bottabelle/Franz\xF6sische_Kantone_N\u2013\
+                        Z"
+                      - "Wikipedia:WikiProjekt_Planen_und_Bauen/Zu_\xFCberarbeitende_Artikel"
+                      en.wikipedia.org:
+                      - User:B-bot/Event_log
+                      - User:DeltaQuad/UAA/Wait
+                      - User:JamesR/AdminStats
+                      - User:Kudpung/Dashboard
+                      - User:Breawycker/Wikipedia
+                      - User:Sonia/dashboard
+                      - User:Ocaasi/dashboard
+                      - User:Nolelover
+                      - User:Calmer_Waters
+                      - /User%3ARedwolf24\//
+                      - User:Technical_13/dashboard
+                      - Template:Cratstats
+                      - /User:Cyberbot_I\//
+                      - /User:Cyberbot_II\//
+                      - /User:Cyberpower678\//
+                      - /User:Darts170Darts170\//
+                      - "\u0635\u0627\u0631\u0641:Cyberbot_I/Run/Adminstats"
+                      - Defnyddiwr:Cyberbot_I/Run/Adminstats
+                      - User:Pentjuuu!.!/sandbox
+                      - User:AllyD/CSDlog
+                      - User:Peter_I._Vardy/sandbox-13
+                      - User:I_dream_of_horses/CSD_log
+                      - User:MJ180MJ180/sandbox
+                      - Talk:United_States_presidential_election,_2016
+                      - Wikipedia:Reference_desk/Humanities
+                      - Wikipedia:WikiProject_Deletion_sorting/People
+                      - Wikipedia:WikiProject_Deletion_sorting/United_States_of_America
+                      - Wikipedia:Articles_for_creation/Redirects
+                      - Wikipedia:Administrators%27_noticeboard/Incidents
+                      es.wikipedia.org:
+                      - "Wikipedia:Caf\xE9/Archivo/Miscel\xE1nea/Actual"
+                      fr.wikipedia.org:
+                      - "Utilisateur:Z\xE9roBot/Log/Erreurs"
+                      - "Utilisateur:SyntaxTerror/Ajouts_du_mod\xE8le_Autorit\xE9"
+                      - /Utilisateur:[\s\S]+[Bb]rouillon
+                      - Discussion_utilisateur:NaggoBot/CommonsDR
+                      - "Projet:France/Annonces/Admissibilit\xE9"
+                      - "/Wikip\xE9dia:Le_saviez-vous_.+/Anecdotes_propos\xE9es/"
+                      hy.wikipedia.org:
+                      - "/\u0544\u0561\u057D\u0576\u0561\u056F\u056B\u0581:Omicro\xF1\
+                        \\'R/"
+                      it.wikipedia.org:
+                      - Utente:Effems/Sandbox7
+                      nl.wikipedia.org:
+                      - Gebruiker:Eg-T2g/Kladblok
+                      pl.wikisource.org:
+                      - "/^W\u015Br\xF3d_czarnych\\//"
+                      pt.wikipedia.org:
+                      - "Wikip\xE9dia:Pedidos/Bloqueio"
+                      ru.wikipedia.org:
+                      - "\u0412\u0438\u043A\u0438\u043F\u0435\u0434\u0438\u044F:\u0424\
+                        \u043E\u0440\u0443\u043C/\u0422\u0435\u0445\u043D\u0438\u0447\
+                        \u0435\u0441\u043A\u0438\u0439"
+                      - "\u041F\u043E\u0440\u0442\u0430\u043B:\u0413\u0435\u0440\u043F\
+                        \u0435\u0442\u043E\u043B\u043E\u0433\u0438\u044F"
+                      sv.wikipedia.org:
+                      - "Anv\xE4ndare:Lsjbot/Anomalier-PRIVAT"
+                      - "Anv\xE4ndare:Lsjbot/Namnkonflikter-PRIVAT"
+                      ur.wikipedia.org:
+                      - "\u0646\u0627\u0645_\u0645\u0642\u0627\u0645\u0627\u062A_\u0627\
+                        \u06CC\u0644"
+                      - "\u0646\u0627\u0645_\u0645\u0642\u0627\u0645\u0627\u062A_\u0688\
+                        \u06CC"
+                      - "\u0646\u0627\u0645_\u0645\u0642\u0627\u0645\u0627\u062A_\u062C\
+                        \u06D2"
+                      - "\u0646\u0627\u0645_\u0645\u0642\u0627\u0645\u0627\u062A_\u062C\
+                        \u06CC"
+                      - "\u0646\u0627\u0645_\u0645\u0642\u0627\u0645\u0627\u062A_\u0627\
+                        \u06CC\u0686"
+                      - "\u0646\u0627\u0645_\u0645\u0642\u0627\u0645\u0627\u062A_\u0627\
+                        \u06CC\u0645"
+                      - "\u0646\u0627\u0645_\u0645\u0642\u0627\u0645\u0627\u062A_\u0627\
+                        \u06CC\u0633"
+                      zh.wikipedia.org:
+                      - "Wikipedia:\u4E92\u52A9\u5BA2\u6808/\u6761\u76EE\u63A2\u8BA8"
+                      - "Draft:\u65E5\u672C\u4EBA\u5DE5\u6E56\u5217\u8868"
+                    concurrency: 1
+                    consumer:
+                      fetch.message.max.bytes: 4194304
+                      log.connection.close: false
+                    dc_name: eqiad
+                    metadata_broker_list:
+                    - deployment-kafka-main-1.deployment-prep.eqiad.wmflabs:9092
+                    - deployment-kafka-main-2.deployment-prep.eqiad.wmflabs:9092
+                    producer:
+                      compression.codec: snappy
+                      log.connection.close: false
+                    startup_delay: 60000
+                    templates:
+                      summary_definition_rerender:
+                        cases: &id001
+                        - exec:
+                            headers:
+                              cache-control: no-cache
+                            method: get
+                            query:
+                              redirect: false
+                            uri: http://deployment-restbase02.deployment-prep.eqiad.wmflabs:7231/{{message.meta.domain}}/v1/page/summary/{{match.meta.uri[1]}}
+                          match:
+                            meta:
+                              uri: /^https?:\/\/[^\/]+\/api\/rest_v1\/page\/html\/([^\/]+)$/
+                            tags:
+                            - restbase
+                          match_not:
+                          - meta:
+                              domain: /wiktionary\.beta\.wmflabs\.org$/
+                          - meta:
+                              domain: /\.wikidata\.beta\.wmflabs\.org$/
+                        - exec:
+                            body:
+                            - meta:
+                                domain: '{{message.meta.domain}}'
+                                dt: '{{message.meta.dt'
+                                stream: resource-purge
+                                uri: http://{{message.meta.domain}}/api/rest_v1/page/definition/{{match.meta.uri[1]}}
+                              root_event: message.root_event
+                            method: post
+                            uri: /sys/queue/events
+                          match:
+                            meta:
+                              domain: /^en\.wiktionary\.beta\.wmflabs\.org$/
+                              uri: /^https?:\/\/[^\/]+\/api\/rest_v1\/page\/html\/((?:(?!%3a|%3A|\/).)+)$/
+                            tags:
+                            - restbase
+                        limiters: &id002
+                          blacklist: summary:{message.meta.uri}
+                        topic: resource_change
+                      summary_definition_rerender_transcludes:
+                        cases: *id001
+                        limiters: *id002
+                        topic: change-prop.transcludes.resource-change
+                  path: sys/kafka.js
+            title: The Change Propagation root
+            x-sub-request-filters:
+            - name: http
+              options:
+                allow:
+                - forward_headers:
+                    user-agent: true
+                  pattern: /^https?:\/\//
+              type: default
+          user_agent: ChangePropagation/WMF
+        module: hyperswitch
+        name: changeprop
+      spec: *id003
+      startup_concurrency: 4
+      worker_heap_limit_mb: 750
+      worker_heartbeat_timeout: 30000
+    image_name: mediawiki-services-change-propagation
+    namespace: wikimedia
+    override_cmd: /srv/service/server.js -c /etc/changeprop/config.yaml
+    port: 7272
+    version: v0.9.5
 puppetmaster: deployment-puppetmaster04.deployment-prep.eqiad.wmflabs
