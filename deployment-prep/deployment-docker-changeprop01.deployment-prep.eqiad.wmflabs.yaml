@@ -1,0 +1,3 @@
+profile::docker::engine::declare_service: true
+profile::docker::engine::settings: {}
+puppetmaster: deployment-puppetmaster04.deployment-prep.eqiad.wmflabs
