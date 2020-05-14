@@ -1,0 +1,21 @@
+authdns_servers:
+- 208.80.154.135
+- 208.80.154.11
+http_proxy: ''
+profile::acme_chief::accounts: {}
+profile::acme_chief::active: toolsbeta-acme-chief-01.toolsbeta.eqiad.wmflabs
+profile::acme_chief::certificates: {}
+profile::acme_chief::challenges:
+  dns-01:
+    issuing_ca: letsencrypt.org
+    ns_records:
+    - ns0.openstack.eqiad1.wikimediacloud.org.
+    - ns1.openstack.eqiad1.wikimediacloud.org.
+    zone_update_cmd: /usr/local/bin/acme-chief-designate-sync.py
+profile::acme_chief::cloud::designate_sync_auth_url: http://openstack.eqiad1.wikimediacloud.org:5000/v3
+profile::acme_chief::cloud::designate_sync_project_name: toolsbeta
+profile::acme_chief::cloud::designate_sync_region_name: eqiad1-r
+profile::acme_chief::cloud::designate_sync_tidyup_enabled: true
+profile::acme_chief::cloud::designate_sync_username: tools-dns-manager
+profile::acme_chief::passive: toolsbeta-acme-chief-02.toolsbeta.eqiad.wmflabs
+shared_acme_certificates: {}
