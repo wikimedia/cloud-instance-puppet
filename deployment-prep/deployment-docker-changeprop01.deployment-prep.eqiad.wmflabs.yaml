@@ -143,6 +143,45 @@ profile::docker::runner::service_defs:
                   compression.codec: snappy
                   log.connection.close: false
                 startup_delay: 60000
+                templates:
+                  summary_definition_rerender:
+                    cases:
+                    - exec:
+                        headers:
+                          cache-control: no-cache
+                        method: get
+                        query:
+                          redirect: false
+                        uri: http://deployment-restbase02.deployment-prep.eqiad.wmflabs:7231/{{message.meta.domain}}/v1/page/summary/{{match.meta.uri[1]}}
+                      match:
+                        meta:
+                          uri: /^https?:\/\/[^\/]+\/api\/rest_v1\/page\/html\/([^\/]+)$/
+                        tags:
+                        - restbase
+                      match_not:
+                      - meta:
+                          domain: /wiktionary\.beta\.wmflabs\.org$/
+                      - meta:
+                          domain: /\.wikidata\.beta\.wmflabs\.org$/
+                    - exec:
+                        body:
+                        - meta:
+                            domain: '{{message.meta.domain}}'
+                            dt: '{{message.meta.dt'
+                            stream: resource-purge
+                            uri: http://{{message.meta.domain}}/api/rest_v1/page/definition/{{match.meta.uri[1]}}
+                          root_event: message.root_event
+                        method: post
+                        uri: /sys/queue/events
+                      match:
+                        meta:
+                          domain: /^en\.wiktionary\.beta\.wmflabs\.org$/
+                          uri: /^https?:\/\/[^\/]+\/api\/rest_v1\/page\/html\/((?:(?!%3a|%3A|\/).)+)$/
+                        tags:
+                        - restbase
+                    limiters:
+                      blacklist: summary:{message.meta.uri}
+                    topic: resource_change
               path: sys/kafka.js
         title: The Change Propagation root
         x-sub-request-filters:
