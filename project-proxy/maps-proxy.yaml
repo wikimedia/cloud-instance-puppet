@@ -1,0 +1,4 @@
+profile::wmcs::proxy::static::proxy_mappings:
+  staticproxy-1.testlabs.wmflabs.org: abogott-proxy-canary.eqiad.wmflabs
+  staticproxy-2.testlabs.wmflabs.org: abogott-proxy-canary.eqiad.wmflabs
+  staticproxy-3.testlabs.wmflabs.org: abogott-proxy-canary.eqiad.wmflabs
