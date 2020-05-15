@@ -36,66 +36,6 @@ profile::cache::ssl::unified::certs_active: []
 profile::cache::ssl::unified::letsencrypt: false
 profile::cache::ssl::wikibase::acme_chief: true
 profile::cache::ssl::wikibase::letsencrypt: false
-profile::trafficserver::backend::log_filters:
-- action: reject
-  condition: cqhm MATCH PURGE
-  name: notpurge
-- action: reject
-  condition: '%<{User-agent}cqh> MATCH Varnish backend check'
-  name: notvarnishcheck
-- action: accept
-  condition: cqhm MATCH PURGE
-  name: purge
-- action: accept
-  condition: '%<{X-WMF-ATS-ML}cqh> MATCH 1'
-  name: milestone
-- action: accept
-  condition: '%<{X-Client-IP}cqh> MATCH 127.0.0.1,::1,%{::ipaddress}'
-  name: localhost
-profile::trafficserver::backend::log_formats:
-- format: Date:%<cqtd> Time:%<cqtt> ConnAttempts:%<sca> ConnReuse:%<sstc> TTFetchHeaders:%<{TS_MILESTONE_SERVER_FIRST_READ-TS_MILESTONE_SERVER_FIRST_CONNECT}msdms>
-    ClientTTFB:%<{TS_MILESTONE_UA_BEGIN_WRITE-TS_MILESTONE_SM_START}msdms> CacheReadTime:%<{TS_MILESTONE_CACHE_OPEN_READ_END-TS_MILESTONE_CACHE_OPEN_READ_BEGIN}msdms>
-    CacheWriteTime:%<{TS_MILESTONE_CACHE_OPEN_WRITE_END-TS_MILESTONE_CACHE_OPEN_WRITE_BEGIN}msdms>
-    TotalSMTime:%<{TS_MILESTONE_SM_FINISH-TS_MILESTONE_SM_START}msdms> OriginServer:%<shn>
-    OriginServerTime:%<stms> CacheResultCode:%<crc> CacheWriteResult:%<cwr> ReqMethod:%<cqhm>
-    RespStatus:%<pssc> OriginStatus:%<sssc> ReqURL:%<cquuc> ReqHeader:User-Agent:%<{User-agent}cqh>
-    ReqHeader:Host:%<{Host}cqh> ReqHeader:X-Client-IP:%<{X-Client-IP}cqh> ReqHeader:Cookie:%<{Cookie}cqh>
-    BerespHeader:Set-Cookie:%<{Set-Cookie}ssh[0:16]> BerespHeader:Cache-Control:%<{Cache-Control}ssh>
-    BerespHeader:Connection:%<{Connection}ssh> RespHeader:X-Cache-Int:%<{X-Cache-Int}psh>
-    RespHeader:Backend-Timing:%<{Backend-Timing}psh>
-  name: wmf
-- format: Date:%<cqtd> Time:%<cqtt> Client-IP:%<{X-Client-IP}cqh> ReqMethod:%<cqhm>
-    RespStatus:%<pssc> OriginStatus:%<sssc> ReqHeader:Host:%<{Host}cqh> ReqURL:%<cquuc>
-    UABegin:%<{TS_MILESTONE_UA_BEGIN-TS_MILESTONE_SM_START}msdms> UAFirstRead:%<{TS_MILESTONE_UA_FIRST_READ-TS_MILESTONE_SM_START}msdms>
-    UAReadHeaderDone:%<{TS_MILESTONE_UA_READ_HEADER_DONE-TS_MILESTONE_SM_START}msdms>
-    CacheOpenReadBegin:%<{TS_MILESTONE_CACHE_OPEN_READ_BEGIN-TS_MILESTONE_SM_START}msdms>
-    CacheOpenReadEnd:%<{TS_MILESTONE_CACHE_OPEN_READ_END-TS_MILESTONE_SM_START}msdms>
-    DNSLookupBegin:%<{TS_MILESTONE_DNS_LOOKUP_BEGIN-TS_MILESTONE_SM_START}msdms> DNSLookupEnd:%<{TS_MILESTONE_DNS_LOOKUP_END-TS_MILESTONE_SM_START}msdms>
-    ServerConnect:%<{TS_MILESTONE_SERVER_CONNECT-TS_MILESTONE_SM_START}msdms> ServerConnectEnd:%<{TS_MILESTONE_SERVER_CONNECT_END-TS_MILESTONE_SM_START}msdms>
-    UAFirstRead:%<{TS_MILESTONE_UA_FIRST_READ-TS_MILESTONE_SM_START}msdms> ServerFirstRead:%<{TS_MILESTONE_SERVER_FIRST_READ-TS_MILESTONE_SM_START}msdms>
-    ServerReadHeaderDone:%<{TS_MILESTONE_SERVER_READ_HEADER_DONE-TS_MILESTONE_SM_START}msdms>
-    ServerClose:%<{TS_MILESTONE_SERVER_CLOSE-TS_MILESTONE_SM_START}msdms> UAWrite:%<{TS_MILESTONE_UA_BEGIN_WRITE-TS_MILESTONE_SM_START}msdms>
-    UAClose:%<{TS_MILESTONE_UA_CLOSE-TS_MILESTONE_SM_START}msdms> SMFinish:%<{TS_MILESTONE_SM_FINISH-TS_MILESTONE_SM_START}msdms>
-    PluginActive:%<{TS_MILESTONE_PLUGIN_ACTIVE-TS_MILESTONE_SM_START}msdms> PluginTotal:%<{TS_MILESTONE_PLUGIN_TOTAL-TS_MILESTONE_SM_START}msdms>
-  name: wmf-milestone
-profile::trafficserver::backend::logs:
-- filename: notpurge
-  filters:
-  - notpurge
-  - notvarnishcheck
-  format: wmf
-  mode: ascii_pipe
-- filename: purge
-  filters:
-  - purge
-  format: wmf
-  mode: ascii_pipe
-- filename: milestone
-  filters:
-  - milestone
-  - localhost
-  format: wmf-milestone
-  mode: ascii
 prometheus_nodes: []
 puppetmaster: traffic-puppetmaster-buster.traffic.eqiad.wmflabs
 zookeeper_clusters:
