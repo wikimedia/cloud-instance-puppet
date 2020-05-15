@@ -7,8 +7,9 @@ profile::wmcs::proxy::static::proxy_mappings:
   5.wma.wmflabs.org: maps-wma.maps.eqiad1.wikimedia.cloud
   6.wma.wmflabs.org: maps-wma.maps.eqiad1.wikimedia.cloud
   7.wma.wmflabs.org: maps-wma.maps.eqiad1.wikimedia.cloud
-  8.wma.wmflabs.org: maps-wma.maps.eqiad1.wikimedia.cloud
   a.tiles.wmflabs.org: maps-tiles1.maps.eqiad1.wikimedia.cloud
+  b.tiles.wmflabs.org: maps-tiles1.maps.eqiad1.wikimedia.cloud
+  c.tiles.wmflabs.org: maps-tiles1.maps.eqiad1.wikimedia.cloud
   label.wma.wmflabs.org: maps-wma.maps.eqiad1.wikimedia.cloud
   maps.wmflabs.org: maps-tiles1.maps.eqiad1.wikimedia.cloud
   tiles.wmflabs.org: maps-tiles1.maps.eqiad1.wikimedia.cloud
