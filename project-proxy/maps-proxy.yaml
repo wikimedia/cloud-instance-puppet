@@ -23,3 +23,4 @@ profile::wmcs::proxy::static::proxy_mappings:
   wma5.wmflabs.org: maps-wma.maps.eqiad1.wikimedia.cloud
   wma6.wmflabs.org: maps-wma.maps.eqiad1.wikimedia.cloud
   wma7.wmflabs.org: maps-wma.maps.eqiad1.wikimedia.cloud
+  wmatest.wmflabs.org: maps-wma.maps.eqiad1.wikimedia.cloud
