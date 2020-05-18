@@ -116,5 +116,41 @@ profile::docker::runner::service_defs:
     namespace: wikimedia
     override_cmd: /srv/service/server.js -c /etc/eventstreams/config.yaml
     port: 8092
-    version: 2019-12-19-161005-production
+    version: 2020-05-18-211353-production
+  eventstreams_all_streams:
+    config:
+      logging:
+        level: info
+        streams:
+        - type: stdout
+        - host: deployment-logstash03.deployment-prep.eqiad.wmflabs
+          port: 12201
+          type: gelf
+      metrics:
+        port: 9092
+        type: prometheus
+      num_workers: 0
+      services:
+      - conf:
+          allow_any_stream: true
+          client_ip_connection_limit: 10
+          cors: '*'
+          csp: default-src 'none'; script-src 'self' 'unsafe-inline'; connect-src
+            *; style-src 'self' 'unsafe-inline'; img-src 'self'; font-src 'self'
+          kafka:
+            metadata.broker.list: deployment-kafka-jumbo-1.deployment-prep.eqiad.wmflabs:9092,deployment-kafka-jumbo-2.deployment-prep.eqiad.wmflabs:9092
+            statistics.interval.ms: 10000
+          port: 8093
+          spec: ./spec.yaml
+          stream_topic_prefixes:
+          - eqiad.
+          user_agent: eventstreams_all_streams_beta
+        module: app.js
+        name: eventstreams_all_streams
+      worker_heap_limit_mb: 250
+    image_name: mediawiki-services-eventstreams
+    namespace: wikimedia
+    override_cmd: /srv/service/server.js -c /etc/eventstreams_all_streams/config.yaml
+    port: 8093
+    version: 2020-05-18-211353-production
 puppetmaster: deployment-puppetmaster04.deployment-prep.eqiad.wmflabs
