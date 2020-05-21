@@ -1,3 +1,4 @@
+profile::wmcs::kubeadm::apiserver_fqdn: k8s.svc.paws.eqiad1.wikimedia.cloud
 profile::wmcs::kubeadm::component: thirdparty/kubeadm-k8s-1-16
 profile::wmcs::kubeadm::stacked: true
 puppetmaster: paws-puppetmaster-01.paws.eqiad.wmflabs
