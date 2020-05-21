@@ -1268,10 +1268,704 @@ profile::docker::runner::service_defs:
                       method: get
                       query:
                         redirect: false
-                      uri: http://deployment-restbase02
-    image_name: mediawiki-services-change-propagation
-    namespace: wikimedia
-    override_cmd: /srv/service/server.js -c /etc/changeprop/config.yaml
-    port: 7272
-    version: v0.9.5
-puppetmaster: deployment-puppetmaster04.deployment-prep.eqiad.wmflabs
+                      uri: http://deployment-restbase02.deployment-prep.eqiad.wmflabs:7231/{{message.meta.domain}}/v1/page/mobile-sections/{{match.meta.uri[1]}}
+                    limiters:
+                      blacklist: mobile-sections:{message.meta.uri}
+                    match:
+                      meta:
+                        domain: /\.wikipedia\.beta\.wmflabs\.org$/
+                        uri: /^https?:\/\/[^\/]+\/api\/rest_v1\/page\/html\/([^/]+)$/
+                      tags:
+                      - restbase
+                    topic: change-prop.transcludes.resource-change
+                  mw_purge:
+                    cases:
+                    - exec:
+                      - headers:
+                          cache-control: no-cache
+                          if-unmodified-since: '{{date(message.meta.dt)}}'
+                        method: get
+                        query:
+                          redirect: false
+                        uri: http://deployment-restbase02.deployment-prep.eqiad.wmflabs:7231/{{message.meta.domain}}/v1/page/html/{decode(match.meta.uri.title)}
+                      - headers:
+                          cache-control: no-cache
+                        method: get
+                        query:
+                          redirect: false
+                        uri: http://deployment-restbase02.deployment-prep.eqiad.wmflabs:7231/{{message.meta.domain}}/v1/page/summary/{decode(match.meta.uri.title)}
+                      - headers:
+                          cache-control: no-cache
+                        method: get
+                        query:
+                          redirect: false
+                        uri: http://deployment-restbase02.deployment-prep.eqiad.wmflabs:7231/{{message.meta.domain}}/v1/page/mobile-sections/{decode(match.meta.uri.title)}
+                      match:
+                        meta:
+                          domain: /\.wikipedia\.beta\.wmflabs\.org$/
+                          uri: /^https?:\/\/[^\/]+\/wiki\/(?<title>.+)$/
+                        tags:
+                        - purge
+                    - exec:
+                      - headers:
+                          cache-control: no-cache
+                          if-unmodified-since: '{{date(message.meta.dt)}}'
+                        method: get
+                        query:
+                          redirect: false
+                        uri: http://deployment-restbase02.deployment-prep.eqiad.wmflabs:7231/{{message.meta.domain}}/v1/page/html/{decode(match.meta.uri.title)}
+                      match:
+                        meta:
+                          domain: /wiktionary.beta\.wmflabs\.org$/
+                          uri: /^https?:\/\/[^\/]+\/wiki\/(?<title>.+)$/
+                        tags:
+                        - purge
+                    - exec:
+                      - headers:
+                          cache-control: no-cache
+                          if-unmodified-since: '{{date(message.meta.dt)}}'
+                        method: get
+                        query:
+                          redirect: false
+                        uri: http://deployment-restbase02.deployment-prep.eqiad.wmflabs:7231/{{message.meta.domain}}/v1/page/html/{decode(match.meta.uri.title)}
+                      - headers:
+                          cache-control: no-cache
+                        method: get
+                        query:
+                          redirect: false
+                        uri: http://deployment-restbase02.deployment-prep.eqiad.wmflabs:7231/{{message.meta.domain}}/v1/page/summary/{decode(match.meta.uri.title)}
+                      match:
+                        meta:
+                          uri: /^https?:\/\/[^\/]+\/wiki\/(?<title>.+)$/
+                        tags:
+                        - purge
+                      match_not:
+                      - meta:
+                          domain: /\.wikipedia\.beta\.wmflabs\.org$/
+                      - meta:
+                          domain: /\.wiktionary\.beta\.wmflabs\.org$/
+                      - meta:
+                          domain: /\.wikidata\.beta\.wmflabs\.org$/
+                        page_namespace: 0
+                      - meta:
+                          domain: /\.wikidata\.beta\.wmflabs\.org$/
+                        page_namespace: 120
+                    limiters:
+                      blacklist: html:{message.meta.uri}
+                    topic: resource_change
+                  null_edit:
+                    cases:
+                    - exec:
+                      - headers:
+                          cache-control: no-cache
+                          if-unmodified-since: '{{date(message.meta.dt)}}'
+                        method: get
+                        query:
+                          redirect: false
+                        uri: http://deployment-restbase02.deployment-prep.eqiad.wmflabs:7231/{{message.meta.domain}}/v1/page/html/{decode(match.meta.uri.title)}
+                      - headers:
+                          cache-control: no-cache
+                        method: get
+                        query:
+                          redirect: false
+                        uri: http://deployment-restbase02.deployment-prep.eqiad.wmflabs:7231/{{message.meta.domain}}/v1/page/summary/{decode(match.meta.uri.title)}
+                      - headers:
+                          cache-control: no-cache
+                        method: get
+                        query:
+                          redirect: false
+                        uri: http://deployment-restbase02.deployment-prep.eqiad.wmflabs:7231/{{message.meta.domain}}/v1/page/mobile-sections/{decode(match.meta.uri.title)}
+                      match:
+                        meta:
+                          domain: /\.wikipedia\.beta\.wmflabs\.org$/
+                          uri: /^https?:\/\/[^\/]+\/wiki\/(?<title>.+)$/
+                        tags:
+                        - null_edit
+                    - exec:
+                      - headers:
+                          cache-control: no-cache
+                          if-unmodified-since: '{{date(message.meta.dt)}}'
+                        method: get
+                        query:
+                          redirect: false
+                        uri: http://deployment-restbase02.deployment-prep.eqiad.wmflabs:7231/{{message.meta.domain}}/v1/page/html/{decode(match.meta.uri.title)}
+                      match:
+                        meta:
+                          domain: /wiktionary.beta\.wmflabs\.org$/
+                          uri: /^https?:\/\/[^\/]+\/wiki\/(?<title>.+)$/
+                        tags:
+                        - null_edit
+                    - exec:
+                      - headers:
+                          cache-control: no-cache
+                          if-unmodified-since: '{{date(message.meta.dt)}}'
+                        method: get
+                        query:
+                          redirect: false
+                        uri: http://deployment-restbase02.deployment-prep.eqiad.wmflabs:7231/{{message.meta.domain}}/v1/page/html/{decode(match.meta.uri.title)}
+                      - headers:
+                          cache-control: no-cache
+                        method: get
+                        query:
+                          redirect: false
+                        uri: http://deployment-restbase02.deployment-prep.eqiad.wmflabs:7231/{{message.meta.domain}}/v1/page/summary/{decode(match.meta.uri.title)}
+                      match:
+                        meta:
+                          uri: /^https?:\/\/[^\/]+\/wiki\/(?<title>.+)$/
+                        tags:
+                        - null_edit
+                      match_not:
+                      - meta:
+                          domain: /\.wikipedia\.beta\.wmflabs\.org$/
+                      - meta:
+                          domain: /\.wiktionary\.beta\.wmflabs\.org$/
+                      - meta:
+                          domain: /\.wikidata\.beta\.wmflabs\.org$/
+                        page_namespace: 0
+                      - meta:
+                          domain: /\.wikidata\.beta\.wmflabs\.org$/
+                        page_namespace: 120
+                    ignore:
+                      status:
+                      - 403
+                      - 412
+                    limiters:
+                      blacklist: html:{message.meta.uri}
+                    topic: resource_change
+                  on_backlinks_update:
+                    cases:
+                    - exec:
+                        headers:
+                          cache-control: no-cache
+                          if-unmodified-since: '{{date(message.root_event.dt)}}'
+                          x-restbase-mode: '{{message.tags[1]}}'
+                        method: get
+                        query:
+                          redirect: false
+                        uri: http://deployment-restbase02.deployment-prep.eqiad.wmflabs:7231/{{message.meta.domain}}/v1/page/html/{{match.meta.uri.title}}
+                      match:
+                        $schema: /^\/resource_change\/.*/
+                        meta:
+                          uri: /https?:\/\/[^\/]+\/wiki\/(?<title>.+)/
+                        tags:
+                        - backlinks
+                    - exec:
+                        body: '{{globals.message}}'
+                        method: post
+                        uri: /sys/links/backlinks/{message.original_event.page_title}
+                      match:
+                        $schema: /^\/change-prop\/continue\/.*/
+                    limiters:
+                      blacklist: html:{message.meta.uri}
+                    topic: change-prop.backlinks.resource-change
+                  on_transclusion_update:
+                    cases:
+                    - exec:
+                        headers:
+                          cache-control: no-cache
+                          if-unmodified-since: '{{date(message.root_event.dt)}}'
+                          x-restbase-mode: '{{message.tags[1]}}'
+                        method: get
+                        query:
+                          redirect: false
+                        uri: http://deployment-restbase02.deployment-prep.eqiad.wmflabs:7231/{{message.meta.domain}}/v1/page/html/{{match.meta.uri.title}}
+                      match:
+                        $schema: /^\/resource_change\/.*/
+                        meta:
+                          uri: /https?:\/\/[^\/]+\/wiki\/(?<title>.+)/
+                        tags:
+                        - transcludes
+                      match_not:
+                        meta:
+                          domain: ceb.wikipedia.org
+                    - exec:
+                        body: '{{globals.message}}'
+                        method: post
+                        uri: /sys/links/transcludes/{message.original_event.page_title}
+                      match:
+                        $schema: /^\/change-prop\/continue\/.*/
+                      match_not:
+                      - meta:
+                          domain: ceb.wikipedia.org
+                      - original_event:
+                          meta:
+                            domain: /wiktionary\.beta\.wmflabs\.org$/
+                          page_namespace: 828
+                    concurrency: 4
+                    limiters:
+                      blacklist: html:{message.meta.uri}
+                    topic: change-prop.transcludes.resource-change
+                  on_wikidata_description_change:
+                    cases:
+                    - exec:
+                      - headers:
+                          cache-control: no-cache
+                        method: get
+                        query:
+                          redirect: false
+                        uri: http://deployment-restbase02.deployment-prep.eqiad.wmflabs:7231/{{message.meta.domain}}/v1/page/summary/{{match.meta.uri.title}}
+                      - headers:
+                          cache-control: no-cache
+                        method: get
+                        query:
+                          redirect: false
+                        uri: http://deployment-restbase02.deployment-prep.eqiad.wmflabs:7231/{{message.meta.domain}}/v1/page/mobile-sections/{{match.meta.uri.title}}
+                      - headers:
+                          cache-control: no-cache
+                        method: get
+                        query:
+                          redirect: false
+                        uri: http://deployment-restbase02.deployment-prep.eqiad.wmflabs:7231/{{message.meta.domain}}/v1/page/mobile-html/{{match.meta.uri.title}}
+                      match:
+                        meta:
+                          domain: /\.wikipedia\.beta\.wmflabs\.org$/
+                          uri: /https?:\/\/[^\/]+\/wiki\/(?<title>.+)/
+                        tags:
+                        - wikidata
+                    - exec:
+                      - headers:
+                          cache-control: no-cache
+                        method: get
+                        query:
+                          redirect: false
+                        uri: http://deployment-restbase02.deployment-prep.eqiad.wmflabs:7231/{{message.meta.domain}}/v1/page/summary/{{match.meta.uri.title}}
+                      match:
+                        meta:
+                          uri: /https?:\/\/[^\/]+\/wiki\/(?<title>.+)/
+                        tags:
+                        - wikidata
+                      match_not:
+                      - meta:
+                          domain: /\.wikipedia\.beta\.wmflabs\.org$/
+                      - meta:
+                          domain: /\.wiktionary\.beta\.wmflabs\.org$/
+                      - meta:
+                          domain: /\.wikidata\.beta\.wmflabs\.org$/
+                        page_namespace: 0
+                      - meta:
+                          domain: /\.wikidata\.beta\.wmflabs\.org$/
+                        page_namespace: 120
+                    topic: change-prop.wikidata.resource-change
+                  ores_cache:
+                    concurrency: 25
+                    exec:
+                      body: '{{globals.message}}'
+                      method: post
+                      query:
+                        postevent: true
+                      uri: /sys/ores/
+                    ignore:
+                      status:
+                      - 503
+                    topic: mediawiki.revision-create
+                  page_create:
+                    exec:
+                    - body: '{{globals.message}}'
+                      method: post
+                      uri: /sys/links/backlinks/{message.page_title}
+                    match_not:
+                    - meta:
+                        domain: /\.wikidata\.beta\.wmflabs\.org$/
+                      page_namespace: 0
+                    - meta:
+                        domain: /\.wikidata\.beta\.wmflabs\.org$/
+                      page_namespace: 120
+                    retry_on:
+                      status:
+                      - 5xx
+                      - 404
+                    topic: mediawiki.page-create
+                  page_delete:
+                    disable_blacklist: true
+                    exec:
+                    - headers:
+                        cache-control: no-cache
+                      method: get
+                      query:
+                        redirect: false
+                      uri: http://deployment-restbase02.deployment-prep.eqiad.wmflabs:7231/{{message.meta.domain}}/v1/page/title/{message.page_title}
+                    - body: '{{globals.message}}'
+                      method: post
+                      uri: /sys/links/backlinks/{message.page_title}
+                    - body:
+                      - meta:
+                          domain: '{{message.meta.domain}}'
+                          dt: '{{message.meta.dt'
+                          stream: resource-purge
+                          uri: http://{{message.meta.domain}}/api/rest_v1/page/html/{message.page_title}
+                      - meta:
+                          domain: '{{message.meta.domain}}'
+                          dt: '{{message.meta.dt'
+                          stream: resource-purge
+                          uri: http://{{message.meta.domain}}/api/rest_v1/page/html/{message.page_title}/{{message.rev_id}}
+                      - meta:
+                          domain: '{{message.meta.domain}}'
+                          dt: '{{message.meta.dt'
+                          stream: resource-purge
+                          uri: http://{{message.meta.domain}}/api/rest_v1/page/summary/{message.page_title}
+                      - meta:
+                          domain: '{{message.meta.domain}}'
+                          dt: '{{message.meta.dt'
+                          stream: resource-purge
+                          uri: http://{{message.meta.domain}}/api/rest_v1/page/definition/{message.page_title}
+                      - meta:
+                          domain: '{{message.meta.domain}}'
+                          dt: '{{message.meta.dt'
+                          stream: resource-purge
+                          uri: http://{{message.meta.domain}}/api/rest_v1/page/mobile-sections-lead/{message.page_title}
+                      - meta:
+                          domain: '{{message.meta.domain}}'
+                          dt: '{{message.meta.dt'
+                          stream: resource-purge
+                          uri: http://{{message.meta.domain}}/api/rest_v1/page/mobile-sections-remaining/{message.page_title}
+                      - meta:
+                          domain: '{{message.meta.domain}}'
+                          dt: '{{message.meta.dt'
+                          stream: resource-purge
+                          uri: http://{{message.meta.domain}}/api/rest_v1/page/mobile-sections/{message.page_title}
+                      - meta:
+                          domain: '{{message.meta.domain}}'
+                          dt: '{{message.meta.dt'
+                          stream: resource-purge
+                          uri: http://{{message.meta.domain}}/api/rest_v1/page/mobile-sections/{message.page_title}/{{message.rev_id}}
+                      - meta:
+                          domain: '{{message.meta.domain}}'
+                          dt: '{{message.meta.dt'
+                          stream: resource-purge
+                          uri: http://{{message.meta.domain}}/api/rest_v1/page/media-list/{message.page_title}
+                      - meta:
+                          domain: '{{message.meta.domain}}'
+                          dt: '{{message.meta.dt'
+                          stream: resource-purge
+                          uri: http://{{message.meta.domain}}/api/rest_v1/page/media-list/{message.page_title}/{{message.rev_id}}
+                      - meta:
+                          domain: '{{message.meta.domain}}'
+                          dt: '{{message.meta.dt'
+                          stream: resource-purge
+                          uri: http://{{message.meta.domain}}/api/rest_v1/page/mobile-html/{message.page_title}
+                      - meta:
+                          domain: '{{message.meta.domain}}'
+                          dt: '{{message.meta.dt'
+                          stream: resource-purge
+                          uri: http://{{message.meta.domain}}/api/rest_v1/page/mobile-html/{message.page_title}/{{message.rev_id}}
+                      method: post
+                      uri: /sys/queue/events
+                    ignore:
+                      status:
+                      - 404
+                      - 412
+                    match_not:
+                    - meta:
+                        domain: /\.wikidata\.beta\.wmflabs\.org$/
+                      page_namespace: 0
+                    - meta:
+                        domain: /\.wikidata\.beta\.wmflabs\.org$/
+                      page_namespace: 120
+                    topics:
+                    - mediawiki.page-delete
+                    - mediawiki.page-suppress
+                  page_edit:
+                    exec:
+                    - headers:
+                        cache-control: no-cache
+                        if-unmodified-since: '{{date(message.meta.dt)}}'
+                        x-restbase-parentrevision: '{{message.rev_parent_id}}'
+                      method: get
+                      query:
+                        redirect: false
+                      uri: http://deployment-restbase02.deployment-prep.eqiad.wmflabs:7231/{{message.meta.domain}}/v1/page/html/{message.page_title}/{{message.rev_id}}
+                    - body: '{{globals.message}}'
+                      method: post
+                      uri: /sys/links/transcludes/{message.page_title}
+                    limiters:
+                      blacklist: html:{message.meta.uri}
+                    match:
+                      rev_content_changed: true
+                    match_not:
+                    - meta:
+                        domain: /\.wikidata\.beta\.wmflabs\.org$/
+                      page_namespace: 0
+                    - meta:
+                        domain: /\.wikidata\.beta\.wmflabs\.org$/
+                      page_namespace: 120
+                    - meta:
+                        domain: /wiktionary\.beta\.wmflabs\.org$/
+                      page_namespace: 828
+                    retry_on:
+                      status:
+                      - 5xx
+                      - 404
+                    topic: mediawiki.revision-create
+                  page_images_mobile:
+                    cases:
+                    - exec:
+                        headers:
+                          cache-control: no-cache
+                        method: get
+                        query:
+                          redirect: false
+                        uri: http://deployment-restbase02.deployment-prep.eqiad.wmflabs:7231/{{message.meta.domain}}/v1/page/mobile-sections/{message.page_title}
+                      match:
+                        added_properties:
+                          page_image: /.+/
+                        meta:
+                          domain: /\.wikipedia\.beta\.wmflabs\.org$/
+                    - exec:
+                        headers:
+                          cache-control: no-cache
+                        method: get
+                        query:
+                          redirect: false
+                        uri: http://deployment-restbase02.deployment-prep.eqiad.wmflabs:7231/{{message.meta.domain}}/v1/page/mobile-sections/{message.page_title}
+                      match:
+                        meta:
+                          domain: /\.wikipedia\.beta\.wmflabs\.org$/
+                        removed_properties:
+                          page_image: /.+/
+                    topic: mediawiki.page-properties-change
+                  page_images_summary:
+                    cases:
+                    - exec:
+                        headers:
+                          cache-control: no-cache
+                        method: get
+                        query:
+                          redirect: false
+                        uri: http://deployment-restbase02.deployment-prep.eqiad.wmflabs:7231/{{message.meta.domain}}/v1/page/summary/{message.page_title}
+                      match:
+                        added_properties:
+                          page_image: /.+/
+                      match_not:
+                      - meta:
+                          domain: /\.wikidata\.beta\.wmflabs\.org$/
+                        page_namespace: 0
+                      - meta:
+                          domain: /\.wikidata\.beta\.wmflabs\.org$/
+                        page_namespace: 120
+                    - exec:
+                        headers:
+                          cache-control: no-cache
+                        method: get
+                        query:
+                          redirect: false
+                        uri: http://deployment-restbase02.deployment-prep.eqiad.wmflabs:7231/{{message.meta.domain}}/v1/page/summary/{message.page_title}
+                      match:
+                        removed_properties:
+                          page_image: /.+/
+                      match_not:
+                      - meta:
+                          domain: /\.wikidata\.beta\.wmflabs\.org$/
+                        page_namespace: 0
+                      - meta:
+                          domain: /\.wikidata\.beta\.wmflabs\.org$/
+                        page_namespace: 120
+                    topic: mediawiki.page-properties-change
+                  page_move:
+                    disable_blacklist: true
+                    exec:
+                    - headers:
+                        cache-control: no-cache
+                        if-unmodified-since: '{{date(message.meta.dt)}}'
+                      method: get
+                      query:
+                        redirect: false
+                      uri: http://deployment-restbase02.deployment-prep.eqiad.wmflabs:7231/{{message.meta.domain}}/v1/page/html/{message.page_title}/{{message.rev_id}}
+                    - headers:
+                        cache-control: no-cache
+                      method: get
+                      query:
+                        redirect: false
+                      uri: http://deployment-restbase02.deployment-prep.eqiad.wmflabs:7231/{{message.meta.domain}}/v1/page/title/{message.prior_state.page_title}
+                    match_not:
+                    - meta:
+                        domain: /\.wikidata\.beta\.wmflabs\.org$/
+                      page_namespace: 0
+                    - meta:
+                        domain: /\.wikidata\.beta\.wmflabs\.org$/
+                      page_namespace: 120
+                    topic: mediawiki.page-move
+                  page_restore:
+                    disable_blacklist: true
+                    exec:
+                    - headers:
+                        cache-control: no-cache
+                      method: get
+                      query:
+                        redirect: false
+                      uri: http://deployment-restbase02.deployment-prep.eqiad.wmflabs:7231/{{message.meta.domain}}/v1/page/title/{message.page_title}
+                    - body: '{{globals.message}}'
+                      method: post
+                      uri: /sys/links/backlinks/{message.page_title}
+                    match_not:
+                    - meta:
+                        domain: /\.wikidata\.beta\.wmflabs\.org$/
+                      page_namespace: 0
+                    - meta:
+                        domain: /\.wikidata\.beta\.wmflabs\.org$/
+                      page_namespace: 120
+                    topic: mediawiki.page-undelete
+                  revision_visibility_change:
+                    enable_blacklist: false
+                    exec:
+                    - headers:
+                        cache-control: no-cache
+                      method: get
+                      query:
+                        redirect: false
+                      uri: http://deployment-restbase02.deployment-prep.eqiad.wmflabs:7231/{{message.meta.domain}}/v1/page/title/{message.page_title}/{{message.rev_id}}
+                    - body:
+                      - meta:
+                          domain: '{{message.meta.domain}}'
+                          dt: '{{message.meta.dt'
+                          stream: resource-purge
+                          uri: http://{{message.meta.domain}}/api/rest_v1/page/html/{message.page_title}/{{message.rev_id}}
+                      - meta:
+                          domain: '{{message.meta.domain}}'
+                          dt: '{{message.meta.dt'
+                          stream: resource-purge
+                          uri: http://{{message.meta.domain}}/api/rest_v1/page/mobile-sections-lead/{message.page_title}/{{message.rev_id}}
+                      - meta:
+                          domain: '{{message.meta.domain}}'
+                          dt: '{{message.meta.dt'
+                          stream: resource-purge
+                          uri: http://{{message.meta.domain}}/api/rest_v1/page/mobile-sections-remaining/{message.page_title}/{{message.rev_id}}
+                      - meta:
+                          domain: '{{message.meta.domain}}'
+                          dt: '{{message.meta.dt'
+                          stream: resource-purge
+                          uri: http://{{message.meta.domain}}/api/rest_v1/page/mobile-sections/{message.page_title}/{{message.rev_id}}
+                      - meta:
+                          domain: '{{message.meta.domain}}'
+                          dt: '{{message.meta.dt'
+                          stream: resource-purge
+                          uri: http://{{message.meta.domain}}/api/rest_v1/page/media-list/{message.page_title}/{{message.rev_id}}
+                      - meta:
+                          domain: '{{message.meta.domain}}'
+                          dt: '{{message.meta.dt'
+                          stream: resource-purge
+                          uri: http://{{message.meta.domain}}/api/rest_v1/page/mobile-html/{message.page_title}/{{message.rev_id}}
+                      method: post
+                      uri: /sys/queue/events
+                    ignore:
+                      status:
+                      - 403
+                      - 412
+                    match_not:
+                    - meta:
+                        domain: /\.wikidata\.beta\.wmflabs\.org$/
+                      page_namespace: 0
+                    - meta:
+                        domain: /\.wikidata\.beta\.wmflabs\.org$/
+                      page_namespace: 120
+                    topic: mediawiki.revision-visibility-change
+                  summary_definition_rerender:
+                    cases:
+                    - exec:
+                        headers:
+                          cache-control: no-cache
+                        method: get
+                        query:
+                          redirect: false
+                        uri: http://deployment-restbase02.deployment-prep.eqiad.wmflabs:7231/{{message.meta.domain}}/v1/page/summary/{{match.meta.uri[1]}}
+                      match:
+                        meta:
+                          uri: /^https?:\/\/[^\/]+\/api\/rest_v1\/page\/html\/([^\/]+)$/
+                        tags:
+                        - restbase
+                      match_not:
+                      - meta:
+                          domain: /wiktionary\.beta\.wmflabs\.org$/
+                      - meta:
+                          domain: /\.wikidata\.beta\.wmflabs\.org$/
+                    - exec:
+                        body:
+                        - meta:
+                            domain: '{{message.meta.domain}}'
+                            dt: '{{message.meta.dt'
+                            stream: resource-purge
+                            uri: http://{{message.meta.domain}}/api/rest_v1/page/definition/{{match.meta.uri[1]}}
+                          root_event: message.root_event
+                        method: post
+                        uri: /sys/queue/events
+                      match:
+                        meta:
+                          domain: /^en\.wiktionary\.beta\.wmflabs\.org$/
+                          uri: /^https?:\/\/[^\/]+\/api\/rest_v1\/page\/html\/((?:(?!%3a|%3A|\/).)+)$/
+                        tags:
+                        - restbase
+                    limiters:
+                      blacklist: summary:{message.meta.uri}
+                    topic: resource_change
+                  summary_definition_rerender_transcludes:
+                    cases:
+                    - exec:
+                        headers:
+                          cache-control: no-cache
+                        method: get
+                        query:
+                          redirect: false
+                        uri: http://deployment-restbase02.deployment-prep.eqiad.wmflabs:7231/{{message.meta.domain}}/v1/page/summary/{{match.meta.uri[1]}}
+                      match:
+                        meta:
+                          uri: /^https?:\/\/[^\/]+\/api\/rest_v1\/page\/html\/([^\/]+)$/
+                        tags:
+                        - restbase
+                      match_not:
+                      - meta:
+                          domain: /wiktionary\.beta\.wmflabs\.org$/
+                      - meta:
+                          domain: /\.wikidata\.beta\.wmflabs\.org$/
+                    - exec:
+                        body:
+                        - meta:
+                            domain: '{{message.meta.domain}}'
+                            dt: '{{message.meta.dt'
+                            stream: resource-purge
+                            uri: http://{{message.meta.domain}}/api/rest_v1/page/definition/{{match.meta.uri[1]}}
+                          root_event: message.root_event
+                        method: post
+                        uri: /sys/queue/events
+                      match:
+                        meta:
+                          domain: /^en\.wiktionary\.beta\.wmflabs\.org$/
+                          uri: /^https?:\/\/[^\/]+\/api\/rest_v1\/page\/html\/((?:(?!%3a|%3A|\/).)+)$/
+                        tags:
+                        - restbase
+                    limiters:
+                      blacklist: summary:{message.meta.uri}
+                    topic: change-prop.transcludes.resource-change
+                  wikidata_description_on_edit:
+                    exec:
+                      body: '{{globals.message}}'
+                      method: post
+                      uri: /sys/links/wikidata_descriptions
+                    match:
+                      comment: /wbeditentity|wbsetdescription|undo|restore/
+                      meta:
+                        domain: www.wikidata.org
+                      page_namespace: 0
+                      rev_content_changed: true
+                    topic: mediawiki.revision-create
+                  wikidata_description_on_undelete:
+                    exec:
+                      body: '{{globals.message}}'
+                      method: post
+                      uri: /sys/links/wikidata_descriptions
+                    match:
+                      meta:
+                        domain: www.wikidata.org
+                      page_namespace: 0
+                    topic: mediawiki.page-undelete
+              path: sys/kafka.js
+        title: The Change Propagation root
+        x-sub-request-filters:
+        - name: http
+          options:
+            allow:
+            - forward_headers:
+                user-agent: true
+              pattern: /^https?:\/\//
+          type: default
+      startup_concurrency: 4
+      worker_heap_limit_mb: 750
+      worker_heartbeat_timeout: 30000
