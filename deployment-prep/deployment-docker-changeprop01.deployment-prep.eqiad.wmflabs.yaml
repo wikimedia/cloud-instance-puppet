@@ -1,7 +1,3 @@
-profile::docker::engine::declare_service: true
-profile::docker::engine::packagename: docker.io
-profile::docker::engine::settings: {}
-profile::docker::engine::version: 18.09.1+dfsg1-7.1+deb10u1
 profile::docker::runner::service_defs:
   changeprop:
     config:
@@ -1969,3 +1965,8 @@ profile::docker::runner::service_defs:
       startup_concurrency: 4
       worker_heap_limit_mb: 750
       worker_heartbeat_timeout: 30000
+    image_name: mediawiki-services-change-propagation
+    namespace: wikimedia
+    override_cmd: /srv/service/server.js -c /etc/changeprop/config.yaml
+    port: 7272
+    version: v0.9.5
