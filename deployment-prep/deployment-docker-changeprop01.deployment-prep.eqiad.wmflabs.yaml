@@ -19,7 +19,7 @@ profile::docker::runner::service_defs:
       services:
       - conf:
           cors: '*'
-          port: 7273
+          port: 7272
           proxy: null
           spec:
             paths:
@@ -1269,3 +1269,8 @@ profile::docker::runner::service_defs:
                       query:
                         redirect: false
                       uri: http://deployment-restbase02
+    image_name: mediawiki-services-change-propagation
+    namespace: wikimedia
+    override_cmd: /srv/service/server.js -c /etc/changeprop/config.yaml
+    port: 7272
+    version: v0.9.5
