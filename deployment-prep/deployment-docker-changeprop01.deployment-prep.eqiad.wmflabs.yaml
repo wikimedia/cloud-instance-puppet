@@ -1272,3 +1272,5 @@ profile::docker::runner::service_defs:
     image_name: mediawiki-services-change-propagation
     namespace: wikimedia
     override_cmd: /srv/service/server.js -c /etc/changeprop/config.yaml
+    port: 7272
+    version: v0.9.5
