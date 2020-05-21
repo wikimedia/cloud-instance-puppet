@@ -1,2 +1,6 @@
 diamond::remove: true
 mount_nfs: false
+profile::wmcs::kubeadm::control_nodes:
+- paws-k8s-control-1.paws.eqiad.wmflabs
+- paws-k8s-control-2.paws.eqiad.wmflabs
+- paws-k8s-control-3.paws.eqiad.wmflabs
