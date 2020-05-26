@@ -1,4 +1,5 @@
 nginx::variant: extras
+profile::query_service::ns: sdc
 profile::wdqs::fetch_constraints: true
 role::labs::lvm::volume::mountat: /srv/data
 scap::deployment_server: deployment-tin.deployment-prep.eqiad.wmflabs
