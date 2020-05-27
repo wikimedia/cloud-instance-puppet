@@ -1,2 +1,2 @@
-profile::wmcs::kubeadm::component: thirdparty/kubeadm-k8s-1-15
+profile::wmcs::kubeadm::component: thirdparty/kubeadm-k8s-1-16
 swap_partition: false
