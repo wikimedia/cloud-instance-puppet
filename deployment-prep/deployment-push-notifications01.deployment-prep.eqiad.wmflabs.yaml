@@ -10,10 +10,10 @@ profile::docker::runner::service_defs:
       num_workers: 0
       services:
       - conf:
-          port: 8900
           user_agent: push-notifications (beta)
         module: ./dist/app.js
         name: push-notifications
     namespace: wikimedia
     override_cmd: -c /etc/mediawiki-services-push-notifications/config.yaml
+    port: 8900
     version: 2020-06-01-212656-publish
