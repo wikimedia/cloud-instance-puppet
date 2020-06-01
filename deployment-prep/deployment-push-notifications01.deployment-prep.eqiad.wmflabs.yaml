@@ -10,6 +10,7 @@ profile::docker::runner::service_defs:
       num_workers: 0
       services:
       - conf:
+          port: 8900
           spec: ./spec.yaml
           user_agent: push-notifications (beta)
         module: ./dist/app.js
