@@ -1,3 +1,4 @@
+acmechief_host: project-proxy-acme-chief-01.project-proxy.eqiad.wmflabs
 profile::wmcs::novaproxy::active_proxy: proxy-01
 profile::wmcs::novaproxy::all_proxies:
 - proxy-01.project-proxy.eqiad.wmflabs
