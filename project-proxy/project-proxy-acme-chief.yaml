@@ -33,3 +33,19 @@ profile::acme_chief::cloud::designate_sync_tidyup_enabled: true
 profile::acme_chief::cloud::designate_sync_username: project-proxy-dns-manager
 profile::acme_chief::passive: ''
 shared_acme_certificates: {}
+tiles:
+  CN: maps.wmflabs.org
+  SNI:
+  - tiles.wmflabs.org
+  - '*.tiles.wmflabs.org'
+  authorized_regexes:
+  - ^cp-[0-9]+\.project-proxy\.eqiad\.wmflabs$
+  challenge: dns-01
+wma:
+  CN: maps.wmflabs.org
+  SNI:
+  - wma.wmflabs.org
+  - '*.wma.wmflabs.org'
+  authorized_regexes:
+  - ^cp-[0-9]+\.project-proxy\.eqiad\.wmflabs$
+  challenge: dns-01
