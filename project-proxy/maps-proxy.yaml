@@ -1,5 +1,7 @@
 profile::wmcs::proxy::static::acme_chief_certs:
-- maps wma tiles
+- maps
+- wma
+- tiles
 profile::wmcs::proxy::static::proxy_mappings:
   0.wma.wmflabs.org: maps-wma.maps.eqiad1.wikimedia.cloud
   1.wma.wmflabs.org: maps-wma.maps.eqiad1.wikimedia.cloud
