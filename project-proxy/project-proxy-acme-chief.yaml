@@ -1,23 +1,43 @@
 authdns_servers:
   208.80.154.11: 208.80.154.11
   208.80.154.135: 208.80.154.135
-c98be4b64bc07c6ab71627b78fcdeb0e:
-  directory: https://acme-v02.api.letsencrypt.org/directory
-  regr: '{"body": {}, "uri": "https://acme-v02.api.letsencrypt.org/acme/acct/87887184"}'
 http_proxy: ''
-maps:
-  CN: maps.wmcloud.org
-  SNI:
-  - maps.wmflabs.org
-  - '*.maps.wmflabs.org'
-  - maps.wmcloud.org
-  - '*.maps.wmcloud.org'
-  authorized_regexes:
-  - ^cp-[0-9]+\.project-proxy\.eqiad\.wmflabs$
-  challenge: dns-01
-profile::acme_chief::accounts: {}
+profile::acme_chief::accounts:
+  c98be4b64bc07c6ab71627b78fcdeb0e:
+    directory: https://acme-v02.api.letsencrypt.org/directory
+    regr: '{"body": {}, "uri": "https://acme-v02.api.letsencrypt.org/acme/acct/87887184"}'
 profile::acme_chief::active: project-proxy-acme-chief-01.project-proxy.eqiad.wmflabs
-profile::acme_chief::certificates: {}
+profile::acme_chief::certificates:
+  maps:
+    CN: maps.wmcloud.org
+    SNI:
+    - maps.wmflabs.org
+    - '*.maps.wmflabs.org'
+    - maps.wmcloud.org
+    - '*.maps.wmcloud.org'
+    authorized_regexes:
+    - ^cp-[0-9]+\.project-proxy\.eqiad\.wmflabs$
+    challenge: dns-01
+  tiles:
+    CN: tiles.wmcloud.org
+    SNI:
+    - tiles.wmflabs.org
+    - '*.tiles.wmflabs.org'
+    - tiles.wmcloud.org
+    - '*.tiles.wmcloud.org'
+    authorized_regexes:
+    - ^cp-[0-9]+\.project-proxy\.eqiad\.wmflabs$
+    challenge: dns-01
+  wma:
+    CN: wma.wmcloud.org
+    SNI:
+    - wma.wmflabs.org
+    - '*.wma.wmflabs.org'
+    - wma.wmcloud.org
+    - '*.wma.wmcloud.org'
+    authorized_regexes:
+    - ^cp-[0-9]+\.project-proxy\.eqiad\.wmflabs$
+    challenge: dns-01
 profile::acme_chief::challenges:
   dns-01:
     issuing_ca: letsencrypt.org
@@ -35,23 +55,3 @@ profile::acme_chief::cloud::designate_sync_tidyup_enabled: true
 profile::acme_chief::cloud::designate_sync_username: project-proxy-dns-manager
 profile::acme_chief::passive: ''
 shared_acme_certificates: {}
-tiles:
-  CN: tiles.wmcloud.org
-  SNI:
-  - tiles.wmflabs.org
-  - '*.tiles.wmflabs.org'
-  - tiles.wmcloud.org
-  - '*.tiles.wmcloud.org'
-  authorized_regexes:
-  - ^cp-[0-9]+\.project-proxy\.eqiad\.wmflabs$
-  challenge: dns-01
-wma:
-  CN: wma.wmcloud.org
-  SNI:
-  - wma.wmflabs.org
-  - '*.wma.wmflabs.org'
-  - wma.wmcloud.org
-  - '*.wma.wmcloud.org'
-  authorized_regexes:
-  - ^cp-[0-9]+\.project-proxy\.eqiad\.wmflabs$
-  challenge: dns-01
