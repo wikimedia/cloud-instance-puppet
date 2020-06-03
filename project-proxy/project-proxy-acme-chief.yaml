@@ -1,6 +1,9 @@
 authdns_servers:
   208.80.154.11: 208.80.154.11
   208.80.154.135: 208.80.154.135
+c98be4b64bc07c6ab71627b78fcdeb0e:
+  directory: https://acme-v02.api.letsencrypt.org/directory
+  regr: '{"body": {}, "uri": "https://acme-v02.api.letsencrypt.org/acme/acct/87887184"}'
 http_proxy: ''
 profile::acme_chief::accounts: {}
 profile::acme_chief::active: project-proxy-acme-chief-01.project-proxy.eqiad.wmflabs
