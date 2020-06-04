@@ -18,4 +18,4 @@ profile::docker::runner::service_defs:
     namespace: wikimedia
     override_cmd: -c /etc/mediawiki-services-push-notifications/config.yaml
     port: 8900
-    version: 2020-06-01-212656-publish
+    version: 2020-06-04-150954-publish
