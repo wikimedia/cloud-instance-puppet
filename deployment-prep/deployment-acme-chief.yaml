@@ -60,8 +60,7 @@ profile::acme_chief::challenges:
     resolver_port: 53
     zone_update_cmd: /usr/local/bin/acme-chief-designate-sync.py
 profile::acme_chief::cloud::designate_sync_auth_url: http://cloudcontrol1003.wikimedia.org:5000/v3
-profile::acme_chief::cloud::designate_sync_project_names:
-- deployment-prep
+profile::acme_chief::cloud::designate_sync_project_name: deployment-prep
 profile::acme_chief::cloud::designate_sync_region_name: eqiad1-r
 profile::acme_chief::cloud::designate_sync_tidyup_enabled: true
 profile::acme_chief::cloud::designate_sync_username: deployment-prep-dns-manager
