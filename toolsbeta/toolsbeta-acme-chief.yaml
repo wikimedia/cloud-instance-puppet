@@ -13,7 +13,8 @@ profile::acme_chief::challenges:
     - ns1.openstack.eqiad1.wikimediacloud.org.
     zone_update_cmd: /usr/local/bin/acme-chief-designate-sync.py
 profile::acme_chief::cloud::designate_sync_auth_url: http://openstack.eqiad1.wikimediacloud.org:5000/v3
-profile::acme_chief::cloud::designate_sync_project_name: toolsbeta
+profile::acme_chief::cloud::designate_sync_project_names:
+- toolsbeta
 profile::acme_chief::cloud::designate_sync_region_name: eqiad1-r
 profile::acme_chief::cloud::designate_sync_tidyup_enabled: true
 profile::acme_chief::cloud::designate_sync_username: tools-dns-manager
