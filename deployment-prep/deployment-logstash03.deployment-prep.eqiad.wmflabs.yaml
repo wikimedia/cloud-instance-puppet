@@ -1,5 +1,6 @@
 elasticsearch::graylog_hosts: none
 elasticsearch::version: 5
+kafka_cluster_name: logstash-eqiad
 profile::base::remote_syslog: []
 profile::elasticsearch::common_settings:
   auto_create_index: +logstash-*,-*
