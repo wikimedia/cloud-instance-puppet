@@ -30,24 +30,6 @@ profile::trafficserver::tls::available_unified_certs:
     private_key_files:
     - acmecerts/unified/live/rsa-2048.key
     - acmecerts/unified/live/ec-prime256v1.key
-profile::trafficserver::tls::inbound_tls_settings:
-  cert_path: /etc/acmecerts/unified/live/
-  common:
-    cipher_suite: -ALL:ECDHE-ECDSA-CHACHA20-POLY1305:ECDHE-ECDSA-AES256-GCM-SHA384:ECDHE-ECDSA-AES128-GCM-SHA256:ECDHE-RSA-CHACHA20-POLY1305:ECDHE-RSA-AES256-GCM-SHA384:ECDHE-RSA-AES128-GCM-SHA256:ECDHE-ECDSA-AES128-SHA:ECDHE-RSA-AES128-SHA:DHE-RSA-AES128-SHA
-    enable_tlsv1: 0
-    enable_tlsv1_1: 0
-    enable_tlsv1_2: 1
-    enable_tlsv1_3: 0
-  dhparams_file: /etc/ssl/dhparam.pem
-  do_ocsp: 0
-  load_elevated: 1
-  max_record_size: 16383
-  session_cache: 2
-  session_cache_auto_clear: 1
-  session_cache_buckets: 256
-  session_cache_size: 102400
-  session_ticket_enable: 0
-  ssl_handshake_timeout_in: 60
 profile::trafficserver::tls::parent_rules:
 - dest_domain: .
   parent:
