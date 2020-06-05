@@ -34,6 +34,7 @@ profile::cache::varnish::frontend::fe_vcl_config:
   allowed_methods: ^(GET|HEAD|OPTIONS|POST|PURGE|PUT|DELETE)$
   enable_geoiplookup: true
   keep: 1d
+  large_objects_cutoff: 262144
   maps_domain: maps.beta.wmflabs.org
   pass_random: false
   purge_host_regex: ^(upload|maps)\.beta\.wmflabs\.org$
