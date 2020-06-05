@@ -1,1 +1,1 @@
-gerrit::service::ipv6: 12
+gerrit::service::ipv6: undef
