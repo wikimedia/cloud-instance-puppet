@@ -153,6 +153,15 @@ profile::trafficserver::tls::inbound_tls_settings:
   session_cache_size: 102400
   session_ticket_enable: 0
   ssl_handshake_timeout_in: 60
+profile::trafficserver::tls::logs:
+- ensure: absent
+  filename: tls
+  format: wmf-tls
+  mode: ascii_pipe
+- ensure: present
+  filename: analytics
+  format: wmf-analytics
+  mode: ascii_pipe
 profile::trafficserver::tls::parent_rules:
 - dest_domain: .
   parent:
