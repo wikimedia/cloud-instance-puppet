@@ -1,4 +1,0 @@
-profile::wmcs::maps::proxy::proxy_mappings:
-  maptest.maps.wmflabs.org: maps-wma.maps.eqiad.wmflabs
-  maptest.wmflabs.org: maps-wma.maps.eqiad.wmflabs
-puppetmaster: abogott-puppetmaster.testlabs.eqiad.wmflabs
