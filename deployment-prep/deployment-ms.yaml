@@ -1,6 +1,4 @@
 profile::swift::hash_path_suffix: ''
-profile::swift::replication_accounts: []
-profile::swift::replication_keys: []
 profile::swift::stats_reporter_host: somenonexistenthost
 swift::hash_path_suffix: abcdef
 swift::params::accounts:
