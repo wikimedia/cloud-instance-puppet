@@ -3,6 +3,7 @@ profile::swift::replication_accounts:
   mw_media:
     cluster_codfw: http://deployment-ms-fe02.deployment-prep.eqiad.wmflabs/v1/
 profile::swift::stats_reporter_host: somenonexistenthost
+profile::swift::swift_cluster: deployment-prep
 swift::hash_path_suffix: abcdef
 swift::params::accounts:
   mw_media:
@@ -33,7 +34,6 @@ swift::params::accounts:
     stats_enabled: 'no'
     user: swift:dispersion
 swift::params::storage_policies: true
-swift::params::swift_cluster: deployment-prep
 swift::proxy::memcached_servers:
 - deployment-ms-fe02.eqiad.wmflabs
 swift::proxy::proxy_service_host: deployment-ms-fe02.eqiad.wmflabs
