@@ -1,5 +1,4 @@
-puppetmaster: deployment-puppetmaster04.deployment-prep.eqiad.wmflabs
-swift::params::accounts:
+profile::swift::accounts:
   mw_media:
     access: .admin
     account_name: AUTH_mw
@@ -33,6 +32,7 @@ swift::params::accounts:
     auth: http://deployment-ms-fe03.deployment-prep.eqiad.wmflabs
     stats_enabled: 'no'
     user: swift:dispersion
+puppetmaster: deployment-puppetmaster04.deployment-prep.eqiad.wmflabs
 swift::proxy::memcached_servers:
 - deployment-ms-fe03.eqiad.wmflabs
 swift::proxy::proxy_service_host: deployment-ms-fe03.eqiad.wmflabs
