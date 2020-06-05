@@ -1,3 +1,2 @@
 - role::labs::mediawiki_vagrant
 - role::labs::lvm::srv
-- '#role::puppetmaster::standalone'
