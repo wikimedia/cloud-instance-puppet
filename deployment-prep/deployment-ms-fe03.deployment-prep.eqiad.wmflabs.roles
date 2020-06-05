@@ -1,2 +1,1 @@
 - role::swift::proxy
-- role::swift::stats_reporter
