@@ -54,4 +54,22 @@ profile::trafficserver::backend::mapping_rules:
   replacement: http://deployment-ms-fe03.deployment-prep.eqiad.wmflabs
   target: http://upload.beta.wmflabs.org
   type: map
+profile::trafficserver::tls::inbound_tls_settings:
+  common:
+    cipher_suite: -ALL:ECDHE-ECDSA-CHACHA20-POLY1305:ECDHE-ECDSA-AES256-GCM-SHA384:ECDHE-ECDSA-AES128-GCM-SHA256:ECDHE-RSA-CHACHA20-POLY1305:ECDHE-RSA-AES256-GCM-SHA384:ECDHE-RSA-AES128-GCM-SHA256:ECDHE-ECDSA-AES128-SHA:ECDHE-RSA-AES128-SHA:DHE-RSA-AES128-SHA
+    enable_tlsv1: 0
+    enable_tlsv1_1: 0
+    enable_tlsv1_2: 1
+    enable_tlsv1_3: 0
+  dhparams_file: /etc/ssl/dhparam.pem
+  do_ocsp: 0
+  load_elevated: 1
+  max_record_size: 16383
+  prioritize_chacha: 1
+  session_cache: 2
+  session_cache_auto_clear: 1
+  session_cache_buckets: 256
+  session_cache_size: 102400
+  session_ticket_enable: 0
+  ssl_handshake_timeout_in: 60
 varnish_version4: true
