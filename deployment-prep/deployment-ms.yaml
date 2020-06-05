@@ -1,3 +1,4 @@
+profile::swift::replication_accounts: []
 swift::hash_path_suffix: abcdef
 swift::params::accounts:
   mw_media:
