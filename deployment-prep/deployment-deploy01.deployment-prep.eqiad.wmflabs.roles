@@ -1,4 +1,4 @@
-- role::ci::slave::labs::common
+- profile::ci::slave::labs::common
 - role::beta::deploymentserver
 - role::deployment_server
 - role::aptly::server
