@@ -1,4 +1,1 @@
-- profile::openstack::eqiad1::pdns::auth::db
-- profile::openstack::eqiad1::pdns::auth::service
-- profile::openstack::eqiad1::pdns::recursor::service
-- profile::openstack::eqiad1::designate::service
+[]
