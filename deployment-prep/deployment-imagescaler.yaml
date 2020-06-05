@@ -92,7 +92,6 @@ profile::prometheus::statsd_exporter::mappings:
     port: $2
   match: thumbor.*.process.*.service.start_timestamp_monotonic
   name: thumbor_process_start_time
-profile::swift::accounts_keys: []
 swift::proxy::private_container_list:
 - wikisource-en-local-public
 thumbor::mediawiki::shared_secret: 411urthumbs4r3b3longtoUS
