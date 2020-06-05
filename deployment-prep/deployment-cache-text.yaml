@@ -153,6 +153,14 @@ profile::trafficserver::tls::inbound_tls_settings:
   session_cache_size: 102400
   session_ticket_enable: 0
   ssl_handshake_timeout_in: 60
+profile::trafficserver::tls::log_formats:
+- format: "dt:%<cqtd>T%<cqtt>Z\thostname:%{::fqdn}\ttime_firstbyte:%<{TS_MILESTONE_UA_BEGIN_WRITE-TS_MILESTONE_SM_START}msdms>\t\
+    ip:%<{X-Client-IP}psh>\tcache_status:%<{X-Cache-Status}psh>http_status:%<pssc>\t\
+    response_size:%<pscl>\thttp_method:%<cqhm>\turi_host:%<{Host}cqh>\turi_path:%<cquup>\t\
+    content_type:%<{Content-Type}psh>\treferer:%<{Referer}cqh>\tuser_agent:%<{User-Agent}cqh>\t\
+    accept_language:%<{Accept-Language}cqh>\tx_analytics:%<{X-Analytics}ssh>\trange:%<{Range}cqh>\t\
+    x_cache:%<{X-Cache}psh>\taccept:%<{Accept}cqh>\tbackend:%<{Server}psh>\ttls:%<{X-Analytics-TLS}pqh>"
+  name: wmf-analytics
 profile::trafficserver::tls::logs:
 - ensure: absent
   filename: tls
