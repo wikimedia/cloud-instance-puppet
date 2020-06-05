@@ -132,6 +132,10 @@ profile::kafka::broker::log_segment_bytes: 134217728
 profile::kafka::broker::monitoring_enabled: true
 profile::logstash::collector::input_kafka_ssl_truststore_password: qwerty
 profile::mail::mx::dkim_domain: beta.wmflabs.org
+profile::mail::mx::verp_bounce_post_url: http://deployment.wikimedia.beta.wmflabs.org/w/api.php
+profile::mail::mx::verp_domains:
+- beta.wmflabs.org
+profile::mail::mx::verp_post_connect_server: deployment.wikimedia.beta.wmflabs.org
 profile::maps::apps::tilerator_ncpu_ratio: 0.3
 profile::mediawiki::install_hhvm: false
 profile::mediawiki::mcrouter_wancache::has_ssl: false
@@ -340,10 +344,6 @@ role::deployment::services::key_fingerprint: e6:d0:61:5e:e5:c7:5d:2d:3e:8e:c8:a5
 role::labs::nfsclient:mode: hard
 role::logging::mediawiki::udp2log::logstash_host: deployment-logstash03.deployment-prep.eqiad.wmflabs
 role::logging::mediawiki::udp2log::rotate: 15
-role::mail::mx::verp_bounce_post_url: http://deployment.wikimedia.beta.wmflabs.org/w/api.php
-role::mail::mx::verp_domains:
-- beta.wmflabs.org
-role::mail::mx::verp_post_connect_server: deployment.wikimedia.beta.wmflabs.org
 role::ocg::redis_servers:
   deployment-pdf01:
     host: deployment-pdf01.deployment-prep.eqiad.wmflabs
