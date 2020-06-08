@@ -1,4 +1,4 @@
-profile::backup::director_seed: 0
+profile::backup::director_seed: string
 profile::netbox::db::ipv6_ok: false
 profile::netbox::db::password: 0Quoquovik
 profile::netbox::db::primary: af-nb-db-1.automation-framework.eqiad.wmflabs
