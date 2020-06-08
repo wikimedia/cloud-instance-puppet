@@ -1,2 +1,2 @@
-profile::query_service::monitoring_enabled: false
+profile::query_service::blazegraph::monitoring_enabled: false
 puppetmaster: wdqspuppet.wikidata-query.eqiad.wmflabs
