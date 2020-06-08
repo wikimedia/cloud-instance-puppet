@@ -1,2 +1,3 @@
 profile::query_service::blazegraph::monitoring_enabled: false
+profile::query_service::sparql_query_stream: null
 puppetmaster: wdqspuppet.wikidata-query.eqiad.wmflabs
