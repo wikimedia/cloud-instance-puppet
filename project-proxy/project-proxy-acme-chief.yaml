@@ -54,6 +54,8 @@ profile::acme_chief::cloud::designate_sync_auth_url: http://cloudcontrol1003.wik
 profile::acme_chief::cloud::designate_sync_project_names:
 - project-proxy
 - maps
+- cloudinfra
+- wmflabsdotorg
 profile::acme_chief::cloud::designate_sync_region_name: eqiad1-r
 profile::acme_chief::cloud::designate_sync_tidyup_enabled: true
 profile::acme_chief::cloud::designate_sync_username: project-proxy-dns-manager
