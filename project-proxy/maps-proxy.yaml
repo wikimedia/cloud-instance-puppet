@@ -2,6 +2,7 @@ profile::wmcs::proxy::static::acme_chief_certs:
 - maps
 - wma
 - tiles
+- wmflabs
 profile::wmcs::proxy::static::proxy_mappings:
   0.wma.wmflabs.org:
     certname: wma
