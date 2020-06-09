@@ -33,7 +33,7 @@ profile::acme_chief::certificates:
     - ^.+\.project-proxy\.eqiad\.wmflabs$
     challenge: dns-01
   wmflabs:
-    CN: wmcloud.org
+    CN: wmflabs.org
     SNI:
     - wmflabs.org
     - '*.wmflabs.org'
