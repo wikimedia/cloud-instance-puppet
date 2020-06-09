@@ -13,8 +13,6 @@ profile::acme_chief::certificates:
     SNI:
     - maps.wmflabs.org
     - '*.maps.wmflabs.org'
-    - maps.wmcloud.org
-    - '*.maps.wmcloud.org'
     authorized_regexes:
     - ^.+\.project-proxy\.eqiad\.wmflabs$
     challenge: dns-01
@@ -23,8 +21,6 @@ profile::acme_chief::certificates:
     SNI:
     - tiles.wmflabs.org
     - '*.tiles.wmflabs.org'
-    - tiles.wmcloud.org
-    - '*.tiles.wmcloud.org'
     authorized_regexes:
     - ^.+\.project-proxy\.eqiad\.wmflabs$
     challenge: dns-01
