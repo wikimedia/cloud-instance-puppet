@@ -32,6 +32,14 @@ profile::acme_chief::certificates:
     authorized_regexes:
     - ^.+\.project-proxy\.eqiad\.wmflabs$
     challenge: dns-01
+  wmflabs:
+    CN: wmcloud.org
+    SNI:
+    - wmflabs.org
+    - '*.wmflabs.org'
+    authorized_regexes:
+    - ^.+\.project-proxy\.eqiad\.wmflabs$
+    challenge: dns-01
 profile::acme_chief::challenges:
   dns-01:
     issuing_ca: letsencrypt.org
