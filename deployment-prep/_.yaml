@@ -334,7 +334,7 @@ role::deployment::repo_config:
   tilerator/deploy:
     checkout_submodules: true
     service_name: tilerator
-    upstream: https://gerrit.wikimedia.org/r/p/maps/tilerator/deploy
+    upstream: https://gerrit.wikimedia.org/r/maps/tilerator/deploy
   zotero/translation-server:
     service_name: zotero
     upstream: https://gerrit.wikimedia.org/r/mediawiki/services/zotero/translation-server
