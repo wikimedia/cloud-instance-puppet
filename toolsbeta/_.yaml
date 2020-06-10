@@ -1,3 +1,4 @@
+acmechief_host: toolsbeta-acme-chief-01.toolsbeta.eqiad.wmflabs
 active_cronrunner: toolsbeta-cron-01.toolsbeta.eqiad.wmflabs
 active_proxy_host: toolsbeta-proxy-1
 active_redis: tools-redis-1001.tools.eqiad.wmflabs
