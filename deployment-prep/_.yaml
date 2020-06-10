@@ -312,7 +312,7 @@ role::deployment::repo_config:
   parsoid/deploy:
     checkout_submodules: true
     service_name: parsoid
-    upstream: https://gerrit.wikimedia.org/r/p/mediawiki/services/parsoid/deploy
+    upstream: https://gerrit.wikimedia.org/r/mediawiki/services/parsoid/deploy
   rcstream/rcstream:
     service_name: rcstream
     upstream: https://gerrit.wikimedia.org/r/mediawiki/services/rcstream
