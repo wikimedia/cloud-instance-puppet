@@ -1,4 +1,4 @@
-- role::kibana
+- profile::kibana
 - role::logstash::puppetreports
 - role::logstash::apifeatureusage
 - role::logstash::collector
