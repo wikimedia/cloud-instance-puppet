@@ -7,7 +7,15 @@ profile::acme_chief::accounts:
     directory: https://acme-v02.api.letsencrypt.org/directory
     regr: '{"body": {}, "uri": "https://acme-v02.api.letsencrypt.org/acme/acct/88487897"}'
 profile::acme_chief::active: toolsbeta-acme-chief-01.toolsbeta.eqiad.wmflabs
-profile::acme_chief::certificates: {}
+profile::acme_chief::certificates:
+  toolsbeta:
+    CN: toolsbeta.wmflabs.org
+    SNI:
+    - toolsbeta.wmflabs.org
+    - '*.toolsbeta.wmflabs.org'
+    authorized_regexes:
+    - ^\.+\.toolsbeta\.eqiad\.wmflabs$
+    challenge: dns-01
 profile::acme_chief::challenges:
   dns-01:
     issuing_ca: letsencrypt.org
