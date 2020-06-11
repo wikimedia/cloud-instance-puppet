@@ -99,7 +99,7 @@ prometheus_nodes:
 - tools-prometheus-01.tools.eqiad.wmflabs
 - tools-prometheus-02.tools.eqiad.wmflabs
 - tools-prometheus-03.tools.eqiad.wmflabs
-puppetmaster: toolsbeta-puppetmaster-03.toolsbeta.eqiad.wmflabs
+puppetmaster: toolsbeta-puppetmaster-04.toolsbeta.eqiad.wmflabs
 role::aptly::client::servername: tools-sge-services-03.tools.eqiad.wmflabs
 role::labs::nfsclient::lookupcache: all
 role::puppetmaster::standalone::autosign: true
