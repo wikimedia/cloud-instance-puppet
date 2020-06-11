@@ -2,4 +2,5 @@ profile::openstack::base::openstack_controllers:
 - abogott-galera-1.testlabs.eqiad.wmflabs
 - abogott-galera-2.testlabs.eqiad.wmflabs
 - abogott-galera-3.testlabs.eqiad.wmflabs
+profile::openstack::galera::server_id: 1
 puppetmaster: abogott-puppetmaster.testlabs.eqiad.wmflabs
