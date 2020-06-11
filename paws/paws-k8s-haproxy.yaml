@@ -6,4 +6,4 @@ profile::wmcs::kubeadm::control_nodes:
 - paws-k8s-control-3.paws.eqiad.wmflabs
 profile::wmcs::kubeadm::ingress_nodes:
 - paws-k8s-ingress-1.paws.eqiad1.wikimedia.cloud
-- paws-k8s-ingress-1.paws.eqiad1.wikimedia.cloud
+- paws-k8s-ingress-2.paws.eqiad1.wikimedia.cloud
