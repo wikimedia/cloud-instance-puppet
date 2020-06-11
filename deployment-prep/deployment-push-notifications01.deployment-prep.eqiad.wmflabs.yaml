@@ -10,6 +10,9 @@ profile::docker::runner::service_defs:
       num_workers: 0
       services:
       - conf:
+          apns:
+            cert: /etc/mediawiki-services-push-notifications/apns-push-toolforge.p12
+            production: true
           port: 8900
           spec: ./spec.yaml
           user_agent: push-notifications (beta)
@@ -18,4 +21,4 @@ profile::docker::runner::service_defs:
     namespace: wikimedia
     override_cmd: -c /etc/mediawiki-services-push-notifications/config.yaml
     port: 8900
-    version: 2020-06-08-115020-publish
+    version: 2020-06-10-221411-publish
