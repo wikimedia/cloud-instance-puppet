@@ -1,1 +1,1 @@
-- class profile::openstack::base::galera::node
+- profile::openstack::base::galera::node
