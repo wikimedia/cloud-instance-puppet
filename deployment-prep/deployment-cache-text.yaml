@@ -25,6 +25,7 @@ cluster: cache_text
 nginx::variant: extras
 profile::cache::base::purge_host_regex: ''
 profile::cache::base::varnish_version: 5
+profile::cache::purge::kafka_tls: false
 profile::cache::ssl::unified::acme_chief: true
 profile::cache::ssl::unified::certs: []
 profile::cache::ssl::unified::certs_active: []
