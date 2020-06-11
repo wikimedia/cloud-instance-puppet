@@ -1,1 +1,2 @@
+profile::openstack::base::galera::server_id: 1
 puppetmaster: abogott-puppetmaster.testlabs.eqiad.wmflabs
