@@ -4,6 +4,8 @@ profile::wmcs::kubeadm::control_nodes:
 - paws-k8s-control-1.paws.eqiad.wmflabs
 - paws-k8s-control-2.paws.eqiad.wmflabs
 - paws-k8s-control-3.paws.eqiad.wmflabs
+profile::wmcs::kubeadm::ingress_backend_port: 30000
+profile::wmcs::kubeadm::ingress_bind_port: 80
 profile::wmcs::kubeadm::ingress_nodes:
 - paws-k8s-ingress-1.paws.eqiad1.wikimedia.cloud
 - paws-k8s-ingress-2.paws.eqiad1.wikimedia.cloud
