@@ -1,5 +1,5 @@
 profile::openstack::base::designate_hosts: []
-profile::openstack::base::galera::enabled: false
+profile::openstack::base::galera::enabled: true
 profile::openstack::base::galera::server_id: 2
 profile::openstack::base::labweb_hosts: []
 profile::openstack::base::openstack_controllers:
