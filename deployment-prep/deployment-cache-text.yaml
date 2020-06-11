@@ -1,6 +1,6 @@
 cache::alternate_domains:
   performance.wikimedia.org:
-    director: performance
+    caching: normal
 cache::app_def_be_opts:
   between_bytes_timeout: 31s
   connect_timeout: 3s
@@ -16,24 +16,8 @@ cache::nodes:
 cache::req_handling:
   citoid.wikimedia.org:
     caching: pass
-    director: citoid_backend
   cxserver.wikimedia.org:
     caching: pass
-    director: cxserver_backend
-  default:
-    debug_director: appservers_debug
-    director: appservers
-    subpaths:
-      ^/api/rest_v1/:
-        director: restbase_backend
-      ^/w/api\.php:
-        debug_director: appservers_debug
-        director: api
-      ^/w/rest\.php:
-        director: parsoidphp
-      ^/w/thumb(_handler)?\.php:
-        debug_director: appservers_debug
-        director: rendering
 cache::text::nodes:
   eqiad:
   - deployment-cache-text06.deployment-prep.eqiad.wmflabs
