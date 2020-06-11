@@ -17,10 +17,7 @@ cache::nodes:
     - deployment-cache-upload06.deployment-prep.eqiad.wmflabs
 cache::req_handling:
   default:
-    director: swift
-    subpaths:
-      ^/+[^/]+/[^/]+/thumb/:
-        director: swift_thumbs
+    caching: normal
 profile::cache::ssl::unified::acme_chief: true
 profile::cache::varnish::backend::be_extra_vcl:
 - upload-common
