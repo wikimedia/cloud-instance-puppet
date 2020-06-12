@@ -115,7 +115,6 @@ profile::cache::kafka::eventlogging::ssl_enabled: true
 profile::cache::kafka::statsv::kafka_cluster_name: main-deployment-prep
 profile::cache::kafka::webrequest::kafka_cluster_name: jumbo-deployment-prep
 profile::cache::kafka::webrequest::ssl_enabled: true
-profile::cache::purge::kafka_cluster_name: main-deployment-prep
 profile::cassandra::rack: rack1
 profile::conftool::client::protocol: https
 profile::conftool::master::sync_dir: /etc/conftool/data-local
