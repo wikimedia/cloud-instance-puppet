@@ -1,1 +1,2 @@
 - role::acme_chief::cloud
+- profile::wmcs::paws::common
