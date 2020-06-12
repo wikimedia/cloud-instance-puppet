@@ -7,7 +7,15 @@ profile::acme_chief::accounts:
     directory: https://acme-v02.api.letsencrypt.org/directory
     regr: '{"body": {}, "uri": "https://acme-v02.api.letsencrypt.org/acme/acct/88640733"}'
 profile::acme_chief::active: paws-acme-chief-01.paws.eqiad.wmflabs
-profile::acme_chief::certificates: {}
+profile::acme_chief::certificates:
+  unified:
+    CN: paws.wmcloud.org
+    SNI:
+    - paws.wmcloud.org
+    - '*.paws.wmcloud.org'
+    authorized_regexes:
+    - ^paws-k8s-haproxy-[0-9]+\.paws\.eqiad\.wmflabs$
+    challenge: dns-01
 profile::acme_chief::challenges:
   dns-01:
     issuing_ca: letsencrypt.org
