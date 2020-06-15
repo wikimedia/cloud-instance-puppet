@@ -8,7 +8,7 @@ profile::acme_chief::accounts:
     regr: '{"body": {}, "uri": "https://acme-v02.api.letsencrypt.org/acme/acct/88640733"}'
 profile::acme_chief::active: paws-acme-chief-01.paws.eqiad.wmflabs
 profile::acme_chief::certificates:
-  unified:
+  paws:
     CN: paws.wmcloud.org
     SNI:
     - paws.wmcloud.org
