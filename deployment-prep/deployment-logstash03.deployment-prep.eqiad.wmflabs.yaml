@@ -26,6 +26,7 @@ profile::kibana::auth_file: /etc/logstash/htpasswd
 profile::kibana::auth_realm: Logstash (ssh deployment-deploy01.deployment-prep.eqiad.wmflabs
   sudo cat /root/secrets.txt)
 profile::kibana::auth_type: local
+profile::kibana::httpd_proxy::serveradmin: root@wmflabs.org
 profile::kibana::httpd_proxy::vhost: logstash-beta.wmflabs.org
 profile::kibana::serveradmin: root@deployment-logstash03.deployment-prep.eqiad.wmflabs
 profile::kibana::vhost: logstash-beta.wmflabs.org
