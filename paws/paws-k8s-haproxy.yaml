@@ -11,5 +11,4 @@ profile::wmcs::paws::keepalived::peers:
 - paws-k8s-haproxy-1.paws.eqiad1.wikimedia.cloud
 - paws-k8s-haproxy-2.paws.eqiad1.wikimedia.cloud
 profile::wmcs::paws::keepalived::vips:
-- paws.wmcloud.org
 - k8s.svc.paws.eqiad1.wikimedia.cloud
