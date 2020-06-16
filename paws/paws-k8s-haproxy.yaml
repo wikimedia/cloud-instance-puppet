@@ -1,11 +1,12 @@
 diamond::remove: true
 mount_nfs: false
-profile::wmcs::kubeadm::control_nodes:
+profile::wmcs::paws::control_nodes:
 - paws-k8s-control-1.paws.eqiad.wmflabs
 - paws-k8s-control-2.paws.eqiad.wmflabs
 - paws-k8s-control-3.paws.eqiad.wmflabs
-profile::wmcs::kubeadm::ingress_backend_port: 30000
-profile::wmcs::kubeadm::ingress_bind_port: 80
-profile::wmcs::kubeadm::ingress_nodes:
+profile::wmcs::paws::ingress_backend_port: 30000
+profile::wmcs::paws::ingress_bind_http_port: 80
+profile::wmcs::paws::ingress_bind_tls_port: 443
+profile::wmcs::paws::ingress_nodes:
 - paws-k8s-ingress-1.paws.eqiad1.wikimedia.cloud
 - paws-k8s-ingress-2.paws.eqiad1.wikimedia.cloud
