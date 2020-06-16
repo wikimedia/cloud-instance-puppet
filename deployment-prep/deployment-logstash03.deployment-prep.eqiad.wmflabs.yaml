@@ -18,6 +18,7 @@ profile::elasticsearch::common_settings:
 profile::elasticsearch::config_version: '5'
 profile::elasticsearch::instances: {}
 profile::elasticsearch::version: '5.6'
+profile::java::hardened_tls: false
 profile::kafka::broker::kafka_cluster_name: logging-eqiad
 profile::kafka::broker::ssl_enabled: true
 profile::kafka::broker::ssl_password: qwerty
