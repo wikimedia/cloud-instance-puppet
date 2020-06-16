@@ -19,6 +19,7 @@ profile::elasticsearch::config_version: '5'
 profile::elasticsearch::instances: {}
 profile::elasticsearch::version: '5.6'
 profile::idp::client::httpd::vhost_content: profile/idp/client/httpd-kibana.erb
+profile::idp::client::httpd::virtual_host: cas-logstash-beta.wmflabs.org
 profile::java::hardened_tls: false
 profile::kafka::broker::kafka_cluster_name: logging-eqiad
 profile::kafka::broker::ssl_enabled: true
