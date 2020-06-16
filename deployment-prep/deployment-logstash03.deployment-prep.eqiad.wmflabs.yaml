@@ -18,6 +18,7 @@ profile::elasticsearch::common_settings:
 profile::elasticsearch::config_version: '5'
 profile::elasticsearch::instances: {}
 profile::elasticsearch::version: '5.6'
+profile::idp::client::httpd::cookie_path: /var/cache/apache2/mod_auth_cas
 profile::idp::client::httpd::document_root: /var/www/html
 profile::idp::client::httpd::vhost_content: profile/idp/client/httpd-kibana.erb
 profile::idp::client::httpd::virtual_host: cas-logstash-beta.wmflabs.org
