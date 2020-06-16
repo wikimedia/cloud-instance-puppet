@@ -1,5 +1,6 @@
 - role::labs::lvm::srv
 - profile::kibana
+- profile::kibana::httpd_proxy
 - role::kafka::logging
 - role::logstash::collector
 - role::logstash::puppetreports
