@@ -8,7 +8,7 @@ profile::wmcs::paws::ingress_nodes:
 - paws-k8s-ingress-1.paws.eqiad1.wikimedia.cloud
 - paws-k8s-ingress-2.paws.eqiad1.wikimedia.cloud
 profile::wmcs::paws::keepalived::peers:
-- paws-k8s-haproxy-1.paws.eqiad1.wikimedia.cloud
-- paws-k8s-haproxy-2.paws.eqiad1.wikimedia.cloud
+- paws-k8s-haproxy-1.paws.eqiad.wmflabs
+- paws-k8s-haproxy-2.paws.eqiad.wmflabs
 profile::wmcs::paws::keepalived::vips:
 - k8s.svc.paws.eqiad1.wikimedia.cloud
