@@ -1,4 +1,4 @@
 profile::query_service::blazegraph::monitoring_enabled: false
-profile::query_service::heap_size: 6G
+profile::query_service::blazegraph_heap_size: 6G
 profile::query_service::sparql_query_stream: null
 puppetmaster: wdqspuppet.wikidata-query.eqiad.wmflabs
