@@ -20,6 +20,14 @@ profile::acme_chief::certificates:
     - ^tools-docker-registry-[0-9]+\.tools\.eqiad\.wmflabs$
     - ^tools-k8s-master-[0-9]+\.tools\.eqiad\.wmflabs$
     challenge: dns-01
+  tools-legacy:
+    CN: tools.wmflabs.org
+    SNI:
+    - tools.wmflabs.org
+    - '*.tools.wmflabs.org'
+    authorized_regexes:
+    - ^tools-legacy-redirector\.tools\.eqiad\.wmflabs$
+    challenge: dns-01
 profile::acme_chief::challenges:
   dns-01:
     issuing_ca: letsencrypt.org
