@@ -12,6 +12,7 @@ confd::srv_dns: ''
 conftool::hosts: []
 conftool::password: a_secret
 cumin_masters:
+- 172.16.1.151
 - 172.16.1.135
 - 172.16.5.1
 - 172.16.6.176
