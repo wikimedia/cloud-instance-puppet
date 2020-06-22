@@ -1,1 +1,3 @@
+profile::openstack::eqiad1::galera::backup_password: galera_backup_password
+profile::openstack::eqiad1::galera::backup_user: galera_backup
 puppetmaster: abogott-puppetmaster.testlabs.eqiad.wmflabs
