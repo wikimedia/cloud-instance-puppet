@@ -12,10 +12,8 @@ confd::srv_dns: ''
 conftool::hosts: []
 conftool::password: a_secret
 cumin_masters:
-- 172.16.1.151
 - 172.16.1.135
 - 172.16.5.1
-- 172.16.6.176
 - 172.16.4.46
 - 172.16.6.133
 elasticsearch::cluster_hosts:
@@ -159,14 +157,14 @@ profile::nutcracker::redis_pools:
         port: 6379
     server_retry_timeout: 10000
 profile::openstack::eqiad1::cumin::project_masters:
-- 172.16.5.1
+- 172.16.1.151
 - 172.16.6.176
 profile::openstack::eqiad1::cumin::project_pub_key: ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIHMS6pXywYSw1kaZQivozB8qUx0vd1gqiAnVqJuS365B
   root@deployment-cumin
 profile::openstack::eqiad1::cumin::puppetdb_host: deployment-puppetdb03.deployment-prep.eqiad.wmflabs
 profile::openstack::eqiad1::region: eqiad1-r
 profile::openstack::main::cumin::project_masters:
-- 172.16.5.1
+- 172.16.1.151
 - 172.16.6.176
 profile::openstack::main::cumin::project_pub_key: ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIHMS6pXywYSw1kaZQivozB8qUx0vd1gqiAnVqJuS365B
   root@deployment-cumin
