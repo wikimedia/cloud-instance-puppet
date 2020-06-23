@@ -28,6 +28,13 @@ profile::acme_chief::certificates:
     authorized_regexes:
     - ^tools-legacy-redirector\.tools\.eqiad\.wmflabs$
     challenge: dns-01
+  tools_mail:
+    CN: mail.tools.wmflabs.org
+    SNI:
+    - mail.tools.wmflabs.org
+    authorized_regexes:
+    - ^tools-mail-[0-9]+\.tools\.eqiad\.wmflabs$
+    challenge: dns-01
 profile::acme_chief::challenges:
   dns-01:
     issuing_ca: letsencrypt.org
