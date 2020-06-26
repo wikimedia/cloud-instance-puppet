@@ -1,2 +1,2 @@
-datacenters: transferpy-test-1.transferpy-test.eqiad1.wikimedia.cloud
-puppetdb_host: transferpy-test-1.transferpy-test.eqiad1.wikimedia.cloud
+datacenters: ''
+puppetdb_host: ''
