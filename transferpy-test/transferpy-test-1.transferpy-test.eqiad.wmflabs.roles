@@ -1,2 +1,2 @@
 - role::labs::lvm::srv
-- role::cluster::management
+- Role::Cumin::Master
