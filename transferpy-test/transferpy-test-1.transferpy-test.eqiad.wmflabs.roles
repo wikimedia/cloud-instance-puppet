@@ -1,2 +1,2 @@
 - role::labs::lvm::srv
-- role::mariadb::core
+- role::cluster::management
