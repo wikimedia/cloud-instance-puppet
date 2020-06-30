@@ -1,1 +1,1 @@
-{}
+gerrit::server::replica_hosts: null
