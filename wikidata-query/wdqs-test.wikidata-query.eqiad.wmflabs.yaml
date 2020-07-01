@@ -1,2 +1,0 @@
-profile::query_service::deploy_name: wdqs
-profile::rsyslog::kafka_shipper::kafka_brokers: []
