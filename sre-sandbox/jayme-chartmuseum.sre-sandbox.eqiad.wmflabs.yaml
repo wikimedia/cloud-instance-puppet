@@ -1,6 +1,0 @@
-profile::chartmuseum::debug: false
-profile::chartmuseum::disable_delete: true
-profile::chartmuseum::disable_force_overwrite: true
-profile::chartmuseum::listen_port: 8081
-profile::chartmuseum::repository_depth: 1
-puppetmaster: jayme-standalone-puppetmaster.sre-sandbox.eqiad.wmflabs
