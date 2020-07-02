@@ -1,5 +1,11 @@
 nginx::variant: extras
 profile::query_service::ns: sdc
+profile::query_service::oauth_settings:
+  oauth_consumer_key: consumer_key
+  oauth_consumer_secret: consumer_secret
+  oauth_index_url: http://localhost/index.php
+  oauth_nice_url: http://localhost/
+  oauth_session_store_limit: 10
 profile::wdqs::fetch_constraints: true
 role::labs::lvm::volume::mountat: /srv/data
 scap::deployment_server: deployment-tin.deployment-prep.eqiad.wmflabs
