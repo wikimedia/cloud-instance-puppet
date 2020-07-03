@@ -1,11 +1,4 @@
 profile::query_service::blazegraph::monitoring_enabled: false
 profile::query_service::blazegraph_heap_size: 6G
-profile::query_service::oauth: false
-profile::query_service::oauth_settings:
-  oauth_consumer_key: consumer_key
-  oauth_consumer_secret: consumer_secret
-  oauth_index_url: http://localhost/index.php
-  oauth_nice_url: http://localhost/
-  oauth_session_store_limit: 10
 profile::query_service::sparql_query_stream: null
 puppetmaster: wdqspuppet.wikidata-query.eqiad.wmflabs
