@@ -14,6 +14,10 @@ profile::docker::runner::service_defs:
             cert: /etc/mediawiki-services-push-notifications/apns-push-toolforge.p12
             production: true
           port: 8900
+          proxy:
+            host: deployment-urldownloader02.deployment-prep.eqiad1.wikimedia.cloud
+            port: 8080
+            protocol: http
           queueing:
             flushTimeoutMs: 10000
             maxSize: 250
