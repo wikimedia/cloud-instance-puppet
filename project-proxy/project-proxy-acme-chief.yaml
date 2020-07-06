@@ -37,6 +37,8 @@ profile::acme_chief::certificates:
     SNI:
     - wmflabs.org
     - '*.wmflabs.org'
+    - wmcloud.org
+    - '*.wmcloud.org'
     authorized_regexes:
     - ^.+\.project-proxy\.eqiad\.wmflabs$
     challenge: dns-01
