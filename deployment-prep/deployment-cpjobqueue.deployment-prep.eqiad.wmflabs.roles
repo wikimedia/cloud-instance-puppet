@@ -1,3 +1,0 @@
-- profile::cpjobqueue
-- profile::rsyslog::kafka_shipper
-- profile::rsyslog::udp_localhost_compat
