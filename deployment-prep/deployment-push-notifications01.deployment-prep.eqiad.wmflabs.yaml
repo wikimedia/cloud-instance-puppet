@@ -14,6 +14,9 @@ profile::docker::runner::service_defs:
             cert: /etc/mediawiki-services-push-notifications/apns-push-toolforge.p12
             production: true
           port: 8900
+          queueing:
+            flushTimeoutMs: 10000
+            maxSize: 250
           spec: ./spec.yaml
           user_agent: push-notifications (beta)
         module: ./dist/app.js
@@ -21,4 +24,4 @@ profile::docker::runner::service_defs:
     namespace: wikimedia
     override_cmd: -c /etc/mediawiki-services-push-notifications/config.yaml
     port: 8900
-    version: 2020-06-15-112756-publish
+    version: 2020-07-06-160701-publish
