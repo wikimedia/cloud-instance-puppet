@@ -1,3 +1,4 @@
+profile::query_service::blazegraph::monitoring_enabled: false
 profile::query_service::blazegraph_heap_size: 31g
 profile::query_service::blazegraph_use_deployed_config: false
 profile::query_service::deploy_name: sdoc
