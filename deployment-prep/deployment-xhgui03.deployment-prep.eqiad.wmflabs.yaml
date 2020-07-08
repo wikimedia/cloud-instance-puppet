@@ -1,2 +1,0 @@
-profile::xhgui::mysql_db: xhgui
-profile::xhgui::mysql_host: deployment-mdb01.deployment-prep.eqiad.wmflabs
