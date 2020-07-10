@@ -12,3 +12,4 @@ profile::wmcs::paws::keepalived::peers:
 - paws-k8s-haproxy-2.paws.eqiad.wmflabs
 profile::wmcs::paws::keepalived::vips:
 - k8s.svc.paws.eqiad1.wikimedia.cloud
+prometheus::haproxy_exporter::endpoint: http://localhost:8404/stats;csv
