@@ -1,2 +1,2 @@
-profile::query_service::oauth: false
+profile::query_service::oauth: true
 puppetmaster: wdqspuppet.wikidata-query.eqiad.wmflabs
