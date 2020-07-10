@@ -1,3 +1,1 @@
 - role::beta::docker_services
-- role::proton
-- profile::proton
