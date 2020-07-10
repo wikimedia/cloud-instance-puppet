@@ -1,4 +1,5 @@
 profile::wmcs::kubeadm::component: thirdparty/kubeadm-k8s-1-16
 profile::wmcs::kubeadm::kubernetes_version: 1.16.10
+profile::wmcs::kubeadm::node_token: bs2psl.wcxkn5la28xrxoa1
 profile::wmcs::kubeadm::stacked: true
 swap_partition: false
