@@ -1,6 +1,6 @@
 profile::docker::engine::declare_service: true
 profile::docker::engine::settings: {}
-profile::docker::engine::version: 1.12.6-0~debian-jessie
+profile::docker::engine::version: 18.09.1+dfsg1-7.1+deb10u1
 profile::docker::runner::service_defs:
   mediawiki-services-chromium-render:
     config:
