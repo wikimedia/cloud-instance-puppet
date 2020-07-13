@@ -63,5 +63,6 @@ profile::docker::runner::service_defs:
         name: proton
     namespace: wikimedia
     override_cmd: -c /etc/mediawiki-services-chromium-render/config.yaml
+    port: 3030
     version: 2020-07-13-150542-production
 puppetmaster: deployment-puppetmaster04.deployment-prep.eqiad.wmflabs
