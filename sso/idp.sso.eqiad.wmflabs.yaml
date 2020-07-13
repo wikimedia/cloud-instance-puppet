@@ -1,8 +1,3 @@
-hieradata/common/profile/idp/memcached.yaml:profile::idp::memcached::enable_tls: false
-hieradata/common/profile/idp/memcached.yaml:profile::idp::memcached::idp_nodes: []
-hieradata/common/profile/idp/memcached.yaml:profile::idp::memcached::mcrouter_cluster: idp
-hieradata/common/profile/idp/memcached.yaml:profile::idp::memcached::ssl_cert: '%{facts.puppet_config.hostcert}'
-hieradata/common/profile/idp/memcached.yaml:profile::idp::memcached::ssl_key: '%{facts.puppet_config.hostprivkey}'
 profile::base::firewall::block_abuse_nets: true
 profile::envoy::ensure: present
 profile::idp::actuators:
@@ -21,7 +16,10 @@ profile::idp::ldap_attributes:
 profile::idp::max_session_length: 604800
 profile::idp::memcached::enable_tls: true
 profile::idp::memcached::ensure: present
+profile::idp::memcached::idp_nodes: []
 profile::idp::memcached::mcrouter_cluster: idp
+profile::idp::memcached::ssl_cert: '%{facts.puppet_config.hostcert}'
+profile::idp::memcached::ssl_key: '%{facts.puppet_config.hostprivkey}'
 profile::idp::memcached_enable: true
 profile::idp::services:
   labs:
