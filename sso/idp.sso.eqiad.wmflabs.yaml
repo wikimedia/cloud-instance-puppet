@@ -29,6 +29,7 @@ profile::java::egd_source: /dev/urandom
 profile::java::hardened_tls: true
 profile::prometheus::memcached_exporter::arguments: --memcached.address=localhost:11000
 profile::tlsproxy::envoy::acme_cert_name: idp
+profile::tlsproxy::envoy::capitalize_headers: false
 profile::tlsproxy::envoy::services:
 - port: 8080
   server_names:
