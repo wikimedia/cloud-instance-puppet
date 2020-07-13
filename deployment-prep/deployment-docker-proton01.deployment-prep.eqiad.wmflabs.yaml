@@ -19,7 +19,7 @@ profile::docker::runner::service_defs:
             method: get
             query:
               title: '{{request.params.title}}'
-            uri: https://{{extdomain}}/w/index.php
+            uri: http://deployment-mediawiki-07.deployment-prep.eqiad.wmflabs/w/api.php
           pdf_options:
             displayHeaderFooter: false
             format: Letter
