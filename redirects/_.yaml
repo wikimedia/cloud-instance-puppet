@@ -3,11 +3,11 @@ role::labs::redirector::redirects:
   codesearch.wmflabs.org: https://codesearch.wmcloud.org
   grafana.wmflabs.org: https://grafana-labs.wikimedia.org
   graphite.wmflabs.org: https://graphite-labs.wikimedia.org
-  hatjitsu.wmflabs.org: https://tools.wmflabs.org/hatjitsu
+  hatjitsu.wmflabs.org: https://hatjitsu.toolforge.org
   horizon.wmflabs.org: https://horizon.wikimedia.org
   living-style-guide.wmflabs.org: https://design.wikimedia.org/style-guide
   livingstyleguide.wmflabs.org: https://design.wikimedia.org/style-guide
-  partnermetrics.wmflabs.org: https://tools.wmflabs.org/mediaviews-api
+  partnermetrics.wmflabs.org: https://mediaviews-api.toolforge.org
   reportcard.wmflabs.org: https://analytics.wikimedia.org/dashboards/reportcard
   wdq.wmflabs.org: https://query.wikidata.org
   wikistream.wmflabs.org: https://wikistream.toolforge.org
