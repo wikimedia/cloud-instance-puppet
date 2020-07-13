@@ -23,7 +23,7 @@ profile::idp::services:
     attribute_release_policy:
       '@class': org.apereo.cas.services.ReturnAllAttributeReleasePolicy
     class: org.apereo.cas.services.RegexRegisteredService
-    id: 8
+    id: 1
     service_id: https://.*\.wmflabs(.org)?/
 profile::java::egd_source: /dev/urandom
 profile::java::hardened_tls: true
