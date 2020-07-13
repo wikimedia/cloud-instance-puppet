@@ -57,7 +57,7 @@ profile::docker::runner::service_defs:
             headers: '{{request.headers}}'
             method: '{{request.method}}'
             query: '{{ default(request.query, {}) }}'
-            uri: http://deployment-restbase03.deployment-prep.eqiad.wmflabs:7231/{{domain}}/v1/{+path}
+            uri: https://{{domain}}/api/rest_v1/{+path}
           user_agent: WMF Proton beta
         module: ./app.js
         name: proton
