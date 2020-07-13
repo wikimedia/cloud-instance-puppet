@@ -15,6 +15,7 @@ profile::idp::ldap_attributes:
 - mfa-method
 profile::idp::max_session_length: 604800
 profile::idp::memcached::enable_tls: true
+profile::idp::memcached::ensure: present
 profile::idp::memcached::mcrouter_cluster: idp
 profile::idp::memcached_enable: true
 profile::idp::services:
