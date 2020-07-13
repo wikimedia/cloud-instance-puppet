@@ -1,4 +1,5 @@
 profile::base::firewall::block_abuse_nets: true
+profile::envoy::ensure: present
 profile::idp::actuators:
 - prometheus
 - sso
