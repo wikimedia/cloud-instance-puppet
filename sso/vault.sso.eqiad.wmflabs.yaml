@@ -1,3 +1,0 @@
-manage_puppet_ca_file: true
-puppet_ca_source: puppet:///files/puppet/ca.vault_signed_bundle.pem
-puppetmaster: pm.sso.eqiad.wmflabs
