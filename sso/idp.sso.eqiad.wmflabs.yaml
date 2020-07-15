@@ -1,3 +1,4 @@
+mcrouter::port: 11213
 profile::base::firewall::block_abuse_nets: true
 profile::idp::actuators:
 - prometheus
