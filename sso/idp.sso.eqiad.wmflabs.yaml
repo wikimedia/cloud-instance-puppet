@@ -4,8 +4,8 @@ profile::idp::actuators:
 - sso
 - ssoSessions
 profile::idp::deploy_deb: true
-profile::idp::idp_failover: idp.sso.wikimedia.org
-profile::idp::idp_primary: idp.sso.wikimedia.org
+profile::idp::idp_failover: idp.sso.eqiad.wmflabs
+profile::idp::idp_primary: idp.sso.eqiad.wmflabs
 profile::idp::is_staging_host: false
 profile::idp::ldap_attributes:
 - cn
