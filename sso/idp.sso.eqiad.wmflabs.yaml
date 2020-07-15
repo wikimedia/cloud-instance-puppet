@@ -4,8 +4,8 @@ profile::idp::actuators:
 - sso
 - ssoSessions
 profile::idp::deploy_deb: true
-profile::idp::idp_failover: idp2001.wikimedia.org
-profile::idp::idp_primary: idp1001.wikimedia.org
+profile::idp::idp_failover: idp.sso.wikimedia.org
+profile::idp::idp_primary: idp.sso.wikimedia.org
 profile::idp::is_staging_host: false
 profile::idp::ldap_attributes:
 - cn
@@ -14,7 +14,7 @@ profile::idp::ldap_attributes:
 - mfa-method
 profile::idp::max_session_length: 604800
 profile::idp::memcached::enable_tls: true
-profile::idp::memcached::mcrouter_cluster: idp
+profile::idp::memcached::mcrouter_cluster: idp_cloud
 profile::idp::memcached_enable: true
 profile::idp::services:
   labs_catch_all:
