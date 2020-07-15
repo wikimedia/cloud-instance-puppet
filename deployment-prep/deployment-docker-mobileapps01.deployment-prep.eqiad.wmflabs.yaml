@@ -7,5 +7,6 @@ profile::docker::runner::service_defs:
     config:
       logging:
         level: trace
-      namespace: wikimedia
-      port: 8888
+    namespace: wikimedia
+    port: 8888
+    version: 2020-07-14-184348-production
