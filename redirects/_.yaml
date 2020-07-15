@@ -9,5 +9,6 @@ role::labs::redirector::redirects:
   livingstyleguide.wmflabs.org: https://design.wikimedia.org/style-guide
   partnermetrics.wmflabs.org: https://mediaviews-api.toolforge.org
   reportcard.wmflabs.org: https://analytics.wikimedia.org/dashboards/reportcard
+  space.wmflabs.org: https://diff.wikimedia.org
   wdq.wmflabs.org: https://query.wikidata.org
   wikistream.wmflabs.org: https://wikistream.toolforge.org
