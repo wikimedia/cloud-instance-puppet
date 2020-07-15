@@ -94,6 +94,7 @@ profile::toolforge::proxies:
 profile::toolforge::services::active_node: tools-services-01.eqiad.wmflabs
 profile::toolforge::services::updatetools_enabled: false
 profile::wmcs::kubeadm::component: thirdparty/kubeadm-k8s-1-16
+profile::wmcs::nfsclient::nfs_version: 4.2
 prometheus::haproxy_exporter::endpoint: http://localhost:9900/stats;csv
 prometheus_nodes:
 - tools-prometheus-01.tools.eqiad.wmflabs
