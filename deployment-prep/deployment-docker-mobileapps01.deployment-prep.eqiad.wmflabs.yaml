@@ -8,6 +8,13 @@ profile::docker::runner::service_defs:
       logging:
         level: warn
         name: mobileapps
+        streams:
+        - host: deployment-logstash03.deployment-prep.eqiad.wmflabs
+          port: 12201
+          type: gelf
+        - level: info
+          path: /srv/log/mobileapps/main.log
+          type: file
       metrics:
         host: cloudmetrics1002.eqiad.wmnet
         name: mobileapps
