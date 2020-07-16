@@ -3,59 +3,29 @@ profile::docker::engine::packagename: docker.io
 profile::docker::engine::settings: {}
 profile::docker::engine::version: 18.09.1+dfsg1-7.1+deb10u1
 profile::docker::runner::service_defs:
-  mediawiki-services-mobileapps:
+  mediawiki-services-push-notifications:
     config:
       logging:
-        level: warn
-        name: mobileapps
-        streams:
-        - host: deployment-logstash03.deployment-prep.eqiad.wmflabs
-          port: 12201
-          type: gelf
-        - level: info
-          path: /srv/log/mobileapps/main.log
-          type: file
-      metrics:
-        host: cloudmetrics1002.eqiad.wmnet
-        name: mobileapps
-        port: 8125
-        type: statsd
+        level: trace
       num_workers: 0
       services:
       - conf:
-          cors: '*'
-          mobile_html_csp: 'default-src ''none''; connect-src app://*.wikipedia.org
-            https://*.wikipedia.org; media-src app://upload.wikimedia.org https://upload.wikimedia.org
-            ''self''; img-src app://*.wikimedia.org https://*.wikimedia.org app://wikimedia.org
-            https://wikimedia.org ''self'' data:; object-src ''none''; script-src
-            app://meta.wikimedia.org https://meta.wikimedia.org ''unsafe-inline'';
-            style-src app://meta.wikimedia.org https://meta.wikimedia.org app://*.wikipedia.org
-            https://*.wikipedia.org ''self'' ''unsafe-inline''; frame-ancestors ''self'' '
-          mobile_html_local_rest_api_base_uri_template: //{{domain}}/api/rest_v1/
-          mobile_html_rest_api_base_uri: //meta.wikimedia.org/api/rest_v1/
-          mwapi_req:
-            body: '{{ default(request.query, {}) }}'
-            headers:
-              accept-language: '{{accept-language}}'
-              host: '{{request.params.domain}}'
-              user-agent: '{{user-agent}}'
-            method: post
-            uri: http://deployment-mediawiki-07.deployment-prep.eqiad.wmflabs/w/api.php
-          port: 8888
-          restbase_req:
-            body: '{{request.body}}'
-            headers: '{{request.headers}}'
-            method: '{{request.method}}'
-            query: '{{ default(request.query, {}) }}'
-            timeout: 60000
-            uri: http://deployment-restbase02.deployment-prep.eqiad.wmflabs:7231/{{domain}}/v1/{+path}
-          user_agent: Mobile-Content-Service/WMF
-        module: ./src/app.js
-        name: mobileapps
-      startup_concurrency: 4
-      worker_heap_limit_mb: 750
-      worker_heartbeat_timeout: 15000
-  namespace: wikimedia
-  override_cmd: -c /etc/mediawiki-services-mobileapps/config.yaml
-  port: 8888
-  version: 2020-07-14-184348-production
+          apns:
+            cert: /etc/mediawiki-services-push-notifications/apns-push-toolforge.p12
+            production: true
+          port: 8900
+          proxy:
+            host: deployment-urldownloader02.deployment-prep.eqiad1.wikimedia.cloud
+            port: 8080
+            protocol: http
+          queueing:
+            flushTimeoutMs: 10000
+            maxSize: 250
+          spec: ./spec.yaml
+          user_agent: push-notifications (beta)
+        module: ./dist/app.js
+        name: push-notifications
+    namespace: wikimedia
+    override_cmd: -c /etc/mediawiki-services-push-notifications/config.yaml
+    port: 8900
+    version: 2020-07-06-160701-publish
