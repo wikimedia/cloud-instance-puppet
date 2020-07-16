@@ -1,2 +1,3 @@
+profile::java::hardened_tls: false
 profile::kafka::broker::kafka_cluster_name: jumbo-analytics
 profile::kafka::broker::monitoring_enabled: true
