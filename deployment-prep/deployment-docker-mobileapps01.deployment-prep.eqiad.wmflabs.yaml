@@ -6,7 +6,7 @@ profile::docker::runner::service_defs:
   mediawiki-services-mobileapps:
     config:
       logging:
-        level: trace
+        level: warn
         name: mobileapps
       metrics:
         host: cloudmetrics1002.eqiad.wmnet
