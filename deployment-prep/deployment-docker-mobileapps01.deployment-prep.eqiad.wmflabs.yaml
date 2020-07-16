@@ -55,3 +55,7 @@ profile::docker::runner::service_defs:
       startup_concurrency: 4
       worker_heap_limit_mb: 750
       worker_heartbeat_timeout: 15000
+  namespace: wikimedia
+  override_cmd: -c /etc/mediawiki-services-mobileapps/config.yaml
+  port: 8888
+  version: 2020-07-14-184348-production
