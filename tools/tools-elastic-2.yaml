@@ -30,6 +30,7 @@ profile::elasticsearch::instances: {}
 profile::elasticsearch::rack: placeholder
 profile::elasticsearch::row: placeholder
 profile::elasticsearch::version: '7.4'
+profile::java::egd_source: /dev/random
 profile::java::hardened_tls: false
 profile::prometheus::haproxy_exporter::listen_port: 9901
 profile::rsyslog::kafka_shipper::kafka_brokers: []
