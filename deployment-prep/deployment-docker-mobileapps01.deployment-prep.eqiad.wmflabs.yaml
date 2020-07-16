@@ -43,7 +43,7 @@ profile::docker::runner::service_defs:
             timeout: 60000
             uri: http://deployment-restbase02.deployment-prep.eqiad.wmflabs:7231/{{domain}}/v1/{+path}
           user_agent: Mobile-Content-Service/WMF
-        module: ./src/app.js
+        module: ./app.js
         name: mobileapps
       startup_concurrency: 4
       worker_heap_limit_mb: 750
