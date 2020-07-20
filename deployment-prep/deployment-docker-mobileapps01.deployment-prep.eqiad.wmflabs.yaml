@@ -37,7 +37,7 @@ profile::docker::runner::service_defs:
               host: '{{request.params.domain}}'
               user-agent: '{{user-agent}}'
             method: post
-            uri: http://deployment-mediawiki-07.deployment-prep.eqiad.wmflabs//w/load.php
+            uri: http://deployment-mediawiki-07.deployment-prep.eqiad.wmflabs/w/load.php
           mwapi_req:
             body: '{{ default(request.query, {}) }}'
             headers:
