@@ -37,7 +37,7 @@ profile::docker::runner::service_defs:
               host: '{{request.params.domain}}'
               user-agent: '{{user-agent}}'
             method: post
-            uri: https://deployment-mediawiki-07.deployment-prep.eqiad.wmflabs/w/load.php
+            uri: http://deployment-mediawiki-07.deployment-prep.eqiad.wmflabs/w/load.php
           mwapi_req:
             body: '{{ default(request.query, {}) }}'
             headers:
@@ -45,7 +45,7 @@ profile::docker::runner::service_defs:
               host: '{{request.params.domain}}'
               user-agent: '{{user-agent}}'
             method: post
-            uri: https://deployment-mediawiki-07.deployment-prep.eqiad.wmflabs/w/api.php
+            uri: http://deployment-mediawiki-07.deployment-prep.eqiad.wmflabs/w/api.php
           port: 8888
           restbase_req:
             body: '{{request.body}}'
@@ -53,7 +53,7 @@ profile::docker::runner::service_defs:
             method: '{{request.method}}'
             query: '{{ default(request.query, {}) }}'
             timeout: 60000
-            uri: https://deployment-restbase02.deployment-prep.eqiad.wmflabs:7231/{{domain}}/v1/{+path}
+            uri: http://deployment-restbase02.deployment-prep.eqiad.wmflabs:7231/{{domain}}/v1/{+path}
           user_agent: Mobile-Content-Service/WMF
         module: ./app.js
         name: mobileapps
