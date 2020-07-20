@@ -31,6 +31,13 @@ profile::docker::runner::service_defs:
             https://*.wikipedia.org ''self'' ''unsafe-inline''; frame-ancestors ''self'' '
           mobile_html_local_rest_api_base_uri_template: //{{domain}}/api/rest_v1/
           mobile_html_rest_api_base_uri: //meta.wikimedia.org/api/rest_v1/
+          mw_resource_loader_req:
+            body: '{{ default(request.query, {}) }}'
+            headers:
+              host: '{{request.params.domain}}'
+              user-agent: '{{user-agent}}'
+            method: post
+            uri: http://deployment-mediawiki-07.deployment-prep.eqiad.wmflabs//w/load.php
           mwapi_req:
             body: '{{ default(request.query, {}) }}'
             headers:
