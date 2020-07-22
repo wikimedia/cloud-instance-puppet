@@ -1,3 +1,4 @@
+labstore::traffic_shaping::egress: 800mbps
 profile::toolforge::k8s::apiserver_fqdn: k8s.tools.eqiad1.wikimedia.cloud
 profile::toolforge::k8s::etcd_nodes:
 - tools-k8s-etcd-4.tools.eqiad.wmflabs
