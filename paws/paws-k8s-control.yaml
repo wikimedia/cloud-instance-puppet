@@ -1,1 +1,2 @@
+labstore::traffic_shaping::egress: 800mbps
 swap_partition: false
