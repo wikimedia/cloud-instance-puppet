@@ -1,2 +1,2 @@
-profile::wmcs::kubeadm::component: thirdparty/kubeadm-k8s-1-16
+profile::wmcs::nfsclient::nfs_version: '4.2'
 swap_partition: false
