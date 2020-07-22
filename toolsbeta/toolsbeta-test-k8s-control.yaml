@@ -5,4 +5,5 @@ profile::toolforge::k8s::etcd_nodes:
 - toolsbeta-test-k8s-etcd-2.toolsbeta.eqiad.wmflabs
 - toolsbeta-test-k8s-etcd-3.toolsbeta.eqiad.wmflabs
 profile::toolforge::k8s::node_token: m7uakr.ern5lmlpv7gnkacw
+profile::wmcs::nfsclient::nfs_version: '4.2'
 swap_partition: false
