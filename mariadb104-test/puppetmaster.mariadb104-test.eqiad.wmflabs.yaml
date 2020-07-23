@@ -1,0 +1,2 @@
+pontoon::stack: mariadb104-test
+puppetmaster: puppetmaster.mariadb104-test.eqiad.wmflabs
