@@ -1,5 +1,6 @@
 nginx::variant: extras
 profile::prometheus::haproxy_exporter::listen_port: 9901
+profile::prometheus::memcached_exporter::arguments: --memcached.address=localhost:11000
 profile::prometheus::statsd_exporter::mappings:
 - match: thumbor.*.result_storage.incoming_time
   name: thumbor_result_storage_receive_milliseconds
