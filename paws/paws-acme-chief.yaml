@@ -14,7 +14,6 @@ profile::acme_chief::certificates:
     - paws.wmcloud.org
     - '*.paws.wmcloud.org'
     - paws.wmflabs.org
-    - '*.paws.wmflabs.org'
     - paws-public.wmflabs.org
     authorized_regexes:
     - ^paws-k8s-haproxy-[0-9]+\.paws\.eqiad\.wmflabs$
