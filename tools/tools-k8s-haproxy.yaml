@@ -61,5 +61,11 @@ profile::toolforge::k8s::ingress_nodes:
 - tools-k8s-worker-58.tools.eqiad.wmflabs
 - tools-k8s-worker-59.tools.eqiad.wmflabs
 - tools-k8s-worker-60.tools.eqiad.wmflabs
+- tools-k8s-worker-61.tools.eqiad.wmflabs
+- tools-k8s-worker-62.tools.eqiad.wmflabs
+- tools-k8s-worker-63.tools.eqiad.wmflabs
+- tools-k8s-worker-64.tools.eqiad.wmflabs
+- tools-k8s-worker-65.tools.eqiad.wmflabs
+- tools-k8s-worker-66.tools.eqiad.wmflabs
 profile::toolforge::k8s::ingress_port: 30000
 prometheus::haproxy_exporter::endpoint: http://localhost:8404/stats;csv
