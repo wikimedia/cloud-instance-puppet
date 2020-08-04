@@ -1,2 +1,0 @@
-profile::proton::use_nodejs10: true
-puppetmaster: deployment-puppetmaster04.deployment-prep.eqiad.wmflabs
