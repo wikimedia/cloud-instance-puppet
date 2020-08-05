@@ -41,6 +41,10 @@ profile::docker::runner::service_defs:
           - /mediawiki/cirrussearch/request/0.0.1
           schema_uri_field: $schema
           stream_field: meta.stream
+          test_events:
+          - $schema: /test/event/1.0.0
+            meta:
+              stream: eventgate-analytics.test.event
           topic_prefix: eqiad.
           user_agent: eventgate-analytics
         entrypoint: app
@@ -51,7 +55,7 @@ profile::docker::runner::service_defs:
     namespace: wikimedia
     override_cmd: /srv/service/node_modules/.bin/eventgate -c /etc/eventgate-analytics/config.yaml
     port: 8192
-    version: 2020-08-05-133842-production
+    version: 2020-08-05-202508-production
   eventgate-analytics-external:
     config:
       logging:
@@ -97,6 +101,10 @@ profile::docker::runner::service_defs:
           stream_config_uri: https://deployment.wikimedia.beta.wmflabs.org/w/api.php?action=streamconfigs&format=json&all_settings&streams=<%=
             stream %>
           stream_field: meta.stream
+          test_events:
+          - $schema: /test/event/1.0.0
+            meta:
+              stream: eventgate-analytics-external.test.event
           topic_prefix: eqiad.
           user_agent: eventgate-analytics-external
         entrypoint: app
@@ -109,7 +117,7 @@ profile::docker::runner::service_defs:
     namespace: wikimedia
     override_cmd: /srv/service/node_modules/.bin/eventgate -c /etc/eventgate-analytics-external/config.yaml
     port: 8492
-    version: 2020-08-05-133842-production
+    version: 2020-08-05-202508-production
   eventgate-logging-external:
     config:
       logging:
@@ -145,6 +153,10 @@ profile::docker::runner::service_defs:
           - /mediawiki/client/error/1.0.0
           schema_uri_field: $schema
           stream_field: meta.stream
+          test_events:
+          - $schema: /test/event/1.0.0
+            meta:
+              stream: eventgate-logging-external.test.event
           topic_prefix: eqiad.
           user_agent: eventgate-logging-external
         entrypoint: app
@@ -154,7 +166,7 @@ profile::docker::runner::service_defs:
     namespace: wikimedia
     override_cmd: /srv/service/node_modules/.bin/eventgate -c /etc/eventgate-logging-external/config.yaml
     port: 8992
-    version: 2020-08-05-133842-production
+    version: 2020-08-05-202508-production
   eventgate-main:
     config:
       logging:
@@ -209,6 +221,10 @@ profile::docker::runner::service_defs:
           - /mediawiki/revision/create/1.0.0
           schema_uri_field: $schema
           stream_field: meta.stream
+          test_events:
+          - $schema: /test/event/1.0.0
+            meta:
+              stream: eventgate-main.test.event
           topic_prefix: eqiad.
           user_agent: eventgate-main
         entrypoint: app
@@ -219,5 +235,5 @@ profile::docker::runner::service_defs:
     namespace: wikimedia
     override_cmd: /srv/service/node_modules/.bin/eventgate -c /etc/eventgate-main/config.yaml
     port: 8292
-    version: 2020-08-05-133842-production
+    version: 2020-08-05-202508-production
 puppetmaster: deployment-puppetmaster04.deployment-prep.eqiad.wmflabs
