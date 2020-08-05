@@ -1,3 +1,4 @@
+profile::prometheus::memcached_exporter::arguments: ''
 profile::swift::accounts:
   mw_media:
     access: .admin
