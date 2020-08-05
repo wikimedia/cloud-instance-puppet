@@ -21,6 +21,11 @@ profile::swift::accounts:
     account_name: AUTH_pagecompilation
     auth: http://deployment-ms-fe03.deployment-prep.eqiad.wmflabs
     user: pagecompilation:zim
+  performance_arclamp:
+    access: .admin
+    account_name: AUTH_performance
+    auth: http://deployment-ms-fe03.deployment-prep.eqiad.wmflabs
+    user: performance:arclamp
   phabricator_files:
     access: .admin
     account_name: AUTH_phab
