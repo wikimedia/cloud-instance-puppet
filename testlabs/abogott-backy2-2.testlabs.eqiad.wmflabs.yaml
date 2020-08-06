@@ -1,4 +1,5 @@
 profile::wmcs::backy2::cluster_name: dummycluster
 profile::wmcs::backy2::db_host: dummy_host
-profile::wmcs::backy2::db_name: dummy_username
+profile::wmcs::backy2::db_name: dummy_dbname
 profile::wmcs::backy2::db_pass: dummy_pass
+profile::wmcs::backy2::db_user: dummy_username
