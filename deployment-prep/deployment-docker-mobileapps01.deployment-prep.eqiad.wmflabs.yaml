@@ -1,3 +1,4 @@
+profile::docker::engine::declare_service: false
 profile::docker::runner::service_defs:
   mediawiki-services-mobileapps:
     config:
