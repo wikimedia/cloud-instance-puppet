@@ -36,7 +36,7 @@ swift::params::accounts:
 swift::params::storage_policies: true
 swift::proxy::memcached_servers:
 - deployment-ms-fe02.eqiad.wmflabs
-swift::proxy::proxy_service_host: deployment-ms-fe02.eqiad.wmflabs
+swift::proxy::proxy_service_host: deployment-ms-fe02.deployment-prep.eqiad.wmflabs
 swift::proxy::rewrite_account: mw_media
 swift::proxy::thumbor_wiki_list:
 - wikimedia-commons
