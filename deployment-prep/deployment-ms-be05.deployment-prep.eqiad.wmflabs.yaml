@@ -1,1 +1,2 @@
+profile::swift::storage::expirer::ensure: present
 puppetmaster: deployment-puppetmaster04.deployment-prep.eqiad.wmflabs
