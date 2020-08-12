@@ -55,7 +55,7 @@ profile::docker::runner::service_defs:
     namespace: wikimedia
     override_cmd: /srv/service/node_modules/.bin/eventgate -c /etc/eventgate-analytics/config.yaml
     port: 8192
-    version: 2020-08-05-202508-production
+    version: 2020-08-12-144657-production
   eventgate-analytics-external:
     config:
       logging:
@@ -117,7 +117,7 @@ profile::docker::runner::service_defs:
     namespace: wikimedia
     override_cmd: /srv/service/node_modules/.bin/eventgate -c /etc/eventgate-analytics-external/config.yaml
     port: 8492
-    version: 2020-08-05-202508-production
+    version: 2020-08-12-144657-production
   eventgate-logging-external:
     config:
       logging:
@@ -166,7 +166,7 @@ profile::docker::runner::service_defs:
     namespace: wikimedia
     override_cmd: /srv/service/node_modules/.bin/eventgate -c /etc/eventgate-logging-external/config.yaml
     port: 8992
-    version: 2020-08-05-202508-production
+    version: 2020-08-12-144657-production
   eventgate-main:
     config:
       logging:
@@ -235,5 +235,5 @@ profile::docker::runner::service_defs:
     namespace: wikimedia
     override_cmd: /srv/service/node_modules/.bin/eventgate -c /etc/eventgate-main/config.yaml
     port: 8292
-    version: 2020-08-05-202508-production
+    version: 2020-08-12-144657-production
 puppetmaster: deployment-puppetmaster04.deployment-prep.eqiad.wmflabs
