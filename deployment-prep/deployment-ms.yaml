@@ -1,3 +1,42 @@
+profile::swift::accounts:
+  mw_media:
+    access: .admin
+    account_name: AUTH_mw
+    auth: http://deployment-ms-fe03.deployment-prep.eqiad.wmflabs
+    user: mw:media
+  mw_thumbor:
+    access: ''
+    account_name: AUTH_mw
+    auth: http://deployment-ms-fe03.deployment-prep.eqiad.wmflabs
+    stats_enabled: 'no'
+    user: mw:thumbor
+  netbox_attachments:
+    access: .admin
+    account_name: AUTH_netbox
+    auth: http://deployment-ms-fe03.deployment-prep.eqiad.wmflabs
+    stats_enabled: 'no'
+    user: netbox:attachments
+  pagecompilation_zim:
+    access: .admin
+    account_name: AUTH_pagecompilation
+    auth: http://deployment-ms-fe03.deployment-prep.eqiad.wmflabs
+    user: pagecompilation:zim
+  performance_arclamp:
+    access: .admin
+    account_name: AUTH_performance
+    auth: http://deployment-ms-fe03.deployment-prep.eqiad.wmflabs
+    user: performance:arclamp
+  phabricator_files:
+    access: .admin
+    account_name: AUTH_phab
+    auth: http://deployment-ms-fe03.deployment-prep.eqiad.wmflabs
+    user: phabricator:files
+  swift_dispersion:
+    access: .admin
+    account_name: AUTH_dispersion
+    auth: http://deployment-ms-fe03.deployment-prep.eqiad.wmflabs
+    stats_enabled: 'no'
+    user: swift:dispersion
 profile::swift::cluster: deployment-prep
 profile::swift::hash_path_suffix: abcdef
 profile::swift::replication_accounts:
@@ -5,34 +44,6 @@ profile::swift::replication_accounts:
     cluster_codfw: http://deployment-ms-fe02.deployment-prep.eqiad.wmflabs/v1/
 profile::swift::stats_reporter_host: somenonexistenthost
 swift::hash_path_suffix: abcdef
-swift::params::accounts:
-  mw_media:
-    access: .admin
-    account_name: AUTH_mw
-    auth: http://deployment-ms-fe02.deployment-prep.eqiad.wmflabs
-    user: mw:media
-  mw_thumbor:
-    access: ''
-    account_name: AUTH_mw
-    auth: http://deployment-ms-fe02.deployment-prep.eqiad.wmflabs
-    stats_enabled: 'no'
-    user: mw:thumbor
-  pagecompilation_zim:
-    access: .admin
-    account_name: AUTH_pagecompilation
-    auth: http://deployment-ms-fe02.deployment-prep.eqiad.wmflabs
-    user: pagecompilation:zim
-  phabricator_files:
-    access: .admin
-    account_name: AUTH_phab
-    auth: http://deployment-ms-fe02.deployment-prep.eqiad.wmflabs
-    user: phabricator:files
-  swift_dispersion:
-    access: .admin
-    account_name: AUTH_dispersion
-    auth: http://deployment-ms-fe02.deployment-prep.eqiad.wmflabs
-    stats_enabled: 'no'
-    user: swift:dispersion
 swift::params::storage_policies: true
 swift::proxy::memcached_servers:
 - deployment-ms-fe03
