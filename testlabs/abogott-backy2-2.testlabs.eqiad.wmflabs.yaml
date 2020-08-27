@@ -1,6 +1,0 @@
-profile::wmcs::backy2::cluster_name: dummycluster
-profile::wmcs::backy2::db_host: dummyhost.eqiad.wmflabs
-profile::wmcs::backy2::db_name: dummy_dbname
-profile::wmcs::backy2::db_pass: dummy_pass
-profile::wmcs::backy2::db_user: dummy_username
-puppetmaster: abogott-puppetmaster.testlabs.eqiad.wmflabs
