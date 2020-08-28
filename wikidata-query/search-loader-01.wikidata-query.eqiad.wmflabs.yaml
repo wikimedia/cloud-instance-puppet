@@ -1,1 +1,17 @@
+profile::mjolnir::kafka_bulk_daemon::es_cluster_endpoint: https://search.svc.%{::site}.wmneta:9243
+profile::mjolnir::kafka_bulk_daemon::group_id: cirrussearch_upda%tes_%{::site}
+profile::mjolnir::kafka_bulk_daemon::kafka_cluster: jumbo-eqiad
+profile::mjolnir::kafka_bulk_daemon::topics:
+- eqiad.swift.search_glent.upload-complete
+- codfw.swift.search_glent.upload-complete
+- eqiad.swift.search_popularity_score.upload-complete
+- codfw.swift.search_popularity_score.upload-complete
+- eqiad.swift.search_mjolnir_model.upload-complete
+- codfw.swift.search_mjolnir_model.upload-complete
+profile::mjolnir::kafka_msearch_daemon::es_cluster_endpoint: https://search.svc.%{::site}.wmneta:9243
+profile::mjolnir::kafka_msearch_daemon::input_topic: mjolnir.msearch-prod-request
+profile::mjolnir::kafka_msearch_daemon::max_concurrent_searches: 2
+profile::mjolnir::kafka_msearch_daemon::num_running_daemons: 4
+profile::mjolnir::kafka_msearch_daemon::num_workers: 2
+profile::mjolnir::kafka_msearch_daemon::output_topic: mjolnir.msearch-prod-response-test
 puppetmaster: wdqspuppet.wikidata-query.eqiad.wmflabs
