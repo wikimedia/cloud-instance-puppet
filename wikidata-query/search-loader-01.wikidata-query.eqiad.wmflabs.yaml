@@ -14,4 +14,6 @@ profile::mjolnir::kafka_msearch_daemon::max_concurrent_searches: 2
 profile::mjolnir::kafka_msearch_daemon::num_running_daemons: 4
 profile::mjolnir::kafka_msearch_daemon::num_workers: 2
 profile::mjolnir::kafka_msearch_daemon::output_topic: mjolnir.msearch-prod-response-test
+prometheus_nodes:
+- prometheus01.metricsinfran.eqiad.wmflabs
 puppetmaster: wdqspuppet.wikidata-query.eqiad.wmflabs
