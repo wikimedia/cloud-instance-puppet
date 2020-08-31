@@ -43,6 +43,7 @@ striker::uwsgi::config:
   openstack:
     URL: http://striker-support01.striker.eqiad.wmflabs:5000/v3
   phabricator:
+    PARENT_PROJECT: PHID-PROJ-tqlxowumfdvjeuyjdn2n
     REPO_ADMIN_GROUP: PHID-PROJ-7ptcdp7zynqslnkjmq5n
     SERVER_URL: https://phabricator-striker.wmflabs.org
     USER: StrikerBot
