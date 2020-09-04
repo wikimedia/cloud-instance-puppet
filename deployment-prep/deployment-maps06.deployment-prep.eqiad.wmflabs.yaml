@@ -1,0 +1,3 @@
+profile::maps::apps::redis_server: redis://localhost
+profile::maps::osm_master::disable_admin_cron: true
+profile::maps::osm_master::disable_replication_cron: true
