@@ -8,3 +8,4 @@ profile::maps::apps::use_proxy: true
 profile::maps::osm_master::disable_admin_cron: true
 profile::maps::osm_master::disable_replication_cron: true
 profile::maps::tlsproxy::servicename: kartotherian.discovery.wmnet
+puppetmaster: deployment-puppetmaster04.deployment-prep.eqiad.wmflabs
