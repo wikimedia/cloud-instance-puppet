@@ -7,3 +7,4 @@ profile::maps::apps::tilerator_storage_id: v4
 profile::maps::apps::use_proxy: true
 profile::maps::osm_master::disable_admin_cron: true
 profile::maps::osm_master::disable_replication_cron: true
+profile::maps::tlsproxy::servicename: kartotherian.wmlabs
