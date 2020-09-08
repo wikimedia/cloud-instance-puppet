@@ -8,7 +8,7 @@ profile::docker::runner::service_defs:
       logging:
         level: trace
       metrics:
-        port: 9102
+        port: 9100
         type: prometheus
       num_workers: 0
       services:
