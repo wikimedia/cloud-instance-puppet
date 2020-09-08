@@ -31,3 +31,4 @@ profile::docker::runner::service_defs:
     override_cmd: -c /etc/mediawiki-services-push-notifications/config.yaml
     port: 8900
     version: 2020-09-02-115949-publish
+puppetmaster: deployment-puppetmaster04.deployment-prep.eqiad.wmflabs
