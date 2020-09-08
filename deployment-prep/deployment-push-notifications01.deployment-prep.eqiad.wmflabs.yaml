@@ -7,6 +7,9 @@ profile::docker::runner::service_defs:
     config:
       logging:
         level: trace
+      metrics:
+        port: 9102
+        type: prometheus
       num_workers: 0
       services:
       - conf:
@@ -27,9 +30,6 @@ profile::docker::runner::service_defs:
           user_agent: push-notifications (beta)
         module: ./dist/app.js
         name: push-notifications
-    metrics:
-      port: 9102
-      type: prometheus
     namespace: wikimedia
     override_cmd: -c /etc/mediawiki-services-push-notifications/config.yaml
     port: 8900
