@@ -1,1 +1,2 @@
 - role::puppetmaster::standalone
+- no::such::class
