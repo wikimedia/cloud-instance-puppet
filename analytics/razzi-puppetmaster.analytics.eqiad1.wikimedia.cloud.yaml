@@ -1,1 +1,2 @@
 puppetmaster: razzi-puppetmaster.analytics.eqiad.wmflabs
+role::puppetmaster::standalone::enable_geoip: true
