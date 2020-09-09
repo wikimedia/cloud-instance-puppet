@@ -1,2 +1,4 @@
 puppetmaster: razzi-puppetmaster.analytics.eqiad.wmflabs
+puppetmaster::geoip::fetch_private: false
+puppetmaster::geoip::use_proxy: false
 role::puppetmaster::standalone::enable_geoip: true
