@@ -140,6 +140,7 @@ profile::mail::mx::verp_post_connect_server: deployment.wikimedia.beta.wmflabs.o
 profile::maps::apps::tilerator_ncpu_ratio: 0.3
 profile::mediawiki::install_hhvm: false
 profile::mediawiki::mcrouter_wancache::has_ssl: false
+profile::mediawiki::mcrouter_wancache::use_onhost_memcache: false
 profile::mediawiki::php::monitoring::password: notarealpassword
 profile::mediawiki::php::monitoring::salt: 9sBweWh0J
 profile::mediawiki::php::restarts::ensure: absent
