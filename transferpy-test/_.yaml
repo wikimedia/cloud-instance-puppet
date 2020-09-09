@@ -1,4 +1,1 @@
-profile::openstack::eqiad1::cumin::project_masters:
-- 172.16.1.218
-profile::openstack::eqiad1::cumin::project_pub_key: ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIO0GbzewSq7XxzjG6OodEWjBbkM3mN/mhw/fkfU+pagx
-  root@transferpy-test-1
+{}
