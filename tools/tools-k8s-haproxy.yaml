@@ -6,7 +6,7 @@ profile::toolforge::k8s::control_nodes:
 - tools-k8s-control-2.tools.eqiad.wmflabs
 - tools-k8s-control-3.tools.eqiad.wmflabs
 profile::toolforge::k8s::ingress_nodes:
-- tools-k8s-ingres-1.tools.eqiad1.wikimedia.cloud
-- tools-k8s-ingres-2.tools.eqiad1.wikimedia.cloud
+- tools-k8s-ingress-1.tools.eqiad1.wikimedia.cloud
+- tools-k8s-ingress-2.tools.eqiad1.wikimedia.cloud
 profile::toolforge::k8s::ingress_port: 30000
 prometheus::haproxy_exporter::endpoint: http://localhost:8404/stats;csv
