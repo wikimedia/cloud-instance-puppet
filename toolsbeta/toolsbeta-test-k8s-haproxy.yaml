@@ -4,8 +4,8 @@ profile::toolforge::k8s::control_nodes:
 - toolsbeta-test-k8s-control-2.toolsbeta.eqiad.wmflabs
 - toolsbeta-test-k8s-control-3.toolsbeta.eqiad.wmflabs
 profile::toolforge::k8s::ingress_nodes:
-- toolsbeta-test-k8s-worker-1.toolsbeta.eqiad.wmflabs
-- toolsbeta-test-k8s-worker-2.toolsbeta.eqiad.wmflabs
+- toolsbeta-test-k8s-ingress-1.toolsbeta.eqiad.wmflabs
+- toolsbeta-test-k8s-ingress-2.toolsbeta.eqiad.wmflabs
 profile::toolforge::k8s::ingress_port: 30000
 profile::wmcs::nfsclient::nfs_version: '4.2'
 prometheus::haproxy_exporter::endpoint: http://localhost:8404/stats;csv
