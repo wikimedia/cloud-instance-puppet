@@ -14,8 +14,6 @@ cache::nodes:
     eqiad_ats:
     - deployment-cache-text06.deployment-prep.eqiad.wmflabs
 cache::req_handling:
-  citoid.wikimedia.org:
-    caching: pass
   cxserver.wikimedia.org:
     caching: pass
 cache::text::nodes:
