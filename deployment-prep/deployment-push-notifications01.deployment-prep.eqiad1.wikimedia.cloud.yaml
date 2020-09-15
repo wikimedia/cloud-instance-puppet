@@ -20,10 +20,7 @@ profile::docker::runner::service_defs:
               keyId: RLKLAZ79HY
               teamId: AKK7J2GV64
           port: 8900
-          proxy:
-            host: deployment-urldownloader02.deployment-prep.eqiad1.wikimedia.cloud
-            port: 8080
-            protocol: http
+          proxy: http://deployment-urldownloader02.deployment-prep.eqiad1.wikimedia.cloud:8080
           queueing:
             flushTimeoutMs: 10000
           spec: ./spec.yaml
@@ -33,5 +30,5 @@ profile::docker::runner::service_defs:
     namespace: wikimedia
     override_cmd: -c /etc/mediawiki-services-push-notifications/config.yaml
     port: 8900
-    version: 2020-09-02-115949-publish
+    version: 2020-09-15-140916-publish
 puppetmaster: deployment-puppetmaster04.deployment-prep.eqiad.wmflabs
