@@ -19,6 +19,13 @@ profile::docker::runner::service_defs:
               key: /etc/mediawiki-services-push-notifications/AuthKey_RLKLAZ79HY.p8
               keyId: RLKLAZ79HY
               teamId: AKK7J2GV64
+          mwapi_req:
+            body: '{{ default(request.query, {}) }}'
+            headers:
+              host: '{{request.params.domain}}'
+              user-agent: '{{user-agent}}'
+            method: post
+            uri: http://deployment-mediawiki-07.deployment-prep.eqiad.wmflabs/w/api.php
           port: 8900
           proxy: http://deployment-urldownloader02.deployment-prep.eqiad1.wikimedia.cloud:8080
           queueing:
