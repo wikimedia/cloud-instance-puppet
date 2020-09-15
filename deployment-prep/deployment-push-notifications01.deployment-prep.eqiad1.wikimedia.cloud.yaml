@@ -19,7 +19,7 @@ profile::docker::runner::service_defs:
               key: /etc/mediawiki-services-push-notifications/AuthKey_RLKLAZ79HY.p8
               keyId: RLKLAZ79HY
               teamId: AKK7J2GV64
-          mw_subscription_manager_password: '%{lookup(''push_subscription_manager_password'')}'
+          mw_subscription_manager_password: '%{lookup("push_subscription_manager_password")}'
           mw_subscription_manager_username: PushSubscriptionManager2
           mwapi_req:
             body: '{{ default(request.query, {}) }}'
