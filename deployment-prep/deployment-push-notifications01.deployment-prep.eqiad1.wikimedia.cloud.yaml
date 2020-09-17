@@ -42,7 +42,7 @@ profile::docker::runner::service_defs:
     environment:
       DEBUG: apn
     namespace: wikimedia
-    override_cmd: -c /etc/mediawiki-services-push-notifications/config.yaml
+    override_cmd: -c /etc/mediawiki-services-push-notifications/config.yaml 2>&1
     port: 8900
     version: 2020-09-17-171128-publish
 puppetmaster: deployment-puppetmaster04.deployment-prep.eqiad.wmflabs
