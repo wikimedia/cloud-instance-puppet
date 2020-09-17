@@ -22,6 +22,8 @@ profile::docker::runner::service_defs:
               keyId: RLKLAZ79HY
               teamId: AKK7J2GV64
           debug: true
+          environment:
+            DEBUG: apn
           mw_subscription_manager_password: '%{lookup("push_subscription_manager_password")}'
           mw_subscription_manager_username: PushSubscriptionManager2
           mwapi_req:
