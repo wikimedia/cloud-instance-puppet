@@ -14,13 +14,8 @@ profile::docker::runner::service_defs:
       services:
       - conf:
           apns:
-            debug_topics:
-            - org.wikimedia.Notifications-Utility
-            production: false
-            token:
-              key: /etc/mediawiki-services-push-notifications/AuthKey_RLKLAZ79HY.p8
-              keyId: RLKLAZ79HY
-              teamId: AKK7J2GV64
+            cert: /etc/mediawiki-services-push-notifications/apns-push-toolforge.p12
+            production: true
           debug: true
           mw_subscription_manager_password: '%{lookup("push_subscription_manager_password")}'
           mw_subscription_manager_username: PushSubscriptionManager2
