@@ -29,7 +29,7 @@ profile::docker::runner::service_defs:
               host: meta.wikimedia.beta.wmflabs.org
               user-agent: '{{user-agent}}'
             method: post
-            uri: http://deployment-mediawiki-07.deployment-prep.eqiad.wmflabs/w/api.php
+            uri: http://deployment-mediawiki-07.deployment-prep.eqiad1.wikimedia.cloud:8080/w/api.php
           port: 8900
           queueing:
             flushTimeoutMs: 10000
