@@ -32,7 +32,6 @@ profile::docker::runner::service_defs:
             method: post
             uri: http://deployment-mediawiki-07.deployment-prep.eqiad.wmflabs/w/api.php
           port: 8900
-          proxy: http://deployment-urldownloader02.deployment-prep.eqiad1.wikimedia.cloud:8080
           queueing:
             flushTimeoutMs: 10000
           spec: ./spec.yaml
