@@ -26,7 +26,7 @@ profile::docker::runner::service_defs:
           mwapi_req:
             body: '{{ default(request.query, {}) }}'
             headers:
-              host: '{{request.params.domain}}'
+              host: meta.wikimedia.beta.wmflabs.org
               user-agent: '{{user-agent}}'
             method: post
             uri: http://deployment-mediawiki-07.deployment-prep.eqiad.wmflabs/w/api.php
