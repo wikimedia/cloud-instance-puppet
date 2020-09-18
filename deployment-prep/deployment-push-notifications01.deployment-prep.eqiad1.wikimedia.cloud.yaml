@@ -16,7 +16,6 @@ profile::docker::runner::service_defs:
           apns:
             debug_topics:
             - org.wikimedia.Notifications-Utility
-            production: false
             token:
               key: /etc/mediawiki-services-push-notifications/AuthKey_RLKLAZ79HY.p8
               keyId: RLKLAZ79HY
