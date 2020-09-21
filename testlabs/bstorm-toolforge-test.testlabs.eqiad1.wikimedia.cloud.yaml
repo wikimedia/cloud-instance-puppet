@@ -1,1 +1,2 @@
+profile::standard::has_default_mail_relay: false
 profile::toolforge::clush::master: foo.testlabs.eqiad1.wikimedia.cloud
