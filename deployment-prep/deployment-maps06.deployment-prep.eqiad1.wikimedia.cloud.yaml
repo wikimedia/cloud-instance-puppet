@@ -1,13 +1,1 @@
-profile::cassandra::single_instance::jmx_exporter_enabled: false
-profile::maps::apps::kartotherian_storage_id: v4
-profile::maps::apps::kartotherian_style: '''@kartotherian/osm-bright-style'''
-profile::maps::apps::redis_server: redis://%{::fqdn}
-profile::maps::apps::tilerator_enable: true
-profile::maps::apps::tilerator_ncpu_ratio: 0.3
-profile::maps::apps::tilerator_storage_id: v4
-profile::maps::apps::tilerator_style: '''@kartotherian/osm-bright-style'''
-profile::maps::apps::use_proxy: false
-profile::maps::osm_master::disable_admin_cron: true
-profile::maps::osm_master::disable_replication_cron: true
-profile::maps::tlsproxy::servicename: kartotherian.discovery.wmnet
-puppetmaster: deployment-puppetmaster04.deployment-prep.eqiad.wmflabs
+{}
