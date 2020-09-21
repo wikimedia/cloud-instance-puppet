@@ -2,6 +2,7 @@ profile::standard::has_default_mail_relay: false
 profile::toolforge::active_proxy_host: foo.testlabs.eqiad1.wikimedia.cloud
 profile::toolforge::clush::master: foo.testlabs.eqiad1.wikimedia.cloud
 profile::toolforge::etcdir: /var/lib/gridengine/etc
+profile::toolforge::grid::base::collectors: /data/project/.system/gridengine/collectors
 profile::toolforge::grid::base::geconf: /data/project/.system/gridengine
 profile::toolforge::grid::base::project_path: /data/project
 profile::toolforge::grid::base::sge_root: /var/lib/gridengine
