@@ -1,5 +1,5 @@
 cache::alternate_domains:
-  performance.wikimedia.org:
+  performance.wikimedia.beta.wmflabs.org:
     caching: normal
 cache::app_def_be_opts:
   between_bytes_timeout: 31s
@@ -14,10 +14,8 @@ cache::nodes:
     eqiad_ats:
     - deployment-cache-text06.deployment-prep.eqiad.wmflabs
 cache::req_handling:
-  citoid.wikimedia.org:
-    caching: pass
-  cxserver.wikimedia.org:
-    caching: pass
+  default:
+    caching: normal
 cache::text::nodes:
   eqiad:
   - deployment-cache-text06.deployment-prep.eqiad.wmflabs
