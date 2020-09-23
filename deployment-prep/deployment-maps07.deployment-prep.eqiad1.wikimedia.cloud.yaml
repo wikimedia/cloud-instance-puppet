@@ -1,3 +1,8 @@
+admin::groups:
+- maps-roots
+- maps-admins
+- kartotherian-admin
+- tilerator-admin
 profile::cassandra::single_instance::jmx_exporter_enabled: true
 profile::maps::apps::kartotherian_storage_id: v4
 profile::maps::apps::redis_server: redis://localhost
