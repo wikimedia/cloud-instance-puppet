@@ -11,7 +11,7 @@ cache::cluster: text
 cache::lua_support: true
 cache::nodes:
   text:
-    eqiad_ats:
+    eqiad:
     - deployment-cache-text06.deployment-prep.eqiad.wmflabs
 cache::req_handling:
   default:
