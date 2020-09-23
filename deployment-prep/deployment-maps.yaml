@@ -1,5 +1,5 @@
 admin::groups:
-- project-deployment-prep - maps-roots - maps-admins - kartotherian-admin - tilerator-admin
+- project-deployment-prep
 cassandra::metrics::blacklist:
 - .*\.metrics\.Table\..*$
 cassandra::target_version: '2.2'
