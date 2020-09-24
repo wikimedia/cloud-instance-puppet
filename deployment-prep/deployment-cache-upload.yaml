@@ -13,7 +13,7 @@ cache::app_directors:
       eqiad: deployment-ms-fe03.deployment-prep.eqiad.wmflabs
 cache::nodes:
   upload:
-    eqiad_ats:
+    eqiad:
     - deployment-cache-upload06.deployment-prep.eqiad.wmflabs
 cache::req_handling:
   default:
