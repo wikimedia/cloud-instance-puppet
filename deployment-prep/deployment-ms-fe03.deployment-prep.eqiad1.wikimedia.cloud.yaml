@@ -1,4 +1,6 @@
 profile::prometheus::memcached_exporter::arguments: ''
+profile::swift::proxy::memcached_servers:
+- deployment-ms-fe03.eqiad.wmflabs
 puppetmaster: deployment-puppetmaster04.deployment-prep.eqiad.wmflabs
 swift::proxy::memcached_servers:
 - deployment-ms-fe03.eqiad.wmflabs
