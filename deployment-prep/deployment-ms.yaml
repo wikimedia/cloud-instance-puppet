@@ -1,5 +1,7 @@
 profile::swift::cluster: deployment-prep
 profile::swift::hash_path_suffix: abcdef
+profile::swift::proxy::memcached_servers:
+- deployment-ms-fe03
 profile::swift::replication_accounts:
   mw_media:
     cluster_codfw: http://deployment-ms-fe02.deployment-prep.eqiad.wmflabs/v1/
