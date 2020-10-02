@@ -2,12 +2,16 @@ profile::swift::cluster: deployment-prep
 profile::swift::hash_path_suffix: abcdef
 profile::swift::proxy::memcached_servers:
 - deployment-ms-fe03
+profile::swift::proxy::proxy_service_host: deployment-ms-fe02.deployment-prep.eqiad.wmflabs
+profile::swift::proxy::rewrite_account: mw_media
+profile::swift::proxy::thumborhost: deployment-imagescaler03.eqiad.wmflabs:8800
 profile::swift::proxyhosts:
 - deployment-ms-fe03
 profile::swift::replication_accounts:
   mw_media:
     cluster_codfw: http://deployment-ms-fe02.deployment-prep.eqiad.wmflabs/v1/
 profile::swift::stats_reporter_host: somenonexistenthost
+profile::swift::storage::object_replicator_concurrency: 1
 profile::swift::storagehosts:
 - deployment-ms-be05
 - deployment-ms-be06
