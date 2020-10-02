@@ -9,7 +9,7 @@ profile::swift::proxyhosts:
 - deployment-ms-fe03
 profile::swift::replication_accounts:
   mw_media:
-    cluster_codfw: http://deployment-ms-fe02.deployment-prep.eqiad.wmflabs/v1/
+    cluster_codfw: http://deployment-ms-fe03.deployment-prep.eqiad.wmflabs/v1/
 profile::swift::stats_reporter_host: somenonexistenthost
 profile::swift::storage::object_replicator_concurrency: 1
 profile::swift::storagehosts:
