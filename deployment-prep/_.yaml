@@ -247,6 +247,7 @@ profile::swift::accounts:
     auth: http://deployment-ms-fe03.deployment-prep.eqiad.wmflabs
     stats_enabled: 'no'
     user: swift:dispersion
+profile::swift::proxy::private_container_list: []
 profile::swift::proxy::shard_container_list:
 - global-data-math-render
 - wikipedia-commons-local-public
