@@ -314,8 +314,6 @@ profile::swift::proxy::shard_container_list:
 - wikipedia-zh-local-temp
 - wikipedia-zh-local-thumb
 - wikipedia-zh-local-transcoded
-profile::swift::proxy::statsd_host: localhost
-profile::swift::storage::statsd_host: localhost
 profile::webperf::site::server_name: performance.wikimedia.beta.wmflabs.org
 puppetdb_host: deployment-puppetdb03.deployment-prep.eqiad.wmflabs
 puppetmaster: deployment-puppetmaster04.deployment-prep.eqiad.wmflabs
