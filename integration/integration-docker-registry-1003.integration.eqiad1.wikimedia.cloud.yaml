@@ -1,0 +1,2 @@
+docker::package_name: docker.io
+docker::version: latest
