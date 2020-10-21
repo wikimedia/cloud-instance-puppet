@@ -4,6 +4,6 @@ profile::openstack::eqiad1::puppetmaster::servers:
   - loadfactor: 10
     worker: cloud-puppetmaster-03.cloudinfra.eqiad.wmflabs
   - loadfactor: 20
-    worker: cloud-puppetmaster-04.cloudinfra.eqiad.wmflabs
+    worker: cloud-puppetmaster-05.cloudinfra.eqiad1.wikimedia.cloud
 puppetmaster: cloudinfra-internal-puppetmaster-02.cloudinfra.eqiad.wmflabs
 puppetmaster::enable_geoip: false
