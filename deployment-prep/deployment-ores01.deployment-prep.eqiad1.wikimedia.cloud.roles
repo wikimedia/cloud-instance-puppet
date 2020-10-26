@@ -1,4 +1,4 @@
-- role::ores::redis
+- role::labs::ores::redis
 - role::ores
 - profile::labs::lvm::srv
 - profile::ores::web
