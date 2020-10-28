@@ -26,11 +26,10 @@ profile::docker::runner::service_defs:
           mwapi_req:
             body: '{{ default(request.query, {}) }}'
             headers:
-              host: meta.wikimedia.beta.wmflabs.org
               user-agent: '{{user-agent}}'
               x-forwarded-proto: https
             method: post
-            uri: http://deployment-mediawiki-07.deployment-prep.eqiad1.wikimedia.cloud/w/api.php
+            uri: https://meta.wikimedia.beta.wmflabs.org/w/api.php
           port: 8900
           queueing:
             flushTimeoutMs: 10000
