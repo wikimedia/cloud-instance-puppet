@@ -6,7 +6,7 @@ profile::keyholder::server::agents:
   deploy-service:
     trusted_groups:
     - wikidev
-profile::keyholder::server::require_encrypted_keys: false
+profile::keyholder::server::require_encrypted_keys: 'no'
 profile::mediawiki::apc_shm_size: 128M
 profile::mediawiki::deployment::server::rsync_host: striker-deploy04.striker.eqiad.wmflabs
 profile::mediawiki::php::enable_fpm: false
