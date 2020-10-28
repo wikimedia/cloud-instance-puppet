@@ -147,6 +147,7 @@ profile::dns::auth::acmechief_target::acmechief_hosts:
 - acmechief-test2001.codfw.wmnet
 profile::dns::auth::gitrepo: https://gerrit.wikimedia.org/r/operations/dns.git
 profile::dns::auth::update::netbox_dns_snippets_dir: /srv/fake/placeholder
+profile::dns::auth::update::netbox_exports_domain: '%{alias(''profile::netbox::automation::git_hostname'')}'
 prometheus::node_exporter::collectors_extra:
 - ntp
 wikimedia_clusters:
