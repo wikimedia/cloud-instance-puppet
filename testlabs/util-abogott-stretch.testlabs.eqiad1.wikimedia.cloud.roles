@@ -1,1 +1,2 @@
 - role::labs::mediawiki_vagrant
+- role::this::class::does::not::exist::and::is::here::to::test::puppet::nags
