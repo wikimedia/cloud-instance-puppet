@@ -23,3 +23,4 @@ profile::mariadb::section_ports:
   x1: 3320
 profile::wmcs::services::toolsdb::socket: /run/mysqld/mysqld.sock
 puppetmaster: clouddb-services-puppetmaster-01.clouddb-services.eqiad.wmflabs
+swap_partition: false
