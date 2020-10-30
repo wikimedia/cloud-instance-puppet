@@ -1,2 +1,3 @@
 classes:
 - role::mobileapps
+puppetmaster: deployment-puppetmaster04.deployment-prep.eqiad.wmflabs
