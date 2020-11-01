@@ -1,2 +1,1 @@
 - role::labs::mediawiki_vagrant
-- role::fake::role::to::test::puppet::nags
