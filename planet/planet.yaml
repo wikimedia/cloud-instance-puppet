@@ -1,9 +1,0 @@
-deployment_server: phab-tin.phabricator.eqiad.wmflabs
-do_acme: false
-profile::netbox::active_server: design-apache.planet.eqiad.wmflabs
-profile::planet::venus::domain_name: wmflabs.org
-profile::planet::venus::http_proxy: ''
-profile::planet::venus::meta_link: meta.wikimedia.org/wiki/Planet_Wikimedia
-puppetmaster: puppenmeister.planet.eqiad.wmflabs
-scap::deployment_server: phab-tin.phabricator.eqiad.wmflabs
-scap::wmflabs_master: phab-tin.phabricator.eqiad.wmflabs
