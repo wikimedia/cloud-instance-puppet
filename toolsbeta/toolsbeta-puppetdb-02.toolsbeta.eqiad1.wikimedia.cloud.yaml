@@ -1,1 +1,2 @@
+profile::puppetdb::master: toolsbeta-puppetdb-02.toolsbeta.eqiad.wmflabs
 profile::puppetdb::slaves: []
