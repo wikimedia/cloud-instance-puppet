@@ -1,1 +1,4 @@
-{}
+profile::java::enable_dbg: true
+profile::java::java_packages:
+- variant: jdk
+  version: '8'
