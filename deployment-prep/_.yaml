@@ -31,37 +31,37 @@ http_proxy: ''
 kafka_clusters:
   jumbo-deployment-prep:
     brokers:
-      deployment-kafka-jumbo-1.deployment-prep.eqiad.wmflabs:
+      deployment-kafka-jumbo-1.deployment-prep.eqiad1.wikimedia.cloud:
         id: 1
         rack: A
-      deployment-kafka-jumbo-2.deployment-prep.eqiad.wmflabs:
+      deployment-kafka-jumbo-2.deployment-prep.eqiad1.wikimedia.cloud:
         id: 2
         rack: B
     zookeeper_cluster_name: main-deployment-prep
   logging-codfw:
     brokers:
-      deployment-logstash03.deployment-prep.eqiad.wmflabs:
+      deployment-logstash03.deployment-prep.eqiad1.wikimedia.cloud:
         id: 2
         rack: C
-      deployment-logstash2.deployment-prep.eqiad.wmflabs:
+      deployment-logstash2.deployment-prep.eqiad1.wikimedia.cloud:
         id: 1
         rack: B
     zookeeper_cluster_name: main-deployment-prep
   logging-eqiad:
     brokers:
-      deployment-logstash03.deployment-prep.eqiad.wmflabs:
+      deployment-logstash03.deployment-prep.eqiad1.wikimedia.cloud:
         id: 2
         rack: C
-      deployment-logstash2.deployment-prep.eqiad.wmflabs:
+      deployment-logstash2.deployment-prep.eqiad1.wikimedia.cloud:
         id: 1
         rack: B
     zookeeper_cluster_name: main-deployment-prep
   main-deployment-prep:
     brokers:
-      deployment-kafka-main-1.deployment-prep.eqiad.wmflabs:
+      deployment-kafka-main-1.deployment-prep.eqiad1.wikimedia.cloud:
         id: 1
         rack: A
-      deployment-kafka-main-2.deployment-prep.eqiad.wmflabs:
+      deployment-kafka-main-2.deployment-prep.eqiad1.wikimedia.cloud:
         id: 2
         rack: B
     zookeeper_cluster_name: main-deployment-prep
