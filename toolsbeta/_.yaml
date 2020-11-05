@@ -89,6 +89,7 @@ profile::toolforge::mailrelay::external_hostname: mail.tools.wmflabs.org
 profile::toolforge::proxies:
 - toolsbeta-proxy-1.toolsbeta.eqiad.wmflabs
 - toolsbeta-proxy-2.toolsbeta.eqiad.wmflabs
+- toolsbeta-proxy-3.toolsbeta.eqiad1.wikimedia.cloud
 profile::toolforge::services::active_node: tools-services-01.eqiad.wmflabs
 profile::toolforge::services::updatetools_enabled: false
 profile::wmcs::kubeadm::component: thirdparty/kubeadm-k8s-1-16
