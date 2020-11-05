@@ -1,6 +1,6 @@
 acmechief_host: toolsbeta-acme-chief-01.toolsbeta.eqiad.wmflabs
 active_cronrunner: toolsbeta-cron-01.toolsbeta.eqiad.wmflabs
-active_proxy_host: toolsbeta-proxy-1
+active_proxy_host: toolsbeta-proxy-3
 active_redis: tools-redis-1001.tools.eqiad.wmflabs
 docker::builder_host: tools-docker-builder-06.tools.eqiad.wmflabs
 docker::password: not a real password
@@ -70,7 +70,7 @@ profile::prometheus::haproxy_exporter::listen_port: 9901
 profile::standard::has_default_mail_relay: false
 profile::toolforge::active_cronrunner: toolsbeta-sgecron-01.toolsbeta.eqiad.wmflabs
 profile::toolforge::active_mail_relay: tools-mail-02.tools.eqiad.wmflabs
-profile::toolforge::active_proxy_host: toolsbeta-proxy-1
+profile::toolforge::active_proxy_host: toolsbeta-proxy-3
 profile::toolforge::canonical_domain: toolsbeta.wmflabs.org
 profile::toolforge::canonical_scheme: http://
 profile::toolforge::clush::target::master: tools-clushmaster-02.tools.eqiad.wmflabs
