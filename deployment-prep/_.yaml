@@ -35,8 +35,8 @@ kafka_clusters:
         id: 1
         rack: A
       deployment-kafka-jumbo-2.deployment-prep.eqiad1.wikimedia.cloud:
-        id: 2
-        rack: B
+        id: 3
+        rack: C
     zookeeper_cluster_name: main-deployment-prep
   logging-codfw:
     brokers:
