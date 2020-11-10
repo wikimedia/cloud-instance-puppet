@@ -1,1 +1,2 @@
+mount_nfs: true
 profile::toolforge::clush::master: nowhere.example.org
