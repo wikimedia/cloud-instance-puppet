@@ -1,3 +1,4 @@
+mount_nfs: true
 nginx::variant: extras
 profile::wdqs::fetch_constraints: true
 role::labs::lvm::volume::mountat: /srv/data
