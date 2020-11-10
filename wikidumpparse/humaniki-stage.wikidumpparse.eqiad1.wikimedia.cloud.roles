@@ -1,1 +1,2 @@
 - ::ldap::client::utils
+- role::labs::lvm::srv
