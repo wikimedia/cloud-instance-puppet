@@ -1,3 +1,4 @@
+mount_nfs: true
 profile::ldap::client::labs::client_stack: sssd
 profile::wmcs::nfsclient::nfs_version: '4'
 prometheus::node_exporter::collectors_extra:
