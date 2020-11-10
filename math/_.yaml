@@ -6,3 +6,4 @@ cdh::oozie::oozie_host: hadoop000.math.eqiad.wmflabs
 elasticsearch::cluster_hosts:
 - hadoop000.math.eqiad.wmflabs
 elasticsearch::cluster_name: math-elasticsearch
+mount_nfs: true
