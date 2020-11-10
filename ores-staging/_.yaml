@@ -1,4 +1,5 @@
 logstash_host: localhost
+mount_nfs: true
 ores::base::config_path: /srv/ores/config
 ores::base::venv_path: /srv/ores/venv
 ores::redisproxy::server: ores-redis-01.ores.eqiad.wmflabs
