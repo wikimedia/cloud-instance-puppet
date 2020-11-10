@@ -1,1 +1,2 @@
 mediawiki_singlenode::mediawiki_hostname: LangDev
+mount_nfs: true
