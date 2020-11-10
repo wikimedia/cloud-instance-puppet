@@ -14,6 +14,7 @@ profile::acme_chief::certificates:
     - toolsbeta.wmflabs.org
     - '*.toolsbeta.wmflabs.org'
     authorized_regexes:
+    - ^.+\.toolsbeta\.eqiad1\.wikimedia\.cloud$
     - ^.+\.toolsbeta\.eqiad\.wmflabs$
     challenge: dns-01
 profile::acme_chief::challenges:
