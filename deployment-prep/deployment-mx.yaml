@@ -1,4 +1,1 @@
 profile::mail::mx::enable_jumpcloud: false
-profile::mail::mx::otrs_mysql_dbname: ''
-profile::mail::mx::otrs_mysql_server: ''
-profile::mail::mx::otrs_mysql_user: ''
