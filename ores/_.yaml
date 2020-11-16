@@ -33,9 +33,7 @@ profile::ores::web::workers_per_core: 12
 profile::prometheus::statsd_exporter::mappings: []
 profile::rsyslog::kafka_shipper::kafka_brokers: []
 role::labs::ores::lb::realservers:
-- ores-web-04:8080
 - ores-web-05:8080
-- ores-web-06:8080
 role::labs::ores::redisproxy::server: ores-redis-02.ores.eqiad.wmflabs
 scap::deployment_server: 10.68.17.240
 ssh::server::disable_nist_kex: false
