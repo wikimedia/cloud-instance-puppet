@@ -4,4 +4,4 @@
 - role::kafka::logging
 - role::logstash::collector
 - role::logstash::puppetreports
-- role::logstash::apifeatureusage
+- profile::logstash::apifeatureusage
