@@ -1,0 +1,4 @@
+docker::configuration::settings:
+  data-root: /srv/docker
+docker::package_name: docker.io
+docker::version: latest
