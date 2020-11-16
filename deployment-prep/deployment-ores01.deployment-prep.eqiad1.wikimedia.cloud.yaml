@@ -2,4 +2,11 @@ profile::ores::celery::queue_maxsize: 100
 profile::ores::celery::workers: 4
 profile::ores::logstash_host: localhost
 profile::ores::web::workers: 8
+profile::tlsproxy::envoy::ensure: present
+profile::tlsproxy::envoy::global_cert_name: ores.discovery.wmnet
+profile::tlsproxy::envoy::services:
+- port: 8081
+  server_names:
+  - '*'
+profile::tlsproxy::envoy::sni_support: 'no'
 puppetmaster: deployment-puppetmaster04.deployment-prep.eqiad.wmflabs
