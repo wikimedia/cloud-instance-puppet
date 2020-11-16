@@ -2,6 +2,6 @@
 - profile::kibana
 - profile::kibana::httpd_proxy
 - role::kafka::logging
-- role::logstash::collector
+- profile::logstash::collector
 - role::logstash::puppetreports
 - profile::logstash::apifeatureusage
