@@ -1,9 +1,9 @@
 profile::toolforge::k8s::apiserver_fqdn: k8s.toolsbeta.eqiad1.wikimedia.cloud
 profile::toolforge::k8s::dns_domain: toolsbeta.eqiad.wmflabs
 profile::toolforge::k8s::etcd_nodes:
-- toolsbeta-test-k8s-etcd-1.toolsbeta.eqiad.wmflabs
-- toolsbeta-test-k8s-etcd-2.toolsbeta.eqiad.wmflabs
-- toolsbeta-test-k8s-etcd-3.toolsbeta.eqiad.wmflabs
+- tolosbeta-test-k8s-etcd-4.toolsbeta.eqiad1.wikimedia.cloud
+- tolosbeta-test-k8s-etcd-5.toolsbeta.eqiad1.wikimedia.cloud
+- tolosbeta-test-k8s-etcd-6.toolsbeta.eqiad1.wikimedia.cloud
 profile::toolforge::k8s::node_token: m7uakr.ern5lmlpv7gnkacw
 profile::wmcs::nfsclient::nfs_version: '4.2'
 swap_partition: false
