@@ -7,3 +7,4 @@ profile::openstack::eqiad1::puppetmaster::servers:
     worker: cloud-puppetmaster-05.cloudinfra.eqiad1.wikimedia.cloud
 puppetmaster: cloudinfra-internal-puppetmaster-02.cloudinfra.eqiad.wmflabs
 puppetmaster::enable_geoip: false
+puppetmaster::external_puppetmaster: true
