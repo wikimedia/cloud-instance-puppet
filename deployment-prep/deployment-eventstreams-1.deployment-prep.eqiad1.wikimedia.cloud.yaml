@@ -17,7 +17,6 @@ profile::docker::runner::service_defs:
       num_workers: 0
       services:
       - conf:
-          client_ip_connection_limit: 10
           cors: '*'
           csp: default-src 'none'; script-src 'self' 'unsafe-inline'; connect-src
             *; style-src 'self' 'unsafe-inline'; img-src 'self'; font-src 'self'
