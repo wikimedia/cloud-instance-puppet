@@ -88,5 +88,5 @@ profile::docker::runner::service_defs:
     namespace: wikimedia
     override_cmd: /srv/service/server.js -c /etc/eventstreams/config.yaml
     port: 8092
-    version: 2020-11-17-161345-production
+    version: 2020-11-17-170342-production
 puppetmaster: deployment-puppetmaster04.deployment-prep.eqiad.wmflabs
