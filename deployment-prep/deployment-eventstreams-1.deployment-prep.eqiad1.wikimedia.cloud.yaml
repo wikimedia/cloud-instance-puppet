@@ -25,89 +25,59 @@ profile::docker::runner::service_defs:
             metadata.broker.list: deployment-kafka-main-1.deployment-prep.eqiad.wmflabs:9092,deployment-kafka-main-2.deployment-prep.eqiad.wmflabs:9092
             statistics.interval.ms: 10000
           port: 8092
+          schema_base_uris:
+          - https://schema-beta.wmflabs.org/repositories/primary/jsonschema
+          - https://schema-beta.wmflabs.org/repositories/secondary/jsonschema
+          schema_latest_version: latest
           spec: ./spec.yaml
-          streams:
-            page-create:
-              description: 'Mediawiki Page create events. This page create stream
-                is just the first revision create
+          stream_config_defaults:
+            medawiki.page-create:
+              description: 'MediaWiki page create events. This page create stream
 
-                event for each page. As such, it reuses the mediawiki/revision/create
-                schema.
+                is just the first revision create event for each page.
 
-                Schema: https://github.com/wikimedia/mediawiki-event-schemas/blob/master/jsonschema/mediawiki/revision/create'
-              topics:
-              - eqiad.mediawiki.page-create
-            page-delete:
-              description: 'Mediawiki Page delete events.
+                As such, it reuses the mediawiki/revision/create schema.'
+              stream_aliases:
+              - page-create
+            mediawiki.page-delete:
+              stream_aliases:
+              - page-delete
+            mediawiki.page-links-change:
+              stream_aliases:
+              - page-links-change
+            mediawiki.page-move:
+              stream_aliases:
+              - page-move
+            mediawiki.page-properties-change:
+              stream_aliases:
+              - page-properties-change
+            mediawiki.page-undelete:
+              stream_aliases:
+              - page-undelete
+            mediawiki.recentchange:
+              stream_aliases:
+              - recentchange
+            mediawiki.revision-create:
+              stream_aliases:
+              - revision-create
+            mediawiki.revision-score:
+              description: 'MediaWiki revision score events. Every new revision in
+                an
 
-                Schema: https://github.com/wikimedia/mediawiki-event-schemas/blob/master/jsonschema/mediawiki/page/delete'
-              topics:
-              - eqiad.mediawiki.page-delete
-            page-links-change:
-              description: 'Mediawiki Page Links change events.
+                ORES enabled wiki should have a revision-score event.
 
-                Schema: https://github.com/wikimedia/mediawiki-event-schemas/blob/master/jsonschema/mediawiki/page/links-change'
-              topics:
-              - eqiad.mediawiki.page-links-change
-            page-move:
-              description: 'Mediawiki Page move (rename) events.
-
-                Schema: https://github.com/wikimedia/mediawiki-event-schemas/blob/master/jsonschema/mediawiki/page/move'
-              topics:
-              - eqiad.mediawiki.page-move
-            page-properties-change:
-              description: 'Mediawiki Page Properties change events.
-
-                Schema: https://github.com/wikimedia/mediawiki-event-schemas/blob/master/jsonschema/mediawiki/page/properties-change'
-              topics:
-              - eqiad.mediawiki.page-properties-change
-            page-undelete:
-              description: 'Mediawiki Page un-delete events.
-
-                Schema: https://github.com/wikimedia/mediawiki-event-schemas/blob/master/jsonschema/mediawiki/page/undelete'
-              topics:
-              - eqiad.mediawiki.page-undelete
-            recentchange:
-              description: 'Mediawiki RecentChanges feed.
-
-                Schema: https://github.com/wikimedia/mediawiki-event-schemas/tree/master/jsonschema/mediawiki/recentchange'
-              topics:
-              - eqiad.mediawiki.recentchange
-            revision-create:
-              description: 'Mediawiki Revision create events.
-
-                Schema: https://github.com/wikimedia/mediawiki-event-schemas/tree/master/jsonschema/mediawiki/revision/create'
-              topics:
-              - eqiad.mediawiki.revision-create
-            revision-score:
-              description: 'Mediawiki Revision Score feed. Every new revision in an
-                ORES enabled wiki should have a
-
-                revision-score event. This schema is structured differnetly than ORES
-                API results, as
+                This schema is structured differnetly than ORES API results, as
 
                 event schemas should map well into RDBMS / SQL environments where
-                columns must be
 
-                strongly typed.
+                columns must be strongly typed.
 
                 NOTE: Only the most commonly used ORES model scores are included in
-                each event
 
-                (the ones returned by https://ores.wikimedia.org/v3/precache).
-
-                Schema: https://github.com/wikimedia/mediawiki-event-schemas/tree/master/jsonschema/mediawiki/revision/score
-
-                '
-              topics:
-              - eqiad.mediawiki.revision-score
-            test:
-              description: 'A test event stream. A new event is posted about once
-                a minute.
-
-                Schema: https://github.com/wikimedia/mediawiki-event-schemas/tree/master/jsonschema/test/event'
-              topics:
-              - eqiad.test.event
+                each event (the ones returned by https://ores.wikimedia.org/v3/precache).'
+              stream_aliases:
+              - revision-score
+          stream_config_uri: https://meta.wikimedia.beta.wmflabs.org/w/api.php?action=streamconfigs&all_settings=true
           user_agent: eventstreams-beta
         module: app.js
         name: eventstreams
@@ -116,41 +86,5 @@ profile::docker::runner::service_defs:
     namespace: wikimedia
     override_cmd: /srv/service/server.js -c /etc/eventstreams/config.yaml
     port: 8092
-    version: 2020-05-18-211353-production
-  eventstreams_all_streams:
-    config:
-      logging:
-        level: info
-        streams:
-        - type: stdout
-        - host: deployment-logstash03.deployment-prep.eqiad.wmflabs
-          port: 12201
-          type: gelf
-      metrics:
-        port: 9092
-        type: prometheus
-      num_workers: 0
-      services:
-      - conf:
-          allow_any_stream: true
-          client_ip_connection_limit: 10
-          cors: '*'
-          csp: default-src 'none'; script-src 'self' 'unsafe-inline'; connect-src
-            *; style-src 'self' 'unsafe-inline'; img-src 'self'; font-src 'self'
-          kafka:
-            metadata.broker.list: deployment-kafka-jumbo-1.deployment-prep.eqiad.wmflabs:9092,deployment-kafka-jumbo-2.deployment-prep.eqiad.wmflabs:9092
-            statistics.interval.ms: 10000
-          port: 8093
-          spec: ./spec.yaml
-          stream_topic_prefixes:
-          - eqiad.
-          user_agent: eventstreams_all_streams_beta
-        module: app.js
-        name: eventstreams_all_streams
-      worker_heap_limit_mb: 250
-    image_name: mediawiki-services-eventstreams
-    namespace: wikimedia
-    override_cmd: /srv/service/server.js -c /etc/eventstreams_all_streams/config.yaml
-    port: 8093
-    version: 2020-05-18-211353-production
+    version: 2020-11-17-161345-production
 puppetmaster: deployment-puppetmaster04.deployment-prep.eqiad.wmflabs
