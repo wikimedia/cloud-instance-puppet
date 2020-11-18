@@ -5,6 +5,7 @@ profile::toolforge::k8s::control_nodes:
 - toolsbeta-test-k8s-control-1.toolsbeta.eqiad.wmflabs
 - toolsbeta-test-k8s-control-2.toolsbeta.eqiad.wmflabs
 - toolsbeta-test-k8s-control-3.toolsbeta.eqiad.wmflabs
+- toolsbeta-test-k8s-control-4.toolsbeta.eqiad1.wikimedia.cloud
 profile::toolforge::k8s::etcd_nodes:
 - toolsbeta-test-k8s-etcd-4.toolsbeta.eqiad1.wikimedia.cloud
 - toolsbeta-test-k8s-etcd-5.toolsbeta.eqiad1.wikimedia.cloud
