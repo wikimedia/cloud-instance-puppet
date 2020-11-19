@@ -1,2 +1,4 @@
-profile::base::puppet::dns_alt_names: tools-k8s-etcd-4.tools.eqiad.wmflabs, tools-k8s-etcd-5.tools.eqiad.wmflabs,
-  tools-k8s-etcd-6.tools.eqiad.wmflabs
+profile::base::puppet::dns_alt_names:
+- tools-k8s-etcd-4.tools.eqiad.wmflabs
+- tools-k8s-etcd-5.tools.eqiad.wmflabs
+- tools-k8s-etcd-6.tools.eqiad.wmflabs
