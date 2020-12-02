@@ -60,6 +60,8 @@ profile::docker::runner::service_defs:
         module: eventgate
         name: eventgate-analytics
       worker_heap_limit_mb: 250
+    environment:
+      NODE_TLS_REJECT_UNAUTHORIZED: '0'
     image_name: eventgate-wikimedia
     namespace: wikimedia
     override_cmd: /srv/service/node_modules/.bin/eventgate -c /etc/eventgate-analytics/config.yaml
@@ -188,6 +190,8 @@ profile::docker::runner::service_defs:
         entrypoint: app
         module: eventgate
       worker_heap_limit_mb: 250
+    environment:
+      NODE_TLS_REJECT_UNAUTHORIZED: '0'
     image_name: eventgate-wikimedia
     namespace: wikimedia
     override_cmd: /srv/service/node_modules/.bin/eventgate -c /etc/eventgate-logging-external/config.yaml
@@ -249,6 +253,8 @@ profile::docker::runner::service_defs:
         module: eventgate
         name: eventgate-main
       worker_heap_limit_mb: 250
+    environment:
+      NODE_TLS_REJECT_UNAUTHORIZED: '0'
     image_name: eventgate-wikimedia
     namespace: wikimedia
     override_cmd: /srv/service/node_modules/.bin/eventgate -c /etc/eventgate-main/config.yaml
