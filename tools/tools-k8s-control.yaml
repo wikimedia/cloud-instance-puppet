@@ -5,6 +5,6 @@ profile::toolforge::k8s::etcd_nodes:
 - tools-k8s-etcd-5.tools.eqiad.wmflabs
 - tools-k8s-etcd-6.tools.eqiad.wmflabs
 profile::toolforge::k8s::node_token: m7uakr.ern5lmlpv7gnkacw
-profile::wmcs::kubeadm::component: thirdparty/kubeadm-k8s-1-16
+profile::wmcs::kubeadm::component: thirdparty/kubeadm-k8s-1-17
 profile::wmcs::nfsclient::nfs_version: '4.2'
 swap_partition: false
