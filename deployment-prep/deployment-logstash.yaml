@@ -1,3 +1,2 @@
-kafka_cluster_name: logging-eqiad
 profile::elastalert::ensure: present
 profile::rsyslog::udp_localhost_compat_port: 11514
