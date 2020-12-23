@@ -1,12 +1,12 @@
 profile::wmcs::db::wikireplicas::section_backends:
-  s1: dbproxy1018.eqiad.wmnet
-  s2: dbproxy1018.eqiad.wmnet
-  s3: dbproxy1018.eqiad.wmnet
-  s4: dbproxy1018.eqiad.wmnet
-  s5: dbproxy1018.eqiad.wmnet
-  s6: dbproxy1018.eqiad.wmnet
-  s7: dbproxy1018.eqiad.wmnet
-  s8: dbproxy1018.eqiad.wmnet
+  s1: dbproxy1019.eqiad.wmnet
+  s2: dbproxy1019.eqiad.wmnet
+  s3: dbproxy1019.eqiad.wmnet
+  s4: dbproxy1019.eqiad.wmnet
+  s5: dbproxy1019.eqiad.wmnet
+  s6: dbproxy1019.eqiad.wmnet
+  s7: dbproxy1019.eqiad.wmnet
+  s8: dbproxy1019.eqiad.wmnet
 profile::wmcs::db::wikireplicas::vips:
 - 172.16.2.36
 - 172.16.1.206
