@@ -137,7 +137,12 @@ profile::java::hardened_tls: false
 profile::kafka::broker::log_retention_bytes: 134217728
 profile::kafka::broker::log_segment_bytes: 134217728
 profile::kafka::broker::monitoring_enabled: true
-profile::logstash::collector::input_kafka_ssl_truststore_password: qwerty
+profile::logstash::collector::input_kafka_ssl_truststore_passwords:
+  jumbo-eqiad: qwerty
+  lmain-codfw: qwerty
+  logging-codfw: qwerty
+  logging-eqiad: qwerty
+  main-eqiad: qwerty
 profile::mail::mx::dkim_domain: beta.wmflabs.org
 profile::mail::mx::verp_bounce_post_url: http://deployment.wikimedia.beta.wmflabs.org/w/api.php
 profile::mail::mx::verp_domains:
