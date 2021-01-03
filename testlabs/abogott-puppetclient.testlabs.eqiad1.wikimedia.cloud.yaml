@@ -2,6 +2,6 @@ $openstack_controllers: []
 compute_workers: []
 db_host: localhost
 metadata_workers: []
-profile::openstack::base::nova::db_password: dummy_password
+profile::openstack::base::nova::db_pass: dummy_password
 profile::openstack::base::nova::db_user: dummy_user
 profile::openstack::base::version: stein
