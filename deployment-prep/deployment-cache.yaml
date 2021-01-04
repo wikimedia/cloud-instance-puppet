@@ -1,1 +1,2 @@
 confd::srv_dns: deployment-prep.eqiad.wmflabs
+mtail::service_ensure: absent
