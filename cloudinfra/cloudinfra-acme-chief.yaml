@@ -7,7 +7,23 @@ profile::acme_chief::accounts:
     directory: https://acme-v02.api.letsencrypt.org/directory
     regr: '{"body": {}, "uri": "https://acme-v02.api.letsencrypt.org/acme/acct/108357291"}'
 profile::acme_chief::active: cloudinfra-acme-chief-01.cloudinfra.eqiad.wmflabs
-profile::acme_chief::certificates: {}
+profile::acme_chief::certificates:
+  mx-out01:
+    CN: mx-out01.cloudinfra.eqiad1.wikimedia.cloud
+    SNI:
+    - mx-out01.cloudinfra.eqiad1.wikimedia.cloud
+    authorized_regexes:
+    - ^.+\.cloudinfra\.eqiad\.wmflabs$
+    - ^.+\.cloudinfra\.eqiad1\.wikimedia\.cloud$
+    challenge: dns-01
+  mx-out02:
+    CN: mx-out02.cloudinfra.eqiad1.wikimedia.cloud
+    SNI:
+    - mx-out02.cloudinfra.eqiad1.wikimedia.cloud
+    authorized_regexes:
+    - ^.+\.cloudinfra\.eqiad\.wmflabs$
+    - ^.+\.cloudinfra\.eqiad1\.wikimedia\.cloud$
+    challenge: dns-01
 profile::acme_chief::challenges:
   dns-01:
     issuing_ca: letsencrypt.org
