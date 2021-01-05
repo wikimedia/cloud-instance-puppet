@@ -1,4 +1,1 @@
-mtail::from_component: true
 profile::mail::smarthost::exim_primary_hostname: mx-out02.wmflabs.org
-profile::standard::has_default_mail_relay: false
-standard::has_default_mail_relay: false
