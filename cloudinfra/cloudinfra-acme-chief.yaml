@@ -17,9 +17,7 @@ profile::acme_chief::certificates:
     - mx-out01.wmcloud.org
     - mx-out02.wmcloud.org
     - mx-out01.cloudinfra.eqiad1.wikimedia.cloud
-    - mx-out01.cloudinfra.eqiad.wmflabs
     - mx-out02.cloudinfra.eqiad1.wikimedia.cloud
-    - mx-out02.cloudinfra.eqiad.wmflabs
     authorized_regexes:
     - ^.+\.cloudinfra\.eqiad\.wmflabs$
     - ^.+\.cloudinfra\.eqiad1\.wikimedia\.cloud$
