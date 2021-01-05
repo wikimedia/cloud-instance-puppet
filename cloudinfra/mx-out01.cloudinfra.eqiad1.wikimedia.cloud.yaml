@@ -1,6 +1,4 @@
 mtail::from_component: true
-profile::mail::smarthost::cert_name: mx-out01.wmflabs.org
-profile::mail::smarthost::cert_subjects: mx-out01.wmflabs.org
 profile::mail::smarthost::exim_primary_hostname: mx-out01.wmflabs.org
 profile::standard::has_default_mail_relay: false
 standard::has_default_mail_relay: false
