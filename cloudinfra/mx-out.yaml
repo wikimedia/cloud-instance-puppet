@@ -1,1 +1,2 @@
+profile::mail::smarthost::cert_name: mx
 puppetmaster: cloudinfra-internal-puppetmaster-02.cloudinfra.eqiad.wmflabs
