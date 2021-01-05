@@ -11,7 +11,11 @@ profile::acme_chief::certificates:
   mx:
     CN: mx-out.wmflabs.org
     SNI:
+    - mx-out01.wmflabs.org
+    - mx-out02.wmflabs.org
     - mx-out.wmcloud.org
+    - mx-out01.wmcloud.org
+    - mx-out02.wmcloud.org
     - mx-out01.cloudinfra.eqiad1.wikimedia.cloud
     - mx-out01.cloudinfra.eqiad.wmflabs
     - mx-out02.cloudinfra.eqiad1.wikimedia.cloud
