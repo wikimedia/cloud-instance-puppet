@@ -8,18 +8,14 @@ profile::acme_chief::accounts:
     regr: '{"body": {}, "uri": "https://acme-v02.api.letsencrypt.org/acme/acct/108357291"}'
 profile::acme_chief::active: cloudinfra-acme-chief-01.cloudinfra.eqiad.wmflabs
 profile::acme_chief::certificates:
-  mx-out01:
-    CN: mx-out01.cloudinfra.eqiad1.wikimedia.cloud
+  mx:
+    CN: mx-out.wmflabs.org
     SNI:
+    - mx-out.wmcloud.org
     - mx-out01.cloudinfra.eqiad1.wikimedia.cloud
-    authorized_regexes:
-    - ^.+\.cloudinfra\.eqiad\.wmflabs$
-    - ^.+\.cloudinfra\.eqiad1\.wikimedia\.cloud$
-    challenge: dns-01
-  mx-out02:
-    CN: mx-out02.cloudinfra.eqiad1.wikimedia.cloud
-    SNI:
+    - mx-out01.cloudinfra.eqiad.wmflabs
     - mx-out02.cloudinfra.eqiad1.wikimedia.cloud
+    - mx-out02.cloudinfra.eqiad.wmflabs
     authorized_regexes:
     - ^.+\.cloudinfra\.eqiad\.wmflabs$
     - ^.+\.cloudinfra\.eqiad1\.wikimedia\.cloud$
