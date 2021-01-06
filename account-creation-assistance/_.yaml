@@ -1,1 +1,4 @@
+mail_smarthost:
+- mx-out01.cloudinfra.eqiad1.wikimedia.cloud
+- mx-out02.cloudinfra.eqiad1.wikimedia.cloud
 mount_nfs: true
