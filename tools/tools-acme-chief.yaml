@@ -44,7 +44,7 @@ profile::acme_chief::certificates:
     - stable.toolserver.org
     - status.toolserver.org
     authorized_regexes:
-    - ^toolserver-proxy.*\.tools\.eqiad\.wmflabs$
+    - ^toolserver-proxy-[0-9]+\.tools\.eqiad\.wmflabs$
     challenge: dns-01
 profile::acme_chief::challenges:
   dns-01:
