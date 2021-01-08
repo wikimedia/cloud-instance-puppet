@@ -39,10 +39,7 @@ profile::acme_chief::certificates:
     CN: toolserver.org
     SNI:
     - toolserver.org
-    - www.toolserver.org
-    - wiki.toolserver.org
-    - stable.toolserver.org
-    - status.toolserver.org
+    - '*.toolserver.org'
     authorized_regexes:
     - ^toolserver-proxy-[0-9]+\.tools\.eqiad1\.wikimedia\.cloud$
     challenge: dns-01
