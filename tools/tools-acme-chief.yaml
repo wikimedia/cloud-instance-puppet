@@ -35,6 +35,17 @@ profile::acme_chief::certificates:
     authorized_regexes:
     - ^tools-mail-[0-9]+\.tools\.eqiad\.wmflabs$
     challenge: dns-01
+  toolserver:
+    CN: toolserver.org
+    SNI:
+    - toolserver.org
+    - www.toolserver.org
+    - wiki.toolserver.org
+    - stable.toolserver.org
+    - status.toolserver.org
+    authorized_regexes:
+    - ^toolserver-proxy.*\.tools\.eqiad\.wmflabs$
+    challenge: dns-01
 profile::acme_chief::challenges:
   dns-01:
     issuing_ca: letsencrypt.org
