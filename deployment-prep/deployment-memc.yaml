@@ -13,3 +13,4 @@ profile::redis::multidc::settings:
   save: 300 100
   slave_read_only: false
   stop_writes_on_bgsave_error: false
+profile::redis::multidc::version_override: null
