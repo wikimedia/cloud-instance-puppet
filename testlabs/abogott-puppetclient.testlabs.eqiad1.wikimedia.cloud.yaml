@@ -1,4 +1,4 @@
-profile::openstack::base::keystone_api_fqdn: example.org
+profile::openstack::base::keystone_api_fqdn: keystone.lives.at.example.org
 profile::openstack::base::ldap_user_pass: dummy_ldap_pass
 profile::openstack::base::neutron::metadata_proxy_shared_secret: sharedsecretforreal
 profile::openstack::base::nova::compute_workers: []
@@ -7,7 +7,7 @@ profile::openstack::base::nova::db_name: novadb
 profile::openstack::base::nova::db_name_api: novaapidb
 profile::openstack::base::nova::db_pass: dummy_password
 profile::openstack::base::nova::db_user: dummy_user
-profile::openstack::base::nova::dhcp_domain: dhcp_dummy_domain
+profile::openstack::base::nova::dhcp_domain: dhcp_dummy_domain.example.org
 profile::openstack::base::nova::metadata_listen_port: 999
 profile::openstack::base::nova::metadata_workers: []
 profile::openstack::base::nova::osapi_compute_listen_port: 998
