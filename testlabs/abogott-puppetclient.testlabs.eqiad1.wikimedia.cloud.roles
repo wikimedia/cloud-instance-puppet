@@ -1,1 +1,1 @@
-- profile::openstack::base::nova::common
+- profile::openstack::eqiad1::nova::vendordataapi::service
