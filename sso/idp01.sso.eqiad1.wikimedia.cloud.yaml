@@ -1,3 +1,8 @@
+profile::idp::ldap_attributes:
+- cn
+- memberOf
+- mail
+- uid
 profile::idp::max_session_length: 604800
 profile::idp::services:
   cloud:
