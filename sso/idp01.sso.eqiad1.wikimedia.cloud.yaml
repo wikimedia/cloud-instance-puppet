@@ -5,8 +5,8 @@ profile::idp::ldap_attributes:
 - mail
 - uid
 profile::idp::max_session_length: 604800
+profile::idp::server_name: https://${lookup(fqdn)}
 profile::idp::services:
   cloud:
     id: 1
     service_id: https://(.*)\.eqiad1\.wikimedia\.cloud(/.*)?
-rofile::idp::server_name: https://${lookup(fqdn)}
