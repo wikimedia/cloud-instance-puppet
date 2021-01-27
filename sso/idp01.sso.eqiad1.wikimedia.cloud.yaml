@@ -1,4 +1,5 @@
 profile::idp::actuators: []
+profile::idp::enable_cors: false
 profile::idp::is_staging_host: false
 profile::idp::ldap_attributes:
 - cn
