@@ -4,6 +4,7 @@ profile::wmcs::proxy::static::acme_chief_certs:
 - wma
 - tiles
 - wmflabs
+profile::wmcs::proxy::static::blocked_referers: schiebt-sie-ab.de
 profile::wmcs::proxy::static::proxy_mappings:
   0.wma.wmflabs.org:
     certname: wma
