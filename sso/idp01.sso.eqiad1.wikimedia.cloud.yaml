@@ -1,3 +1,4 @@
+profile::idp::actuators: []
 profile::idp::ldap_attributes:
 - cn
 - memberOf
