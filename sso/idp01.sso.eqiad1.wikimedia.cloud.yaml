@@ -1,4 +1,4 @@
-mariadb::config::ssl: true
+mariadb::config::ssl: 'on'
 mariadb::config::ssl_ca: ${facts.puppet_config.localcacert}
 mariadb::config::ssl_cert: ${facts.puppet_config.hostprivkey}
 mariadb::config::ssl_key: ${facts.puppet_config.hostcert}
