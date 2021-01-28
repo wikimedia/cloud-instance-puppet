@@ -1,3 +1,5 @@
 - role::idp
+- mariadb::packages_wmf
 - mariadb::service
+- mariadb::config
 - profile::mariadb::generic_server
