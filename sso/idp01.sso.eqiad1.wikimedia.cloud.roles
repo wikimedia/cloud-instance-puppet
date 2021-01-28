@@ -1,1 +1,2 @@
 - role::idp
+- profile::mariadb::generic_server
