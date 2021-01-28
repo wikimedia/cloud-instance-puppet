@@ -1,5 +1,1 @@
 - role::idp
-- 'file {''/tmp/foo'':'
-- ensure => file,
-- content => 'foo',
-- '}'
