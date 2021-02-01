@@ -1,1 +1,1 @@
-profile::wmcs::db::wikireplicas::query_sampler::in_setup: true
+profile::wmcs::db::wikireplicas::querysampler::in_setup: true
