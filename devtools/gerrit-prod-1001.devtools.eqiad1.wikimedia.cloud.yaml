@@ -2,3 +2,4 @@ profile::java::enable_dbg: true
 profile::java::java_packages:
 - variant: jdk
   version: '8'
+puppetmaster: puppetmaster-1001.devtools.eqiad1.wikimedia.cloud
