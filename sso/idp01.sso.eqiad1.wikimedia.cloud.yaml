@@ -10,5 +10,5 @@ openldap::extra_schemas:
 - sudo.schema
 - wmf-user.schema
 openldap::server_id: 1
-openldap::suffix: dc=sso,dc=wikimedia,dc=cloud
+openldap::suffix: dc=sso,dc=eqiad1,dc=wikimedia,dc=cloud
 puppetmaster: puppetprimary.sso.eqiad1.wikimedia.cloud
