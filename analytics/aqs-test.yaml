@@ -4,7 +4,7 @@ profile::aqs::cassandra_password: '%{passwords::aqs::aqs_user}'
 profile::aqs::cassandra_user: aqs
 profile::aqs::druid_datasources:
   mediawiki_history: mediawiki_history_reduced_2021-01
-profile::aqs::druid_host: deployment-aqs01.deployment-prep.eqiad.wmflabs
+profile::aqs::druid_host: aqs-test1001.analytics.eqiad1.wikimedia.cloud
 profile::aqs::druid_properties:
   host: localhost
   port: 8082
@@ -15,15 +15,15 @@ profile::aqs::druid_uri_pattern: ^http:\/\/druid-public-broker.svc.eqiad.wmnet:8
 profile::aqs::logstash_host: deployment-logstash03.deployment-prep.eqiad.wmflabs
 profile::aqs::monitoring_enabled: false
 profile::aqs::seeds:
-- deployment-aqs01.deployment-prep.eqiad.wmflabs
-- deployment-aqs02.deployment-prep.eqiad.wmflabs
-- deployment-aqs03.deployment-prep.eqiad.wmflabs
+- aqs-test1001.analytics.eqiad1.wikimedia.cloud
+- aqs-test1002.analytics.eqiad1.wikimedia.cloud
+- aqs-test1003.analytics.eqiad1.wikimedia.cloud
 profile::aqs::statsd_host: localhost
 profile::aqs::use_nodejs10: true
 profile::cassandra::instances:
-  deployment-aqs01.deployment-prep.eqiad.wmflabs: {}
-  deployment-aqs02.deployment-prep.eqiad.wmflabs: {}
-  deployment-aqs03.deployment-prep.eqiad.wmflabs: {}
+  aqs-test1001.analytics.eqiad1.wikimedia.cloud: {}
+  aqs-test1002.analytics.eqiad1.wikimedia.cloud: {}
+  aqs-test1003.analytics.eqiad1.wikimedia.cloud: {}
 profile::cassandra::rack: rack1
 profile::cassandra::settings:
   cluster_name: Analytics Query Service Storage Beta
