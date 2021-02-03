@@ -20,6 +20,7 @@ profile::aqs::seeds:
 - aqs-test1003.analytics.eqiad1.wikimedia.cloud
 profile::aqs::statsd_host: localhost
 profile::aqs::use_nodejs10: true
+profile::cassandra::allow_analytics: true
 profile::cassandra::instances:
   aqs-test1001.analytics.eqiad1.wikimedia.cloud: {}
   aqs-test1002.analytics.eqiad1.wikimedia.cloud: {}
