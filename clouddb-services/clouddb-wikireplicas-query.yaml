@@ -1,2 +1,2 @@
-profile::wmcs::db::wikireplicas::querysampler::in_setup: true
+profile::wmcs::db::wikireplicas::querysampler::in_setup: false
 puppetmaster: clouddb-services-puppetmaster-01.clouddb-services.eqiad.wmflabs
