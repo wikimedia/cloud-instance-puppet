@@ -33,3 +33,4 @@ profile::cassandra::settings:
   listen_address: '%{::ipaddress}'
   logstash_host: deployment-logstash03.deployment-prep.eqiad.wmflabs
   target_version: '2.2'
+profile::rsyslog::kafka_shipper::kafka_brokers: test
