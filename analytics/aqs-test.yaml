@@ -1,0 +1,34 @@
+profile::aqs::cassandra_default_consistency: localOne
+profile::aqs::cassandra_local_dc: datacenter1
+profile::aqs::cassandra_password: '%{passwords::aqs::aqs_user}'
+profile::aqs::cassandra_user: aqs
+profile::aqs::druid_datasources:
+  mediawiki_history: mediawiki_history_reduced_2021-01
+profile::aqs::druid_host: deployment-aqs01.deployment-prep.eqiad.wmflabs
+profile::aqs::druid_properties:
+  host: localhost
+  port: 8082
+  query_path: /druid/v2/
+  scheme: http
+profile::aqs::druid_query_path: /druid/v2/
+profile::aqs::druid_uri_pattern: ^http:\/\/druid-public-broker.svc.eqiad.wmnet:8082\/druid\/v2
+profile::aqs::logstash_host: deployment-logstash03.deployment-prep.eqiad.wmflabs
+profile::aqs::monitoring_enabled: false
+profile::aqs::seeds:
+- deployment-aqs01.deployment-prep.eqiad.wmflabs
+- deployment-aqs02.deployment-prep.eqiad.wmflabs
+- deployment-aqs03.deployment-prep.eqiad.wmflabs
+profile::aqs::statsd_host: localhost
+profile::aqs::use_nodejs10: true
+profile::cassandra::instances:
+  deployment-aqs01.deployment-prep.eqiad.wmflabs: {}
+  deployment-aqs02.deployment-prep.eqiad.wmflabs: {}
+  deployment-aqs03.deployment-prep.eqiad.wmflabs: {}
+profile::cassandra::rack: rack1
+profile::cassandra::settings:
+  cluster_name: Analytics Query Service Storage Beta
+  default_instance_params:
+    rpc_address: '%{::ipaddress}'
+  listen_address: '%{::ipaddress}'
+  logstash_host: deployment-logstash03.deployment-prep.eqiad.wmflabs
+  target_version: '2.2'
