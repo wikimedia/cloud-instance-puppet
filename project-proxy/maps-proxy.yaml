@@ -43,7 +43,7 @@ profile::wmcs::proxy::static::proxy_mappings:
     certname: tiles
     domain: maps-wma.maps.eqiad1.wikimedia.cloud
   maps.wmflabs.org:
-    certname: tiles
+    certname: maps
     domain: maps-tiles1.maps.eqiad1.wikimedia.cloud
   tiles.wmflabs.org:
     certname: tiles
