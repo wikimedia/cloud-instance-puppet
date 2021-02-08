@@ -159,7 +159,7 @@ scap::sources:
     repository: analytics/superset/deploy
   analytics/turnilo/deploy:
     repository: analytics/turnilo/deploy
-scap::wmflabs_master: deployment-server.analytics.eqiad.wmflabs
+scap::wmflabs_master: deployment-deploy01.deployment-prep.eqiad1.wikimedia.cloud
 zookeeper_clusters:
   main-eqiad:
     hosts:
