@@ -1,4 +1,4 @@
-deployment_server: deployment-server.analytics.eqiad.wmflabs
+deployment_server: deployment-deploy01.deployment-prep.eqiad1.wikimedia.cloud
 hadoop_clusters:
   analytics-hadoop-labs:
     core_site_extra_properties:
