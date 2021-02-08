@@ -136,7 +136,7 @@ profile::zookeeper::is_critical: false
 profile::zookeeper::max_client_connections: 1024
 profile::zookeeper::sync_limit: 8
 profile::zookeeper::zookeeper_version: installed
-scap::deployment_server: deployment-server.analytics.eqiad.wmflabs
+scap::deployment_server: deployment-deploy01.deployment-prep.eqiad1.wikimedia.cloud
 scap::dsh::groups:
   mediawiki-installation:
     hosts:
