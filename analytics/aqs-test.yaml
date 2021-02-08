@@ -25,6 +25,7 @@ profile::cassandra::instances:
   aqs-test1001.analytics.eqiad1.wikimedia.cloud: {}
   aqs-test1002.analytics.eqiad1.wikimedia.cloud: {}
   aqs-test1003.analytics.eqiad1.wikimedia.cloud: {}
+profile::cassandra::monitor_enabled: false
 profile::cassandra::rack: rack1
 profile::cassandra::settings:
   cluster_name: Analytics Query Service Storage Beta
