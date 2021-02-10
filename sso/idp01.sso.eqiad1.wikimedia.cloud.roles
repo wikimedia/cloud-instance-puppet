@@ -2,3 +2,4 @@
 - profile::mariadb::packages_wmf
 - mariadb::service
 - mariadb::config
+- profile::idp::client::httpd
