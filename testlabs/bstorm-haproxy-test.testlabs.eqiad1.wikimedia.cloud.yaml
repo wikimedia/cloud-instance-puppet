@@ -1,4 +1,0 @@
-profile::mariadb::proxy::firewall: disabled
-profile::mariadb::proxy::replicas::servers:
-  dbproxy1019:
-    address: 10.64.37.28:3306
