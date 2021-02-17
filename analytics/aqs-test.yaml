@@ -30,6 +30,7 @@ profile::cassandra::rack: rack1
 profile::cassandra::settings:
   cluster_name: Analytics Query Service Storage Beta
   default_instance_params:
+    data_directory_base: /srv/cassandra
     rpc_address: '%{::ipaddress}'
   listen_address: '%{::ipaddress}'
   logstash_host: deployment-logstash03.deployment-prep.eqiad.wmflabs
