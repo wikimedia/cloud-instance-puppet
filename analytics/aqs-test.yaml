@@ -22,12 +22,9 @@ profile::aqs::statsd_host: localhost
 profile::cassandra::allow_analytics: true
 profile::cassandra::disable_graphite_metrics: true
 profile::cassandra::instances:
-  aqs-test1001.analytics.eqiad1.wikimedia.cloud:
-    data_file_directories: /srv/cassandra
-  aqs-test1002.analytics.eqiad1.wikimedia.cloud:
-    data_file_directories: /srv/cassandra
-  aqs-test1003.analytics.eqiad1.wikimedia.cloud:
-    data_file_directories: /srv/cassandra
+  aqs-test1001.analytics.eqiad1.wikimedia.cloud: {}
+  aqs-test1002.analytics.eqiad1.wikimedia.cloud: {}
+  aqs-test1003.analytics.eqiad1.wikimedia.cloud: {}
 profile::cassandra::monitor_enabled: false
 profile::cassandra::rack: rack1
 profile::cassandra::settings:
