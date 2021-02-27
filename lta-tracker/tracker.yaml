@@ -1,1 +1,1 @@
-profile::envoy::ensure: present
+profile::tlsproxy::envoy::global_cert_name: appserver
