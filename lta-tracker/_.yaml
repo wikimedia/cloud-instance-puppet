@@ -1,1 +1,2 @@
+profile::ldap::client::labs::client_stack: sssd
 puppetmaster: puppet-lta.lta-tracker.eqiad.wmflabs
