@@ -1,6 +1,6 @@
 profile::redis::multidc::aof: false
 profile::redis::multidc::category: sessions
-profile::redis::multidc::discovery: false
+profile::redis::multidc::discovery: ''
 profile::redis::multidc::settings:
   auto_aof_rewrite_min_size: 512mb
   bind: 0.0.0.0
