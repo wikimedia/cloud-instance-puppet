@@ -28,6 +28,7 @@ profile::ores::web::poolcounter_nodes:
 - ores-poolcounter-1:7531
 profile::ores::web::port: 8080
 profile::ores::web::redis_host: ores-redis-02
+profile::ores::web::redis_password: not_a_real_password
 profile::ores::web::workers: 36
 profile::ores::web::workers_per_core: 12
 profile::prometheus::statsd_exporter::mappings: []
