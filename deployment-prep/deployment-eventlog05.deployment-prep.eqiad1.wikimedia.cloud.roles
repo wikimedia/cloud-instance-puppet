@@ -1,3 +1,4 @@
 - profile::eventlogging::analytics::mysql
 - profile::eventlogging::analytics::processor
 - profile::mariadb::misc::eventlogging::database
+- profile::eventlogging::analytics::files
