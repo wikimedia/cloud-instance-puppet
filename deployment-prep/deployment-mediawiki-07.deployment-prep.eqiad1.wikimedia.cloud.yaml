@@ -1,1 +1,2 @@
-puppetmaster: deployment-puppetmaster03.deployment-prep.eqiad.wmflabs
+profile::mediawiki::mcrouter_wancache::use_onhost_memcached: true
+puppetmaster: deployment-puppetmaster04.deployment-prep.eqiad.wmflabs
