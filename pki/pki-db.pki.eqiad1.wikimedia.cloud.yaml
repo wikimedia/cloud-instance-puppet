@@ -5,3 +5,4 @@ mariadb::config::ssl: puppet-cert
 profile::pki::client::certs:
   foobar.example.com:
     label: WMF_test_intermediate_ca
+    provide_chain: true
