@@ -1,0 +1,2 @@
+profile::etcd::v3::cluster_bootstrap: true
+profile::etcd::v3::discovery: name=http://deployment-etcd02.deployment-prep.eqiad1.wikimedia.cloud:2380
