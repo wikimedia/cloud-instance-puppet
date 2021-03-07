@@ -1,7 +1,1 @@
-profile::redis::multidc::version_override: 2
-redis::shards:
-  sessions:
-    eqiad:
-      shard01:
-        host: 172.16.5.17
-        port: 6379
+{}
