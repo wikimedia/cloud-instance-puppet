@@ -1,2 +1,3 @@
-profile::base::remote_syslog_tls: syslog-server01.auditlogging.eqiad1.wikimedia.cloud:6514
+profile::base::remote_syslog_tls:
+- syslog-server01.auditlogging.eqiad1.wikimedia.cloud:6514
 puppetmaster: puppetmaster01.auditlogging.eqiad1.wikimedia.cloud
