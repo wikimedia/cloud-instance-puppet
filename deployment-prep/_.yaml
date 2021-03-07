@@ -236,10 +236,7 @@ redis::shards:
         host: 172.16.5.17
         port: 6379
       shard03:
-        host: 172.16.5.12
-        port: 6379
-      shard04:
-        host: 172.16.5.2
+        host: 172.16.3.96
         port: 6379
 restbase::deploy::public_key_file: puppet:///private/ssh/tin/servicedeploy_rsa.pub
 restbase::deploy::scap::public_key_file: puppet:///private/ssh/tin/servicedeploy_rsa.pub
