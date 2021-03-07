@@ -1,1 +1,2 @@
 puppetmaster: puppetmaster01.auditlogging.eqiad1.wikimedia.cloud
+role::syslog::centralserver::use_kafka: false
