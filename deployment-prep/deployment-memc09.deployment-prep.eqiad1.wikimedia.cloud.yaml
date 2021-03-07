@@ -1,1 +1,7 @@
 profile::redis::multidc::version_override: 2
+redis::shards:
+  sessions:
+    eqiad:
+      shard01:
+        host: deployment-memc09.deployment-prep.eqiad1.wikimedia.cloud
+        port: 6379
