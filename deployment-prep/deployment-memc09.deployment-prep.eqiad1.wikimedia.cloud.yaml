@@ -1,1 +1,1 @@
-{}
+profile::redis::multidc::version_override: 2
