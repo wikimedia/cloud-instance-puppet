@@ -230,10 +230,10 @@ redis::shards:
   sessions:
     eqiad:
       shard01:
-        host: 172.16.5.76
+        host: 172.16.0.28
         port: 6379
       shard02:
-        host: 172.16.5.17
+        host: 172.16.4.30
         port: 6379
       shard03:
         host: 172.16.3.96
