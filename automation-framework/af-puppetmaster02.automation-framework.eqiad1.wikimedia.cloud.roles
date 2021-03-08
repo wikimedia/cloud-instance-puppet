@@ -1,3 +1,0 @@
-- role::puppetmaster::standalone
-- role::prometheus::node_exporter
-- profile::debmonitor::client
