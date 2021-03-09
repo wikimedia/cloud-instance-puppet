@@ -1,3 +1,4 @@
+profile::grafana::enable_cas: false
 swift::hash_path_suffix: abcdef
 swift::params::accounts:
   thanos_thanos:
