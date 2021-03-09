@@ -1,1 +1,3 @@
 - profile::labs::cindermount::srv
+- profile::labs::cindermount::foo
+- profile::labs::cindermount::bar
