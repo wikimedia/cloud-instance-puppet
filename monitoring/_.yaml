@@ -1,3 +1,5 @@
+profile::grafana::domain: o11y-grafana.wmcloud.org
+profile::grafana::domainrw: o11y-grafana-rw.wmcloud.org
 swift::hash_path_suffix: abcdef
 swift::params::accounts:
   thanos_thanos:
