@@ -1,2 +1,0 @@
-profile::etcd::cluster_name: deployment-prep.eqiad.wmflabs
-puppetmaster: deployment-puppetmaster04.deployment-prep.eqiad.wmflabs
