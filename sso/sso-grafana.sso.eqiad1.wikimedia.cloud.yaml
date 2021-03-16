@@ -1,1 +1,2 @@
+profile::envoy::ensure: absent
 puppetmaster: puppetprimary.sso.eqiad1.wikimedia.cloud
