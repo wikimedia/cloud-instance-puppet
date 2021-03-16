@@ -1,5 +1,5 @@
 profile::idp::client::httpd::sites:
-  '%{alias(''''profile::grafana::domain'''')}':
+  '%{alias(''profile::grafana::domain'')}':
     document_root: /usr/share/grafana/public
     proxied_as_https: true
     required_groups:
@@ -7,5 +7,4 @@ profile::idp::client::httpd::sites:
     - cn=nda,ou=groups,dc=wikimedia,dc=org
     vhost_content: profile/idp/client/httpd-grafana.erb
     vhost_settings:
-      ro_vhost: '%{alias(''''profile::grafanarw::domain)}'
-puppetmaster: puppetprimary.sso.eqiad1.wikimedia.cloud
+      ro_vhost: '%{alias(''profile::grafana::domain'')}'
