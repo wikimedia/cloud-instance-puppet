@@ -1,2 +1,3 @@
-profile::grafana::active_host: '%{facts.networking.fqdn}'
+profile::grafana::domain: sso-grafana.wmcloud.org
+profile::grafana::domainrw: sso-grafana-rw.wmcloud.org
 puppetmaster: puppetprimary.sso.eqiad1.wikimedia.cloud
