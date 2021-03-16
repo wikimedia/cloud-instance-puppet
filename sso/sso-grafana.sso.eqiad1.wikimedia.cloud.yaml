@@ -1,2 +1,2 @@
-profile::grafana::production: ${facts.fqdn}
+profile::grafana::active_host: ${facts.fqdn}
 puppetmaster: puppetprimary.sso.eqiad1.wikimedia.cloud
