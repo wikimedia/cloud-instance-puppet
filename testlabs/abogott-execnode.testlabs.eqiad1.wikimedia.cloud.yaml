@@ -38,10 +38,7 @@ profile::elasticsearch::common_settings:
   send_logs_to_logstash: false
   short_cluster_name: omega
   transport_tcp_port: 9300
-  unicast_hosts:
-  - tools-elastic-01.tools.eqiad.wmflabs
-  - tools-elastic-02.tools.eqiad.wmflabs
-  - tools-elastic-03.tools.eqiad.wmflabs
+  unicast_hosts: null
 profile::elasticsearch::dc_settings:
   awareness_attributes: ''
 profile::elasticsearch::instances: {}
@@ -77,9 +74,7 @@ puppetmaster: abogott-puppetmaster.testlabs.eqiad.wmflabs
 role::aptly::client::servername: tools-sge-services-03.tools.eqiad.wmflabs
 role::labs::nfsclient::lookupcache: all
 role::toollabs::logging::sender::centralserver: tools-logs-01.tools.eqiad.wmflabs
-role::toollabs::logging::sender::centralserver_ips:
-- 10.68.17.229
-- 10.68.22.34
+role::toollabs::logging::sender::centralserver_ips: null
 role::toollabs::services::active_host: tools-services-02.tools.eqiad.wmflabs
 sonofgridengine::gridmaster: tools-sgegrid-master.tools.eqiad.wmflabs
 ssh::server::disable_nist_kex: false
@@ -89,6 +84,4 @@ sudo_flavor: sudo
 toollabs::active_mail_relay: tools-mail-02.tools.eqiad.wmflabs
 toollabs::checker_hosts:
 - tools-checker-03.tools.eqiad.wmflabs
-toollabs::proxy::proxies:
-- tools-proxy-05.tools.eqiad.wmflabs
-- tools-proxy-06.tools.eqiad.wmflabs
+toollabs::proxy::proxies: null
