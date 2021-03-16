@@ -1,2 +1,3 @@
+- profile::base::firewall::extra
 - httpd
 - profile::grafana
