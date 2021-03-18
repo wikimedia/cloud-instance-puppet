@@ -105,7 +105,7 @@ role::aptly::client::servername: tools-sge-services-03.tools.eqiad.wmflabs
 role::labs::nfsclient::lookupcache: all
 role::puppetmaster::standalone::autosign: true
 role::toollabs::k8s::master::use_puppet_certs: true
-sonofgridengine::gridmaster: toolsbeta-sgegrid-master.toolsbeta.eqiad.wmflabs
+sonofgridengine::gridmaster: toolsbeta-sgegrid-master.toolsbeta.eqiad1.wikimedia.cloud
 ssh::server::disable_nist_kex: false
 ssh::server::enable_hba: true
 ssh::server::explicit_macs: false
