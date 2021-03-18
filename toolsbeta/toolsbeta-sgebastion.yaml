@@ -1,2 +1,3 @@
+login_server: true
 mount_nfs: true
 profile::toolforge::bastion::nproc: 100
