@@ -1,3 +1,0 @@
-profile::ci::docker::settings:
-  log-driver: none
-puppetmaster: abogott-puppetmaster.testlabs.eqiad.wmflabs
