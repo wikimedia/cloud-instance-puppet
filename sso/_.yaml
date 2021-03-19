@@ -1,2 +1,3 @@
-debmonitor: debmonitor01.sso.eqiad.wmflabs
+debmonitor: pki-debmon.wmcloud.org
 profile::openldap::backup: false
+puppetmaster: puppetmaster.cloudinfra.wmflabs.org
