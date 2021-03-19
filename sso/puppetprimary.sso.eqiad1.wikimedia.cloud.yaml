@@ -1,4 +1,4 @@
-profile::puppetmaster::common::puppetdb_hosts:
-- sso-pdb.sso.eqiad1.wikimedia.cloud
-profile::puppetmaster::common::storeconfigs: puppetdb
 puppetmaster: puppetmaster.cloudinfra.wmflabs.org
+role::puppetmaster::standalone::puppetdb_host:
+- sso-pdb.sso.eqiad1.wikimedia.cloud
+role::puppetmaster::standalone::storeconfigs: puppetdb
