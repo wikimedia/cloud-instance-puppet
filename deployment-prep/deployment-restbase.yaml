@@ -1,11 +1,8 @@
 profile::cassandra::instances:
-  deployment-restbase02.deployment-prep.eqiad.wmflabs: {}
   deployment-restbase03.deployment-prep.eqiad.wmflabs: {}
 profile::restbase::hosts:
-- deployment-restbase02.deployment-prep.eqiad.wmflabs
 - deployment-restbase03.deployment-prep.eqiad.wmflabs
 profile::restbase::seeds_ng:
-- deployment-restbase02.deployment-prep.eqiad.wmflabs
 - deployment-restbase03.deployment-prep.eqiad.wmflabs
 profile::tlsproxy::envoy::capitalize_headers: false
 profile::tlsproxy::envoy::ensure: absent
