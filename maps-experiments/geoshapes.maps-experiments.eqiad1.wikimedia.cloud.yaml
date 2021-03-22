@@ -24,8 +24,6 @@ profile::docker::runner::service_defs:
       spec: ./spec.yaml
       table: planet_osm_polygon
       wikidataQueryService: https://query.wikidata.org/bigdata/namespace/wdq/sparql
-    environment:
-      DEBUG: apn
     namespace: wikimedia
     override_cmd: -c /etc/mediawiki-services-push-notifications/config.yaml
     port: 6536
