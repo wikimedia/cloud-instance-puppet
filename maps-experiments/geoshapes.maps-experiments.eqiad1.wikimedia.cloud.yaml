@@ -26,9 +26,9 @@ profile::docker::runner::service_defs:
           port: 6536
           postgres:
             database: gis
-            host: deployment-maps09
-            password: secret
-            user: default
+            host: deployment-maps08.deployment-prep.eqiad1.wikimedia.cloud
+            password: '%{lookup("profile::maps::osm_master::kartotherian_pass")}'
+            user: kartotherian
           spec: ./spec.yaml
           table: planet_osm_polygon
           wikidataQueryService: https://query.wikidata.org/bigdata/namespace/wdq/sparql
