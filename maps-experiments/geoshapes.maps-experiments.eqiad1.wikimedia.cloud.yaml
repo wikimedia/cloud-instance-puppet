@@ -35,7 +35,7 @@ profile::docker::runner::service_defs:
         module: ./dist/app.js
         name: geoshapes
     namespace: wikimedia
-    override_cmd: -c /etc/mediawiki-services-push-notifications/config.yaml
+    override_cmd: -c /etc/mediawiki-services-geoshapes/config.yaml
     port: 6536
     version: 2021-03-04-093059-publish
 puppetmaster: deployment-puppetmaster04.deployment-prep.eqiad.wmflabs
