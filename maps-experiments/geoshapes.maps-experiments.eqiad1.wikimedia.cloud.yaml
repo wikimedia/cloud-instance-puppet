@@ -5,25 +5,35 @@ profile::docker::engine::version: 18.09.1+dfsg1-7.1+deb10u2
 profile::docker::runner::service_defs:
   mediawiki-services-geoshapes:
     config:
-      allowUserQueries: true
-      cors: '*'
-      lineTable: planet_osm_line
-      mwapi_req:
-        body: '{{ default(request.query, {}) }}'
-        headers: null
-        method: post
-        uri: https://meta.wikipedia.org/w/api.php
-        user-agent: '{{user-agent}}'
-      polygonTable: planet_osm_polygon
-      port: 6536
-      postgres:
-        database: gis
-        host: deployment-maps09
-        password: secret
-        user: default
-      spec: ./spec.yaml
-      table: planet_osm_polygon
-      wikidataQueryService: https://query.wikidata.org/bigdata/namespace/wdq/sparql
+      logging:
+        level: trace
+      metrics:
+        port: 9100
+        type: prometheus
+      num_workers: 0
+      services:
+      - conf:
+          allowUserQueries: true
+          cors: '*'
+          lineTable: planet_osm_line
+          mwapi_req:
+            body: '{{ default(request.query, {}) }}'
+            headers: null
+            method: post
+            uri: https://meta.wikipedia.org/w/api.php
+            user-agent: '{{user-agent}}'
+          polygonTable: planet_osm_polygon
+          port: 6536
+          postgres:
+            database: gis
+            host: deployment-maps09
+            password: secret
+            user: default
+          spec: ./spec.yaml
+          table: planet_osm_polygon
+          wikidataQueryService: https://query.wikidata.org/bigdata/namespace/wdq/sparql
+        module: ./dist/app.js
+        name: geoshapes
     namespace: wikimedia
     override_cmd: -c /etc/mediawiki-services-push-notifications/config.yaml
     port: 6536
