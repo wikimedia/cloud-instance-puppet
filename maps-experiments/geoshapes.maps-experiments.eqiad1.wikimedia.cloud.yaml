@@ -27,7 +27,7 @@ profile::docker::runner::service_defs:
           postgres:
             database: gis
             host: deployment-maps08.deployment-prep.eqiad1.wikimedia.cloud
-            password: '%{lookup("profile::maps::osm_master::kartotherian_pass")}'
+            password: '%{lookup("profile::maps::geoshapes::osm_password")}'
             user: kartotherian
           spec: ./spec.yaml
           table: planet_osm_polygon
