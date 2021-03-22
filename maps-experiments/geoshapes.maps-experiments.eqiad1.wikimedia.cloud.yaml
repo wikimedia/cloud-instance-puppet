@@ -3,32 +3,31 @@ profile::docker::engine::packagename: docker.io
 profile::docker::engine::settings: {}
 profile::docker::engine::version: 18.09.1+dfsg1-7.1+deb10u2
 profile::docker::runner::service_defs:
-  config:
-    body: '{{ default(request.query, {}) }}'
-    headers: null
-    host: meta.wikimedia.beta.wmflabs.org
-    level: trace
-    logging: null
-    method: post
-    metrics: null
-    module: ./dist/app.js
-    mwapi_req: null
-    name: geoshapes
-    num_workers: 0
-    port: 6537
-    services:
-    - conf: null
-    spec: ./spec.yaml
-    type: prometheus
-    uri: http://deployment-mediawiki-07.deployment-prep.eqiad1.wikimedia.cloud/w/api.php
-    user-agent: '{{user-agent}}'
-    user_agent: geoshapes (beta)
-    x-forwarded-proto: https
-  environment:
-    DEBUG: apn
-  mediawiki-services-geoshapes: null
-  namespace: wikimedia
-  override_cmd: -c /etc/mediawiki-services-push-notifications/config.yaml
-  port: 6537
-  version: 2021-03-04-093059-publish
+  mediawiki-services-geoshapes:
+    config:
+      allowUserQueries: true
+      cors: '*'
+      lineTable: planet_osm_line
+      mwapi_req:
+        body: '{{ default(request.query, {}) }}'
+        headers: null
+        method: post
+        uri: https://meta.wikipedia.org/w/api.php
+        user-agent: '{{user-agent}}'
+      polygonTable: planet_osm_polygon
+      port: 6536
+      postgres:
+        database: gis
+        host: deployment-maps09
+        password: secret
+        user: default
+      spec: ./spec.yaml
+      table: planet_osm_polygon
+      wikidataQueryService: https://query.wikidata.org/bigdata/namespace/wdq/sparql
+    environment:
+      DEBUG: apn
+    namespace: wikimedia
+    override_cmd: -c /etc/mediawiki-services-push-notifications/config.yaml
+    port: 6536
+    version: 2021-03-04-093059-publish
 puppetmaster: deployment-puppetmaster04.deployment-prep.eqiad.wmflabs
