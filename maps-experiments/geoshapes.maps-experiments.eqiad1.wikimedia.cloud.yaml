@@ -1,0 +1,34 @@
+profile::docker::engine::declare_service: true
+profile::docker::engine::packagename: docker.io
+profile::docker::engine::settings: {}
+profile::docker::engine::version: 18.09.1+dfsg1-7.1+deb10u2
+profile::docker::runner::service_defs:
+  config:
+    body: '{{ default(request.query, {}) }}'
+    headers: null
+    host: meta.wikimedia.beta.wmflabs.org
+    level: trace
+    logging: null
+    method: post
+    metrics: null
+    module: ./dist/app.js
+    mwapi_req: null
+    name: geoshapes
+    num_workers: 0
+    port: 6537
+    services:
+    - conf: null
+    spec: ./spec.yaml
+    type: prometheus
+    uri: http://deployment-mediawiki-07.deployment-prep.eqiad1.wikimedia.cloud/w/api.php
+    user-agent: '{{user-agent}}'
+    user_agent: geoshapes (beta)
+    x-forwarded-proto: https
+  environment:
+    DEBUG: apn
+  mediawiki-services-geoshapes: null
+  namespace: wikimedia
+  override_cmd: -c /etc/mediawiki-services-push-notifications/config.yaml
+  port: 6537
+  version: 2021-03-04-093059-publish
+puppetmaster: deployment-puppetmaster04.deployment-prep.eqiad.wmflabs
