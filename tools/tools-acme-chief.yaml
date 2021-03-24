@@ -18,6 +18,7 @@ profile::acme_chief::certificates:
     authorized_regexes:
     - ^tools-proxy-[0-9]+\.tools\.eqiad\.wmflabs$
     - ^tools-docker-registry-[0-9]+\.tools\.eqiad\.wmflabs$
+    - ^tools-docker-registry-[0-9]+\.tools\.eqiad1\.wikimedia\.cloud$
     - ^tools-k8s-master-[0-9]+\.tools\.eqiad\.wmflabs$
     challenge: dns-01
   tools-legacy:
