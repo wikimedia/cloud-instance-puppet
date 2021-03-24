@@ -1,7 +1,5 @@
 profile::cassandra::single_instance::cluster: misc
 profile::cassandra::single_instance::jmx_exporter_enabled: true
-profile::cassandra::single_instance::seeds:
-- localhost
 profile::maps::apps::kartotherian_storage_id: v4
 profile::maps::apps::redis_server: redis://localhost
 profile::maps::apps::tilerator_enable: true
