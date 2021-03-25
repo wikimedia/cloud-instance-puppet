@@ -1,3 +1,2 @@
 - role::labs::quarry::web
 - role::labs::lvm::srv
-- role::labs::quarry::killer
