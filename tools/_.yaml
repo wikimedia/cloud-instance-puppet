@@ -87,13 +87,12 @@ prometheus_nodes:
 - tools-prometheus-03.tools.eqiad.wmflabs
 - tools-prometheus-04.tools.eqiad.wmflabs
 puppetmaster: tools-puppetmaster-02.tools.eqiad.wmflabs
-role::aptly::client::servername: tools-sge-services-03.tools.eqiad.wmflabs
+role::aptly::client::servername: tools-services-05.tools.eqiad1.wikimedia.cloud
 role::labs::nfsclient::lookupcache: all
 role::toollabs::logging::sender::centralserver: tools-logs-01.tools.eqiad.wmflabs
 role::toollabs::logging::sender::centralserver_ips:
 - 10.68.17.229
 - 10.68.22.34
-role::toollabs::services::active_host: tools-services-02.tools.eqiad.wmflabs
 sonofgridengine::gridmaster: tools-sgegrid-master.tools.eqiad.wmflabs
 ssh::server::disable_nist_kex: false
 ssh::server::enable_hba: true
