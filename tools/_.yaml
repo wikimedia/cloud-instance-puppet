@@ -93,7 +93,7 @@ role::toollabs::logging::sender::centralserver: tools-logs-01.tools.eqiad.wmflab
 role::toollabs::logging::sender::centralserver_ips:
 - 10.68.17.229
 - 10.68.22.34
-sonofgridengine::gridmaster: tools-sgegrid-master.tools.eqiad.wmflabs
+sonofgridengine::gridmaster: tools-sgegrid-master.tools.eqiad1.wikimedia.cloud
 ssh::server::disable_nist_kex: false
 ssh::server::enable_hba: true
 ssh::server::explicit_macs: false
