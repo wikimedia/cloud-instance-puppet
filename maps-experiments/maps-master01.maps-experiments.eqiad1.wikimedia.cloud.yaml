@@ -10,3 +10,4 @@ profile::maps::osm_master::disable_admin_cron: true
 profile::maps::osm_master::disable_replication_cron: true
 profile::maps::osm_master::engine: imposm3
 profile::maps::postgresql_common::chown_logfile: false
+puppetmaster: maps-puppetmaster02.maps-experiments.eqiad1.wikimedia.cloud
