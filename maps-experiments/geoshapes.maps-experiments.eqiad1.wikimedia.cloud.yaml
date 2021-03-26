@@ -26,7 +26,7 @@ profile::docker::runner::service_defs:
           port: 6536
           postgres:
             database: gis
-            host: deployment-maps08.deployment-prep.eqiad1.wikimedia.cloud
+            host: maps-master01.maps-experiments.eqiad1.wikimedia.cloud
             password: '%{lookup("profile::maps::geoshapes::osm_password")}'
             user: kartotherian
           spec: ./spec.yaml
