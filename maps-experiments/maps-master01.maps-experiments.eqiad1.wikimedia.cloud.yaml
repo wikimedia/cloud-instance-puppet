@@ -1,6 +1,6 @@
 cassandra::metrics::blacklist:
 - .*\.metrics\.Table\..*$
-cassandra::target_version: '2.2'
+cassandra::target_version: 3.x
 profile::cassandra::single_instance::cluster: misc
 profile::cassandra::single_instance::dc: labs
 profile::cassandra::single_instance::graphite_host: cloudmetrics1002.eqiad.wmnet
