@@ -1,5 +1,5 @@
 - profile::maps::apps
-- profile::maps::cassandra
 - profile::maps::osm_master
+- profile::maps::cassandra
 - profile::redis::master
 - profile::prometheus::postgres_exporter
