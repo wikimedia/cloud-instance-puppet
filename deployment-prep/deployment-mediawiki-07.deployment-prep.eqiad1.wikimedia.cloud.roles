@@ -1,3 +1,4 @@
+- role::labs::lvm::srv
 - profile::rsyslog::kafka_shipper
 - role::mediawiki::appserver
 - role::beta::mediawiki
