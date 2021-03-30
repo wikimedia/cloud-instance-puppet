@@ -1,0 +1,3 @@
+- role::beta::deploymentserver
+- role::deployment_server
+- role::aptly::server
