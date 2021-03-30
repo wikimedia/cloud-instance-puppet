@@ -2,3 +2,4 @@
 - role::aptly::server
 - role::deployment_server
 - role::beta::deploymentserver
+- role::labs::lvm::srv
