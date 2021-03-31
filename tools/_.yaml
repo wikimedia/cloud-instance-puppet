@@ -77,7 +77,6 @@ profile::toolforge::grid::base::sysdir: /data/project/.system_sge
 profile::toolforge::k8s::calicoctl_sha: 3d92b7615d1cca58daeb03d92c2ec96ae927e28e2954d758c29b412f24da4848
 profile::toolforge::k8s::ingress_replicas: 3
 profile::toolforge::k8s::typha_enabled: true
-profile::toolforge::mailrelay::external_hostname: mail.tools.wmflabs.org
 profile::toolforge::proxies:
 - tools-proxy-05.tools.eqiad.wmflabs
 - tools-proxy-06.tools.eqiad.wmflabs
