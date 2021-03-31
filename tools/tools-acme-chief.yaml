@@ -35,6 +35,7 @@ profile::acme_chief::certificates:
     - mail.tools.wmflabs.org
     authorized_regexes:
     - ^tools-mail-[0-9]+\.tools\.eqiad\.wmflabs$
+    - ^tools-mail-[0-9]+\.tools\.eqiad1\.wikimedia\.cloud$
     challenge: dns-01
   toolserver:
     CN: toolserver.org
