@@ -96,7 +96,6 @@ sonofgridengine::gridmaster: tools-sgegrid-master.tools.eqiad1.wikimedia.cloud
 ssh::server::disable_nist_kex: false
 ssh::server::enable_hba: true
 ssh::server::explicit_macs: false
-toollabs::active_mail_relay: tools-mail-02.tools.eqiad.wmflabs
 toollabs::checker_hosts:
 - tools-checker-03.tools.eqiad.wmflabs
 toollabs::proxy::proxies:
