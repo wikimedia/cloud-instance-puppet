@@ -6,7 +6,7 @@ profile::docker::runner::service_defs:
   operations-software-tegola:
     environment:
       TEGOLA_POSTGRES_PASSWORD: '%{lookup("profile::maps::geoshapes::osm_password")}'
-    namespace: Wikimedia
+    namespace: wikimedia
     override_cmd: serve --config /srv/spikes/config/maps-tile-server01.toml
     port: 6537
     version: 2021-02-22-165502-production
