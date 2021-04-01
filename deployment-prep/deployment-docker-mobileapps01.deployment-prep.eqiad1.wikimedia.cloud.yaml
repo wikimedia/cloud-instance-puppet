@@ -53,7 +53,7 @@ profile::docker::runner::service_defs:
             method: '{{request.method}}'
             query: '{{ default(request.query, {}) }}'
             timeout: 60000
-            uri: http://deployment-restbase02.deployment-prep.eqiad.wmflabs:7231/{{domain}}/v1/{+path}
+            uri: http://deployment-restbase03.deployment-prep.eqiad1.wikimedia.cloud:7231/{{domain}}/v1/{+path}
           user_agent: Mobile-Content-Service/WMF
         module: ./app.js
         name: mobileapps
@@ -63,4 +63,4 @@ profile::docker::runner::service_defs:
     namespace: wikimedia
     override_cmd: -c /etc/mediawiki-services-mobileapps/config.yaml
     port: 8888
-    version: 2020-11-10-190707-production
+    version: 2021-03-29-160328-production
