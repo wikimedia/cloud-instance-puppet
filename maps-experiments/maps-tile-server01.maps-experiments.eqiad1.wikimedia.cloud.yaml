@@ -7,6 +7,7 @@ profile::docker::runner::service_defs:
     environment:
       TEGOLA_POSTGRES_PASSWORD: '%{lookup("profile::maps::geoshapes::osm_password")}'
     namespace: Wikimedia
+    override_cmd: serve --config /srv/spikes/config/maps-tile-server01.toml
     port: 6537
     version: 2021-02-22-165502-production
 puppetmaster: maps-puppetmaster02.maps-experiments.eqiad1.wikimedia.cloud
