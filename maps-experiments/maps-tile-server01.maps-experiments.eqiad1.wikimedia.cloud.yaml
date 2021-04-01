@@ -1,0 +1,10 @@
+profile::docker::engine::declare_service: true
+profile::docker::engine::packagename: docker.io
+profile::docker::engine::settings: {}
+profile::docker::engine::version: 18.09.1+dfsg1-7.1+deb10u2
+profile::docker::runner::service_defs:
+  operations-software-tegola:
+    namespace: wikimedia
+    port: 6537
+    version: 2021-02-22-165502-production
+puppetmaster: maps-puppetmaster02.maps-experiments.eqiad1.wikimedia.cloud
