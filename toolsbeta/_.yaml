@@ -92,7 +92,7 @@ profile::toolforge::mailrelay::external_hostname: mail.tools.wmflabs.org
 profile::toolforge::proxies:
 - toolsbeta-proxy-3.toolsbeta.eqiad1.wikimedia.cloud
 - toolsbeta-proxy-4.toolsbeta.eqiad1.wikimedia.cloud
-profile::toolforge::services::active_node: tools-services-01.eqiad.wmflabs
+profile::toolforge::services::active_node: tools-services-05.tools.eqiad1.wikimedia.cloud
 profile::toolforge::services::updatetools_enabled: false
 profile::wmcs::kubeadm::component: thirdparty/kubeadm-k8s-1-17
 prometheus::haproxy_exporter::endpoint: http://localhost:9900/stats;csv
@@ -101,7 +101,7 @@ prometheus_nodes:
 - tools-prometheus-02.tools.eqiad.wmflabs
 - tools-prometheus-03.tools.eqiad.wmflabs
 puppetmaster: toolsbeta-puppetmaster-04.toolsbeta.eqiad.wmflabs
-role::aptly::client::servername: tools-sge-services-03.tools.eqiad.wmflabs
+role::aptly::client::servername: tools-services-05.tools.eqiad1.wikimedia.cloud
 role::labs::nfsclient::lookupcache: all
 role::puppetmaster::standalone::autosign: true
 role::toollabs::k8s::master::use_puppet_certs: true
