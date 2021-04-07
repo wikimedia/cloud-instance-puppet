@@ -12,6 +12,7 @@ profile::aqs::druid_properties:
   scheme: http
 profile::aqs::druid_query_path: /druid/v2/
 profile::aqs::druid_uri_pattern: ^http:\/\/druid-public-broker.svc.eqiad.wmnet:8082\/druid\/v2
+profile::aqs::git_deploy: true
 profile::aqs::logstash_host: deployment-logstash03.deployment-prep.eqiad.wmflabs
 profile::aqs::monitoring_enabled: false
 profile::aqs::seeds:
