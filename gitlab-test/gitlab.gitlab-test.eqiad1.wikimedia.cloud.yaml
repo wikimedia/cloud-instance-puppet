@@ -1,2 +1,4 @@
-ssh::server::authorized_keys_file: /etc/ssh/userkeys/%u /etc/ssh/userkeys/%u.d/cumin
-  %h/.ssh/authorized_keys
+ssh::server::authorized_keys_file:
+- /etc/ssh/userkeys/%u
+- /etc/ssh/userkeys/%u.d/cumin
+- '%h/.ssh/authorized_keys'
