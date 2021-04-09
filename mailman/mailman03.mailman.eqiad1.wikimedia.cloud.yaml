@@ -1,1 +1,2 @@
+mailman::lists_servername: lists-polymorphic.wmcloud.org
 puppetmaster: mailman-puppetmaster.mailman.eqiad.wmflabs
