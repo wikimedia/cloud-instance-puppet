@@ -15,3 +15,5 @@ profile::wmcs::novaproxy::xff_fqdns:
 - utrs.wmflabs.org
 - xtools.wmflabs.org
 - xtools-dev.wmflabs.org
+- wsexport.wmflabs.org
+- wsexport.wmcloud.org
