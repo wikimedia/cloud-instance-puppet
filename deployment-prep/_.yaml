@@ -143,7 +143,6 @@ profile::mail::mx::verp_domains:
 - beta.wmflabs.org
 profile::mail::mx::verp_post_connect_server: meta.wikimedia.beta.wmflabs.org
 profile::maps::apps::tilerator_ncpu_ratio: 0.3
-profile::mediawiki::install_hhvm: false
 profile::mediawiki::mcrouter_wancache::has_ssl: false
 profile::mediawiki::mcrouter_wancache::use_onhost_memcached: false
 profile::mediawiki::php::icu63: true
