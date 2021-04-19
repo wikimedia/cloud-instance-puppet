@@ -5,9 +5,13 @@ profile::docker::engine::version: 18.09.1+dfsg1-7.1+deb10u2
 profile::docker::runner::service_defs:
   operations-software-tegola:
     environment:
-      TEGOLA_POSTGRES_PASSWORD: '%{lookup("profile::maps::geoshapes::osm_password")}'
+      DB_HOST: maps-master01
+      DB_NAME: gis
+      DB_PASSWORD: '%{lookup("profile::maps::osm_master::tilerator_pass")}'
+      DB_PORT: 5432
+      DB_USER: tilerator
     namespace: wikimedia
-    override_cmd: serve --config /etc/operations-software-tegola/spikes/config/maps-tile-server01.toml
-    port: 6537
+    override_cmd: serve --config /etc/operations-software-tegola/maps-config/tegola/tegola.toml
+    port: 8080
     version: 2021-02-22-165502-production
 puppetmaster: maps-puppetmaster02.maps-experiments.eqiad1.wikimedia.cloud
