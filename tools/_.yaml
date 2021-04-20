@@ -65,7 +65,7 @@ profile::kubernetes::node::disable_rsyslog: true
 profile::rsyslog::kubernetes::enable: false
 profile::standard::has_default_mail_relay: false
 profile::toolforge::active_cronrunner: tools-sgecron-01.tools.eqiad.wmflabs
-profile::toolforge::active_mail_relay: tools-mail-03.tools.eqiad.wmflabs
+profile::toolforge::active_mail_relay: tools-mail-03.tools.eqiad1.wikimedia.cloud
 profile::toolforge::active_proxy_host: tools-proxy-06
 profile::toolforge::clush::target::master: tools-clushmaster-02.tools.eqiad.wmflabs
 profile::toolforge::etcdir: /var/lib/gridengine/etc
