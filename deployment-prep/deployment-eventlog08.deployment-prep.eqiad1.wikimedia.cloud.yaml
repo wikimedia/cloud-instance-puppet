@@ -7,4 +7,3 @@ profile::eventlogging::analytics::server::kafka_cluster: jumbo
 profile::eventlogging::analytics::server::python_kafka_version: 1.4.7-1
 profile::mariadb::misc::eventlogging::database::master: true
 profile::mariadb::misc::eventlogging::database::shard: m4
-puppetmaster: deployment-puppetmaster04.deployment-prep.eqiad.wmflabs
