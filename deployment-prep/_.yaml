@@ -85,25 +85,6 @@ passwords::root::extra_keys:
     doorman@istria-wifi.irisa.fr
   twentyafterfour: ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDPe9i/PI48Xk3BwCBSJ3L/o4n8noRBEFrINAPLVw4SDPmMOgPu5/HyvdxWkS47li2PQnDx4EobYE4WErxdQ0nB/Fe43ZzWEFQ6RvWuuPAxUwEFcGhraDHFFQc/TLh7adtNA247jUhLCQN/O3Nb6Qq1RPuAZgF59UuWKPNwnSOCOyLV0zHvqhjUkWmDcCI7sln1Kbv+JiEKBrVyokpv18pgCgyKL54UvFRbVD/aU7qu1DyJCFZ0GTitqFX0OMHjEyCo2bGPFUAHBkbKn/lsNz4hXNjF9iorxBvl1ZXLCRMkdRJBA6xGgLGWPXBQOXbUTc+9ow05KH0kHmQu5lXez7CZ
     twentyafterfour@wikiafterfour
-phabricator::mysql_admin_pass: phabricator
-phabricator::mysql_admin_user: root
-phabricator::vcs::address::v4:
-- 10.68.18.216
-phabricator::vcs::listen_addresses:
-- 10.68.18.216
-phabricator_active_server: deployment-phab01.deployment-prep.eqiad.wmflabs
-phabricator_active_server_fqdn: deployment-phab01.deployment-prep.eqiad.wmflabs
-phabricator_admin_pass: phabricator
-phabricator_admin_user: root
-phabricator_altdomain: beta-phab.wmflabs.org
-phabricator_app_pass: phabricator
-phabricator_app_user: root
-phabricator_daemons_pass: phabricator
-phabricator_daemons_user: root
-phabricator_diffusion_ssh_host: beta-phab.wmflabs.org
-phabricator_domain: beta-phab.wmflabs.org
-phabricator_servers:
-- deployment-phab01.deployment-prep.eqiad.wmflabs
 profile::backup::director_seed: ''
 profile::backup::ferm_directors: []
 profile::base::enable_kafka_shipping: true
@@ -350,16 +331,6 @@ role::ocg::redis_servers:
   deployment-pdf01:
     host: deployment-pdf01.deployment-prep.eqiad.wmflabs
     port: 6379
-role::phabricator::labs::settings:
-  notification.servers:
-  - host: phab-01.wmflabs.org
-    port: 22280
-    protocol: https
-    type: client
-  - host: 127.0.0.1
-    port: 22281
-    protocol: http
-    type: admin
 role::puppetmaster::puppetdb::shared_buffers: 768MB
 scap::keyholder_agents:
   analytics_deploy:
@@ -383,9 +354,6 @@ scap::keyholder_agents:
     trusted_groups:
     - project-deployment-prep
     - deploy-service
-  phabricator:
-    trusted_groups:
-    - project-deployment-prep
 scap::version: present
 service::configuration::logstash_host: deployment-logstash03.deployment-prep.eqiad.wmflabs
 service::configuration::logstash_port: 12201
@@ -396,7 +364,6 @@ swift::params::account_keys:
   mw_thumbor: OhdeaYuu4reoziichug6
   netbox_attachments: iic0Phoozoh4pooquuy4
   pagecompilation_zim: ohn2CoquahnaiNieWaen
-  phabricator_files: dummy
   search_backup: uOnZcooW2ujoATIXANmtAz
   swift_dispersion: ahshaenae3Hai3quipah
 thumbor::swift::swift_host: http://deployment-ms-fe03.deployment-prep.eqiad.wmflabs
