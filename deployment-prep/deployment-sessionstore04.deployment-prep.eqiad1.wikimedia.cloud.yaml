@@ -1,7 +1,9 @@
 profile::cassandra::instances:
   deployment-sessionstore04.deployment-prep.eqiad1.wikimedia.cloud: {}
 profile::docker::engine::declare_service: true
+profile::docker::engine::packagename: docker.io
 profile::docker::engine::settings: {}
+profile::docker::engine::version: 18.09.1+dfsg1-7.1+deb10u3
 profile::docker::runner::service_defs:
   mediawiki-services-kask:
     config:
