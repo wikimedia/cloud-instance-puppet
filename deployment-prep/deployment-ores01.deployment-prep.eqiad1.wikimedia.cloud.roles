@@ -1,7 +1,6 @@
 - role::labs::ores::redis
 - profile::standard
 - profile::base::firewall
-- proxy
 - profile::labs::lvm::srv
 - profile::ores::web
 - profile::ores::worker
