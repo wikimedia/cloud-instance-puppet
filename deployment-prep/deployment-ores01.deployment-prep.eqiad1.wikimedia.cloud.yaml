@@ -10,6 +10,4 @@ profile::services_proxy::envoy::listeners:
   timeout: 120s
   upstream: deployment-mediawiki11.deployment-prep.eqiad1.wikimedia.cloud
   xfp: http
-profile::tlsproxy::envoy::ensure: present
-profile::tlsproxy::envoy::sni_support: 'no'
 puppetmaster: deployment-puppetmaster04.deployment-prep.eqiad.wmflabs
