@@ -4,5 +4,5 @@ profile::services_proxy::envoy::listeners:
   port: 6500
   service: api-https
   timeout: 120s
-  upstream: deployment-mediawiki-08
+  upstream: deployment-mediawiki11.deployment-prep.eqiad1.wikimedia.cloud
   xfp: https
