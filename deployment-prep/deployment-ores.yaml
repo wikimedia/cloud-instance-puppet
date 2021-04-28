@@ -1,0 +1,8 @@
+profile::services_proxy::envoy::listeners:
+- keepalive: 4s
+  name: mwapi-async
+  port: 6500
+  service: api-https
+  timeout: 120s
+  upstream: deployment-mediawiki-08
+  xfp: https
