@@ -1,15 +1,4 @@
-profile::envoy::ensure: present
 profile::ores::celery::queue_maxsize: 100
 profile::ores::celery::workers: 4
 profile::ores::logstash_host: localhost
 profile::ores::web::workers: 8
-profile::services_proxy::envoy::enabled_listeners:
-- mwapi-async
-profile::services_proxy::envoy::listen_ipv6: false
-profile::services_proxy::envoy::listeners:
-- name: mwapi-async
-  port: 6500
-  timeout: 120s
-  upstream: deployment-mediawiki11.deployment-prep.eqiad1.wikimedia.cloud
-  xfp: http
-puppetmaster: deployment-puppetmaster04.deployment-prep.eqiad.wmflabs
