@@ -3,3 +3,4 @@
 - profile::labs::lvm::srv
 - profile::ores::web
 - profile::ores::worker
+- profile::services_proxy::envoy
