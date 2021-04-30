@@ -1,4 +1,3 @@
-profile::envoy::ensure: present
 profile::mediawiki::mcrouter_wancache::use_onhost_memcached: true
 profile::mediawiki::webserver::has_tls: true
 profile::tlsproxy::envoy::access_log: true
