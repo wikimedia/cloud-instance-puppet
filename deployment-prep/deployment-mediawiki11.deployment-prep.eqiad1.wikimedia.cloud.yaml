@@ -23,3 +23,25 @@ profile::tlsproxy::envoy::sni_support: 'no'
 profile::tlsproxy::envoy::ssl_provider: cfssl
 profile::tlsproxy::envoy::tls_port: 443
 profile::tlsproxy::envoy::upstream_response_timeout: 203.0
+service::catalog:
+  dummy-to-workaround-requirements:
+    description: this only exists to workaround https://github.com/wikimedia/puppet/blob/d780c818b698f2f255f51f105c3d815099291c39/modules/profile/manifests/services_proxy/envoy.pp#L37
+    encryption: false
+    ip:
+      eqiad:
+        default: 192.0.2.1
+    lvs:
+      class: dummy-to-workaround-requirements
+      conftool:
+        cluster: dummy-to-workaround-requirements
+        service: dummy-to-workaround-requirements
+      depool_threshold: '.5'
+      enabled: true
+      monitors:
+        IdleConnection:
+          max-delay: 300
+          timeout-clean-reconnect: 3
+      scheduler: wrr
+    port: 24108
+    sites: []
+    state: production
