@@ -31,7 +31,7 @@ service::catalog:
       eqiad:
         default: 192.0.2.1
     lvs:
-      class: dummy-to-workaround-requirements
+      class: high-traffic1
       conftool:
         cluster: dummy-to-workaround-requirements
         service: dummy-to-workaround-requirements
