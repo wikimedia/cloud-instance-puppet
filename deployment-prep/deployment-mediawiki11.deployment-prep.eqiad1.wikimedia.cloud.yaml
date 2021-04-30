@@ -2,6 +2,12 @@ profile::envoy::ensure: present
 profile::mediawiki::mcrouter_wancache::use_onhost_memcached: true
 profile::mediawiki::webserver::has_tls: true
 profile::pki::client::ensure: present
+profile::services_proxy::envoy::listeners:
+- name: dummy-to-workaround-requirements
+  port: 24107
+  service: dummy-to-workaround-requirements
+  timeout: 1s
+  upstream: example.com
 profile::tlsproxy::envoy::access_log: true
 profile::tlsproxy::envoy::capitalize_headers: true
 profile::tlsproxy::envoy::cfssl_label: deployment-prep.eqiad1.wikimedia.cloud
