@@ -8,5 +8,5 @@ profile::tlsproxy::envoy::services:
   - '*'
 profile::tlsproxy::envoy::sni_support: 'no'
 profile::tlsproxy::envoy::ssl_provider: cfssl
-profile::tlsproxy::envoy::tls_port: 444
+profile::tlsproxy::envoy::tls_port: 443
 puppetmaster: deployment-puppetmaster04.deployment-prep.eqiad.wmflabs
