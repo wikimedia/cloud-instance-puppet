@@ -171,6 +171,7 @@ profile::ores::web::poolcounter_nodes:
 - deployment-poolcounter05:7531
 profile::ores::web::redis_host: deployment-ores01.deployment-prep.eqiad.wmflabs
 profile::ores::web::redis_password: areallysecretpassword
+profile::pki::client::ensure: present
 profile::prometheus::cadvisor_exporter::port: 4194
 profile::prometheus::statsd_exporter::mappings: []
 profile::puppetdb::extra_authorized_hosts: deployment-cumin02.deployment-prep.eqiad.wmflabs
