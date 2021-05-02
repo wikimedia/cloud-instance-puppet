@@ -1,25 +1,3 @@
-cache::alternate_domains: {}
-cache::cluster: upload
-cache::lua_support: true
-cache::upload::nodes:
-  eqiad:
-  - deployment-cache-upload06.deployment-prep.eqiad.wmflabs
-nginx::variant: extras
-profile::cache::base::varnish_version: 5
-profile::cache::ssl::unified::acme_chief: true
-profile::cache::ssl::unified::certs: []
-profile::cache::ssl::unified::certs_active: []
-profile::cache::ssl::unified::letsencrypt: false
-profile::cache::varnish::common_vcl_config:
-  allowed_methods: ^(GET|HEAD|OPTIONS|POST|PURGE|PUT|DELETE)$
-  maps_domain: maps.beta.wmflabs.org
-  purge_host_regex: ^(?!(upload|maps)\.beta\.wmflabs\.org)
-  shortener_domain: w-beta.wmflabs.org
-  static_host: en.wikipedia.beta.wmflabs.org
-  top_domain: beta.wmflabs.org
-  upload_domain: upload.beta.wmflabs.org
-  upload_webp_hits_threshold: 1000
-profile::tlsproxy::instance::nginx_variant: extras
 profile::trafficserver::tls::available_unified_certs:
   lets-encrypt:
     acme_chief: true
@@ -45,4 +23,3 @@ profile::trafficserver::tls::parent_rules:
   round_robin: strict
 profile::trafficserver::tls::unified_acme_chief: true
 public_tls_unified_cert_vendor: lets-encrypt
-puppetmaster: deployment-puppetmaster04.deployment-prep.eqiad.wmflabs
