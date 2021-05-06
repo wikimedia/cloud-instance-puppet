@@ -15,6 +15,7 @@ profile::acme_chief::certificates:
     - '*.maps.wmflabs.org'
     authorized_regexes:
     - ^.+\.project-proxy\.eqiad\.wmflabs$
+    - ^.+\.project-proxy\.eqiad1\.wikimedia\.cloud$
     challenge: dns-01
   tiles:
     CN: tiles.wmcloud.org
@@ -23,6 +24,7 @@ profile::acme_chief::certificates:
     - '*.tiles.wmflabs.org'
     authorized_regexes:
     - ^.+\.project-proxy\.eqiad\.wmflabs$
+    - ^.+\.project-proxy\.eqiad1\.wikimedia\.cloud$
     challenge: dns-01
   wma:
     CN: wma.wmcloud.org
@@ -31,6 +33,7 @@ profile::acme_chief::certificates:
     - '*.wma.wmflabs.org'
     authorized_regexes:
     - ^.+\.project-proxy\.eqiad\.wmflabs$
+    - ^.+\.project-proxy\.eqiad1\.wikimedia\.cloud$
     challenge: dns-01
   wmflabs:
     CN: wmflabs.org
@@ -41,6 +44,7 @@ profile::acme_chief::certificates:
     - '*.wmcloud.org'
     authorized_regexes:
     - ^.+\.project-proxy\.eqiad\.wmflabs$
+    - ^.+\.project-proxy\.eqiad1\.wikimedia\.cloud$
     challenge: dns-01
 profile::acme_chief::challenges:
   dns-01:
