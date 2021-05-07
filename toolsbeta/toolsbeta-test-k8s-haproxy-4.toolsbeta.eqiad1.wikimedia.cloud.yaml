@@ -1,0 +1,2 @@
+profile::toolforge::k8s::haproxy::keepalived_vips:
+- k8s-haproxy-vip.svc.toolsbeta.eqiad1.wikimedia.cloud
