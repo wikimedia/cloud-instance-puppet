@@ -1,1 +1,2 @@
-{}
+phabricator_daemons_pass: app_pass
+phabricator_daemons_user: app_user
