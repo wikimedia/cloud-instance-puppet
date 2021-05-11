@@ -100,6 +100,7 @@ ssh::server::enable_hba: true
 ssh::server::explicit_macs: false
 toollabs::checker_hosts:
 - tools-checker-03.tools.eqiad.wmflabs
+- tools-checker-04.tools.eqiad1.wikimedia.cloud
 toollabs::proxy::proxies:
 - tools-proxy-05.tools.eqiad.wmflabs
 - tools-proxy-06.tools.eqiad.wmflabs
