@@ -1,2 +1,52 @@
 profile::elastalert::ensure: present
+profile::logstash::apifeatureusage::curator_actions:
+  1:
+    action: delete_indices
+    description: 'apifeatureusage: delete older than 91 days'
+    filters:
+    - filtertype: pattern
+      kind: prefix
+      value: apifeatureusage-
+    - direction: older
+      filtertype: age
+      source: name
+      timestring: '%Y.%m.%d'
+      unit: days
+      unit_count: 91
+    options:
+      ignore_empty_list: true
+  2:
+    action: replicas
+    description: 'apifeatureusage: set replicas to 1 after 31 days'
+    filters:
+    - exclude: null
+      filtertype: pattern
+      kind: prefix
+      value: apifeatureusage-
+    - direction: older
+      filtertype: age
+      source: creation_date
+      unit: days
+      unit_count: 31
+    options:
+      count: 1
+      ignore_empty_list: true
+  5:
+    action: forcemerge
+    description: forcemerge indexes older than 2 days
+    filters:
+    - exclude: null
+      filtertype: pattern
+      kind: prefix
+      value: apifeatureusage-
+    - direction: older
+      filtertype: age
+      source: creation_date
+      unit: days
+      unit_count: 2
+    options:
+      continue_if_exception: false
+      delay: 120
+      max_num_segments: 1
+      timeout_override: null
 profile::rsyslog::udp_localhost_compat_port: 11514
