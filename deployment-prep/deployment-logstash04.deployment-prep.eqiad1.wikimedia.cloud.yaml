@@ -26,6 +26,7 @@ profile::elasticsearch::java_home: /usr/lib/jvm/java-1.11.0-openjdk-amd64
 profile::elasticsearch::rack: ''
 profile::elasticsearch::row: ''
 profile::elasticsearch::version: '7.10'
+profile::envoy::ensure: present
 profile::java::java_packages:
 - variant: jdk
   version: '11'
