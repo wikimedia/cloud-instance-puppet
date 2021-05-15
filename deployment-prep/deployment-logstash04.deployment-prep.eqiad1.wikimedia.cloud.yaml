@@ -17,7 +17,9 @@ profile::elasticsearch::common_settings:
   unicast_hosts:
   - deployment-logstash04.deployment-prep.eqiad1.wikimedia.cloud
 profile::elasticsearch::config_version: '7'
-profile::elasticsearch::dc_settings: {}
+profile::elasticsearch::dc_settings:
+  cluster_hosts:
+  - deployment-logstash04.deployment-prep.eqiad1.wikimedia.cloud
 profile::elasticsearch::ferm_srange: ''
 profile::elasticsearch::instances: {}
 profile::elasticsearch::java_home: /usr/lib/jvm/java-1.11.0-openjdk-amd64
