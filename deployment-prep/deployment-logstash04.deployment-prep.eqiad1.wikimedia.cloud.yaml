@@ -24,6 +24,7 @@ profile::elasticsearch::dc_settings:
   short_cluster_name: deployment-prep-logstash-eqiad
   unicast_hosts:
   - deployment-logstash04.deployment-prep.eqiad1.wikimedia.cloud
+profile::elasticsearch::version: '7.10'
 profile::java::java_packages:
 - variant: jdk
   version: '8'
