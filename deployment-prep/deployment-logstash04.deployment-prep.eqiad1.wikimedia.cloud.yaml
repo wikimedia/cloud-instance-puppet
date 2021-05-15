@@ -2,26 +2,26 @@ profile::elasticsearch::common_settings:
   auto_create_index: +logstash-*,-*
   cluster_hosts:
   - deployment-logstash04.deployment-prep.eqiad1.wikimedia.cloud
-  cluster_name: labs-logstash-eqiad
+  cluster_name: deployment-prep-logstash-eqiad
   expected_nodes: 1
   heap_memory: 5G
   minimum_master_nodes: 1
   recover_after_nodes: 1
   recover_after_time: 1m
-  short_cluster_name: labs-logstash-eqiad
+  short_cluster_name: deployment-prep-logstash-eqiad
   unicast_hosts:
   - deployment-logstash04.deployment-prep.eqiad1.wikimedia.cloud
 profile::elasticsearch::dc_settings:
   auto_create_index: +logstash-*,-*
   cluster_hosts:
   - deployment-logstash04.deployment-prep.eqiad1.wikimedia.cloud
-  cluster_name: labs-logstash-eqiad
+  cluster_name: deployment-prep-logstash-eqiad
   expected_nodes: 1
   heap_memory: 5G
   minimum_master_nodes: 1
   recover_after_nodes: 1
   recover_after_time: 1m
-  short_cluster_name: labs-logstash-eqiad
+  short_cluster_name: deployment-prep-logstash-eqiad
   unicast_hosts:
   - deployment-logstash04.deployment-prep.eqiad1.wikimedia.cloud
 profile::java::java_packages:
