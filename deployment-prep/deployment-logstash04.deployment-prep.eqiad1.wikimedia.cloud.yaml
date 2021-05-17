@@ -9,7 +9,7 @@ profile::elasticsearch::common_settings:
   - deployment-logstash04.deployment-prep.eqiad1.wikimedia.cloud
   cluster_name: deployment-prep-logstash-eqiad
   expected_nodes: 1
-  heap_memory: 5G
+  heap_memory: 3G
   minimum_master_nodes: 1
   recover_after_nodes: 1
   recover_after_time: 1m
