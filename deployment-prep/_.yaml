@@ -44,14 +44,14 @@ kafka_clusters:
   logging-codfw:
     brokers:
       deployment-kafka-logging01.deployment-prep.eqiad1.wikimedia.cloud:
-        id: 2
-        rack: C
+        id: 1001
+        rack: B
     zookeeper_cluster_name: main-deployment-prep
   logging-eqiad:
     brokers:
       deployment-kafka-logging01.deployment-prep.eqiad1.wikimedia.cloud:
-        id: 2
-        rack: C
+        id: 1001
+        rack: B
     zookeeper_cluster_name: main-deployment-prep
   main-deployment-prep:
     brokers:
