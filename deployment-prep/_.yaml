@@ -190,7 +190,7 @@ profile::puppetmaster::common::puppetdb_hosts:
 - deployment-puppetdb02.deployment-prep.eqiad.wmflabs
 profile::restbase::salt_key: secretkey
 profile::rsyslog::kafka_shipper::kafka_brokers:
-- deployment-logstash03.deployment-prep.eqiad.wmflabs:9093
+- deployment-kafka-logging01.deployment-prep.eqiad1.wikimedia.cloud:9093
 profile::services_proxy::ensure: absent
 profile::services_proxy::services:
   dummy:
