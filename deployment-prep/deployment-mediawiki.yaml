@@ -4,7 +4,7 @@ profile::mediawiki::webserver::has_tls: true
 profile::pki::client::ensure: present
 profile::rsyslog::kafka_shipper::json_lines_port: 10514
 profile::rsyslog::kafka_shipper::kafka_brokers:
-- deployment-logstash03.deployment-prep.eqiad.wmflabs:9093
+- deployment-kafka-logging01.deployment-prep.eqiad1.wikimedia.cloud:9093
 profile::services_proxy::envoy::ensure: absent
 profile::tlsproxy::envoy::access_log: true
 profile::tlsproxy::envoy::capitalize_headers: true
