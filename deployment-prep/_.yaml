@@ -43,7 +43,7 @@ kafka_clusters:
     zookeeper_cluster_name: main-deployment-prep
   logging-codfw:
     brokers:
-      deployment-logstash03.deployment-prep.eqiad1.wikimedia.cloud:
+      deployment-kafka-logging01.deployment-prep.eqiad1.wikimedia.cloud:
         id: 2
         rack: C
     zookeeper_cluster_name: main-deployment-prep
@@ -55,10 +55,7 @@ kafka_clusters:
     zookeeper_cluster_name: logging-deployment-prep
   logging-eqiad:
     brokers:
-      deployment-logstash03.deployment-prep.eqiad.wmflabs:
-        id: 2
-        rack: C
-      deployment-logstash03.deployment-prep.eqiad1.wikimedia.cloud:
+      deployment-kafka-logging01.deployment-prep.eqiad1.wikimedia.cloud:
         id: 2
         rack: C
     zookeeper_cluster_name: main-deployment-prep
