@@ -376,7 +376,7 @@ swift::params::account_keys:
 thumbor::swift::swift_host: http://deployment-ms-fe03.deployment-prep.eqiad.wmflabs
 use_dnsmasq: false
 zookeeper_clusters:
-  logging:
+  logging-deployment-prep:
     hosts:
       deployment-zookeeper02.deployment-prep.eqiad.wmflabs: '2'
   main-deployment-prep:
