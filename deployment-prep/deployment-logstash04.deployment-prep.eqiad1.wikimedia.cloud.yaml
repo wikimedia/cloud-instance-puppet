@@ -1,3 +1,4 @@
+kafka_cluster_name: logstash-eqiad
 logstash::heap_memory: 1g
 logstash::java_package: openjdk-11-jdk
 logstash::logstash_package: logstash-oss
