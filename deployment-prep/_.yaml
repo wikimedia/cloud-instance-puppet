@@ -29,7 +29,31 @@ eventlogging_host: 10.68.18.111
 eventlogging_statsd_host: cloudmetrics1002.eqiad.wmnet
 http_proxy: ''
 kafka_clusters:
+  jumbo-codfw:
+    brokers:
+      deployment-kafka-jumbo-1.deployment-prep.eqiad1.wikimedia.cloud:
+        id: 1
+        rack: A
+      deployment-kafka-jumbo-2.deployment-prep.eqiad1.wikimedia.cloud:
+        id: 2
+        rack: B
+      deployment-kafka-jumbo-3.deployment-prep.eqiad1.wikimedia.cloud:
+        id: 3
+        rack: C
+    zookeeper_cluster_name: main-deployment-prep
   jumbo-deployment-prep:
+    brokers:
+      deployment-kafka-jumbo-1.deployment-prep.eqiad1.wikimedia.cloud:
+        id: 1
+        rack: A
+      deployment-kafka-jumbo-2.deployment-prep.eqiad1.wikimedia.cloud:
+        id: 2
+        rack: B
+      deployment-kafka-jumbo-3.deployment-prep.eqiad1.wikimedia.cloud:
+        id: 3
+        rack: C
+    zookeeper_cluster_name: main-deployment-prep
+  jumbo-eqiad:
     brokers:
       deployment-kafka-jumbo-1.deployment-prep.eqiad1.wikimedia.cloud:
         id: 1
@@ -53,7 +77,25 @@ kafka_clusters:
         id: 1001
         rack: B
     zookeeper_cluster_name: main-deployment-prep
+  main-codfw:
+    brokers:
+      deployment-kafka-main-1.deployment-prep.eqiad1.wikimedia.cloud:
+        id: 1
+        rack: A
+      deployment-kafka-main-2.deployment-prep.eqiad1.wikimedia.cloud:
+        id: 2
+        rack: B
+    zookeeper_cluster_name: main-deployment-prep
   main-deployment-prep:
+    brokers:
+      deployment-kafka-main-1.deployment-prep.eqiad1.wikimedia.cloud:
+        id: 1
+        rack: A
+      deployment-kafka-main-2.deployment-prep.eqiad1.wikimedia.cloud:
+        id: 2
+        rack: B
+    zookeeper_cluster_name: main-deployment-prep
+  main-eqiad:
     brokers:
       deployment-kafka-main-1.deployment-prep.eqiad1.wikimedia.cloud:
         id: 1
