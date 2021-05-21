@@ -9,9 +9,6 @@ profile::toolforge::k8s::haproxy::keepalived_peers:
 - tools-k8s-haproxy-3.tools.eqiad1.wikimedia.cloud
 - tools-k8s-haproxy-4.tools.eqiad1.wikimedia.cloud
 profile::toolforge::k8s::ingress_nodes:
-- tools-k8s-ingress-1.tools.eqiad1.wikimedia.cloud
-- tools-k8s-ingress-2.tools.eqiad1.wikimedia.cloud
-- tools-k8s-ingress-3.tools.eqiad1.wikimedia.cloud
 - host: tools-k8s-ingress-4.tools.eqiad1.wikimedia.cloud
   port: 30002
 - host: tools-k8s-ingress-5.tools.eqiad1.wikimedia.cloud
