@@ -12,5 +12,9 @@ profile::toolforge::k8s::ingress_nodes:
 - tools-k8s-ingress-1.tools.eqiad1.wikimedia.cloud
 - tools-k8s-ingress-2.tools.eqiad1.wikimedia.cloud
 - tools-k8s-ingress-3.tools.eqiad1.wikimedia.cloud
+- host: tools-k8s-ingress-4.tools.eqiad1.wikimedia.cloud
+  pool: 30002
+- host: tools-k8s-ingress-5.tools.eqiad1.wikimedia.cloud
+  pool: 30002
 profile::toolforge::k8s::ingress_port: 30000
 prometheus::haproxy_exporter::endpoint: http://localhost:8404/stats;csv
