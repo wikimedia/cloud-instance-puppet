@@ -1,1 +1,1 @@
-- 'rofile::puppetdb::microservice::enabled: false'
+- 'profile::puppetdb::microservice::enabled: false'
