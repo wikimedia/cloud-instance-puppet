@@ -1,2 +1,4 @@
+profile::airflow::instances:
+  otto0: {}
 puppetmaster: airflow-test-1.analytics.eqiad1.wikimedia.cloud
 role::puppetmaster::standalone::autosign: true
