@@ -1,2 +1,2 @@
 - role::puppetmaster::standalone
-- profile::analytics::airflow2
+- profile::airflow
