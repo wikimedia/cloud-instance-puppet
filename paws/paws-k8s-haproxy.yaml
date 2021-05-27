@@ -3,7 +3,6 @@ labstore::traffic_shaping::egress: 800mbps
 mount_nfs: false
 profile::wmcs::paws::control_nodes:
 - paws-k8s-control-1.paws.eqiad.wmflabs
-- paws-k8s-control-2.paws.eqiad.wmflabs
 - paws-k8s-control-3.paws.eqiad.wmflabs
 profile::wmcs::paws::ingress_nodes:
 - paws-k8s-ingress-1.paws.eqiad1.wikimedia.cloud
