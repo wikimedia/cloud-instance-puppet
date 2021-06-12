@@ -100,9 +100,8 @@ profile::toolforge::services::updatetools_enabled: false
 profile::wmcs::kubeadm::component: thirdparty/kubeadm-k8s-1-18
 prometheus::haproxy_exporter::endpoint: http://localhost:9900/stats;csv
 prometheus_nodes:
-- tools-prometheus-01.tools.eqiad.wmflabs
-- tools-prometheus-02.tools.eqiad.wmflabs
 - tools-prometheus-03.tools.eqiad.wmflabs
+- tools-prometheus-05.tools.eqiad1.wikimedia.cloud
 puppetmaster: toolsbeta-puppetmaster-04.toolsbeta.eqiad.wmflabs
 role::aptly::client::servername: tools-services-05.tools.eqiad1.wikimedia.cloud
 role::labs::nfsclient::lookupcache: all
