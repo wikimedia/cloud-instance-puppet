@@ -102,6 +102,7 @@ prometheus::haproxy_exporter::endpoint: http://localhost:9900/stats;csv
 prometheus_nodes:
 - tools-prometheus-03.tools.eqiad.wmflabs
 - tools-prometheus-05.tools.eqiad1.wikimedia.cloud
+- prometheus01.metricsinfra.eqiad.wmflabs
 puppetmaster: toolsbeta-puppetmaster-04.toolsbeta.eqiad.wmflabs
 role::aptly::client::servername: tools-services-05.tools.eqiad1.wikimedia.cloud
 role::labs::nfsclient::lookupcache: all
