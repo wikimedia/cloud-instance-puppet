@@ -1,1 +1,1 @@
-- role::wmcs::metricsinfra
+- role::wmcs::metricsinfra::prometheus
