@@ -9,6 +9,7 @@ profile::elasticsearch::common_settings:
   cluster_hosts:
   - deployment-logstash04.deployment-prep.eqiad1.wikimedia.cloud
   cluster_name: deployment-prep-logstash-eqiad
+  disktype: ssd
   expected_nodes: 1
   heap_memory: 3G
   minimum_master_nodes: 1
