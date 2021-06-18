@@ -36,7 +36,6 @@ profile::kibana::auth_file: /etc/logstash/htpasswd
 profile::kibana::auth_realm: Logstash (ssh deployment-deploy01.deployment-prep.eqiad1.wikimedia.cloud
   sudo cat /root/secrets.txt)
 profile::kibana::auth_type: local
-profile::kibana::enable_phatality: false
 profile::kibana::httpd_proxy::auth_file: /etc/logstash/htpasswd
 profile::kibana::httpd_proxy::auth_realm: Logstash (ssh deployment-deploy01.deployment-prep.eqiad1.wikimedia.cloud
   sudo cat /root/secrets.txt)
