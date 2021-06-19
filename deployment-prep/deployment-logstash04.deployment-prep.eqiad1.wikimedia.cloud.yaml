@@ -8,6 +8,7 @@ profile::elasticsearch::common_settings:
   auto_create_index: +logstash-*,-*
   cluster_hosts:
   - deployment-logstash04.deployment-prep.eqiad1.wikimedia.cloud
+  - deployment-logstash05.deployment-prep.eqiad1.wikimedia.cloud
   cluster_name: deployment-prep-logstash-eqiad
   disktype: ssd
   expected_nodes: 1
@@ -19,10 +20,12 @@ profile::elasticsearch::common_settings:
   short_cluster_name: deployment-prep-logstash-eqiad
   unicast_hosts:
   - deployment-logstash04.deployment-prep.eqiad1.wikimedia.cloud
+  - deployment-logstash05.deployment-prep.eqiad1.wikimedia.cloud
 profile::elasticsearch::config_version: '7'
 profile::elasticsearch::dc_settings:
   cluster_hosts:
   - deployment-logstash04.deployment-prep.eqiad1.wikimedia.cloud
+  - deployment-logstash05.deployment-prep.eqiad1.wikimedia.cloud
 profile::elasticsearch::ferm_srange: ''
 profile::elasticsearch::instances: {}
 profile::elasticsearch::java_home: /usr/lib/jvm/java-1.11.0-openjdk-amd64
