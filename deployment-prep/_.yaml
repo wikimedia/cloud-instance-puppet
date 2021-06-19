@@ -11,11 +11,6 @@ classes:
 confd::srv_dns: ''
 conftool::hosts: []
 conftool::password: a_secret
-cumin_masters:
-- 172.16.1.135
-- 172.16.5.1
-- 172.16.4.46
-- 172.16.6.133
 elasticsearch::cluster_hosts:
 - deployment-elastic05.deployment-prep.eqiad.wmflabs
 - deployment-elastic06.deployment-prep.eqiad.wmflabs
