@@ -68,6 +68,7 @@ profile::elasticsearch::instances: {}
 profile::elasticsearch::rack: placeholder
 profile::elasticsearch::row: placeholder
 profile::elasticsearch::version: '7.4'
+profile::openstack::eqiad1::ldap_user_pass: <not available here>
 profile::prometheus::haproxy_exporter::listen_port: 9901
 profile::standard::has_default_mail_relay: false
 profile::toolforge::active_cronrunner: toolsbeta-sgecron-01.toolsbeta.eqiad.wmflabs
