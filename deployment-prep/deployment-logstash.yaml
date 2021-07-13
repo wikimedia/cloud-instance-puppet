@@ -14,7 +14,7 @@ profile::elasticsearch::logstash::curator_actions:
       filtertype: age
       source: creation_date
       unit: days
-      unit_count: 3
+      unit_count: 5
     options:
       ignore_empty_list: true
   20:
@@ -29,6 +29,7 @@ profile::elasticsearch::logstash::curator_actions:
       filtertype: age
       source: creation_date
       unit: days
+      unit_count: 1
     options:
       count: 1
       ignore_empty_list: true
