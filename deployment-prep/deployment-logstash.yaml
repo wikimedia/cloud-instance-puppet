@@ -1,3 +1,5 @@
+mtail::logs:
+- /var/log/logstash/logstash-json.log
 profile::elastalert::ensure: present
 profile::logstash::apifeatureusage::curator_actions:
   1:
