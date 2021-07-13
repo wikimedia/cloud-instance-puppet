@@ -1,6 +1,38 @@
 mtail::logs:
 - /var/log/logstash/logstash-json.log
 profile::elastalert::ensure: present
+profile::elasticsearch::logstash::curator_actions:
+  1:
+    action: delete_indices
+    description: 'deployment-prep: delete older than 5 days'
+    filters:
+    - exclude: true
+      filtertype: pattern
+      kind: prefix
+      value: ^\..*
+    - direction: older
+      filtertype: age
+      source: creation_date
+      unit: days
+      unit_count: 3
+    options:
+      ignore_empty_list: true
+  20:
+    action: replicas
+    description: 'deployment-prep: after 1 day set number of replicas to 1'
+    filters:
+    - exclude: true
+      filtertype: pattern
+      kind: prefix
+      value: ^\..*
+    - direction: older
+      filtertype: age
+      source: creation_date
+      unit: days
+    options:
+      count: 1
+      ignore_empty_list: true
+profile::elasticsearch::logstash::jobs_host: deployment-logstash05.deployment-prep.eqiad1.wikimedia.cloud
 profile::logstash::apifeatureusage::curator_actions:
   1:
     action: delete_indices
