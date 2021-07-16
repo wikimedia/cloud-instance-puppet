@@ -1,1 +1,91 @@
+profile::wmcs::metricsinfra::global_alert_groups:
+- name: wmcs_instance
+  rules:
+  - alert: InstanceDown
+    annotations:
+      SUMMARY: Project {{$labels.project}} instance {{$labels.instance}} is down
+    expr: up{job="node"} == 0
+    for: 5m
+    labels:
+      severity: warn
+  - alert: WidespreadInstanceDown
+    annotations:
+      SUMMARY: Widespread instances down in project {{$labels.project}}
+    expr: count by (project) (up{job="node"} == 0) / count by (project) (up{job="node"})
+      * 100 >= 15
+    for: 5m
+    labels:
+      severity: crit
+- name: wmcs_puppet
+  rules:
+  - alert: PuppetAgentFailures
+    annotations:
+      SUMMARY: Puppet agent failure detected on instance {{$labels.instance}} in project
+        {{$labels.project}}
+    expr: puppet_agent_failed != 0
+    for: 15m
+    labels:
+      severity: warn
+  - alert: WidespreadPuppetAgentFailures
+    annotations:
+      SUMMARY: Widespread puppet agent failures in project {{$labels.project}}
+    expr: sum by (project) (puppet_agent_failed) / count by (project) (puppet_agent_failed)
+      * 100 >= 15
+    for: 15m
+    labels:
+      severity: crit
+  - alert: PuppetAgentDisabled
+    annotations:
+      SUMMARY: Puppet agent disabled on instance {{$labels.instance}} in project {{$labels.project}}
+    expr: puppet_agent_enabled != 1
+    for: 15m
+    labels:
+      severity: warn
+profile::wmcs::metricsinfra::global_jobs:
+- name: node
+  openstack_discovery:
+    port: 9100
+profile::wmcs::metricsinfra::monitored_projects:
+- name: analytics
+- name: clouddb-services
+- name: cloudinfra
+- name: codesearch
+- name: cvn
+- name: deployment-prep
+- name: extdist
+- name: gratitude
+- name: integration
+- jobs:
+  - name: alertmanager
+    openstack_discovery:
+      name_regex: (metricsinfra\-alertmanager\-\d+|prometheus01)
+      port: 9093
+  - name: haproxy
+    openstack_discovery:
+      name_regex: metricsinfra\-haproxy\-\d+
+      port: 9901
+  - metrics_path: /cloud/metrics
+    name: prometheus
+    openstack_discovery:
+      name_regex: (metricsinfra\-)?prometheus\-?\d+
+      port: 80
+  name: metricsinfra
+- name: paws
+- name: tools
+- jobs:
+  - name: frontproxy-nginx
+    openstack_discovery:
+      name_regex: toolsbeta\-proxy\-\d+
+      port: 9113
+  - name: redis
+    openstack_discovery:
+      name_regex: toolsbeta\-redis\-\d+
+      port: 9121
+  name: toolsbeta
+profile::wmcs::metricsinfra::prometheus::ext_fqdn: prometheus.wmflabs.org
+profile::wmcs::metricsinfra::prometheus_alertmanager_hosts:
+- prometheus01.metricsinfra.eqiad.wmflabs
+- metricsinfra-alertmanager-1.metricsinfra.eqiad1.wikimedia.cloud
+profile::wmcs::metricsinfra::prometheus_hosts:
+- prometheus01.metricsinfra.eqiad.wmflabs
 puppetmaster: metricsinfra-puppetmaster-1.metricsinfra.eqiad1.wikimedia.cloud
