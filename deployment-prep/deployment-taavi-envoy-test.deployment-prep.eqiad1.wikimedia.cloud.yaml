@@ -1,3 +1,5 @@
+profile::services_proxy::envoy::enabled_listeners:
+- shellbox
 profile::services_proxy::envoy::listeners:
 - name: shellbox
   port: 6024
