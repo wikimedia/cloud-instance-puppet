@@ -1,0 +1,25 @@
+profile::services_proxy::envoy::listeners:
+- name: shellbox
+  port: 6024
+  service: shellbox
+  timeout: 60s
+service::catalog:
+  shellbox:
+    description: Shellbox
+    discovery:
+    - active_active: true
+      dnsdisc: shellbox
+    encryption: true
+    ip:
+      eqiad:
+        default: 172.16.4.150
+    monitoring:
+      check_command: check_https_lvs_on_port!shellbox.svc.deployment-prep.eqiad1.wikimedia.cloud!4008!/healthz
+      critical: false
+      sites:
+        eqiad:
+          hostname: shellbox.svc.deployment-prep.eqiad1.wikimedia.cloud
+    port: 4008
+    sites:
+    - eqiad
+    state: production
