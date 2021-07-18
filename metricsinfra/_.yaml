@@ -44,6 +44,14 @@ profile::wmcs::metricsinfra::global_alert_groups:
     for: 15m
     labels:
       severity: warn
+  - alert: PuppetmasterUpdateFailures
+    annotations:
+      SUMMARY: Failed to update Puppet repository {{ $labels.repository }} on instance
+        {{ $labels.instance }} in project {{ $labels.project }}
+    expr: puppet_sync_upstream_rebase_success != 1
+    for: 15m
+    labels:
+      severity: warn
 profile::wmcs::metricsinfra::global_jobs:
 - name: node
   openstack_discovery:
