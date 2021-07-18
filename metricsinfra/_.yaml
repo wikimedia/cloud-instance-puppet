@@ -85,6 +85,8 @@ profile::wmcs::metricsinfra::monitored_projects:
       name_regex: (metricsinfra\-)?prometheus\-?\d+
       port: 80
   name: metricsinfra
+  notify_email:
+  - hi@taavi.wtf
 - name: paws
 - name: tools
 - jobs:
