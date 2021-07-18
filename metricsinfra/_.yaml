@@ -3,14 +3,14 @@ profile::wmcs::metricsinfra::global_alert_groups:
   rules:
   - alert: InstanceDown
     annotations:
-      SUMMARY: Project {{labels.project}} instance {{labels.instance}} is down
+      SUMMARY: Project {{ $labels.project }} instance {{ $labels.instance }} is down
     expr: up{job="node"} == 0
     for: 5m
     labels:
       severity: warn
   - alert: WidespreadInstanceDown
     annotations:
-      SUMMARY: Widespread instances down in project {{labels.project}}
+      SUMMARY: Widespread instances down in project {{ $labels.project }}
     expr: count by (project) (up{job="node"} == 0) / count by (project) (up{job="node"})
       * 100 >= 15
     for: 5m
@@ -20,15 +20,15 @@ profile::wmcs::metricsinfra::global_alert_groups:
   rules:
   - alert: PuppetAgentFailures
     annotations:
-      SUMMARY: Puppet agent failure detected on instance {{labels.instance}} in project
-        {{labels.project}}
+      SUMMARY: Puppet agent failure detected on instance {{ $labels.instance }} in
+        project {{ $labels.project }}
     expr: puppet_agent_failed != 0
     for: 15m
     labels:
       severity: warn
   - alert: WidespreadPuppetAgentFailures
     annotations:
-      SUMMARY: Widespread puppet agent failures in project {{labels.project}}
+      SUMMARY: Widespread puppet agent failures in project {{ $labels.project }}
     expr: sum by (project) (puppet_agent_failed) / count by (project) (puppet_agent_failed)
       * 100 >= 15
     for: 15m
@@ -36,7 +36,8 @@ profile::wmcs::metricsinfra::global_alert_groups:
       severity: crit
   - alert: PuppetAgentDisabled
     annotations:
-      SUMMARY: Puppet agent disabled on instance {{labels.instance}} in project {{labels.project}}
+      SUMMARY: Puppet agent disabled on instance {{ $labels.instance }} in project
+        {{ $labels.project }}
     expr: puppet_agent_enabled != 1
     for: 15m
     labels:
