@@ -2,5 +2,5 @@ profile::gerrit::java_home: /usr/lib/jvm/java-11-openjdk-amd64
 profile::java::enable_dbg: true
 profile::java::java_packages:
 - variant: jdk
-  version: '10'
+  version: '11'
 puppetmaster: puppetmaster-1001.devtools.eqiad1.wikimedia.cloud
