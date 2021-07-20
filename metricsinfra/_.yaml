@@ -1,3 +1,7 @@
+apereo_cas:
+  production:
+    login_url: https://idp.wmcloud.org/login
+    validate_url: https://idp.wmcloud.org/serviceValidate
 profile::wmcs::metricsinfra::config_manager_hosts:
 - metricsinfra-controller-1.metricsinfra.eqiad1.wikimedia.cloud
 profile::wmcs::metricsinfra::global_alert_groups:
