@@ -60,6 +60,8 @@ profile::wmcs::metricsinfra::global_jobs:
 - name: node
   openstack_discovery:
     port: 9100
+profile::wmcs::metricsinfra::karma_hosts:
+- metricsinfra-alertmanager-1.metricsinfra.eqiad1.wikimedia.cloud
 profile::wmcs::metricsinfra::monitored_projects:
 - name: analytics
 - name: clouddb-services
