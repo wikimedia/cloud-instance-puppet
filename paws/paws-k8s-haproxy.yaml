@@ -6,6 +6,8 @@ profile::wmcs::paws::control_nodes:
 - paws-k8s-control-2.paws.eqiad.wmflabs
 - paws-k8s-control-3.paws.eqiad.wmflabs
 profile::wmcs::paws::ingress_nodes:
+- host: paws-k8s-ingress-3.paws.eqiad1.wikimedia.cloud
+  port: 30002
 - host: paws-k8s-ingress-4.paws.eqiad1.wikimedia.cloud
   port: 30002
 profile::wmcs::paws::keepalived::peers:
