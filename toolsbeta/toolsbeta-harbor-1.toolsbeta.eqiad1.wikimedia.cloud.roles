@@ -1,0 +1,3 @@
+- 'class { ''::kubeadm::repo'':'
+- component =>  'thirdparty/kubeadm-k8s-1-18',
+- '}'
