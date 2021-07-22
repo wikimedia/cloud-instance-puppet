@@ -1,2 +1,0 @@
-profile::ldap::client::labs::client_stack: sssd
-sudo_flavor: sudo
