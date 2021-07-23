@@ -1,2 +1,1 @@
 - profile::wmcs::kubeadm::client
-- 'acme_chief::cert{''toolforge'': }'
