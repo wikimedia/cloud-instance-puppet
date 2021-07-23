@@ -1,1 +1,1 @@
-- profile::wmcs::kubeadm::client
+- role::wmcs::toolforge::harbor
