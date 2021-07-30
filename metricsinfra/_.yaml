@@ -62,48 +62,9 @@ profile::wmcs::metricsinfra::global_jobs:
   openstack_discovery:
     port: 9100
 profile::wmcs::metricsinfra::monitored_projects:
-- name: analytics
-- name: clouddb-services
-- name: cloudinfra
-- name: codesearch
-- name: cvn
-- name: deployment-prep
-- name: extdist
-- name: gratitude
-- name: integration
-- jobs:
-  - name: alertmanager
-    openstack_discovery:
-      name_regex: (metricsinfra\-alertmanager\-\d+|prometheus01)
-      port: 9093
-  - name: haproxy
-    openstack_discovery:
-      name_regex: metricsinfra\-haproxy\-\d+
-      port: 9901
-  - name: manager
-    openstack_discovery:
-      name_regex: metricsinfra\-controller\-\d+
-      port: 80
-  - metrics_path: /cloud/metrics
-    name: prometheus
-    openstack_discovery:
-      name_regex: (metricsinfra\-)?prometheus\-?\d+
-      port: 80
-  name: metricsinfra
+- name: metricsinfra
   notify_email:
   - hi@taavi.wtf
-- name: paws
-- name: tools
-- jobs:
-  - name: frontproxy-nginx
-    openstack_discovery:
-      name_regex: toolsbeta\-proxy\-\d+
-      port: 9113
-  - name: redis
-    openstack_discovery:
-      name_regex: toolsbeta\-redis\-\d+
-      port: 9121
-  name: toolsbeta
 profile::wmcs::metricsinfra::prometheus::ext_fqdn: prometheus.wmflabs.org
 profile::wmcs::metricsinfra::prometheus_alertmanager_hosts:
 - prometheus01.metricsinfra.eqiad.wmflabs
