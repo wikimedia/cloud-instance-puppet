@@ -1,1 +1,1 @@
-- role::wmcs::metricsinfra::configserver
+- role::wmcs::metricsinfra::controller
