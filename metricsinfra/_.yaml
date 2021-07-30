@@ -67,7 +67,6 @@ profile::wmcs::metricsinfra::monitored_projects:
   - hi@taavi.wtf
 profile::wmcs::metricsinfra::prometheus::ext_fqdn: prometheus.wmflabs.org
 profile::wmcs::metricsinfra::prometheus_alertmanager_hosts:
-- prometheus01.metricsinfra.eqiad.wmflabs
 - metricsinfra-alertmanager-1.metricsinfra.eqiad1.wikimedia.cloud
 profile::wmcs::metricsinfra::prometheus_hosts:
 - prometheus01.metricsinfra.eqiad.wmflabs
