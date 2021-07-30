@@ -1,2 +1,1 @@
 - role::wmcs::metricsinfra::prometheus
-- role::wmcs::metricsinfra::alertmanager
