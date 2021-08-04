@@ -11,6 +11,7 @@ classes:
 confd::srv_dns: ''
 conftool::hosts: []
 conftool::password: a_secret
+docker::registry: docker-registry.discovery.wmnet
 elasticsearch::cluster_hosts:
 - deployment-elastic05.deployment-prep.eqiad.wmflabs
 - deployment-elastic06.deployment-prep.eqiad.wmflabs
