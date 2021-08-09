@@ -36,6 +36,7 @@ profile::acme_chief::certificates:
     authorized_hosts:
     - traffic-text-ats.traffic.eqiad.wmflabs
     - traffic-upload-stretch.traffic.eqiad.wmflabs
+    - cpupload.traffic.eqiad1.wikimedia.cloud
     authorized_regexes:
     - ^traffic-cache-.*\.traffic\.eqiad\.wmflabs$
     challenge: dns-01
