@@ -1,0 +1,18 @@
+profile::cache::envoy::available_unified_certs:
+  digicert-2020:
+  - cert_path: /etc/ssl/localcerts/digicert-2020-ecdsa-unified.chained.crt
+    key_path: /etc/ssl/private/digicert-2020-ecdsa-unified.key
+  - cert_path: /etc/ssl/localcerts/digicert-2020-rsa-unified.chained.crt
+    key_path: /etc/ssl/private/digicert-2020-rsa-unified.key
+  lets-encrypt:
+  - cert_path: /etc/acmecerts/unified/live/rsa-2048.chained.crt
+    key_path: /etc/acmecerts/unified/live/rsa-2048.key
+  - cert_path: /etc/acmecerts/unified/live/ec-prime256v1.chained.crt
+    key_path: /etc/acmecerts/unified/live/ec-prime256v1.key
+profile::cache::envoy::tls_port: 8443
+profile::cache::envoy::unified_acme_chief: true
+profile::cache::envoy::unified_certs:
+- digicert-2020-ecdsa-unified
+- digicert-2020-rsa-unified
+profile::cache::envoy::upstream_response_timeout: 60.0
+profile::cache::envoy::websockets: true
