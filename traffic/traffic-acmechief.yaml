@@ -39,6 +39,7 @@ profile::acme_chief::certificates:
     - cpupload.traffic.eqiad1.wikimedia.cloud
     authorized_regexes:
     - ^traffic-cache-.*\.traffic\.eqiad\.wmflabs$
+    - ^traffic-cache-.*\.traffic\.eqiad1\.wikimedia\.cloud$
     challenge: dns-01
   wikibase:
     CN: wikiba-se.traffic.wmflabs.org
