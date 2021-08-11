@@ -5,6 +5,9 @@ kafka_clusters:
         id: 1001
         rack: A
     zookeeper_cluster_name: beta_logging
+profile::java::java_packages:
+- variant: jdk
+  version: '8'
 profile::kafka::broker::kafka_cluster_name: beta_logging
 profile::zookeeper::cluster_name: beta_logging
 profile::zookeeper::zookeeper_version: 3.4.13-2
