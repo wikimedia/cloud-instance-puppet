@@ -6,6 +6,7 @@ kafka_clusters:
         rack: A
     zookeeper_cluster_name: beta_logging
 profile::kafka::broker::kafka_cluster_name: beta_logging
+profile::zookeeper::cluster_name: beta_logging
 zookeeper_clusters:
   beta_logging:
     hosts:
