@@ -7,6 +7,7 @@ kafka_clusters:
     zookeeper_cluster_name: beta_logging
 profile::kafka::broker::kafka_cluster_name: beta_logging
 profile::zookeeper::cluster_name: beta_logging
+profile::zookeeper::zookeeper_version: 3.4.13-2
 zookeeper_clusters:
   beta_logging:
     hosts:
