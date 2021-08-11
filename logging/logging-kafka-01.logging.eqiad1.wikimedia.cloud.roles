@@ -1,1 +1,2 @@
 - profile::kafka::broker
+- profile::zookeeper::server
