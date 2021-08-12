@@ -16,3 +16,4 @@ profile::cache::envoy::unified_certs:
 - digicert-2020-rsa-unified
 profile::cache::envoy::upstream_response_timeout: 60.0
 profile::cache::envoy::websockets: true
+profile::cache::varnish::frontend::listen_uds: /run/varnish-frontend.socket
