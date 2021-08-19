@@ -109,10 +109,10 @@ profile::cache::envoy::extra_upstreams:
     - wikiba-se.traffic.wmflabs.org
     upstream:
       path: /run/varnish-frontend.socket
-profile::cache::envoy::tls_params:
+profile::cache::envoy::tls_port: 8443
+profile::cache::envoy::tlsparams:
   tls_max_version: TLSv1.3
   tls_min_version: TLSv1.2
-profile::cache::envoy::tls_port: 8443
 profile::cache::envoy::unified_acme_chief: true
 profile::cache::envoy::unified_certs:
 - digicert-2020-ecdsa-unified
