@@ -49,6 +49,7 @@ profile::acme_chief::certificates:
     - traffic-text-ats.traffic.eqiad.wmflabs
     authorized_regexes:
     - ^traffic-cache-.*\.traffic\.eqiad\.wmflabs$
+    - ^traffic-cache-.*\.traffic\.eqiad1\.wikimedia\.cloud$
     challenge: dns-01
 profile::acme_chief::challenges:
   dns-01:
