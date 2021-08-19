@@ -50,6 +50,54 @@ profile::cache::envoy::available_unified_upstreams:
     - w.wiki
     upstream:
       path: /run/varnish-frontend.socket
+  lets-encrypt:
+    certificates:
+    - cert_path: /etc/acmecerts/unified/live/rsa-2048.chained.crt
+      key_path: /etc/acmecerts/unified/live/rsa-2048.key
+    - cert_path: /etc/acmecerts/unified/live/ec-prime256v1.chained.crt
+      key_path: /etc/acmecerts/unified/live/ec-prime256v1.key
+    server_names:
+    - wikipedia.org
+    - '*.wikipedia.org'
+    - '*.m.wikipedia.org'
+    - wikimedia.org
+    - '*.wikimedia.org'
+    - '*.m.wikimedia.org'
+    - '*.planet.wikimedia.org'
+    - mediawiki.org
+    - '*.mediawiki.org'
+    - '*.m.mediawiki.org'
+    - wikibooks.org
+    - '*.wikibooks.org'
+    - '*.m.wikibooks.org'
+    - wikidata.org
+    - '*.wikidata.org'
+    - '*.m.wikidata.org'
+    - wikinews.org
+    - '*.wikinews.org'
+    - '*.m.wikinews.org'
+    - wikiquote.org
+    - '*.wikiquote.org'
+    - '*.m.wikiquote.org'
+    - wikisource.org
+    - '*.wikisource.org'
+    - '*.m.wikisource.org'
+    - wikiversity.org
+    - '*.wikiversity.org'
+    - '*.m.wikiversity.org'
+    - wikivoyage.org
+    - '*.wikivoyage.org'
+    - '*.m.wikivoyage.org'
+    - wiktionary.org
+    - '*.wiktionary.org'
+    - '*.m.wiktionary.org'
+    - wikimediafoundation.org
+    - '*.wikimediafoundation.org'
+    - wmfusercontent.org
+    - '*.wmfusercontent.org'
+    - w.wiki
+    upstream:
+      path: /run/varnish-frontend.socket
 profile::cache::envoy::extra_upstreams:
   wikibase:
     certificates:
