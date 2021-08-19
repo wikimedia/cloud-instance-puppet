@@ -107,6 +107,8 @@ profile::cache::envoy::extra_upstreams:
       key_path: /etc/acmecerts/wikibase/live/ec-prime256v1.key
     server_names:
     - wikiba-se.traffic.wmflabs.org
+    upstream:
+      path: /run/varnish-frontend.socket
 profile::cache::envoy::tls_params:
   tls_max_version: TLSv1.3
   tls_min_version: TLSv1.2
