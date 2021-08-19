@@ -1,3 +1,6 @@
+profile::cache::envoy::alpn_protocols:
+- h2
+- http/1.1
 profile::cache::envoy::available_unified_certs:
   digicert-2020:
   - cert_path: /etc/ssl/localcerts/digicert-2020-ecdsa-unified.chained.crt
@@ -9,6 +12,9 @@ profile::cache::envoy::available_unified_certs:
     key_path: /etc/acmecerts/unified/live/rsa-2048.key
   - cert_path: /etc/acmecerts/unified/live/ec-prime256v1.chained.crt
     key_path: /etc/acmecerts/unified/live/ec-prime256v1.key
+profile::cache::envoy::tls_params:
+  tls_max_version: TLSv1.3
+  tls_min_version: TLSv1.2
 profile::cache::envoy::tls_port: 8443
 profile::cache::envoy::unified_acme_chief: true
 profile::cache::envoy::unified_certs:
