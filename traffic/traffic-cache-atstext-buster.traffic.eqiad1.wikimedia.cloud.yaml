@@ -12,6 +12,15 @@ profile::cache::envoy::available_unified_certs:
     key_path: /etc/acmecerts/unified/live/rsa-2048.key
   - cert_path: /etc/acmecerts/unified/live/ec-prime256v1.chained.crt
     key_path: /etc/acmecerts/unified/live/ec-prime256v1.key
+profile::cache::envoy::extra_upstreams:
+  wikibase:
+    certificates:
+    - cert_path: /etc/acmecerts/wikibase/live/rsa-2048.chained.crt
+      key_path: /etc/acmecerts/wikibase/live/rsa-2048.key
+    - cert_path: /etc/acmecerts/wikibase/live/ec-prime256v1.chained.crt
+      key_path: /etc/acmecerts/wikibase/live/ec-prime256v1.key
+    server_names:
+    - wikiba-se.traffic.wmflabs.org
 profile::cache::envoy::tls_params:
   tls_max_version: TLSv1.3
   tls_min_version: TLSv1.2
