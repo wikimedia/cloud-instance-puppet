@@ -117,7 +117,7 @@ profile::cache::envoy::tlsparams:
   - '[ECDHE-RSA-AES256-GCM-SHA384|ECDHE-RSA-CHACHA20-POLY1305]'
   - ECDHE-RSA-AES128-GCM-SHA256
   ecdh_curves:
-  - X22519
+  - X25519
   - P-256
   tls_max_version: TLSv1_3
   tls_min_version: TLSv1_2
