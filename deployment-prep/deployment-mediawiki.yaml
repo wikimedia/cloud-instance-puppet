@@ -21,6 +21,7 @@ profile::tlsproxy::envoy::cfssl_options:
   - '*.wikiversity.beta.wmflabs.org'
   - '*.wikivoyage.beta.wmflabs.org'
   - '*.wikimedia.beta.wmflabs.org'
+  - '*.wikifunctions.beta.wmflabs.org'
   - '*.m.wikipedia.beta.wmflabs.org'
   - '*.m.wiktionary.beta.wmflabs.org'
   - '*.m.wikibooks.beta.wmflabs.org'
@@ -29,8 +30,10 @@ profile::tlsproxy::envoy::cfssl_options:
   - '*.m.wikisource.beta.wmflabs.org'
   - '*.m.wikiversity.beta.wmflabs.org'
   - '*.m.wikivoyage.beta.wmflabs.org'
+  - '*.m.wikifunctions.beta.wmflabs.org'
   - '*.m.wikimedia.beta.wmflabs.org'
   - wikidata.beta.wmflabs.org
+  - wikifunctions.beta.wmflabs.org
 profile::tlsproxy::envoy::ensure: present
 profile::tlsproxy::envoy::global_cert_name: appservers.svc.deployment-prep.eqiad1.wikimedia.cloud
 profile::tlsproxy::envoy::retries: false
