@@ -110,7 +110,7 @@ profile::cache::envoy::extra_upstreams:
     upstream:
       path: /run/varnish-frontend.socket
 profile::cache::envoy::http2_options:
-  iniitial_connection_window_size: 1048576
+  initial_connection_window_size: 1048576
   initial_stream_window_size: 65536
   max_concurrent_streams: 100
 profile::cache::envoy::tls_port: 8443
