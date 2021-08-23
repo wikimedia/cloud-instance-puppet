@@ -1,2 +1,1 @@
 - role::labs::quarry::web
-- role::labs::lvm::srv
