@@ -98,6 +98,7 @@ profile::cache::envoy::available_unified_upstreams:
     - w.wiki
     upstream:
       path: /run/varnish-frontend.socket
+profile::cache::envoy::connection_buffer_limit: 32768
 profile::cache::envoy::extra_upstreams:
   wikibase:
     certificates:
