@@ -1,5 +1,6 @@
 profile::puppetdb::facts_blacklist:
 - ^netmask6_.*
+- ^mountpoints\.\/sys.*
 profile::puppetdb::facts_blacklist_type: regex
 profile::puppetdb::master: '%{facts.networking.fqdn}'
 puppetmaster: pdev-ppc.puppet-dev.eqiad1.wikimedia.cloud
