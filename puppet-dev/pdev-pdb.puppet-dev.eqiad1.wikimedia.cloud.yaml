@@ -1,4 +1,6 @@
 profile::puppetdb::master: '%{facts.networking.fqdn}'
+puppetdb::facts_blacklist:
+- ^netmask6_.*
 puppetmaster: pdev-ppc.puppet-dev.eqiad1.wikimedia.cloud
 puppetmaster::servers:
   pdev-ppc.puppet-dev.eqiad1.wikimedia.cloud:
