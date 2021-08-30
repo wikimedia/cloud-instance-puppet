@@ -1,2 +1,0 @@
-profile::base::labs::clean_kernels: true
-profile::wmcs::nfsclient::mode: soft
