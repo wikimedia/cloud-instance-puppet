@@ -51,9 +51,9 @@ profile::cache::envoy::available_unified_upstreams:
     upstream:
       path: /run/varnish-frontend.socket
   lets-encrypt:
-    cert_paths:
-    - /etc/acmecerts/unified/live/rsa-2048.chained.crt.key
-    - /etc/acmecerts/unified/live/ec-prime256v1.chained.crt.key
+    certificates:
+    - cert_path: /etc/acmecerts/unified/live/rsa-2048.chained.crt
+    - cert_path: /etc/acmecerts/unified/live/ec-prime256v1.chained.crt
     server_names:
     - wikipedia.org
     - '*.wikipedia.org'
@@ -94,6 +94,8 @@ profile::cache::envoy::available_unified_upstreams:
     - wmfusercontent.org
     - '*.wmfusercontent.org'
     - w.wiki
+    upstream:
+      path: /run/varnish-frontend.socket
 profile::cache::envoy::connection_buffer_limit: 32768
 profile::cache::envoy::downstream_idle_timeout: 3600.0
 profile::cache::envoy::extra_upstreams:
