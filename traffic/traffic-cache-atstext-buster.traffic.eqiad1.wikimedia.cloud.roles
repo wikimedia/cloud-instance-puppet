@@ -1,3 +1,2 @@
 - role::cache::text
-- profile::cache::envoy
 - profile::cache::haproxy
