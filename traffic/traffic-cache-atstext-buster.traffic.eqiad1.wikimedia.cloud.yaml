@@ -222,6 +222,13 @@ profile::cache::haproxy::available_unified_certificates:
     - wmfusercontent.org
     - '*.wmfusercontent.org'
     - w.wiki
+profile::cache::haproxy::extra_certificates:
+  wikibase:
+    cert_paths:
+    - /etc/acmecerts/wikibase/live/rsa-2048.chained.crt.key
+    - /etc/acmecerts/wikibase/live/ec-prime256v1.chained.crt.key
+    server_names:
+    - wikiba-se.traffic.wmflabs.org
 profile::cache::haproxy::tls_port: 4443
 profile::cache::haproxy::unified_acme_chief: true
 profile::cache::haproxy::unified_certs:
