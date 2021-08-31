@@ -5,6 +5,7 @@ profile::cache::envoy::available_unified_upstreams:
   digicert-2020:
     certificates:
     - cert_path: /etc/ssl/localcerts/digicert-2020-ecdsa-unified.chained.crt
+      key_path: /etc/ssl/private/digicert-2020-ecdsa-unified.key
     - cert_path: /etc/ssl/localcerts/digicert-2020-rsa-unified.chained.crt
     server_names:
     - wikipedia.org
