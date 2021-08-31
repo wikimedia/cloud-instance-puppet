@@ -3,11 +3,9 @@ profile::cache::envoy::alpn_protocols:
 - http/1.1
 profile::cache::envoy::available_unified_upstreams:
   digicert-2020:
-    certificates:
-    - cert_path: /etc/ssl/localcerts/digicert-2020-ecdsa-unified.chained.crt
-      key_path: /etc/ssl/private/digicert-2020-ecdsa-unified.key
-    - cert_path: /etc/ssl/localcerts/digicert-2020-rsa-unified.chained.crt
-      key_path: /etc/ssl/private/digicert-2020-rsa-unified.key
+    cert_paths:
+    - /etc/ssl/localcerts/digicert-2020-ecdsa-unified.chained.crt
+    - /etc/ssl/localcerts/digicert-2020-rsa-unified.chained.crt
     server_names:
     - wikipedia.org
     - '*.wikipedia.org'
@@ -48,14 +46,10 @@ profile::cache::envoy::available_unified_upstreams:
     - wmfusercontent.org
     - '*.wmfusercontent.org'
     - w.wiki
-    upstream:
-      path: /run/varnish-frontend.socket
   lets-encrypt:
-    certificates:
-    - cert_path: /etc/acmecerts/unified/live/rsa-2048.chained.crt
-      key_path: /etc/acmecerts/unified/live/rsa-2048.key
-    - cert_path: /etc/acmecerts/unified/live/ec-prime256v1.chained.crt
-      key_path: /etc/acmecerts/unified/live/ec-prime256v1.key
+    cert_paths:
+    - /etc/acmecerts/unified/live/rsa-2048.chained.crt.key
+    - /etc/acmecerts/unified/live/ec-prime256v1.chained.crt.key
     server_names:
     - wikipedia.org
     - '*.wikipedia.org'
@@ -96,8 +90,6 @@ profile::cache::envoy::available_unified_upstreams:
     - wmfusercontent.org
     - '*.wmfusercontent.org'
     - w.wiki
-    upstream:
-      path: /run/varnish-frontend.socket
 profile::cache::envoy::connection_buffer_limit: 32768
 profile::cache::envoy::downstream_idle_timeout: 3600.0
 profile::cache::envoy::extra_upstreams:
@@ -133,5 +125,6 @@ profile::cache::envoy::unified_certs:
 - digicert-2020-rsa-unified
 profile::cache::envoy::upstream_response_timeout: 60.0
 profile::cache::envoy::websockets: true
+profile::cache::haproxy::tls_port: 4443
 profile::cache::varnish::frontend::listen_uds: /run/varnish-frontend.socket
 profile::cache::varnish::frontend::uds_owner: envoy
