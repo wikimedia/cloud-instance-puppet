@@ -53,7 +53,9 @@ profile::cache::envoy::available_unified_upstreams:
   lets-encrypt:
     certificates:
     - cert_path: /etc/acmecerts/unified/live/rsa-2048.chained.crt
+      key_path: /etc/acmecerts/unified/live/rsa-2048.key
     - cert_path: /etc/acmecerts/unified/live/ec-prime256v1.chained.crt
+      key_path: /etc/acmecerts/unified/live/ec-prime256v1.key
     server_names:
     - wikipedia.org
     - '*.wikipedia.org'
