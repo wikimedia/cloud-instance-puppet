@@ -18,9 +18,3 @@ profile::redis::master::settings:
   maxmemory: 2gb
   save: ''
   stop-writes-on-bgsave-error: false
-profile::standard::admin_groups:
-- project-deployment-prep
-- maps-roots
-- maps-admins
-- kartotherian-admin
-- tilerator-admin
