@@ -222,6 +222,7 @@ profile::cache::haproxy::available_unified_certificates:
     - wmfusercontent.org
     - '*.wmfusercontent.org'
     - w.wiki
+profile::cache::haproxy::do_ocsp: false
 profile::cache::haproxy::extra_certificates:
   wikibase:
     cert_paths:
