@@ -239,4 +239,5 @@ profile::cache::haproxy::unified_certs:
 - digicert-2020-rsa-unified
 profile::cache::haproxy::varnish_socket: /run/varnish-frontend.socket
 profile::cache::varnish::frontend::listen_uds: /run/varnish-frontend.socket
+profile::cache::varnish::frontend::proxy_on_uds: true
 profile::cache::varnish::frontend::uds_owner: envoy
