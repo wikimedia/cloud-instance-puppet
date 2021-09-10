@@ -230,6 +230,10 @@ profile::cache::haproxy::extra_certificates:
     - /etc/acmecerts/wikibase/live/ec-prime256v1.chained.crt.key
     server_names:
     - wikiba-se.traffic.wmflabs.org
+profile::cache::haproxy::h2settings:
+  header_table_size: 4096
+  initial_window_size: 65535
+  max_concurrent_streams: 100
 profile::cache::haproxy::timeout:
   client: 300
   client_fin: 120
