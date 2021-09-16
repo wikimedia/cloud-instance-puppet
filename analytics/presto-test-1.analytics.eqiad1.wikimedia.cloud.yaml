@@ -1,3 +1,9 @@
+alluxio_services:
+  analytics.eqiad1.wikimedia.cloud:
+    master_properties:
+      alluxio.master.journal.folder: hdfs://analytics-test-hadoop/wmf/alluxio/journal
+      alluxio.master.mount.table.root.ufs: hdfs://analytics-test-hadoop/wmf/alluxio/root
+profile::alluxio::common::alluxio_service_name: analytics.eqiad1.wikimedia.cloud
 profile::alluxio::master_hosts:
 - coord-test-1.analytics.eqiad1.wikimedia.cloud
 profile::alluxio::worker_hosts:
