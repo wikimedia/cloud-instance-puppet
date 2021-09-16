@@ -1,1 +1,2 @@
 puppetmaster: presto-test-1.analytics.eqiad1.wikimedia.cloud
+role::puppetmaster::standalone::autosign: true
