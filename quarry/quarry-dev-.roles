@@ -1,4 +1,5 @@
+- role::labs::quarry::database
+- role::labs::quarry::staging
 - role::labs::quarry::celeryrunner
 - role::labs::quarry::web
-- role::labs::quarry::database
 - role::labs::quarry::redis
