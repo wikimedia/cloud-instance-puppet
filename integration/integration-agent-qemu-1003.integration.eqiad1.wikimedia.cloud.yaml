@@ -1,0 +1,2 @@
+labs_lvm::disk: /dev/sdb
+labs_lvm::ephemeral: true
