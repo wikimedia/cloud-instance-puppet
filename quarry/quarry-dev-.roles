@@ -1,1 +1,1 @@
-- role::labs::quarry::staging
+- role::wmcs::quarry::staging
