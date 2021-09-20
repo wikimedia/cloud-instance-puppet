@@ -1,2 +1,2 @@
 mount_nfs: false
-puppetmaster: quarry-puppet-master.quarry.eqiad1.wikimedia.cloud
+puppetmaster: quarry-puppet-master-02.quarry.eqiad1.wikimedia.cloud
