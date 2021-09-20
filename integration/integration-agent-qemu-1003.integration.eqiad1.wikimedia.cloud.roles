@@ -1,1 +1,2 @@
+- profile::wmcs::lvm
 - role::ci::slave::labs::docker
