@@ -6,7 +6,6 @@ profile::docker::runner::service_defs:
   api-gateway:
     config: {}
     image_name: envoy-future
-    namespace: wikimedia
     override_cmd: /usr/bin/envoy -c /etc/api-gateway/config.yaml -l debug
     port: 8087
     version: 1.18.3-1
