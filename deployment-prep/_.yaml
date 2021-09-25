@@ -393,6 +393,7 @@ scap::keyholder_agents:
     - project-deployment-prep
     - deploy-service
 scap::version: present
+send_puppet_failure_emails: false
 service::configuration::logstash_host: deployment-logstash03.deployment-prep.eqiad.wmflabs
 service::configuration::logstash_port: 12201
 service::deploy::scap::public_key_file: puppet:///private/ssh/tin/servicedeploy_rsa.pub
