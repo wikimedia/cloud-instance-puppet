@@ -13,6 +13,8 @@ profile::toolforge::k8s::ingress_nodes:
   port: 30002
 - host: toolsbeta-test-k8s-ingress-4.toolsbeta.eqiad1.wikimedia.cloud
   port: 30002
+- host: toolsbeta-test-k8s-ingress-5.toolsbeta.eqiad1.wikimedia.cloud
+  port: 30002
 profile::toolforge::k8s::ingress_port: 30000
 profile::wmcs::nfsclient::nfs_version: '4.2'
 prometheus::haproxy_exporter::endpoint: http://localhost:8404/stats;csv
