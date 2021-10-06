@@ -113,3 +113,4 @@ sonofgridengine::gridmaster: toolsbeta-sgegrid-master.toolsbeta.eqiad1.wikimedia
 ssh::server::disable_nist_kex: false
 ssh::server::enable_hba: true
 ssh::server::explicit_macs: false
+test::key: something
