@@ -63,6 +63,7 @@ profile::elasticsearch::dc_settings:
 profile::elasticsearch::instances: {}
 profile::elasticsearch::rack: placeholder
 profile::elasticsearch::row: placeholder
+profile::environment::core_dump_pattern: core
 profile::kubernetes::node::disable_rsyslog: true
 profile::openstack::eqiad1::ldap_user_pass: <not available here>
 profile::rsyslog::kubernetes::enable: false
