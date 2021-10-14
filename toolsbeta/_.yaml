@@ -70,7 +70,6 @@ profile::mail::default_mail_relay::enabled: false
 profile::openstack::base::ldap_user_dn: <unavailable here>
 profile::openstack::eqiad1::ldap_user_pass: <not available here>
 profile::prometheus::haproxy_exporter::listen_port: 9901
-profile::standard::has_default_mail_relay: false
 profile::toolforge::active_cronrunner: toolsbeta-sgecron-01.toolsbeta.eqiad.wmflabs
 profile::toolforge::active_mail_relay: tools-mail-02.tools.eqiad.wmflabs
 profile::toolforge::active_proxy_host: toolsbeta-proxy-3
