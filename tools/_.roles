@@ -1,4 +1,4 @@
 - role::aptly::client
-- profile::prometheus::node_exporter
+- role::prometheus::node_exporter
 - profile::toolforge::clush::target
 - profile::toolforge::infrastructure
