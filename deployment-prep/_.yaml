@@ -7,7 +7,6 @@ beta::syncsiteresources::user: www-data
 classes:
 - apt::unattendedupgrades
 - role::aptly::client
-- role::prometheus::node_exporter
 confd::srv_dns: ''
 conftool::hosts: []
 conftool::password: a_secret
