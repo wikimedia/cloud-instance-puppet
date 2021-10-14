@@ -1,1 +1,2 @@
+profile::mail::default_mail_relay::enabled: false
 profile::standard::has_default_mail_relay: false
