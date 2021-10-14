@@ -64,6 +64,7 @@ profile::elasticsearch::instances: {}
 profile::elasticsearch::rack: placeholder
 profile::elasticsearch::row: placeholder
 profile::kubernetes::node::disable_rsyslog: true
+profile::mail::default_mail_relay::enabled: false
 profile::openstack::eqiad1::ldap_user_pass: <not available here>
 profile::rsyslog::kubernetes::enable: false
 profile::standard::has_default_mail_relay: false
