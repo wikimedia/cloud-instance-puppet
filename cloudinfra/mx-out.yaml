@@ -1,4 +1,5 @@
 mtail::from_component: true
+profile::mail::default_mail_relay::enabled: false
 profile::mail::smarthost::cert_name: mx
 profile::standard::has_default_mail_relay: false
 puppetmaster: cloudinfra-internal-puppetmaster-02.cloudinfra.eqiad.wmflabs
