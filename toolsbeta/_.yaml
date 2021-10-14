@@ -66,7 +66,6 @@ profile::elasticsearch::instances: {}
 profile::elasticsearch::rack: placeholder
 profile::elasticsearch::row: placeholder
 profile::elasticsearch::version: '7.4'
-profile::environment::core_dump_pattern: core
 profile::openstack::base::ldap_user_dn: <unavailable here>
 profile::openstack::eqiad1::ldap_user_pass: <not available here>
 profile::prometheus::haproxy_exporter::listen_port: 9901
