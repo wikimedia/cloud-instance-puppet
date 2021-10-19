@@ -1,1 +1,2 @@
+profile::puppetboard::ng::vhost: pdev-puppetboard.wmcloud.org
 puppetmaster: pdev-ppc.puppet-dev.eqiad1.wikimedia.cloud
