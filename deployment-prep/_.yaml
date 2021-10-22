@@ -148,6 +148,10 @@ profile::java::hardened_tls: false
 profile::kafka::broker::log_retention_bytes: 134217728
 profile::kafka::broker::log_segment_bytes: 134217728
 profile::kafka::broker::monitoring_enabled: true
+profile::kubernetes::deployment_server::user_defaults:
+  group: wikidev
+  mode: '0640'
+  owner: mwdeploy
 profile::logstash::collector::input_kafka_ssl_truststore_passwords:
   jumbo-eqiad: qwerty
   logging-codfw: qwerty
