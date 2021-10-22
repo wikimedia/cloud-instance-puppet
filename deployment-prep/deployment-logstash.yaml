@@ -1,3 +1,4 @@
+logstash::gc_log: false
 mtail::logs:
 - /var/log/logstash/logstash-json.log
 profile::elastalert::ensure: present
