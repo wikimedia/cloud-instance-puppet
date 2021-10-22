@@ -13,6 +13,7 @@ profile::elasticsearch::common_settings:
   cluster_name: deployment-prep-logstash-eqiad
   disktype: ssd
   expected_nodes: 1
+  gc_log: false
   heap_memory: 3G
   minimum_master_nodes: 1
   recover_after_nodes: 1
