@@ -33,6 +33,7 @@ profile::acme_chief::certificates:
     CN: mail.tools.wmflabs.org
     SNI:
     - mail.tools.wmflabs.org
+    - mail.tools.wmcloud.org
     authorized_regexes:
     - ^tools-mail-[0-9]+\.tools\.eqiad\.wmflabs$
     - ^tools-mail-[0-9]+\.tools\.eqiad1\.wikimedia\.cloud$
