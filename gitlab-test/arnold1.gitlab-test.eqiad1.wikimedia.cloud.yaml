@@ -1,2 +1,3 @@
 profile::gitlab::active_host: arnold1.gitlab-test.eqiad1.wikimedia.cloud
+profile::gitlab::backup_sync::ensure: absent
 profile::gitlab::passive_host: arnold2.gitlab-test.eqiad1.wikimedia.cloud
