@@ -3,3 +3,4 @@ profile::gitlab::backup_sync::ensure: absent
 profile::gitlab::passive_host: arnold2.gitlab-test.eqiad1.wikimedia.cloud
 profile::gitlab::service_ip_v4: 127.0.0.1
 profile::gitlab::service_ip_v6: fe80::f816:3eff:fedd:5a57
+profile::gitlab::service_name: arnold1.gitlab-test.eqiad1.wikimedia.cloud
