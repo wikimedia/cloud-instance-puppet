@@ -1,2 +1,2 @@
 profile::gitlab::active_host: arnold3.gitlab-test.eqiad1.wikimedia.cloud
-vprofile::gitlab::passive_host: arnold3.gitlab-test.eqiad1.wikimedia.cloud
+profile::gitlab::passive_host: arnold3.gitlab-test.eqiad1.wikimedia.cloud
