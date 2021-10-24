@@ -1,5 +1,4 @@
 - role::labs::ores::redis
-- profile::standard
 - profile::base::firewall
 - profile::labs::lvm::srv
 - profile::ores::web
