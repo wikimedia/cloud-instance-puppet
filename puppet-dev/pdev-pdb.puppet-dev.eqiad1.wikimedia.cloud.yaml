@@ -4,7 +4,8 @@ profile::puppetdb::facts_blacklist:
 - .*eth0.*
 profile::puppetdb::facts_blacklist_type: regex
 profile::puppetdb::master: '%{facts.networking.fqdn}'
-profile::puppetdb::puppetboard_hosts: pdev-board.puppet-dev.eqiad1.wikimedia.cloud
+profile::puppetdb::puppetboard_hosts:
+- pdev-board.puppet-dev.eqiad1.wikimedia.cloud
 puppetmaster: pdev-ppc.puppet-dev.eqiad1.wikimedia.cloud
 puppetmaster::servers:
   pdev-ppc.puppet-dev.eqiad1.wikimedia.cloud:
