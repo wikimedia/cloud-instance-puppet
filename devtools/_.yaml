@@ -4,9 +4,6 @@ cache::nodes:
     - gerrit-prod-1001.devtools.eqiad.wmflabs
     - phabricator-prod-1001.devtools.eqiad.wmflabs
 deployment_server: deploy-1002.devtools.eqiad.wmflabs
-kafka_clusters:
-  logging-eqiad:
-    brokers: {}
 profile::envoy::ensure: absent
 profile::kubernetes::deployment_server::user_defaults:
   group: wikidev
