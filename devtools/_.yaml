@@ -9,6 +9,12 @@ profile::kubernetes::deployment_server::user_defaults:
   group: wikidev
   mode: '0640'
   owner: mwdeploy
+profile::logstash::collector::input_kafka_ssl_truststore_passwords:
+  jumbo-eqiad: qwerty
+  logging-codfw: qwerty
+  logging-eqiad: qwerty
+  main-codfw: qwerty
+  main-eqiad: qwerty
 profile::mediawiki::deployment::server::rsync_host: deploy-1002.devtools.eqiad.wmflabs
 scap::deployment_server: deploy-1002.devtools.eqiad.wmflabs
 scap::wmflabs_master: deploy-1002.devtools.eqiad.wmflabs
