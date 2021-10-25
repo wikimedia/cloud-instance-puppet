@@ -1,2 +1,3 @@
 profile::wmcs::novaproxy::do_https: false
+profile::wmcs::novaproxy::use_ssl: 'false'
 puppetmaster: taavi-pm-1.testlabs.eqiad1.wikimedia.cloud
