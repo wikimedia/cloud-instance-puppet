@@ -5,7 +5,7 @@ cache::nodes:
     - phabricator-prod-1001.devtools.eqiad.wmflabs
 deployment_server: deploy-1002.devtools.eqiad.wmflabs
 kafka_clusters:
-  jumbo-eqiad:
+  logging-eqiad:
     brokers: {}
 profile::envoy::ensure: absent
 profile::kubernetes::deployment_server::user_defaults:
