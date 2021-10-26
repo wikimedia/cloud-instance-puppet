@@ -1,6 +1,0 @@
-profile::pki::client::certs:
-  '%{facts.networking.fqdn}':
-    label: WMF_test_intermediate_ca
-    profile: server
-    provide_chain: true
-puppetmaster: foobar-pm.pki.eqiad1.wikimedia.cloud
