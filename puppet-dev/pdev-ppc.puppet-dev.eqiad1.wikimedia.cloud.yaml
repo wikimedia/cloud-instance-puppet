@@ -1,7 +1,7 @@
-profile::puppetmaster::common::reports:
-- puppetdb
-- logstash
 puppetmaster: puppetmaster.cloudinfra.wmflabs.org
 role::puppetmaster::standalone::puppetdb_host:
 - pdev-pdb.puppet-dev.eqiad1.wikimedia.cloud
+role::puppetmaster::standalone::reports:
+- puppetdb
+- logstash
 role::puppetmaster::standalone::storeconfigs: puppetdb
