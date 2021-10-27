@@ -1,3 +1,2 @@
-- role::beta::puppetmaster
 - profile::conftool::master
 - role::puppetmaster::standalone
