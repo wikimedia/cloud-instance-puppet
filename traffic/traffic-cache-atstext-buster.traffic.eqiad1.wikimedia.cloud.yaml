@@ -134,7 +134,7 @@ profile::cache::envoy::unified_certs:
 profile::cache::envoy::upstream_response_timeout: 60.0
 profile::cache::envoy::websockets: true
 profile::cache::haproxy::acls:
-- criterion: req.hdr_cnt(X-Wikimedia-Debug)
+- criterion: var(txn.xwd_count)
   name: missing_xwd
   operator: eq
   value: '0'
@@ -299,6 +299,10 @@ profile::cache::haproxy::unified_certs:
 - digicert-2020-ecdsa-unified
 - digicert-2020-rsa-unified
 profile::cache::haproxy::varnish_socket: /run/varnish-frontend.socket
+profile::cache::haproxy::vars:
+- direction: request
+  name: txn.xwd_count
+  value: req.hdr_cnt(X-Wikimedia-Debug)
 profile::cache::varnish::frontend::listen_uds: /run/varnish-frontend.socket
 profile::cache::varnish::frontend::proxy_on_uds: true
 profile::cache::varnish::frontend::uds_owner: envoy
