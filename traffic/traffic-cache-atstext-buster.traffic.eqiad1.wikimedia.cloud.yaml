@@ -133,6 +133,27 @@ profile::cache::envoy::unified_certs:
 - digicert-2020-rsa-unified
 profile::cache::envoy::upstream_response_timeout: 60.0
 profile::cache::envoy::websockets: true
+profile::cache::haproxy::acls:
+- criterion: req.hdr_cnt(X-Wikimedia-Debug)
+  name: missing_xwd
+  operator: eq
+  value: '0'
+profile::cache::haproxy::add_headers:
+- direction: request
+  name: X-Client-IP
+  value: '%[src]'
+- direction: request
+  name: X-Client-Port
+  value: '%[src_port]'
+- direction: request
+  name: X-Forwarded-Proto
+  value: https
+- direction: request
+  name: X-Connection-Properties
+  value: '%[lua.xcps]'
+- direction: request
+  name: X-Analytics-TLS
+  value: '%[lua.analytics_tls'
 profile::cache::haproxy::available_unified_certificates:
   digicert-2020:
     cert_paths:
@@ -222,6 +243,33 @@ profile::cache::haproxy::available_unified_certificates:
     - wmfusercontent.org
     - '*.wmfusercontent.org'
     - w.wiki
+profile::cache::haproxy::del_headers:
+- direction: response
+  name: X-Analytics
+- acl: missing_xwd
+  direction: response
+  name: Backend-Timing
+- acl: missing_xwd
+  direction: response
+  name: X-ATS-Timestamp
+- acl: missing_xwd
+  direction: response
+  name: X-Envoy-Upstream-Service-Time
+- acl: missing_xwd
+  direction: response
+  name: X-Powered-By
+- acl: missing_xwd
+  direction: response
+  name: X-Request-Id
+- acl: missing_xwd
+  direction: response
+  name: X-Timestamp
+- acl: missing_xwd
+  direction: response
+  name: X-Trans-Id
+- acl: missing_xwd
+  direction: response
+  name: X-Varnish
 profile::cache::haproxy::do_ocsp: false
 profile::cache::haproxy::extra_certificates:
   wikibase:
