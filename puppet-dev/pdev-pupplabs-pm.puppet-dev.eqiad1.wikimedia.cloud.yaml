@@ -1,1 +1,2 @@
 puppetmaster::gitclone::use_environments: true
+role::puppetmaster::standalone::use_environments: true
