@@ -1,4 +1,4 @@
-role::puppetmaster::standalone::sources:
+role::puppetmaster::standalone::r10k_sources:
   b4ldr:
     ignore_branch_prefixes:
     - production
