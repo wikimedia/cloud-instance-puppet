@@ -1,3 +1,4 @@
+profile::conftool::state::ensure: present
 profile::mariadb::maintenance::ensure: false
 profile::openldap::management::cron_active: false
 profile::tlsproxy::envoy::capitalize_headers: false
