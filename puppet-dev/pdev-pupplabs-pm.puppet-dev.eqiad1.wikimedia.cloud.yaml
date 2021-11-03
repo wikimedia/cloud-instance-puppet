@@ -1,7 +1,7 @@
 role::puppetmaster::standalone::r10k_sources:
   b4ldr:
     ignore_branch_prefixes:
-    - ops
+    - production
     - sandbox
     - pontoon
     remote: https://github.com/b4ldr/puppet-1
