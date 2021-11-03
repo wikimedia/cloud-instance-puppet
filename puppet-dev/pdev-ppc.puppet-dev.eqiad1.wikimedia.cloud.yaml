@@ -1,7 +1,16 @@
 puppetmaster: puppetmaster.cloudinfra.wmflabs.org
 role::puppetmaster::standalone::puppetdb_host:
 - pdev-pdb.puppet-dev.eqiad1.wikimedia.cloud
+role::puppetmaster::standalone::r10k_sources:
+  b4ldr:
+    ignore_branch_prefixes:
+    - production
+    - sandbox
+    - pontoon
+    remote: https://github.com/b4ldr/puppet-1
+    strip_component: wmcs/
 role::puppetmaster::standalone::reports:
 - puppetdb
 - logstash
 role::puppetmaster::standalone::storeconfigs: puppetdb
+role::puppetmaster::standalone::use_r10k: true
