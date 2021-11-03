@@ -7,6 +7,7 @@ role::labs::redirector::redirects:
   horizon.wmflabs.org: https://horizon.wikimedia.org
   living-style-guide.wmflabs.org: https://design.wikimedia.org/style-guide
   livingstyleguide.wmflabs.org: https://design.wikimedia.org/style-guide
+  logstash-beta.wmflabs.org: https://beta-logs.wmcloud.org/
   reportcard.wmflabs.org: https://analytics.wikimedia.org/dashboards/reportcard
   space.wmflabs.org: https://diff.wikimedia.org
   wdq.wmflabs.org: https://query.wikidata.org
