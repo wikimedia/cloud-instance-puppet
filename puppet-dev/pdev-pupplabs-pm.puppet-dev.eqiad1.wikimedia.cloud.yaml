@@ -1,1 +1,8 @@
+role::puppetmaster::standalone::sources:
+  b4ldr:
+    ignore_branch_prefixes:
+    - production
+    - sanbox
+    remote: https://github.com/b4ldr/puppet-1
+    strip_component: wmcs/
 role::puppetmaster::standalone::use_r10k: true
