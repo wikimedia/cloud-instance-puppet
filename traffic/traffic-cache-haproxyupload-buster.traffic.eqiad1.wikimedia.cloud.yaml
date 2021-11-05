@@ -197,7 +197,7 @@ profile::cache::varnish::frontend::fe_vcl_config:
   varnish_probe_ms: 100
 profile::cache::varnish::frontend::listen_uds: /run/varnish-frontend.socket
 profile::cache::varnish::frontend::proxy_on_uds: true
-profile::cache::varnish::frontend::uds_owner: envoy
+profile::cache::varnish::frontend::uds_owner: haproxy
 profile::trafficserver::backend::mapping_rules:
 - params:
   - '@plugin=/usr/lib/trafficserver/modules/tslua.so'
