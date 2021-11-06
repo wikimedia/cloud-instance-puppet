@@ -143,6 +143,7 @@ profile::elasticsearch::base_data_dir: /srv/elasticsearch
 profile::elasticsearch::cirrus::tls_port: 9243
 profile::elasticsearch::dc_settings:
   tls_port: 9243
+profile::envoy::ensure: present
 profile::java::egd_source: /dev/random
 profile::java::hardened_tls: false
 profile::kafka::broker::log_retention_bytes: 134217728
