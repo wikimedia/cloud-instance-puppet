@@ -236,10 +236,6 @@ profile::services_proxy::envoy::listeners:
   timeout: 60s
   upstream: shellbox.svc.deployment-prep.eqiad1.wikimedia.cloud
 profile::tlsproxy::envoy::cfssl_label: deployment-prep.eqiad1.wikimedia.cloud
-profile::tlsproxy::envoy::services:
-- port: 27287
-  server_names:
-  - unused-only-exists-to-unbreak-puppet
 profile::tlsproxy::envoy::ssl_provider: cfssl
 profile::webperf::site::server_name: performance.wikimedia.beta.wmflabs.org
 prometheus_nodes:
