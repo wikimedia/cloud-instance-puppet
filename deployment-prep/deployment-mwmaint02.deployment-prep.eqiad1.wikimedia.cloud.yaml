@@ -3,10 +3,6 @@ profile::conftool::state::query_interval: 30
 profile::mariadb::maintenance::ensure: false
 profile::openldap::management::cron_active: false
 profile::tlsproxy::envoy::capitalize_headers: false
-profile::tlsproxy::envoy::ensure: absent
 profile::tlsproxy::envoy::global_cert_name: mwmaint.discovery.wmnet
-profile::tlsproxy::envoy::services:
-- port: 27287
-  server_names:
-  - unused-only-exists-to-unbreak-puppet
+profile::tlsproxy::envoy::services: []
 profile::tlsproxy::envoy::sni_support: 'no'
