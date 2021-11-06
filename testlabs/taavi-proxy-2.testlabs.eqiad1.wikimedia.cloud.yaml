@@ -1,0 +1,6 @@
+profile::wmcs::novaproxy::active_proxy: taavi-proxy-2
+profile::wmcs::novaproxy::all_proxies:
+- taavi-proxy-2.testlabs.eqiad1.wikimedia.cloud
+profile::wmcs::novaproxy::do_https: false
+profile::wmcs::novaproxy::use_ssl: false
+puppetmaster: taavi-pm-1.testlabs.eqiad1.wikimedia.cloud
