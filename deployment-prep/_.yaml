@@ -226,14 +226,14 @@ profile::restbase::salt_key: secretkey
 profile::rsyslog::kafka_shipper::enable: true
 profile::rsyslog::kafka_shipper::kafka_brokers:
 - deployment-kafka-logging01.deployment-prep.eqiad1.wikimedia.cloud:9093
-profile::services_proxy::ensure: absent
-profile::services_proxy::services:
-  dummy:
-    hostname: dummy.example.net
-    localport: 9999
-    port: 9999
-    scheme: https
-    timeout: 600
+profile::services_proxy::envoy::enabled_listeners:
+- shellbox
+profile::services_proxy::envoy::listeners:
+- name: shellbox
+  port: 6024
+  service: shellbox
+  timeout: 60s
+  upstream: shellbox.svc.deployment-prep.eqiad1.wikimedia.cloud
 profile::webperf::site::server_name: performance.wikimedia.beta.wmflabs.org
 prometheus_nodes:
 - prometheus01.metricsinfra.eqiad.wmflabs
@@ -401,6 +401,26 @@ scap::keyholder_agents:
     - deploy-service
 scap::version: present
 send_puppet_failure_emails: false
+service::catalog:
+  shellbox:
+    description: Shellbox
+    discovery:
+    - active_active: true
+      dnsdisc: shellbox
+    encryption: true
+    ip:
+      eqiad:
+        default: 172.16.4.150
+    monitoring:
+      check_command: check_https_lvs_on_port!shellbox.svc.deployment-prep.eqiad1.wikimedia.cloud!4008!/healthz
+      critical: false
+      sites:
+        eqiad:
+          hostname: shellbox.svc.deployment-prep.eqiad1.wikimedia.cloud
+    port: 4008
+    sites:
+    - eqiad
+    state: production
 service::configuration::logstash_host: deployment-logstash03.deployment-prep.eqiad.wmflabs
 service::configuration::logstash_port: 12201
 service::deploy::scap::public_key_file: puppet:///private/ssh/tin/servicedeploy_rsa.pub
