@@ -35,6 +35,7 @@ kafka_clusters:
       deployment-kafka-jumbo-3.deployment-prep.eqiad1.wikimedia.cloud:
         id: 3
         rack: C
+    ipv6: false
     zookeeper_cluster_name: main-deployment-prep
   jumbo-deployment-prep:
     brokers:
@@ -47,6 +48,7 @@ kafka_clusters:
       deployment-kafka-jumbo-3.deployment-prep.eqiad1.wikimedia.cloud:
         id: 3
         rack: C
+    ipv6: false
     zookeeper_cluster_name: main-deployment-prep
   jumbo-eqiad:
     brokers:
@@ -59,18 +61,21 @@ kafka_clusters:
       deployment-kafka-jumbo-3.deployment-prep.eqiad1.wikimedia.cloud:
         id: 3
         rack: C
+    ipv6: false
     zookeeper_cluster_name: main-deployment-prep
   logging-codfw:
     brokers:
       deployment-kafka-logging01.deployment-prep.eqiad1.wikimedia.cloud:
         id: 1001
         rack: B
+    ipv6: false
     zookeeper_cluster_name: main-deployment-prep
   logging-eqiad:
     brokers:
       deployment-kafka-logging01.deployment-prep.eqiad1.wikimedia.cloud:
         id: 1001
         rack: B
+    ipv6: false
     zookeeper_cluster_name: main-deployment-prep
   main-codfw:
     brokers:
@@ -80,6 +85,7 @@ kafka_clusters:
       deployment-kafka-main-2.deployment-prep.eqiad1.wikimedia.cloud:
         id: 2
         rack: B
+    ipv6: false
     zookeeper_cluster_name: main-deployment-prep
   main-deployment-prep:
     brokers:
@@ -89,6 +95,7 @@ kafka_clusters:
       deployment-kafka-main-2.deployment-prep.eqiad1.wikimedia.cloud:
         id: 2
         rack: B
+    ipv6: false
     zookeeper_cluster_name: main-deployment-prep
   main-eqiad:
     brokers:
@@ -98,6 +105,7 @@ kafka_clusters:
       deployment-kafka-main-2.deployment-prep.eqiad1.wikimedia.cloud:
         id: 2
         rack: B
+    ipv6: false
     zookeeper_cluster_name: main-deployment-prep
 kafka_message_max_bytes: 4194304
 keyholder::require_encrypted_keys: 'no'
