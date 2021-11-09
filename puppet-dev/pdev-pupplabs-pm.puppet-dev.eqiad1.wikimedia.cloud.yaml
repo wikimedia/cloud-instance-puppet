@@ -1,2 +1,0 @@
-profile::base::puppet::environment: puppetlabs
-puppetmaster: pdev-ppc.puppet-dev.eqiad1.wikimedia.cloud
