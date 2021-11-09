@@ -5,6 +5,7 @@ profile::wmcs::novaproxy::all_proxies:
 - proxy-01.project-proxy.eqiad.wmflabs
 - proxy-02.project-proxy.eqiad.wmflabs
 - proxy-03.project-proxy.eqiad1.wikimedia.cloud
+- proxy-04.project-proxy.eqiad1.wikimedia.cloud
 profile::wmcs::novaproxy::block_ref_re: koeri.boun.edu.tr
 profile::wmcs::novaproxy::use_ssl: true
 profile::wmcs::novaproxy::xff_fqdns:
