@@ -1,4 +1,3 @@
-deployment_server: deploy-1002.devtools.eqiad.wmflabs
 profile::envoy::ensure: absent
 profile::kubernetes::deployment_server::user_defaults:
   group: wikidev
