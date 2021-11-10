@@ -1,5 +1,5 @@
 kafka_clusters:
-  logging-beta:
+  logging-eqiad:
     brokers:
       deployment-kafka-logging01.deployment-prep.eqiad1.wikimedia.cloud:
         id: 1001
