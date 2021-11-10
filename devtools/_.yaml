@@ -4,6 +4,7 @@ kafka_clusters:
       deployment-kafka-logging01.deployment-prep.eqiad1.wikimedia.cloud:
         id: 1001
         rack: B
+    zookeeper_cluster_name: main-deployment-prep
 profile::envoy::ensure: absent
 profile::kubernetes::deployment_server::user_defaults:
   group: wikidev
@@ -17,4 +18,3 @@ zookeeper_clusters:
   main-deployment-prep:
     hosts:
       deployment-zookeeper02.eqiad.wmflabs: '2'
-    zookeeper_cluster_name: main-deployment-prep
