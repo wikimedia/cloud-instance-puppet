@@ -14,3 +14,7 @@ profile::mediawiki::deployment::server::rsync_host: deploy-1002.devtools.eqiad.w
 scap::deployment_server: deploy-1002.devtools.eqiad.wmflabs
 scap::wmflabs_master: deploy-1002.devtools.eqiad.wmflabs
 sslcert::certificate::skip_private: true
+zookeeper_clusters:
+  main-deployment-prep:
+    hosts:
+      deployment-zookeeper02.eqiad.wmflabs: '2'
