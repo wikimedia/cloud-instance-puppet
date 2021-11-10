@@ -1,22 +1,2 @@
-kafka_clusters:
-  logging-eqiad:
-    brokers:
-      deployment-kafka-logging01.deployment-prep.eqiad1.wikimedia.cloud:
-        id: 1001
-        rack: B
-    zookeeper_cluster_name: main-deployment-prep
-profile::envoy::ensure: absent
-profile::kubernetes::deployment_server::user_defaults:
-  group: wikidev
-  mode: '0640'
-  owner: mwdeploy
-profile::mediawiki::deployment::server::rsync_host: deploy-1002.devtools.eqiad.wmflabs
-prometheus_nodes:
-- logging-alert-01.logging.eqiad1.wikimedia.cloud
-scap::deployment_server: deploy-1002.devtools.eqiad.wmflabs
-scap::wmflabs_master: deploy-1002.devtools.eqiad.wmflabs
-sslcert::certificate::skip_private: true
-zookeeper_clusters:
-  main-deployment-prep:
-    hosts:
-      deployment-zookeeper02.eqiad.wmflabs: '2'
+profile::resolving::domain_search:
+- eqiad1.wikimedia.cloud
