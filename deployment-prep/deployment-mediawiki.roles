@@ -1,1 +1,3 @@
+- role::mediawiki::appserver
+- role::beta::mediawiki
 - profile::rsyslog::kafka_shipper
