@@ -3,7 +3,7 @@ passwords::root::extra_keys:
   taavi: ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIEUeCTb8k/NOxFkNs3Zn6zbLpsR/lIXzD2HDSZPaqxu4
     taavi@runko
 profile::wmcs::kubeadm::apiserver_fqdn: k8s.svc.paws.eqiad1.wikimedia.cloud
-profile::wmcs::kubeadm::component: thirdparty/kubeadm-k8s-1-19
+profile::wmcs::kubeadm::component: thirdparty/kubeadm-k8s-1-20
 profile::wmcs::kubeadm::etcd_election_timeout: 3000
 profile::wmcs::kubeadm::etcd_heartbeat_interval: 300
 profile::wmcs::kubeadm::kubernetes_version: 1.17.13
