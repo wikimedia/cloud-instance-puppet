@@ -1,0 +1,7 @@
+profile::mail::mx::cert_name: mail_beta_wmflabs_org
+profile::mail::mx::cert_subjects: mail.beta.wmflabs.org
+profile::mail::mx::otrs_mysql_dbname: notreallyanything
+profile::mail::mx::otrs_mysql_pass: otrs
+profile::mail::mx::otrs_mysql_server: nowhere.example.org
+profile::mail::mx::otrs_mysql_user: nobody
+puppetmaster: deployment-puppetmaster04.deployment-prep.eqiad.wmflabs
