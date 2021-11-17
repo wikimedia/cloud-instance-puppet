@@ -1,1 +1,7 @@
+profile::docker::engine::declare_service: true
+profile::docker::engine::packagename: docker-ce
+profile::docker::engine::settings: {}
+profile::docker::engine::version: 18.06.3~ce~3-0~debian
+profile::docker::storage::physical_volumes: /dev/md1
+profile::docker::storage::vg_to_remove: todelete
 puppetmaster: deployment-puppetmaster04.deployment-prep.eqiad.wmflabs
