@@ -1,3 +1,4 @@
+profile::mail::mx::alias_file: /etc/exim4/aliases/wikimedia.org
 profile::mail::mx::cert_name: mail_beta_wmflabs_org
 profile::mail::mx::cert_subjects: mail.beta.wmflabs.org
 profile::mail::mx::otrs_mysql_dbname: notreallyanything
