@@ -1,2 +1,1 @@
-- role::labs::lvm::srv
-- role::labs::mediawiki_vagrant
+- role::simplelamp2
