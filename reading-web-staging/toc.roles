@@ -1,1 +1,2 @@
-[]
+- role::labs::lvm::srv
+- role::labs::mediawiki_vagrant
