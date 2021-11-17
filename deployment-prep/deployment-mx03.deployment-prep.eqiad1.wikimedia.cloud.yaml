@@ -1,3 +1,4 @@
+profile::mail::default_mail_relay::enabled: false
 profile::mail::mx::alias_file: /etc/exim4/aliases/wikimedia.org
 profile::mail::mx::alias_file_mail_rcpt: noone@deploymentprep
 profile::mail::mx::alias_file_mail_subject: deployemntprep mail aliases
