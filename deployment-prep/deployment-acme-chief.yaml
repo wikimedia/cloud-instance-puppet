@@ -22,8 +22,6 @@ profile::acme_chief::certificates:
     - upload.beta.wmflabs.org
     - m.wikidata.beta.wmflabs.org
     - wikidata.beta.wmflabs.org
-    - m.wikifunctions.beta.wmflabs.org
-    - wikifunctions.beta.wmflabs.org
     - '*.wikibooks.beta.wmflabs.org'
     - '*.wikimedia.beta.wmflabs.org'
     - '*.wikinews.beta.wmflabs.org'
@@ -33,8 +31,6 @@ profile::acme_chief::certificates:
     - '*.wikiversity.beta.wmflabs.org'
     - '*.wikivoyage.beta.wmflabs.org'
     - '*.wiktionary.beta.wmflabs.org'
-    - '*.wikifunctions.beta.wmflabs.org'
-    - '*.m.wikifunctions.beta.wmflabs.org'
     - '*.m.wikibooks.beta.wmflabs.org'
     - '*.m.wikimedia.beta.wmflabs.org'
     - '*.m.wikinews.beta.wmflabs.org'
