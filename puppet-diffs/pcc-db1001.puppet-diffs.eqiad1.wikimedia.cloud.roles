@@ -1,3 +1,2 @@
-- profile::ci::slave::labs::common
 - puppet_compiler
 - profile::puppet_compiler::postgres_database
