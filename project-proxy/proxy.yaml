@@ -1,2 +1,5 @@
 mount_nfs: true
 profile::wmcs::novaproxy::acme_certname: wmflabs
+profile::wmcs::novaproxy::keystone_api_fqdn: openstack.eqiad1.wikimediacloud.org
+profile::wmcs::novaproxy::token_validator_project: cloudinfra
+profile::wmcs::novaproxy::token_validator_username: cloudinfrakeystonevalidate
