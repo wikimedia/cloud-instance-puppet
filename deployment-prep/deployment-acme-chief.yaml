@@ -22,6 +22,8 @@ profile::acme_chief::certificates:
     - upload.beta.wmflabs.org
     - m.wikidata.beta.wmflabs.org
     - wikidata.beta.wmflabs.org
+    - m.wikifunctions.beta.wmflabs.org
+    - wikifunctions.beta.wmflabs.org
     - '*.wikibooks.beta.wmflabs.org'
     - '*.wikimedia.beta.wmflabs.org'
     - '*.wikinews.beta.wmflabs.org'
