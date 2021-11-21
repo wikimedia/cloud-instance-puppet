@@ -8,6 +8,13 @@ profile::acme_chief::accounts:
     regr: '{"body": {}, "uri": "https://acme-v02.api.letsencrypt.org/acme/acct/53552803"}'
 profile::acme_chief::active: deployment-acme-chief03.deployment-prep.eqiad.wmflabs
 profile::acme_chief::certificates:
+  mx:
+    CN: mail.beta.wmflabs.org
+    SNI:
+    - mail.beta.wmflabs.org
+    authorized_regexes:
+    - deployment-mx03\.deployment-prep\.eqiad1\.wikimedia\.cloud
+    challenge: dns-01
   unified:
     CN: '*.wikimedia.beta.wmflabs.org'
     SNI:
