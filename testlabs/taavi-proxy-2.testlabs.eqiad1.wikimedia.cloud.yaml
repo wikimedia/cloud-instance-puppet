@@ -1,3 +1,4 @@
+profile::wmcs::novaproxy::acme_certname: null
 profile::wmcs::novaproxy::active_proxy: taavi-proxy-2
 profile::wmcs::novaproxy::all_proxies:
 - taavi-proxy-2.testlabs.eqiad1.wikimedia.cloud
