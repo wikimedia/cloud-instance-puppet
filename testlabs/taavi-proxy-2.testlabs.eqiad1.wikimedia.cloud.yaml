@@ -3,7 +3,7 @@ profile::wmcs::novaproxy::active_proxy: taavi-proxy-2
 profile::wmcs::novaproxy::all_proxies:
 - taavi-proxy-2.testlabs.eqiad1.wikimedia.cloud
 profile::wmcs::novaproxy::do_https: false
-profile::wmcs::novaproxy::keystone_api_fqdn: keystone.eqiad1.wikimediacloud.org
+profile::wmcs::novaproxy::keystone_api_fqdn: openstack.eqiad1.wikimediacloud.org
 profile::wmcs::novaproxy::token_validator_password: Fs6Dq2RtG8KwmM2Z
 profile::wmcs::novaproxy::token_validator_project: observer
 profile::wmcs::novaproxy::token_validator_username: novaobserver
