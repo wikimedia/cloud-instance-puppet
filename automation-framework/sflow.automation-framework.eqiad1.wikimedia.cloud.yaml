@@ -1,7 +1,7 @@
 profile::contacts::role_contacts:
 - Infrastructure Foundations SREs
 profile::pmacct::kafka_cluster: jumbo-eqiad
-profile::pmacct::librdkafka_config: {}
+profile::pmacct::librdkafka_config: []
 profile::samplicator::targets:
 - 127.0.0.1/2055
 - 127.0.0.1/2100
