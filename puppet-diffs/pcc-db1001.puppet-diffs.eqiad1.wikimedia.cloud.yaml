@@ -1,1 +1,1 @@
-labs::ephemeral: false
+labs_lvm::ephemeral: false
