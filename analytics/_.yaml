@@ -1,4 +1,4 @@
-deployment_server: deployment-deploy01.deployment-prep.eqiad1.wikimedia.cloud
+deployment_server: deployment-deploy03.deployment-prep.eqiad1.wikimedia.cloud
 hadoop_clusters:
   analytics-hadoop-labs:
     core_site_extra_properties:
@@ -136,7 +136,7 @@ profile::zookeeper::is_critical: false
 profile::zookeeper::max_client_connections: 1024
 profile::zookeeper::sync_limit: 8
 profile::zookeeper::zookeeper_version: installed
-scap::deployment_server: deployment-deploy01.deployment-prep.eqiad1.wikimedia.cloud
+scap::deployment_server: deployment-deploy03.deployment-prep.eqiad1.wikimedia.cloud
 scap::dsh::groups:
   mediawiki-installation:
     hosts:
@@ -159,7 +159,7 @@ scap::sources:
     repository: analytics/superset/deploy
   analytics/turnilo/deploy:
     repository: analytics/turnilo/deploy
-scap::wmflabs_master: deployment-deploy01.deployment-prep.eqiad1.wikimedia.cloud
+scap::wmflabs_master: deployment-deploy03.deployment-prep.eqiad1.wikimedia.cloud
 zookeeper_clusters:
   main-eqiad:
     hosts:
