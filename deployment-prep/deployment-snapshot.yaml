@@ -8,7 +8,10 @@ dumps_nfs_server: ''
 mediawiki_php7: true
 profile::mediawiki::mcrouter_wancache::use_onhost_memcache: false
 profile::mediawiki::mcrouter_wancache::use_onhost_memcached: false
+profile::mediawiki::php::php_versions:
+- '7.2'
+- '7.4'
 puppetmaster: deployment-puppetmaster04.deployment-prep.eqiad.wmflabs
 snapshot::dumps::nfs_extra_mountopts: ''
-snapshot::dumps::php: /usr/bin/php7.0
+snapshot::dumps::php: /usr/bin/php7.2
 snapshot::dumps::runtype: regular
