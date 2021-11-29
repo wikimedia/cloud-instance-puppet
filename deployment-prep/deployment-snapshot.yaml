@@ -6,6 +6,7 @@ dumps_managed_subdirs:
 - /mnt/dumpsdata/xmldatadumps/temp
 dumps_nfs_server: ''
 mediawiki_php7: true
+profile::dumps::generation::worker::common::php: /usr/bin/php7.4
 profile::mediawiki::mcrouter_wancache::use_onhost_memcache: false
 profile::mediawiki::mcrouter_wancache::use_onhost_memcached: false
 profile::mediawiki::php::php_versions:
