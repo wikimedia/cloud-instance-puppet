@@ -269,7 +269,7 @@ redis::shards:
 restbase::deploy::public_key_file: puppet:///private/ssh/tin/servicedeploy_rsa.pub
 restbase::deploy::scap::public_key_file: puppet:///private/ssh/tin/servicedeploy_rsa.pub
 restbase::deployment: scap
-role::aptly::client::servername: deployment-deploy03.deployment-prep.eqiad.wmflabs
+role::aptly::client::servername: deployment-deploy03.deployment-prep.eqiad1.wikimedia.cloud
 role::cache::text::cluster: cache_text
 role::deployment::repo_config:
   abacist/abacist:
