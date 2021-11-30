@@ -37,10 +37,11 @@ profile::cache::haproxy::add_headers:
   value: https
 - direction: request
   name: X-Connection-Properties
-  value: '%[lua.xcps]'
+  value: H2=%[var(req.h2)]; SSR=%[ssl_fc_is_resumed]; SSL=%[ssl_fc_protocol]; C=%[ssl_fc_cipher];
+    EC=UNKNOWN;
 - direction: request
   name: X-Analytics-TLS
-  value: '%[lua.analytics_tls]'
+  value: vers=%[ssl_fc_protocol];keyx=unknown;auth=%[var(req.auth)];ciph=%[var(req.ciph)];prot=%[var(req.h2s)];sess=%[var(req.sess)]
 profile::cache::haproxy::available_unified_certificates:
   digicert-2020:
     cert_paths:
