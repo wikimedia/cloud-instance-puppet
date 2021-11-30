@@ -13,6 +13,18 @@ profile::cache::haproxy::acls:
   name: missing_xwd
   operator: eq
   value: '0'
+- criterion: fc_http_major
+  name: h2
+  operator: eq
+  value: '2'
+- criterion: ssl_fc_is_resumed
+  name: ssl_session_reused
+  operator: eq
+  value: '1'
+- criterion: ssl_fc_cipher
+  name: ssl_auth_rsa
+  operator: -m reg
+  value: ^ECDHE-RSA
 profile::cache::haproxy::add_headers:
 - direction: request
   name: X-Client-IP
