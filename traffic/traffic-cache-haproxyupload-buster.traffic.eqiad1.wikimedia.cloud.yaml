@@ -188,7 +188,15 @@ profile::cache::haproxy::unified_acme_chief: true
 profile::cache::haproxy::unified_certs:
 - digicert-2020-ecdsa-unified
 - digicert-2020-rsa-unified
-profile::cache::haproxy::varnish_socket: /run/varnish-frontend.socket
+profile::cache::haproxy::varnish_socket:
+- /run/varnish-frontend-0.socket
+- /run/varnish-frontend-1.socket
+- /run/varnish-frontend-2.socket
+- /run/varnish-frontend-3.socket
+- /run/varnish-frontend-4.socket
+- /run/varnish-frontend-5.socket
+- /run/varnish-frontend-6.socket
+- /run/varnish-frontend-7.socket
 profile::cache::haproxy::vars:
 - direction: request
   name: txn.xwd_count
@@ -243,8 +251,15 @@ profile::cache::varnish::frontend::fe_vcl_config:
   upload_domain: upload.wikimedia.beta.wmflabs.org
   upload_webp_hits_threshold: 1000
   varnish_probe_ms: 100
-profile::cache::varnish::frontend::listen_uds: /run/varnish-frontend.socket
-profile::cache::varnish::frontend::proxy_on_uds: true
+profile::cache::varnish::frontend::listen_uds:
+- /run/varnish-frontend-0.socket
+- /run/varnish-frontend-1.socket
+- /run/varnish-frontend-2.socket
+- /run/varnish-frontend-3.socket
+- /run/varnish-frontend-4.socket
+- /run/varnish-frontend-5.socket
+- /run/varnish-frontend-6.socket
+- /run/varnish-frontend-7.socket
 profile::cache::varnish::frontend::uds_owner: haproxy
 profile::trafficserver::backend::mapping_rules:
 - params:
