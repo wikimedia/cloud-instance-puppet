@@ -1,0 +1,6 @@
+httpd::modules:
+- proxy_html
+- proxy
+- proxy_http
+- rewrite
+- ssl
