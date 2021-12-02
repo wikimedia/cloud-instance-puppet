@@ -1,3 +1,5 @@
+TODO::profile::elasticsearch::config_version: '6'
+TODO::profile::elasticsearch::version: '6.5'
 elasticsearch::default_instance_params:
   cluster_name: local-search
   send_logs_to_logstash: false
@@ -11,10 +13,8 @@ httpd::modules:
 - auth_openidc
 profile::elasticsearch::base_data_dir: /srv/elasticsearch
 profile::elasticsearch::common_settings: {}
-profile::elasticsearch::config_version: '6'
 profile::elasticsearch::dc_settings: {}
 profile::elasticsearch::ferm_srange: ''
 profile::elasticsearch::instances: {}
 profile::elasticsearch::rack: ''
 profile::elasticsearch::row: ''
-profile::elasticsearch::version: '6.5'
