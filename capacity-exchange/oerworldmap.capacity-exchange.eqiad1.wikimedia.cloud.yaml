@@ -1,3 +1,5 @@
+elasticsearch::default_instance_params:
+  cluster_name: local-search
 elasticsearch::version: '6'
 httpd::modules:
 - proxy_html
