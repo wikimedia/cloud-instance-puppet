@@ -1,4 +1,3 @@
-http::purge_manual_config: false
 httpd::modules:
 - headers
 - proxy_html
@@ -7,3 +6,4 @@ httpd::modules:
 - rewrite
 - ssl
 - auth_openidc
+httpd::purge_manual_config: false
