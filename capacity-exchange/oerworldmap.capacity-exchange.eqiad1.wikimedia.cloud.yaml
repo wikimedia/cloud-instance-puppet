@@ -1,3 +1,5 @@
+elasticsearch::default_instance_params:
+- cluster_name: local-search
 httpd::modules:
 - proxy_html
 - proxy
@@ -7,7 +9,6 @@ httpd::modules:
 - auth_openidc
 profile::elasticsearch::base_data_dir: /srv/elasticsearch
 profile::elasticsearch::common_settings:
-  cluster_name: local-search
   send_logs_to_logstash: false
   short_cluster_name: local
 profile::elasticsearch::config_version: '6'
