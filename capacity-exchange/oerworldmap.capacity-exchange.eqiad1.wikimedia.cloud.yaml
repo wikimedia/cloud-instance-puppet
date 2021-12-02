@@ -9,4 +9,4 @@ httpd::modules:
 httpd::purge_manual_config: false
 profile::java::java_packages:
 - variant: jdk
-  version: 8
+  version: '8'
