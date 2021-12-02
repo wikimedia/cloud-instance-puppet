@@ -1,4 +1,5 @@
 httpd::modules:
+- headers
 - proxy_html
 - proxy
 - proxy_http
