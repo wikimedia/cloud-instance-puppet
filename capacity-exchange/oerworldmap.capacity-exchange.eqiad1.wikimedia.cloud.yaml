@@ -5,6 +5,10 @@ httpd::modules:
 - rewrite
 - ssl
 - auth_openidc
+profile::elasticsearch::common_settings:
+  cluster_name: local-search
+  send_logs_to_logstash: false
+  short_cluster_name: local
 profile::elasticsearch::config_version: '6'
 profile::elasticsearch::dc_settings: {}
 profile::elasticsearch::instances: {}
