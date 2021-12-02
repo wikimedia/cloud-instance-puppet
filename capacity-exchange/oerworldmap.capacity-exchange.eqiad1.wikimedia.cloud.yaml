@@ -12,5 +12,8 @@ profile::elasticsearch::common_settings:
   short_cluster_name: local
 profile::elasticsearch::config_version: '6'
 profile::elasticsearch::dc_settings: {}
+profile::elasticsearch::ferm_srange: ''
 profile::elasticsearch::instances: {}
+profile::elasticsearch::rack: ''
+profile::elasticsearch::row: ''
 profile::elasticsearch::version: '6.5'
