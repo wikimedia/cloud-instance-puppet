@@ -1,5 +1,0 @@
-- profile::ci::slave::labs::common
-- role::beta::deploymentserver
-- role::deployment_server
-- role::aptly::server
-- role::labs::lvm::srv
