@@ -6,5 +6,6 @@ httpd::modules:
 - ssl
 - auth_openidc
 profile::elasticsearch::config_version: '6'
+profile::elasticsearch::dc_settings: {}
 profile::elasticsearch::instances: {}
 profile::elasticsearch::version: '6.5'
