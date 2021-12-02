@@ -5,6 +5,7 @@ httpd::modules:
 - rewrite
 - ssl
 - auth_openidc
+profile::elasticsearch::base_data_dir: /srv/elasticsearch
 profile::elasticsearch::common_settings:
   cluster_name: local-search
   send_logs_to_logstash: false
