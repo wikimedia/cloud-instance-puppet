@@ -1,3 +1,4 @@
+http::purge_manual_config: false
 httpd::modules:
 - headers
 - proxy_html
