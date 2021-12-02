@@ -4,3 +4,4 @@ httpd::modules:
 - proxy_http
 - rewrite
 - ssl
+- auth_openidc
