@@ -2,7 +2,7 @@ elasticsearch::default_instance_params:
   cluster_name: local-search
   send_logs_to_logstash: false
   short_cluster_name: local
-elasticsearch::version: '6'
+elasticsearch::version: '7'
 httpd::modules:
 - proxy_html
 - proxy
