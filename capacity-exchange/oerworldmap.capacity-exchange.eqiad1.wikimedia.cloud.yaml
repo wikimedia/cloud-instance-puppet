@@ -7,6 +7,3 @@ httpd::modules:
 - ssl
 - auth_openidc
 httpd::purge_manual_config: false
-profile::java::java_packages:
-- variant: jdk
-  version: '8'
