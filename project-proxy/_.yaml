@@ -2,8 +2,6 @@ acmechief_host: project-proxy-acme-chief-01.project-proxy.eqiad.wmflabs
 profile::wmcs::nfsclient::mode: soft
 profile::wmcs::novaproxy::active_proxy: proxy-03
 profile::wmcs::novaproxy::all_proxies:
-- proxy-01.project-proxy.eqiad.wmflabs
-- proxy-02.project-proxy.eqiad.wmflabs
 - proxy-03.project-proxy.eqiad1.wikimedia.cloud
 - proxy-04.project-proxy.eqiad1.wikimedia.cloud
 profile::wmcs::novaproxy::api_readonly: false
