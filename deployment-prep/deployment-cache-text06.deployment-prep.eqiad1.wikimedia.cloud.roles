@@ -1,2 +1,2 @@
-- profile::base::production
+- role::cache::text
 - profile::pki::client
