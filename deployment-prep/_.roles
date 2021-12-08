@@ -1,2 +1,3 @@
 - profile::pki::client
 - profile::rsyslog::kafka_shipper
+- profile::beta::motd
