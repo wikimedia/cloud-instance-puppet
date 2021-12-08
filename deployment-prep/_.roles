@@ -1,3 +1,5 @@
 - profile::pki::client
 - profile::rsyslog::kafka_shipper
 - profile::beta::motd
+- apt::unattendedupgrades
+- role::aptly::client
