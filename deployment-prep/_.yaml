@@ -4,9 +4,6 @@ aptly::group: wikidev
 aptly::manage_nginx: false
 aptly::owner: jenkins-deploy
 beta::syncsiteresources::user: www-data
-classes:
-- apt::unattendedupgrades
-- role::aptly::client
 confd::srv_dns: ''
 conftool::hosts: []
 conftool::password: a_secret
