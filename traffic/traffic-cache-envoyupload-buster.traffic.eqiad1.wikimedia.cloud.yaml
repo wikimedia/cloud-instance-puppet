@@ -133,8 +133,8 @@ profile::cache::envoy::tlsparams:
   ecdh_curves:
   - X25519
   - P-256
-  tls_max_version: TLSv1.3
-  tls_min_version: TLSv1.2
+  tls_max_version: TLSv1_3
+  tls_min_version: TLSv1_2
 profile::cache::envoy::unified_acme_chief: true
 profile::cache::envoy::unified_certs:
 - digicert-2021-ecdsa-unified
