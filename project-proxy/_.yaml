@@ -18,3 +18,4 @@ profile::wmcs::novaproxy::xff_fqdns:
 - xtools-dev.wmflabs.org
 - ws-export.wmcloud.org
 - ircwebchat.wmcloud.org
+- puppet-compiler.wmflabs.org
