@@ -113,6 +113,7 @@ profile::cache::envoy::available_unified_upstreams:
     upstream:
       path: /run/varnish-frontend.socket
 profile::cache::envoy::connection_buffer_limit: 32768
+profile::cache::envoy::do_ocsp: false
 profile::cache::envoy::downstream_idle_timeout: 3600.0
 profile::cache::envoy::http2_options:
   initial_connection_window_size: 1048576
