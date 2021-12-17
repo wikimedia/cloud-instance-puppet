@@ -1,3 +1,4 @@
+kubernetes_cluster_groups: {}
 profile::java::java_packages:
 - variant: jre-headless
   version: '11'
