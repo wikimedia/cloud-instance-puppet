@@ -1,3 +1,8 @@
+profile::base::firewall::extra::services:
+  open https for cumin hosts:
+    port: 443
+    proto: tcp
+    srange: '@resolve((deployment-cumin.deployment-prep.eqiad1.wikimedia.cloud))'
 profile::puppetdb::ca_path: /etc/ssl/certs/Puppet_Internal_CA.pem
 profile::puppetdb::database::shared_buffers: 600MB
 profile::puppetdb::elk_logging: false
@@ -12,12 +17,6 @@ profile::puppetdb::puppetboard_hosts: []
 puppetdb_major_version: 4
 puppetmaster: deployment-puppetmaster04.deployment-prep.eqiad.wmflabs
 puppetmaster::servers:
-  deployment-dumps-puppetmaster02.deployment-prep.eqiad.wmflabs:
-  - loadfactor: 1
-    worker: deployment-dumps-puppetmaster02.deployment-prep.eqiad.wmflabs
-  deployment-puppetmaster03.deployment-prep.eqiad.wmflabs:
-  - loadfactor: 1
-    worker: deployment-puppetmaster03.deployment-prep.eqiad.wmflabs
   deployment-puppetmaster04.deployment-prep.eqiad.wmflabs:
   - loadfactor: 1
     worker: deployment-puppetmaster04.deployment-prep.eqiad.wmflabs
