@@ -1,1 +1,2 @@
 - role::puppetdb
+- profile::base::firewall::extra
