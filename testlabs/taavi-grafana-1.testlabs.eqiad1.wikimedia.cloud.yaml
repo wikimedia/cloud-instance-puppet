@@ -1,3 +1,9 @@
+httpd::modules:
+- authnz_ldap
+- headers
+- proxy
+- proxy_http
+- rewrite
 profile::grafana::config: {}
 profile::grafana::domain: taavi-loki-grafana.wmcloud.org
 profile::grafana::enable_cas: false
