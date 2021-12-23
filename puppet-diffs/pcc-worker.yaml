@@ -1,0 +1,2 @@
+profile::puppet_compiler::puppetdb_host: pcc-db1001.puppet-diffs.eqiad1.wikimedia.cloud
+profile::puppet_compiler::puppetdb_proxy: true
