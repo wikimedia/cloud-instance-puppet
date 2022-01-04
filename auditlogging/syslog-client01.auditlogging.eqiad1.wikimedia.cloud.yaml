@@ -1,5 +1,6 @@
 profile::base::enable_kafka_shipping: false
 profile::base::remote_syslog_send_logs: auth-logs
 profile::base::remote_syslog_tls:
-- eqiad1: syslog-server01.auditlogging.eqiad1.wikimedia.cloud:6514
+- eqiad1:
+  - syslog-server01.auditlogging.eqiad1.wikimedia.cloud:6514
 puppetmaster: puppetmaster03.auditlogging.eqiad1.wikimedia.cloud
