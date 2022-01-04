@@ -2,7 +2,7 @@ profile::graphite::base::cluster_servers:
 - deployment-graphite01.deployment-prep.eqiad1.wikimedia.cloud
 profile::graphite::base::uwsgi_processes: 4
 profile::idp::client::httpd::sites:
-  graphite.wikimedia.org:
+  graphite.wikimedia.beta.wmflabs.org:
     document_root: /usr/share/graphite-web
     proxied_as_https: true
     vhost_content: profile/idp/client/httpd-graphite.erb
