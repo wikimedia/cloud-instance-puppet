@@ -99,6 +99,9 @@ profile::trafficserver::backend::mapping_rules:
 - replacement: https://deployment-eventstreams-1.deployment-prep.eqiad.wmflabs:8092
   target: http://stream.wikimedia.beta.wmflabs.org
   type: map
+- replacement: https://deployment-graphite01.deployment-prep.eqiad1.wikimedia.cloud
+  target: http://graphite.wikimedia.beta.wmflabs.org
+  type: map
 - replacement: https://deployment-eventstreams-1.deployment-prep.eqiad.wmflabs:8093
   target: http://stream-test.wikimedia.beta.wmflabs.org
   type: map
