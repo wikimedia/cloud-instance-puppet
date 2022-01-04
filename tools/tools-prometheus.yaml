@@ -1,2 +1,2 @@
 mount_nfs: false
-profile::toolforge::prometheus::storage_retention_size: 250GB
+profile::toolforge::prometheus::storage_retention_size: 220GB
