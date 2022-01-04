@@ -1,1 +1,1 @@
-[]
+- role::syslog::centralserver_cloud
