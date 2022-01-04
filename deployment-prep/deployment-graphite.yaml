@@ -1,6 +1,11 @@
 profile::graphite::base::cluster_servers:
 - deployment-graphite01.deployment-prep.eqiad1.wikimedia.cloud
 profile::graphite::base::uwsgi_processes: 4
+profile::idp::client::httpd::sites:
+  graphite.wikimedia.org:
+    document_root: /usr/share/graphite-web
+    proxied_as_https: true
+    vhost_content: profile/idp/client/httpd-graphite.erb
 profile::netconsole::client::ensure: absent
 profile::tlsproxy::envoy::access_log: true
 profile::tlsproxy::envoy::capitalize_headers: true
