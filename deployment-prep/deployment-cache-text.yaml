@@ -1,4 +1,6 @@
 cache::alternate_domains:
+  graphite.wikimedia.beta.wmflabs.org:
+    caching: pass
   performance.wikimedia.beta.wmflabs.org:
     caching: normal
 cache::app_def_be_opts:
