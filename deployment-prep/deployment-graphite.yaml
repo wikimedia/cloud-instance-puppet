@@ -1,0 +1,4 @@
+profile::graphite::base::cluster_servers:
+- deployment-graphite01.deployment-prep.eqiad1.wikimedia.cloud
+profile::graphite::base::uwsgi_processes: 4
+profile::netconsole::client::ensure: absent
