@@ -3,12 +3,12 @@ profile::graphite::base::cluster_servers:
 profile::graphite::base::cors_origins:
 - https?://grafana-cloud.wikimedia.org
 - https?://grafana-labs.wikimedia.org
-profile::graphite::base::forward_clusters:
+profile::graphite::base::uwsgi_processes: 4
+profile::graphite::production::forward_clusters:
   big_users:
   - deployment-graphite01.deployment-prep.eqiad1.wikimedia.cloud:1903
   default:
   - deployment-graphite01.deployment-prep.eqiad1.wikimedia.cloud:1903
-profile::graphite::base::uwsgi_processes: 4
 profile::graphite::production::hostname: graphite.wikimedia.beta.wmflabs.org
 profile::graphite::production::use_cas: false
 profile::netconsole::client::ensure: absent
