@@ -1,5 +1,8 @@
 profile::graphite::base::cluster_servers:
 - deployment-graphite01.deployment-prep.eqiad1.wikimedia.cloud
+profile::graphite::base::cors_origins:
+- https?://grafana-cloud.wikimedia.org
+- https?://grafana-labs.wikimedia.org
 profile::graphite::base::uwsgi_processes: 4
 profile::graphite::production::hostname: graphite.wikimedia.beta.wmflabs.org
 profile::graphite::production::use_cas: false
