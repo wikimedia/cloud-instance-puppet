@@ -1,3 +1,12 @@
+profile::graphite::base::c_relay_settings:
+  batch_size: 8000
+  cluster_routes:
+  - - ^MediaWiki\.wanobjectcache\.[a-zA-Z0-9]{32}
+    - blackhole
+  forward_clusters:
+    default:
+    - deployment-graphite01.deployment-prep.eqiad1.wikimedia.cloud:1903
+  queue_depth: 500000
 profile::graphite::base::cluster_servers:
 - deployment-graphite01.deployment-prep.eqiad1.wikimedia.cloud
 profile::graphite::base::cors_origins:
