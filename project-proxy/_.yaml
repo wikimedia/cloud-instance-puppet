@@ -18,3 +18,5 @@ profile::wmcs::novaproxy::xff_fqdns:
 - xtools-dev.wmflabs.org
 - ws-export.wmcloud.org
 - ircwebchat.wmcloud.org
+- wikiwho-api.wmcloud.org
+- wikiwho.wmflabs.org
