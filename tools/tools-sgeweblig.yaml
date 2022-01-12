@@ -1,0 +1,4 @@
+login_server: true
+mount_nfs: true
+profile::ldap::client::labs::client_stack: sssd
+sudo_flavor: sudo
