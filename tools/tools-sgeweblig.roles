@@ -1,1 +1,1 @@
-[]
+- role::wmcs::toolforge::grid::web::lighttpd
