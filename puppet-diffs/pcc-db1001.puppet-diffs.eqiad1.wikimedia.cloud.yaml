@@ -1,4 +1,12 @@
 puppet_compiler::uploader::realms:
+  cloudinfra:
+    cloud-puppetmaster-03: '-----BEGIN PUBLIC KEY----- MIICIjANBgkqhkiG9w0BAQEFAAOCAg8AMIICCgKCAgEAwbvrexHERg9qubWIqAIE
+      ZSWHHjtHG8uU8F6hmfmnY65Ap7DWy31ahC1sZgJtE5KgsrKu31S1rhd+wKkaXSul zjp+LAn3WEOIcOPmAScsgcjsfK1OU7CoXIOf11rAEpoWotlbHi74dSf+XmUbss0D
+      wzdRKZSgDuZ8ru8yQ29qNM65/360r2XtvxfaD1PeoOEguJnvC+HJhBxVvAmrzJHn kIGpgANNceF5SuNmmw3QUg5hnSUCh5w7m1MBvcQnJEAnpHqSM/AfOvQnMv+W+n+W
+      mk2JDkggswgrYq6juLHRCA9+TZMH+0tB4B5wQ14Ke4qRXUmH3ONqKsc42eWFtEi8 jO9CU52iRNU0cQ3w3pv1CDOOHnGHZYx5b62uV3UPIqh7nUk1bar/GD/SLLDYub4l
+      wakua+rTjll6kT02olYwrh5e6EBw9HxyLyadxgp7lPF4ZNm76BVjQf2NWAvalzwq 8zRfl1cyeSdnfya5X9097RTsKuGRfuXBVtsGj5P1oRZUovop3xARqFlJlK/0UG5a
+      vQapFFv3Hm+Z/rzVC0Oec6bJBqzYg+qIbFF0Y70eIQtfek4tXvOAeY6mbTfiorgU Z2wTK1Jvcet458vmj3SA2jFxessEdPsIp6vK/x7onc5TJcjLPnnXvIrcrKtyV4nY
+      HDi/OSkn4TkA9IpiqeUaFocCAwEAAQ== -----END PUBLIC KEY-----'
   production:
     puppetmaster1001: '-----BEGIN PUBLIC KEY-----
 
