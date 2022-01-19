@@ -1,2 +1,3 @@
 mount_nfs: false
 puppetmaster: puppetmaster.cloudinfra.wmflabs.org
+role::puppetmaster::standalone::upload_facts: true
