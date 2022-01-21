@@ -8,28 +8,28 @@ profile::wmcs::proxy::static::blocked_referers: schiebt-sie-ab.de
 profile::wmcs::proxy::static::proxy_mappings:
   0.wma.wmflabs.org:
     certname: wma
-    domain: maps-wma.maps.eqiad1.wikimedia.cloud
+    domain: maps-wma2.maps.eqiad1.wikimedia.cloud
   1.wma.wmflabs.org:
     certname: wma
-    domain: maps-wma.maps.eqiad1.wikimedia.cloud
+    domain: maps-wma2.maps.eqiad1.wikimedia.cloud
   2.wma.wmflabs.org:
     certname: wma
-    domain: maps-wma.maps.eqiad1.wikimedia.cloud
+    domain: maps-wma2.maps.eqiad1.wikimedia.cloud
   3.wma.wmflabs.org:
     certname: wma
-    domain: maps-wma.maps.eqiad1.wikimedia.cloud
+    domain: maps-wma2.maps.eqiad1.wikimedia.cloud
   4.wma.wmflabs.org:
     certname: wma
-    domain: maps-wma.maps.eqiad1.wikimedia.cloud
+    domain: maps-wma2.maps.eqiad1.wikimedia.cloud
   5.wma.wmflabs.org:
     certname: wma
-    domain: maps-wma.maps.eqiad1.wikimedia.cloud
+    domain: maps-wma2.maps.eqiad1.wikimedia.cloud
   6.wma.wmflabs.org:
     certname: wma
-    domain: maps-wma.maps.eqiad1.wikimedia.cloud
+    domain: maps-wma2.maps.eqiad1.wikimedia.cloud
   7.wma.wmflabs.org:
     certname: wma
-    domain: maps-wma.maps.eqiad1.wikimedia.cloud
+    domain: maps-wma2.maps.eqiad1.wikimedia.cloud
   a.tiles.wmflabs.org:
     certname: tiles
     domain: maps-tiles1.maps.eqiad1.wikimedia.cloud
@@ -41,7 +41,7 @@ profile::wmcs::proxy::static::proxy_mappings:
     domain: maps-tiles1.maps.eqiad1.wikimedia.cloud
   label.wma.wmflabs.org:
     certname: tiles
-    domain: maps-wma.maps.eqiad1.wikimedia.cloud
+    domain: maps-wma2.maps.eqiad1.wikimedia.cloud
   maps.wmflabs.org:
     certname: maps
     domain: maps-tiles1.maps.eqiad1.wikimedia.cloud
@@ -53,31 +53,31 @@ profile::wmcs::proxy::static::proxy_mappings:
     domain: maps-warper3.maps.eqiad1.wikimedia.cloud
   wma.wmflabs.org:
     certname: wma
-    domain: maps-wma.maps.eqiad1.wikimedia.cloud
+    domain: maps-wma2.maps.eqiad1.wikimedia.cloud
   wma0.wmflabs.org:
     certname: wmflabs
-    domain: maps-wma.maps.eqiad1.wikimedia.cloud
+    domain: maps-wma2.maps.eqiad1.wikimedia.cloud
   wma1.wmflabs.org:
     certname: wmflabs
-    domain: maps-wma.maps.eqiad1.wikimedia.cloud
+    domain: maps-wma2.maps.eqiad1.wikimedia.cloud
   wma2.wmflabs.org:
     certname: wmflabs
-    domain: maps-wma.maps.eqiad1.wikimedia.cloud
+    domain: maps-wma2.maps.eqiad1.wikimedia.cloud
   wma3.wmflabs.org:
     certname: wmflabs
-    domain: maps-wma.maps.eqiad1.wikimedia.cloud
+    domain: maps-wma2.maps.eqiad1.wikimedia.cloud
   wma4.wmflabs.org:
     certname: wmflabs
-    domain: maps-wma.maps.eqiad1.wikimedia.cloud
+    domain: maps-wma2.maps.eqiad1.wikimedia.cloud
   wma5.wmflabs.org:
     certname: wmflabs
-    domain: maps-wma.maps.eqiad1.wikimedia.cloud
+    domain: maps-wma2.maps.eqiad1.wikimedia.cloud
   wma6.wmflabs.org:
     certname: wmflabs
-    domain: maps-wma.maps.eqiad1.wikimedia.cloud
+    domain: maps-wma2.maps.eqiad1.wikimedia.cloud
   wma7.wmflabs.org:
     certname: wmflabs
-    domain: maps-wma.maps.eqiad1.wikimedia.cloud
+    domain: maps-wma2.maps.eqiad1.wikimedia.cloud
   wmatest.wmflabs.org:
     certname: wmflabs
-    domain: maps-wma.maps.eqiad1.wikimedia.cloud
+    domain: maps-wma2.maps.eqiad1.wikimedia.cloud
