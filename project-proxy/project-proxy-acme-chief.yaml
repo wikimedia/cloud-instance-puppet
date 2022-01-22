@@ -31,6 +31,8 @@ profile::acme_chief::certificates:
     SNI:
     - wma.wmflabs.org
     - '*.wma.wmflabs.org'
+    - wma.wmcloud.org
+    - '*.wma.wmcloud.org'
     authorized_regexes:
     - ^.+\.project-proxy\.eqiad\.wmflabs$
     - ^.+\.project-proxy\.eqiad1\.wikimedia\.cloud$
