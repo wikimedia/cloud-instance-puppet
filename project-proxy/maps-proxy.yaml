@@ -6,6 +6,9 @@ profile::wmcs::proxy::static::acme_chief_certs:
 - wmflabs
 profile::wmcs::proxy::static::blocked_referers: schiebt-sie-ab.de
 profile::wmcs::proxy::static::proxy_mappings:
+  '*.wma.wmcloud.org':
+    certname: wmflabs
+    domain: maps-wma2.maps.eqiad1.wikimedia.cloud
   0.wma.wmflabs.org:
     certname: wma
     domain: maps-wma2.maps.eqiad1.wikimedia.cloud
@@ -51,6 +54,9 @@ profile::wmcs::proxy::static::proxy_mappings:
   warper.wmflabs.org:
     certname: wmflabs
     domain: maps-warper3.maps.eqiad1.wikimedia.cloud
+  wma.wmcloud.org:
+    certname: wmflabs
+    domain: maps-wma2.maps.eqiad1.wikimedia.cloud
   wma.wmflabs.org:
     certname: wma
     domain: maps-wma2.maps.eqiad1.wikimedia.cloud
