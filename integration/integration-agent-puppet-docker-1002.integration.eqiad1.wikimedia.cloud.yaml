@@ -1,2 +1,1 @@
 puppetmaster: integration-puppetmaster-02.integration.eqiad.wmflabs
-role::ci::slave::labs::docker::docker_lvm_volume: 'true'
