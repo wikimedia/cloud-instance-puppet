@@ -1,0 +1,149 @@
+foobar::uploader::realms:
+  cloudinfra:
+    cloud-puppetmaster-03: '-----BEGIN PUBLIC KEY-----
+
+      MIICIjANBgkqhkiG9w0BAQEFAAOCAg8AMIICCgKCAgEAwbvrexHERg9qubWIqAIE
+
+      ZSWHHjtHG8uU8F6hmfmnY65Ap7DWy31ahC1sZgJtE5KgsrKu31S1rhd+wKkaXSul
+
+      zjp+LAn3WEOIcOPmAScsgcjsfK1OU7CoXIOf11rAEpoWotlbHi74dSf+XmUbss0D
+
+      wzdRKZSgDuZ8ru8yQ29qNM65/360r2XtvxfaD1PeoOEguJnvC+HJhBxVvAmrzJHn
+
+      kIGpgANNceF5SuNmmw3QUg5hnSUCh5w7m1MBvcQnJEAnpHqSM/AfOvQnMv+W+n+W
+
+      mk2JDkggswgrYq6juLHRCA9+TZMH+0tB4B5wQ14Ke4qRXUmH3ONqKsc42eWFtEi8
+
+      jO9CU52iRNU0cQ3w3pv1CDOOHnGHZYx5b62uV3UPIqh7nUk1bar/GD/SLLDYub4l
+
+      wakua+rTjll6kT02olYwrh5e6EBw9HxyLyadxgp7lPF4ZNm76BVjQf2NWAvalzwq
+
+      8zRfl1cyeSdnfya5X9097RTsKuGRfuXBVtsGj5P1oRZUovop3xARqFlJlK/0UG5a
+
+      vQapFFv3Hm+Z/rzVC0Oec6bJBqzYg+qIbFF0Y70eIQtfek4tXvOAeY6mbTfiorgU
+
+      Z2wTK1Jvcet458vmj3SA2jFxessEdPsIp6vK/x7onc5TJcjLPnnXvIrcrKtyV4nY
+
+      HDi/OSkn4TkA9IpiqeUaFocCAwEAAQ==
+
+      -----END PUBLIC KEY-----
+
+      '
+  deployment-prep:
+    deployment-puppetmaster04: '-----BEGIN PUBLIC KEY-----
+
+      MIICIjANBgkqhkiG9w0BAQEFAAOCAg8AMIICCgKCAgEApuxohaA21d8YqF5vVEIB
+
+      06kvvEeLYsHdge3CHBwS4JVMspoXkzVDHbjbCLXMRMAJ9xy3HbsGFcE0MSr17oF2
+
+      YMACKUidt0nNdjTUJZ8wYYWa3YqRIfUhV7C7FDCclKw9Vj73Up1BwdJMC0/S1te9
+
+      pfHbo6nRwJDATEA1UyxgWBmUnJmqevLUvygppYeEb6IcjPhJGRia1jnK3VzNgyW8
+
+      vRr6dbx9qZjvoY/KNMCFRrjvIxk7QUJfwxg1ZlJ8drwkm0vgKDmIN8l4zXAdPkgf
+
+      WPRp2lpanS0vqHHILnl1UlHHf4kM7Q3H6y8QQN1OQfx4VuQIOHX5rLb8OPMdkiA4
+
+      NQSMpWiSzJI5uUnyZm0unzu3F8d6VSAN/kgtEMnnpKA7FVCuFThW0zQGtVHz9QQn
+
+      jE1BodAATdGmsOR4cukdfZxtYOuYmWFQsyHmvgcYaO/LXfe4tjpllhWnvPQpz48k
+
+      8TGvctenbQH/HSo/3yFsYKMFoFGTuyWiL68hv2Ot5ZtgmxPhtTCtoEmIajvYe8k1
+
+      EH0CKL44wBQOUmOAlHdROwQauZsqa8bXQTMEzZ8k6lXz06lGY0frhngbR53naEnY
+
+      C0gyRPFAn46QOzOJQgzMneMSVp7IN05i4IYW/1kiQOT7Ks22UEJyZhXYpTkTnuQ6
+
+      2jK3v7JNqnd3yHHg/iCdroUCAwEAAQ==
+
+      -----END PUBLIC KEY-----
+
+      '
+  production:
+    puppetmaster1001: '-----BEGIN PUBLIC KEY-----
+
+      MIICIjANBgkqhkiG9w0BAQEFAAOCAg8AMIICCgKCAgEAl+eoPKZrnvwYsQyolUZn
+
+      QmR3pCPAy+8uu0qm9Buy537OhONHAbnEkemKvQtPsc9wM+G9oUu+kjUEJeMd/KjW
+
+      E6SR+XAZv5+/dSfkckcoXDZQ4w0fk6XaH5Q2gZXa8axYSCnMi+cXOWxmegeHG857
+
+      8VlLkBy+sUwEvBqdyi8a14G7dn1DTCqB89xA0hwFrGpfewqEeMQWi2ic/3DFSlvm
+
+      ydDhDw0KGDYNG2+1jcfFZrs6fUt7tmiepNcr2Zas17l/JvKzp6h4+WiF7cX0LNd/
+
+      9K1j9bXdZBGV/QltY3vVp//8L1pEj8JVDrlKZD6LGNO1RL1Ej7dw5lyU+1R9/wW9
+
+      KDfxA7Ktp0oNZ1jVcL06NqiG680vBbNGGd4uYSEo+Vf/OfiiTiffP5MhFxnPSvPj
+
+      El1ojUV28kKfjoEuo584OjI7rIy1K6kk5PuRmeIbrbx2oQCdOg85mUxlGaTuHIgN
+
+      YBuNYYfqxZ0jwZNKIrgwZxFseE/Mb4FYu8qPQPfyX0NXqngEu5+u+YNB/pIApDbJ
+
+      XEGc1iku5HzFu03J2MRwgOLUX8CIIGvaWse6UeeezX3VT7AJjrpuYKzE0m1+8M8k
+
+      y3hOQS4EW3C2l0tknlM07hwWU8KCzfoT+JBstH5FTwXYqlMfPANzrJIE5t7FNhu4
+
+      kOHUQwj4Rl5xXaZ8GCV6feECAwEAAQ==
+
+      -----END PUBLIC KEY-----
+
+      '
+  tools:
+    tools-puppetmaster-02: '-----BEGIN PUBLIC KEY-----
+
+      MIICIjANBgkqhkiG9w0BAQEFAAOCAg8AMIICCgKCAgEAwFJKcHDf2j1f76imoC+a
+
+      KEOqrxM/bq6Kf9Uy3N18S7YTTRYi8k9MdOWen0Yzmugcm0AG6SJFBw4nb3Md7kKE
+
+      599hvoTQec535EuV8DgK9ryeCur+UtrTUb9+vYyfobNSErwBD/YbfOxXRVU3VlIU
+
+      +uJasWwxL4BXSxWXAZREiGIawvMbk/MtSoi7j4r+CcKge3zvUdHm16gqomVtPQvp
+
+      LZTbQpqCpgspQhCPfdLIIP77bFZhPnjR6ofnBpStKZe9DCcbTyDRF8lAcb5gD/yz
+
+      asJzHNRRV5oB7zpHAQ0OLrO3M1gcv1+TyjIK/g+790g4wt2CcDC/yDdE5SmgnBOu
+
+      AtYLZ3K1OupMZ9JHbLDeNlHVrpfvuHwIxuOIpjzy0jI+ny67OLtNgtNYvu0k2feR
+
+      zoVB9AnEnMjsJlAhxxKAfjLZkcfhDGoMSw36vwKX56TFeTt4kb/Fzie8GEFgAKAl
+
+      g5/3PvAtH1fd6B59FM0wsboISYvh6B40QupZ8pNrUaaJvfjc7y2gVhnfrqP6VIMG
+
+      YMCwWmmKDb8MXqdJ9ntZjyvTi+NwT/cRHY5laFZiJChf6IoaOo5UJYkUzVVG0JIu
+
+      cq2SKnTSqjIwZdbe+NNVAkVDh5rFk2KTxfoj0+k5Lp3fhHBjNVyXkVdTQgWamdKJ
+
+      XqXaLTp89ICMQK1dCMVw7CsCAwEAAQ==
+
+      -----END PUBLIC KEY-----
+
+      '
+  toolsbeta:
+    toolsbeta-puppetmaster-04: '-----BEGIN PUBLIC KEY-----
+
+      MIICIjANBgkqhkiG9w0BAQEFAAOCAg8AMIICCgKCAgEA4CE1fDuR/C8hHALdJCvo
+
+      kI8zUSpRbzg6eRyEGdigXvRwNnwz84ewTinUu4Yq7OzhvsUN9YljBCgzHeCv6VYL
+
+      k/vZTy3AvRH0nUTgMx6Ak8pQHKfcLVMUNdWE2dqLRj683Pb7XJ7O45BJ59DjmRea
+
+      pzGioKaOer6OmCwTe/sY5Dy0rbq1WvWFAcQR6MPsQoea3A6OcU4+NqJx+rGNk8db
+
+      RmlaEniC4vX9Pjl219UuGDEN+m6dmjQXSPTc4FqodPZa+sQicL7/taq02n33T74d
+
+      VOSnljO0yy8ctvPYUotQ77UIlIV4fSjcf83kh/yWOaqz3Um9N7/SUb+5SfuClL5Z
+
+      qHKc4ydppqYqwtYHH31Zht2n3FJb2/N/Hks8v/cf/eM+dqvYByqYvQGigZ8ndLfM
+
+      +Xtj0M5M/C+Ai2+O+cUeRcM92mK6+OyT9aKoPzkuVtxYYn6xbSO+CheA9HnmgcEo
+
+      ViCFq3IbxaXnazzqi8ADl5Z77WDEs2/O0z47OmlwRwSU+MKoRIExvM3K3//Bof1t
+
+      9HLlqICw+0EC0ae2c4Afb54YcawmQfcsLPvqXr6425kKgebYdV5IeHOMVbgpk+1u
+
+      XRZcgbmwvtYIkaU/DY0D0Kcmh/gRP29IE2AVBqWlkzrS90y8HedBDEA4jmW0fKvx
+
+      +iOcRuNWOD+fII/vM8WAtjkCAwEAAQ==
+
+      -----END PUBLIC KEY-----'
