@@ -1,1 +1,0 @@
-role::ci::slave::labs::docker::docker_lvm_volume: 'true'
