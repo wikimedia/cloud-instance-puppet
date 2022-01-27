@@ -1,1 +1,2 @@
+profile::openstack::codfw1dev::keystone_api_fqdn: foo
 profile::openstack::codfw1dev::region: foo
