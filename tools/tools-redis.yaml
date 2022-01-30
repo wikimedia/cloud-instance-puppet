@@ -1,4 +1,6 @@
 mount_nfs: false
+profile::toolforge::redis_sentinel::keepalived_vips:
+- redis-new.svc.tools.eqiad1.wikimedia.cloud
 profile::toolforge::redis_sentinel::primary: tools-redis-5.tools.eqiad1.wikimedia.cloud
 profile::toolforge::redis_sentinel::redis_hosts:
 - tools-redis-5.tools.eqiad1.wikimedia.cloud
