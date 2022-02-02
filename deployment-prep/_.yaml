@@ -421,10 +421,10 @@ service::catalog:
         default: 172.16.4.150
     monitoring:
       check_command: check_https_lvs_on_port!shellbox.svc.deployment-prep.eqiad1.wikimedia.cloud!4008!/healthz
-      critical: false
       sites:
         eqiad:
           hostname: shellbox.svc.deployment-prep.eqiad1.wikimedia.cloud
+    page: false
     port: 4008
     sites:
     - eqiad
