@@ -1,1 +1,1 @@
-- role::ci::slave::labs::docker
+- role::ci::agent::qemu
