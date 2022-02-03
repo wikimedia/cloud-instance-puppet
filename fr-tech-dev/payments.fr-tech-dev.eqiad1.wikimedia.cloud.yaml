@@ -1,7 +1,2 @@
-nginx::site:
-  content: "server {\n  listen 8055;\n  server_name paymentstest5.wmcloud.org;\n \
-    \ location /.well-known {\n    alias /var/www/applepay/paymentstest5/.well-known;\n\
-    \  }\n  location / {\n    proxy_set_header Host $host;\n    proxy_pass http://localhost:8005;\n\
-    \  }\n}"
 profile::base::ssh_server_settings:
   gateway_ports: true
