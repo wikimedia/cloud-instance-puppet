@@ -12,6 +12,7 @@ profile::tlsproxy::envoy::cfssl_label: deployment-prep.eqiad1.wikimedia.cloud
 profile::tlsproxy::envoy::cfssl_options:
   hosts:
   - appservers.svc.deployment-prep.eqiad1.wikimedia.cloud
+  - api.svc.deployment-prep.eqiad1.wikimedia.cloud
   - '*.wikipedia.beta.wmflabs.org'
   - '*.wiktionary.beta.wmflabs.org'
   - '*.wikibooks.beta.wmflabs.org'
