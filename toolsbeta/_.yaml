@@ -94,14 +94,14 @@ profile::toolforge::jobs_api_fqdn: jobs.toolsbeta.wmflabs.org
 profile::toolforge::jobs_api_port: 30001
 profile::toolforge::k8s::calico_version: v3.21.0
 profile::toolforge::k8s::ingress_replicas: 3
-profile::toolforge::k8s::kubernetes_version: 1.20.11
+profile::toolforge::k8s::kubernetes_version: 1.21.8
 profile::toolforge::mailrelay::external_hostname: mail.tools.wmflabs.org
 profile::toolforge::proxies:
 - toolsbeta-proxy-3.toolsbeta.eqiad1.wikimedia.cloud
 - toolsbeta-proxy-4.toolsbeta.eqiad1.wikimedia.cloud
 profile::toolforge::services::active_node: tools-services-05.tools.eqiad1.wikimedia.cloud
 profile::toolforge::services::updatetools_enabled: false
-profile::wmcs::kubeadm::component: thirdparty/kubeadm-k8s-1-20
+profile::wmcs::kubeadm::component: thirdparty/kubeadm-k8s-1-21
 prometheus::haproxy_exporter::endpoint: http://localhost:9900/stats;csv
 prometheus_nodes:
 - tools-prometheus-03.tools.eqiad.wmflabs
