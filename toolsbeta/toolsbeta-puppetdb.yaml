@@ -1,3 +1,8 @@
+profile::base::firewall::extra::services:
+  open https for cumin hosts:
+    port: 443
+    proto: tcp
+    srange: '@resolve((toolsbeta-cumin-1.toolsbeta.eqiad1.wikimedia.cloud))'
 profile::puppetdb::database::shared_buffers: 768MB
 profile::puppetdb::filter_job_id: true
 profile::puppetdb::master: toolsbeta-puppetdb-02.toolsbeta.eqiad.wmflabs
