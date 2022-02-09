@@ -65,6 +65,9 @@ profile::elasticsearch::rack: placeholder
 profile::elasticsearch::row: placeholder
 profile::kubernetes::node::disable_rsyslog: true
 profile::mail::default_mail_relay::enabled: false
+profile::openstack::eqiad1::cumin::project_masters:
+- 172.16.5.85
+profile::openstack::eqiad1::cumin::project_pub_key: ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIO8as2dazxB8rDdZed/ee0prcEwOSpRJi22clMCCi7HG
 profile::openstack::eqiad1::ldap_user_pass: <not available here>
 profile::rsyslog::kubernetes::enable: false
 profile::toolforge::active_cronrunner: tools-sgecron-01.tools.eqiad.wmflabs
