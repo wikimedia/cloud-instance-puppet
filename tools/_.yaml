@@ -28,6 +28,7 @@ passwords::root::extra_keys:
 profile::base::core_dump_pattern: core
 profile::base::labs::unattended_distro: absent
 profile::base::labs::unattended_wmf: absent
+profile::base::manage_ssh_keys: false
 profile::base::ssh_server_settings:
   challenge_response_auth: false
   disable_agent_forwarding: false
