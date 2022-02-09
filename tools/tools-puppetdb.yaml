@@ -1,1 +1,6 @@
+profile::base::firewall::extra::services:
+  open https for cumin hosts:
+    port: 443
+    proto: tcp
+    srange: '@resolve((tools-cumin-1.tools.eqiad1.wikimedia.cloud))'
 profile::puppetdb::master: tools-puppetdb-1.tools.eqiad1.wikimedia.cloud
