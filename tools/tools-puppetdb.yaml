@@ -1,10 +1,1 @@
-profile::puppetdb::master: tools-puppetdb-01.tools.eqiad.wmflabs
-profile::puppetdb::microservice::enabled: false
-profile::puppetdb::microservice::port: 0
-profile::puppetdb::microservice::uwsgi_port: 0
-puppet_major_version: 4
-puppetdb_major_version: 4
-puppetmaster::servers:
-  tools-puppetmaster-01.tools.eqiad.wmflabs:
-  - loadfactor: 1
-    worker: tools-puppetmaster-01.tools.eqiad.wmflabs
+profile::puppetdb::master: tools-puppetdb-1.tools.eqiad1.wikimedia.cloud
