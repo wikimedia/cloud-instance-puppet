@@ -68,6 +68,9 @@ profile::elasticsearch::row: placeholder
 profile::elasticsearch::version: '7.4'
 profile::mail::default_mail_relay::enabled: false
 profile::openstack::base::ldap_user_dn: <unavailable here>
+profile::openstack::eqiad1::cumin::project_masters:
+- 172.16.2.133
+profile::openstack::eqiad1::cumin::project_pub_key: ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIA5++4xfbwOy1CC2ehmzN4D4uHuM9wwUl++Xds59IXjj
 profile::openstack::eqiad1::ldap_user_pass: <not available here>
 profile::prometheus::haproxy_exporter::listen_port: 9901
 profile::toolforge::active_cronrunner: toolsbeta-sgecron-01.toolsbeta.eqiad.wmflabs
