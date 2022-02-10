@@ -10,10 +10,6 @@ dynamicproxy::banned_ips:
 dynamicproxy::blocked_user_agent_regex: TweetmemeBot|Chrome/38\.0\.2125\.104|Applebot
 dynamicproxy::error_details: ''
 gridengine::gridmaster: tools-grid-master.tools.eqiad.wmflabs
-network::allow_ssh_from_ips:
-- 10.68.21.162
-- 10.68.17.221
-- 10.68.22.61
 passwords::root::extra_keys:
   bd808: ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDb8nsxA3thqd87nLu+1mA0Jc1KY90t5qW7N+jRQksc4NLzlFqBTrld+Qm2FRVbLm37HZ9TRBZb2nuTYJIZhkNU7rRPEKs3cIUbh1pB7BbYv0aJ3F0qBD6UtHqOUIJhqVNYJ/ssobzFh2QrcrOM3eS8PrIPtL/CQSUmKmUjG8zhCocAiQZDFeIQLSyGyCWVrRg14SPjED0+wIQTGoTtCabL4B5AlLcTf2L5ztDUtaoXDObUpDJ5Tw6VUUzDoUjV+Y5AtxK4erwLRHeFEcSzmWWl0Sruhnp/TzaF4vGijl6Wcyi2O9TClBhGmp7gTl4CtMj8MDDm+7NO3dQmQMseded1
     bd808+labs@wmf-bd808-mbp01.local
@@ -101,10 +97,6 @@ prometheus_nodes:
 puppetmaster: tools-puppetmaster-02.tools.eqiad.wmflabs
 role::aptly::client::servername: tools-services-05.tools.eqiad1.wikimedia.cloud
 role::labs::nfsclient::lookupcache: all
-role::toollabs::logging::sender::centralserver: tools-logs-01.tools.eqiad.wmflabs
-role::toollabs::logging::sender::centralserver_ips:
-- 10.68.17.229
-- 10.68.22.34
 sonofgridengine::gridmaster: tools-sgegrid-master.tools.eqiad1.wikimedia.cloud
 ssh::server::disable_nist_kex: false
 ssh::server::enable_hba: true
