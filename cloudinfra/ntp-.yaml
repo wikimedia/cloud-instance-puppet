@@ -3,8 +3,10 @@ ntp_peers:
   - ntp-01.cloudinfra.eqiad.wmflabs
   - ntp-02.cloudinfra.eqiad.wmflabs
   - ntp-03.cloudinfra.eqiad1.wikimedia.cloud
+  - ntp-04.cloudinfra.eqiad1.wikimedia.cloud
 profile::systemd::timesyncd::ensure: absent
 profile::wmcs::services::server_peers:
 - ntp-01.cloudinfra.eqiad.wmflabs
 - ntp-02.cloudinfra.eqiad.wmflabs
 - ntp-03.cloudinfra.eqiad1.wikimedia.cloud
+- ntp-04.cloudinfra.eqiad1.wikimedia.cloud
