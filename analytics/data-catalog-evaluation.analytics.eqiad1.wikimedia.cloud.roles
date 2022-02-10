@@ -1,0 +1,2 @@
+- role::puppetmaster::standalone
+- profile::opensearch
