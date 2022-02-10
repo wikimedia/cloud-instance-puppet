@@ -1,8 +1,3 @@
-profile::base::firewall::extra::services:
-  open https for cumin hosts:
-    port: 443
-    proto: tcp
-    srange: '@resolve((deployment-cumin.deployment-prep.eqiad1.wikimedia.cloud))'
 profile::puppetdb::ca_path: /etc/ssl/certs/Puppet_Internal_CA.pem
 profile::puppetdb::database::shared_buffers: 600MB
 profile::puppetdb::elk_logging: false
