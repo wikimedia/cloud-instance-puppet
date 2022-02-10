@@ -1,6 +1,1 @@
-ntp_peers:
-  eqiad:
-  - ntp-01.cloudinfra.eqiad.wmflabs
-  - ntp-02.cloudinfra.eqiad.wmflabs
-profile::wmcs::services::server_peers:
-- ntp-01.cloudinfra.eqiad.wmflabs
+{}
