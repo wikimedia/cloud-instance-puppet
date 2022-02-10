@@ -1,5 +1,3 @@
 mount_nfs: true
-profile::wmcs::nfsclient::project_nfs_server: quarry-nfs.svc.quarry.eqiad1.wikimedia.cloud
-profile::wmcs::nfsclient::project_nfs_server_path: /srv/quarry/project/
 ssh::server::disable_nist_kex: false
 ssh::server::explicit_macs: false
