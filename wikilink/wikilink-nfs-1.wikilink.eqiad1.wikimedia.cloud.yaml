@@ -1,0 +1,4 @@
+mount_nfs: true
+profile::wcms::nfs::standalone::cinder_attached: true
+profile::wcms::nfs::standalone::volumes:
+- wikilink
