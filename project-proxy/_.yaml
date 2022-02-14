@@ -6,6 +6,7 @@ profile::wmcs::novaproxy::all_proxies:
 - proxy-04.project-proxy.eqiad1.wikimedia.cloud
 profile::wmcs::novaproxy::api_readonly: false
 profile::wmcs::novaproxy::block_ref_re: koeri.boun.edu.tr
+profile::wmcs::novaproxy::proxy_dns_ipv4: 185.15.56.49
 profile::wmcs::novaproxy::use_ssl: true
 profile::wmcs::novaproxy::xff_fqdns:
 - accounts.wmflabs.org
