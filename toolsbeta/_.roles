@@ -1,3 +1,2 @@
 - role::aptly::client
-- profile::toolforge::clush::target
 - profile::toolforge::infrastructure
