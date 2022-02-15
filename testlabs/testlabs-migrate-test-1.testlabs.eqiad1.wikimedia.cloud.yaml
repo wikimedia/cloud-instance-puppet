@@ -1,4 +1,4 @@
 profile::wcms::nfs::standalone::cinder_attached: true
 profile::wcms::nfs::standalone::volumes:
 - arbitraryvolumename
-puppetmaster: abogott-puppetmaster.testlabs.eqiad1.wmflabs
+puppetmaster: abogott-puppetmaster.testlabs.eqiad.wmflabs
