@@ -1,2 +1,2 @@
 - role::puppetmaster::standalone
-- profile::opensearch
+- '# profile::opensearch'
