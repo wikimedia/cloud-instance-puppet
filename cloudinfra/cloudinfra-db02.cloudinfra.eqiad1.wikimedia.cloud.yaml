@@ -1,2 +1,0 @@
-profile::mariadb::section_ports: {}
-puppetmaster: cloudinfra-internal-puppetmaster-02.cloudinfra.eqiad.wmflabs
