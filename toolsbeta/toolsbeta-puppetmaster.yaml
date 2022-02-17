@@ -1,4 +1,3 @@
-puppetmaster: puppetmaster.cloudinfra.wmflabs.org
 role::puppetmaster::standalone::puppetdb_host:
 - toolsbeta-puppetdb-02.toolsbeta.eqiad.wmflabs
 role::puppetmaster::standalone::storeconfigs: puppetdb
