@@ -240,6 +240,20 @@ profile::services_proxy::envoy::listeners:
   service: shellbox
   timeout: 60s
   upstream: shellbox.svc.deployment-prep.eqiad1.wikimedia.cloud
+- keepalive: 4s
+  name: mwapi-async
+  port: 6500
+  service: api-https
+  timeout: 120s
+  upstream: deployment-mediawiki11.deployment-prep.eqiad1.wikimedia.cloud
+  xfp: https
+- keepalive: 4s
+  name: mwapi
+  port: 6501
+  service: api-https
+  timeout: 60s
+  upstream: deployment-mediawiki11.deployment-prep.eqiad1.wikimedia.cloud
+  xfp: https
 profile::tlsproxy::envoy::cfssl_label: deployment-prep.eqiad1.wikimedia.cloud
 profile::tlsproxy::envoy::ssl_provider: cfssl
 profile::webperf::site::server_name: performance.wikimedia.beta.wmflabs.org
