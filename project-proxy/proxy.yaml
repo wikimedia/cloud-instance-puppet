@@ -1,4 +1,14 @@
 profile::wmcs::novaproxy::acme_certname: wmflabs
+profile::wmcs::novaproxy::dns_updater_project: cloudinfra
+profile::wmcs::novaproxy::dns_updater_username: project-proxy-dns-manager
 profile::wmcs::novaproxy::keystone_api_fqdn: openstack.eqiad1.wikimediacloud.org
+profile::wmcs::novaproxy::proxy_dns_ipv4: 185.15.56.49
+profile::wmcs::novaproxy::supported_domains:
+  wmcloud.org.:
+    id: 6ddcb082-69d6-43f4-9993-5c6bdc27dfc9
+    project: cloudinfra
+  wmflabs.org.:
+    id: 553ef162-add7-4a5c-b115-9cabca662746
+    project: wmflabsdotorg
 profile::wmcs::novaproxy::token_validator_project: cloudinfra
 profile::wmcs::novaproxy::token_validator_username: cloudinfrakeystonevalidate
