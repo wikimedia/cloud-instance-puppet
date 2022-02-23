@@ -410,6 +410,33 @@ scap::keyholder_agents:
 scap::version: present
 send_puppet_failure_emails: false
 service::catalog:
+  api-https:
+    aliases:
+    - api
+    description: MediaWiki API cluster
+    discovery:
+    - active_active: false
+      dnsdisc: api-rw
+    - active_active: true
+      dnsdisc: api-ro
+    encryption: true
+    ip:
+      eqiad:
+        default: 172.16.3.203
+    monitoring:
+      check_command: check_https_lvs!en.wikipedia.beta.wmflabs.org!/w/api.php?action=query&meta=siteinfo
+      sites:
+        eqiad:
+          hostname: deployment-mediawiki11.deployment-prep.eqiad1.wikimedia.cloud
+    page: false
+    port: 443
+    probes:
+    - host: en.wikipedia.beta.wmflabs.org
+      path: /w/api.php?action=query&meta=siteinfo
+      type: http
+    sites:
+    - eqiad
+    state: production
   shellbox:
     description: Shellbox
     discovery:
