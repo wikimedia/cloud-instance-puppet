@@ -234,6 +234,7 @@ profile::rsyslog::kafka_shipper::kafka_brokers:
 - deployment-kafka-logging01.deployment-prep.eqiad1.wikimedia.cloud:9093
 profile::services_proxy::envoy::enabled_listeners:
 - shellbox
+- mwapi
 profile::services_proxy::envoy::listeners:
 - name: shellbox
   port: 6024
