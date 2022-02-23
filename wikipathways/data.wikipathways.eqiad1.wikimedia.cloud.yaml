@@ -1,2 +1,1 @@
-nfs_mount: true
 profile::wmcs::nfsclient::mode: soft
