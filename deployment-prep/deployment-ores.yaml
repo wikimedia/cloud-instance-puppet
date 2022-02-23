@@ -1,1 +1,2 @@
-{}
+profile::services_proxy::envoy::enabled_listeners:
+- mwapi-async
