@@ -1,3 +1,4 @@
 profile::java::java_packages:
 - variant: jdk
   version: '8'
+service::configuration::http_proxy: deployment-urldownloader02.deployment-prep.eqiad.wmflabs:8080
