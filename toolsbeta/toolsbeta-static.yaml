@@ -1,0 +1,2 @@
+mount_nfs: true
+profile::toolforge::web_domain: toolsbeta.wmflabs.org
