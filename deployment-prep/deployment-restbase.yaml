@@ -14,4 +14,4 @@ profile::tlsproxy::envoy::capitalize_headers: false
 profile::tlsproxy::envoy::global_cert_name: restbase.discovery.wmnet
 profile::tlsproxy::envoy::sni_support: 'no'
 profile::tlsproxy::envoy::tls_port: 1024
-service::configuration::http_proxy: deployment-urldownloader02.deployment-prep.eqiad.wmflabs:8080
+service::configuration::http_proxy: http://deployment-urldownloader03.deployment-prep.eqiad1.wikimedia.cloud:8080
