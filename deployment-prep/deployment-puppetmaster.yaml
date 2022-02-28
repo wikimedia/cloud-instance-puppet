@@ -1,0 +1,22 @@
+profile::configmaster::server_aliases: []
+profile::configmaster::server_name: config-master.wikimedia.beta.wmflabs.org
+profile::services_proxy::envoy::ensure: absent
+profile::tlsproxy::envoy::access_log: true
+profile::tlsproxy::envoy::capitalize_headers: true
+profile::tlsproxy::envoy::cfssl_label: deployment-prep.eqiad1.wikimedia.cloud
+profile::tlsproxy::envoy::cfssl_options:
+  hosts:
+  - '%{facts.fqdn}'
+  - config-master
+  - config-master.wikimedia.beta.wmflabs.org
+profile::tlsproxy::envoy::ensure: present
+profile::tlsproxy::envoy::global_cert_name: '%{facts.fqdn}'
+profile::tlsproxy::envoy::retries: false
+profile::tlsproxy::envoy::services:
+- port: 80
+  server_names:
+  - '*'
+profile::tlsproxy::envoy::sni_support: 'no'
+profile::tlsproxy::envoy::ssl_provider: cfssl
+profile::tlsproxy::envoy::tls_port: 443
+profile::tlsproxy::envoy::upstream_response_timeout: 203.0
