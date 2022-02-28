@@ -1,6 +1,6 @@
 cache::alternate_domains:
   performance.wikimedia.beta.wmflabs.org:
-    caching: normal
+    caching: pass
 cache::app_def_be_opts:
   between_bytes_timeout: 30s
   connect_timeout: 3s
@@ -101,6 +101,9 @@ profile::trafficserver::backend::mapping_rules:
   type: map
 - replacement: https://deployment-eventstreams-1.deployment-prep.eqiad.wmflabs:8093
   target: http://stream-test.wikimedia.beta.wmflabs.org
+  type: map
+- replacement: https://deployment-puppetmaster04.deployment-prep.eqiad.wikimedia.cloud
+  target: http://config-master.wikimedia.beta.wmflabs.org
   type: map
 - params:
   - '@plugin=/usr/lib/trafficserver/modules/tslua.so'
