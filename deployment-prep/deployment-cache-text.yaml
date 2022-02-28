@@ -1,6 +1,8 @@
 cache::alternate_domains:
-  performance.wikimedia.beta.wmflabs.org:
+  config-master.wikimedia.beta.wmflabs.org:
     caching: pass
+  performance.wikimedia.beta.wmflabs.org:
+    caching: normal
 cache::app_def_be_opts:
   between_bytes_timeout: 30s
   connect_timeout: 3s
