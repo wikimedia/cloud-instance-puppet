@@ -1,2 +1,3 @@
 - profile::conftool::master
 - role::puppetmaster::standalone
+- profile::configmaster
