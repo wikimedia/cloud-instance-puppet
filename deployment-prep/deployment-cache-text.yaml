@@ -104,7 +104,7 @@ profile::trafficserver::backend::mapping_rules:
 - replacement: https://deployment-eventstreams-1.deployment-prep.eqiad.wmflabs:8093
   target: http://stream-test.wikimedia.beta.wmflabs.org
   type: map
-- replacement: https://deployment-puppetmaster04.deployment-prep.eqiad.wikimedia.cloud
+- replacement: https://deployment-puppetmaster04.deployment-prep.eqiad1.wikimedia.cloud
   target: http://config-master.wikimedia.beta.wmflabs.org
   type: map
 - params:
