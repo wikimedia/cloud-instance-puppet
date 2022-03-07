@@ -10,6 +10,7 @@ role::labs::redirector::redirects:
   logstash-beta.wmcloud.org: https://beta-logs.wmcloud.org/
   reportcard.wmflabs.org: https://analytics.wikimedia.org/dashboards/reportcard
   space.wmflabs.org: https://diff.wikimedia.org
+  wcqs-beta.wmcloud.org: https://commons-query.wikimedia.org
   wcqs-beta.wmflabs.org: https://commons-query.wikimedia.org
   wdq.wmflabs.org: https://query.wikidata.org
   wikistream.wmflabs.org: https://wikistream.toolforge.org
