@@ -65,6 +65,8 @@ profile::cache::varnish::frontend::fe_vcl_config:
   upload_webp_hits_threshold: 1000
   varnish_probe_ms: 100
 profile::cache::varnish::frontend::packages_component: component/varnish6
+profile::cache::varnish::frontend::separate_vcl:
+- misc
 profile::cache::varnish::separate_vcl:
 - misc
 profile::tlsproxy::instance::nginx_variant: extras
