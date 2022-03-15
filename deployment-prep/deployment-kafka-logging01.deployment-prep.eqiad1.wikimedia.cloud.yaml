@@ -1,3 +1,4 @@
+profile::base::certificates::include_bundle_jks: true
 profile::java::java_packages:
 - variant: jdk
   version: '8'
