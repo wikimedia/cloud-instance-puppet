@@ -32,4 +32,4 @@ profile::redis::master::settings:
   save: ''
   stop-writes-on-bgsave-error: false
 puppetmaster: maps-puppetmaster02.maps-experiments.eqiad1.wikimedia.cloud
-service::configuration::http_proxy: ''
+service::configuration::http_proxy: foobar
