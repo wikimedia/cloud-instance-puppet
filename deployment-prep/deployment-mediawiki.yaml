@@ -8,7 +8,6 @@ profile::rsyslog::kafka_shipper::kafka_brokers:
 profile::services_proxy::envoy::ensure: absent
 profile::tlsproxy::envoy::access_log: true
 profile::tlsproxy::envoy::capitalize_headers: true
-profile::tlsproxy::envoy::cfssl_label: discovery
 profile::tlsproxy::envoy::cfssl_options:
   hosts:
   - appservers.svc.deployment-prep.eqiad1.wikimedia.cloud
