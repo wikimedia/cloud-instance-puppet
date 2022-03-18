@@ -3,7 +3,6 @@ profile::configmaster::server_name: config-master.wikimedia.beta.wmflabs.org
 profile::services_proxy::envoy::ensure: absent
 profile::tlsproxy::envoy::access_log: true
 profile::tlsproxy::envoy::capitalize_headers: true
-profile::tlsproxy::envoy::cfssl_label: deployment-prep.eqiad1.wikimedia.cloud
 profile::tlsproxy::envoy::cfssl_options:
   hosts:
   - '%{facts.fqdn}'
