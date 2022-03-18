@@ -1,0 +1,15 @@
+profile::maps::apps::kartotherian_storage_id: v4
+profile::maps::apps::redis_server: redis://localhost
+profile::maps::apps::tilerator_enable: false
+profile::maps::apps::tilerator_ncpu_ratio: 0.3
+profile::maps::apps::tilerator_storage_id: v4
+profile::maps::apps::use_proxy: false
+profile::maps::apps::wikidata_query_service: https://query.wikidata.org/bigdata/namespace/wdq/sparql
+profile::maps::hosts:
+- '%{::fqdn}'
+profile::maps::osm_master::disable_admin_cron: true
+profile::maps::osm_master::disable_replication_cron: true
+profile::maps::osm_master::engine: imposm3
+profile::maps::postgresql_common::chown_logfile: false
+profile::maps::postgresql_common::maintenance_work_mem: 3GB
+profile::maps::postgresql_common::shared_buffers: 4GB
