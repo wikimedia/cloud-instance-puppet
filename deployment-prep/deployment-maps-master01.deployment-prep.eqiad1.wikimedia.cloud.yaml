@@ -10,7 +10,8 @@ profile::maps::hosts:
 profile::maps::osm_master::disable_admin_cron: true
 profile::maps::osm_master::disable_replication_cron: true
 profile::maps::osm_master::engine: imposm3
-profile::maps::osm_master::swift_key_id: bogus
+profile::maps::osm_master::swift_key_id: bogusswiftkeyid
+profile::maps::osm_master::swift_password: bogusswiftpass
 profile::maps::postgresql_common::chown_logfile: false
 profile::maps::postgresql_common::maintenance_work_mem: 3GB
 profile::maps::postgresql_common::shared_buffers: 4GB
