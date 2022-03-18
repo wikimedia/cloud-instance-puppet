@@ -16,3 +16,4 @@ profile::maps::osm_master::swift_password: bogusswiftpass
 profile::maps::postgresql_common::chown_logfile: false
 profile::maps::postgresql_common::maintenance_work_mem: 3GB
 profile::maps::postgresql_common::shared_buffers: 4GB
+service::configuration::http_proxy: http://deployment-urldownloader03.deployment-prep.eqiad1.wikimedia.cloud:8080
