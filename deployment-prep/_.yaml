@@ -255,7 +255,6 @@ profile::services_proxy::envoy::listeners:
   timeout: 60s
   upstream: deployment-mediawiki11.deployment-prep.eqiad1.wikimedia.cloud
   xfp: https
-profile::tlsproxy::envoy::cfssl_label: deployment-prep.eqiad1.wikimedia.cloud
 profile::tlsproxy::envoy::ssl_provider: cfssl
 profile::webperf::site::server_name: performance.wikimedia.beta.wmflabs.org
 prometheus_nodes:
