@@ -1,3 +1,0 @@
-profile::query_service::oauth: true
-profile::query_service::oauth_access_token_secret: dummy
-puppetmaster: wdqspuppet.wikidata-query.eqiad.wmflabs
