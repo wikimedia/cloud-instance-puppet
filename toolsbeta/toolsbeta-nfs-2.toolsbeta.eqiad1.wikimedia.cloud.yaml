@@ -1,0 +1,123 @@
+acmechief_host: toolsbeta-acme-chief-01.toolsbeta.eqiad.wmflabs
+active_cronrunner: toolsbeta-cron-01.toolsbeta.eqiad.wmflabs
+active_proxy_host: toolsbeta-proxy-3
+active_redis: tools-redis-1001.tools.eqiad.wmflabs
+docker::builder_host: tools-docker-builder-06.tools.eqiad.wmflabs
+docker::password: not a real password
+docker::password_hash: /
+docker::registry: docker-registry.tools.wmflabs.org
+docker::registry_url: https://tools-docker-registry.wmflabs.org/v2/
+docker::username: docker
+dynamicproxy::banned_ips:
+- 70.179.6.9
+dynamicproxy::blocked_user_agent_regex: TweetmemeBot|Chrome/38\.0\.2125\.104|Applebot
+dynamicproxy::error_details: ''
+gridengine::gridmaster: toolsbeta-grid-master.toolsbeta.eqiad.wmflabs
+mount_nfs: false
+passwords::root::extra_keys:
+  alex: ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAICYxCqZkGys8gZB6Mq61Fw08CB7m1huxpnpII2ay3e0H
+    krenair@gmail.com inspiron
+  bd808: ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDb8nsxA3thqd87nLu+1mA0Jc1KY90t5qW7N+jRQksc4NLzlFqBTrld+Qm2FRVbLm37HZ9TRBZb2nuTYJIZhkNU7rRPEKs3cIUbh1pB7BbYv0aJ3F0qBD6UtHqOUIJhqVNYJ/ssobzFh2QrcrOM3eS8PrIPtL/CQSUmKmUjG8zhCocAiQZDFeIQLSyGyCWVrRg14SPjED0+wIQTGoTtCabL4B5AlLcTf2L5ztDUtaoXDObUpDJ5Tw6VUUzDoUjV+Y5AtxK4erwLRHeFEcSzmWWl0Sruhnp/TzaF4vGijl6Wcyi2O9TClBhGmp7gTl4CtMj8MDDm+7NO3dQmQMseded1
+    bd808+labs@wmf-bd808-mbp01.local
+  chicocvenancio: ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC7a3YDGerP3yyxrKyXOrx7h5kbMnfkhdmfONKzEVEdLCC9Ru008nMQ+R683nluwIjWgsRcvIjWiFU6EdIs3vi/B6aZxmcZhbpE/7pLomseTweEO/3Hh0brlro7KpBCnAiLOwCEKQbUr3N4CXbaR3ACU1AWUV52566Ehc2EvXdivXsaSjrJkPVeptvd1+LikUIzY0Eb7adv0D6OtHztc5xD4rZiW20/4F8OstzNSnuWEb69jDCfAPUKsa6KuXYMIyM2NLZbWP3qsjAn16u1qW9kQ4801An07azv8gqS5CQAvjhZohRjVxNie4rrgslbrs3s2qkJf58S764WdZHm2Ko1
+    fvenancio@wikimedia.org
+  petrb: ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC/kW5wnLgEOtOqVvB9HBbzdJQnrRApJ6g7QeYO8PXN+y5V2iQMG8oJR18GHByR7pTA9Ehj3XtIIQPbjvqX/bowphObQUCTgA9t8gupVexhJM6bTGqNWZ0KUjgZoD5kBM/poSEUFQsPUMl/N8lE5hsxKbQC3iX30arFS/vpYS6gnBp5+Ui53/aIyFAbRpFQ74I3LH2cGQkKgFfzjObZK0gA5TndRz05PgmzXo6BDGIun0UYvMh7nvZs0pbRQy+rjgcUH2fPUsEI1cz798wx/fExVjyENydX1jEDkuYCg0ikr//on00aYl4/lTH8w0IQDeQrXlx6lJ/cY7WUlcDFr8m5
+    petr bena
+  scfc: ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCjcG9HXqM3yuWw0vc53OQGkP55YKJUlQNxV5uflizAI4eHtua0NeVxkaY0Bwi5dboC0D/JiGmlKzEtDDDxXmSP8hFFxMpjJVZ43R2hhTY8CpR0q9034W81dfxpO9zFEy6R0ZFmNKbL3i9OqNQRHTQZSleVuyM4hrU7bqDSGIDLduVMkM//nnMI84BZkzcErgV3uJJ1bQif7unEoUHX5UdRXea+/2DRJmLT5fcNcrTUm7Pzwi573IEUUPfYQtf0/xpXd9hWgz0Hpd5X3HF9I8oN2DlBPHEm4UGCTZOq0JzPc7VKD0r14HwyvoUNoCNbbOhqtK69c8fWrbdxzcU28Kal
+    scfc root tools-checker-01
+  taavi: ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIBq4K669pJ+bR0PdQJjpE/aV6LuI4v37UONi9s73LbeD
+    taavi@runko
+  zhuyifei1999: ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCdm+Kiet0U2AjfPLFKIZLh57pXruVzlIfSypwSt7GRlZ+0sGhExYWvXdreW5zgZRJ3aXzR84qaZOqpwgHuVFlfMszXzq3E6p9dZ/bATP/lvIkucJJ2RL5C4ABvfwd4MHs68rW9UGwPVWn1qQftvoNpeDCu4t50uLbP9vcEXzaXrVioHROPoEpqk4YofHQS9F4HIKDbfjTFwUb5YQ/lsajuK0EZXlAELoaZ7s+uBolyBmXkIjWOjyGwHCoBU1FPiufLwLYuMZz0iAqw930dgoi89VgaPhlu12j2yP+2BZ3XkEgpzNBmZ/3lwVvRPyUnWw2pBU4qvs00FUARzx/WTRSJ
+    zhuyifei1999@zhuyifei1999-ThinkPad-X260
+profile::base::core_dump_pattern: core
+profile::base::ssh_server_settings:
+  challenge_response_auth: false
+  disable_agent_forwarding: false
+  disable_nist_kex: false
+  enable_hba: true
+  explicit_macs: false
+profile::elasticsearch::base_config_dir: /etc/elasticsearch
+profile::elasticsearch::base_data_dir: /srv/elasticsearch
+profile::elasticsearch::common_settings:
+  auto_create_index: true
+  awareness_attributes: ''
+  cluster_hosts:
+  - toolsbeta-elastic7-1.toolsbeta.eqiad.wmflabs
+  - toolsbeta-elastic7-2.toolsbeta.eqiad.wmflabs
+  - toolsbeta-elastic7-3.toolsbeta.eqiad.wmflabs
+  cluster_name: labs-tools
+  curator_uses_unicast_hosts: false
+  expected_nodes: 3
+  heap_memory: 4G
+  http_port: 9200
+  minimum_master_nodes: 2
+  recover_after_nodes: 2
+  recover_after_time: 1m
+  send_logs_to_logstash: false
+  short_cluster_name: omega
+  transport_tcp_port: 9300
+  unicast_hosts:
+  - toolsbeta-elastic7-1.toolsbeta.eqiad.wmflabs
+  - toolsbeta-elastic7-2.toolsbeta.eqiad.wmflabs
+  - toolsbeta-elastic7-3.toolsbeta.eqiad.wmflabs
+profile::elasticsearch::config_version: '7'
+profile::elasticsearch::dc_settings:
+  awareness_attributes: ''
+profile::elasticsearch::instances: {}
+profile::elasticsearch::rack: placeholder
+profile::elasticsearch::row: placeholder
+profile::elasticsearch::version: '7.4'
+profile::mail::default_mail_relay::enabled: false
+profile::openstack::base::ldap_user_dn: <unavailable here>
+profile::openstack::eqiad1::cumin::project_masters:
+- 172.16.2.133
+profile::openstack::eqiad1::cumin::project_pub_key: ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIA5++4xfbwOy1CC2ehmzN4D4uHuM9wwUl++Xds59IXjj
+profile::openstack::eqiad1::ldap_user_pass: <not available here>
+profile::prometheus::haproxy_exporter::listen_port: 9901
+profile::toolforge::active_cronrunner: toolsbeta-sgecron-01.toolsbeta.eqiad.wmflabs
+profile::toolforge::active_mail_relay: tools-mail-02.tools.eqiad.wmflabs
+profile::toolforge::active_proxy_host: toolsbeta-proxy-3
+profile::toolforge::canonical_domain: toolsbeta.wmflabs.org
+profile::toolforge::canonical_scheme: http://
+profile::toolforge::docker::registry::active_node: toolsbeta-docker-registry-01.toolsbeta.eqiad.wmflabs
+profile::toolforge::docker::registry::standby_node: undef
+profile::toolforge::elasticsearch::keepalived::host_priority: 100
+profile::toolforge::elasticsearch::keepalived::vip: 172.16.1.131
+profile::toolforge::etcdir: /var/lib/gridengine/etc
+profile::toolforge::grid::base::collectors: /data/project/.system_sge/gridengine/collectors
+profile::toolforge::grid::base::geconf: /data/project/.system_sge/gridengine
+profile::toolforge::grid::base::project_path: /data/project
+profile::toolforge::grid::base::sge_root: /var/lib/gridengine
+profile::toolforge::grid::base::sysdir: /data/project/.system_sge
+profile::toolforge::grid::cronrunner::active_host: '%{alias(profile::toolforge::active_cronrunner)}'
+profile::toolforge::grid::webservicemonitor::active_host: '%{alias(profile::toolforge::active_cronrunner)}'
+profile::toolforge::harbor::db::primary: toolsbeta-harbordb-2.toolsbeta.eqiad1.wikimedia.cloud
+profile::toolforge::harbor::url: harbor.toolsbeta.wmflabs.org
+profile::toolforge::jobs_api_fqdn: jobs.toolsbeta.wmflabs.org
+profile::toolforge::jobs_api_port: 30001
+profile::toolforge::k8s::calico_version: v3.21.0
+profile::toolforge::k8s::ingress_replicas: 3
+profile::toolforge::k8s::kubernetes_version: 1.21.8
+profile::toolforge::mailrelay::external_hostname: mail.tools.wmflabs.org
+profile::toolforge::proxies:
+- toolsbeta-proxy-3.toolsbeta.eqiad1.wikimedia.cloud
+- toolsbeta-proxy-4.toolsbeta.eqiad1.wikimedia.cloud
+profile::toolforge::services::active_node: tools-services-05.tools.eqiad1.wikimedia.cloud
+profile::toolforge::services::updatetools_enabled: false
+profile::wcms::nfs::standalone::cinder_attached: true
+profile::wcms::nfs::standalone::volumes:
+- toolsbeta
+profile::wmcs::kubeadm::component: thirdparty/kubeadm-k8s-1-21
+prometheus::haproxy_exporter::endpoint: http://localhost:9900/stats;csv
+prometheus_nodes:
+- tools-prometheus-03.tools.eqiad.wmflabs
+- tools-prometheus-05.tools.eqiad1.wikimedia.cloud
+- prometheus01.metricsinfra.eqiad.wmflabs
+role::aptly::client::servername: tools-services-05.tools.eqiad1.wikimedia.cloud
+role::labs::nfsclient::lookupcache: all
+role::puppetmaster::standalone::autosign: true
+role::toollabs::k8s::master::use_puppet_certs: true
+sonofgridengine::gridmaster: toolsbeta-sgegrid-master.toolsbeta.eqiad1.wikimedia.cloud
+ssh::server::disable_nist_kex: false
+ssh::server::enable_hba: true
+ssh::server::explicit_macs: false
