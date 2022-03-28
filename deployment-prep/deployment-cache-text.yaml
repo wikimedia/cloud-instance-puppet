@@ -91,7 +91,7 @@ profile::trafficserver::backend::mapping_rules:
   replacement: http://deployment-ms-fe03.deployment-prep.eqiad.wmflabs
   target: http://upload.wikimedia.beta.wmflabs.org
   type: map
-- replacement: http://deployment-webperf21.deployment-prep.eqiad.wmflabs
+- replacement: http://deployment-webperf21.deployment-prep.eqiad1.wikimedia.cloud
   target: http://performance.wikimedia.beta.wmflabs.org
   type: map
 - replacement: http://deployment-eventgate-3.deployment-prep.eqiad.wmflabs:8492
