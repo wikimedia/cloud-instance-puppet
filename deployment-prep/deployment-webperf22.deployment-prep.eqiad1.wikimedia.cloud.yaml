@@ -1,0 +1,4 @@
+profile::webperf::arclamp::compress_logs_days: 3
+profile::webperf::arclamp::errors_mailto: dpifke@wikimedia.org
+profile::webperf::arclamp::retain_daily_logs_days: 90
+profile::webperf::arclamp::retain_hourly_logs_hours: 336
