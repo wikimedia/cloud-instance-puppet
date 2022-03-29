@@ -23,8 +23,8 @@ profile::acme_chief::challenges:
   dns-01:
     issuing_ca: letsencrypt.org
     ns_records:
-    - cloud-ns0.wikimedia.org.
-    - cloud-ns1.wikimedia.org.
+    - ns0.openstack.eqiad1.wikimediacloud.org.
+    - ns1.openstack.eqiad1.wikimediacloud.org.
     resolver_port: 53
     zone_update_cmd: /usr/local/bin/acme-chief-designate-sync.py
 profile::acme_chief::cloud::designate_sync_auth_url: https://openstack.eqiad1.wikimediacloud.org:25000/v3
