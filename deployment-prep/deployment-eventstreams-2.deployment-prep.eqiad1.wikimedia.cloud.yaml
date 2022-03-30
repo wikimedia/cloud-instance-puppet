@@ -1,6 +1,7 @@
 profile::docker::engine::declare_service: true
+profile::docker::engine::packagename: docker.io
 profile::docker::engine::settings: {}
-profile::docker::engine::version: 18.09.1+dfsg1-7.1+deb10u2
+profile::docker::engine::version: 20.10.5+dfsg1-1+deb11u1
 profile::docker::runner::service_defs:
   eventstreams:
     config:
@@ -65,7 +66,7 @@ profile::docker::runner::service_defs:
 
                 ORES enabled wiki should have a revision-score event.
 
-                This schema is structured differnetly than ORES API results, as
+                This schema is structured differently than ORES API results, as
 
                 event schemas should map well into RDBMS / SQL environments where
 
