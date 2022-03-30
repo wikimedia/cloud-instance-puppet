@@ -1,2 +1,0 @@
-profile::zookeeper::zookeeper_version: 3.4.9-3+deb9u2
-puppetmaster: deployment-puppetmaster04.deployment-prep.eqiad.wmflabs
