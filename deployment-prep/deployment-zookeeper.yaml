@@ -3,4 +3,3 @@ profile::zookeeper::is_critical: false
 profile::zookeeper::max_client_connections: 1024
 profile::zookeeper::prometheus_monitoring_enabled: true
 profile::zookeeper::sync_limit: 8
-profile::zookeeper::zookeeper_version: 3.4.5+dfsg-2+deb8u2
