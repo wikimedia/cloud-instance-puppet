@@ -4,3 +4,4 @@ profile::kafka::broker::inter_broker_ssl_enabled: true
 profile::kafka::broker::kafka_cluster_name: main
 profile::kafka::broker::monitoring_enabled: true
 profile::kafka::broker::ssl_enabled: true
+profile::kafka::broker::ssl_password: qwerty
