@@ -490,5 +490,5 @@ zookeeper_clusters:
       deployment-zookeeper02.deployment-prep.eqiad.wmflabs: '2'
   main-deployment-prep:
     hosts:
-      deployment-zookeeper-3.deployment-prep.eqiad.wmflabs: '3'
+      deployment-zookeeper-3.deployment-prep.eqiad1.wikimedia.cloud: '3'
       deployment-zookeeper02.deployment-prep.eqiad.wmflabs: '2'
