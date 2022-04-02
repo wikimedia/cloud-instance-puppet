@@ -1,1 +1,2 @@
 profile::wmcs::paws::prometheus::storage_retention_size: 10GB
+puppetmaster: paws-puppetmaster-2.paws.eqiad1.wikimedia.cloud
