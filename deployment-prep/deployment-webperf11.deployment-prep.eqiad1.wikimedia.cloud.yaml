@@ -1,6 +1,0 @@
-profile::tlsproxy::envoy::capitalize_headers: false
-profile::tlsproxy::envoy::global_cert_name: performance.discovery.wmnet
-profile::tlsproxy::envoy::sni_support: 'no'
-profile::webperf::site::xhgui_host: deployment-xhgui03.deployment-prep.eqiad.wmflabs
-profile::webperf::site::xhgui_old_host: deployment-xhgui01.deployment-prep.eqiad.wmflabs
-puppetmaster: deployment-puppetmaster04.deployment-prep.eqiad.wmflabs
