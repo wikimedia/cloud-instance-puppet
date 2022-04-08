@@ -1,1 +1,2 @@
+profile::gitlab::runner::docker_volume: false
 puppetmaster: gitlab-runners-puppetmaster-01.gitlab-runners.eqiad1.wikimedia.cloud
