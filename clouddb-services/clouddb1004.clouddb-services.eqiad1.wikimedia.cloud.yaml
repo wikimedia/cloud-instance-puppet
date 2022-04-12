@@ -1,2 +1,1 @@
 profile::wmcs::services::postgres::primary: clouddb1003.clouddb-services.eqiad.wmflabs
-puppetmaster: clouddb-services-puppetmaster-2.clouddb-services.eqiad1.wikimedia.cloud
