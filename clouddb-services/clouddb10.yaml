@@ -21,4 +21,4 @@ profile::mariadb::section_ports:
   s9: 3319
   staging: 3350
   x1: 3320
-puppetmaster: clouddb-services-puppetmaster-01.clouddb-services.eqiad.wmflabs
+puppetmaster: clouddb-services-puppetmaster-2.clouddb-services.eqiad1.wikimedia.cloud
