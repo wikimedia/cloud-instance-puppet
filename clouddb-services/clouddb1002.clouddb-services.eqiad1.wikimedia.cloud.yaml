@@ -1,3 +1,4 @@
 profile::wmcs::services::toolsdb::rebuild: true
 profile::wmcs::services::toolsdb::rebuild_primary: clouddb1001.clouddb-services.eqiad.wmflabs
 profile::wmcs::services::toolsdb::rebuild_secondary: clouddb1002.clouddb-services.eqiad.wmflabs
+puppetmaster: clouddb-services-puppetmaster-2.clouddb-services.eqiad1.wikimedia.cloud
