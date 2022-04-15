@@ -1,4 +1,7 @@
 profile::wmcs::novaproxy::acme_certname: wmflabs
+profile::wmcs::novaproxy::api_hostnames:
+- proxy-eqiad1.wmflabs.org
+- proxy-eqiad1.wmcloud.org
 profile::wmcs::novaproxy::dns_updater_project: cloudinfra
 profile::wmcs::novaproxy::dns_updater_username: project-proxy-dns-manager
 profile::wmcs::novaproxy::keystone_api_fqdn: openstack.eqiad1.wikimediacloud.org
