@@ -300,7 +300,8 @@ profile::cache::haproxy::unified_acme_chief: true
 profile::cache::haproxy::unified_certs:
 - digicert-2020-ecdsa-unified
 - digicert-2020-rsa-unified
-profile::cache::haproxy::varnish_socket: /run/varnish-frontend.socket
+profile::cache::haproxy::varnish_socket:
+- /run/varnish-frontend.socket
 profile::cache::haproxy::vars:
 - direction: request
   name: txn.xwd_count
