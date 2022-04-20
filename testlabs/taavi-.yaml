@@ -1,1 +1,1 @@
-profile::wmcs::novaproxy::use_wmflabs_root: false
+role::puppetmaster::standalone::git_sync_minutes: 9
