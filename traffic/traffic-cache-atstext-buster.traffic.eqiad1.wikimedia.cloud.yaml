@@ -148,12 +148,6 @@ profile::cache::haproxy::add_headers:
 - direction: request
   name: X-Forwarded-Proto
   value: https
-- direction: request
-  name: X-Connection-Properties
-  value: '%[lua.xcps]'
-- direction: request
-  name: X-Analytics-TLS
-  value: '%[lua.analytics_tls]'
 profile::cache::haproxy::available_unified_certificates:
   digicert-2020:
     cert_paths:
