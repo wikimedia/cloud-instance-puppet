@@ -6,11 +6,11 @@ profile::docker::runner::service_defs:
   mediawiki-services-function-evaluator:
     namespace: wikimedia
     port: 6927
-    version: 2021-11-19-171732-production
+    version: 2022-04-19-131954-production
   mediawiki-services-function-orchestrator:
     namespace: wikimedia
     port: 6254
-    version: 2021-11-19-171733-production
+    version: 2022-04-18-165701-production
 profile::docker::storage::physical_volumes: /dev/md1
 profile::docker::storage::vg_to_remove: todelete
 puppetmaster: deployment-puppetmaster04.deployment-prep.eqiad.wmflabs
