@@ -1,3 +1,11 @@
+elasticsearch::cluster_hosts:
+- deployment-elastic05.deployment-prep.eqiad.wmflabs
+- deployment-elastic06.deployment-prep.eqiad.wmflabs
+- deployment-elastic07.deployment-prep.eqiad.wmflabs
+- deployment-elastic-08.deployment-prep.eqiad1.wikimedia.cloud
+- deployment-elastic-09.deployment-prep.eqiad1.wikimedia.cloud
+- deployment-elastic10.deployment-prep.eqiad1.wikimedia.cloud
+- deployment-elastic11.deployment-prep.eqiad1.wikimedia.cloud
 profile::elasticsearch::dc_settings:
   certificate_name: files/ssl/deployment-elastic.deployment-prep.eqiad1.wikimedia.cloud.crt
   tls_port: 9243
