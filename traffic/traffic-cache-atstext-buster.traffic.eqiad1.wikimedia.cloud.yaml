@@ -282,7 +282,6 @@ profile::cache::haproxy::h2settings:
   header_table_size: 4096
   initial_window_size: 65535
   max_concurrent_streams: 100
-profile::cache::haproxy::proxy_protocol: V2
 profile::cache::haproxy::timeout:
   client: 300
   client_fin: 120
@@ -309,5 +308,5 @@ profile::cache::haproxy::vars:
   value: req.hdr_cnt(X-Wikimedia-Debug)
 profile::cache::varnish::frontend::listen_uds:
 - /run/varnish-frontend.socket
-profile::cache::varnish::frontend::proxy_on_uds: true
-profile::cache::varnish::frontend::uds_owner: envoy
+profile::cache::varnish::frontend::proxy_on_uds: false
+profile::cache::varnish::frontend::uds_owner: haproxy
