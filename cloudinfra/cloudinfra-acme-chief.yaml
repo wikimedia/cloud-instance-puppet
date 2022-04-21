@@ -6,7 +6,7 @@ profile::acme_chief::accounts:
   e64fc08777c45aa5fb82ce175758166a:
     directory: https://acme-v02.api.letsencrypt.org/directory
     regr: '{"body": {}, "uri": "https://acme-v02.api.letsencrypt.org/acme/acct/108357291"}'
-profile::acme_chief::active: cloudinfra-acme-chief-01.cloudinfra.eqiad.wmflabs
+profile::acme_chief::active: cloudinfra-acme-chief-01.cloudinfra.eqiad1.wikimedia.cloud
 profile::acme_chief::certificates:
   enc:
     CN: puppet-enc.cloudinfra.wmcloud.org
