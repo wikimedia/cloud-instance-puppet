@@ -6,9 +6,9 @@ elasticsearch::cluster_hosts:
 - deployment-elastic-09.deployment-prep.eqiad1.wikimedia.cloud
 - deployment-elastic10.deployment-prep.eqiad1.wikimedia.cloud
 - deployment-elastic11.deployment-prep.eqiad1.wikimedia.cloud
-elasticsearch::https::certificate_name: '%{::fqdn}'
+elasticsearch::https::certificate_name: deployment-elastic.deployment-prep.eqiad1.wikimedia.cloud.crt
 elasticsearch::https::ferm_srange: 10.0.0.0/8
 logstash_host: localhost
-profile::elasticsearch::cirrus::certificate_name: '%{::fqdn}'
+profile::elasticsearch::cirrus::certificate_name: deployment-elastic.deployment-prep.eqiad1.wikimedia.cloud.crt
 profile::elasticsearch::cirrus::enable_remote_search: true
 role::labs::lvm::mnt::mount_point: /var/lib/elasticsearch
