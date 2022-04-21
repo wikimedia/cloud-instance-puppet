@@ -1,0 +1,6 @@
+profile::ores::redis::client_hosts:
+- deployment-ores02.deployment-prep.eqiad1.wikimedia.cloud
+profile::ores::redis::password: areallysecretpassword
+profile::ores::redisproxy::server: deployment-ores02.deployment-prep.eqiad1.wikimedia.cloud
+profile::ores::web::redis_host: deployment-ores02.deployment-prep.eqiad1.wikimedia.cloud
+profile::ores::web::redis_password: areallysecretpassword
