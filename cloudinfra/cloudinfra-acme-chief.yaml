@@ -10,6 +10,7 @@ profile::acme_chief::active: cloudinfra-acme-chief-01.cloudinfra.eqiad.wmflabs
 profile::acme_chief::certificates:
   enc:
     CN: puppet-enc.cloudinfra.wmcloud.org
+    SNI: []
     authorized_regexes:
     - ^enc-[12]\.cloudinfra\.eqiad1\.wikimedia\.cloud$
   mx:
