@@ -1,2 +1,2 @@
 - role::wmcs::openstack::codfw1dev::control
-- profile::wmcs::paws::common
+- profile::openstack::codfw1dev::openstack_controllers
