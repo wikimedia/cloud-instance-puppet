@@ -7,9 +7,9 @@ elasticsearch::cluster_hosts:
 - deployment-elastic10.deployment-prep.eqiad1.wikimedia.cloud
 - deployment-elastic11.deployment-prep.eqiad1.wikimedia.cloud
 elasticsearch::https::certificate_name: deployment-elastic.deployment-prep.eqiad1.wikimedia.cloud.crt
-elasticsearch::instance::instance_title: deployment-elastic-09.deployment-prep.eqiad1.wikimedia.cloud
 profile::elasticsearch::cirrus::certificate_name: deployment-elastic.deployment-prep.eqiad1.wikimedia.cloud.crt
 profile::elasticsearch::dc_settings:
   certificate_name: files/ssl/deployment-elastic.deployment-prep.eqiad1.wikimedia.cloud.crt
   tls_port: 9243
+profile::elasticsearch::instance::instance_title: deployment-elastic-09.deployment-prep.eqiad1.wikimedia.cloud
 puppetmaster: deployment-puppetmaster04.deployment-prep.eqiad.wmflabs
