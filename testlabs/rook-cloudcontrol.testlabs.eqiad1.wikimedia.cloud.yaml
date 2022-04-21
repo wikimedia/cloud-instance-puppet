@@ -1,5 +1,6 @@
 profile::openstack::codfw1dev::keystone_api_fqdn: foo
 profile::openstack::codfw1dev::observer_password: foo
 profile::openstack::codfw1dev::openstack_controllers: foo
+profile::openstack::codfw1dev::rabbit_monitor_user: foo
 profile::openstack::codfw1dev::region: foo
 puppetmaster: rook-puppet.testlabs.eqiad1.wikimedia.cloud
