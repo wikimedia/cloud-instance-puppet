@@ -1,2 +1,1 @@
 - role::wmcs::openstack::codfw1dev::control
-- profile::openstack::codfw1dev::openstack_controllers
