@@ -213,7 +213,7 @@ profile::ores::web::extra_config:
       host: https://en.wikipedia.beta.wmflabs.org
 profile::ores::web::graphite_server: cloudmetrics1002.eqiad.wmnet
 profile::ores::web::poolcounter_nodes:
-- deployment-poolcounter05:7531
+- deployment-poolcounter06:7531
 profile::ores::web::redis_host: deployment-ores01.deployment-prep.eqiad.wmflabs
 profile::pki::client::ensure: present
 profile::prometheus::cadvisor_exporter::port: 4194
