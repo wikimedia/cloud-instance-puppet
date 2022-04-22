@@ -1,0 +1,4 @@
+profile::elasticsearch::dc_settings:
+  certificate_name: elastic.deployment-prep.eqiad1.wikimedia.cloud
+  tls_port: 9243
+puppetmaster: deployment-puppetmaster04.deployment-prep.eqiad.wmflabs
