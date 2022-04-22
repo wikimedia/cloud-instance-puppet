@@ -13,6 +13,7 @@ profile::acme_chief::certificates:
     SNI: []
     authorized_regexes:
     - ^enc-[12]\.cloudinfra\.eqiad1\.wikimedia\.cloud$
+    challenge: dns-01
   mx:
     CN: mx-out.wmflabs.org
     SNI:
