@@ -21,7 +21,7 @@ profile::docker::runner::service_defs:
           csp: default-src 'none'; script-src 'self' 'unsafe-inline'; connect-src
             *; style-src 'self' 'unsafe-inline'; img-src 'self'; font-src 'self'
           kafka:
-            metadata.broker.list: deployment-kafka-main-5.deployment-prep.eqiad1.wikimedia.cloud:9092,deployment-kafka-main-6.deployment-prep.eqiad1.wikimedia.cloud:9092
+            metadata.broker.list: deployment-kafka-jumbo-5.deployment-prep.eqiad1.wikimedia.cloud:9092,deployment-kafka-jumbo-8.deployment-prep.eqiad1.wikimedia.cloud:9092,deployment-kafka-jumbo-9.deployment-prep.eqiad1.wikimedia.cloud:9092
             statistics.interval.ms: 10000
           port: 8092
           schema_base_uris:
