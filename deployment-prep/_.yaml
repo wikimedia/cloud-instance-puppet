@@ -13,8 +13,6 @@ elasticsearch::cluster_hosts:
 - deployment-elastic06.deployment-prep.eqiad.wmflabs
 - deployment-elastic07.deployment-prep.eqiad.wmflabs
 - deployment-elastic09.deployment-prep.eqiad1.wikimedia.cloud
-- deployment-elastic10.deployment-prep.eqiad1.wikimedia.cloud
-- deployment-elastic11.deployment-prep.eqiad1.wikimedia.cloud
 etcd::auth::common::root_password: secret
 etcd::use_ssl: true
 etcd_host: deployment-etcd02.deployment-prep.eqiad1.wikimedia.cloud
