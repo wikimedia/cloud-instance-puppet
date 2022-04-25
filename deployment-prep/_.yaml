@@ -50,12 +50,12 @@ kafka_clusters:
     zookeeper_cluster_name: main-deployment-prep
   main-codfw:
     brokers:
-      deployment-kafka-main-1.deployment-prep.eqiad1.wikimedia.cloud:
-        id: 1
-        rack: A
       deployment-kafka-main-2.deployment-prep.eqiad1.wikimedia.cloud:
         id: 2
         rack: B
+      deployment-kafka-main-3.deployment-prep.eqiad1.wikimedia.cloud:
+        id: 1
+        rack: A
     ipv6: false
     zookeeper_cluster_name: main-deployment-prep
   main-deployment-prep:
