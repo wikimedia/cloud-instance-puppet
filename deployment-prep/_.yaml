@@ -47,19 +47,6 @@ kafka_clusters:
         rack: C
     ipv6: false
     zookeeper_cluster_name: main-deployment-prep
-  jumbo-eqiad:
-    brokers:
-      deployment-kafka-jumbo-1.deployment-prep.eqiad1.wikimedia.cloud:
-        id: 1
-        rack: A
-      deployment-kafka-jumbo-2.deployment-prep.eqiad1.wikimedia.cloud:
-        id: 2
-        rack: B
-      deployment-kafka-jumbo-3.deployment-prep.eqiad1.wikimedia.cloud:
-        id: 3
-        rack: C
-    ipv6: false
-    zookeeper_cluster_name: main-deployment-prep
   logging-codfw:
     brokers:
       deployment-kafka-logging01.deployment-prep.eqiad1.wikimedia.cloud:
@@ -159,7 +146,6 @@ profile::kubernetes::deployment_server::user_defaults:
   mode: '0640'
   owner: mwdeploy
 profile::logstash::collector::input_kafka_ssl_truststore_passwords:
-  jumbo-eqiad: qwerty
   logging-codfw: qwerty
   logging-eqiad: qwerty
   main-codfw: qwerty
