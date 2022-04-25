@@ -23,15 +23,15 @@ http_proxy: ''
 kafka_clusters:
   jumbo-deployment-prep:
     brokers:
-      deployment-kafka-jumbo-3.deployment-prep.eqiad1.wikimedia.cloud:
-        id: 3
-        rack: C
       deployment-kafka-jumbo-5.deployment-prep.eqiad1.wikimedia.cloud:
         id: 1
         rack: A
       deployment-kafka-jumbo-8.deployment-prep.eqiad1.wikimedia.cloud:
         id: 2
         rack: B
+      deployment-kafka-jumbo-9.deployment-prep.eqiad1.wikimedia.cloud:
+        id: 3
+        rack: C
     ipv6: false
     zookeeper_cluster_name: main-deployment-prep
   logging-codfw:
