@@ -48,34 +48,14 @@ kafka_clusters:
         rack: B
     ipv6: false
     zookeeper_cluster_name: main-deployment-prep
-  main-codfw:
-    brokers:
-      deployment-kafka-main-2.deployment-prep.eqiad1.wikimedia.cloud:
-        id: 2
-        rack: B
-      deployment-kafka-main-3.deployment-prep.eqiad1.wikimedia.cloud:
-        id: 1
-        rack: A
-    ipv6: false
-    zookeeper_cluster_name: main-deployment-prep
   main-deployment-prep:
     brokers:
-      deployment-kafka-main-1.deployment-prep.eqiad1.wikimedia.cloud:
-        id: 1
-        rack: A
       deployment-kafka-main-2.deployment-prep.eqiad1.wikimedia.cloud:
         id: 2
         rack: B
-    ipv6: false
-    zookeeper_cluster_name: main-deployment-prep
-  main-eqiad:
-    brokers:
-      deployment-kafka-main-1.deployment-prep.eqiad1.wikimedia.cloud:
+      deployment-kafka-main-5.deployment-prep.eqiad1.wikimedia.cloud:
         id: 1
         rack: A
-      deployment-kafka-main-2.deployment-prep.eqiad1.wikimedia.cloud:
-        id: 2
-        rack: B
     ipv6: false
     zookeeper_cluster_name: main-deployment-prep
 kafka_message_max_bytes: 4194304
