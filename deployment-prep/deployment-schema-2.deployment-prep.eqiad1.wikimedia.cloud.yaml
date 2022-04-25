@@ -1,4 +1,0 @@
-profile::eventschemas::service::allow_origin: https://schema-beta.wmflabs.org
-profile::eventschemas::service::port: 80
-profile::eventschemas::service::server_name: schema-beta.wmflabs.org
-puppetmaster: deployment-puppetmaster04.deployment-prep.eqiad.wmflabs
