@@ -29,7 +29,7 @@ kafka_clusters:
       deployment-kafka-jumbo-3.deployment-prep.eqiad1.wikimedia.cloud:
         id: 3
         rack: C
-      deployment-kafka-jumbo-4.deployment-prep.eqiad1.wikimedia.cloud:
+      deployment-kafka-jumbo-5.deployment-prep.eqiad1.wikimedia.cloud:
         id: 1
         rack: A
     ipv6: false
