@@ -94,16 +94,16 @@ profile::trafficserver::backend::mapping_rules:
 - replacement: http://deployment-webperf21.deployment-prep.eqiad1.wikimedia.cloud
   target: http://performance.wikimedia.beta.wmflabs.org
   type: map
-- replacement: http://deployment-eventgate-4.deployment-prep.eqiad.wmflabs:8492
+- replacement: deployment-eventgate-4.deployment-prep.eqiad1.wikimedia.cloud:8492
   target: http://intake-analytics.wikimedia.beta.wmflabs.org
   type: map
-- replacement: http://deployment-eventgate-4.deployment-prep.eqiad.wmflabs:8992
+- replacement: deployment-eventgate-4.deployment-prep.eqiad1.wikimedia.cloud:8992
   target: http://intake-logging.wikimedia.beta.wmflabs.org
   type: map
-- replacement: https://deployment-eventstreams-2.deployment-prep.eqiad.wmflabs:8092
+- replacement: https://deployment-eventstreams-2.deployment-prep.eqiad1.wikimedia.cloud:8092
   target: http://stream.wikimedia.beta.wmflabs.org
   type: map
-- replacement: https://deployment-eventstreams-2.deployment-prep.eqiad.wmflabs:8093
+- replacement: https://deployment-eventstreams-2.deployment-prep.eqiad1.wikimedia.cloud:8093
   target: http://stream-test.wikimedia.beta.wmflabs.org
   type: map
 - replacement: https://deployment-puppetmaster04.deployment-prep.eqiad1.wikimedia.cloud
