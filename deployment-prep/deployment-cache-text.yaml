@@ -100,7 +100,7 @@ profile::trafficserver::backend::mapping_rules:
 - replacement: http://deployment-eventgate-4.deployment-prep.eqiad1.wikimedia.cloud:8992
   target: http://intake-logging.wikimedia.beta.wmflabs.org
   type: map
-- replacement: https://deployment-eventstreams-2.deployment-prep.eqiad1.wikimedia.cloud:8092
+- replacement: http://deployment-eventstreams-2.deployment-prep.eqiad1.wikimedia.cloud:8092
   target: http://stream.wikimedia.beta.wmflabs.org
   type: map
 - replacement: http://deployment-eventstreams-2.deployment-prep.eqiad1.wikimedia.cloud:8093
