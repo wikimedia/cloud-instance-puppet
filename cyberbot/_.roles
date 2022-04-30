@@ -1,3 +1,2 @@
 - role::cyberbot::exec
 - role::cyberbot::db
-- role::labs::lvm::srv
