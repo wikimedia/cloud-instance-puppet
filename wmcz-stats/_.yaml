@@ -1,0 +1,3 @@
+passwords::root::extra_keys:
+  urbanecm: ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDSd74VJYcwmH+qOv5fq0pYPnlfDqZQsBx+11Nrltr5pdan4nrLCWouit6RLv+B18COX4NUkN+uCOg01a3Jv9e/ojlf/3Q7lIZgg9nh/JUsUyp2n7URGCpsADL+PmOov8LOeuwgfEXvKNNLvegB8GCdmlWCeVg5sS3ulmfHkdRVW6mY08aCUJyDeaN9cBvqLngGrQqu9JGEnTjfDML+2hYUaGgmUiLJQr1xW/qWLR67ZXY/C3IR6pZreZEValhTA1S+3ctmHWBXWhNUBu+zXtWHw8GcTexRr7WhWgsaHXvzrXQsKJFzZYGfa1DVgC/QdR8qKI/QY5fdy4U+wXO5XFPx
+    urbanecm+cloud-root@notebook
