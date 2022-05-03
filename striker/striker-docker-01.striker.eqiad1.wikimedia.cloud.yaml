@@ -27,7 +27,7 @@ profile::docker::runner::service_defs:
       OAUTH_CONSUMER_SECRET: 797a65097ccc8c2c32b802698d9c7bcae5446ddf
       OAUTH_MWURL: https://sulwiki-striker.wmcloud.org/w/index.php
       OPENSTACK_PASSWORD: admin
-      OPENSTACK_URL: http://host.docker.internal:5000/v3
+      OPENSTACK_URL: http://172.21.0.4:5000/v3
       OPENSTACK_USER: admin
       PHABRICATOR_PARENT_PROJECT: PHID-PROJ-expwzhbi6dmyn7kfve6n
       PHABRICATOR_REPO_ADMIN_GROUP: PHID-PROJ-2citsfvsv7l23mvplfw4
