@@ -2,9 +2,3 @@ profile::base::overlayfs: true
 profile::docker::engine::settings:
   data-root: /srv/docker
   log-driver: journald
-profile::docker::runner::service_defs:
-  labs-striker:
-    ensure: absent
-    namespace: wikimedia
-    port: 8080
-    version: 2022-05-02-180255-production
