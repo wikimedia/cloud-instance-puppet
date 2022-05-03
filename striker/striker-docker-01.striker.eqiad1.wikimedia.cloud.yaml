@@ -5,3 +5,5 @@ profile::docker::engine::settings:
 profile::docker::runner::service_defs:
   labs-striker:
     ensure: absent
+    port: 8080
+    version: 12345
