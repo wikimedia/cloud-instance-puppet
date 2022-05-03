@@ -2,3 +2,6 @@ profile::base::overlayfs: true
 profile::docker::engine::settings:
   data-root: /srv/docker
   log-driver: journald
+profile::docker::runner::service_defs:
+  labs-striker:
+    ensure: absent
