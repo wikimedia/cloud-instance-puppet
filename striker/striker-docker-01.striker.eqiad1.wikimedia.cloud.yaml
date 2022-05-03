@@ -2,3 +2,47 @@ profile::base::overlayfs: true
 profile::docker::engine::settings:
   data-root: /srv/docker
   log-driver: journald
+profile::docker::runner::service_defs:
+  labs-striker:
+    environment:
+      CACHE_BACKEND: django.core.cache.backends.locmem.LocMemCache
+      CACHE_LOCATION: default-cache
+      DB_ENGINE: striker.db
+      DB_HOST: mariadb.local.wmftest.net
+      DB_NAME: striker
+      DB_PASSWORD: striker
+      DB_PORT: 3306
+      DB_USER: striker
+      DJANGO_ALLOWED_HOSTS: '*'
+      DJANGO_DEBUG: true
+      DJANGO_SECRET_KEY: SJoQd0mz2J7fojMLyMlCKOcxy9svoW3ncRNv51uEFqOEBTKw
+      LDAP_BASE_DN: dc=wmftest,dc=net
+      LDAP_BIND_PASSWORD: docker_writer
+      LDAP_BIND_USER: cn=writer,dc=wmftest,dc=net
+      LDAP_SERVER_URI: ldap://openldap.local.wmftest.net:389
+      LDAP_USER_SEARCH_BASE: ou=People,dc=wmftest,dc=net
+      LOGGING_HANDLERS: console
+      LOGGING_LEVEL: DEBUG
+      OAUTH_CONSUMER_KEY: 3061f1dde2f04f13cd6f076106bce5c2
+      OAUTH_CONSUMER_SECRET: 797a65097ccc8c2c32b802698d9c7bcae5446ddf
+      OAUTH_MWURL: https://sulwiki-striker.wmcloud.org/w/index.php
+      OPENSTACK_PASSWORD: admin
+      OPENSTACK_URL: http://keystone:5000/v3
+      OPENSTACK_USER: admin
+      PHABRICATOR_PARENT_PROJECT: PHID-PROJ-expwzhbi6dmyn7kfve6n
+      PHABRICATOR_REPO_ADMIN_GROUP: PHID-PROJ-2citsfvsv7l23mvplfw4
+      PHABRICATOR_TOKEN: api-4kq3lkvslbx535hldt24x4x3foap
+      PHABRICATOR_URL: https://phabricator-striker.wmcloud.org
+      SSL_CANONICAL_HOST: striker.wmcloud.org
+      STAFF_GROUP_DN: cn=tools.admin,ou=servicegroups,dc=wmftest,dc=net
+      SUPERUSER_GROUP_DN: cn=tools.admin,ou=servicegroups,dc=wmftest,dc=net
+      TOOLS_MAINTAINER_BASE_DN: ou=people,dc=wmftest,dc=net
+      TOOLS_TOOL_BASE_DN: ou=servicegroups,dc=wmftest,dc=net
+      WIKITECH_ACCESS_SECRET: 5cb6479de62ae86ebaff7702b7ed15a1335f284a
+      WIKITECH_ACCESS_TOKEN: 4b67e2bdb7d9bc44f91af75feb25a7db
+      WIKITECH_CONSUMER_SECRET: 41d30080dd302eb6fd2563b7e0f783c8da9eaec7
+      WIKITECH_CONSUMER_TOKEN: c80f71c3d4a07b4ea5789b459c9cb326
+      WIKITECH_URL: https://ldapwiki-striker.wmcloud.org
+    namespace: wikimedia
+    port: 8080
+    version: 2022-05-02-180255-production
