@@ -78,7 +78,7 @@ profile::toolforge::active_mail_relay: tools-mail-02.tools.eqiad.wmflabs
 profile::toolforge::active_proxy_host: toolsbeta-proxy-3
 profile::toolforge::canonical_domain: toolsbeta.wmflabs.org
 profile::toolforge::canonical_scheme: http://
-profile::toolforge::docker::registry::active_node: toolsbeta-docker-registry-01.toolsbeta.eqiad.wmflabs
+profile::toolforge::docker::registry::active_node: toolsbeta-docker-registry-02.toolsbeta.eqiad1.wikimedia.cloud
 profile::toolforge::docker::registry::standby_node: undef
 profile::toolforge::elasticsearch::keepalived::host_priority: 100
 profile::toolforge::elasticsearch::keepalived::vip: 172.16.1.131
