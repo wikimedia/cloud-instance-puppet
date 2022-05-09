@@ -1,14 +1,11 @@
 profile::cassandra::instances:
-  deployment-restbase03.deployment-prep.eqiad.wmflabs: {}
   deployment-restbase04.deployment-prep.eqiad1.wikimedia.cloud: {}
 profile::java::java_packages:
 - variant: jdk
   version: '8'
 profile::restbase::hosts:
-- deployment-restbase03.deployment-prep.eqiad.wmflabs
 - deployment-restbase04.deployment-prep.eqiad1.wikimedia.cloud
 profile::restbase::seeds_ng:
-- deployment-restbase03.deployment-prep.eqiad.wmflabs
 - deployment-restbase04.deployment-prep.eqiad1.wikimedia.cloud
 profile::tlsproxy::envoy::capitalize_headers: false
 profile::tlsproxy::envoy::global_cert_name: restbase.discovery.wmnet
