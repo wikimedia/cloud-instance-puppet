@@ -32,7 +32,7 @@ profile::docker::runner::service_defs:
         headers: '{{request.headers}}'
         method: '{{request.method}}'
         query: '{{ default(request.query, {}) }}'
-        uri: http://deployment-restbase03.deployment-prep.eqiad.wmflabs:7231/{{domain}}/v1/{+path}
+        uri: http://deployment-restbase04.deployment-prep.eqiad1.wikimedia.cloud:7231/{{domain}}/v1/{+path}
       speech: true
       speech_config:
         domain: mathspeak
