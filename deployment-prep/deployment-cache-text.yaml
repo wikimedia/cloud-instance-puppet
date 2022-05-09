@@ -118,7 +118,7 @@ profile::trafficserver::backend::mapping_rules:
   - '@pparam=/etc/trafficserver/lua/rb-mw-mangling.lua'
   - '@plugin=/usr/lib/trafficserver/modules/conf_remap.so'
   - '@pparam=proxy.config.http.server_session_sharing.match=2'
-  replacement: http://deployment-restbase03.deployment-prep.eqiad.wmflabs:7231/api/rest_v1
+  replacement: http://deployment-restbase04.deployment-prep.eqiad1.wikimedia.cloud:7231/api/rest_v1
   target: http://(.*)/api/rest_v1
   type: regex_map
 - params:
