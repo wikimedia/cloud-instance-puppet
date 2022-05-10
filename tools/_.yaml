@@ -22,8 +22,6 @@ passwords::root::extra_keys:
   zhuyifei1999: ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCdm+Kiet0U2AjfPLFKIZLh57pXruVzlIfSypwSt7GRlZ+0sGhExYWvXdreW5zgZRJ3aXzR84qaZOqpwgHuVFlfMszXzq3E6p9dZ/bATP/lvIkucJJ2RL5C4ABvfwd4MHs68rW9UGwPVWn1qQftvoNpeDCu4t50uLbP9vcEXzaXrVioHROPoEpqk4YofHQS9F4HIKDbfjTFwUb5YQ/lsajuK0EZXlAELoaZ7s+uBolyBmXkIjWOjyGwHCoBU1FPiufLwLYuMZz0iAqw930dgoi89VgaPhlu12j2yP+2BZ3XkEgpzNBmZ/3lwVvRPyUnWw2pBU4qvs00FUARzx/WTRSJ
     zhuyifei1999@zhuyifei1999-ThinkPad-X260
 profile::base::core_dump_pattern: core
-profile::base::labs::unattended_distro: absent
-profile::base::labs::unattended_wmf: absent
 profile::base::ssh_server_settings:
   challenge_response_auth: false
   disable_agent_forwarding: false
