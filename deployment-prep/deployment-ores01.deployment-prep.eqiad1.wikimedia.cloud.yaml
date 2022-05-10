@@ -1,4 +1,0 @@
-profile::ores::celery::queue_maxsize: 100
-profile::ores::celery::workers: 4
-profile::ores::logstash_host: localhost
-profile::ores::web::workers: 8
