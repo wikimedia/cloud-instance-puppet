@@ -1,5 +1,4 @@
-profile::base::ssh_server_settings:
-  max_sessions: 35
-  max_startups: 35:30:60
 profile::ldap::client::labs::restricted_to: ops
 profile::openstack::eqiad1::cumin::permit_port_forwarding: true
+profile::ssh::server::max_sessions: 35
+profile::ssh::server::max_startups: 35:30:60
