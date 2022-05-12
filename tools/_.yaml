@@ -22,12 +22,6 @@ passwords::root::extra_keys:
   zhuyifei1999: ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCdm+Kiet0U2AjfPLFKIZLh57pXruVzlIfSypwSt7GRlZ+0sGhExYWvXdreW5zgZRJ3aXzR84qaZOqpwgHuVFlfMszXzq3E6p9dZ/bATP/lvIkucJJ2RL5C4ABvfwd4MHs68rW9UGwPVWn1qQftvoNpeDCu4t50uLbP9vcEXzaXrVioHROPoEpqk4YofHQS9F4HIKDbfjTFwUb5YQ/lsajuK0EZXlAELoaZ7s+uBolyBmXkIjWOjyGwHCoBU1FPiufLwLYuMZz0iAqw930dgoi89VgaPhlu12j2yP+2BZ3XkEgpzNBmZ/3lwVvRPyUnWw2pBU4qvs00FUARzx/WTRSJ
     zhuyifei1999@zhuyifei1999-ThinkPad-X260
 profile::base::core_dump_pattern: core
-profile::base::ssh_server_settings:
-  challenge_response_auth: false
-  disable_agent_forwarding: false
-  disable_nist_kex: false
-  enable_hba: true
-  explicit_macs: false
 profile::elasticsearch::base_config_dir: /etc/elasticsearch
 profile::elasticsearch::base_data_dir: /srv/elasticsearch
 profile::elasticsearch::common_settings:
@@ -64,6 +58,11 @@ profile::openstack::eqiad1::cumin::project_masters:
 profile::openstack::eqiad1::cumin::project_pub_key: ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIO8as2dazxB8rDdZed/ee0prcEwOSpRJi22clMCCi7HG
 profile::openstack::eqiad1::ldap_user_pass: <not available here>
 profile::rsyslog::kubernetes::enable: false
+profile::ssh::server::challenge_response_auth: true
+profile::ssh::server::disable_agent_forwarding: false
+profile::ssh::server::disable_nist_kex: false
+profile::ssh::server::enable_hba: true
+profile::ssh::server::explicit_macs: false
 profile::toolforge::active_cronrunner: tools-sgecron-01.tools.eqiad.wmflabs
 profile::toolforge::active_mail_relay: tools-mail-03.tools.eqiad1.wikimedia.cloud
 profile::toolforge::active_proxy_host: tools-proxy-06
