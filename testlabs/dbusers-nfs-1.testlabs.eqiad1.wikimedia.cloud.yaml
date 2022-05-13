@@ -2,10 +2,9 @@ mount_nfs: false
 profile::wcms::nfs::standalone::cinder_attached: true
 profile::wcms::nfs::standalone::volumes:
 - dbusers
-profile::wmcs::services::toolsdb_replica_cnf::git_branch: production
-profile::wmcs::services::toolsdb_replica_cnf::host_name: tools-db-replica-cnf
-profile::wmcs::services::toolsdb_replica_cnf::toolsdb_replica_cnf_config: SECRET_KEY:"7f085f59ce3a0aca82020f4a7a3e7585eceeedcc66a2f805dcc885703b20a579"
-  TOOLS_REPLICA_CNF_PATH:"/srv/tools/shared/tools/project/" PAWS_REPLICA_CNF_PATH:"/srv/misc/shared/paws/project/paws/userhomes/"
-  OTHERS_REPLICA_CNF_PATH:"/srv/tools/shared/tools/home/"
+profile::wmcs::services::toolsdb_replica_cnf::others_replica_cnf_path: /srv/tools/shared/tools/home/
+profile::wmcs::services::toolsdb_replica_cnf::paws_replica_cnf_path: /srv/misc/shared/paws/project/paws/userhomes/
+profile::wmcs::services::toolsdb_replica_cnf::secret_key: 7f085f59ce3a0aca82020f4a7a3e7585eceeedcc66a2f805dcc885703b20a579
+profile::wmcs::services::toolsdb_replica_cnf::tools_replica_cnf_path: /srv/tools/shared/tools/project/
 profile::wmcs::services::toolsdb_replica_cnf::user: tools-db-replica-cnf
 puppetmaster: abogott-puppetmaster.testlabs.eqiad.wmflabs
