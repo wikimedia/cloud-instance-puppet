@@ -8,6 +8,9 @@ profile::docker::runner::service_defs:
     port: 6927
     version: latest
   mediawiki-services-function-orchestrator:
+    environment:
+      FUNCTION_EVALUATOR_URL: https://wikifunctions-evaluator-beta.wmflabs.org/1/v1/evaluate/
+      WIKI_API_URL: https://wikifunctions.beta.wmflabs.org/w/api.php
     namespace: wikimedia
     port: 6254
     version: latest
