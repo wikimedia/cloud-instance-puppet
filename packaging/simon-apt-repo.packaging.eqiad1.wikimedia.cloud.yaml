@@ -1,1 +1,1 @@
-profile::aptrepo::private::primary_server:simon-apt-repo.packaging.eqiad1.wikimedia.cloud: null
+profile::aptrepo::private::primary_server: simon-apt-repo.packaging.eqiad1.wikimedia.cloud
