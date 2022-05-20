@@ -1,1 +1,2 @@
 profile::aptrepo::private::primary_server: simon-apt-repo.packaging.eqiad1.wikimedia.cloud
+profile::aptrepo::private::secondary_servers: []
