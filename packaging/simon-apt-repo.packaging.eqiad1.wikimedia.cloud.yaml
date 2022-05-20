@@ -1,4 +1,5 @@
 profile::aptrepo::private::primary_server: simon-apt-repo.packaging.eqiad1.wikimedia.cloud
 profile::aptrepo::private::secondary_servers: []
+profile::aptrepo::private::servername: simon-apt-repo.packaging.eqiad1.wikimedia.cloud
 profile::aptrepo::wikimedia::basedir: /srv/private
 profile::aptrepo::wikimedia::homedir: /root
