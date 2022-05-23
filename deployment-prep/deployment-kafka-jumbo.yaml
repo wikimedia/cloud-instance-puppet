@@ -20,6 +20,7 @@ profile::kafka::broker::plaintext: true
 profile::kafka::broker::prometheus_monitoring_enabled: true
 profile::kafka::broker::ssl_enabled: true
 profile::kafka::broker::ssl_password: qwerty
+profile::kafka::broker::use_fixed_uid_gid: true
 profile::kafka::mirror::consumer_ssl_enabled: true
 profile::kafka::mirror::destination_cluster_name: jumbo-deployment-prep
 profile::kafka::mirror::properties:
