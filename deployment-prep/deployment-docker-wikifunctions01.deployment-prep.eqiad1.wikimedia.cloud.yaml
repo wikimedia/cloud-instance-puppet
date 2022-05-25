@@ -40,6 +40,7 @@ profile::docker::runner::service_defs:
         name: function-evaluator
       worker_heap_limit_mb: 250
     namespace: wikimedia
+    override_cmd: -c /etc/mediawiki-services-function-evaluator/config.yaml
     port: 6927
     version: latest
   mediawiki-services-function-orchestrator:
