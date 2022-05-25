@@ -6,7 +6,7 @@ profile::docker::runner::service_defs:
   mediawiki-services-function-evaluator:
     config:
       logging:
-        level: info
+        level: trace
         streams:
         - named_levels: true
           type: stdout
@@ -45,7 +45,7 @@ profile::docker::runner::service_defs:
   mediawiki-services-function-orchestrator:
     config:
       logging:
-        level: info
+        level: trace
         streams:
         - named_levels: true
           type: stdout
