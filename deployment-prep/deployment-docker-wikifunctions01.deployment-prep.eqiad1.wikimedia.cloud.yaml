@@ -28,6 +28,45 @@ profile::docker::runner::service_defs:
               user-agent: '{{user-agent}}'
             method: post
             uri: https://{{domain}}/w/api.php
+          port: 6927
+          restbase_req:
+            body: '{{request.body}}'
+            headers: '{{request.headers}}'
+            method: '{{request.method}}'
+            query: '{{ default(request.query, {}) }}'
+            uri: https://{{domain}}/api/rest_v1/{+path}
+          spec: ./spec.template.yaml
+        module: ./app.js
+      worker_heap_limit_mb: 250
+    namespace: wikimedia
+    override_cmd: -c /etc/mediawiki-services-function-evaluator/config.yaml
+    port: 6927
+    version: latest
+  mediawiki-services-function-orchestrator:
+    config:
+      logging:
+        level: info
+        streams:
+        - named_levels: true
+          type: stdout
+        - host: logstash1003.eqiad.wmnet
+          port: 12201
+          type: gelf
+      metrics:
+        host: cloudmetrics1002.eqiad.wmnet
+        name: function-evaluator
+        port: 8125
+        type: statsd
+      num_workers: 0
+      services:
+      - conf:
+          cors: '*'
+          mwapi_req:
+            body: '{{ default(request.query, {}) }}'
+            headers:
+              user-agent: '{{user-agent}}'
+            method: post
+            uri: https://{{domain}}/w/api.php
           port: 6254
           restbase_req:
             body: '{{request.body}}'
@@ -39,15 +78,11 @@ profile::docker::runner::service_defs:
         module: ./app.js
         name: function-evaluator
       worker_heap_limit_mb: 250
-    namespace: wikimedia
-    override_cmd: -c /etc/mediawiki-services-function-evaluator/config.yaml
-    port: 6927
-    version: latest
-  mediawiki-services-function-orchestrator:
     environment:
       FUNCTION_EVALUATOR_URL: https://wikifunctions-evaluator-beta.wmflabs.org/1/v1/evaluate/
       WIKI_API_URL: https://wikifunctions.beta.wmflabs.org/w/api.php
     namespace: wikimedia
+    override_cmd: -c /etc/mediawiki-services-function-orchestrator/config.yaml
     port: 6254
     version: latest
 profile::docker::storage::physical_volumes: /dev/md1
