@@ -10,9 +10,10 @@ profile::docker::runner::service_defs:
         streams:
         - named_levels: true
           type: stdout
-        - host: deployment-logstash03.deployment-prep.eqiad.wmflabs
-          port: 12201
-          type: gelf
+        - host: deployment-mwlog01.deployment-prep.eqiad1.wikimedia.cloud
+          name: function-evaluator
+          port: 8420
+          type: syslog
       metrics:
         host: cloudmetrics1002.eqiad.wmnet
         name: function-evaluator
@@ -50,9 +51,10 @@ profile::docker::runner::service_defs:
         streams:
         - named_levels: true
           type: stdout
-        - host: deployment-logstash03.deployment-prep.eqiad.wmflabs
-          port: 12201
-          type: gelf
+        - host: deployment-mwlog01.deployment-prep.eqiad1.wikimedia.cloud
+          name: function-orchestrator
+          port: 8420
+          type: syslog
       metrics:
         host: cloudmetrics1002.eqiad.wmnet
         name: function-orchestrator
