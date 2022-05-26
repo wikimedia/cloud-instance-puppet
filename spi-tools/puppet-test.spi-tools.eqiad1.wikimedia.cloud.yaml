@@ -1,1 +1,1 @@
-$udp_port           = 23514: null
+rsyslog::receiver::udp_port: 23514
