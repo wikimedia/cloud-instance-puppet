@@ -1,1 +1,1 @@
-rsyslog::receiver::udp_port: 23514
+{}
