@@ -1,3 +1,6 @@
 aptly::manage_nginx: false
+passwords::root::extra_keys:
+  samtar: ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIFLCTKca4D7k/ta8wk5hdnxo8nLFRWnmDCwpM13/fi3W
+    samtar@theresnotime.co.uk
 profile::ci::slave::labs::common::manage_srv: false
 puppetmaster: deployment-puppetmaster04.deployment-prep.eqiad1.wikimedia.cloud
