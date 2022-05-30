@@ -7,13 +7,6 @@ profile::docker::runner::service_defs:
     config:
       logging:
         level: trace
-        streams:
-        - named_levels: true
-          type: stdout
-        - host: deployment-mwlog01.deployment-prep.eqiad1.wikimedia.cloud
-          name: function-evaluator
-          port: 8420
-          type: syslog
       metrics:
         host: cloudmetrics1002.eqiad.wmnet
         name: function-evaluator
@@ -48,13 +41,6 @@ profile::docker::runner::service_defs:
     config:
       logging:
         level: trace
-        streams:
-        - named_levels: true
-          type: stdout
-        - host: deployment-mwlog01.deployment-prep.eqiad1.wikimedia.cloud
-          name: function-orchestrator
-          port: 8420
-          type: syslog
       metrics:
         host: cloudmetrics1002.eqiad.wmnet
         name: function-orchestrator
