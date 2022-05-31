@@ -7,6 +7,9 @@ profile::docker::runner::service_defs:
     config:
       logging:
         level: trace
+        streams:
+        - named_levels: true
+          type: stdout
       metrics:
         host: cloudmetrics1002.eqiad.wmnet
         name: function-evaluator
@@ -41,6 +44,9 @@ profile::docker::runner::service_defs:
     config:
       logging:
         level: trace
+        streams:
+        - named_levels: true
+          type: stdout
       metrics:
         host: cloudmetrics1002.eqiad.wmnet
         name: function-orchestrator
