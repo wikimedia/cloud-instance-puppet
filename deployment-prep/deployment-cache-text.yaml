@@ -124,6 +124,9 @@ profile::trafficserver::backend::mapping_rules:
 - params:
   - '@plugin=/usr/lib/trafficserver/modules/tslua.so'
   - '@pparam=/etc/trafficserver/lua/rb-mw-mangling.lua'
+  - '@plugin=/usr/lib/trafficserver/modules/tslua.so'
+  - '@pparam=/etc/trafficserver/lua/multi-dc.lua'
+  - '@pparam=deployment-mediawiki12.deployment-prep.eqiad1.wikimedia.cloud'
   replacement: http://deployment-mediawiki11.deployment-prep.eqiad1.wikimedia.cloud/w/api.php
   target: http://(.*)/w/api.php
   type: regex_map
@@ -134,6 +137,9 @@ profile::trafficserver::backend::mapping_rules:
   - '@pparam="5B 5D 26 27 2B 3D"'
   - '@plugin=/usr/lib/trafficserver/modules/tslua.so'
   - '@pparam=/etc/trafficserver/lua/rb-mw-mangling.lua'
+  - '@plugin=/usr/lib/trafficserver/modules/tslua.so'
+  - '@pparam=/etc/trafficserver/lua/multi-dc.lua'
+  - '@pparam=deployment-mediawiki11.deployment-prep.eqiad1.wikimedia.cloud'
   replacement: http://deployment-mediawiki12.deployment-prep.eqiad1.wikimedia.cloud
   target: /
   type: map
