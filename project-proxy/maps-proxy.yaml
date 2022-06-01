@@ -52,7 +52,7 @@ profile::wmcs::proxy::static::proxy_mappings:
     domain: maps-tiles1.maps.eqiad1.wikimedia.cloud
   warper.wmflabs.org:
     certname: wmflabs
-    domain: maps-warper3.maps.eqiad1.wikimedia.cloud
+    domain: maps-warper4.maps.eqiad1.wikimedia.cloud
   wma.wmcloud.org:
     certname: wma
     domain: maps-wma2.maps.eqiad1.wikimedia.cloud
