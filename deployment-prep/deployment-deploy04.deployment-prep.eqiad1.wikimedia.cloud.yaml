@@ -1,1 +1,2 @@
-{}
+aptly::manage_nginx: false
+profile::ci::slave::labs::common::manage_srv: false
