@@ -1,6 +1,6 @@
 acmechief_host: tools-acme-chief-01.tools.eqiad.wmflabs
 active_cronrunner: tools-cron-01.tools.eqiad.wmflabs
-active_proxy_host: tools-proxy-06
+active_proxy_host: tools-proxy-06.tools.eqiad1.wikimedia.cloud
 active_redis: tools-redis-1003.tools.eqiad.wmflabs
 docker::builder_host: tools-docker-imagebuilder-01.tools.eqiad.wmflabs
 docker::registry: docker-registry.tools.wmflabs.org
