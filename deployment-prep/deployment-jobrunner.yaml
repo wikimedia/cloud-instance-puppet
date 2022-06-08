@@ -1,4 +1,4 @@
 profile::mediawiki::php::php_versions:
-- '7.4'
 - '7.2'
-profile::php_fpm::fcgi_port: 8002
+- '7.4'
+profile::php_fpm::fcgi_port: 8004
