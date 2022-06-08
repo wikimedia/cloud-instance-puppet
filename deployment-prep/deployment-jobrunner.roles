@@ -1,4 +1,1 @@
-- role::beta::mediawiki::jobrunner
-- role::beta::mediawiki
-- profile::rsyslog::kafka_shipper
-- profile::rsyslog::udp_localhost_compat
+[]
