@@ -1,1 +1,1 @@
-profile::gitlab::runner::ensure: false
+profile::gitlab::runner::ensure: absent
