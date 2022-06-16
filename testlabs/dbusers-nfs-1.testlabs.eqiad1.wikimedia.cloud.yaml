@@ -2,8 +2,6 @@ mount_nfs: false
 profile::wcms::nfs::standalone::cinder_attached: true
 profile::wcms::nfs::standalone::volumes:
 - dbusers
-profile::wmcs::services::toolsdb_replica_cnf::htpassword: test-password
-profile::wmcs::services::toolsdb_replica_cnf::htpassword_salt: tczR9usd
 profile::wmcs::services::toolsdb_replica_cnf::others_replica_cnf_path: /srv/tools/shared/tools/home/
 profile::wmcs::services::toolsdb_replica_cnf::paws_replica_cnf_path: /srv/misc/shared/paws/project/paws/userhomes/
 profile::wmcs::services::toolsdb_replica_cnf::secret_key: 7f085f59ce3a0aca82020f4a7a3e7585eceeedcc66a2f805dcc885703b20a579
