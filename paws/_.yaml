@@ -14,5 +14,4 @@ profile::wmcs::paws::prometheus_nodes:
 prometheus_nodes:
 - paws-prometheus-1.paws.eqiad1.wikimedia.cloud
 - paws-prometheus-2.paws.eqiad1.wikimedia.cloud
-- prometheus01.metricsinfra.eqiad1.wikimedia.cloud
 puppetmaster: paws-puppetmaster-2.paws.eqiad1.wikimedia.cloud
