@@ -5,7 +5,7 @@ profile::mail::mx::alias_file_mail_subject: deployemntprep mail aliases
 profile::mail::mx::cert_name: mail_beta_wmflabs_org
 profile::mail::mx::cert_subjects: mail.beta.wmflabs.org
 profile::mail::mx::enable_ldap: false
-profile::mail::mx::otrs_mysql_dbname: notreallyanything
-profile::mail::mx::otrs_mysql_pass: otrs
-profile::mail::mx::otrs_mysql_server: nowhere.example.org
-profile::mail::mx::otrs_mysql_user: nobody
+profile::mail::mx::vtrs_mysql_dbname: notreallyanything
+profile::mail::mx::vtrs_mysql_pass: vtrs
+profile::mail::mx::vtrs_mysql_server: nowhere.example.org
+profile::mail::mx::vtrs_mysql_user: nobody
