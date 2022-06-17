@@ -9,3 +9,4 @@ profile::mail::mx::vtrs_mysql_dbname: notreallyanything
 profile::mail::mx::vtrs_mysql_pass: vtrs
 profile::mail::mx::vtrs_mysql_server: nowhere.example.org
 profile::mail::mx::vtrs_mysql_user: nobody
+tesT: test
