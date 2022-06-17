@@ -1,2 +1,12 @@
+profile::mail::mx::alias_file: /etc/exim4/aliases/wikimedia.org
+profile::mail::mx::alias_file_mail_rcpt: noone@deploymentprep
+profile::mail::mx::alias_file_mail_subject: deployemntprep mail aliases
+profile::mail::mx::cert_name: mail_beta_wmflabs_org
+profile::mail::mx::cert_subjects: mail.beta.wmflabs.org
 profile::mail::mx::enable_jumpcloud: false
+profile::mail::mx::enable_ldap: false
 profile::mail::mx::vrts_mysql_server: example.org
+profile::mail::mx::vtrs_mysql_dbname: notreallyanything
+profile::mail::mx::vtrs_mysql_pass: vtrs
+profile::mail::mx::vtrs_mysql_server: nowhere.example.org
+profile::mail::mx::vtrs_mysql_user: nobody
