@@ -22,7 +22,10 @@ profile::wmcs::metricsinfra::monitored_projects:
 - name: metricsinfra
   notify_email:
   - hi@taavi.wtf
+profile::wmcs::metricsinfra::prometheus::enable_data_migration: true
 profile::wmcs::metricsinfra::prometheus::ext_fqdn: prometheus.wmflabs.org
+profile::wmcs::metricsinfra::prometheus::migration_dst_host: metricsinfra-prometheus-2.metricsinfra.eqiad1.wikimedia.cloud
+profile::wmcs::metricsinfra::prometheus::migration_src_host: prometheus01.metricsinfra.eqiad.wmflabs
 profile::wmcs::metricsinfra::prometheus_alertmanager_hosts:
 - metricsinfra-alertmanager-1.metricsinfra.eqiad1.wikimedia.cloud
 profile::wmcs::metricsinfra::prometheus_hosts:
