@@ -1,1 +1,2 @@
 profile::mail::mx::enable_jumpcloud: false
+profile::mail::mx::vrts_mysql_server: example.org
