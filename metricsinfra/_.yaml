@@ -31,4 +31,6 @@ profile::wmcs::metricsinfra::prometheus_alertmanager_hosts:
 profile::wmcs::metricsinfra::prometheus_hosts:
 - prometheus01.metricsinfra.eqiad.wmflabs
 - metricsinfra-prometheus-2.metricsinfra.eqiad1.wikimedia.cloud
+profile::wmcs::metricsinfra::thanos_fe_hosts:
+- metricsinfra-thanos-fe-1.metricsinfra.eqiad1.wikimedia.cloud
 puppetmaster: metricsinfra-puppetmaster-1.metricsinfra.eqiad1.wikimedia.cloud
