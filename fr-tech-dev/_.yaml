@@ -1,2 +1,1 @@
-profile::base::ssh_server_settings:
-  gateway_ports: true
+profile::ssh::server::gateway_ports: true
