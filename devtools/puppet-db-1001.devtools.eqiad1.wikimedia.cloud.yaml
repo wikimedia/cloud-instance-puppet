@@ -1,4 +1,5 @@
 profile::puppetdb::master: '%{facts.networking.fqdn}'
+puppet_ca_server: puppetmaster-1001.devtools.eqiad1.wikimedia.cloud
 puppetmaster: puppetmaster-1001.devtools.eqiad1.wikimedia.cloud
 puppetmaster::servers:
   puppetmaster-1001.devtools.eqiad1.wikimedia.cloud:
