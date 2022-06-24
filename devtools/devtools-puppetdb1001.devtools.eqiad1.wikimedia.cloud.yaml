@@ -1,1 +1,6 @@
+profile::puppetdb::master: '%{facts.networking.fqdn}'
 puppetmaster: puppetmaster-1001.devtools.eqiad1.wikimedia.cloud
+puppetmaster::servers:
+  puppetmaster-1001.devtools.eqiad1.wikimedia.cloud:
+  - loadfactor: 10
+    worker: puppetmaster-1001.devtools.eqiad1.wikimedia.cloud
