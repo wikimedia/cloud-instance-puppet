@@ -4,6 +4,10 @@ profile::base::puppet::dns_alt_names:
 - tools-k8s-etcd-14.tools.eqiad1.wikimedia.cloud
 - tools-k8s-etcd-15.tools.eqiad1.wikimedia.cloud
 profile::etcd::cluster_bootstrap: false
+profile::puppet::agent::dns_alt_names:
+- tools-k8s-etcd-13.tools.eqiad1.wikimedia.cloud
+- tools-k8s-etcd-14.tools.eqiad1.wikimedia.cloud
+- tools-k8s-etcd-15.tools.eqiad1.wikimedia.cloud
 profile::toolforge::k8s::control_nodes:
 - tools-k8s-control-1.tools.eqiad.wmflabs
 - tools-k8s-control-2.tools.eqiad.wmflabs
