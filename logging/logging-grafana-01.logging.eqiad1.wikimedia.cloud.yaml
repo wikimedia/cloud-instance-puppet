@@ -1,3 +1,9 @@
+httpd::modules:
+- authnz_ldap
+- headers
+- proxy
+- proxy_http
+- rewrite
 profile::grafana::admin_password: qwerty
 profile::grafana::config:
   auth.ldap:
