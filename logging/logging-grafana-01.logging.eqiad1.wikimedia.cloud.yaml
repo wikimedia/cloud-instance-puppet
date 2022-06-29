@@ -1,2 +1,7 @@
 profile::grafana::admin_password: qwerty
+profile::grafana::config:
+  auth.ldap:
+    enabled: false
+  auth.proxy:
+    enabled: false
 profile::grafana::secret_key: qwerty
