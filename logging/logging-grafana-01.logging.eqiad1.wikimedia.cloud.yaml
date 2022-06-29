@@ -1,0 +1,2 @@
+profile::grafana::admin_password: qwerty
+profile::grafana::secret_key: qwerty
