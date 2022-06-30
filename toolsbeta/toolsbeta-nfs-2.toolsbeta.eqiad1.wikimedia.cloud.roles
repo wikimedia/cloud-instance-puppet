@@ -1,0 +1,4 @@
+- role::aptly::client
+- profile::toolforge::infrastructure
+- profile::wmcs::services::toolsdb_replica_cnf
+- role::wmcs::nfs::standalone
