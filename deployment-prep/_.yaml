@@ -389,11 +389,6 @@ service::catalog:
     ip:
       eqiad:
         default: 172.16.3.203
-    monitoring:
-      check_command: check_https_lvs!en.wikipedia.beta.wmflabs.org!/w/api.php?action=query&meta=siteinfo
-      sites:
-        eqiad:
-          hostname: deployment-mediawiki11.deployment-prep.eqiad1.wikimedia.cloud
     page: false
     port: 443
     probes:
@@ -412,11 +407,6 @@ service::catalog:
     ip:
       eqiad:
         default: 172.16.4.150
-    monitoring:
-      check_command: check_https_lvs_on_port!shellbox.svc.deployment-prep.eqiad1.wikimedia.cloud!4008!/healthz
-      sites:
-        eqiad:
-          hostname: shellbox.svc.deployment-prep.eqiad1.wikimedia.cloud
     page: false
     port: 4008
     sites:
