@@ -1,0 +1,12 @@
+cdh::hadoop::cluster_name: math-hadoop
+cdh::hadoop::namenode_hosts:
+- hadoop000.math.eqiad.wmflabs
+cdh::hive::metastore_host: hadoop000.math.eqiad.wmflabs
+cdh::oozie::oozie_host: hadoop000.math.eqiad.wmflabs
+elasticsearch::cluster_hosts:
+- hadoop000.math.eqiad.wmflabs
+elasticsearch::cluster_name: math-elasticsearch
+mount_nfs: false
+profile::wmcs::nfs::standalone::cinder_attached: true
+profile::wmcs::nfs::standalone::volumes:
+- math
