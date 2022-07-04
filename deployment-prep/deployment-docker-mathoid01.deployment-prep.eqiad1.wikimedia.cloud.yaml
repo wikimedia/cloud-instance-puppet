@@ -48,5 +48,5 @@ profile::docker::runner::service_defs:
       texvcinfo: true
     namespace: wikimedia
     port: 10044
-    version: 2022-05-17-143927-production
+    version: 2022-06-28-144716-production
 puppetmaster: deployment-puppetmaster04.deployment-prep.eqiad.wmflabs
