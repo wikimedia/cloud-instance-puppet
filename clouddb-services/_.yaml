@@ -1,1 +1,2 @@
 mount_nfs: false
+profile::wmcs::services::toolsdb::active_server: clouddb1001.clouddb-services.eqiad.wmflabs
