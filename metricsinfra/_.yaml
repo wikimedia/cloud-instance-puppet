@@ -9,6 +9,7 @@ profile::wmcs::metricsinfra::alertmanager::project_proxy::trusted_hosts:
   tools:
   - tools-prometheus-03.tools.eqiad1.wikimedia.cloud
   - tools-prometheus-05.tools.eqiad1.wikimedia.cloud
+  - tools-prometheus-6.tools.eqiad1.wikimedia.cloud
   toolsbeta:
   - toolsbeta-prometheus-1.toolsbeta.eqiad1.wikimedia.cloud
 profile::wmcs::metricsinfra::alertmanager_active_host: metricsinfra-alertmanager-1.metricsinfra.eqiad1.wikimedia.cloud
