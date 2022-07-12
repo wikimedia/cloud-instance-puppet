@@ -86,6 +86,7 @@ prometheus::node_exporter::ignored_fs_types: ^(overlay|autofs|binfmt_misc|cgroup
 prometheus_nodes:
 - tools-prometheus-03.tools.eqiad.wmflabs
 - tools-prometheus-05.tools.eqiad1.wikimedia.cloud
+- tools-prometheus-6.tools.eqiad1.wikimedia.cloud
 puppetmaster: tools-puppetmaster-02.tools.eqiad.wmflabs
 role::aptly::client::servername: tools-services-05.tools.eqiad1.wikimedia.cloud
 role::labs::nfsclient::lookupcache: all
