@@ -1,0 +1,4 @@
+profile::base::firewall::extra::services:
+  open http:
+    port: 80
+    proto: tcp
