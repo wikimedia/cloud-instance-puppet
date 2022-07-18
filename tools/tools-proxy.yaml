@@ -1,4 +1,5 @@
 mount_nfs: false
+profile::toolforge::proxy::rate_limit_requests: 50
 profile::toolforge::toolviews::mysql_db: s53734__toolviews_p
 profile::toolforge::toolviews::mysql_host: tools.db.svc.eqiad.wmflabs
 profile::toolforge::toolviews::mysql_user: s53734
