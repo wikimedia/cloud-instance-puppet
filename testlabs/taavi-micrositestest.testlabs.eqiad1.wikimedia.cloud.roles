@@ -9,5 +9,4 @@
 - profile::microsites::static_codereview
 - profile::microsites::security
 - profile::microsites::query_service
-- ''
 - profile::microsites::static_tendril
