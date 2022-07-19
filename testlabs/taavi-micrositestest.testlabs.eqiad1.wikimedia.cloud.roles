@@ -1,0 +1,13 @@
+- profile::microsites::annualreport
+- profile::microsites::static_rt
+- profile::microsites::transparency
+- profile::microsites::research
+- profile::microsites::design
+- profile::microsites::sitemaps
+- profile::microsites::bienvenida
+- profile::microsites::wikiworkshop
+- profile::microsites::static_codereview
+- profile::microsites::security
+- profile::microsites::query_service
+- profile::microsites::os_reports
+- profile::microsites::static_tendril
