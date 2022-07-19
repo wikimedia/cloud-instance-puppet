@@ -1,4 +1,5 @@
 - httpd
+- statistics
 - statistics::sites::analytics
 - profile::microsites::annualreport
 - profile::microsites::static_rt
