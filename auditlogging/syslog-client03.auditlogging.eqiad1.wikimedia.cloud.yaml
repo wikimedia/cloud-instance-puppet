@@ -4,4 +4,5 @@ profile::base::remote_syslog_send_logs: auth-logs
 profile::base::remote_syslog_tls:
   eqiad:
   - syslog-server02.auditlogging.eqiad1.wikimedia.cloud:6514
+profile::base::remote_syslog_tls_client_auth: false
 puppetmaster: puppetmaster03.auditlogging.eqiad1.wikimedia.cloud
