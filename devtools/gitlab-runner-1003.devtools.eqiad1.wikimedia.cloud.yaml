@@ -1,2 +1,3 @@
 profile::gitlab::runner::buildkitd_image: docker-registry.wikimedia.org/buildkitd:0.10.3
+profile::gitlab::runner::docker_network: bridge
 puppetmaster: puppetmaster-1001.devtools.eqiad1.wikimedia.cloud
