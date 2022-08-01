@@ -1,1 +1,5 @@
-{}
+profile::keyholder::server::agents:
+  phabricator:
+    trusted_groups:
+    - project-%{::labsproject}
+profile::phabricator::main::manage_scap_user: true
