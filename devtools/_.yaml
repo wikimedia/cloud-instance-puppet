@@ -1,3 +1,5 @@
+deployment_hosts:
+- 172.16.6.54
 profile::keyholder::server::agents:
   phabricator:
     trusted_groups:
