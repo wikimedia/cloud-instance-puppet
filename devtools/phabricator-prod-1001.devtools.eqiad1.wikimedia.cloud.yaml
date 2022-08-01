@@ -3,5 +3,4 @@ phabricator_daemons_user: app_user
 profile::debdeploy::client::filter_services:
   php7.3-fpm:
   - '*'
-profile::phabricator::main::manage_scap_user: true
 puppetmaster: puppetmaster-1001.devtools.eqiad1.wikimedia.cloud
