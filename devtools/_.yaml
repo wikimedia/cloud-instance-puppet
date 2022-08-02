@@ -9,3 +9,5 @@ profile::keyholder::server::agents:
     - project-%{::labsproject}
 profile::keyholder::server::require_encrypted_keys: 'no'
 profile::phabricator::main::manage_scap_user: true
+scap::dsh::scap_masters:
+- deploy-1004.devtools.eqiad1.wikimedia.cloud
