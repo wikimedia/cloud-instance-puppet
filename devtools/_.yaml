@@ -4,5 +4,8 @@ profile::keyholder::server::agents:
   phabricator:
     trusted_groups:
     - project-%{::labsproject}
+  scap:
+    trusted_groups:
+    - project-%{::labsproject}
 profile::keyholder::server::require_encrypted_keys: 'no'
 profile::phabricator::main::manage_scap_user: true
