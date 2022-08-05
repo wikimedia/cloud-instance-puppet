@@ -9,6 +9,7 @@ role::labs::redirector::redirects:
   living-style-guide.wmflabs.org: https://design.wikimedia.org/style-guide
   livingstyleguide.wmflabs.org: https://design.wikimedia.org/style-guide
   logstash-beta.wmcloud.org: https://beta-logs.wmcloud.org/
+  php-security-checker.wmcloud.org: https://php-security-checker.toolforge.org/
   reportcard.wmflabs.org: https://analytics.wikimedia.org/dashboards/reportcard
   space.wmflabs.org: https://diff.wikimedia.org
   wcqs-beta.wmcloud.org: https://commons-query.wikimedia.org
