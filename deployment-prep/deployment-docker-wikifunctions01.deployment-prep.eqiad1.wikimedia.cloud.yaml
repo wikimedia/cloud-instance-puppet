@@ -52,7 +52,7 @@ profile::docker::runner::service_defs:
         name: function-orchestrator
         port: 8125
         type: statsd
-      num_workers: 0
+      num_workers: 2
       services:
       - conf:
           cors: '*'
