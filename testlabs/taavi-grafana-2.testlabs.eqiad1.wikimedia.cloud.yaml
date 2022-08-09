@@ -13,5 +13,5 @@ profile::grafana::ldap: {}
 profile::grafana::server_aliases: []
 profile::ldap::client::labs::restricted_from:
 - project-admin
-- tools.majavah-test
+- tools.admin-beta
 puppetmaster: taavi-pm-1.testlabs.eqiad1.wikimedia.cloud
