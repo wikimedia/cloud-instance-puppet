@@ -1,4 +1,5 @@
-profile::ldap::client::labs::restricted_to: ops
-profile::openstack::eqiad1::cumin::permit_port_forwarding: true
+profile::ldap::client::labs::restricted_to:
+- ops
+- sre-admins
 profile::ssh::server::max_sessions: 35
 profile::ssh::server::max_startups: 35:30:60
