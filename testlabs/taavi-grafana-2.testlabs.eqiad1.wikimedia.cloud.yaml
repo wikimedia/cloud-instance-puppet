@@ -11,7 +11,6 @@ profile::grafana::domain: taavi-loki-grafana.wmcloud.org
 profile::grafana::enable_cas: false
 profile::grafana::ldap: {}
 profile::grafana::server_aliases: []
-profile::ldap::client::labs::restricted_to:
+profile::ldap::client::labs::restricted_from:
 - tools.majavah-test
-- project-testlabs
 puppetmaster: taavi-pm-1.testlabs.eqiad1.wikimedia.cloud
