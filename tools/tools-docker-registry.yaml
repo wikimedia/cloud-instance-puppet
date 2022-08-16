@@ -1,4 +1,4 @@
 profile::ldap::client::labs::client_stack: sssd
-profile::toolforge::docker::registry::active_node: tools-docker-registry-06.tools.eqiad1.wikimedia.cloud
-profile::toolforge::docker::registry::standby_node: tools-docker-registry-05.tools.eqiad1.wikimedia.cloud
+profile::toolforge::docker::registry::active_node: tools-docker-registry-05.tools.eqiad1.wikimedia.cloud
+profile::toolforge::docker::registry::standby_node: tools-docker-registry-06.tools.eqiad1.wikimedia.cloud
 sudo_flavor: sudo
