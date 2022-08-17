@@ -15,7 +15,7 @@ profile::docker::runner::service_defs:
         name: function-evaluator
         port: 8125
         type: statsd
-      num_workers: 2
+      num_workers: 7
       services:
       - conf:
           cors: '*'
@@ -52,7 +52,7 @@ profile::docker::runner::service_defs:
         name: function-orchestrator
         port: 8125
         type: statsd
-      num_workers: 2
+      num_workers: 7
       services:
       - conf:
           cors: '*'
