@@ -1,3 +1,5 @@
+phabricator_admin_ass: app_pass
+phabricator_admin_user: app_user
 phabricator_daemons_pass: app_pass
 phabricator_daemons_user: app_user
 profile::debdeploy::client::filter_services:
