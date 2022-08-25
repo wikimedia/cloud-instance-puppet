@@ -1,3 +1,4 @@
+profile::tlsproxy::envoy::global_cert_name: something.made.up
 profile::vrts::daemon: false
 profile::vrts::database_host: localhost
 profile::vrts::database_name: vrts
