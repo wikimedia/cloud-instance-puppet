@@ -4,4 +4,5 @@ profile::vrts::database_name: vrts
 profile::vrts::database_pass: Password123!
 profile::vrts::database_user: vrts
 profile::vrts::exim_database_name: exim
+profile::vrts::exim_database_pass: StrongPass123!
 profile::vrts::exim_database_user: vrts
