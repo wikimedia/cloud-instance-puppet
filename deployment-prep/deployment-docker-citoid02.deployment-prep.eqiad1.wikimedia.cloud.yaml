@@ -1,4 +1,5 @@
 profile::docker::engine::declare_service: true
+profile::docker::engine::packagename: docker.io
 profile::docker::engine::settings: {}
 profile::docker::runner::service_defs:
   mediawiki-services-citoid:
