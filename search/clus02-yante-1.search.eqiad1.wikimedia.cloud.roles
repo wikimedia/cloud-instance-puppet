@@ -1,1 +1,1 @@
-- role::elasticsearch
+- role::elasticsearch::beta
