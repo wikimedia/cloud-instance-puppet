@@ -34,4 +34,3 @@ profile::docker::runner::service_defs:
     namespace: wikimedia
     port: 1969
     version: 2019-02-01-074657-candidate
-puppetmaster: deployment-puppetmaster04.deployment-prep.eqiad.wmflabs
