@@ -1,1 +1,6 @@
+dumps_dist_nfs_servers:
+- labstore1006.wikimedia.org
+- labstore1007.wikimedia.org
+- cloudstore1001.wikimedia.org
+- cloudstore1002.wikimedia.org
 mount_nfs: true
