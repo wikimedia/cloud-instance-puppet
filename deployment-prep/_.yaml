@@ -423,6 +423,10 @@ swift::params::account_keys:
   pagecompilation_zim: ohn2CoquahnaiNieWaen
   search_backup: uOnZcooW2ujoATIXANmtAz
   swift_dispersion: ahshaenae3Hai3quipah
+swift_clusters:
+  codfw: {}
+  eqiad: {}
+  thanos: {}
 thumbor::swift::swift_host: http://deployment-ms-fe03.deployment-prep.eqiad.wmflabs
 use_dnsmasq: false
 zookeeper_clusters:
