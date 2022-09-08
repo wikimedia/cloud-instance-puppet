@@ -424,9 +424,8 @@ swift::params::account_keys:
   search_backup: uOnZcooW2ujoATIXANmtAz
   swift_dispersion: ahshaenae3Hai3quipah
 swift_clusters:
-  codfw: {}
-  eqiad: {}
-  thanos: {}
+  deployment-prep:
+    cluster_name: deployment-prep
 thumbor::swift::swift_host: http://deployment-ms-fe03.deployment-prep.eqiad.wmflabs
 use_dnsmasq: false
 zookeeper_clusters:
