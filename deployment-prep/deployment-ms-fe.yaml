@@ -1,6 +1,6 @@
 profile::envoy::ensure: present
 profile::services_proxy::envoy::ensure: absent
-profile::swift::cluster_label: ms-fe-cluster
+profile::swift::cluster_label: eqiad
 profile::tlsproxy::envoy::cfssl_options:
   hosts:
   - ms-fe.svc.deployment-prep.eqiad1.wikimedia.cloud
