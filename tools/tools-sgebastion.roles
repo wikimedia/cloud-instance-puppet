@@ -1,1 +1,1 @@
-- role::wmcs::toolforge::bastion
+- role::wmcs::toolforge::grid::bastion
