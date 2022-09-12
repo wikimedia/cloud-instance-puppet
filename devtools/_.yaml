@@ -2,7 +2,5 @@ deployment_hosts:
 - 172.16.6.54
 profile::keyholder::server::require_encrypted_keys: 'no'
 profile::phabricator::main::manage_scap_user: true
-puppetmaster::geoip::fetch_private: false
-puppetmaster::geoip::use_proxy: false
 scap::dsh::scap_masters:
 - deploy-1004.devtools.eqiad1.wikimedia.cloud
