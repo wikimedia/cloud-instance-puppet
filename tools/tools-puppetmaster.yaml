@@ -1,6 +1,3 @@
 profile::puppetmaster::common::puppetdb_hosts:
 - tools-puppetdb-1.tools.eqiad1.wikimedia.cloud
 profile::puppetmaster::common::storeconfigs: puppetdb
-role::puppetmaster::standalone::puppetdb_host:
-- tools-puppetdb-1.tools.eqiad1.wikimedia.cloud
-role::puppetmaster::standalone::storeconfigs: puppetdb
