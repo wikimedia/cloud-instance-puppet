@@ -1,6 +1,3 @@
 profile::puppetmaster::common::puppetdb_hosts:
 - toolsbeta-puppetdb-02.toolsbeta.eqiad.wmflabs
 profile::puppetmaster::common::storeconfigs: puppetdb
-role::puppetmaster::standalone::puppetdb_host:
-- toolsbeta-puppetdb-02.toolsbeta.eqiad.wmflabs
-role::puppetmaster::standalone::storeconfigs: puppetdb
