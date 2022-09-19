@@ -1,1 +1,2 @@
 - role::mariadb::beta
+- role::labs::lvm::srv
