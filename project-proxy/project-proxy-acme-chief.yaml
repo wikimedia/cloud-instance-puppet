@@ -1,6 +1,6 @@
 authdns_servers:
   208.80.154.11: 208.80.154.11
-  208.80.154.135: 208.80.154.135
+  208.80.154.148: 208.80.154.148
 http_proxy: ''
 profile::acme_chief::accounts:
   c98be4b64bc07c6ab71627b78fcdeb0e:
