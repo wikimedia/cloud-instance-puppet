@@ -1,5 +1,5 @@
 authdns_servers:
-  ns0.openstack.eqiad1.wikimediacloud.org: 208.80.154.135
+  ns0.openstack.eqiad1.wikimediacloud.org: 208.80.154.148
   ns1.openstack.eqiad1.wikimediacloud.org: 208.80.154.11
 http_proxy: ''
 profile::acme_chief::accounts:
