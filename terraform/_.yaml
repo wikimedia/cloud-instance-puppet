@@ -1,1 +1,2 @@
+profile::terraform::registry::uploader_group: project-terraform
 puppetmaster: tf-pm-1.terraform.eqiad1.wikimedia.cloud
