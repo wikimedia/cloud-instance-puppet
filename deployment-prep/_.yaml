@@ -426,6 +426,7 @@ swift::params::account_keys:
 swift_clusters:
   deployment-prep:
     cluster_name: deployment-prep
+    ring_manager: deployment-ms-fe03.deployment-prep.eqiad.wmflabs
 thumbor::swift::swift_host: http://deployment-ms-fe03.deployment-prep.eqiad.wmflabs
 use_dnsmasq: false
 zookeeper_clusters:
