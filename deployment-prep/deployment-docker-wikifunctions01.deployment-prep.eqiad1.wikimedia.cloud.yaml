@@ -39,6 +39,7 @@ profile::docker::runner::service_defs:
     namespace: wikimedia
     override_cmd: -c /etc/mediawiki-services-function-evaluator/config.yaml
     port: 6927
+    runtime: runsc
     version: latest
   mediawiki-services-function-orchestrator:
     config:
