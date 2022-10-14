@@ -54,3 +54,4 @@ profile::idp::tgc_cookie_pin_to_session: false
 profile::idp::tgc_cookie_same_site: none
 profile::idp::u2f_jpa_enable: false
 profile::pki::client::ensure: present
+puppetmaster: cloudinfra-internal-puppetmaster-02.cloudinfra.eqiad.wmflabs
