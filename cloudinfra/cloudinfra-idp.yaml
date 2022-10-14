@@ -1,0 +1,40 @@
+profile::idp::client::httpd::sites:
+  idp-test-login.wmcloud.org:
+    document_root: /srv/
+    enable_monitor: false
+    proxied_as_https: true
+    vhost_content: profile/idp/client/httpd-uwsgi.erb
+    vhost_settings:
+      uwsgi_port: 8081
+profile::idp::delegated_authenticators:
+- auto_redirect: true
+  client_name: WMF_Production
+  display_name: WMF Production
+  login_url: https://idp.wikimedia.org/
+  protocol: CAS30
+  provider: cas
+profile::idp::enable_ldap: false
+profile::idp::enable_mfa: false
+profile::idp::enable_u2f: false
+profile::idp::ldap_attributes:
+- cn
+- memberOf
+- mail
+- uid
+- sshPublicKey
+- mfa-method
+profile::idp::ldap_start_tls: false
+profile::idp::memcached_port: 11000
+profile::idp::memcached_transcoder: WHALINV1
+profile::idp::server_name: https://idp.wmcloud.org
+profile::idp::services:
+  cloud:
+    id: 1
+    service_id: https://(.*)\.eqiad1\.wikimedia\.cloud(/.*)?
+  o11y_wmflabs_org:
+    id: 3
+    service_id: https://(.*)\.monitoring\.wmflabs\.org(/.*)?
+  wmcloud_org:
+    id: 2
+    service_id: https://(.*)\.wmcloud\.org(/.*)?
+profile::idp::u2f_jpa_enable: false
