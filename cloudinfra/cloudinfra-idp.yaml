@@ -1,3 +1,15 @@
+apereo_cas:
+  production:
+    login_url: https://idp.wmcloud.org/login
+    validate_url: https://idp.wmcloud.org/serviceValidate
+ldap:
+  base-dn: dc=sso,dc=eqiad1,dc=wikimedia,dc=cloud
+  proxyagent: cn=proxyagent,ou=users,dc=sso,dc=eqiad1,dc=wikimedia,dc=cloud
+  ro-server: localhost
+  ro-server-fallback: localhost
+  rw-server: localhost
+  rw-server-fallback: localhost
+profile::debmonitor::client::ensure: present
 profile::idp::client::httpd::sites:
   idp-test-login.wmcloud.org:
     document_root: /srv/
@@ -24,6 +36,7 @@ profile::idp::ldap_attributes:
 - sshPublicKey
 - mfa-method
 profile::idp::ldap_start_tls: false
+profile::idp::log_level: DEBUG
 profile::idp::memcached_port: 11000
 profile::idp::memcached_transcoder: WHALINV1
 profile::idp::server_name: https://idp.wmcloud.org
@@ -37,4 +50,7 @@ profile::idp::services:
   wmcloud_org:
     id: 2
     service_id: https://(.*)\.wmcloud\.org(/.*)?
+profile::idp::tgc_cookie_pin_to_session: false
+profile::idp::tgc_cookie_same_site: none
 profile::idp::u2f_jpa_enable: false
+profile::pki::client::ensure: present
