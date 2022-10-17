@@ -84,40 +84,4 @@ profile::trafficserver::backend::mapping_rules:
   replacement: http://deployment-ms-fe03.deployment-prep.eqiad.wmflabs
   target: http://upload.wikimedia.beta.wmflabs.org
   type: map
-profile::trafficserver::tls::inbound_tls_settings:
-  common:
-    cipher_suite: -ALL:ECDHE-ECDSA-CHACHA20-POLY1305:ECDHE-ECDSA-AES256-GCM-SHA384:ECDHE-ECDSA-AES128-GCM-SHA256:ECDHE-RSA-CHACHA20-POLY1305:ECDHE-RSA-AES256-GCM-SHA384:ECDHE-RSA-AES128-GCM-SHA256:ECDHE-ECDSA-AES128-SHA:ECDHE-RSA-AES128-SHA:DHE-RSA-AES128-SHA
-    enable_tlsv1: 0
-    enable_tlsv1_1: 0
-    enable_tlsv1_2: 1
-    enable_tlsv1_3: 0
-  dhparams_file: /etc/ssl/dhparam.pem
-  do_ocsp: 0
-  load_elevated: 1
-  max_record_size: 16383
-  prioritize_chacha: 1
-  session_cache: 2
-  session_cache_auto_clear: 1
-  session_cache_buckets: 256
-  session_cache_size: 102400
-  session_ticket_enable: 0
-  ssl_handshake_timeout_in: 60
-profile::trafficserver::tls::log_formats:
-- format: "dt:%<cqtd>T%<cqtt>Z\thostname:%{::fqdn}\ttime_firstbyte:%<{TS_MILESTONE_UA_BEGIN_WRITE-TS_MILESTONE_SM_START}msdms>\t\
-    ip:%<{X-Client-IP}psh>\tcache_status:%<{X-Cache-Status}psh>http_status:%<pssc>\t\
-    response_size:%<pscl>\thttp_method:%<cqhm>\turi_host:%<{Host}cqh>\turi_path:%<cquup>\t\
-    content_type:%<{Content-Type}psh>\treferer:%<{Referer}cqh>\tuser_agent:%<{User-Agent}cqh>\t\
-    accept_language:%<{Accept-Language}cqh>\tx_analytics:%<{X-Analytics}ssh>\trange:%<{Range}cqh>\t\
-    x_cache:%<{X-Cache}psh>\taccept:%<{Accept}cqh>\tbackend:%<{Server}psh>\ttls:%<{X-Analytics-TLS}pqh>"
-  name: wmf-analytics
-profile::trafficserver::tls::logs:
-- ensure: absent
-  filename: tls
-  format: wmf-tls
-  mode: ascii_pipe
-- ensure: present
-  filename: analytics
-  format: wmf-analytics
-  mode: ascii_pipe
 puppetmaster: deployment-puppetmaster04.deployment-prep.eqiad.wmflabs
-varnish_version4: true
