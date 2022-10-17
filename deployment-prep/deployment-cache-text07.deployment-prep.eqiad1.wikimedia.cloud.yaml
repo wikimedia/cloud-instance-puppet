@@ -1,1 +1,2 @@
+profile::pki::client::ensure: present
 profile::trafficserver::backend::is_ats9: true
