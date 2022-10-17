@@ -188,3 +188,4 @@ profile::cache::varnish::frontend::listen_uds:
 profile::cache::varnish::frontend::uds_group: root
 profile::cache::varnish::frontend::uds_mode: '700'
 profile::cache::varnish::frontend::uds_owner: haproxy
+public_tls_unified_cert_vendor: lets-encrypt
