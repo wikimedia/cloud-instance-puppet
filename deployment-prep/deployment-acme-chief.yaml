@@ -45,6 +45,7 @@ profile::acme_chief::certificates:
     - '*.zero.wikipedia.beta.wmflabs.org'
     authorized_regexes:
     - ^deployment-cache-(text0[56]|upload0[56])\.deployment-prep\.eqiad\.wmflabs$
+    - ^deployment-cache-(text|upload)07\.deployment-prep\.eqiad\.wmflabs$
     challenge: dns-01
   wikibase:
     CN: wikiba-se.beta.wmflabs.org
