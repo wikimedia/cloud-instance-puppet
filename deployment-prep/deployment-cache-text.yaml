@@ -68,7 +68,7 @@ profile::cache::varnish::frontend::separate_vcl:
 profile::cache::varnish::separate_vcl:
 - misc
 profile::trafficserver::backend::mapping_rules:
-- params:
+- params_ats9:
   - '@plugin=/usr/lib/trafficserver/modules/tslua.so'
   - '@pparam=/etc/trafficserver/lua/normalize-path.lua'
   - '@pparam="2F"'
@@ -106,7 +106,7 @@ profile::trafficserver::backend::mapping_rules:
 - replacement: https://deployment-puppetmaster04.deployment-prep.eqiad1.wikimedia.cloud
   target: http://config-master.wikimedia.beta.wmflabs.org
   type: map
-- params:
+- params_ats9:
   - '@plugin=/usr/lib/trafficserver/modules/tslua.so'
   - '@pparam=/etc/trafficserver/lua/normalize-path.lua'
   - '@pparam="3A 40 21 24 28 29 2A 2C 3B 27"'
@@ -114,17 +114,17 @@ profile::trafficserver::backend::mapping_rules:
   - '@plugin=/usr/lib/trafficserver/modules/tslua.so'
   - '@pparam=/etc/trafficserver/lua/rb-mw-mangling.lua'
   - '@plugin=/usr/lib/trafficserver/modules/conf_remap.so'
-  - '@pparam=proxy.config.http.server_session_sharing.match=2'
+  - '@pparam=proxy.config.http.server_session_sharing.match=ip'
   replacement: http://deployment-restbase04.deployment-prep.eqiad1.wikimedia.cloud:7231/api/rest_v1
   target: http://(.*)/api/rest_v1
   type: regex_map
-- params:
+- params_ats9:
   - '@plugin=/usr/lib/trafficserver/modules/tslua.so'
   - '@pparam=/etc/trafficserver/lua/rb-mw-mangling.lua'
   replacement: http://deployment-mediawiki11.deployment-prep.eqiad1.wikimedia.cloud/w/api.php
   target: http://(.*)/w/api.php
   type: regex_map
-- params:
+- params_ats9:
   - '@plugin=/usr/lib/trafficserver/modules/tslua.so'
   - '@pparam=/etc/trafficserver/lua/normalize-path.lua'
   - '@pparam="3A 2F 40 21 24 28 29 2A 2C 3B"'
