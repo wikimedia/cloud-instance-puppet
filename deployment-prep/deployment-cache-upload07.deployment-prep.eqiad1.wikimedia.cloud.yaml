@@ -1,0 +1,7 @@
+cache::nodes:
+  upload:
+    eqiad:
+    - deployment-cache-upload07.deployment-prep.eqiad.wmflabs
+cache::upload::nodes:
+  eqiad:
+  - deployment-cache-upload07.deployment-prep.eqiad.wmflabs
