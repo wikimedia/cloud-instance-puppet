@@ -5,3 +5,4 @@ cache::nodes:
 cache::upload::nodes:
   eqiad:
   - deployment-cache-upload07.deployment-prep.eqiad1.wikimedia.cloud
+profile::trafficserver::backend::is_ats9: true
