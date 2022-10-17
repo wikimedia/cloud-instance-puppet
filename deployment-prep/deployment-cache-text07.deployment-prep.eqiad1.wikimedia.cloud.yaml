@@ -1,2 +1,9 @@
+cache::nodes:
+  text:
+    eqiad:
+    - deployment-cache-text07.deployment-prep.eqiad.wmflabs
+cache::text::nodes:
+  eqiad:
+  - deployment-cache-text07.deployment-prep.eqiad.wmflabs
 profile::pki::client::ensure: present
 profile::trafficserver::backend::is_ats9: true
