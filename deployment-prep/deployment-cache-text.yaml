@@ -193,7 +193,6 @@ profile::trafficserver::tls::parent_rules:
   parent_is_proxy: 'false'
   round_robin: strict
 profile::trafficserver::tls::unified_acme_chief: true
-public_tls_unified_cert_vendor: lets-encrypt
 puppetmaster: deployment-puppetmaster04.deployment-prep.eqiad.wmflabs
 varnish_version4: true
 wikimedia_clusters:
