@@ -1,0 +1,3 @@
+profile::wmcs::services::toolsdb::rebuild: true
+profile::wmcs::services::toolsdb::rebuild_primary: clouddb1002.clouddb-services.eqiad.wmflabs
+profile::wmcs::services::toolsdb::rebuild_secondary: tools-db-2.tools.eqiad1.wikimedia.cloud
