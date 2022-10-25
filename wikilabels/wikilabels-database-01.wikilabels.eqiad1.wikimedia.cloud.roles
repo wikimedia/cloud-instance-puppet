@@ -1,1 +1,1 @@
-- role::wmcs::db::wikilabels
+- profile::wmcs::services::postgres::primary
