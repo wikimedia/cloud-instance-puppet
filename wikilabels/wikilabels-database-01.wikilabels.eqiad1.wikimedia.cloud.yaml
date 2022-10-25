@@ -1,1 +1,1 @@
-profile::puppetdb::database::shared_buffers: 768MB
+{}
