@@ -1,1 +1,2 @@
+role::puppetmaster::standalone::realm_override: cloudinfra-internal
 role::puppetmaster::standalone::upload_facts: true
