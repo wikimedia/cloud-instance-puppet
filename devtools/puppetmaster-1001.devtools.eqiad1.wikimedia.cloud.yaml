@@ -2,3 +2,4 @@ profile::puppetmaster::common::puppetdb_hosts:
 - devtools-puppetdb1001.devtools.eqiad1.wikimedia.cloud
 profile::puppetmaster::common::storeconfigs: puppetdb
 puppetmaster: puppetmaster.cloudinfra.wmflabs.org
+role::puppetmaster::standalone::upload_facts: true
