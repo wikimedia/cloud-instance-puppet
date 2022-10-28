@@ -2,6 +2,5 @@ deployment_hosts:
 - 172.16.6.54
 profile::gitlab::runner::registration_token: private
 profile::phabricator::main::dumps_rsync_clients: []
-profile::phabricator::main::manage_scap_user: true
 scap::dsh::scap_masters:
 - deploy-1004.devtools.eqiad1.wikimedia.cloud
