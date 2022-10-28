@@ -18,10 +18,6 @@ profile::wmcs::metricsinfra::global_jobs:
 - name: node
   openstack_discovery:
     port: 9100
-profile::wmcs::metricsinfra::monitored_projects:
-- name: metricsinfra
-  notify_email:
-  - hi@taavi.wtf
 profile::wmcs::metricsinfra::prometheus::enable_data_migration: false
 profile::wmcs::metricsinfra::prometheus::ext_fqdn: prometheus.wmflabs.org
 profile::wmcs::metricsinfra::prometheus::migration_dst_host: metricsinfra-prometheus-2.metricsinfra.eqiad1.wikimedia.cloud
