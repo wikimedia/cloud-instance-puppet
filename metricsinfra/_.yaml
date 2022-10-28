@@ -29,7 +29,6 @@ profile::wmcs::metricsinfra::prometheus::migration_src_host: prometheus01.metric
 profile::wmcs::metricsinfra::prometheus_alertmanager_hosts:
 - metricsinfra-alertmanager-1.metricsinfra.eqiad1.wikimedia.cloud
 profile::wmcs::metricsinfra::prometheus_hosts:
-- prometheus01.metricsinfra.eqiad.wmflabs
 - metricsinfra-prometheus-2.metricsinfra.eqiad1.wikimedia.cloud
 profile::wmcs::metricsinfra::thanos_fe_hosts:
 - metricsinfra-thanos-fe-1.metricsinfra.eqiad1.wikimedia.cloud
