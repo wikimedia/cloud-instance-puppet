@@ -1,1 +1,2 @@
-docker::configuration::settings: {}
+docker::configuration::settings:
+  data-root: /mnt/docker-scratch/docker
