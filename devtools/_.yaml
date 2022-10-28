@@ -1,8 +1,5 @@
 deployment_hosts:
 - 172.16.6.54
-profile::gerrit::daemon_user: gerrit2
-profile::gerrit::manage_scap_user: true
-profile::gerrit::scap_user: gerrit-deploy
 profile::gitlab::runner::registration_token: private
 profile::keyholder::server::require_encrypted_keys: 'no'
 profile::phabricator::main::dumps_rsync_clients: []
