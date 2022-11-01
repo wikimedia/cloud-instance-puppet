@@ -104,9 +104,6 @@ profile::toolforge::proxies:
 - toolsbeta-proxy-4.toolsbeta.eqiad1.wikimedia.cloud
 profile::toolforge::services::active_node: tools-services-05.tools.eqiad1.wikimedia.cloud
 profile::toolforge::services::updatetools_enabled: false
-profile::wcms::nfs::standalone::cinder_attached: true
-profile::wcms::nfs::standalone::volumes:
-- toolsbeta
 profile::wmcs::kubeadm::component: thirdparty/kubeadm-k8s-1-21
 profile::wmcs::nfs::standalone::cinder_attached: true
 profile::wmcs::nfs::standalone::volumes:
