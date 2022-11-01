@@ -2,3 +2,6 @@ mount_nfs: false
 profile::wcms::nfs::standalone::cinder_attached: true
 profile::wcms::nfs::standalone::volumes:
 - twl
+profile::wmcs::nfs::standalone::cinder_attached: true
+profile::wmcs::nfs::standalone::volumes:
+- twl
