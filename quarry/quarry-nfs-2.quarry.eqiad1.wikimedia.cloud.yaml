@@ -1,6 +1,9 @@
 mount_nfs: false
-profile::wcms::nfs::standalone::cinder_attached: false
+profile::wcms::nfs::standalone::cinder_attached: true
 profile::wcms::nfs::standalone::volumes:
+- quarry
+profile::wmcs::nfs::standalone::cinder_attached: true
+profile::wmcs::nfs::standalone::volumes:
 - quarry
 ssh::server::disable_nist_kex: false
 ssh::server::explicit_macs: false
