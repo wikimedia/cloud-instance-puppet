@@ -6,4 +6,3 @@ cache::text::nodes:
   eqiad:
   - deployment-cache-text07.deployment-prep.eqiad1.wikimedia.cloud
 profile::pki::client::ensure: present
-profile::trafficserver::backend::is_ats9: true
