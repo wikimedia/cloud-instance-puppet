@@ -24,7 +24,6 @@ cache::req_handling:
 cache::upload::nodes:
   eqiad:
   - deployment-cache-upload06.deployment-prep.eqiad.wmflabs
-nginx::variant: extras
 profile::cache::base::varnish_version: 5
 profile::cache::ssl::unified::acme_chief: true
 profile::cache::ssl::unified::certs: []
@@ -62,7 +61,6 @@ profile::cache::varnish::frontend::fe_vcl_config:
   upload_webp_hits_threshold: 1000
   varnish_probe_ms: 100
 profile::cache::varnish::frontend::packages_component: component/varnish6
-profile::tlsproxy::instance::nginx_variant: extrasf
 profile::trafficserver::backend::mapping_rules:
 - params:
   - '@plugin=/usr/lib/trafficserver/modules/tslua.so'
