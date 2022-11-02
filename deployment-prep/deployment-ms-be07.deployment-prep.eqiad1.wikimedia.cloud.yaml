@@ -1,1 +1,3 @@
 puppetmaster: deployment-puppetmaster04.deployment-prep.eqiad.wmflabs
+swift_storage_drives:
+- /dev/sdb
