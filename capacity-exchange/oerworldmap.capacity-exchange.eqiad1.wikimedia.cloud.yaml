@@ -1,9 +1,0 @@
-httpd::modules:
-- headers
-- proxy_html
-- proxy
-- proxy_http
-- rewrite
-- ssl
-- auth_openidc
-httpd::purge_manual_config: false
