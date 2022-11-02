@@ -62,10 +62,24 @@ profile::cache::varnish::frontend::fe_vcl_config:
   varnish_probe_ms: 100
 profile::cache::varnish::frontend::packages_component: component/varnish6
 profile::trafficserver::backend::mapping_rules:
-- replacement: http://deployment-ms-fe03.deployment-prep.eqiad.wmflabs
+- params:
+  - '@plugin=/usr/lib/trafficserver/modules/tslua.so'
+  - '@pparam=/etc/trafficserver/lua/normalize-path.lua'
+  - '@pparam="2F"'
+  - '@pparam="21 24 26 27 28 29 2A 2B 2C 3A 3B 3D 40 5B 5D"'
+  - '@plugin=/usr/lib/trafficserver/modules/tslua.so'
+  - '@pparam=/etc/trafficserver/lua/x-mediawiki-original.lua'
+  replacement: http://deployment-ms-fe03.deployment-prep.eqiad.wmflabs
   target: http://upload.beta.wmflabs.org
   type: map
-- replacement: http://deployment-ms-fe03.deployment-prep.eqiad.wmflabs
+- params:
+  - '@plugin=/usr/lib/trafficserver/modules/tslua.so'
+  - '@pparam=/etc/trafficserver/lua/normalize-path.lua'
+  - '@pparam="2F"'
+  - '@pparam="21 24 26 27 28 29 2A 2B 2C 3A 3B 3D 40 5B 5D"'
+  - '@plugin=/usr/lib/trafficserver/modules/tslua.so'
+  - '@pparam=/etc/trafficserver/lua/x-mediawiki-original.lua'
+  replacement: http://deployment-ms-fe03.deployment-prep.eqiad.wmflabs
   target: http://upload.wikimedia.beta.wmflabs.org
   type: map
 puppetmaster: deployment-puppetmaster04.deployment-prep.eqiad.wmflabs
