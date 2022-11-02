@@ -3,7 +3,7 @@ mtail::service_ensure: absent
 profile::cache::haproxy::acls:
 - criterion: var(txn.xwd_count)
   name: missing_xwd
-  operator: eq
+  operator: -m int eq
   value: '0'
 - criterion: fc_http_major
   name: h2
