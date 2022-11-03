@@ -1,0 +1,3 @@
+profile::idm::development: true
+profile::idm::service_fqdn: idm-dev.wikimedia.org
+profile::idm::uwsgi_process_count: 4
