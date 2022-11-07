@@ -1,29 +1,16 @@
 cache::alternate_domains: {}
-cache::app_def_be_opts:
-  between_bytes_timeout: 60s
-  connect_timeout: 5s
-  first_byte_timeout: 35s
-  max_connections: 10000
-  port: 80
-cache::app_directors:
-  swift:
-    backends:
-      eqiad: deployment-ms-fe03.deployment-prep.eqiad.wmflabs
-  swift_thumbs:
-    backends:
-      eqiad: deployment-ms-fe03.deployment-prep.eqiad.wmflabs
 cache::cluster: upload
 cache::lua_support: true
 cache::nodes:
   upload:
     eqiad:
-    - deployment-cache-upload06.deployment-prep.eqiad.wmflabs
+    - deployment-cache-upload07.deployment-prep.eqiad.wmflabs
 cache::req_handling:
   default:
     caching: normal
 cache::upload::nodes:
   eqiad:
-  - deployment-cache-upload06.deployment-prep.eqiad.wmflabs
+  - deployment-cache-upload07.deployment-prep.eqiad.wmflabs
 profile::cache::base::varnish_version: 5
 profile::cache::ssl::unified::acme_chief: true
 profile::cache::ssl::unified::certs: []
@@ -69,7 +56,7 @@ profile::trafficserver::backend::mapping_rules:
   - '@pparam="21 24 26 27 28 29 2A 2B 2C 3A 3B 3D 40 5B 5D"'
   - '@plugin=/usr/lib/trafficserver/modules/tslua.so'
   - '@pparam=/etc/trafficserver/lua/x-mediawiki-original.lua'
-  replacement: http://deployment-ms-fe03.deployment-prep.eqiad.wmflabs
+  replacement: http://deployment-ms-fe04.deployment-prep.eqiad.wmflabs
   target: http://upload.beta.wmflabs.org
   type: map
 - params:
@@ -79,7 +66,7 @@ profile::trafficserver::backend::mapping_rules:
   - '@pparam="21 24 26 27 28 29 2A 2B 2C 3A 3B 3D 40 5B 5D"'
   - '@plugin=/usr/lib/trafficserver/modules/tslua.so'
   - '@pparam=/etc/trafficserver/lua/x-mediawiki-original.lua'
-  replacement: http://deployment-ms-fe03.deployment-prep.eqiad.wmflabs
+  replacement: http://deployment-ms-fe04.deployment-prep.eqiad.wmflabs
   target: http://upload.wikimedia.beta.wmflabs.org
   type: map
 puppetmaster: deployment-puppetmaster04.deployment-prep.eqiad.wmflabs
