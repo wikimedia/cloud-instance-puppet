@@ -1,7 +1,6 @@
 acmechief_host: toolsbeta-acme-chief-01.toolsbeta.eqiad.wmflabs
 active_cronrunner: toolsbeta-cron-01.toolsbeta.eqiad.wmflabs
 active_proxy_host: toolsbeta-proxy-3
-active_redis: tools-redis-1001.tools.eqiad.wmflabs
 docker::builder_host: tools-docker-builder-06.tools.eqiad.wmflabs
 docker::password: not a real password
 docker::password_hash: $apr1$st5G0d8l$IcJeBIljkbSRhjrMIiH02/
@@ -12,7 +11,6 @@ dynamicproxy::banned_ips:
 - 70.179.6.9
 dynamicproxy::blocked_user_agent_regex: TweetmemeBot|Chrome/38\.0\.2125\.104|Applebot
 dynamicproxy::error_details: ''
-gridengine::gridmaster: toolsbeta-grid-master.toolsbeta.eqiad.wmflabs
 passwords::root::extra_keys:
   alex: ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAICYxCqZkGys8gZB6Mq61Fw08CB7m1huxpnpII2ay3e0H
     krenair@gmail.com inspiron
@@ -108,9 +106,6 @@ prometheus_nodes:
 - toolsbeta-prometheus-1.toolsbeta.eqiad1.wikimedia.cloud
 puppetmaster: toolsbeta-puppetmaster-04.toolsbeta.eqiad.wmflabs
 role::aptly::client::servername: tools-services-05.tools.eqiad1.wikimedia.cloud
-role::labs::nfsclient::lookupcache: all
-role::puppetmaster::standalone::autosign: true
-role::toollabs::k8s::master::use_puppet_certs: true
 sonofgridengine::gridmaster: toolsbeta-sgegrid-master.toolsbeta.eqiad1.wikimedia.cloud
 ssh::server::disable_nist_kex: false
 ssh::server::enable_hba: true
