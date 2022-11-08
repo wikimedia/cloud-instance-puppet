@@ -1,0 +1,4 @@
+- profile::maps::apps
+- profile::maps::osm_master
+- profile::prometheus::postgres_exporter
+- profile::rsyslog::udp_localhost_compat
