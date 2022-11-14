@@ -4,5 +4,5 @@ profile::idm::server::django_mysql_db_name: idm
 profile::idm::server::django_mysql_db_password: testtest
 profile::idm::server::django_mysql_db_user: idm
 profile::idm::server::django_secret_key: C94B2E04-07DB-44E2-9D55-88B3585E9C3A
-profile::idm::service_fqdn: idm-dev.wikimedia.org
+profile::idm::service_fqdn: idm-dev.wmcloud.org
 profile::idm::uwsgi_process_count: 4
