@@ -12,7 +12,7 @@ profile::docker::runner::service_defs:
           port: 12201
           type: gelf
       metrics:
-        host: cloudmetrics1002.eqiad.wmnet
+        host: prometheus-labmon.eqiad.wmnet
         name: eventgate-analytics
         port: 8125
         type: statsd
@@ -75,7 +75,7 @@ profile::docker::runner::service_defs:
           port: 12201
           type: gelf
       metrics:
-        host: cloudmetrics1002.eqiad.wmnet
+        host: prometheus-labmon.eqiad.wmnet
         name: eventgate-analytics-external
         port: 8125
         type: statsd
@@ -139,7 +139,7 @@ profile::docker::runner::service_defs:
           port: 12201
           type: gelf
       metrics:
-        host: cloudmetrics1002.eqiad.wmnet
+        host: prometheus-labmon.eqiad.wmnet
         name: eventgate-logging-external
         port: 8125
         type: statsd
@@ -202,7 +202,7 @@ profile::docker::runner::service_defs:
           port: 12201
           type: gelf
       metrics:
-        host: cloudmetrics1002.eqiad.wmnet
+        host: prometheus-labmon.eqiad.wmnet
         name: eventgate-main
         port: 8125
         type: statsd
