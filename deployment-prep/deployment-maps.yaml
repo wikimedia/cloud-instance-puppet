@@ -2,7 +2,7 @@ cassandra::metrics::blacklist:
 - .*\.metrics\.Table\..*$
 cassandra::target_version: '2.2'
 profile::cassandra::single_instance::dc: labs
-profile::cassandra::single_instance::graphite_host: cloudmetrics1002.eqiad.wmnet
+profile::cassandra::single_instance::graphite_host: prometheus-labmon.eqiad.wmnet
 profile::cassandra::single_instance::seeds:
 - '%{ipaddress}'
 profile::maps::hosts:
