@@ -14,7 +14,7 @@ profile::docker::runner::service_defs:
           type: gelf
         - type: stdout
       metrics:
-        host: cloudmetrics1002.eqiad.wmnet
+        host: prometheus-labmon.eqiad.wmnet
         name: mobileapps
         port: 8125
         type: statsd
