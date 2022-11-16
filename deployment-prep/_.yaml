@@ -17,7 +17,7 @@ etcd::use_ssl: true
 etcd_host: deployment-etcd02.deployment-prep.eqiad1.wikimedia.cloud
 etcd_port: 2379
 eventlogging_host: 10.68.18.111
-eventlogging_statsd_host: cloudmetrics1002.eqiad.wmnet
+eventlogging_statsd_host: prometheus-labmon.eqiad.wmnet
 http_proxy: ''
 kafka_clusters:
   jumbo-deployment-prep:
@@ -64,7 +64,7 @@ mediawiki::users::web: www-data
 mount_nfs: false
 ores::redis::cache_maxmemory: 512M
 ores::redis::queue_maxmemory: 256M
-ores::web::graphite_server: cloudmetrics1002.eqiad.wmnet
+ores::web::graphite_server: prometheus-labmon.eqiad.wmnet
 parsoid::mwapi_proxy: ''
 passwords::root::extra_keys:
   alex: ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAICYxCqZkGys8gZB6Mq61Fw08CB7m1huxpnpII2ay3e0H
@@ -165,7 +165,7 @@ profile::ores::web::extra_config:
   extractors:
     enwiki_api:
       host: https://en.wikipedia.beta.wmflabs.org
-profile::ores::web::graphite_server: cloudmetrics1002.eqiad.wmnet
+profile::ores::web::graphite_server: prometheus-labmon.eqiad.wmnet
 profile::ores::web::poolcounter_nodes:
 - deployment-poolcounter06:7531
 profile::ores::web::redis_host: deployment-ores01.deployment-prep.eqiad.wmflabs
