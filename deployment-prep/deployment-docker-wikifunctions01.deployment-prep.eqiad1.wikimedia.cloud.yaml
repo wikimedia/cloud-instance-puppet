@@ -11,7 +11,7 @@ profile::docker::runner::service_defs:
         - named_levels: true
           type: stdout
       metrics:
-        host: cloudmetrics1002.eqiad.wmnet
+        host: cloudmetrics1003.eqiad.wmnet
         name: function-evaluator
         port: 8125
         type: statsd
@@ -49,7 +49,7 @@ profile::docker::runner::service_defs:
         - named_levels: true
           type: stdout
       metrics:
-        host: cloudmetrics1002.eqiad.wmnet
+        host: cloudmetrics1003.eqiad.wmnet
         name: function-orchestrator
         port: 8125
         type: statsd
