@@ -1,8 +1,1 @@
-dumps_dist_active_vps: clouddumps1001.wikimedia.org
-dumps_dist_active_web: clouddumps1002.wikimedia.org
-dumps_dist_nfs_servers:
-- labstore1006.wikimedia.org
-- labstore1007.wikimedia.org
-- clouddumps1001.wikimedia.org
-- clouddumps1002.wikimedia.org
 mount_nfs: true
