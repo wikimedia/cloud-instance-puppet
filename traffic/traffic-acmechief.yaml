@@ -1,3 +1,4 @@
+acmechief_host: traffic-acmechief01.traffic.eqiad1.wikimedia.cloud
 authdns_servers:
   208.80.154.11: 208.80.154.11
   208.80.154.148: 208.80.154.148
