@@ -83,4 +83,5 @@ profile::acme_chief::cloud::designate_sync_project_names:
 profile::acme_chief::cloud::designate_sync_region_name: eqiad1-r
 profile::acme_chief::cloud::designate_sync_tidyup_enabled: true
 profile::acme_chief::cloud::designate_sync_username: traffic-cloud-dns-manager
+profile::acme_chief::passive: traffic-acmechief02.traffic.eqiad.wmflabs
 puppetmaster: traffic-puppetmaster-buster.traffic.eqiad1.wikimedia.cloud
