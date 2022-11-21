@@ -1,2 +1,2 @@
-- role::cache::text_haproxy
+- role::cache::text
 - profile::monitoring
