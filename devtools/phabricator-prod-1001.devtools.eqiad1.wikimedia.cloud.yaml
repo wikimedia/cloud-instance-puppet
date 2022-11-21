@@ -1,4 +1,5 @@
 phabricator::mysql::master::port: 3306
+phabricator::mysql::slave::port: 3306
 phabricator_admin_pass: app_pass
 phabricator_admin_user: app_user
 phabricator_daemons_pass: app_pass
