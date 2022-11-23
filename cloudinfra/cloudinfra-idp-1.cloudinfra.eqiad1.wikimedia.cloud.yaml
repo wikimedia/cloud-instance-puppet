@@ -1,1 +1,3 @@
-profile::base::labs::unattended_wmf: absent`
+profile::base::labs::unattended_wmf: absent
+profile::base::labs::unattended_wmf_comment: Needed to avoid cas from auto-upgrading
+  (this is just a comment for the unattended_wmf property)
