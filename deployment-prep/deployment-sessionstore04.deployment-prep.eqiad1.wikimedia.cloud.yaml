@@ -24,4 +24,4 @@ profile::docker::runner::service_defs:
     namespace: wikimedia
     override_cmd: ./kask --config /etc/mediawiki-services-kask/config.yaml
     port: 8080
-    version: 2021-03-25-203946-production
+    version: v1.0.10
