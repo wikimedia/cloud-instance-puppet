@@ -91,8 +91,6 @@ profile::toolforge::grid::base::sge_root: /var/lib/gridengine
 profile::toolforge::grid::base::sysdir: /data/project/.system_sge
 profile::toolforge::grid::cronrunner::active_host: '%{alias(profile::toolforge::active_cronrunner)}'
 profile::toolforge::grid::webservicemonitor::active_host: '%{alias(profile::toolforge::active_cronrunner)}'
-profile::toolforge::harbor::db::primary: toolsbeta-harbordb-2.toolsbeta.eqiad1.wikimedia.cloud
-profile::toolforge::harbor::url: harbor.toolsbeta.wmflabs.org
 profile::toolforge::jobs_api_fqdn: jobs.toolsbeta.wmflabs.org
 profile::toolforge::jobs_api_port: 30001
 profile::toolforge::k8s::calico_version: v3.21.0
