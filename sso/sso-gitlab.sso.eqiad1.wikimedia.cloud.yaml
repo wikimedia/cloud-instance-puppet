@@ -1,7 +1,0 @@
-gitlab::cas_url: https://idp.wmcloud.org
-gitlab::gitlab_domain: sso-gitlab.wmcloud.org
-gitlab::listen_https: false
-gitlab::listen_port: 80
-profile::base::ssh_server_settings:
-  listen_addresses:
-  - '%{facts.ipaddress}'
