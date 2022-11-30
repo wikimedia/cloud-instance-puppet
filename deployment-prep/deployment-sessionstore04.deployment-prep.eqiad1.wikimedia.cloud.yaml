@@ -27,7 +27,7 @@ profile::docker::runner::service_defs:
     version: v1.0.10
 profile::java::java_packages:
 - variant: jdk-headless
-  version: 8
+  version: '8'
 - variant: jdk-headless
-  version: 11
+  version: '11'
 puppetmaster: deployment-puppetmaster04.deployment-prep.eqiad.wmflabs
