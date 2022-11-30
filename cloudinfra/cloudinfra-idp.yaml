@@ -19,7 +19,7 @@ profile::idp::client::httpd::sites:
     vhost_settings:
       uwsgi_port: 8081
 profile::idp::delegated_authenticators:
-- auto_redirect: true
+- auto_redirect_type: SERVER
   client_name: WMF_Production
   display_name: WMF Production
   login_url: https://idp.wikimedia.org/
