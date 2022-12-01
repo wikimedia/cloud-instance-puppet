@@ -1,6 +1,7 @@
 role::labs::redirector::default_url: https://wikitech.wikimedia.org/wiki/Nova_Resource:Redirects/Host_not_configured
 role::labs::redirector::redirects:
   codesearch.wmflabs.org: https://codesearch.wmcloud.org
+  dash.wmcloud.org: https://outreachdashboard.wmflabs.org
   discourse-mediawiki.wmflabs.org: https://wmds-archive.toolforge.org
   grafana.wmflabs.org: https://grafana-labs.wikimedia.org
   graphite.wmflabs.org: https://graphite-labs.wikimedia.org
