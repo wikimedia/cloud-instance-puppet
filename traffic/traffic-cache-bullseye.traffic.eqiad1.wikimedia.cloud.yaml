@@ -157,6 +157,7 @@ profile::cache::haproxy::del_headers:
   direction: response
   name: X-Varnish
 profile::cache::haproxy::do_ocsp: true
+profile::cache::haproxy::do_systemd_hardening: true
 profile::cache::haproxy::h2settings:
   header_table_size: 4096
   initial_window_size: 65535
