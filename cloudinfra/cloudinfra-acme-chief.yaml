@@ -35,8 +35,13 @@ profile::acme_chief::certificates:
     - ^.+\.cloudinfra\.eqiad1\.wikimedia\.cloud$
     challenge: dns-01
   rsyslog:
-  - syslogaudit1.svc.eqiad1.wikimedia.cloud
-  - syslogaudit1.svc.eqiad1.wikimedia.cloud
+    CN: syslogaudit.svc.eqiad1.wikimedia.cloud
+    SNI:
+    - syslogaudit1.svc.eqiad1.wikimedia.cloud
+    - syslogaudit2.svc.eqiad1.wikimedia.cloud
+    authorized_regexes:
+    - ^.+\.cloudinfra\.eqiad1\.wikimedia\.cloud$
+    challenge: dns-01
 profile::acme_chief::challenges:
   dns-01:
     issuing_ca: letsencrypt.org
