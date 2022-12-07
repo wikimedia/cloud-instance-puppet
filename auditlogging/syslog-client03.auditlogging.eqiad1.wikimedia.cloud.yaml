@@ -6,4 +6,5 @@ profile::base::remote_syslog_tls:
   - syslog-server02.auditlogging.eqiad1.wikimedia.cloud:6514
   - syslog-server03.auditlogging.eqiad1.wikimedia.cloud:6514
 profile::base::remote_syslog_tls_client_auth: false
+profile::base::remote_syslog_tls_netstream_driver: ossl
 puppetmaster: puppetmaster03.auditlogging.eqiad1.wikimedia.cloud
