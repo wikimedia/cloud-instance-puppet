@@ -3,4 +3,4 @@ mtail::group: adm
 mtail::logs:
 - /var/log/exim4/mainlog
 profile::toolforge::base::is_mail_relay: true
-profile::toolforge::mailrelay::external_hostname: mail.tools.wmflabs.org
+profile::toolforge::mailrelay::external_hostname: mail.tools.wmcloud.org
