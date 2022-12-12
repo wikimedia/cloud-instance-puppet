@@ -1,4 +1,4 @@
-profile::base::remote_syslog_tls: []
+profile::base::remote_syslog_tls: {}
 profile::base::remote_syslog_tls_netstream_driver: gtls
 profile::wmcs::services::toolsdb::rebuild: true
 profile::wmcs::services::toolsdb::rebuild_primary: clouddb1001.clouddb-services.eqiad.wmflabs
