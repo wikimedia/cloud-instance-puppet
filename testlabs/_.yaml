@@ -1,10 +1,1 @@
 profile::base::enable_kafka_shipping: false
-profile::base::remote_syslog_send_logs: auth-logs
-profile::base::remote_syslog_tls:
-  eqiad:
-  - syslogaudit1.svc.eqiad1.wikimedia.cloud:6514
-  - syslogaudit2.svc.eqiad1.wikimedia.cloud:6514
-profile::base::remote_syslog_tls_ca: /etc/ssl/certs/ca-certificates.crt
-profile::base::remote_syslog_tls_client_auth: false
-profile::base::remote_syslog_tls_netstream_driver: ossl
-profile::syslog::centralserver::tls_netstream_driver: ossl
