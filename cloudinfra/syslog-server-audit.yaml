@@ -1,4 +1,4 @@
-centralserver::tls_netstream_driver: ossl
+base::remote_syslog_tls_netstream_driver: ossl
 profile::syslog::centralserver::acme_cert_name: rsyslog
 profile::syslog::centralserver::file_template_property: fromhost-ip
 profile::syslog::centralserver::tls_auth_mode: anon
