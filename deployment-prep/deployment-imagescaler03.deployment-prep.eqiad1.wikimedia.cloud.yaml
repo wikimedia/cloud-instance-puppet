@@ -1,1 +1,3 @@
+profile::base::remote_syslog_tls: {}
+profile::base::remote_syslog_tls_netstream_driver: gtls
 puppetmaster: deployment-puppetmaster04.deployment-prep.eqiad.wmflabs
