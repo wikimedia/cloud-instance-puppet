@@ -1,5 +1,2 @@
-profile::syslog::centralserver::file_template_property: fromhost-ip
-profile::syslog::centralserver::tls_auth_mode: anon
-profile::syslog::centralserver::tls_netstream_driver: ossl
 profile::syslog::centralserver::use_kafka_relay: false
 puppetmaster: puppetmaster03.auditlogging.eqiad1.wikimedia.cloud
