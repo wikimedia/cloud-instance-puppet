@@ -5,4 +5,5 @@ profile::wcms::nfs::standalone::volumes:
 profile::wmcs::nfs::standalone::cinder_attached: true
 profile::wmcs::nfs::standalone::volumes:
 - dbusers
+profile::wmcs::services::toolsdb_replica_cnf::tools_project_prefix: toolsbeta
 puppetmaster: abogott-puppetmaster.testlabs.eqiad.wmflabs
