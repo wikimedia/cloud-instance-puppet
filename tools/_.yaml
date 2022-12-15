@@ -78,6 +78,7 @@ profile::toolforge::grid::base::sysdir: /data/project/.system_sge
 profile::toolforge::grid::cronrunner::active_host: '%{alias(''profile::toolforge::active_cronrunner'')}'
 profile::toolforge::grid::webservicemonitor::active_host: '%{alias(''profile::toolforge::active_cronrunner'')}'
 profile::toolforge::k8s::calicoctl_sha: 3d92b7615d1cca58daeb03d92c2ec96ae927e28e2954d758c29b412f24da4848
+profile::toolforge::k8s::client::buildservice_repository: harbor.wmflabs.org
 profile::toolforge::k8s::ingress_replicas: 3
 profile::toolforge::k8s::typha_enabled: true
 profile::toolforge::proxies:
