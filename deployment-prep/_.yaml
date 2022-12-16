@@ -210,7 +210,7 @@ profile::services_proxy::envoy::listeners:
 profile::tlsproxy::envoy::ssl_provider: cfssl
 profile::webperf::site::server_name: performance.wikimedia.beta.wmflabs.org
 prometheus_nodes:
-- deployment-prometheus02.deployment-prep.eqiad1.wikimedia.cloud
+- deployment-prometheus05.deployment-prep.eqiad1.wikimedia.cloud
 puppetdb_host: deployment-puppetdb03.deployment-prep.eqiad.wmflabs
 puppetmaster: deployment-puppetmaster04.deployment-prep.eqiad.wmflabs
 puppetmaster::geoip::fetch_private: false
