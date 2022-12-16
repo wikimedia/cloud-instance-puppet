@@ -1,3 +1,1 @@
-prometheus::server::prometheus_v2: true
-prometheus::server::storage_retention: 730h
-puppetmaster: deployment-puppetmaster04.deployment-prep.eqiad.wmflabs
+{}
