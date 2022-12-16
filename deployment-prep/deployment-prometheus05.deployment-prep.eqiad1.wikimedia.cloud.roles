@@ -1,1 +1,2 @@
 - role::prometheus::beta
+- role::labs::lvm::srv
