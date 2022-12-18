@@ -2,6 +2,28 @@ apereo_cas:
   production:
     login_url: https://idp.wmcloud.org/login
     validate_url: https://idp.wmcloud.org/serviceValidate
+profile::grafana::config:
+  auth:
+    disable_login_form: true
+    disable_signout_menu: true
+  auth.anonymous:
+    enabled: true
+    org_name: Wikimedia Cloud Services
+  auth.basic:
+    enabled: true
+  auth.ldap:
+    enabled: false
+  auth.proxy:
+    enabled: true
+    header_name: X-CAS-uid
+  panels:
+    disable_sanitize_html: true
+  security:
+    allow_embedding: true
+profile::grafana::domain: grafana.wmcloud.org
+profile::grafana::domainrw: grafana-rw.wmcloud.org
+profile::grafana::enable_cas: true
+profile::grafana::server_aliases: []
 profile::wmcs::metricsinfra::alertmanager::project_proxy::trusted_hosts:
   paws:
   - paws-prometheus-1.paws.eqiad1.wikimedia.cloud
