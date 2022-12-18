@@ -40,6 +40,8 @@ profile::wmcs::metricsinfra::global_jobs:
 - name: node
   openstack_discovery:
     port: 9100
+profile::wmcs::metricsinfra::grafana_hosts:
+- metricsinfra-grafana-1.metricsinfra.eqiad1.wikimedia.cloud
 profile::wmcs::metricsinfra::prometheus::ext_fqdn: prometheus.wmcloud.org
 profile::wmcs::metricsinfra::prometheus_alertmanager_hosts:
 - metricsinfra-alertmanager-1.metricsinfra.eqiad1.wikimedia.cloud
