@@ -1,0 +1,6 @@
+httpd::modules:
+- authnz_ldap
+- headers
+- proxy
+- proxy_http
+- rewrite
