@@ -16,6 +16,12 @@ profile::grafana::config:
   auth.proxy:
     enabled: true
     header_name: X-CAS-uid
+  database:
+    host: wu5emp5wblz.svc.trove.eqiad1.wikimedia.cloud
+    name: grafana
+    password: '%{lookup("profile::wmcs::metricsinfra::grafana::mysql_password")}%'
+    type: mysql
+    user: grafana
   panels:
     disable_sanitize_html: true
   security:
