@@ -18,8 +18,9 @@ profile::grafana::config:
     header_name: X-CAS-uid
   database:
     host: wu5emp5wblz.svc.trove.eqiad1.wikimedia.cloud
+    name: grafana
+    password: '%{lookup("profile::wmcs::metricsinfra::grafana::mysql_password")}'
     type: mysql
-    url: mysql://grafana:%{lookup("profile::wmcs::metricsinfra::grafana::mysql_password")}%@wu5emp5wblz.svc.trove.eqiad1.wikimedia.cloud/grafana
     user: grafana
   panels:
     disable_sanitize_html: true
