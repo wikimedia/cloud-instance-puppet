@@ -11,8 +11,6 @@ profile::grafana::config:
     org_name: Wikimedia Cloud Services
   auth.basic:
     enabled: true
-  auth.ldap:
-    enabled: false
   auth.proxy:
     enabled: true
     header_name: X-CAS-uid
