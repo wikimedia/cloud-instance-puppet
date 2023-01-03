@@ -1,1 +1,1 @@
-openstack_version: zed
+profile::openstack::eqiad1::version: zed
