@@ -9,3 +9,4 @@ profile::microsites::sitemaps::server_name: sitemaps.wikimedia.org
 puppetmaster: taavi-pm-1.testlabs.eqiad1.wikimedia.cloud
 scap::deployment_server: deployment-deploy03.deployment-prep.eqiad1.wikimedia.cloud
 statistics::servers: []
+test: aaaaa
