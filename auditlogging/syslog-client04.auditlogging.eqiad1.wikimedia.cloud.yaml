@@ -1,4 +1,5 @@
 profile::base::enable_kafka_shipping: false
+profile::base::remote_syslog_client_tls_auth: true
 profile::base::remote_syslog_tls:
   eqiad:
   - syslog-server02.auditlogging.eqiad1.wikimedia.cloud:6514
