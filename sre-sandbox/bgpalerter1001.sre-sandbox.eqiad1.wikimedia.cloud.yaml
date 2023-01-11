@@ -1,11 +1,7 @@
-bgpalerter::asn: 14907
-bgpalerter::downstreams:
+profile::bgpalerter::downstreams:
 - 11820
 - 12654
-bgpalerter::group: noc
-bgpalerter::http_proxy: '%{alias(''http_proxy'')}'
-bgpalerter::monitors: []
-bgpalerter::reports:
+profile::bgpalerter::reports:
 - channels:
   - hijack
   - newprefix
@@ -37,9 +33,4 @@ bgpalerter::reports:
       host: localhost
       port: 25
       secure: false
-bgpalerter::rpki:
-  preCacheROAs: true
-  url: http://127.0.0.1:9556/json
-  vrpProvider: api
-bgpalerter::upstreams: []
-bgpalerter::user: bgpalerter
+profile::bgpalerter::upstreams: []
