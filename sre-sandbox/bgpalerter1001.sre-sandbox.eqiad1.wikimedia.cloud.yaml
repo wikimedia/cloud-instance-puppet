@@ -1,0 +1,36 @@
+profile::bgpalerter::downstreams:
+- 11820
+- 12654
+profile::bgpalerter::reports:
+- channels:
+  - hijack
+  - newprefix
+  - visibility
+  - path
+  - misconfiguration
+  - rpki
+  file: reportPullAPI
+  params:
+    maxAlertsAmount: 25
+- channels:
+  - hijack
+  - newprefix
+  - visibility
+  - path
+  - misconfiguration
+  - rpki
+  file: reportEmail
+  params:
+    notifiedEmails:
+      default:
+      - ayounsi@wikimedia.org
+      - cmooney@wikimedia.org
+      - jbond@wikimedia.org
+    notifiedEmails.default: noc
+    senderEmail: '%{lookup(''profile::bgpalerter::user'')}@%{facts.networking.fqdn}'
+    showPaths: 5
+    smtp:
+      host: localhost
+      port: 25
+      secure: false
+profile::bgpalerter::upstreams: []
