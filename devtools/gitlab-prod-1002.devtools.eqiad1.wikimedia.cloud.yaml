@@ -1,1 +1,4 @@
+profile::gitlab::service_ip_v4: 185.15.56.117
+profile::gitlab::service_ip_v6: '::'
+profile::gitlab::service_name: gitlab-bullseye.devtools.wmcloud.org
 puppetmaster: puppetmaster-1001.devtools.eqiad1.wikimedia.cloud
