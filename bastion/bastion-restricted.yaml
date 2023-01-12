@@ -1,5 +1,8 @@
 profile::ldap::client::labs::restricted_to:
 - ops
 - sre-admins
+profile::ssh::server::match_config:
+  Address 208.80.154.32,208.80.153.51:
+    MaxSessions: 129:30:257
 profile::ssh::server::max_sessions: 35
 profile::ssh::server::max_startups: 35:30:60
