@@ -268,6 +268,7 @@ profile::cache::varnish::frontend::listen_uds:
 - /run/varnish-frontend-7.socket
 profile::cache::varnish::frontend::separate_vcl:
 - misc
+profile::cache::varnish::frontend::thread_pool_max: 12000
 profile::cache::varnish::frontend::uds_group: root
 profile::cache::varnish::frontend::uds_owner: haproxy
 profile::trafficserver::backend::default_lua_scripts:
