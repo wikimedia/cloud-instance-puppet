@@ -1,1 +1,2 @@
-{}
+profile::gitlab::runner::ensure: absent
+profile::gitlab::runner::ensure_buildkitd: absent
