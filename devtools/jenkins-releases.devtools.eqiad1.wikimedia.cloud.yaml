@@ -1,5 +1,4 @@
 jenkins::java_home: /usr/lib/jvm/java-11-openjdk-amd64
 jenkins::prefix: /
-jenkins::service_enable: true
-jenkins::service_ensure: running
+jenkins:use_scap3_deployment: true
 puppetmaster: puppetmaster-1001.devtools.eqiad1.wikimedia.cloud
