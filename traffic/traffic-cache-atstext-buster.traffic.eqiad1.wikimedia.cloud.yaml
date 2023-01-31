@@ -1,1 +1,2 @@
+profile::cache::varnish::frontend::thread_pool_max: 12000
 profile::trafficserver::backend::is_ats9: true
