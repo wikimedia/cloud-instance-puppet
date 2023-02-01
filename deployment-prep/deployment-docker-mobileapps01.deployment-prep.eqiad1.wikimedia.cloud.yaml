@@ -31,6 +31,9 @@ profile::docker::runner::service_defs:
             https://*.wikipedia.org ''self'' ''unsafe-inline''; frame-ancestors ''self'' '
           mobile_html_local_rest_api_base_uri_template: //{{domain}}/api/rest_v1/
           mobile_html_rest_api_base_uri: //meta.wikimedia.org/api/rest_v1/
+          mobile_view_languages:
+          - zh
+          - kk
           mw_resource_loader_req:
             body: '{{ default(request.query, {}) }}'
             headers:
@@ -46,6 +49,7 @@ profile::docker::runner::service_defs:
               user-agent: '{{user-agent}}'
             method: post
             uri: http://deployment-mediawiki11.deployment-prep.eqiad1.wikimedia.cloud/w/api.php
+          pcs_handles_redirects: true
           port: 8888
           restbase_compatibility:
             security_headers: false
@@ -56,7 +60,7 @@ profile::docker::runner::service_defs:
             query: '{{ default(request.query, {}) }}'
             timeout: 60000
             uri: http://deployment-restbase04.deployment-prep.eqiad1.wikimedia.cloud:7231/{{domain}}/v1/{+path}
-          use_coreparsoid_endpoint: false
+          use_coreparsoid_endpoint: true
           user_agent: Mobile-Content-Service/WMF
         module: ./app.js
         name: mobileapps
