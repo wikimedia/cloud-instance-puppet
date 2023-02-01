@@ -1,6 +1,6 @@
-profile::gitlab::cert_path: /etc/letsencrypt/live/gitlab.devtools.wmcloud.org/fullchain.pem
-profile::gitlab::key_path: /etc/letsencrypt/live/gitlab.devtools.wmcloud.org/privkey.pem
+profile::gitlab::cert_path: /etc/letsencrypt/live/gitlab-prod.devtools.wmcloud.org/fullchain.pem
+profile::gitlab::key_path: /etc/letsencrypt/live/gitlab-prod.devtools.wmcloud.org/privkey.pem
 profile::gitlab::passive_host: gitlab-prod-1002.devtools.wmcloud.org
 profile::gitlab::service_ip_v4: 172.16.7.146
-profile::gitlab::service_name: gitlab.devtools.wmcloud.org
+profile::gitlab::service_name: gitlab-prod.devtools.wmcloud.org
 puppetmaster: puppetmaster-1001.devtools.eqiad1.wikimedia.cloud
