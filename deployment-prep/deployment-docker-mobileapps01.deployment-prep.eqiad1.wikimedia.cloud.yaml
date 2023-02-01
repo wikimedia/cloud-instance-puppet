@@ -46,6 +46,7 @@ profile::docker::runner::service_defs:
               user-agent: '{{user-agent}}'
             method: post
             uri: http://deployment-mediawiki11.deployment-prep.eqiad1.wikimedia.cloud/w/api.php
+          pcs_handles_redirects: true
           port: 8888
           restbase_compatibility:
             security_headers: false
@@ -56,6 +57,7 @@ profile::docker::runner::service_defs:
             query: '{{ default(request.query, {}) }}'
             timeout: 60000
             uri: http://deployment-restbase04.deployment-prep.eqiad1.wikimedia.cloud:7231/{{domain}}/v1/{+path}
+          use_coreparsoid_endpoint: true
           user_agent: Mobile-Content-Service/WMF
         module: ./app.js
         name: mobileapps
