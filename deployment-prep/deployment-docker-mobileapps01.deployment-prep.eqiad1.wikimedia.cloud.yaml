@@ -48,7 +48,7 @@ profile::docker::runner::service_defs:
             uri: http://deployment-mediawiki11.deployment-prep.eqiad1.wikimedia.cloud/w/api.php
           port: 8888
           restbase_compatibility:
-            security_headers: true
+            security_headers: false
           restbase_req:
             body: '{{request.body}}'
             headers: '{{request.headers}}'
