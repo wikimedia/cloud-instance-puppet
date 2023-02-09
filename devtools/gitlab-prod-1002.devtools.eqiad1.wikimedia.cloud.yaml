@@ -1,5 +1,3 @@
-profile::gitlab::cert_path: /etc/letsencrypt/live/gitlab-prod.wmflabs.org/fullchain.pem
-profile::gitlab::key_path: /etc/letsencrypt/live/gitlab-prod.wmflabs.org/privkey.pem
 profile::gitlab::passive_host: gitlab-prod-1002.devtools.wmcloud.org
 profile::gitlab::service_ip_v4: 172.16.7.146
 profile::gitlab::service_name: gitlab.devtools.wmcloud.org
