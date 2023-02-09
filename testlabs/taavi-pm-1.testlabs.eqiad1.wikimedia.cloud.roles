@@ -1,1 +1,2 @@
 - role::puppetmaster::standalone
+- profile::openstack::eqiad1::clientpackages::vms
