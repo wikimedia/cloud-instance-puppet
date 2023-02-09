@@ -186,6 +186,7 @@ profile::cache::varnish::frontend::listen_uds:
 - /run/varnish-frontend-5.socket
 - /run/varnish-frontend-6.socket
 - /run/varnish-frontend-7.socket
+profile::cache::varnish::frontend::thread_pool_max: 5000
 profile::cache::varnish::frontend::uds_group: root
 profile::cache::varnish::frontend::uds_mode: '700'
 profile::cache::varnish::frontend::uds_owner: haproxy
