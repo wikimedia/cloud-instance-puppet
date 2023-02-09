@@ -1,1 +1,2 @@
 - role::wmcs::toolforge::logging::loki
+- profile::openstack::eqiad1::clientpackages::vms
