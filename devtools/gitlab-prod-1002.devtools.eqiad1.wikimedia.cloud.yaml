@@ -1,4 +1,4 @@
-profile::gitlab::backup_dir_data: /mnt/gitlab-backup
+profile::gitlab::backup_dir_data: /srv/gitlab-backup
 profile::gitlab::passive_host: gitlab-prod-1002.devtools.wmcloud.org
 profile::gitlab::service_ip_v4: 172.16.7.146
 profile::gitlab::service_name: gitlab.devtools.wmcloud.org
