@@ -6,11 +6,11 @@ profile::wmcs::paws::control_nodes:
 - paws-k8s-control-2.paws.eqiad.wmflabs
 - paws-k8s-control-3.paws.eqiad.wmflabs
 profile::wmcs::paws::ingress_nodes:
-- host: 172.16.7.31
+- host: 172.16.1.97
   port: 30001
-- host: 172.16.2.66
+- host: 172.16.0.118
   port: 30001
-- host: 172.16.3.222
+- host: 172.16.5.3
   port: 30001
 profile::wmcs::paws::keepalived::peers:
 - paws-k8s-haproxy-1.paws.eqiad.wmflabs
