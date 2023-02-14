@@ -1,7 +1,6 @@
 profile::wmcs::proxy::static::acme_chief_certs:
 - maps
 - wma
-- tiles
 - wmflabs
 profile::wmcs::proxy::static::blocked_referers: schiebt-sie-ab.de
 profile::wmcs::proxy::static::proxy_mappings:
@@ -32,24 +31,9 @@ profile::wmcs::proxy::static::proxy_mappings:
   7.wma.wmflabs.org:
     certname: wma
     domain: maps-wma2.maps.eqiad1.wikimedia.cloud
-  a.tiles.wmflabs.org:
-    certname: tiles
-    domain: maps-tiles1.maps.eqiad1.wikimedia.cloud
-  b.tiles.wmflabs.org:
-    certname: tiles
-    domain: maps-tiles1.maps.eqiad1.wikimedia.cloud
-  c.tiles.wmflabs.org:
-    certname: tiles
-    domain: maps-tiles1.maps.eqiad1.wikimedia.cloud
   label.wma.wmflabs.org:
     certname: tiles
     domain: maps-wma2.maps.eqiad1.wikimedia.cloud
-  maps.wmflabs.org:
-    certname: maps
-    domain: maps-tiles1.maps.eqiad1.wikimedia.cloud
-  tiles.wmflabs.org:
-    certname: tiles
-    domain: maps-tiles1.maps.eqiad1.wikimedia.cloud
   warper.wmflabs.org:
     certname: wmflabs
     domain: maps-warper4.maps.eqiad1.wikimedia.cloud
