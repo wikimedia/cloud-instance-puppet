@@ -17,15 +17,6 @@ profile::acme_chief::certificates:
     - ^.+\.project-proxy\.eqiad\.wmflabs$
     - ^.+\.project-proxy\.eqiad1\.wikimedia\.cloud$
     challenge: dns-01
-  tiles:
-    CN: tiles.wmcloud.org
-    SNI:
-    - tiles.wmflabs.org
-    - '*.tiles.wmflabs.org'
-    authorized_regexes:
-    - ^.+\.project-proxy\.eqiad\.wmflabs$
-    - ^.+\.project-proxy\.eqiad1\.wikimedia\.cloud$
-    challenge: dns-01
   wma:
     CN: wma.wmcloud.org
     SNI:
