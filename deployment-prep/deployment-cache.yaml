@@ -117,9 +117,6 @@ profile::cache::haproxy::tls_ciphers: -ALL:ECDHE-ECDSA-AES256-GCM-SHA384:ECDHE-E
 profile::cache::haproxy::tls_port: 443
 profile::cache::haproxy::tls_session_lifetime: 86400
 profile::cache::haproxy::unified_acme_chief: true
-profile::cache::haproxy::unified_certs:
-- digicert-2021-ecdsa-unified
-- digicert-2021-rsa-unified
 profile::cache::haproxy::varnish_socket:
 - address: /run/varnish-frontend-0.socket
   prefix: unix
