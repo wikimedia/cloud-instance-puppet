@@ -6,6 +6,6 @@ profile::mail::mx::cert_subjects: mail.beta.wmflabs.org
 profile::mail::mx::enable_jumpcloud: false
 profile::mail::mx::enable_ldap: false
 profile::mail::mx::vrts_mysql_dbname: notreallyanything
-profile::mail::mx::vrts_mysql_pass: vtrs
+profile::mail::mx::vrts_mysql_password: vtrs
 profile::mail::mx::vrts_mysql_server: nowhere.example.org
 profile::mail::mx::vrts_mysql_user: nobody
