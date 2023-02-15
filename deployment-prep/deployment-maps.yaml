@@ -7,6 +7,7 @@ profile::cassandra::single_instance::seeds:
 - '%{ipaddress}'
 profile::maps::hosts:
 - '%{::fqdn}'
+profile::maps::osm_master::use_replication_slots: true
 profile::maps::postgresql_common::maintenance_work_mem: 3GB
 profile::maps::postgresql_common::shared_buffers: 4GB
 profile::redis::master::clients:
