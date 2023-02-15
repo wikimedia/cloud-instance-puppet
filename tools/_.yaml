@@ -6,7 +6,8 @@ docker::registry: docker-registry.tools.wmflabs.org
 docker::registry_url: https://tools-docker-registry.wmflabs.org/v2/
 dynamicproxy::banned_ips:
 - 70.179.6.9
-dynamicproxy::blocked_user_agent_regex: TweetmemeBot|Chrome/38\.0\.2125\.104|Applebot
+dynamicproxy::blocked_user_agent_regex: TweetmemeBot|Chrome/38\.0\.2125\.104|Applebot|QIHU
+  360SE
 dynamicproxy::error_details: ''
 gridengine::gridmaster: tools-grid-master.tools.eqiad.wmflabs
 passwords::root::extra_keys:
