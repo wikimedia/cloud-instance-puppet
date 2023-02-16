@@ -1,6 +1,4 @@
-elasticsearch::https::certificate_name: '%{::fqdn}'
-elasticsearch::https::ferm_srange: 10.0.0.0/8
 logstash_host: localhost
-profile::elasticsearch::cirrus::certificate_name: '%{::fqdn}'
 profile::elasticsearch::cirrus::enable_remote_search: true
+profile::elasticsearch::cirrus::ssl_provider: cfssl
 role::labs::lvm::mnt::mount_point: /var/lib/elasticsearch
