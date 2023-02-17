@@ -1,6 +1,4 @@
 acmechief_host: toolsbeta-acme-chief-01.toolsbeta.eqiad.wmflabs
-active_cronrunner: toolsbeta-cron-01.toolsbeta.eqiad.wmflabs
-active_proxy_host: toolsbeta-proxy-3
 docker::builder_host: tools-docker-builder-06.tools.eqiad.wmflabs
 docker::password: not a real password
 docker::password_hash: $apr1$st5G0d8l$IcJeBIljkbSRhjrMIiH02/
@@ -18,12 +16,6 @@ passwords::root::extra_keys:
     bd808+labs@wmf-bd808-mbp01.local
   chicocvenancio: ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC7a3YDGerP3yyxrKyXOrx7h5kbMnfkhdmfONKzEVEdLCC9Ru008nMQ+R683nluwIjWgsRcvIjWiFU6EdIs3vi/B6aZxmcZhbpE/7pLomseTweEO/3Hh0brlro7KpBCnAiLOwCEKQbUr3N4CXbaR3ACU1AWUV52566Ehc2EvXdivXsaSjrJkPVeptvd1+LikUIzY0Eb7adv0D6OtHztc5xD4rZiW20/4F8OstzNSnuWEb69jDCfAPUKsa6KuXYMIyM2NLZbWP3qsjAn16u1qW9kQ4801An07azv8gqS5CQAvjhZohRjVxNie4rrgslbrs3s2qkJf58S764WdZHm2Ko1
     fvenancio@wikimedia.org
-  petrb: ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC/kW5wnLgEOtOqVvB9HBbzdJQnrRApJ6g7QeYO8PXN+y5V2iQMG8oJR18GHByR7pTA9Ehj3XtIIQPbjvqX/bowphObQUCTgA9t8gupVexhJM6bTGqNWZ0KUjgZoD5kBM/poSEUFQsPUMl/N8lE5hsxKbQC3iX30arFS/vpYS6gnBp5+Ui53/aIyFAbRpFQ74I3LH2cGQkKgFfzjObZK0gA5TndRz05PgmzXo6BDGIun0UYvMh7nvZs0pbRQy+rjgcUH2fPUsEI1cz798wx/fExVjyENydX1jEDkuYCg0ikr//on00aYl4/lTH8w0IQDeQrXlx6lJ/cY7WUlcDFr8m5
-    petr bena
-  scfc: ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCjcG9HXqM3yuWw0vc53OQGkP55YKJUlQNxV5uflizAI4eHtua0NeVxkaY0Bwi5dboC0D/JiGmlKzEtDDDxXmSP8hFFxMpjJVZ43R2hhTY8CpR0q9034W81dfxpO9zFEy6R0ZFmNKbL3i9OqNQRHTQZSleVuyM4hrU7bqDSGIDLduVMkM//nnMI84BZkzcErgV3uJJ1bQif7unEoUHX5UdRXea+/2DRJmLT5fcNcrTUm7Pzwi573IEUUPfYQtf0/xpXd9hWgz0Hpd5X3HF9I8oN2DlBPHEm4UGCTZOq0JzPc7VKD0r14HwyvoUNoCNbbOhqtK69c8fWrbdxzcU28Kal
-    scfc root tools-checker-01
-  taavi: ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIBq4K669pJ+bR0PdQJjpE/aV6LuI4v37UONi9s73LbeD
-    taavi@runko
   zhuyifei1999: ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCdm+Kiet0U2AjfPLFKIZLh57pXruVzlIfSypwSt7GRlZ+0sGhExYWvXdreW5zgZRJ3aXzR84qaZOqpwgHuVFlfMszXzq3E6p9dZ/bATP/lvIkucJJ2RL5C4ABvfwd4MHs68rW9UGwPVWn1qQftvoNpeDCu4t50uLbP9vcEXzaXrVioHROPoEpqk4YofHQS9F4HIKDbfjTFwUb5YQ/lsajuK0EZXlAELoaZ7s+uBolyBmXkIjWOjyGwHCoBU1FPiufLwLYuMZz0iAqw930dgoi89VgaPhlu12j2yP+2BZ3XkEgpzNBmZ/3lwVvRPyUnWw2pBU4qvs00FUARzx/WTRSJ
     zhuyifei1999@zhuyifei1999-ThinkPad-X260
 profile::base::core_dump_pattern: core
@@ -65,7 +57,7 @@ profile::openstack::eqiad1::cumin::project_masters:
 profile::openstack::eqiad1::cumin::project_pub_key: ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIA5++4xfbwOy1CC2ehmzN4D4uHuM9wwUl++Xds59IXjj
 profile::openstack::eqiad1::ldap_user_pass: <not available here>
 profile::prometheus::haproxy_exporter::listen_port: 9901
-profile::ssh::server::challenge_response_auth: true
+profile::ssh::server::challenge_response_auth: false
 profile::ssh::server::disable_agent_forwarding: false
 profile::ssh::server::disable_nist_kex: false
 profile::ssh::server::enable_hba: true
@@ -109,6 +101,3 @@ prometheus_nodes:
 puppetmaster: toolsbeta-puppetmaster-04.toolsbeta.eqiad.wmflabs
 role::aptly::client::servername: tools-services-05.tools.eqiad1.wikimedia.cloud
 sonofgridengine::gridmaster: toolsbeta-sgegrid-master.toolsbeta.eqiad1.wikimedia.cloud
-ssh::server::disable_nist_kex: false
-ssh::server::enable_hba: true
-ssh::server::explicit_macs: false
