@@ -1,1 +1,21 @@
+acmechief_host: paws-acme-chief-01.paws.eqiad.wmflabs
+mount_nfs: false
+profile::wmcs::kubeadm::apiserver_fqdn: k8s.svc.paws.eqiad1.wikimedia.cloud
+profile::wmcs::kubeadm::component: thirdparty/kubeadm-k8s-1-21
+profile::wmcs::kubeadm::etcd_election_timeout: 3000
+profile::wmcs::kubeadm::etcd_heartbeat_interval: 300
+profile::wmcs::kubeadm::kubernetes_version: 1.17.13
+profile::wmcs::kubeadm::stacked: true
+profile::wmcs::nfs::standalone::cinder_attached: false
+profile::wmcs::nfs::standalone::volumes:
+- paws
+profile::wmcs::nfsclient::nfs_version: '4.2'
+profile::wmcs::paws::ip_blocks:
+- 23.81.234.43
+profile::wmcs::paws::prometheus_nodes:
+- paws-prometheus-1.paws.eqiad1.wikimedia.cloud
+- paws-prometheus-2.paws.eqiad1.wikimedia.cloud
+prometheus_nodes:
+- paws-prometheus-1.paws.eqiad1.wikimedia.cloud
+- paws-prometheus-2.paws.eqiad1.wikimedia.cloud
 puppetmaster: puppet
