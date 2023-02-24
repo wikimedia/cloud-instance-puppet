@@ -6,7 +6,7 @@ profile::wmcs::kubeadm::etcd_election_timeout: 3000
 profile::wmcs::kubeadm::etcd_heartbeat_interval: 300
 profile::wmcs::kubeadm::kubernetes_version: 1.17.13
 profile::wmcs::kubeadm::stacked: true
-profile::wmcs::nfs::standalone::cinder_attached: false
+profile::wmcs::nfs::standalone::cinder_attached: true
 profile::wmcs::nfs::standalone::volumes:
 - paws
 profile::wmcs::nfsclient::nfs_version: '4.2'
