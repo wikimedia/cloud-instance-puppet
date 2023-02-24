@@ -11,11 +11,8 @@ profile::toolforge::k8s::haproxy::keepalived_peers:
 profile::toolforge::k8s::haproxy::keepalived_vips:
 - k8s.svc.tools.eqiad1.wikimedia.cloud
 profile::toolforge::k8s::ingress_nodes:
-- host: tools-k8s-ingress-4.tools.eqiad1.wikimedia.cloud
-  port: 30002
-- host: tools-k8s-ingress-5.tools.eqiad1.wikimedia.cloud
-  port: 30002
-- host: tools-k8s-ingress-6.tools.eqiad1.wikimedia.cloud
-  port: 30002
+- tools-k8s-ingress-4.tools.eqiad1.wikimedia.cloud
+- tools-k8s-ingress-5.tools.eqiad1.wikimedia.cloud
+- tools-k8s-ingress-6.tools.eqiad1.wikimedia.cloud
 profile::toolforge::k8s::ingress_port: 30000
 prometheus::haproxy_exporter::endpoint: http://localhost:8404/stats;csv
