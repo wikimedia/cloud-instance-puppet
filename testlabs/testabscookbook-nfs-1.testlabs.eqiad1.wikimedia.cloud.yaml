@@ -4,4 +4,3 @@ profile::wmcs::nfs::standalone::cinder_attached: true
 profile::wmcs::nfs::standalone::volumes:
 - testlabscookbook
 puppetmaster: puppet
-test::bd808::T329589: will it log to git?
