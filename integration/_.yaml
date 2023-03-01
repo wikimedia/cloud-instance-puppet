@@ -7,5 +7,3 @@ profile::openstack::eqiad1::cumin::project_masters:
 profile::openstack::eqiad1::cumin::project_pub_key: ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIPPfdabE1Fej0X86QgjY72LXvA3Wawrg0ZcDL0PF56/A
   root@integration-cumin
 puppetmaster: integration-puppetmaster-02.integration.eqiad.wmflabs
-role::puppet::self::enc: yaml+ldap
-role::puppet::self::master: integration-puppetmaster
