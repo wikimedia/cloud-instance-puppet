@@ -59,4 +59,5 @@ profile::acme_chief::cloud::designate_sync_project_names:
 profile::acme_chief::cloud::designate_sync_region_name: eqiad1-r
 profile::acme_chief::cloud::designate_sync_tidyup_enabled: true
 profile::acme_chief::cloud::designate_sync_username: deployment-prep-dns-manager
-profile::acme_chief::passive: deployment-acme-chief04.deployment-prep.eqiad.wmflabs
+profile::acme_chief::passive:
+- deployment-acme-chief04.deployment-prep.eqiad.wmflabs
