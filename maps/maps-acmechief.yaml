@@ -32,5 +32,6 @@ profile::acme_chief::cloud::designate_sync_project_name: maps
 profile::acme_chief::cloud::designate_sync_region_name: eqiad1-r
 profile::acme_chief::cloud::designate_sync_tidyup_enabled: true
 profile::acme_chief::cloud::designate_sync_username: maps-cloud-dns-manager
-profile::acme_chief::passive: maps-acmechief02.maps.eqiad.wmflabs
+profile::acme_chief::passive:
+- maps-acmechief02.maps.eqiad.wmflabs
 puppetmaster: puppetmaster.cloudinfra.wmflabs.org
