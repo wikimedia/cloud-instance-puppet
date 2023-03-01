@@ -61,5 +61,6 @@ profile::acme_chief::cloud::designate_sync_project_names:
 profile::acme_chief::cloud::designate_sync_region_name: eqiad1-r
 profile::acme_chief::cloud::designate_sync_tidyup_enabled: true
 profile::acme_chief::cloud::designate_sync_username: tools-dns-manager
-profile::acme_chief::passive: tools-acme-chief-02.tools.eqiad.wmflabs
+profile::acme_chief::passive:
+- tools-acme-chief-02.tools.eqiad.wmflabs
 shared_acme_certificates: {}
