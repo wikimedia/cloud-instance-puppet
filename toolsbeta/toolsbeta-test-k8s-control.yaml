@@ -1,5 +1,4 @@
 profile::toolforge::k8s::apiserver_fqdn: k8s.toolsbeta.eqiad1.wikimedia.cloud
-profile::toolforge::k8s::dns_domain: toolsbeta.eqiad.wmflabs
 profile::toolforge::k8s::etcd_nodes:
 - tolosbeta-test-k8s-etcd-4.toolsbeta.eqiad1.wikimedia.cloud
 - tolosbeta-test-k8s-etcd-5.toolsbeta.eqiad1.wikimedia.cloud
