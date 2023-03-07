@@ -79,7 +79,6 @@ profile::toolforge::grid::base::sge_root: /var/lib/gridengine
 profile::toolforge::grid::base::sysdir: /data/project/.system_sge
 profile::toolforge::grid::cronrunner::active_host: '%{alias(''profile::toolforge::active_cronrunner'')}'
 profile::toolforge::grid::webservicemonitor::active_host: '%{alias(''profile::toolforge::active_cronrunner'')}'
-profile::toolforge::harbor::db::primary: ttg4ncgzifw.svc.trove.eqiad1.wikimedia.cloud
 profile::toolforge::harbor::db_primary: ttg4ncgzifw.svc.trove.eqiad1.wikimedia.cloud
 profile::toolforge::harbor::url: harbor.toolsbeta.wmflabs.org
 profile::toolforge::jobs_api_fqdn: jobs.toolsbeta.wmflabs.org
@@ -94,7 +93,7 @@ profile::toolforge::proxies:
 - toolsbeta-proxy-4.toolsbeta.eqiad1.wikimedia.cloud
 profile::toolforge::services::active_node: tools-services-05.tools.eqiad1.wikimedia.cloud
 profile::toolforge::services::updatetools_enabled: false
-profile::wmcs::kubeadm::component: thirdparty/kubeadm-k8s-1-21
+profile::wmcs::kubeadm::component: thirdparty/kubeadm-k8s-1-22
 prometheus::haproxy_exporter::endpoint: http://localhost:9900/stats;csv
 prometheus_nodes:
 - toolsbeta-prometheus-1.toolsbeta.eqiad1.wikimedia.cloud
