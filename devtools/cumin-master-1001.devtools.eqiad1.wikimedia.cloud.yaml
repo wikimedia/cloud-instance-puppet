@@ -1,3 +1,5 @@
 profile::openstack::eqiad1::cumin::aliases: {}
 profile::openstack::eqiad1::cumin::project_ssh_priv_key_path: /root/.ssh/cumin
+profile::spicerack::cookbooks_repos:
+  operations/cookbooks: /srv/deployment/spicerack
 puppetmaster: puppetmaster-1001.devtools.eqiad1.wikimedia.cloud
