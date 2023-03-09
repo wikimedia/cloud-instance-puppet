@@ -1,1 +1,1 @@
-profile::wmcs::services::toolsdb::active_server: clouddb1001.clouddb-services.eqiad.wmflabs
+profile::wmcs::services::toolsdb::legacy_config: false
