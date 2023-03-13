@@ -3,12 +3,8 @@ labstore::traffic_shaping::egress: 800mbps
 mount_nfs: false
 profile::wmcs::paws::control_nodes: []
 profile::wmcs::paws::ingress_nodes:
-- host: 172.16.2.44
-  port: 30001
-- host: 172.16.1.213
-  port: 30001
-- host: 172.16.6.59
-  port: 30001
+- host: 172.16.7.28
+  port: 80
 profile::wmcs::paws::keepalived::peers:
 - paws-k8s-haproxy-1.paws.eqiad.wmflabs
 - paws-k8s-haproxy-2.paws.eqiad.wmflabs
