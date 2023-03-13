@@ -19,6 +19,7 @@ profile::acme_chief::certificates:
     - ^tools-proxy-[0-9]+\.tools\.eqiad\.wmflabs$
     - ^tools-docker-registry-[0-9]+\.tools\.eqiad\.wmflabs$
     - ^tools-docker-registry-[0-9]+\.tools\.eqiad1\.wikimedia\.cloud$
+    - ^tools-harbor-[0-9]+\.tools\.eqiad1\.wikimedia\.cloud$
     challenge: dns-01
   tools-legacy:
     CN: tools.wmflabs.org
