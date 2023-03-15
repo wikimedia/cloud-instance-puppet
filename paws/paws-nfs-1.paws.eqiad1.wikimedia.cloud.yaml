@@ -4,4 +4,3 @@ profile::wmcs::nfs::standalone::volumes:
 - paws
 profile::wmcs::nfsclient::nfs_version: '4.2'
 profile::wmcs::services::toolsdb_replica_cnf::tools_project_prefix: tools
-puppetmaster: puppet
