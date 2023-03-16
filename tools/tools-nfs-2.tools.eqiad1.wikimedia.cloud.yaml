@@ -1,20 +1,4 @@
 mount_nfs: true
-profile::openstack::eqiad1::cumin::project_masters:
-- 172.16.5.85
-profile::openstack::eqiad1::cumin::project_pub_key: ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIO8as2dazxB8rDdZed/ee0prcEwOSpRJi22clMCCi7HG
-profile::openstack::eqiad1::ldap_user_pass: <not available here>
-profile::rsyslog::kubernetes::enable: false
-profile::wmcs::kubeadm::component: thirdparty/kubeadm-k8s-1-21
 profile::wmcs::nfs::standalone::cinder_attached: true
 profile::wmcs::nfs::standalone::volumes:
 - tools
-prometheus::node_exporter::ignored_fs_types: ^(overlay|autofs|binfmt_misc|cgroup|configfs|debugfs|devpts|devtmpfs|fusectl|hugetlbfs|mqueue|nfs.*|nsfs|proc|procfs|pstore|rpc_pipefs|securityfs|sysfs|tracefs)$
-prometheus_nodes:
-- tools-prometheus-6.tools.eqiad1.wikimedia.cloud
-- tools-prometheus-7.tools.eqiad1.wikimedia.cloud
-puppetmaster: tools-puppetmaster-02.tools.eqiad.wmflabs
-role::aptly::client::servername: tools-services-05.tools.eqiad1.wikimedia.cloud
-sonofgridengine::gridmaster: tools-sgegrid-master.tools.eqiad1.wikimedia.cloud
-ssh::server::disable_nist_kex: false
-ssh::server::enable_hba: true
-ssh::server::explicit_macs: false
