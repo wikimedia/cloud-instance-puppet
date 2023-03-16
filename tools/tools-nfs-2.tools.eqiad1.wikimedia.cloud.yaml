@@ -81,7 +81,7 @@ profile::toolforge::proxies:
 profile::wmcs::kubeadm::component: thirdparty/kubeadm-k8s-1-21
 profile::wmcs::nfs::standalone::cinder_attached: true
 profile::wmcs::nfs::standalone::volumes:
-- tools-nfs
+- tools
 prometheus::node_exporter::ignored_fs_types: ^(overlay|autofs|binfmt_misc|cgroup|configfs|debugfs|devpts|devtmpfs|fusectl|hugetlbfs|mqueue|nfs.*|nsfs|proc|procfs|pstore|rpc_pipefs|securityfs|sysfs|tracefs)$
 prometheus_nodes:
 - tools-prometheus-6.tools.eqiad1.wikimedia.cloud
