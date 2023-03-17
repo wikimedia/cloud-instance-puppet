@@ -80,11 +80,11 @@ profile::toolforge::grid::base::sysdir: /data/project/.system_sge
 profile::toolforge::grid::cronrunner::active_host: '%{alias(''profile::toolforge::active_cronrunner'')}'
 profile::toolforge::grid::webservicemonitor::active_host: '%{alias(''profile::toolforge::active_cronrunner'')}'
 profile::toolforge::harbor::db_primary: ttg4ncgzifw.svc.trove.eqiad1.wikimedia.cloud
-profile::toolforge::harbor::url: toolsbeta-harbor.wmflabs.org
+profile::toolforge::harbor::url: toolsbeta-harbor.wmcloud.org
 profile::toolforge::jobs_api_fqdn: jobs.toolsbeta.wmflabs.org
 profile::toolforge::jobs_api_port: 30001
 profile::toolforge::k8s::calico_version: v3.21.0
-profile::toolforge::k8s::client::buildservice_repository: toolsbeta-harbor.wmflabs.org
+profile::toolforge::k8s::client::buildservice_repository: toolsbeta-harbor.wmcloud.org
 profile::toolforge::k8s::ingress_replicas: 3
 profile::toolforge::k8s::kubernetes_version: 1.21.8
 profile::toolforge::mailrelay::external_hostname: mail.tools.wmflabs.org
