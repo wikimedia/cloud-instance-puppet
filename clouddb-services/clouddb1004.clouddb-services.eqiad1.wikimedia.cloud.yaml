@@ -1,3 +1,0 @@
-profile::base::remote_syslog_tls: {}
-profile::base::remote_syslog_tls_netstream_driver: gtls
-profile::wmcs::services::postgres::primary: clouddb1003.clouddb-services.eqiad.wmflabs
