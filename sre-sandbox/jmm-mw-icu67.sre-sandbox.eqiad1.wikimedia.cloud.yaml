@@ -1,3 +1,0 @@
-profile::mediawiki::apc_shm_size: 128M
-profile::mediawiki::php::enable_fpm: true
-scap::deployment_server: jmm-mw-icu67.sre-sandbox.eqiad1.wikimedia.cloud
