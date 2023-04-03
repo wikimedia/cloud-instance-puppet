@@ -1,4 +1,4 @@
-mount_nfs: true
+mount_nfs: false
 profile::wmcs::nfs::standalone::cinder_attached: true
 profile::wmcs::nfs::standalone::volumes:
 - tools
