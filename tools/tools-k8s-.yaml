@@ -1,1 +1,2 @@
+profile::toolforge::k8s::kubernetes_version: 1.21.8
 profile::wmcs::kubeadm::label_custom_domain: toolforge.org
