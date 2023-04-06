@@ -1,1 +1,1 @@
-- role::wmcs::db::toolsdb_secondary
+- role::wmcs::db::toolsdb_primary
