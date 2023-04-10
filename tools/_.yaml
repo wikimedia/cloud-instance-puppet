@@ -78,7 +78,7 @@ profile::toolforge::k8s::typha_enabled: true
 profile::toolforge::proxies:
 - tools-proxy-05.tools.eqiad.wmflabs
 - tools-proxy-06.tools.eqiad.wmflabs
-profile::wmcs::kubeadm::component: thirdparty/kubeadm-k8s-1-21
+profile::wmcs::kubeadm::component: thirdparty/kubeadm-k8s-1-22
 prometheus::node_exporter::ignored_fs_types: ^(overlay|autofs|binfmt_misc|cgroup|configfs|debugfs|devpts|devtmpfs|fusectl|hugetlbfs|mqueue|nfs.*|nsfs|proc|procfs|pstore|rpc_pipefs|securityfs|sysfs|tracefs)$
 prometheus_nodes:
 - tools-prometheus-6.tools.eqiad1.wikimedia.cloud
