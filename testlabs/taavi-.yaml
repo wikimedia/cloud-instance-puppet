@@ -1,2 +1,3 @@
 profile::ssh::ca::ca_key_id: testlabs taavi ssh ca
 profile::ssh::ca::ca_key_secret: ssh/ssh_ca/ca
+profile::ssh::server::use_ca_signed_host_keys: true
