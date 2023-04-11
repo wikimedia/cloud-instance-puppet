@@ -17,7 +17,8 @@ profile::wmcs::novaproxy::xff_fqdns:
 - utrs-beta.wmflabs.org
 - utrs.wmflabs.org
 - xtools.wmflabs.org
-- xtools-dev.wmflabs.org
+- xtools.wmcloud.org
+- xtools-dev.wmcloud.org
 - ws-export.wmcloud.org
 - ircwebchat.wmcloud.org
 - wikiwho-api.wmcloud.org
