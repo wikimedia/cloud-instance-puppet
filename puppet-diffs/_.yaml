@@ -13,6 +13,9 @@ mount_nfs: true
 profile::java::java_packages:
 - variant: jre-headless
   version: '11'
+profile::ldap::client::labs::restricted_to:
+- ops
+- sre-admins
 profile::puppet_compiler::cloud_puppetmaster: puppetmaster.cloudinfra.wmflabs.org
 profile::puppetdb::database::shared_buffers: 2048MB
 profile::puppetdb::filter_job_id: false
