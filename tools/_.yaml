@@ -62,6 +62,7 @@ profile::toolforge::active_mail_relay: tools-mail-03.tools.eqiad1.wikimedia.clou
 profile::toolforge::active_proxy_host: tools-proxy-06
 profile::toolforge::checker_hosts:
 - tools-checker-04.tools.eqiad1.wikimedia.cloud
+profile::toolforge::disable_tool::disable_tool_db_host: tools.db.svc.wikimedia.cloud
 profile::toolforge::etcdir: /var/lib/gridengine/etc
 profile::toolforge::grid::base::collectors: /data/project/.system_sge/gridengine/collectors
 profile::toolforge::grid::base::geconf: /data/project/.system_sge/gridengine
