@@ -1,2 +1,3 @@
 - role::wmcs::nfs::standalone
 - profile::wmcs::services::toolsdb_replica_cnf
+- profile::toolforge::nfs_disable_tool
