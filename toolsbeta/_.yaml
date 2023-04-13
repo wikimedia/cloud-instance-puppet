@@ -68,6 +68,7 @@ profile::toolforge::active_proxy_host: toolsbeta-proxy-3
 profile::toolforge::canonical_domain: toolsbeta.wmflabs.org
 profile::toolforge::canonical_scheme: http://
 profile::toolforge::disable_tool::disable_tool_db_host: tools.db.svc.wikimedia.cloud
+profile::toolforge::disable_tool::disable_tool_db_password: dummy
 profile::toolforge::docker::registry::active_node: toolsbeta-docker-registry-02.toolsbeta.eqiad1.wikimedia.cloud
 profile::toolforge::docker::registry::standby_node: undef
 profile::toolforge::elasticsearch::keepalived::host_priority: 100
