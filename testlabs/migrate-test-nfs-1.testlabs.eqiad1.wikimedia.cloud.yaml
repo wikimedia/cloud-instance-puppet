@@ -1,6 +1,6 @@
 mount_nfs: false
 profile::base::enable_kafka_shipping: false
-profile::wmcs::nfs::standalone::cinder_attached: true
+profile::wmcs::nfs::standalone::cinder_attached: false
 profile::wmcs::nfs::standalone::volumes:
 - migrate-test-nfs
 test::bd808::T329589: will it log to git?
