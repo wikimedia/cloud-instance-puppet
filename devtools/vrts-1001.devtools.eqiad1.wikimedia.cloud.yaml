@@ -1,3 +1,4 @@
 profile::vrts::active_host: vrts-1001.devtools.eqiad1.wikimedia.cloud
 profile::vrts::database_port: '3306'
+profile::vrts::db_datadir: /srv/sqldata
 profile::vrts::download_url: https://download.znuny.org/releases
