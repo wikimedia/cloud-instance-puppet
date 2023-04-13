@@ -1,2 +1,4 @@
+classes:
+- role::puppetdb
 profile::puppetdb::master: '%{facts.networking.fqdn}'
 puppetmaster: pm7.puppet-dev.eqiad1.wikimedia.cloud
