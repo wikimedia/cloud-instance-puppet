@@ -1,1 +1,3 @@
+profile::puppetserver::puppetdb_urls:
+- db7.puppet-dev.eqiad1.wikimedia.cloud
 puppetmaster: project-pm.puppet-dev.eqiad1.wikimedia.cloud
