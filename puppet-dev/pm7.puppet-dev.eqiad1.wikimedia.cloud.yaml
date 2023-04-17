@@ -1,4 +1,3 @@
-profile::puppet::agent::enable_puppet7: false
 profile::puppetserver::puppetdb_urls:
 - https://db7.puppet-dev.eqiad1.wikimedia.cloud
 puppetmaster: project-pm.puppet-dev.eqiad1.wikimedia.cloud
