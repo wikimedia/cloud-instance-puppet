@@ -1,2 +1,3 @@
 profile::gerrit::ipv4: 172.16.7.3
 profile::gerrit::java_home: /usr/lib/jvm/java-17-openjdk-amd64
+profile::gerrit::migration::daemon_user: gerrit2
