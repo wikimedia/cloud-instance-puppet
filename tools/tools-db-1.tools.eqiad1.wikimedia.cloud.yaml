@@ -1,3 +1,4 @@
+mariadb::heartbeat::shard: toolsdb
 profile::wmcs::services::toolsdb::rebuild: true
 profile::wmcs::services::toolsdb::rebuild_primary: tools-db-1.tools.eqiad1.wikimedia.cloud
 profile::wmcs::services::toolsdb::rebuild_secondary: tools-db-2.tools.eqiad1.wikimedia.cloud
