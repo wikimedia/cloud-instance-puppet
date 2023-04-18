@@ -1,6 +1,9 @@
 profile::configmaster::server_aliases: []
 profile::configmaster::server_name: config-master.wikimedia.beta.wmflabs.org
 profile::services_proxy::envoy::ensure: absent
+profile::ssh::ca::ca_key_id: deployment-prep SSH CA key v1
+profile::ssh::ca::ca_key_secret: ssh/ca/ssh-ca
+profile::ssh::ca::ensure: present
 profile::tlsproxy::envoy::access_log: true
 profile::tlsproxy::envoy::capitalize_headers: true
 profile::tlsproxy::envoy::cfssl_options:
