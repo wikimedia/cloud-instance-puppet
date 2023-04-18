@@ -50,6 +50,7 @@ profile::puppetboard::query_endpoints_override:
 - fact-paths
 - nodes
 profile::puppetboard::vhost: pdev-puppetboard.wmcloud.org
+profile::puppetboard::vhost_saml: null
 profile::puppetboard::vhost_staging: null
 profile::puppetboard:page_title: WMF Puppetboard (development)
 puppetmaster: pm7.puppet-dev.eqiad1.wikimedia.cloud
