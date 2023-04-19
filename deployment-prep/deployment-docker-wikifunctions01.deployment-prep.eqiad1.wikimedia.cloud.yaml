@@ -78,7 +78,8 @@ profile::docker::runner::service_defs:
       FUNCTION_EVALUATOR_URL: https://wikifunctions-evaluator-beta.wmflabs.org/1/v1/evaluate/
       NODE_TLS_REJECT_UNAUTHORIZED: '0'
       WIKI_API_URL: https://wikifunctions.beta.wmflabs.org/w/api.php
-    namespace: wikimedia
+    image_name: function-orchestrator
+    namespace: repos/abstract-wiki/wikifunctions
     override_cmd: -c /etc/mediawiki-services-function-orchestrator/config.yaml
     port: 6254
     version: latest
