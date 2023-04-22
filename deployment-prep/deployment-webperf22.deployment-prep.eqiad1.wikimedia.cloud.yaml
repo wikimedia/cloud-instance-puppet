@@ -1,5 +1,5 @@
 profile::webperf::arclamp::compress_logs_days: 3
-profile::webperf::arclamp::errors_mailto: dpifke@wikimedia.org
+profile::webperf::arclamp::errors_mailto: performance-team-alert@wikimedia.org
 profile::webperf::arclamp::redis_host: deployment-mwlog01.deployment-prep.eqiad1.wikimedia.cloud
 profile::webperf::arclamp::redis_port: 6379
 profile::webperf::arclamp::retain_daily_logs_days: 90
