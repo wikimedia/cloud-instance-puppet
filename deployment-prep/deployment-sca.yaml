@@ -1,8 +1,0 @@
-profile::cxserver::ratelimit_hosts:
-- deployment-sca01.deployment-prep.eqiad.wmflabs
-- deployment-sca02.deployment-prep.eqiad.wmflabs
-profile::cxserver::ratelimit_port: 3051
-profile::recommendation_api::dbhost: deployment-db03.deployment-prep.eqiad.wmflabs
-profile::recommendation_api::dbname: recommendationapi
-profile::recommendation_api::dbuser: recommendationapiservice
-recommendation_api::wdqs_uri: wdqs-test.wmflabs.org
