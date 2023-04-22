@@ -1,0 +1,2 @@
+arclamp_host: deployment-webperf22.deployment-prep.eqiad1.wikimedia.cloud
+profile::webperf::site::xhgui_host: deployment-xhgui03.deployment-prep.eqiad.wmflabs
