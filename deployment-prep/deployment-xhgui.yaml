@@ -1,6 +1,6 @@
 profile::webperf::xhgui::mysql_admin_password: ei9Eim3cThoh7iet
 profile::webperf::xhgui::mysql_admin_user: xhguiadmin
 profile::webperf::xhgui::mysql_db: xhgui
-profile::webperf::xhgui::mysql_host: deployment-mdb02.deployment-prep.eqiad.wmflabs
+profile::webperf::xhgui::mysql_host: deployment-mdb02.deployment-prep.eqiad1.wikimedia.cloud
 profile::webperf::xhgui::mysql_password: Thiz8Ev8Xetho8mu
 profile::webperf::xhgui::mysql_user: xhgui
