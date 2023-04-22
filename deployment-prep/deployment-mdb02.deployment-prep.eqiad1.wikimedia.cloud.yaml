@@ -1,1 +1,2 @@
 mariadb::config::basedir: /opt/wmf-mariadb101
+profile::mariadb::section_ports: {}
