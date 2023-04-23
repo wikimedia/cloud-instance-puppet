@@ -2,4 +2,5 @@ arclamp_host: deployment-webperf22.deployment-prep.eqiad1.wikimedia.cloud
 profile::webperf::site::excimer_mysql_host: deployment-db13.deployment-prep.eqiad1.wikimedia.cloud
 profile::webperf::site::excimer_mysql_password: PoK9JCfy4Y3JmuUiRnHNiJs
 profile::webperf::site::excimer_mysql_user: excimer-ui-server
+profile::webperf::site::excimer_trusted: 172.16.0.0/12
 profile::webperf::site::xhgui_host: deployment-xhgui03.deployment-prep.eqiad.wmflabs
