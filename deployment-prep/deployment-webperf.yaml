@@ -1,4 +1,7 @@
 arclamp_host: deployment-webperf22.deployment-prep.eqiad1.wikimedia.cloud
+profile::tlsproxy::envoy::capitalize_headers: false
+profile::tlsproxy::envoy::global_cert_name: '%{facts.fqdn}'
+profile::tlsproxy::envoy::sni_support: 'no'
 profile::webperf::site::excimer_mysql_host: deployment-db13.deployment-prep.eqiad1.wikimedia.cloud
 profile::webperf::site::excimer_mysql_password: PoK9JCfy4Y3JmuUiRnHNiJs
 profile::webperf::site::excimer_mysql_user: excimer-ui-server
