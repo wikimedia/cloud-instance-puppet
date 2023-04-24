@@ -1,1 +1,2 @@
 profile::puppet::agent::enable_puppet7: true
+profile::puppet::agent::environment: puppet7
