@@ -1,2 +1,3 @@
 profile::puppet::agent::enable_puppet7: false
+profile::puppet::agent::environment: production
 role::puppetmaster::standalone::autosign: true
