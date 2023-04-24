@@ -36,8 +36,8 @@ profile::docker::runner::service_defs:
         module: ./app.js
         name: function-evaluator
       worker_heap_limit_mb: 500
-    image_name: function-evaluator
-    namespace: repos/abstract-wiki/wikifunctions
+    image_name: omnibus
+    namespace: repos/abstract-wiki/wikifunctions/function-evaluator
     override_cmd: -c /etc/mediawiki-services-function-evaluator/config.yaml
     port: 6927
     runtime: runsc
