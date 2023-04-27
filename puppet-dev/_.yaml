@@ -1,2 +1,1 @@
-profile::puppet::agent::environment: puppet7
 profile::puppet::agent::force_puppet7: true
