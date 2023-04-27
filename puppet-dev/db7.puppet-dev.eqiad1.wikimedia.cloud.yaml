@@ -1,3 +1,5 @@
 profile::puppetdb::master: '%{facts.networking.fqdn}'
+profile::puppetdb::puppetboard_hosts:
+- puppetboard1001.puppet-dev.eqiad1.wikimedia.cloud
 'profile::puppetdb::tmpfs_stockpile_queue:': false
 puppetmaster: pm7.puppet-dev.eqiad1.wikimedia.cloud
