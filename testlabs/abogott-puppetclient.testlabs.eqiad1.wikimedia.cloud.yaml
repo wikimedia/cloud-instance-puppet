@@ -1,4 +1,5 @@
 mount_nfs: true
 profile::openstack::base::keystone_api_fqdn: fakehost.example.org
 profile::openstack::base::ldap_user_pass: fake_openstack_password
+profile::openstack::base::nova::db_pass: fake_db_password
 puppetmaster: abogott-puppetmaster.testlabs.eqiad.wmflabs
