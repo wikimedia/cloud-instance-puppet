@@ -73,6 +73,8 @@ profile::toolforge::grid::cronrunner::active_host: '%{alias(''profile::toolforge
 profile::toolforge::grid::webservicemonitor::active_host: '%{alias(''profile::toolforge::active_cronrunner'')}'
 profile::toolforge::harbor::url: tools-harbor.wmcloud.org
 profile::toolforge::k8s::client::buildservice_repository: tools-harbor.wmcloud.org
+profile::toolforge::prometheus::blackbox_pingthing_http_check_url:
+- https://tools-harbor.wmcloud.org/api/v2.0/ping
 profile::toolforge::proxies:
 - tools-proxy-05.tools.eqiad.wmflabs
 - tools-proxy-06.tools.eqiad.wmflabs
