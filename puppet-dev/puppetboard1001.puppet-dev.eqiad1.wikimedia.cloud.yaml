@@ -40,7 +40,7 @@ profile::puppetboard::graph_facts_override:
 - virtual
 profile::puppetboard::graph_type: donut
 profile::puppetboard::localise_timestamp: true
-profile::puppetboard::puppetdb_host: pd7.puppet-dev.eqiad1.wikimedia.cloud
+profile::puppetboard::puppetdb_host: db7.puppet-dev.eqiad1.wikimedia.cloud
 profile::puppetboard::puppetdb_port: 443
 profile::puppetboard::puppetdb_proto: https
 profile::puppetboard::query_endpoints_override:
