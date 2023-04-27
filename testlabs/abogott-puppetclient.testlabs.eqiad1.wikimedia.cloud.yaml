@@ -1,6 +1,7 @@
 mount_nfs: true
 profile::openstack::base::designate::wmflabsdotorg_admin: domainadminname
 profile::openstack::base::designate::wmflabsdotorg_pass: domainadminpass
+profile::openstack::base::designate::wmflabsdotorg_project: wmflabsdotorgproject
 profile::openstack::base::keystone_api_fqdn: fakehost.example.org
 profile::openstack::base::ldap_user_pass: fake_openstack_password
 profile::openstack::base::nova::db_pass: fake_db_password
