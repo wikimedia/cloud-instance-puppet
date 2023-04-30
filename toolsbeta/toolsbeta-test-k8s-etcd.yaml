@@ -1,12 +1,10 @@
 profile::etcd::cluster_bootstrap: false
 profile::puppet::agent::dns_alt_names:
-- toolsbeta-test-k8s-etcd-18.toolsbeta.eqiad1.wikimedia.cloud
 - toolsbeta-test-k8s-etcd-19.toolsbeta.eqiad1.wikimedia.cloud
 - toolsbeta-test-k8s-etcd-20.toolsbeta.eqiad1.wikimedia.cloud
 - toolsbeta-test-k8s-etcd-21.toolsbeta.eqiad1.wikimedia.cloud
 - toolsbeta-test-k8s-etcd-22.toolsbeta.eqiad1.wikimedia.cloud
 profile::toolforge::k8s::etcd_nodes:
-- toolsbeta-test-k8s-etcd-18.toolsbeta.eqiad1.wikimedia.cloud
 - toolsbeta-test-k8s-etcd-19.toolsbeta.eqiad1.wikimedia.cloud
 - toolsbeta-test-k8s-etcd-20.toolsbeta.eqiad1.wikimedia.cloud
 - toolsbeta-test-k8s-etcd-21.toolsbeta.eqiad1.wikimedia.cloud
