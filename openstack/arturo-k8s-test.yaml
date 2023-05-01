@@ -1,4 +1,0 @@
-profile::base::puppet::dns_alt_names:
-- test1
-- test2
-puppetmaster: openstack-puppetmaster-01.openstack.eqiad.wmflabs
