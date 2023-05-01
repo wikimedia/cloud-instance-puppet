@@ -1,8 +1,0 @@
-role::analytics::kafka::config::cluster_config:
-  kafka-event-bus:
-    kafka-event-bus.services.eqiad.wmflabs:
-      id: '1'
-role::analytics::kafka::config::kafka_cluster_name: kafka-event-bus
-trebuchet::deployment-server: services-deploy
-zookeeper_hosts:
-  kafka-event-bus.services.eqiad.wmflabs: '1'
