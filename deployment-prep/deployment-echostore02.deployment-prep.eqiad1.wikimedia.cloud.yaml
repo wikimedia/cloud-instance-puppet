@@ -1,8 +1,5 @@
 profile::cassandra::instances:
   deployment-echostore02.deployment-prep.eqiad1.wikimedia.cloud: {}
-profile::cassandra::settings:
-  logstash_host: deployment-logstash03.deployment-prep.eqiad.wmflabs
-  target_version: dev
 profile::docker::engine::declare_service: true
 profile::docker::engine::packagename: docker.io
 profile::docker::engine::settings: {}
