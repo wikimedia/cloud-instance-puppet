@@ -1,5 +1,7 @@
 profile::cassandra::instances:
   deployment-echostore02.deployment-prep.eqiad1.wikimedia.cloud: {}
+profile::cassandra::settings:
+  target_version: dev
 profile::docker::engine::declare_service: true
 profile::docker::engine::packagename: docker.io
 profile::docker::engine::settings: {}
