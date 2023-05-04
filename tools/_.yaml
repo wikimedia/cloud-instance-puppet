@@ -75,6 +75,7 @@ profile::toolforge::harbor::url: tools-harbor.wmcloud.org
 profile::toolforge::k8s::client::buildservice_repository: tools-harbor.wmcloud.org
 profile::toolforge::prometheus::probes_pingthing_http_check_urls:
 - https://tools-harbor.wmcloud.org/api/v2.0/ping
+- https://toolsbeta-harbor.wmcloud.org/api/v2.0/ping
 profile::toolforge::proxies:
 - tools-proxy-05.tools.eqiad.wmflabs
 - tools-proxy-06.tools.eqiad.wmflabs
