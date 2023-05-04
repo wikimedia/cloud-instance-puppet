@@ -91,7 +91,6 @@ profile::toolforge::k8s::ingress_replicas: 3
 profile::toolforge::k8s::kubernetes_version: 1.21.8
 profile::toolforge::mailrelay::external_hostname: mail.tools.wmflabs.org
 profile::toolforge::prometheus::probes_pingthing_http_check_urls:
-- https://tools-harbor.wmcloud.org/api/v2.0/ping
 - https://toolsbeta-harbor.wmcloud.org/api/v2.0/ping
 profile::toolforge::proxies:
 - toolsbeta-proxy-3.toolsbeta.eqiad1.wikimedia.cloud
