@@ -9,19 +9,23 @@ profile::acme_chief::accounts:
 profile::acme_chief::active: toolsbeta-acme-chief-01.toolsbeta.eqiad.wmflabs
 profile::acme_chief::certificates:
   toolforge:
-    CN: toolsbeta.wmflabs.org
+    CN: beta.toolforge.org
     SNI:
     - toolsbeta.wmflabs.org
     - '*.toolsbeta.wmflabs.org'
+    - beta.toolforge.org
+    - '*.beta.toolforge.org'
     authorized_regexes:
     - ^.+\.toolsbeta\.eqiad1\.wikimedia\.cloud$
     - ^.+\.toolsbeta\.eqiad\.wmflabs$
     challenge: dns-01
   toolsbeta:
-    CN: toolsbeta.wmflabs.org
+    CN: beta.toolforge.org
     SNI:
     - toolsbeta.wmflabs.org
     - '*.toolsbeta.wmflabs.org'
+    - beta.toolforge.org
+    - '*.beta.toolforge.org'
     authorized_regexes:
     - ^.+\.toolsbeta\.eqiad1\.wikimedia\.cloud$
     - ^.+\.toolsbeta\.eqiad\.wmflabs$
