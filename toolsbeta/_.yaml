@@ -65,7 +65,7 @@ profile::ssh::server::explicit_macs: false
 profile::toolforge::active_cronrunner: toolsbeta-sgecron-02.toolsbeta.eqiad1.wikimedia.cloud
 profile::toolforge::active_mail_relay: tools-mail-02.tools.eqiad.wmflabs
 profile::toolforge::active_proxy_host: toolsbeta-proxy-3
-profile::toolforge::canonical_domain: toolsbeta.wmflabs.org
+profile::toolforge::canonical_domain: beta.toolforge.org
 profile::toolforge::canonical_scheme: http://
 profile::toolforge::disable_tool::disable_tool_db_host: tools.db.svc.wikimedia.cloud
 profile::toolforge::disable_tool::disable_tool_db_password: dummy
@@ -97,6 +97,7 @@ profile::toolforge::proxies:
 - toolsbeta-proxy-4.toolsbeta.eqiad1.wikimedia.cloud
 profile::toolforge::services::active_node: tools-services-05.tools.eqiad1.wikimedia.cloud
 profile::toolforge::services::updatetools_enabled: false
+profile::toolforge::web_domain: beta.toolforge.org
 profile::wmcs::kubeadm::component: thirdparty/kubeadm-k8s-1-22
 prometheus::haproxy_exporter::endpoint: http://localhost:9900/stats;csv
 prometheus_nodes:
