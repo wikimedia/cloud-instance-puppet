@@ -1,2 +1,2 @@
 - role::wmcs::openstack::eqiad1::puppetmaster::encapi
-- profile::base::firewall::extra
+- profile::wmcs::firewall
