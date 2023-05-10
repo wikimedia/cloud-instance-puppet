@@ -1,10 +1,10 @@
-lvs::realserver::realserver_ips:
-- 127.0.0.1
 profile::cassandra::instances:
   deployment-restbase04.deployment-prep.eqiad1.wikimedia.cloud: {}
 profile::java::java_packages:
 - variant: jdk
   version: '8'
+profile::lvs::realserver::realserver_ips:
+- 127.0.0.1
 profile::restbase::hosts:
 - deployment-restbase04.deployment-prep.eqiad1.wikimedia.cloud
 profile::restbase::seeds_ng:
