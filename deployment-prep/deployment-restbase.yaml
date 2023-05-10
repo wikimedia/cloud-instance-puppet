@@ -1,3 +1,5 @@
+lvs::realserver::realserver_ips:
+- 127.0.0.1
 profile::cassandra::instances:
   deployment-restbase04.deployment-prep.eqiad1.wikimedia.cloud: {}
 profile::java::java_packages:
