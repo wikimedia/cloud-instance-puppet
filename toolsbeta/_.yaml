@@ -62,6 +62,7 @@ profile::ssh::server::disable_agent_forwarding: false
 profile::ssh::server::disable_nist_kex: false
 profile::ssh::server::enable_hba: true
 profile::ssh::server::explicit_macs: false
+profile::ssh::server::use_ca_signed_host_keys: true
 profile::toolforge::active_cronrunner: toolsbeta-sgecron-02.toolsbeta.eqiad1.wikimedia.cloud
 profile::toolforge::active_mail_relay: tools-mail-02.tools.eqiad.wmflabs
 profile::toolforge::active_proxy_host: toolsbeta-proxy-3
