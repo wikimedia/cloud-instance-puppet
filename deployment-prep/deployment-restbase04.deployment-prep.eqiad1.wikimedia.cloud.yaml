@@ -1,1 +1,7 @@
-{}
+service::catalog:
+  restbase:
+    description: Restbase dummy service config
+    ip:
+      eqiad:
+        default: 172.16.3.186
+    page: false
