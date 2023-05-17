@@ -1,0 +1,7 @@
+profile::cassandra::settings:
+  cluster_name: sessions-beta
+  default_instance_params:
+    rpc_address: '%{::ipaddress}'
+  listen_address: '%{::ipaddress}'
+  logstash_host: deployment-logstash03.deployment-prep.eqiad.wmflabs
+  target_version: dev
