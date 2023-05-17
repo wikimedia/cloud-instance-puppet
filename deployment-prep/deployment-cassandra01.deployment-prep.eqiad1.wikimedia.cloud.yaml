@@ -1,6 +1,0 @@
-profile::java::java_packages:
-- variant: jdk-headless
-  version: '8'
-- variant: jdk-headless
-  version: '11'
-puppetmaster: deployment-puppetmaster04.deployment-prep.eqiad.wmflabs
