@@ -6,7 +6,7 @@ profile::cassandra::settings:
     rpc_address: '%{::ipaddress}'
   listen_address: '%{::ipaddress}'
   logstash_host: deployment-logstash03.deployment-prep.eqiad.wmflabs
-  target_version: dev
+  target_version: 4.x
 profile::java::java_packages:
 - variant: jdk-headless
   version: '8'
