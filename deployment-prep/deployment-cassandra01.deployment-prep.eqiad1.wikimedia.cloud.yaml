@@ -1,0 +1,16 @@
+profile::cassandra::instances:
+  deployment-cassandra01.deployment-prep.eqiad1.wikimedia.cloud: {}
+  deployment-cassandra02.deployment-prep.eqiad1.wikimedia.cloud: {}
+profile::cassandra::settings:
+  cluster_name: upgrade_testing
+  default_instance_params:
+    rpc_address: '%{::ipaddress}'
+  listen_address: '%{::ipaddress}'
+  logstash_host: deployment-logstash03.deployment-prep.eqiad.wmflabs
+  target_version: dev
+profile::java::java_packages:
+- variant: jdk-headless
+  version: '8'
+- variant: jdk-headless
+  version: '11'
+puppetmaster: deployment-puppetmaster04.deployment-prep.eqiad.wmflabs
