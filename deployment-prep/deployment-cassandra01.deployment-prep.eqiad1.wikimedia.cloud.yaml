@@ -1,5 +1,6 @@
 profile::cassandra::instances:
   deployment-cassandra01.deployment-prep.eqiad1.wikimedia.cloud: {}
+  deployment-cassandra02.deployment-prep.eqiad1.wikimedia.cloud: {}
 profile::cassandra::settings:
   cluster_name: upgrade_testing
   default_instance_params:
