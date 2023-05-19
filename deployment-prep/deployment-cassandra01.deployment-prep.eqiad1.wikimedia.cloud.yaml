@@ -4,9 +4,9 @@ profile::cassandra::instances:
 profile::cassandra::settings:
   cluster_name: upgrade_testing
   default_instance_params:
+    internode_encryption: all
+    legacy_ssl_storage_port_enabled: true
     rpc_address: '%{::ipaddress}'
-  internode_encryption: all
-  legacy_ssl_storage_port_enabled: true
   listen_address: '%{::ipaddress}'
   logstash_host: deployment-logstash03.deployment-prep.eqiad.wmflabs
   target_version: 4.x
