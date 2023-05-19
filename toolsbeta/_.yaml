@@ -101,6 +101,8 @@ profile::toolforge::services::updatetools_enabled: false
 profile::toolforge::web_domain: beta.toolforge.org
 profile::wmcs::kubeadm::component: thirdparty/kubeadm-k8s-1-22
 prometheus::haproxy_exporter::endpoint: http://localhost:9900/stats;csv
+prometheus::node_exporter::collectors_extra:
+- processes
 prometheus_nodes:
 - toolsbeta-prometheus-1.toolsbeta.eqiad1.wikimedia.cloud
 puppetmaster: toolsbeta-puppetmaster-04.toolsbeta.eqiad.wmflabs
