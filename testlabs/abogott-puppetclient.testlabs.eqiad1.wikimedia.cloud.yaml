@@ -1,4 +1,5 @@
 mount_nfs: true
+profile::cloudceph::client::rbd::pool: poolname
 profile::cloudceph::data_dir: /nowhere
 profile::openstack::base::designate::wmflabsdotorg_admin: domainadminname
 profile::openstack::base::designate::wmflabsdotorg_pass: domainadminpass
