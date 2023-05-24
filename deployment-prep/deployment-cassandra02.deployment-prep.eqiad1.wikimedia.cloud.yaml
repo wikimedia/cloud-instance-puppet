@@ -4,6 +4,7 @@ profile::cassandra::instances:
 profile::cassandra::settings:
   cluster_name: upgrade_testing
   default_instance_params:
+    client_encryption_enabled: true
     internode_encryption: all
     legacy_ssl_storage_port_enabled: true
     rpc_address: '%{::ipaddress}'
