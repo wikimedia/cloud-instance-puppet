@@ -1,2 +1,3 @@
 ::lvs::realserver::realserver_ips:
 - 172.16.0.140
+puppetmaster: deployment-puppetmaster04.deployment-prep.eqiad.wmflabs
