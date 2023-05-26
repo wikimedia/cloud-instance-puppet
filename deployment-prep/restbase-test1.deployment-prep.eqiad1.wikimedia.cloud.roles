@@ -1,2 +1,2 @@
 - role::restbase::production
-- ::profile::base::production
+- profile::base::production
