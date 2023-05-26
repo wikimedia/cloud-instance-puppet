@@ -1,2 +1,5 @@
+::labsdnsconfig:
+  recursor: ns-recursor0.openstack.eqiad1.wikimediacloud.org
+  recursor_secondary: ns-recursor1.openstack.eqiad1.wikimediacloud.org
 ::lvs::realserver::realserver_ips:
 - 172.16.0.140
