@@ -1,1 +1,2 @@
+mount_nfs: true
 role::simplestatic::base_path: /srv/static
