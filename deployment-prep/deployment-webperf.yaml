@@ -3,7 +3,7 @@ profile::tlsproxy::envoy::capitalize_headers: false
 profile::tlsproxy::envoy::global_cert_name: '%{facts.fqdn}'
 profile::tlsproxy::envoy::sni_support: 'no'
 profile::webperf::site::excimer_mysql_db: excimer
-profile::webperf::site::excimer_mysql_host: deployment-db13.deployment-prep.eqiad1.wikimedia.cloud
+profile::webperf::site::excimer_mysql_host: deployment-db11.deployment-prep.eqiad1.wikimedia.cloud
 profile::webperf::site::excimer_mysql_password: PoK9JCfy4Y3JmuUiRnHNiJs
 profile::webperf::site::excimer_mysql_user: excimer_ui_server
 profile::webperf::site::excimer_trusted: 172.16.0.0/12
