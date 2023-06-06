@@ -33,23 +33,12 @@ profile::cache::ssl::wikibase::monitoring: false
 profile::cache::varnish::backend::be_extra_vcl:
 - text-common
 - normalize_path
-profile::cache::varnish::backend::be_vcl_config:
-  pass_random: true
-profile::cache::varnish::common_vcl_config:
-  allowed_methods: ^(GET|HEAD|OPTIONS|PATCH|POST|PURGE|PUT|DELETE)$
-  maps_domain: maps.beta.wmflabs.org
-  purge_host_regex: ^(?!(upload|upload\.wikimedia|maps)\.beta\.wmflabs\.org)
-  shortener_domain: w-beta.wmflabs.org
-  static_host: en.wikipedia.beta.wmflabs.org
-  top_domain: beta.wmflabs.org
-  upload_domain: upload.wikimedia.beta.wmflabs.org
-  upload_webp_hits_threshold: 1000
 profile::cache::varnish::frontend::fe_extra_vcl:
 - normalize_path
 - geoip
 profile::cache::varnish::frontend::fe_vcl_config:
   admission_policy: none
-  allowed_methods: ^(GET|HEAD|OPTIONS|POST|PURGE|PUT|DELETE)$
+  allowed_methods: ^(GET|HEAD|OPTIONS|PATCH|POST|PURGE|PUT|DELETE)$
   enable_geoiplookup: true
   keep: 1d
   large_objects_cutoff: 262144
