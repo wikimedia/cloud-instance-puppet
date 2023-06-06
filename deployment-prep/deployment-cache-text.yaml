@@ -36,7 +36,7 @@ profile::cache::varnish::backend::be_extra_vcl:
 profile::cache::varnish::backend::be_vcl_config:
   pass_random: true
 profile::cache::varnish::common_vcl_config:
-  allowed_methods: ^(GET|HEAD|OPTIONS|POST|PURGE|PUT|DELETE)$
+  allowed_methods: ^(GET|HEAD|OPTIONS|PATCH|POST|PURGE|PUT|DELETE)$
   maps_domain: maps.beta.wmflabs.org
   purge_host_regex: ^(?!(upload|upload\.wikimedia|maps)\.beta\.wmflabs\.org)
   shortener_domain: w-beta.wmflabs.org
