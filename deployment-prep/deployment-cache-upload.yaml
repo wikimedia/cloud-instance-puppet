@@ -39,6 +39,7 @@ profile::cache::varnish::frontend::fe_vcl_config:
   keep: 1d
   large_objects_cutoff: 262144
   maps_domain: maps.beta.wmflabs.org
+  measure_domain_regex: ^measure-(eqiad|codfw|esams|ulsfo|eqsin|drmrs)\.wikimedia\.org$
   pass_random: false
   purge_host_regex: ^(upload|upload\.wikimedia|maps)\.beta\.wmflabs\.org$
   shortener_domain: w-beta.wmflabs.org
