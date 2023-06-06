@@ -16,20 +16,6 @@ profile::cache::ssl::unified::acme_chief: true
 profile::cache::ssl::unified::certs: []
 profile::cache::ssl::unified::certs_active: []
 profile::cache::ssl::unified::letsencrypt: false
-profile::cache::varnish::backend::be_extra_vcl:
-- upload-common
-- normalize_path
-profile::cache::varnish::backend::be_vcl_config:
-  pass_random: true
-profile::cache::varnish::common_vcl_config:
-  allowed_methods: ^(GET|HEAD|OPTIONS|POST|PURGE|PUT|DELETE)$
-  maps_domain: maps.beta.wmflabs.org
-  purge_host_regex: ^(?!(upload|upload\.wikimedia|maps)\.beta\.wmflabs\.org)
-  shortener_domain: w-beta.wmflabs.org
-  static_host: en.wikipedia.beta.wmflabs.org
-  top_domain: beta.wmflabs.org
-  upload_domain: upload.wikimedia.beta.wmflabs.org
-  upload_webp_hits_threshold: 1000
 profile::cache::varnish::frontend::fe_extra_vcl:
 - normalize_path
 profile::cache::varnish::frontend::fe_vcl_config:
