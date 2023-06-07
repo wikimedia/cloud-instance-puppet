@@ -6,7 +6,6 @@ profile::webperf::site::excimer_mysql_db: excimer
 profile::webperf::site::excimer_mysql_host: deployment-db11.deployment-prep.eqiad1.wikimedia.cloud
 profile::webperf::site::excimer_mysql_password: PoK9JCfy4Y3JmuUiRnHNiJs
 profile::webperf::site::excimer_mysql_user: excimer_ui_server
-profile::webperf::site::excimer_trusted: 172.16.0.0/12
 profile::webperf::site::private_name: '%{facts.fqdn}'
 profile::webperf::site::server_name: performance.wikimedia.beta.wmflabs.org
 profile::webperf::site::xhgui_host: deployment-xhgui03.deployment-prep.eqiad.wmflabs
