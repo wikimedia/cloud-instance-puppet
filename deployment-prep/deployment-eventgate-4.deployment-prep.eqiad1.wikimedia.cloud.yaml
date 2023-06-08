@@ -44,7 +44,7 @@ profile::docker::runner::service_defs:
           - eventgate-analytics.error.validation
           stream_config_recache_on_expire: true
           stream_config_ttl: 60
-          stream_config_uri: https://meta.wikimedia.beta.wmflabs.org/w/api.php?action=streamconfigs&format=json&all_settings&constraints=destination_event_service=eventgate-analytics&streams=<%=
+          stream_config_uri: https://meta.wikimedia.beta.wmflabs.org/w/api.php?action=streamconfigs&format=json&constraints=destination_event_service=eventgate-analytics&streams=<%=
             streams %>
           stream_config_uri_streams_delimiter: '|'
           stream_field: meta.stream
@@ -107,7 +107,7 @@ profile::docker::runner::service_defs:
           - eventgate-analytics-external.error.validation
           stream_config_recache_on_expire: true
           stream_config_ttl: 60
-          stream_config_uri: https://meta.wikimedia.beta.wmflabs.org/w/api.php?action=streamconfigs&format=json&all_settings&constraints=destination_event_service=eventgate-analytics-external&streams=<%=
+          stream_config_uri: https://meta.wikimedia.beta.wmflabs.org/w/api.php?action=streamconfigs&format=json&constraints=destination_event_service=eventgate-analytics-external&streams=<%=
             streams %>
           stream_config_uri_streams_delimiter: '|'
           stream_field: meta.stream
@@ -172,7 +172,7 @@ profile::docker::runner::service_defs:
           - mediawiki.client.error
           stream_config_recache_on_expire: true
           stream_config_ttl: 60
-          stream_config_uri: https://meta.wikimedia.beta.wmflabs.org/w/api.php?action=streamconfigs&format=json&all_settings&constraints=destination_event_service=eventgate-logging-external&streams=<%=
+          stream_config_uri: https://meta.wikimedia.beta.wmflabs.org/w/api.php?action=streamconfigs&format=json&constraints=destination_event_service=eventgate-logging-external&streams=<%=
             streams %>
           stream_config_uri_streams_delimiter: '|'
           stream_field: meta.stream
@@ -233,7 +233,7 @@ profile::docker::runner::service_defs:
           - eventgate-main.error.validation
           stream_config_recache_on_expire: true
           stream_config_ttl: 60
-          stream_config_uri: https://meta.wikimedia.beta.wmflabs.org/w/api.php?action=streamconfigs&format=json&all_settings&constraints=destination_event_service=eventgate-main&streams=<%=
+          stream_config_uri: https://meta.wikimedia.beta.wmflabs.org/w/api.php?action=streamconfigs&format=json&constraints=destination_event_service=eventgate-main&streams=<%=
             streams %>
           stream_config_uri_streams_delimiter: '|'
           stream_field: meta.stream
