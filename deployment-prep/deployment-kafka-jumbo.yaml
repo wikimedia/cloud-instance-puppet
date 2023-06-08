@@ -21,12 +21,12 @@ profile::kafka::broker::prometheus_monitoring_enabled: true
 profile::kafka::broker::ssl_enabled: true
 profile::kafka::broker::ssl_password: qwerty
 profile::kafka::broker::use_fixed_uid_gid: true
-profile::kafka::mirror::consumer_ssl_enabled: true
+profile::kafka::mirror::consumer_ssl_enabled: false
 profile::kafka::mirror::destination_cluster_name: jumbo-deployment-prep
+profile::kafka::mirror::producer_ssl_enabled: false
 profile::kafka::mirror::properties:
   num_streams: 4
   offset_commit_interval_ms: 5000
   producer_properties:
     batch.size: 65536
 profile::kafka::mirror::source_cluster_name: main
-profile::kafka::mirror::ssl_password: qwerty
