@@ -26,7 +26,7 @@ profile::docker::runner::service_defs:
           port: 8092
           schema_base_uris:
           - http://deployment-schema-3.deployment-prep.eqiad1.wikimedia.cloud/repositories/primary/jsonschema
-          - http://deployment-schema-3.deployment-prep.eqiad1.wikimedia.cloudrepositories/secondary/jsonschema
+          - http://deployment-schema-3.deployment-prep.eqiad1.wikimedia.cloud/repositories/secondary/jsonschema
           schema_latest_version: latest
           spec: ./spec.yaml
           stream_config_defaults:
