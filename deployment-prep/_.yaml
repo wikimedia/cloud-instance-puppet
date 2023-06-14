@@ -249,6 +249,7 @@ puppetdb_host: deployment-puppetdb03.deployment-prep.eqiad.wmflabs
 puppetmaster: deployment-puppetmaster04.deployment-prep.eqiad.wmflabs
 puppetmaster::geoip::fetch_private: false
 puppetmaster::geoip::use_proxy: false
+push_subscription_manager_password: nfSMHMKw4TwxnmuBYZVwsdb6
 pybal::configuration::config: etcd
 redis::shards:
   sessions:
