@@ -3,9 +3,8 @@ profile::java::java_packages:
   version: '8'
 profile::kafka::broker::auth_acls_enabled: true
 profile::kafka::broker::inter_broker_protocol_version: 1.1.0
-profile::kafka::broker::inter_broker_ssl_enabled: true
+profile::kafka::broker::inter_broker_ssl_enabled: false
 profile::kafka::broker::kafka_cluster_name: main
 profile::kafka::broker::monitoring_enabled: true
-profile::kafka::broker::ssl_enabled: true
-profile::kafka::broker::ssl_password: qwerty
+profile::kafka::broker::ssl_enabled: false
 profile::kafka::broker::use_fixed_uid_gid: true
