@@ -92,6 +92,7 @@ profile::cache::kafka::statsv::kafka_cluster_name: main-deployment-prep
 profile::cache::kafka::webrequest::kafka_cluster_name: jumbo-deployment-prep
 profile::cache::kafka::webrequest::ssl_enabled: true
 profile::cassandra::rack: rack1
+profile::cassandra::single_instance::super_pass: yimnepCykBadPylb
 profile::conftool::client::protocol: https
 profile::conftool::master::sync_dir: /etc/conftool/data-local
 profile::cpjobqueue::jobrunner_host: http://deployment-jobrunner04.deployment-prep.eqiad1.wikimedia.cloud:9006
@@ -123,8 +124,18 @@ profile::mail::mx::verp_bounce_post_url: http://meta.wikimedia.beta.wmflabs.org/
 profile::mail::mx::verp_domains:
 - beta.wmflabs.org
 profile::mail::mx::verp_post_connect_server: meta.wikimedia.beta.wmflabs.org
+profile::maps::apps::redis_pass: IlNijCeenZelteec
 profile::maps::apps::tilerator_ncpu_ratio: 0.3
+profile::maps::cassandra::kartotherian_pass: IacUvEebsyePerub
+profile::maps::cassandra::tilerator_pass: BlilraHewlEdRemt
+profile::maps::cassandra::tileratorui_pass: PikDityewcatNod1
 profile::maps::geoshapes::osm_password: viarcEgOucukAvwa
+profile::maps::osm_master::kartotherian_pass: viarcEgOucukAvwa
+profile::maps::osm_master::osmimporter_pass: shapfiwunogdujye
+profile::maps::osm_master::osmupdater_pass: FighnaHiSluEkjue
+profile::maps::osm_master::replication_pass: JokpypNivgoackec
+profile::maps::osm_master::tilerator_pass: SherbevawshocVie
+profile::maps::osm_master::tileratorui_pass: CreympUxwodyark1
 profile::mediawiki::mcrouter_wancache::has_ssl: false
 profile::mediawiki::mcrouter_wancache::use_onhost_memcached: false
 profile::mediawiki::php::icu63: true
@@ -181,6 +192,7 @@ profile::puppetmaster::common::puppetdb_host: deployment-puppetdb03.deployment-p
 profile::puppetmaster::common::puppetdb_hosts:
 - deployment-puppetdb03.deployment-prep.eqiad.wmflabs
 - deployment-puppetdb02.deployment-prep.eqiad.wmflabs
+profile::redis::master::password: IlNijCeenZelteec
 profile::restbase::salt_key: secretkey
 profile::rsyslog::kafka_shipper::enable: true
 profile::rsyslog::kafka_shipper::kafka_brokers:
