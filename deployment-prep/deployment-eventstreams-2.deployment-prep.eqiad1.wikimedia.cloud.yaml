@@ -25,8 +25,8 @@ profile::docker::runner::service_defs:
             statistics.interval.ms: 10000
           port: 8092
           schema_base_uris:
-          - https://schema-beta.wmflabs.org/repositories/primary/jsonschema
-          - https://schema-beta.wmflabs.org/repositories/secondary/jsonschema
+          - http://deployment-schema-3.deployment-prep.eqiad1.wikimedia.cloud/repositories/primary/jsonschema
+          - http://deployment-schema-3.deployment-prep.eqiad1.wikimedia.cloudrepositories/secondary/jsonschema
           schema_latest_version: latest
           spec: ./spec.yaml
           stream_config_defaults:
