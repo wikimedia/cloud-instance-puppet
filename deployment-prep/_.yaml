@@ -242,6 +242,8 @@ profile::swift::global_account_keys:
 profile::tlsproxy::envoy::ssl_provider: cfssl
 prometheus_nodes:
 - deployment-prometheus05.deployment-prep.eqiad1.wikimedia.cloud
+puppetdb::password::ro: ubEWQm7txCE6PKnukqjr
+puppetdb::password::rw: nssgABBGRBQJ7amR
 puppetdb_host: deployment-puppetdb03.deployment-prep.eqiad.wmflabs
 puppetmaster: deployment-puppetmaster04.deployment-prep.eqiad.wmflabs
 puppetmaster::geoip::fetch_private: false
