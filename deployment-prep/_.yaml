@@ -1,4 +1,4 @@
-acmechief_host: deployment-acme-chief03.deployment-prep.eqiad.wmflabs
+acmechief_host: deployment-acme-chief05.deployment-prep.eqiad1.wikimedia.cloud
 apt::use_experimental: true
 aptly::group: wikidev
 aptly::manage_nginx: false
