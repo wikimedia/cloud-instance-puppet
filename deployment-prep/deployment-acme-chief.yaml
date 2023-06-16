@@ -6,7 +6,7 @@ profile::acme_chief::accounts:
   0f076461095e47a9dce5334db021a891:
     directory: https://acme-v02.api.letsencrypt.org/directory
     regr: '{"body": {}, "uri": "https://acme-v02.api.letsencrypt.org/acme/acct/53552803"}'
-profile::acme_chief::active: deployment-acme-chief03.deployment-prep.eqiad.wmflabs
+profile::acme_chief::active: deployment-acme-chief05.deployment-prep.eqiad1.wikimedia.cloud
 profile::acme_chief::certificates:
   mx:
     CN: mail.beta.wmflabs.org
@@ -60,5 +60,4 @@ profile::acme_chief::cloud::designate_sync_region_name: eqiad1-r
 profile::acme_chief::cloud::designate_sync_tidyup_enabled: true
 profile::acme_chief::cloud::designate_sync_username: deployment-prep-dns-manager
 profile::acme_chief::passive:
-- deployment-acme-chief05.deployment-prep.eqiad1.wikimedia.cloud
 - deployment-acme-chief06.deployment-prep.eqiad1.wikimedia.cloud
