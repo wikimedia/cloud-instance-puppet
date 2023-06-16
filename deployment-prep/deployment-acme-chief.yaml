@@ -60,6 +60,5 @@ profile::acme_chief::cloud::designate_sync_region_name: eqiad1-r
 profile::acme_chief::cloud::designate_sync_tidyup_enabled: true
 profile::acme_chief::cloud::designate_sync_username: deployment-prep-dns-manager
 profile::acme_chief::passive:
-- deployment-acme-chief04.deployment-prep.eqiad.wmflabs
 - deployment-acme-chief05.deployment-prep.eqiad1.wikimedia.cloud
 - deployment-acme-chief06.deployment-prep.eqiad1.wikimedia.cloud
