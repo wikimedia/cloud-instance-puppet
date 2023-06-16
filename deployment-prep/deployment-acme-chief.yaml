@@ -44,6 +44,7 @@ profile::acme_chief::certificates:
     - '*.m.wiktionary.beta.wmflabs.org'
     authorized_regexes:
     - ^deployment-cache-(text|upload)07\.deployment-prep\.eqiad1\.wikimedia\.cloud$
+    - ^deployment-cache-(text|upload)08\.deployment-prep\.eqiad1\.wikimedia\.cloud$
     challenge: dns-01
 profile::acme_chief::challenges:
   dns-01:
