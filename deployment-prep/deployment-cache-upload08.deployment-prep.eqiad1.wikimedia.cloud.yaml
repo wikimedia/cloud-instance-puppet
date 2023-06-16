@@ -1,0 +1,7 @@
+cache::nodes:
+  upload:
+    eqiad:
+    - deployment-cache-upload08.deployment-prep.eqiad1.wikimedia.cloud
+cache::upload::nodes:
+  eqiad:
+  - deployment-cache-upload08.deployment-prep.eqiad1.wikimedia.cloud
