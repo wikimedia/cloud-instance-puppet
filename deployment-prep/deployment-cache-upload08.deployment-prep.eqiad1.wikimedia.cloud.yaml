@@ -5,3 +5,5 @@ cache::nodes:
 cache::upload::nodes:
   eqiad:
   - deployment-cache-upload08.deployment-prep.eqiad1.wikimedia.cloud
+profile::cache::haproxy::http_redirection_port: 80
+profile::cache::varnish::frontend::enable_http_redirection: false
