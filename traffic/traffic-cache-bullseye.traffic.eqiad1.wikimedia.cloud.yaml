@@ -1,12 +1,6 @@
 cache::alternate_domains:
   ores.beta.wmflabs.org:
     caching: pass
-cache::app_def_be_opts:
-  between_bytes_timeout: 31s
-  connect_timeout: 3s
-  first_byte_timeout: 63s
-  max_connections: 1000
-  port: 80
 cache::cluster: text
 cache::lua_support: true
 cache::nodes:
@@ -162,7 +156,6 @@ profile::cache::haproxy::h2settings:
   header_table_size: 4096
   initial_window_size: 65535
   max_concurrent_streams: 100
-profile::cache::haproxy::http_redirection_port: 80
 profile::cache::haproxy::timeout:
   client: 120
   client_fin: 120
@@ -239,7 +232,6 @@ profile::cache::kafka::webrequest::kafka_cluster_name: jumbo-eqiad
 profile::cache::ssl::wikibase::acme_chief: false
 profile::cache::ssl::wikibase::le_subjects:
 - whatever.org
-profile::cache::varnish::frontend::enable_http_redirection: false
 profile::cache::varnish::frontend::fe_extra_vcl:
 - normalize_path
 - geoip
