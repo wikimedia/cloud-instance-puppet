@@ -12,7 +12,12 @@ profile::restbase::hosts:
 - deployment-restbase04.deployment-prep.eqiad1.wikimedia.cloud
 profile::restbase::seeds_ng:
 - deployment-restbase04.deployment-prep.eqiad1.wikimedia.cloud
-profile::services_proxy::envoy::listeners: []
+profile::services_proxy::envoy::listeners:
+- name: restbase-https
+  port: 443
+  service: restbase-https
+  timeout: 60s
+  upstream: '%{facts.networking.fqdn}'
 profile::tlsproxy::envoy::capitalize_headers: false
 profile::tlsproxy::envoy::global_cert_name: restbase.discovery.wmnet
 profile::tlsproxy::envoy::sni_support: 'no'
