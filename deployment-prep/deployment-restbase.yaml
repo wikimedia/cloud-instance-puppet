@@ -16,4 +16,39 @@ profile::tlsproxy::envoy::capitalize_headers: false
 profile::tlsproxy::envoy::global_cert_name: restbase.discovery.wmnet
 profile::tlsproxy::envoy::sni_support: 'no'
 profile::tlsproxy::envoy::tls_port: 1024
+service::catalog:
+  restbase-https:
+    description: RESTBase, restbase.svc.%{::site}.wmnet - HTTPS
+    discovery:
+    - active_active: true
+      dnsdisc: restbase
+    - active_active: true
+      dnsdisc: restbase-async
+    encryption: true
+    ip:
+      eqiad:
+        default: 127.0.0.1
+    lvs:
+      class: low-traffic
+      conftool:
+        cluster: restbase
+        service: restbase-ssl
+      depool_threshold: '.5'
+      enabled: true
+      monitors:
+        IdleConnection:
+          max-delay: 300
+          timeout-clean-reconnect: 3
+        ProxyFetch:
+          url:
+          - https://localhost/
+      scheduler: wrr
+    port: 7443
+    probes:
+    - type: http
+    - type: swagger
+    sites:
+    - eqiad
+    - codfw
+    state: production
 service::configuration::http_proxy: http://deployment-urldownloader03.deployment-prep.eqiad1.wikimedia.cloud:8080
