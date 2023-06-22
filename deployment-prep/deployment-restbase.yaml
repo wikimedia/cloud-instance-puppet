@@ -1,44 +1,3 @@
-api-https:
-  aliases:
-  - api
-  description: MediaWiki API cluster, api.svc.%{::site}.wmnet
-  discovery:
-  - active_active: false
-    dnsdisc: api-rw
-  - active_active: true
-    dnsdisc: api-ro
-  encryption: true
-  ip:
-    codfw:
-      default: 10.2.1.22
-    eqiad:
-      default: 10.2.2.22
-  lvs:
-    class: low-traffic
-    conftool:
-      cluster: api_appserver
-      service: nginx
-    depool_threshold: '.7'
-    enabled: true
-    monitors:
-      IdleConnection:
-        max-delay: 300
-        timeout-clean-reconnect: 3
-      ProxyFetch:
-        check_all: true
-        url:
-        - https://en.wikipedia.org/w/api.php
-        - https://en.wikipedia.org/wiki/Special:BlankPage?force_php74=1
-    scheduler: wrr
-  port: 443
-  probes:
-  - host: en.wikipedia.org
-    path: /w/api.php?action=query&meta=siteinfo
-    type: http
-  sites:
-  - eqiad
-  - codfw
-  state: production
 profile::cassandra::instances:
   deployment-restbase04.deployment-prep.eqiad1.wikimedia.cloud: {}
 profile::java::java_packages:
@@ -53,6 +12,7 @@ profile::restbase::hosts:
 - deployment-restbase04.deployment-prep.eqiad1.wikimedia.cloud
 profile::restbase::seeds_ng:
 - deployment-restbase04.deployment-prep.eqiad1.wikimedia.cloud
+profile::services_proxy::envoy::listeners: []
 profile::tlsproxy::envoy::capitalize_headers: false
 profile::tlsproxy::envoy::global_cert_name: restbase.discovery.wmnet
 profile::tlsproxy::envoy::sni_support: 'no'
@@ -93,35 +53,3 @@ service::catalog:
     - codfw
     state: production
 service::configuration::http_proxy: http://deployment-urldownloader03.deployment-prep.eqiad1.wikimedia.cloud:8080
-shellbox:
-  description: Shellbox, shellbox.svc.%{::site}.wmnet
-  discovery:
-  - active_active: true
-    dnsdisc: shellbox
-  encryption: true
-  ip:
-    codfw:
-      default: 10.2.1.51
-    eqiad:
-      default: 10.2.2.51
-  lvs:
-    class: low-traffic
-    conftool:
-      cluster: kubernetes
-      service: kubesvc
-    depool_threshold: '.5'
-    enabled: true
-    monitors:
-      IdleConnection:
-        max-delay: 300
-        timeout-clean-reconnect: 3
-    protocol: tcp
-    scheduler: wrr
-  port: 4008
-  probes:
-  - path: /healthz
-    type: http
-  sites:
-  - eqiad
-  - codfw
-  state: production
