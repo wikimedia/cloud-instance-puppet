@@ -12,6 +12,8 @@ profile::restbase::hosts:
 - deployment-restbase04.deployment-prep.eqiad1.wikimedia.cloud
 profile::restbase::seeds_ng:
 - deployment-restbase04.deployment-prep.eqiad1.wikimedia.cloud
+profile::services_proxy::envoy::enabled_listeners:
+- restbase-https
 profile::services_proxy::envoy::listeners:
 - name: restbase-https
   port: 8443
