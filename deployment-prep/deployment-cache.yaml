@@ -103,6 +103,14 @@ profile::cache::haproxy::h2settings:
   header_table_size: 4096
   initial_window_size: 65535
   max_concurrent_streams: 100
+profile::cache::haproxy::redirection_timeout:
+  client: 3
+  client_fin: 1
+  connect: 0
+  http_request: 3
+  keep_alive: 3
+  server: 0
+  tunnel: 0
 profile::cache::haproxy::timeout:
   client: 120
   client_fin: 120
