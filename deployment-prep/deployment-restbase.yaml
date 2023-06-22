@@ -3,6 +3,11 @@ profile::cassandra::instances:
 profile::java::java_packages:
 - variant: jdk
   version: '8'
+profile::lvs::realserver::pools:
+  restbase-https:
+    services:
+    - restbase
+    - envoyproxy
 profile::restbase::hosts:
 - deployment-restbase04.deployment-prep.eqiad1.wikimedia.cloud
 profile::restbase::seeds_ng:
