@@ -14,7 +14,7 @@ profile::restbase::seeds_ng:
 - deployment-restbase04.deployment-prep.eqiad1.wikimedia.cloud
 profile::services_proxy::envoy::listeners:
 - name: restbase-https
-  port: 443
+  port: 8443
   service: restbase-https
   timeout: 60s
   upstream: '%{facts.networking.fqdn}'
