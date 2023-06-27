@@ -14,14 +14,12 @@ cache::lua_support: true
 cache::nodes:
   text:
     eqiad:
-    - deployment-cache-text06.deployment-prep.eqiad.wmflabs
     - deployment-cache-text08.deployment-prep.eqiad.wmflabs
 cache::req_handling:
   default:
     caching: normal
 cache::text::nodes:
   eqiad:
-  - deployment-cache-text06.deployment-prep.eqiad.wmflabs
   - deployment-cache-text08.deployment-prep.eqiad.wmflabs
 cluster: cache_text
 profile::cache::base::purge_host_regex: ''
