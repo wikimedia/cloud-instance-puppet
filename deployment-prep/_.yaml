@@ -220,7 +220,7 @@ profile::services_proxy::envoy::listeners:
   timeout: 60s
   upstream: deployment-mediawiki11.deployment-prep.eqiad1.wikimedia.cloud
   xfp: https
-profile::ssh::server::use_ca_signed_host_keys: true
+profile::ssh::server::puppetserver_ca_host_certs: true
 profile::swift::global_account_keys:
   codfw:
     analytics_admin: nosuchpass
