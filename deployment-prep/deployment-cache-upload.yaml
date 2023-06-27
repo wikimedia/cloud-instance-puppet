@@ -4,14 +4,12 @@ cache::lua_support: true
 cache::nodes:
   upload:
     eqiad:
-    - deployment-cache-upload07.deployment-prep.eqiad1.wikimedia.cloud
     - deployment-cache-upload08.deployment-prep.eqiad1.wikimedia.cloud
 cache::req_handling:
   default:
     caching: normal
 cache::upload::nodes:
   eqiad:
-  - deployment-cache-upload07.deployment-prep.eqiad1.wikimedia.cloud
   - deployment-cache-upload08.deployment-prep.eqiad1.wikimedia.cloud
 profile::cache::base::varnish_version: 5
 profile::cache::ssl::unified::acme_chief: true
