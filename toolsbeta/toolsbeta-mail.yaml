@@ -1,11 +1,5 @@
 mount_nfs: true
 profile::mail::default_mail_relay::enabled: false
-profile::toolforge::active_mail_relay: toolsbeta-mail-01.toolsbeta.eqiad.wmflabs
 profile::toolforge::base::is_mail_relay: true
 profile::toolforge::cert_name: toolsbeta
-profile::toolforge::mail_domain: toolsbeta.wmflabs.org
-profile::toolforge::mail_domains:
-- toolsbeta.wmflabs.org
-- toolsbeta.wmcloud.org
-profile::toolforge::mailrelay::external_hostname: mail.toolsbeta.wmflabs.org
-profile::toolforge::mailrelay::primary_domain: toolsbeta.wmflabs.org
+profile::toolforge::mailrelay::external_hostname: mail.toolsbeta.wmcloud.org
