@@ -1,4 +1,11 @@
 mtail::from_component: true
 profile::mail::default_mail_relay::enabled: false
 profile::mail::smarthost::cert_name: mx
+profile::mail::smarthost::dkim_domains:
+  wmcloud.org:
+    domain: wmcloud.org
+    selector: wmcs
+  wmflabs_org:
+    domain: wmflabs.org
+    selector: wmcs
 puppetmaster: cloudinfra-internal-puppetmaster-02.cloudinfra.eqiad.wmflabs
