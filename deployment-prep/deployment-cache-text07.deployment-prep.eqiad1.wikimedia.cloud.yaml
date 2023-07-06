@@ -1,8 +1,0 @@
-cache::nodes:
-  text:
-    eqiad:
-    - deployment-cache-text07.deployment-prep.eqiad1.wikimedia.cloud
-cache::text::nodes:
-  eqiad:
-  - deployment-cache-text07.deployment-prep.eqiad1.wikimedia.cloud
-profile::pki::client::ensure: present
