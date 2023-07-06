@@ -271,6 +271,18 @@ profile::cache::varnish::frontend::uds_owner: haproxy
 profile::trafficserver::backend::default_lua_scripts:
 - set-x-cache
 profile::trafficserver::backend::mapping_rules:
+- params:
+  - '@plugin=/usr/lib/trafficserver/modules/tslua.so'
+  - '@pparam=/etc/trafficserver/lua/normalize-path.lua'
+  - '@pparam="3A 40 21 24 28 29 2A 2C 3B 27"'
+  - '@pparam="5B 5D 26 2B 3D"'
+  - '@plugin=/usr/lib/trafficserver/modules/tslua.so'
+  - '@pparam=/etc/trafficserver/lua/rb-mw-mangling.lua'
+  - '@plugin=/usr/lib/trafficserver/modules/conf_remap.so'
+  - '@pparam=proxy.config.http.server_session_sharing.match=ip'
+  replacement: http://deployment-restbase04.deployment-prep.eqiad1.wikimedia.cloud:7231/api/rest_v1
+  target: http://(.*)/api/rest_v1
+  type: regex_map
 - replacement: http://deployment-mediawiki12.deployment-prep.eqiad1.wikimedia.cloud
   target: http://en.wikipedia.beta.wmflabs.org
   type: map
