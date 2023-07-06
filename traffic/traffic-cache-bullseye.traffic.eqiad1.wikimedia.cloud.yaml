@@ -277,6 +277,8 @@ profile::trafficserver::backend::mapping_rules:
   - '@pparam="3A 40 21 24 28 29 2A 2C 3B 27"'
   - '@pparam="5B 5D 26 2B 3D"'
   - '@plugin=/usr/lib/trafficserver/modules/tslua.so'
+  - '@pparam=/etc/trafficserver/lua/gateway-check.lua'
+  - '@plugin=/usr/lib/trafficserver/modules/tslua.so'
   - '@pparam=/etc/trafficserver/lua/rb-mw-mangling.lua'
   - '@plugin=/usr/lib/trafficserver/modules/conf_remap.so'
   - '@pparam=proxy.config.http.server_session_sharing.match=ip'
