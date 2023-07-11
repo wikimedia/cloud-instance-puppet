@@ -1,0 +1,2 @@
+profile::wmcs::services::etcd_discovery::prefix_url: https://etcd-discovery.wmcloud.org
+puppetmaster: puppet
