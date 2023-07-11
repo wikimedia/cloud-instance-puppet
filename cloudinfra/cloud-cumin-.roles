@@ -1,1 +1,1 @@
-[]
+- role::wmcs::services::etcd_discovery
