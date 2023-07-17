@@ -3,6 +3,45 @@ profile::docker::engine::packagename: docker.io
 profile::docker::engine::settings: {}
 profile::docker::engine::version: 20.10.5+dfsg1-1
 profile::docker::runner::service_defs:
+  mediawiki-services-function-evaluator:
+    config:
+      logging:
+        level: trace
+        streams:
+        - named_levels: true
+          type: stdout
+      metrics:
+        host: prometheus-labmon.eqiad.wmnet
+        name: function-evaluator
+        port: 8125
+        type: statsd
+      num_workers: 7
+      services:
+      - conf:
+          cors: '*'
+          mwapi_req:
+            body: '{{ default(request.query, {}) }}'
+            headers:
+              user-agent: '{{user-agent}}'
+            method: post
+            uri: https://{{domain}}/w/api.php
+          port: 6927
+          restbase_req:
+            body: '{{request.body}}'
+            headers: '{{request.headers}}'
+            method: '{{request.method}}'
+            query: '{{ default(request.query, {}) }}'
+            uri: https://{{domain}}/api/rest_v1/{+path}
+          spec: ./spec.template.yaml
+        module: ./app.js
+        name: function-evaluator
+      worker_heap_limit_mb: 500
+    image_name: omnibus
+    namespace: repos/abstract-wiki/wikifunctions/function-evaluator
+    override_cmd: -c /etc/mediawiki-services-function-evaluator/config.yaml
+    port: 6927
+    runtime: runsc
+    version: latest
   mediawiki-services-function-orchestrator:
     config:
       logging:
