@@ -17,6 +17,22 @@ profile::docker::runner::service_defs:
         type: statsd
       num_workers: 7
       services:
+      - conf:
+          cors: '*'
+          mwapi_req:
+            body: '{{ default(request.query, {}) }}'
+            headers:
+              user-agent: '{{user-agent}}'
+            method: post
+            uri: https://{{domain}}/w/api.php
+          port: 6927
+          restbase_req:
+            body: '{{request.body}}'
+            headers: '{{request.headers}}'
+            method: '{{request.method}}'
+            query: '{{ default(request.query, {}) }}'
+            uri: https://{{domain}}/api/rest_v1/{+path}
+          spec: ./spec.template.yaml
         module: ./app.js
         name: function-evaluator
       worker_heap_limit_mb: 500
