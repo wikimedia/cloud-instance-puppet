@@ -8,7 +8,6 @@ profile::webperf::site::excimer_mysql_password: PoK9JCfy4Y3JmuUiRnHNiJs
 profile::webperf::site::excimer_mysql_user: excimer_ui_server
 profile::webperf::site::private_name: '%{facts.fqdn}'
 profile::webperf::site::server_name: performance.wikimedia.beta.wmflabs.org
-profile::webperf::site::xhgui_host: deployment-xhgui03.deployment-prep.eqiad.wmflabs
 profile::webperf::xhgui::mysql_admin_password: ei9Eim3cThoh7iet
 profile::webperf::xhgui::mysql_admin_user: xhguiadmin
 profile::webperf::xhgui::mysql_db: xhgui
