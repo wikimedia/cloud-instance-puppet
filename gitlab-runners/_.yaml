@@ -1,1 +1,2 @@
 profile::gitlab::runner::concurrent: 4
+profile::gitlab::runner::registration_token: private
