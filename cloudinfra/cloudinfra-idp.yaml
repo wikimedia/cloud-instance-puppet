@@ -42,6 +42,7 @@ profile::idp::services:
     service_id: https://(.*)\.eqiad1\.wikimedia\.cloud(/.*)?
   gitlab_oidc:
     id: 4
+    profile_format: FLAT
     service_class: OidcRegisteredService
     service_id: https://gitlab\.devtools\.wmcloud\.org(/.*)?
   o11y_wmflabs_org:
