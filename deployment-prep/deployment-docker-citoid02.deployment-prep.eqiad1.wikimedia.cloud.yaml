@@ -8,7 +8,6 @@ profile::docker::runner::service_defs:
         level: trace
       metrics: {}
       num_workers: 0
-      port: 1970
       services:
       - conf:
           allowPrivateAddresses: false
