@@ -1,5 +1,5 @@
 ::lvs::realserver::realserver_ips:
 - 172.16.7.139
-profile::resolving::nameservers:
-- ns-recursor0.openstack.eqiad1.wikimediacloud.org
-- ns-recursor1.openstack.eqiad1.wikimediacloud.org
+lookup_options:
+  classes:
+    merge: unique
