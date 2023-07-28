@@ -1,5 +1,4 @@
 - role::labs::ores::redis
-- profile::base::firewall
 - profile::ores::web
 - profile::ores::worker
 - profile::services_proxy::envoy
