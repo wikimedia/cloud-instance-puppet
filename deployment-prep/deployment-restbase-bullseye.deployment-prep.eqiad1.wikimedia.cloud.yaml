@@ -1,5 +1,2 @@
 ::lvs::realserver::realserver_ips:
 - 172.16.7.139
-lookup_options:
-  classes:
-    merge: unique
