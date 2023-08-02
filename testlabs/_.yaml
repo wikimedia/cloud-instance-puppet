@@ -1,3 +1,1 @@
 profile::base::enable_kafka_shipping: false
-test: test
-test::bd808::T329589: will it log to git?
