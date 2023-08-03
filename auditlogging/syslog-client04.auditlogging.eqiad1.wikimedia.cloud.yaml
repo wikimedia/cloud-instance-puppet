@@ -8,4 +8,4 @@ profile::base::remote_syslog_tls:
   - syslogaudit2.svc.eqiad1.wikimedia.cloud:6514
 profile::base::remote_syslog_tls_client_auth: false
 profile::base::remote_syslog_tls_server_auth: x509/name
-puppetmaster: puppetmaster03.auditlogging.eqiad1.wikimedia.cloud
+puppetmaster: puppetmaster04.auditlogging.eqiad1.wikimedia.cloud
