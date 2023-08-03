@@ -6,4 +6,4 @@ profile::base::remote_syslog_tls:
   - syslog-server-04.auditlogging.eqiad1.wikimedia.cloud:6514
   - syslogaudit1.svc.eqiad1.wikimedia.cloud:6514
   - syslogaudit2.svc.eqiad1.wikimedia.cloud:6514
-puppetmaster: puppetmaster03.auditlogging.eqiad1.wikimedia.cloud
+puppetmaster: puppetmaster04.auditlogging.eqiad1.wikimedia.cloud
