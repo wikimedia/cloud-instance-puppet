@@ -1,7 +1,7 @@
 acmechief_host: toolsbeta-acme-chief-01.toolsbeta.eqiad.wmflabs
 docker::builder_host: tools-docker-builder-06.tools.eqiad.wmflabs
 docker::password: not a real password
-docker::password_hash: $apr1$st5G0d8l$IcJeBIljkbSRhjrMIiH02/
+docker::password_hash: /
 docker::registry: docker-registry.tools.wmflabs.org
 docker::registry_url: https://tools-docker-registry.wmflabs.org/v2/
 docker::username: docker
@@ -103,7 +103,7 @@ profile::toolforge::proxies:
 profile::toolforge::services::active_node: tools-services-05.tools.eqiad1.wikimedia.cloud
 profile::toolforge::services::updatetools_enabled: false
 profile::toolforge::web_domain: beta.toolforge.org
-profile::wmcs::kubeadm::component: thirdparty/kubeadm-k8s-1-22
+profile::wmcs::kubeadm::component: thirdparty/kubeadm-k8s-1-23
 prometheus::haproxy_exporter::endpoint: http://localhost:9900/stats;csv
 prometheus::node_exporter::collectors_extra:
 - processes
