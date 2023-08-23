@@ -227,6 +227,7 @@ profile::cache::haproxy::vars:
   direction: request
   name: req.auth
   value: str(ECDSA)
+profile::cache::haproxy::version: haproxy26
 profile::cache::kafka::eventlogging::kafka_cluster_name: jumbo-eqiad
 profile::cache::kafka::statsv::kafka_cluster_name: jumbo-eqiad
 profile::cache::kafka::webrequest::kafka_cluster_name: jumbo-eqiad
