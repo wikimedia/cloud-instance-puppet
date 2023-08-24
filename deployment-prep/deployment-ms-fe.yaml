@@ -3,36 +3,20 @@ profile::services_proxy::envoy::ensure: absent
 profile::swift::cluster_label: deployment-prep
 profile::swift::global_account_keys:
   deployment-prep:
-    codfw:
-      analytics_admin: nosuchpass
-      dispersion: nosuchpass
-      docker_registry: nosuchpass
-      mw_backup: nosuchpass
-      mw_media: abracadabra
-      mw_thumbor: OhdeaYuu4reoziichug6
-      mw_thumbor-private: nosuchpass
-      netbox_attachments: iic0Phoozoh4pooquuy4
-      pagecompilation_zim: ohn2CoquahnaiNieWaen
-      performance_arclamp: ei1Aib4efoTh0ooxh8Et
-      phabricator_files: nosuchpass
-      search_backup: nosuchpass4
-      super_admin: nosuchpass1
-      swift_dispersion: ahshaenae3Hai3quipah
-    eqiad:
-      analytics_admin: nosuchpass
-      dispersion: nosuchpass
-      docker_registry: nosuchpass
-      mw_backup: nosuchpass
-      mw_media: abracadabra
-      mw_thumbor: OhdeaYuu4reoziichug6
-      mw_thumbor-private: nosuchpass
-      netbox_attachments: iic0Phoozoh4pooquuy4
-      pagecompilation_zim: ohn2CoquahnaiNieWaen
-      performance_arclamp: ei1Aib4efoTh0ooxh8Et
-      phabricator_files: nosuchpass
-      search_backup: nosuchpass4
-      super_admin: nosuchpass1
-      swift_dispersion: ahshaenae3Hai3quipah
+    analytics_admin: nosuchpass
+    dispersion: nosuchpass
+    docker_registry: nosuchpass
+    mw_backup: nosuchpass
+    mw_media: abracadabra
+    mw_thumbor: OhdeaYuu4reoziichug6
+    mw_thumbor-private: nosuchpass
+    netbox_attachments: iic0Phoozoh4pooquuy4
+    pagecompilation_zim: ohn2CoquahnaiNieWaen
+    performance_arclamp: ei1Aib4efoTh0ooxh8Et
+    phabricator_files: nosuchpass
+    search_backup: nosuchpass4
+    super_admin: nosuchpass1
+    swift_dispersion: ahshaenae3Hai3quipah
 profile::tlsproxy::envoy::cfssl_options:
   hosts:
   - ms-fe.svc.deployment-prep.eqiad1.wikimedia.cloud
