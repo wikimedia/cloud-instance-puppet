@@ -103,7 +103,8 @@ profile::toolforge::proxies:
 profile::toolforge::services::active_node: tools-services-05.tools.eqiad1.wikimedia.cloud
 profile::toolforge::services::updatetools_enabled: false
 profile::toolforge::web_domain: beta.toolforge.org
-profile::wmcs::kubeadm::component: thirdparty/kubeadm-k8s-1-22
+profile::wmcs::kubeadm::component: thirdparty/kubeadm-k8s-1-23
+profile::wmcs::kubeadm::kubernetes_version: 1.23.17
 prometheus::haproxy_exporter::endpoint: http://localhost:9900/stats;csv
 prometheus::node_exporter::collectors_extra:
 - processes
