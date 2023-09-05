@@ -1,0 +1,2 @@
+profile::resolving::nameservers:
+- ns-recursor.openstack.eqiad1.wikimediacloud.org
