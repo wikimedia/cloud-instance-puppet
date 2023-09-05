@@ -1,1 +1,3 @@
 profile::base::enable_kafka_shipping: false
+profile::resolving::nameservers:
+- ns-recursor.openstack.eqiad1.wikimediacloud.org
