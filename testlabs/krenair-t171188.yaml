@@ -1,2 +1,0 @@
-mount_nfs: false
-puppetmaster: puppetmaster.cloudinfra.wmflabs.org
