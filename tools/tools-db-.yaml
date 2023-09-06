@@ -1,1 +1,2 @@
 profile::wmcs::services::toolsdb::legacy_config: false
+profile::wmcs::services::toolsdb::primary_server: tools-db-1.tools.eqiad1.wikimedia.cloud
