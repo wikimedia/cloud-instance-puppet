@@ -57,6 +57,8 @@ profile::openstack::eqiad1::cumin::project_masters:
 profile::openstack::eqiad1::cumin::project_pub_key: ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIA5++4xfbwOy1CC2ehmzN4D4uHuM9wwUl++Xds59IXjj
 profile::openstack::eqiad1::ldap_user_pass: <not available here>
 profile::prometheus::haproxy_exporter::listen_port: 9901
+profile::resolving::nameservers:
+- ns-recursor.openstack.eqiad1.wikimediacloud.org
 profile::ssh::server::challenge_response_auth: false
 profile::ssh::server::disable_agent_forwarding: false
 profile::ssh::server::disable_nist_kex: false
