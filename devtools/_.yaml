@@ -1,8 +1,6 @@
 deployment_hosts:
 - 172.16.6.54
-profile::gitlab::local_gems:
-  /srv/gitlab-wmf-gems:
-  - gitlab_phorge
+profile::gitlab::local_gems: {}
 profile::openstack::eqiad1::cumin::project_masters:
 - 172.16.5.216
 profile::openstack::eqiad1::cumin::project_pub_key: ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIMw8mbG4loPs68BQHLthEQr3qHy9XY4j+DYua0usuxmZ
