@@ -46,7 +46,8 @@ profile::docker::runner::service_defs:
       svg: true
       svgo: false
       texvcinfo: true
-    namespace: wikimedia
+    image_name: mathoid
+    namespace: repos/mediawiki/services
     port: 10044
-    version: 2022-12-20-111743-production
+    version: latest
 puppetmaster: deployment-puppetmaster04.deployment-prep.eqiad.wmflabs
