@@ -1,5 +1,5 @@
 authdns_servers:
-  208.80.154.11: 208.80.154.11
+  185.15.56.163: 185.15.56.163
   208.80.154.148: 208.80.154.148
 http_proxy: ''
 network::constants::mw_appserver_networks_private: []
