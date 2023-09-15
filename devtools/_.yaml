@@ -1,7 +1,7 @@
 deployment_hosts:
 - 172.16.6.54
 profile::gitlab::local_gems:
-  /srv/gitlab-wmf-gems:
+  /srv/gitlab-wmf-gems/gitlab-phorge:
   - gitlab-phorge
 profile::gitlab::local_gems_enabled: true
 profile::openstack::eqiad1::cumin::project_masters:
