@@ -3,3 +3,4 @@ profile::vrts::active_host: vrts-1002.devtools.eqiad1.wikimedia.cloud
 profile::vrts::database_port: '3306'
 profile::vrts::download_url: https://download.znuny.org/releases
 profile::vrts::passive_host: vrts-1002.devtools.eqiad1.wikimedia.cloud
+profile::vrts_public_dns: https://vrts-prod-2.wmcloud.org
