@@ -1,2 +1,1 @@
 - role::ci::castor::server
-- profile::labs::cindermount::srv
