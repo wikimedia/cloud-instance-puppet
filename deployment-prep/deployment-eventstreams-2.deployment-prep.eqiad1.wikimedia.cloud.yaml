@@ -74,10 +74,10 @@ profile::docker::runner::service_defs:
           stream_config_object_path: streams
           stream_config_ttl: 300
           stream_config_uri: https://meta.wikimedia.beta.wmflabs.org/w/api.php?action=streamconfigs
+          stream_ui_enabled: true
           user_agent: eventstreams-beta
         module: app.js
         name: eventstreams
-      stream_ui_enabled: true
       worker_heap_limit_mb: 250
     image_name: mediawiki-services-eventstreams
     namespace: wikimedia
