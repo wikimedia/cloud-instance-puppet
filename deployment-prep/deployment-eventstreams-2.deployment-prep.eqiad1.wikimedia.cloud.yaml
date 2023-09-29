@@ -6,11 +6,6 @@ profile::docker::runner::service_defs:
     config:
       logging:
         level: info
-        streams:
-        - type: stdout
-        - host: deployment-logstash03.deployment-prep.eqiad.wmflabs
-          port: 12201
-          type: gelf
       metrics:
         port: 9092
         type: prometheus
@@ -87,4 +82,4 @@ profile::docker::runner::service_defs:
     namespace: wikimedia
     override_cmd: /srv/service/server.js -c /etc/eventstreams/config.yaml
     port: 8092
-    version: 2022-01-20-101239-production
+    version: 2023-09-28-130825-production
