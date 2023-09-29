@@ -77,6 +77,7 @@ profile::docker::runner::service_defs:
           user_agent: eventstreams-beta
         module: app.js
         name: eventstreams
+      stream_ui_enabled: true
       worker_heap_limit_mb: 250
     image_name: mediawiki-services-eventstreams
     namespace: wikimedia
