@@ -448,6 +448,7 @@ service::configuration::logstash_host: deployment-logstash03.deployment-prep.eqi
 service::configuration::logstash_port: 12201
 service::deploy::scap::public_key_file: puppet:///private/ssh/tin/servicedeploy_rsa.pub
 shared_acme_certificates: {}
+statsd: prometheus-labmon.eqiad.wmnet
 swift_clusters:
   deployment-prep:
     cluster_name: deployment-prep
