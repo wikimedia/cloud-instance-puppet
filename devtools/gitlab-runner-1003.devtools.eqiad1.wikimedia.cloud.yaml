@@ -1,1 +1,2 @@
+profile::gitlab::runner::docker_network: gitlab-runner
 puppetmaster: puppetmaster-1001.devtools.eqiad1.wikimedia.cloud
