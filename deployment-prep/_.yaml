@@ -62,9 +62,6 @@ keyholder::require_encrypted_keys: 'no'
 mediawiki::redis_servers::codfw: []
 mediawiki::users::web: www-data
 mount_nfs: false
-ores::redis::cache_maxmemory: 512M
-ores::redis::queue_maxmemory: 256M
-ores::web::graphite_server: prometheus-labmon.eqiad.wmnet
 parsoid::mwapi_proxy: ''
 passwords::root::extra_keys:
   alex: ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAICYxCqZkGys8gZB6Mq61Fw08CB7m1huxpnpII2ay3e0H
@@ -169,18 +166,6 @@ profile::openstack::main::cumin::project_pub_key: ssh-ed25519 AAAAC3NzaC1lZDI1NT
   root@deployment-cumin
 profile::openstack::main::cumin::puppetdb_host: deployment-puppetdb03.deployment-prep.eqiad.wmflabs
 profile::openstack::main::region: eqiad1-r
-profile::ores::redis::client_hosts:
-- deployment-ores01.deployment-prep.eqiad.wmflabs
-profile::ores::redisproxy::server: deployment-ores01.deployment-prep.eqiad.wmflabs
-profile::ores::web::celery_workers: 7
-profile::ores::web::extra_config:
-  extractors:
-    enwiki_api:
-      host: https://en.wikipedia.beta.wmflabs.org
-profile::ores::web::graphite_server: prometheus-labmon.eqiad.wmnet
-profile::ores::web::poolcounter_nodes:
-- deployment-poolcounter06:7531
-profile::ores::web::redis_host: deployment-ores01.deployment-prep.eqiad.wmflabs
 profile::pki::client::ensure: present
 profile::prometheus::cadvisor_exporter::port: 4194
 profile::prometheus::statsd_exporter::mappings: []
