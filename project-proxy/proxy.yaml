@@ -4,6 +4,8 @@ profile::wmcs::novaproxy::api_hostnames:
 - proxy-eqiad1.wmcloud.org
 profile::wmcs::novaproxy::dns_updater_project: cloudinfra
 profile::wmcs::novaproxy::dns_updater_username: project-proxy-dns-manager
+profile::wmcs::novaproxy::keepalived_vips:
+- 172.16.5.140
 profile::wmcs::novaproxy::keystone_api_fqdn: openstack.eqiad1.wikimediacloud.org
 profile::wmcs::novaproxy::mariadb_db: webproxy
 profile::wmcs::novaproxy::mariadb_host: cloudinfra-db03.cloudinfra.eqiad1.wikimedia.cloud
