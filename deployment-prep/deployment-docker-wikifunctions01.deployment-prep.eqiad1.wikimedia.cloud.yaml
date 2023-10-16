@@ -76,14 +76,8 @@ profile::docker::runner::service_defs:
         name: function-orchestrator
       worker_heap_limit_mb: 500
     environment:
+      FUNCTION_EVALUATOR_URL: https://wikifunctions-evaluator-beta.wmflabs.org/1/v1/evaluate/
       NODE_TLS_REJECT_UNAUTHORIZED: '0'
-      ORCHESTRATOR_CONFIG: "{\n  \"evaluatorConfigs\": [\n    {\n      \"programmingLanguages\"\
-        : [\"python-3-9\", \"python-3-8\", \"python-3-7\", \"python-3\", \"python\"\
-        ],\n      \"evaluatorUri\": \"https://wikifunctions-evaluator-beta.wmflabs.org/1/v1/evaluate/\"\
-        \n    },\n    {\n      \"programmingLanguages\": [\"javascript-es2020\", \"\
-        javascript-es2019\", \"javascript-es2018\", \"javascript-es2017\", \"javascript-es2016\"\
-        , \"javascript-es2015\", \"javascript\"],\n      \"evaluatorUri\": \"https://wikifunctions-evaluator-beta.wmflabs.org/1/v1/evaluate/\"\
-        \n    }\n  ]\n}\n"
       WIKI_API_URL: https://wikifunctions.beta.wmflabs.org/w/api.php
     image_name: function-orchestrator
     namespace: repos/abstract-wiki/wikifunctions
