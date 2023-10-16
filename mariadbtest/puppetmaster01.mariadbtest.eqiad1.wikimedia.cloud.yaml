@@ -1,2 +1,1 @@
-puppetmaster: puppet
-role::puppetmaster::standalone::autosign: true
+puppetmaster: puppetmaster02.mariadbtest.eqiad1.wikimedia.cloud
