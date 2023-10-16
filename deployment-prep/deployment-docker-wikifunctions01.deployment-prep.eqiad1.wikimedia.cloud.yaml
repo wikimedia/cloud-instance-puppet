@@ -3,7 +3,7 @@ profile::docker::engine::packagename: docker.io
 profile::docker::engine::settings: {}
 profile::docker::engine::version: 20.10.5+dfsg1-1
 profile::docker::runner::service_defs:
-  function-evaluator-javascript:
+  mediawiki-services-function-evaluator:
     config:
       logging:
         level: trace
@@ -25,7 +25,7 @@ profile::docker::runner::service_defs:
               user-agent: '{{user-agent}}'
             method: post
             uri: https://{{domain}}/w/api.php
-          port: 6928
+          port: 6927
           restbase_req:
             body: '{{request.body}}'
             headers: '{{request.headers}}'
@@ -34,51 +34,12 @@ profile::docker::runner::service_defs:
             uri: https://{{domain}}/api/rest_v1/{+path}
           spec: ./spec.template.yaml
         module: ./app.js
-        name: function-evaluator-javascript
-      worker_heap_limit_mb: 500
-    image_name: javascript-all
-    namespace: repos/abstract-wiki/wikifunctions/function-evaluator
-    override_cmd: -c /etc/mediawiki-services-function-evaluator/config.yaml
-    port: 6928
-    runtime: runsc
-    version: latest
-  function-evaluator-python3:
-    config:
-      logging:
-        level: trace
-        streams:
-        - named_levels: true
-          type: stdout
-      metrics:
-        host: prometheus-labmon.eqiad.wmnet
         name: function-evaluator
-        port: 8125
-        type: statsd
-      num_workers: 7
-      services:
-      - conf:
-          cors: '*'
-          mwapi_req:
-            body: '{{ default(request.query, {}) }}'
-            headers:
-              user-agent: '{{user-agent}}'
-            method: post
-            uri: https://{{domain}}/w/api.php
-          port: 6929
-          restbase_req:
-            body: '{{request.body}}'
-            headers: '{{request.headers}}'
-            method: '{{request.method}}'
-            query: '{{ default(request.query, {}) }}'
-            uri: https://{{domain}}/api/rest_v1/{+path}
-          spec: ./spec.template.yaml
-        module: ./app.js
-        name: function-evaluator-python3
       worker_heap_limit_mb: 500
-    image_name: python3-all
+    image_name: omnibus
     namespace: repos/abstract-wiki/wikifunctions/function-evaluator
     override_cmd: -c /etc/mediawiki-services-function-evaluator/config.yaml
-    port: 6929
+    port: 6927
     runtime: runsc
     version: latest
   mediawiki-services-function-orchestrator:
@@ -118,12 +79,11 @@ profile::docker::runner::service_defs:
       NODE_TLS_REJECT_UNAUTHORIZED: '0'
       ORCHESTRATOR_CONFIG: "{\n  \"evaluatorConfigs\": [\n    {\n      \"programmingLanguages\"\
         : [\"python-3-9\", \"python-3-8\", \"python-3-7\", \"python-3\", \"python\"\
-        ],\n      \"evaluatorUri\": \"https://wikifunctions-evaluator-python3-beta.wmcloud.org/1/v1/evaluate/\"\
+        ],\n      \"evaluatorUri\": \"https://wikifunctions-evaluator-beta.wmflabs.org/1/v1/evaluate/\"\
         \n    },\n    {\n      \"programmingLanguages\": [\"javascript-es2020\", \"\
         javascript-es2019\", \"javascript-es2018\", \"javascript-es2017\", \"javascript-es2016\"\
-        , \"javascript-es2015\", \"javascript\"],\n      \"evaluatorUri\": \"https://wikifunctions-evaluator-javascript-beta.wmcloud.org/1/v1/evaluate/\"\
+        , \"javascript-es2015\", \"javascript\"],\n      \"evaluatorUri\": \"https://wikifunctions-evaluator-beta.wmflabs.org/1/v1/evaluate/\"\
         \n    }\n  ]\n}\n"
-      ORCHESTRATOR_TIMEOUT_MS: '10000'
       WIKI_API_URL: https://wikifunctions.beta.wmflabs.org/w/api.php
     image_name: function-orchestrator
     namespace: repos/abstract-wiki/wikifunctions
