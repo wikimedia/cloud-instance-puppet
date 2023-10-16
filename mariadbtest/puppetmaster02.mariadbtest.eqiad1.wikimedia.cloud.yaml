@@ -1,0 +1,2 @@
+puppetmaster: puppet
+role::puppetmaster::standalone::autosign: true
