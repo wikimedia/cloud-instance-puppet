@@ -1,0 +1,4 @@
+profile::java::java_packages:
+- variant: jre-headless
+  version: '17'
+profile::puppet::agent::force_puppet7: true
