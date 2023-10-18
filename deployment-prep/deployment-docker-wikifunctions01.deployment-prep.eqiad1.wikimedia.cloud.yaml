@@ -38,7 +38,7 @@ profile::docker::runner::service_defs:
       worker_heap_limit_mb: 500
     image_name: javascript-all
     namespace: repos/abstract-wiki/wikifunctions/function-evaluator
-    override_cmd: -c /etc/mediawiki-services-function-evaluator/config.yaml
+    override_cmd: -c /etc/function-evaluator-js/config.yaml
     port: 6928
     runtime: runsc
     version: latest
@@ -77,7 +77,7 @@ profile::docker::runner::service_defs:
       worker_heap_limit_mb: 500
     image_name: python3-all
     namespace: repos/abstract-wiki/wikifunctions/function-evaluator
-    override_cmd: -c /etc/mediawiki-services-function-evaluator/config.yaml
+    override_cmd: -c /etc/function-evaluator-py/config.yaml
     port: 6929
     runtime: runsc
     version: latest
