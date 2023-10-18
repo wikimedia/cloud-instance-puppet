@@ -64,7 +64,7 @@ profile::docker::runner::service_defs:
               user-agent: '{{user-agent}}'
             method: post
             uri: https://{{domain}}/w/api.php
-          port: 6928
+          port: 6929
           restbase_req:
             body: '{{request.body}}'
             headers: '{{request.headers}}'
@@ -78,7 +78,7 @@ profile::docker::runner::service_defs:
     image_name: python3-all
     namespace: repos/abstract-wiki/wikifunctions/function-evaluator
     override_cmd: -c /etc/mediawiki-services-function-evaluator/config.yaml
-    port: 6928
+    port: 6929
     runtime: runsc
     version: latest
   mediawiki-services-function-evaluator:
