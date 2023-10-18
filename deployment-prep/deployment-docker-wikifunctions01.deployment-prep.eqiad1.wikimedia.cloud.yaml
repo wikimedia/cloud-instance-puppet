@@ -15,24 +15,10 @@ profile::docker::runner::service_defs:
         name: function-evaluator-js
         port: 8125
         type: statsd
-      num_workers: 7
+      num_workers: 4
       services:
       - conf:
-          cors: '*'
-          mwapi_req:
-            body: '{{ default(request.query, {}) }}'
-            headers:
-              user-agent: '{{user-agent}}'
-            method: post
-            uri: https://{{domain}}/w/api.php
           port: 6928
-          restbase_req:
-            body: '{{request.body}}'
-            headers: '{{request.headers}}'
-            method: '{{request.method}}'
-            query: '{{ default(request.query, {}) }}'
-            uri: https://{{domain}}/api/rest_v1/{+path}
-          spec: ./spec.template.yaml
         module: ./app.js
         name: function-evaluator-js
       worker_heap_limit_mb: 500
@@ -54,24 +40,10 @@ profile::docker::runner::service_defs:
         name: function-evaluator-py
         port: 8125
         type: statsd
-      num_workers: 7
+      num_workers: 4
       services:
       - conf:
-          cors: '*'
-          mwapi_req:
-            body: '{{ default(request.query, {}) }}'
-            headers:
-              user-agent: '{{user-agent}}'
-            method: post
-            uri: https://{{domain}}/w/api.php
           port: 6929
-          restbase_req:
-            body: '{{request.body}}'
-            headers: '{{request.headers}}'
-            method: '{{request.method}}'
-            query: '{{ default(request.query, {}) }}'
-            uri: https://{{domain}}/api/rest_v1/{+path}
-          spec: ./spec.template.yaml
         module: ./app.js
         name: function-evaluator-py
       worker_heap_limit_mb: 500
@@ -96,21 +68,7 @@ profile::docker::runner::service_defs:
       num_workers: 7
       services:
       - conf:
-          cors: '*'
-          mwapi_req:
-            body: '{{ default(request.query, {}) }}'
-            headers:
-              user-agent: '{{user-agent}}'
-            method: post
-            uri: https://{{domain}}/w/api.php
           port: 6927
-          restbase_req:
-            body: '{{request.body}}'
-            headers: '{{request.headers}}'
-            method: '{{request.method}}'
-            query: '{{ default(request.query, {}) }}'
-            uri: https://{{domain}}/api/rest_v1/{+path}
-          spec: ./spec.template.yaml
         module: ./app.js
         name: function-evaluator
       worker_heap_limit_mb: 500
