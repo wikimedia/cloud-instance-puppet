@@ -78,7 +78,8 @@ profile::toolforge::prometheus::probes_pingthing_http_check_urls:
 profile::toolforge::proxies:
 - tools-proxy-05.tools.eqiad.wmflabs
 - tools-proxy-06.tools.eqiad.wmflabs
-profile::wmcs::kubeadm::component: thirdparty/kubeadm-k8s-1-22
+profile::wmcs::kubeadm::component: thirdparty/kubeadm-k8s-1-23
+profile::wmcs::kubeadm::kubernetes_version: 1.23.17
 prometheus::node_exporter::collectors_extra:
 - processes
 prometheus::node_exporter::ignored_fs_types: ^(overlay|autofs|binfmt_misc|cgroup|configfs|debugfs|devpts|devtmpfs|fusectl|hugetlbfs|mqueue|nfs.*|nsfs|proc|procfs|pstore|rpc_pipefs|securityfs|sysfs|tracefs)$
