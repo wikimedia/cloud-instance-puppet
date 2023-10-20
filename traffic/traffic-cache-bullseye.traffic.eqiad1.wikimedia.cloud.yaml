@@ -269,6 +269,8 @@ profile::cache::varnish::frontend::separate_vcl:
 profile::cache::varnish::frontend::thread_pool_max: 12000
 profile::cache::varnish::frontend::uds_group: root
 profile::cache::varnish::frontend::uds_owner: haproxy
+profile::resolving::nameservers:
+- ns-recursor.openstack.eqiad1.wikimediacloud.org
 profile::trafficserver::backend::default_lua_scripts:
 - set-x-cache
 profile::trafficserver::backend::mapping_rules:
