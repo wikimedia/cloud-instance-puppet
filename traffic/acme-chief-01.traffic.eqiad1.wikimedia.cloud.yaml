@@ -20,3 +20,4 @@ profile::acme_chief::challenges:
     - ns2.wikimedia.org.
     resolver_port: 5353
     zone_update_cmd: /usr/local/bin/acme-chief-gdnsd-sync.py
+profile::acme_chief::passive: []
