@@ -1,3 +1,4 @@
+http_proxy: ''
 profile::acme_chief::accounts:
   6e01c693ed6e9d9a6b5930923ecef104:
     directory: https://acme-staging-v02.api.letsencrypt.org/directory
