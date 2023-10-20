@@ -21,4 +21,9 @@ profile::acme_chief::challenges:
     - ns2.wikimedia.org.
     resolver_port: 5353
     zone_update_cmd: /usr/local/bin/acme-chief-gdnsd-sync.py
+profile::acme_chief::cloud::designate_sync_auth_url: http://cloudcontrol1003.wikimedia.org:5000/v3
+profile::acme_chief::cloud::designate_sync_project_name: tools
+profile::acme_chief::cloud::designate_sync_region_name: eqiad1-r
+profile::acme_chief::cloud::designate_sync_tidyup_enabled: true
+profile::acme_chief::cloud::designate_sync_username: tools-dns-manager
 profile::acme_chief::passive: []
