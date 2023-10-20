@@ -10,3 +10,12 @@ profile::acme_chief::certificates:
     authorized_regexes:
     - .*traffic\.wikimedia\.cloud
     challenge: dns-01
+profile::acme_chief::challenges:
+  dns-01:
+    issuing_ca: letsencrypt.org
+    ns_records:
+    - ns0.wikimedia.org.
+    - ns1.wikimedia.org.
+    - ns2.wikimedia.org.
+    resolver_port: 5353
+    zone_update_cmd: /usr/local/bin/acme-chief-gdnsd-sync.py
