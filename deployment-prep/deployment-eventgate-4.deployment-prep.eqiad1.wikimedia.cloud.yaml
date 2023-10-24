@@ -4,13 +4,6 @@ profile::docker::engine::settings: {}
 profile::docker::runner::service_defs:
   eventgate-analytics:
     config:
-      logging:
-        level: info
-        streams:
-        - type: stdout
-        - host: deployment-logstash03.deployment-prep.eqiad.wmflabs
-          port: 12201
-          type: gelf
       metrics:
         host: prometheus-labmon.eqiad.wmnet
         name: eventgate-analytics
@@ -67,13 +60,6 @@ profile::docker::runner::service_defs:
     version: 2023-10-17-204606-production
   eventgate-analytics-external:
     config:
-      logging:
-        level: info
-        streams:
-        - type: stdout
-        - host: deployment-logstash03.deployment-prep.eqiad.wmflabs
-          port: 12201
-          type: gelf
       metrics:
         host: prometheus-labmon.eqiad.wmnet
         name: eventgate-analytics-external
@@ -130,14 +116,6 @@ profile::docker::runner::service_defs:
     version: 2023-10-17-204606-production
   eventgate-logging-external:
     config:
-      logging:
-        level: info
-        name: eventgate-logging-external
-        streams:
-        - type: stdout
-        - host: deployment-logstash03.deployment-prep.eqiad.wmflabs
-          port: 12201
-          type: gelf
       metrics:
         host: prometheus-labmon.eqiad.wmnet
         name: eventgate-logging-external
@@ -194,13 +172,6 @@ profile::docker::runner::service_defs:
     version: 2023-10-17-204606-production
   eventgate-main:
     config:
-      logging:
-        level: info
-        streams:
-        - type: stdout
-        - host: deployment-logstash03.deployment-prep.eqiad.wmflabs
-          port: 12201
-          type: gelf
       metrics:
         host: prometheus-labmon.eqiad.wmnet
         name: eventgate-main
