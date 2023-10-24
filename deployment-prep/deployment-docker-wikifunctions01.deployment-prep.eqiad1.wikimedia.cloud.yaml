@@ -11,7 +11,7 @@ profile::docker::runner::service_defs:
         - named_levels: true
           type: stdout
       metrics:
-        host: prometheus-labmon.eqiad.wmnet
+        host: 127.0.0.1
         name: function-evaluator-js
         port: 8125
         type: statsd
@@ -36,7 +36,7 @@ profile::docker::runner::service_defs:
         - named_levels: true
           type: stdout
       metrics:
-        host: prometheus-labmon.eqiad.wmnet
+        host: 127.0.0.1
         name: function-evaluator-py
         port: 8125
         type: statsd
@@ -61,7 +61,7 @@ profile::docker::runner::service_defs:
         - named_levels: true
           type: stdout
       metrics:
-        host: prometheus-labmon.eqiad.wmnet
+        host: 127.0.0.1
         name: function-evaluator
         port: 8125
         type: statsd
@@ -86,7 +86,7 @@ profile::docker::runner::service_defs:
         - named_levels: true
           type: stdout
       metrics:
-        host: prometheus-labmon.eqiad.wmnet
+        host: 127.0.0.1
         name: function-orchestrator
         port: 8125
         type: statsd
