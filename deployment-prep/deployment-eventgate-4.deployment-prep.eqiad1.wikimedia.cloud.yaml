@@ -17,7 +17,7 @@ profile::docker::runner::service_defs:
               metadata.broker.list: deployment-kafka-jumbo-5.deployment-prep.eqiad1.wikimedia.cloud:9092,deployment-kafka-jumbo-8.deployment-prep.eqiad1.wikimedia.cloud:9092,deployment-kafka-jumbo-9.deployment-prep.eqiad1.wikimedia.cloud:9092
               statistics.interval.ms: 10000
             topic_conf: {}
-          max_body_size: 2mb
+          max_body_size: 10mb
           port: 8192
           schema_base_uris:
           - http://schema-beta.wmflabs.org/repositories/primary/jsonschema/
@@ -62,7 +62,7 @@ profile::docker::runner::service_defs:
               metadata.broker.list: deployment-kafka-jumbo-5.deployment-prep.eqiad1.wikimedia.cloud:9092,deployment-kafka-jumbo-8.deployment-prep.eqiad1.wikimedia.cloud:9092,deployment-kafka-jumbo-9.deployment-prep.eqiad1.wikimedia.cloud:9092
               statistics.interval.ms: 10000
             topic_conf: {}
-          max_body_size: 2mb
+          max_body_size: 10mb
           port: 8492
           schema_base_uris:
           - http://schema-beta.wmflabs.org/repositories/primary/jsonschema/
@@ -106,7 +106,7 @@ profile::docker::runner::service_defs:
               metadata.broker.list: deployment-kafka-logging01.deployment-prep.eqiad1.wikimedia.cloud:9092
               statistics.interval.ms: 10000
             topic_conf: {}
-          max_body_size: 2mb
+          max_body_size: 10mb
           port: 8992
           schema_base_uris:
           - http://schema-beta.wmflabs.org/repositories/primary/jsonschema/
@@ -150,7 +150,7 @@ profile::docker::runner::service_defs:
               metadata.broker.list: deployment-kafka-main-5.deployment-prep.eqiad1.wikimedia.cloud:9092,deployment-kafka-main-6.deployment-prep.eqiad1.wikimedia.cloud:9092
               statistics.interval.ms: 10000
             topic_conf: {}
-          max_body_size: 2mb
+          max_body_size: 10mb
           port: 8292
           schema_base_uris:
           - http://schema-beta.wmflabs.org/repositories/primary/jsonschema/
