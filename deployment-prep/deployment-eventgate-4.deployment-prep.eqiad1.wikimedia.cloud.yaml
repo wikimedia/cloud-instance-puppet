@@ -25,16 +25,9 @@ profile::docker::runner::service_defs:
           - /error/1.0.0
           - /test/event/1.0.0
           schema_uri_field: $schema
-          stream_config_is_dynamic: true
           stream_config_object_path: streams
-          stream_config_precache_list:
-          - eventgate-analytics.test.event
-          - eventgate-analytics.error.validation
-          stream_config_recache_on_expire: true
           stream_config_ttl: 60
-          stream_config_uri: https://meta.wikimedia.beta.wmflabs.org/w/api.php?action=streamconfigs&format=json&constraints=destination_event_service=eventgate-analytics&streams=<%=
-            streams %>
-          stream_config_uri_streams_delimiter: '|'
+          stream_config_uri: https://meta.wikimedia.beta.wmflabs.org/w/api.php?action=streamconfigs&format=json&constraints=destination_event_service=eventgate-analytics
           stream_field: meta.stream
           test_events:
           - $schema: /test/event/1.0.0
@@ -52,7 +45,7 @@ profile::docker::runner::service_defs:
     namespace: wikimedia
     override_cmd: /srv/service/node_modules/.bin/eventgate -c /etc/eventgate-analytics/config.yaml
     port: 8192
-    version: 2023-10-17-204606-production
+    version: 2023-10-24-174410-production
   eventgate-analytics-external:
     config:
       num_workers: 0
@@ -76,16 +69,8 @@ profile::docker::runner::service_defs:
           - /error/1.0.0
           - /test/event/1.0.0
           schema_uri_field: $schema
-          stream_config_is_dynamic: true
-          stream_config_object_path: streams
-          stream_config_precache_list:
-          - eventgate-analytics-external.test.event
-          - eventgate-analytics-external.error.validation
-          stream_config_recache_on_expire: true
           stream_config_ttl: 60
-          stream_config_uri: https://meta.wikimedia.beta.wmflabs.org/w/api.php?action=streamconfigs&format=json&constraints=destination_event_service=eventgate-analytics-external&streams=<%=
-            streams %>
-          stream_config_uri_streams_delimiter: '|'
+          stream_config_uri: https://meta.wikimedia.beta.wmflabs.org/w/api.php?action=streamconfigs&format=json&constraints=destination_event_service=eventgate-analytics-external
           stream_field: meta.stream
           test_events:
           - $schema: /test/event/1.0.0
@@ -103,7 +88,7 @@ profile::docker::runner::service_defs:
     namespace: wikimedia
     override_cmd: /srv/service/node_modules/.bin/eventgate -c /etc/eventgate-analytics-external/config.yaml
     port: 8492
-    version: 2023-10-17-204606-production
+    version: 2023-10-24-174410-production
   eventgate-logging-external:
     config:
       num_workers: 0
@@ -127,17 +112,9 @@ profile::docker::runner::service_defs:
           - /test/event/1.0.0
           - /mediawiki/client/error/1.0.0
           schema_uri_field: $schema
-          stream_config_is_dynamic: true
           stream_config_object_path: streams
-          stream_config_precache_list:
-          - eventgate-logging-external.test.event
-          - eventgate-logging-external.error.validation
-          - mediawiki.client.error
-          stream_config_recache_on_expire: true
           stream_config_ttl: 60
-          stream_config_uri: https://meta.wikimedia.beta.wmflabs.org/w/api.php?action=streamconfigs&format=json&constraints=destination_event_service=eventgate-logging-external&streams=<%=
-            streams %>
-          stream_config_uri_streams_delimiter: '|'
+          stream_config_uri: https://meta.wikimedia.beta.wmflabs.org/w/api.php?action=streamconfigs&format=json&constraints=destination_event_service=eventgate-logging-external
           stream_field: meta.stream
           test_events:
           - $schema: /test/event/1.0.0
@@ -154,7 +131,7 @@ profile::docker::runner::service_defs:
     namespace: wikimedia
     override_cmd: /srv/service/node_modules/.bin/eventgate -c /etc/eventgate-logging-external/config.yaml
     port: 8992
-    version: 2023-10-17-204606-production
+    version: 2023-10-24-174410-production
   eventgate-main:
     config:
       num_workers: 0
@@ -177,16 +154,9 @@ profile::docker::runner::service_defs:
           - /error/1.0.0
           - /test/event/1.0.0
           schema_uri_field: $schema
-          stream_config_is_dynamic: true
           stream_config_object_path: streams
-          stream_config_precache_list:
-          - eventgate-main.test.event
-          - eventgate-main.error.validation
-          stream_config_recache_on_expire: true
           stream_config_ttl: 60
-          stream_config_uri: https://meta.wikimedia.beta.wmflabs.org/w/api.php?action=streamconfigs&format=json&constraints=destination_event_service=eventgate-main&streams=<%=
-            streams %>
-          stream_config_uri_streams_delimiter: '|'
+          stream_config_uri: https://meta.wikimedia.beta.wmflabs.org/w/api.php?action=streamconfigs&format=json&constraints=destination_event_service=eventgate-main
           stream_field: meta.stream
           test_events:
           - $schema: /test/event/1.0.0
@@ -204,4 +174,4 @@ profile::docker::runner::service_defs:
     namespace: wikimedia
     override_cmd: /srv/service/node_modules/.bin/eventgate -c /etc/eventgate-main/config.yaml
     port: 8292
-    version: 2023-10-17-204606-production
+    version: 2023-10-24-174410-production
