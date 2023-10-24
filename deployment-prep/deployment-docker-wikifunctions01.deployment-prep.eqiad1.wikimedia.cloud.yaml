@@ -10,11 +10,6 @@ profile::docker::runner::service_defs:
         streams:
         - named_levels: true
           type: stdout
-      metrics:
-        host: 127.0.0.1
-        name: function-evaluator-js
-        port: 8125
-        type: statsd
       num_workers: 4
       services:
       - conf:
@@ -35,11 +30,6 @@ profile::docker::runner::service_defs:
         streams:
         - named_levels: true
           type: stdout
-      metrics:
-        host: 127.0.0.1
-        name: function-evaluator-py
-        port: 8125
-        type: statsd
       num_workers: 4
       services:
       - conf:
@@ -60,11 +50,6 @@ profile::docker::runner::service_defs:
         streams:
         - named_levels: true
           type: stdout
-      metrics:
-        host: 127.0.0.1
-        name: function-evaluator
-        port: 8125
-        type: statsd
       num_workers: 7
       services:
       - conf:
@@ -85,11 +70,6 @@ profile::docker::runner::service_defs:
         streams:
         - named_levels: true
           type: stdout
-      metrics:
-        host: 127.0.0.1
-        name: function-orchestrator
-        port: 8125
-        type: statsd
       num_workers: 7
       services:
       - conf:
