@@ -4,11 +4,6 @@ profile::docker::engine::settings: {}
 profile::docker::runner::service_defs:
   eventgate-analytics:
     config:
-      metrics:
-        host: prometheus-labmon.eqiad.wmnet
-        name: eventgate-analytics
-        port: 8125
-        type: statsd
       num_workers: 0
       services:
       - conf:
@@ -60,11 +55,6 @@ profile::docker::runner::service_defs:
     version: 2023-10-17-204606-production
   eventgate-analytics-external:
     config:
-      metrics:
-        host: prometheus-labmon.eqiad.wmnet
-        name: eventgate-analytics-external
-        port: 8125
-        type: statsd
       num_workers: 0
       services:
       - conf:
@@ -116,11 +106,6 @@ profile::docker::runner::service_defs:
     version: 2023-10-17-204606-production
   eventgate-logging-external:
     config:
-      metrics:
-        host: prometheus-labmon.eqiad.wmnet
-        name: eventgate-logging-external
-        port: 8125
-        type: statsd
       num_workers: 0
       services:
       - conf:
@@ -172,11 +157,6 @@ profile::docker::runner::service_defs:
     version: 2023-10-17-204606-production
   eventgate-main:
     config:
-      metrics:
-        host: prometheus-labmon.eqiad.wmnet
-        name: eventgate-main
-        port: 8125
-        type: statsd
       num_workers: 0
       services:
       - conf:
