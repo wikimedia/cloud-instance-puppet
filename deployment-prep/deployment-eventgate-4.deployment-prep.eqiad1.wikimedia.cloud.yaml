@@ -71,6 +71,7 @@ profile::docker::runner::service_defs:
           - /error/1.0.0
           - /test/event/1.0.0
           schema_uri_field: $schema
+          stream_config_object_path: streams
           stream_config_ttl: 60
           stream_config_uri: https://meta.wikimedia.beta.wmflabs.org/w/api.php?action=streamconfigs&format=json&constraints=destination_event_service=eventgate-analytics-external
           stream_field: meta.stream
