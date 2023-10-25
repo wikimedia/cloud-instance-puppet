@@ -1,0 +1,88 @@
+acmechief_host: traffic-acmechief01.traffic.eqiad1.wikimedia.cloud
+authdns_servers:
+  185.15.56.163: 185.15.56.163
+  208.80.154.148: 208.80.154.148
+http_proxy: ''
+profile::acme_chief::accounts:
+  f0990a352564fba4ceed58fbde078965:
+    directory: https://acme-v02.api.letsencrypt.org/directory
+    regr: '{"body": {}, "uri": "https://acme-v02.api.letsencrypt.org/acme/acct/62787352"}'
+profile::acme_chief::active: traffic-acmechief01.traffic.eqiad.wmflabs
+profile::acme_chief::certificates:
+  non-canonical-redirect-1:
+    CN: wikipedia.com.traffic.wmflabs.org
+    SNI:
+    - wikipedia.com.traffic.wmflabs.org
+    - '*.wikipedia.com.traffic.wmflabs.org'
+    - '*.en-wp.com.traffic.wmflabs.org'
+    - en-wp.com.traffic.wmflabs.org
+    - '*.en-wp.org.traffic.wmflabs.org'
+    - en-wp.org.traffic.wmflabs.org
+    authorized_hosts:
+    - traffic-ncredir-bullseye.traffic.eqiad1.wikimedia.cloud
+    authorized_regexes:
+    - ^traffic-ncredir-bullseye\.traffic\.eqiad1\.wikimedia\.cloud
+    challenge: dns-01
+    prevalidate: true
+    skip_invalid_snis: true
+    staging_time: 604800
+  unified:
+    CN: '*.wikimedia.traffic.wmflabs.org'
+    SNI:
+    - traffic.wmflabs.org
+    - upload.traffic.wmflabs.org
+    - m.wikidata.traffic.wmflabs.org
+    - wikidata.traffic.wmflabs.org
+    - '*.wikibooks.traffic.wmflabs.org'
+    - '*.wikimedia.traffic.wmflabs.org'
+    - '*.wikinews.traffic.wmflabs.org'
+    - '*.wikipedia.traffic.wmflabs.org'
+    - '*.wikiquote.traffic.wmflabs.org'
+    - '*.wikisource.traffic.wmflabs.org'
+    - '*.wikiversity.traffic.wmflabs.org'
+    - '*.wikivoyage.traffic.wmflabs.org'
+    - '*.wiktionary.traffic.wmflabs.org'
+    - '*.m.wikibooks.traffic.wmflabs.org'
+    - '*.m.wikimedia.traffic.wmflabs.org'
+    - '*.m.wikinews.traffic.wmflabs.org'
+    - '*.m.wikipedia.traffic.wmflabs.org'
+    - '*.m.wikiquote.traffic.wmflabs.org'
+    - '*.m.wikisource.traffic.wmflabs.org'
+    - '*.m.wikiversity.traffic.wmflabs.org'
+    - '*.m.wikivoyage.traffic.wmflabs.org'
+    - '*.m.wiktionary.traffic.wmflabs.org'
+    authorized_hosts:
+    - traffic-text-ats.traffic.eqiad.wmflabs
+    - traffic-upload-stretch.traffic.eqiad.wmflabs
+    - cpupload.traffic.eqiad1.wikimedia.cloud
+    authorized_regexes:
+    - ^traffic-cache-.*\.traffic\.eqiad\.wmflabs$
+    - ^traffic-cache-.*\.traffic\.eqiad1\.wikimedia\.cloud$
+    challenge: dns-01
+  wikibase:
+    CN: wikiba-se.traffic.wmflabs.org
+    SNI:
+    - wikiba-se.traffic.wmflabs.org
+    authorized_hosts:
+    - traffic-text-ats.traffic.eqiad.wmflabs
+    authorized_regexes:
+    - ^traffic-cache-.*\.traffic\.eqiad\.wmflabs$
+    - ^traffic-cache-.*\.traffic\.eqiad1\.wikimedia\.cloud$
+    challenge: dns-01
+profile::acme_chief::challenges:
+  dns-01:
+    issuing_ca: letsencrypt.org
+    ns_records:
+    - ns0.openstack.eqiad1.wikimediacloud.org.
+    - ns1.openstack.eqiad1.wikimediacloud.org.
+    resolver_port: 53
+    zone_update_cmd: /usr/local/bin/acme-chief-designate-sync.py
+profile::acme_chief::cloud::designate_sync_auth_url: https://openstack.eqiad1.wikimediacloud.org:25000/v3
+profile::acme_chief::cloud::designate_sync_project_names:
+- traffic
+profile::acme_chief::cloud::designate_sync_region_name: eqiad1-r
+profile::acme_chief::cloud::designate_sync_tidyup_enabled: true
+profile::acme_chief::cloud::designate_sync_username: traffic-cloud-dns-manager
+profile::acme_chief::passive:
+- traffic-acmechief02.traffic.eqiad.wmflabs
+puppetmaster: traffic-puppetmaster-buster.traffic.eqiad1.wikimedia.cloud
