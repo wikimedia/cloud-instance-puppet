@@ -7,7 +7,7 @@ profile::acme_chief::accounts:
   f0990a352564fba4ceed58fbde078965:
     directory: https://acme-v02.api.letsencrypt.org/directory
     regr: '{"body": {}, "uri": "https://acme-v02.api.letsencrypt.org/acme/acct/62787352"}'
-profile::acme_chief::active: traffic-acmechief01.traffic.eqiad.wmflabs
+profile::acme_chief::active: traffic-acmechief01.traffic.eqiad1.wikimedia.cloud
 profile::acme_chief::certificates:
   non-canonical-redirect-1:
     CN: wikipedia.com.traffic.wmflabs.org
