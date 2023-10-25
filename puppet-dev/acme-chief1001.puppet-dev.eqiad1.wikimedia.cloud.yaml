@@ -1,0 +1,33 @@
+authdns_servers:
+  localhost: 127.0.0.1
+http_proxy: ''
+profile::acme_chief::accounts:
+  e64fc08777c45aa5fb82ce175758166a:
+    directory: https://acme-v02.api.letsencrypt.org/directory
+    regr: '{"body": {}, "uri": "https://acme-v02.api.letsencrypt.org/acme/acct/108357291"}'
+profile::acme_chief::active: acme-chief1001.puppet-dev.eqiad1.wikimedia.cloud
+profile::acme_chief::certificates:
+  test:
+    CN: test.example.org
+    SNI: []
+    authorized_regexes:
+    - ^enc-[12]\.cloudinfra\.eqiad1\.wikimedia\.cloud$
+    challenge: dns-01
+profile::acme_chief::challenges:
+  dns-01:
+    issuing_ca: letsencrypt.org
+    ns_records:
+    - ns0.openstack.eqiad1.wikimediacloud.org.
+    - ns1.openstack.eqiad1.wikimediacloud.org.
+    resolver_port: 53
+    sync_dns_servers:
+    - ignored_for_designate.
+    zone_update_cmd: /usr/local/bin/acme-chief-designate-sync.py
+profile::acme_chief::cloud::designate_sync_auth_url: https://openstack.eqiad1.wikimediacloud.org:25000/v3
+profile::acme_chief::cloud::designate_sync_project_names:
+- puppet-dev
+profile::acme_chief::cloud::designate_sync_region_name: eqiad1-r
+profile::acme_chief::cloud::designate_sync_tidyup_enabled: true
+profile::acme_chief::cloud::designate_sync_username: cloudinfra-dns-manager
+profile::acme_chief::passive: []
+shared_acme_certificates: {}
