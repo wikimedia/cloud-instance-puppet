@@ -1,3 +1,2 @@
 acmechief_host: acme-chief1001.puppet-dev.eqiad1.wikimedia.cloud
-profile::puppet::agent::certificate_revocation: 'false'
 profile::puppet::agent::force_puppet7: true
