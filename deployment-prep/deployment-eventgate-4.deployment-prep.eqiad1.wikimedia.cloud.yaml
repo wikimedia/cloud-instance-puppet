@@ -46,7 +46,7 @@ profile::docker::runner::service_defs:
     namespace: wikimedia
     override_cmd: /srv/service/node_modules/.bin/eventgate -c /etc/eventgate-analytics/config.yaml
     port: 8192
-    version: 2023-10-24-174410-production
+    version: 2023-10-25-155509-production
   eventgate-analytics-external:
     config:
       num_workers: 0
@@ -90,7 +90,7 @@ profile::docker::runner::service_defs:
     namespace: wikimedia
     override_cmd: /srv/service/node_modules/.bin/eventgate -c /etc/eventgate-analytics-external/config.yaml
     port: 8492
-    version: 2023-10-24-174410-production
+    version: 2023-10-25-155509-production
   eventgate-logging-external:
     config:
       num_workers: 0
@@ -134,7 +134,7 @@ profile::docker::runner::service_defs:
     namespace: wikimedia
     override_cmd: /srv/service/node_modules/.bin/eventgate -c /etc/eventgate-logging-external/config.yaml
     port: 8992
-    version: 2023-10-24-174410-production
+    version: 2023-10-25-155509-production
   eventgate-main:
     config:
       num_workers: 0
@@ -178,4 +178,4 @@ profile::docker::runner::service_defs:
     namespace: wikimedia
     override_cmd: /srv/service/node_modules/.bin/eventgate -c /etc/eventgate-main/config.yaml
     port: 8292
-    version: 2023-10-24-174410-production
+    version: 2023-10-25-155509-production
