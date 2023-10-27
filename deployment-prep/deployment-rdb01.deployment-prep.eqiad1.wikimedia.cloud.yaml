@@ -1,0 +1,2 @@
+profile::redis::master::instances:
+- '6379'
