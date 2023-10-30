@@ -13,7 +13,7 @@ profile::docker::runner::service_defs:
           port: 12201
           type: gelf
         - type: stdout
-      metrics: null
+      metrics: {}
       num_workers: ncpu * 1.5
       services:
       - conf:
