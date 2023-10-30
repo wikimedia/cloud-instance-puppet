@@ -13,11 +13,7 @@ profile::docker::runner::service_defs:
           port: 12201
           type: gelf
         - type: stdout
-      metrics:
-        host: prometheus-labmon.eqiad.wmnet
-        name: mobileapps
-        port: 8125
-        type: statsd
+      metrics: null
       num_workers: ncpu * 1.5
       services:
       - conf:
