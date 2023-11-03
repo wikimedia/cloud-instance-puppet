@@ -1,4 +1,3 @@
-http_proxy: ''
 profile::acme_chief::accounts:
   c98be4b64bc07c6ab71627b78fcdeb0e:
     directory: https://acme-v02.api.letsencrypt.org/directory
