@@ -1,4 +1,4 @@
-acmechief_host: traffic-acmechief01.traffic.eqiad.wmflabs
+acmechief_host: traffic-acmechief01.traffic.eqiad1.wikimedia.cloud
 cache::app_def_be_opts:
   between_bytes_timeout: 31s
   connect_timeout: 3s
