@@ -187,7 +187,7 @@ profile::cache::haproxy::vars:
     value: str(ECDSA)
 profile::cache::haproxy::version: haproxy26
 profile::cache::purge::backend_addr: 127.0.0.1:3128
-profile::cache::purge::frontend_addr: 127.0.0.1:3127
+profile::cache::purge::frontend_addr: /run/varnish-privileged.socket
 profile::cache::varnish::frontend::listen_uds:
 - /run/varnish-frontend-0.socket
 - /run/varnish-frontend-1.socket
