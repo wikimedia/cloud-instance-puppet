@@ -279,7 +279,7 @@ profile::trafficserver::backend::outbound_tls_settings:
   verify_server_policy: ENFORCED
 prometheus_nodes: []
 public_tls_unified_cert_vendor: lets-encrypt
-puppetmaster: traffic-puppetmaster-buster.traffic.eqiad.wmflabs
+puppetmaster: traffic-puppetmaster-buster.traffic.eqiad1.wikimedia.cloud
 zookeeper_clusters:
   main-deployment-prep:
     hosts:
