@@ -277,6 +277,13 @@ profile::trafficserver::backend::outbound_tls_settings:
     enable_tlsv1_3: 0
   verify_origin: true
   verify_server_policy: ENFORCED
+prometheus::varnishkafka_exporter::config:
+  num_entries_to_get: 2
+  required_entries:
+  - kafka
+  - varnishkafka
+  stats_files:
+  - /var/cache/varnishkafka/webrequest.stats.json
 prometheus_nodes: []
 public_tls_unified_cert_vendor: lets-encrypt
 puppetmaster: traffic-puppetmaster-buster.traffic.eqiad1.wikimedia.cloud
