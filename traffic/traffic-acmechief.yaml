@@ -1,7 +1,7 @@
 acmechief_host: traffic-acmechief01.traffic.eqiad1.wikimedia.cloud
 authdns_servers:
+  185.15.56.162: 185.15.56.162
   185.15.56.163: 185.15.56.163
-  208.80.154.148: 208.80.154.148
 http_proxy: ''
 profile::acme_chief::accounts:
   f0990a352564fba4ceed58fbde078965:
