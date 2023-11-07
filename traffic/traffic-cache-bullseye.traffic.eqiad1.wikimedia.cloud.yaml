@@ -222,6 +222,8 @@ profile::cache::haproxy::vars:
 profile::cache::kafka::eventlogging::kafka_cluster_name: jumbo-eqiad
 profile::cache::kafka::statsv::kafka_cluster_name: jumbo-eqiad
 profile::cache::kafka::webrequest::kafka_cluster_name: jumbo-eqiad
+profile::cache::purge::backend_addr: 127.0.0.1:3128
+profile::cache::purge::frontend_addr: /run/varnish-privileged.socket
 profile::cache::ssl::wikibase::acme_chief: false
 profile::cache::ssl::wikibase::le_subjects:
 - whatever.org
