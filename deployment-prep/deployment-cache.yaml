@@ -129,21 +129,7 @@ profile::cache::haproxy::tls_port: 443
 profile::cache::haproxy::tls_session_lifetime: 86400
 profile::cache::haproxy::unified_acme_chief: true
 profile::cache::haproxy::varnish_socket:
-- address: /run/varnish-frontend-0.socket
-  prefix: unix
-- address: /run/varnish-frontend-1.socket
-  prefix: unix
-- address: /run/varnish-frontend-2.socket
-  prefix: unix
-- address: /run/varnish-frontend-3.socket
-  prefix: unix
-- address: /run/varnish-frontend-4.socket
-  prefix: unix
-- address: /run/varnish-frontend-5.socket
-  prefix: unix
-- address: /run/varnish-frontend-6.socket
-  prefix: unix
-- address: /run/varnish-frontend-7.socket
+  address: /run/varnish-privileged.socket
   prefix: unix
 profile::cache::haproxy::vars:
   tls:
