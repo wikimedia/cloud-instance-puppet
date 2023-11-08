@@ -1,2 +1,1 @@
-- '- role::mariadb'
-- '- role::zookeeper'
+[]
