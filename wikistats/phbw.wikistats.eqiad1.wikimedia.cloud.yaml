@@ -1,0 +1,11 @@
+phabricator_cluster_search:
+- hosts:
+  - host: localhost
+    protocol: http
+    roles:
+      read: true
+      write: true
+  path: /phabricator
+  port: 9200
+  type: elasticsearch
+  version: 5
