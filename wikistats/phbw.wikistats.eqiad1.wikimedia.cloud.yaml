@@ -22,3 +22,4 @@ profile::phabricator::main::manage_scap_user: true
 profile::phabricator::main::rate_limits:
   connection: 0
   request: 0
+profile::tlsproxy::envoy::global_cert_name: phabricator-prod-1001.devtools.eqiad1.wikimedia.cloud
