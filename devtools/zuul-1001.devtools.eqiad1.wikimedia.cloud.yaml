@@ -1,2 +1,2 @@
-profile::zookeeper::cluster_name: '%{::wmcs_project}'
+profile::zookeeper::cluster_name: devtools
 puppetmaster: puppetmaster-1001.devtools.eqiad1.wikimedia.cloud
