@@ -1,1 +1,2 @@
+profile::gitlab::runner::ensure: absent
 puppetmaster: puppetmaster-1001.devtools.eqiad1.wikimedia.cloud
