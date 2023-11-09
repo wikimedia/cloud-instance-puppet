@@ -1,2 +1,6 @@
 profile::zookeeper::cluster_name: devtools
 puppetmaster: puppetmaster-1001.devtools.eqiad1.wikimedia.cloud
+zookeeper_clusters:
+  devtools:
+    hosts:
+      zuul-1001.devtools.eqiad1.wikimedia.org: 1
