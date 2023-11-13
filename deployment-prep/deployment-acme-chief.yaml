@@ -1,7 +1,6 @@
 authdns_servers:
   185.15.56.162: 185.15.56.162
   185.15.56.163: 185.15.56.163
-http_proxy: ''
 network::constants::mw_appserver_networks_private: []
 profile::acme_chief::accounts:
   0f076461095e47a9dce5334db021a891:
