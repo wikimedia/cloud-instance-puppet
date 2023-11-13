@@ -37,6 +37,11 @@ profile::idp::memcached_port: 11000
 profile::idp::memcached_transcoder: WHALINV1
 profile::idp::server_name: https://idp.wmcloud.org
 profile::idp::services:
+  catalyst:
+    id: 5
+    profile_format: FLAT
+    service_class: OidcRegisteredService
+    service_id: https://catalyst-auth\.wmcloud\.org(/.*)?
   cloud:
     id: 1
     service_id: https://(.*)\.eqiad1\.wikimedia\.cloud(/.*)?
