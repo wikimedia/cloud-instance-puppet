@@ -1,0 +1,26 @@
+phabricator_altdomain: phab-prod-usercontent.wmflabs.org
+phabricator_cluster_search:
+- hosts:
+  - host: localhost
+    protocol: http
+    roles:
+      read: true
+      write: true
+  path: /phabricator
+  port: 9200
+  type: elasticsearch
+  version: 5
+phabricator_domain: phab.wmflabs.org
+phabricator_phd_taskmasters: 4
+phabricator_server: phabricator-stage-1001.devtools.eqiad.wmflabs
+phabricator_servers:
+- phabricator-stage-1001.devtools.eqiad.wmflabs
+profile::mail::default_mail_relay::enabled: false
+profile::phabricator::main::dumps_rsync_clients: []
+profile::phabricator::main::http_srange: ($DEPLOYMENT_HOSTS $CACHES)
+profile::phabricator::main::manage_scap_user: true
+profile::phabricator::main::rate_limits:
+  connection: 0
+  request: 0
+profile::tlsproxy::envoy::global_cert_name: phabricator-prod-1001.devtools.eqiad1.wikimedia.cloud
+scap::deployment_server: deploy-1004.devtools.eqiad1.wikimedia.cloud
