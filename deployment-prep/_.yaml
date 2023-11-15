@@ -18,7 +18,6 @@ etcd_host: deployment-etcd02.deployment-prep.eqiad1.wikimedia.cloud
 etcd_port: 2379
 eventlogging_host: 10.68.18.111
 eventlogging_statsd_host: prometheus-labmon.eqiad.wmnet
-http_proxy: ''
 kafka_clusters:
   jumbo-deployment-prep:
     brokers:
