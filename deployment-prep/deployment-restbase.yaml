@@ -1,3 +1,4 @@
+graphite_host: none
 profile::cassandra::instances:
   deployment-restbase04.deployment-prep.eqiad1.wikimedia.cloud: {}
 profile::java::java_packages:
