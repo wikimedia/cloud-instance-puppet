@@ -1,2 +1,4 @@
+profile::puppetserver::extra_mounts:
+  volatile: /srv/puppet_fileserver/volatile
 profile::puppetserver::volatile::ip_reputation_config: {}
 profile::puppetserver::volatile::ip_reputation_proxies: []
