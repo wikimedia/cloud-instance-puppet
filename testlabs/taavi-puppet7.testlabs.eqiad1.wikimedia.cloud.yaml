@@ -1,1 +1,2 @@
 profile::puppetserver::volatile::ip_reputation_config: {}
+profile::puppetserver::volatile::ip_reputation_proxies: []
