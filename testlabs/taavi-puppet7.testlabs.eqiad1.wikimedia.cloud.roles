@@ -1,3 +1,2 @@
 - profile::firewall
 - profile::puppetserver::wmcs
-- profile::puppetserver::scripts
