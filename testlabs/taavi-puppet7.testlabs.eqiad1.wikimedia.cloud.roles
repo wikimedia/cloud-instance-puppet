@@ -2,4 +2,5 @@
 - profile::puppetserver::wmcs
 - profile::puppetserver::git::private
 - profile::puppetserver::scripts
+- profile::puppetserver::volatile
 - profile::puppetserver::rsync
