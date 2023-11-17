@@ -1,0 +1,2 @@
+- profile::puppetserver::wmcs
+- profile::firewall
