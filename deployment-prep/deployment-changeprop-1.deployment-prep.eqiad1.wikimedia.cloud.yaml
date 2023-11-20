@@ -11,11 +11,3 @@ profile::docker::runner::service_defs:
     port: 7272
     version: 2023-11-20-162131-production
     volume: true
-  cpjobqueue:
-    config: {}
-    image_name: mediawiki-services-change-propagation
-    namespace: wikimedia
-    override_cmd: /srv/service/server.js -c /etc/cpjobqueue/config.yaml
-    port: 7273
-    version: 2023-11-20-162131-production
-    volume: true
