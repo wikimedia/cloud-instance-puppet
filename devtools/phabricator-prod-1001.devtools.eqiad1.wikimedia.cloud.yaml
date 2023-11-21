@@ -12,5 +12,4 @@ profile::debdeploy::client::filter_services:
   php7.4-fpm:
   - '*'
 profile::phabricator::main::database_datadir: /srv/sqldata
-profile::tlsproxy::envoy::global_cert_name: phabricator-bullseye.devtools.eqiad1.wikimedia.cloud
 puppetmaster: puppetmaster-1001.devtools.eqiad1.wikimedia.cloud
