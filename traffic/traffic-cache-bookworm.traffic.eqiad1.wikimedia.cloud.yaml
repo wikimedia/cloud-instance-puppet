@@ -47,7 +47,7 @@ profile::cache::haproxy::acls:
   tls:
   - criterion: var(txn.xwd_count)
     name: missing_xwd
-    operator: eq
+    operator: -m int eq
     value: '0'
   - criterion: fc_http_major
     name: h2
