@@ -157,7 +157,7 @@ profile::cache::haproxy::del_headers:
   - acl: missing_xwd
     direction: response
     name: X-Varnish
-profile::cache::haproxy::do_ocsp: true
+profile::cache::haproxy::do_ocsp: false
 profile::cache::haproxy::h2settings:
   header_table_size: 4096
   initial_window_size: 65535
