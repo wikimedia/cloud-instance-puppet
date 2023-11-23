@@ -54,5 +54,6 @@ profile::acme_chief::cloud::designate_sync_project_names:
 profile::acme_chief::cloud::designate_sync_region_name: eqiad1-r
 profile::acme_chief::cloud::designate_sync_tidyup_enabled: true
 profile::acme_chief::cloud::designate_sync_username: project-proxy-dns-manager
-profile::acme_chief::passive: []
+profile::acme_chief::passive:
+- project-proxy-acme-chief-02.project-proxy.eqiad1.wikimedia.cloud
 shared_acme_certificates: {}
