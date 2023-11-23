@@ -60,4 +60,5 @@ profile::ssh::client::extra_ssh_keys:
   project-proxy-acme-chief-02.project-proxy.eqiad1.wikimedia.cloud:
     key: AAAAC3NzaC1lZDI1NTE5AAAAIG0ARyNw7KNOEm8YjwVXctaUt41gzrsvIn8yfDdRZFaa
     type: ssh-ed25519
+profile::ssh::client::manage_ssh_keys: true
 shared_acme_certificates: {}
