@@ -54,12 +54,8 @@ profile::acme_chief::cloud::designate_sync_project_names:
 profile::acme_chief::cloud::designate_sync_region_name: eqiad1-r
 profile::acme_chief::cloud::designate_sync_tidyup_enabled: true
 profile::acme_chief::cloud::designate_sync_username: project-proxy-dns-manager
-profile::acme_chief::passive:
-- project-proxy-acme-chief-01.project-proxy.eqiad.wmflabs
+profile::acme_chief::passive: []
 profile::ssh::client::extra_ssh_keys:
-  project-proxy-acme-chief-01.project-proxy.eqiad.wmflabs:
-    key: AAAAC3NzaC1lZDI1NTE5AAAAIF2AfSKtMJaSdNUyn1x8gefPfUOaxktXEfQv+UtuVk/C
-    type: ssh-ed25519
   project-proxy-acme-chief-02.project-proxy.eqiad1.wikimedia.cloud:
     key: AAAAC3NzaC1lZDI1NTE5AAAAIG0ARyNw7KNOEm8YjwVXctaUt41gzrsvIn8yfDdRZFaa
     type: ssh-ed25519
