@@ -1,2 +1,2 @@
 profile::puppet::agent::force_puppet7: true
-puppetmaster: project-proxy-puppetmaster-01.project-proxy.eqiad.wmflabs
+puppetmaster: project-proxy-puppetserver-1.project-proxy.eqiad1.wikimedia.cloud
