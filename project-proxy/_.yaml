@@ -1,4 +1,4 @@
-acmechief_host: project-proxy-acme-chief-01.project-proxy.eqiad.wmflabs
+acmechief_host: project-proxy-acme-chief-02.project-proxy.eqiad1.wikimedia.cloud
 profile::wmcs::novaproxy::active_proxy: proxy-03
 profile::wmcs::novaproxy::all_proxies:
 - proxy-03.project-proxy.eqiad1.wikimedia.cloud
