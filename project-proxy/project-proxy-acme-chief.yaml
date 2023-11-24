@@ -2,7 +2,7 @@ profile::acme_chief::accounts:
   c98be4b64bc07c6ab71627b78fcdeb0e:
     directory: https://acme-v02.api.letsencrypt.org/directory
     regr: '{"body": {}, "uri": "https://acme-v02.api.letsencrypt.org/acme/acct/87887184"}'
-profile::acme_chief::active: project-proxy-acme-chief-01.project-proxy.eqiad.wmflabs
+profile::acme_chief::active: project-proxy-acme-chief-02.project-proxy.eqiad1.wikimedia.cloud
 profile::acme_chief::certificates:
   maps:
     CN: maps.wmcloud.org
@@ -55,8 +55,11 @@ profile::acme_chief::cloud::designate_sync_region_name: eqiad1-r
 profile::acme_chief::cloud::designate_sync_tidyup_enabled: true
 profile::acme_chief::cloud::designate_sync_username: project-proxy-dns-manager
 profile::acme_chief::passive:
-- project-proxy-acme-chief-02.project-proxy.eqiad1.wikimedia.cloud
+- project-proxy-acme-chief-01.project-proxy.eqiad.wmflabs
 profile::ssh::client::extra_ssh_keys:
+  project-proxy-acme-chief-01.project-proxy.eqiad.wmflabs:
+    key: AAAAC3NzaC1lZDI1NTE5AAAAIF2AfSKtMJaSdNUyn1x8gefPfUOaxktXEfQv+UtuVk/C
+    type: ssh-ed25519
   project-proxy-acme-chief-02.project-proxy.eqiad1.wikimedia.cloud:
     key: AAAAC3NzaC1lZDI1NTE5AAAAIG0ARyNw7KNOEm8YjwVXctaUt41gzrsvIn8yfDdRZFaa
     type: ssh-ed25519
