@@ -6,7 +6,6 @@ cache::app_def_be_opts:
   max_connections: 1000
   port: 80
 do_acme: true
-http_proxy: ''
 kafka_cluster_name: analytics-traffic
 kafka_clusters:
   analytics-traffic:
