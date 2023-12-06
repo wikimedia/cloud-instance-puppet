@@ -47,7 +47,7 @@ profile::cache::haproxy::acls:
   tls:
   - criterion: var(txn.xwd_count)
     name: missing_xwd
-    operator: eq
+    operator: -m int eq
     value: '0'
   - criterion: fc_http_major
     name: h2
@@ -157,7 +157,7 @@ profile::cache::haproxy::del_headers:
   - acl: missing_xwd
     direction: response
     name: X-Varnish
-profile::cache::haproxy::do_ocsp: true
+profile::cache::haproxy::do_ocsp: false
 profile::cache::haproxy::h2settings:
   header_table_size: 4096
   initial_window_size: 65535
@@ -219,6 +219,7 @@ profile::cache::haproxy::vars:
     direction: request
     name: req.auth
     value: str(ECDSA)
+profile::cache::haproxy::version: haproxy26
 profile::cache::kafka::eventlogging::kafka_cluster_name: jumbo-eqiad
 profile::cache::kafka::statsv::kafka_cluster_name: jumbo-eqiad
 profile::cache::kafka::webrequest::kafka_cluster_name: jumbo-eqiad
