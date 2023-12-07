@@ -274,9 +274,6 @@ role::deployment::repo_config:
     checkout_submodules: true
     service_name: cxserver
     upstream: https://gerrit.wikimedia.org/r/mediawiki/services/cxserver/deploy
-  dropwizard/metrics:
-    gitfat_enabled: true
-    upstream: https://gerrit.wikimedia.org/r/operations/software/dropwizard-metrics
   elasticsearch/plugins:
     gitfat_enabled: true
     upstream: https://gerrit.wikimedia.org/r/operations/software/elasticsearch/plugins
