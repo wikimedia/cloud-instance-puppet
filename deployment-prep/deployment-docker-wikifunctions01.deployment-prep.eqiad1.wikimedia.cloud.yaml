@@ -96,12 +96,10 @@ profile::docker::runner::service_defs:
       NODE_TLS_REJECT_UNAUTHORIZED: '0'
       ORCHESTRATOR_CONFIG: '{ "evaluatorConfigs": [ { "programmingLanguages": ["python-3-9",
         "python-3-8", "python-3-7", "python-3", "python"], "evaluatorUri": "https://wikifunctions-evaluator-beta.wmflabs.org/1/v1/evaluate/",
-        "evaluatorWs": "", "useReentrance": false, allowCustomDerializers: true },
-        { "programmingLanguages": ["javascript-es2020", "javascript-es2019", "javascript-es2018",
-        "javascript-es2017", "javascript-es2016", "javascript-es2015", "javascript"],
-        "evaluatorUri": "https://wikifunctions-evaluator-beta.wmflabs.org/1/v1/evaluate/",
-        "evaluatorWs": "", "useReentrance": false, allowCustomDerializers: true} ]
-        }'
+        "evaluatorWs": "", "useReentrance": false }, { "programmingLanguages": ["javascript-es2020",
+        "javascript-es2019", "javascript-es2018", "javascript-es2017", "javascript-es2016",
+        "javascript-es2015", "javascript"], "evaluatorUri": "https://wikifunctions-evaluator-beta.wmflabs.org/1/v1/evaluate/",
+        "evaluatorWs": "", "useReentrance": false} ] }'
       ORCHESTRATOR_CONFIG_NEW: '{ "evaluatorConfigs": [ { "programmingLanguages":
         ["python-3-9", "python-3-8", "python-3-7", "python-3", "python"], "evaluatorUri":
         "https://wikifunctions-evaluator-python3-beta.wmcloud.org/1/v1/evaluate/",
