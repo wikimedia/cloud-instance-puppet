@@ -109,6 +109,7 @@ profile::docker::runner::service_defs:
         "evaluatorUri": "https://wikifunctions-evaluator-javascript-beta.wmcloud.org/1/v1/evaluate/",
         "evaluatorWs": "", "useReentrance": false, allowCustomDerializers: true }
         ] }'
+      ORCHESTRATOR_TIMEOUT_MS: '10000'
       WIKI_API_URL: https://wikifunctions.beta.wmflabs.org/w/api.php
     image_name: function-orchestrator
     namespace: repos/abstract-wiki/wikifunctions
