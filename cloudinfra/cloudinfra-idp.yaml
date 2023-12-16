@@ -41,7 +41,7 @@ profile::idp::services:
     id: 5
     profile_format: FLAT
     service_class: OidcRegisteredService
-    service_id: https://catalyst-auth\.wmcloud\.org(/.*)?
+    service_id: https://catalyst\.wmcloud\.org(/.*)?
   cloud:
     id: 1
     service_id: https://(.*)\.eqiad1\.wikimedia\.cloud(/.*)?
