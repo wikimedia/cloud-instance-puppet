@@ -1,0 +1,3 @@
+profile::community_civicrm::config_nonce: RANDOM-NONCE
+profile::community_civicrm::dbpassword: FAKEFAKEFAKE
+profile::community_civicrm::hash_salt: EXAMPLE-SALT
