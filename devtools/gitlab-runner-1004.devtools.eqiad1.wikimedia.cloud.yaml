@@ -1,2 +1,0 @@
-puppetmaster: puppetmaster-1001.devtools.eqiad1.wikimedia.cloud
-rofile::gitlab::runner::concurrent: 2
