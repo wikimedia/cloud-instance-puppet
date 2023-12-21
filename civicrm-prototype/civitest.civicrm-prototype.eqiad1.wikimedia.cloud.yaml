@@ -1,4 +1,5 @@
 profile::community_civicrm::config_nonce: RANDOM-NONCE
 profile::community_civicrm::dbpassword: FAKEFAKEFAKE
 profile::community_civicrm::hash_salt: EXAMPLE-SALT
+profile::community_civicrm::httpd::site_name: civitest.wmcloud.org
 puppetmaster: puppetserver.civicrm-prototype.eqiad1.wikimedia.cloud
