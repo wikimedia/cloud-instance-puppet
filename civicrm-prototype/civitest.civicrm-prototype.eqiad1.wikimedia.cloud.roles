@@ -1,1 +1,2 @@
 - role::crm
+- profile::community_civicrm::envoy_proxy
