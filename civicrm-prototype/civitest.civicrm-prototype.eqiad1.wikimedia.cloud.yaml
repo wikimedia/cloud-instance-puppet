@@ -2,7 +2,7 @@ profile::community_civicrm::config_nonce: RANDOM-NONCE
 profile::community_civicrm::dbpassword: FAKEFAKEFAKE
 profile::community_civicrm::hash_salt: EXAMPLE-SALT
 profile::envoy::ensure: present
-profile::tlsproxy::envoy::global_cert_name: cert
+profile::tlsproxy::envoy::global_cert_name: server
 profile::tlsproxy::envoy::services:
 - port: 80
   server_names:
