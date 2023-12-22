@@ -1,4 +1,12 @@
 profile::community_civicrm::config_nonce: RANDOM-NONCE
 profile::community_civicrm::dbpassword: FAKEFAKEFAKE
 profile::community_civicrm::hash_salt: EXAMPLE-SALT
+profile::envoy::ensure: present
+profile::tlsproxy::envoy::global_cert_name: civicrm_https
+profile::tlsproxy::envoy::services:
+- port: 80
+  server_names:
+  - '*'
+profile::tlsproxy::envoy::sni_support: 'no'
+profile::tlsproxy::envoy::tls_port: 443
 puppetmaster: puppetserver.civicrm-prototype.eqiad1.wikimedia.cloud
