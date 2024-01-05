@@ -1,5 +1,6 @@
 contint::zuul_merger_hosts:
 - 127.0.0.1
+graphite_host: localhost
 profile::ci::docker::settings:
   log-driver: none
 profile::ci::firewall::zuul_merger_hosts:
