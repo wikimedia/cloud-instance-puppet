@@ -39,6 +39,7 @@ profile::zuul::server::conf:
   statsd_host: localhost
   status_url: https://integration.wmcloud.org/zuul/
   url_pattern: https://integration.wmcloud.org/ci/job/{job.name}/{build.number}/console
+profile::zuul::server::email_server: localhost
 zuul::common:
   gerrit_server: gerrit.wmcloud.org
   gerrit_user: jenkins-bot
