@@ -24,3 +24,6 @@ profile::ci::shipyard::ci_build_user_password: snakeoil
 profile::local_dev::ci_build_user_password: snakoil
 profile::tlsproxy::envoy::global_cert_name: 'contint-bullseye.devtools.eqiad1.wikimedia.cloud '
 profile::zuul::merger::enable: false
+zuul::common:
+  gerrit_server: gerrit.wmcloud.org
+  gerrit_user: jenkins-bot
