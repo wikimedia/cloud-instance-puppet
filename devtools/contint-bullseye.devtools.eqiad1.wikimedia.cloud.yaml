@@ -1,3 +1,6 @@
 contint::zuul_merger_hosts:
 - ::1
 - 127.0.0.1
+lookup_options:
+  classes:
+    merge: unique
