@@ -32,6 +32,13 @@ profile::zuul::merger::conf:
   zuul_url: git://%{::fqdn}
 profile::zuul::merger::enable: false
 profile::zuul::merger::ferm_srange: (($LABS_NETWORKS))
+profile::zuul::server::conf:
+  config_git_branch: master
+  gearman_server: 127.0.0.1
+  gearman_server_start: true
+  statsd_host: localhost
+  status_url: https://integration.wmcloud.org/zuul/
+  url_pattern: https://integration.wmcloud.org/ci/job/{job.name}/{build.number}/console
 zuul::common:
   gerrit_server: gerrit.wmcloud.org
   gerrit_user: jenkins-bot
