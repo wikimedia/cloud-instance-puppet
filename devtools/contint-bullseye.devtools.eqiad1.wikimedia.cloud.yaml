@@ -9,3 +9,4 @@ profile::ci::jenkins::workspaces_dir: /srv/jenkins/workspace/${ITEM_FULL_NAME}
 profile::ci::manager_host: localhost
 profile::ci::proxy_jenkins::http_port: 8080
 profile::ci::proxy_jenkins::prefix: /ci
+profile::tlsproxy::envoy::global_cert_name: 'contint-bullseye.devtools.eqiad1.wikimedia.cloud '
