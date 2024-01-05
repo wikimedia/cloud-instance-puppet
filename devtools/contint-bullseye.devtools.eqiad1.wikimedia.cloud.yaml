@@ -1,5 +1,7 @@
 contint::zuul_merger_hosts:
 - 127.0.0.1
+profile::ci::docker::settings:
+  log-driver: none
 profile::ci::firewall::zuul_merger_hosts:
 - 127.0.0.1
 profile::ci::jenkins::builds_dir: /srv/jenkins/builds/${ITEM_FULL_NAME}
