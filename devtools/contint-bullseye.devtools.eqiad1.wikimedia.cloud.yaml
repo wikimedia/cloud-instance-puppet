@@ -1,5 +1,4 @@
 contint::zuul_merger_hosts:
-- ::1
 - 127.0.0.1
 profile::ci::jenkins::builds_dir: /srv/jenkins/builds/${ITEM_FULL_NAME}
 profile::ci::jenkins::java_home: /usr/lib/jvm/java-11-openjdk-amd64
