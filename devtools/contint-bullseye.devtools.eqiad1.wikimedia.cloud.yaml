@@ -13,7 +13,8 @@ profile::ci::migration::rsync_data_dirs:
 - /var/lib/jenkins/
 - /var/lib/zuul/
 - /srv/jenkins/
-profile::ci::migration::rsync_dst_hosts: localhost
+profile::ci::migration::rsync_dst_hosts:
+- localhost
 profile::ci::migration::rsync_src_host: localhost
 profile::ci::pipeline::publisher::docker_registry_password: snakeoil
 profile::ci::pipeline::publisher::docker_registry_user: ci-build
