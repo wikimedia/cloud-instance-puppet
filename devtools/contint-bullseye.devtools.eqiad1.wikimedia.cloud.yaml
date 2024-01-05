@@ -9,6 +9,7 @@ profile::ci::jenkins::java_home: /usr/lib/jvm/java-11-openjdk-amd64
 profile::ci::jenkins::prefix: /ci
 profile::ci::jenkins::workspaces_dir: /srv/jenkins/workspace/${ITEM_FULL_NAME}
 profile::ci::manager_host: localhost
+profile::ci::migration::rsync_src_host: localhost
 profile::ci::pipeline::publisher::docker_registry_password: snakeoil
 profile::ci::pipeline::publisher::docker_registry_user: ci-build
 profile::ci::proxy_jenkins::http_port: 8080
