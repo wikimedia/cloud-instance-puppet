@@ -21,6 +21,7 @@ profile::ci::pipeline::publisher::docker_registry_user: ci-build
 profile::ci::proxy_jenkins::http_port: 8080
 profile::ci::proxy_jenkins::prefix: /ci
 profile::ci::shipyard::ci_build_user_password: snakeoil
+profile::kubernetes::client::version: '1.23'
 profile::local_dev::ci_build_user_password: snakoil
 profile::tlsproxy::envoy::global_cert_name: 'contint-bullseye.devtools.eqiad1.wikimedia.cloud '
 profile::zuul::merger::conf:
