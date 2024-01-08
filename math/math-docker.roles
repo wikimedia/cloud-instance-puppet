@@ -1,1 +1,17 @@
-[]
+- 'apt::source { ''bookworm'':'
+- location => 'http://deb.debian.org/debian',
+- release  => 'bookworm',
+- repos    => 'main contrib non-free',
+- '}'
+- ''
+- 'apt::source { ''bookworm-updates'':'
+- location => 'http://deb.debian.org/debian',
+- release  => 'bookworm-updates',
+- repos    => 'main contrib non-free',
+- '}'
+- ''
+- 'apt::source { ''bookworm-security'':'
+- location => 'http://deb.debian.org/debian',
+- release  => 'bookworm-security',
+- repos    => 'main contrib non-free',
+- '}'
