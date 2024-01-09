@@ -1,2 +1,3 @@
 - profile::docker::engine
 - profile::labs::cindermount::srv
+- ensure_packages(['docker-compose'])
