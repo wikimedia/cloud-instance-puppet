@@ -1,2 +1,2 @@
-profile::wmcs::db::wikireplicas::querysampler::in_setup: false
+profile::wmcs::db::wikireplicas::querysampler::in_setup: true
 puppetmaster: clouddb-services-puppetmaster-2.clouddb-services.eqiad1.wikimedia.cloud
