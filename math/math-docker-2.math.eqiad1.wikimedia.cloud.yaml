@@ -1,2 +1,0 @@
-profile::docker::engine::settings:
-  data-root: /srv/docker
