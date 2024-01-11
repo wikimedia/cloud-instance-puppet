@@ -4,8 +4,12 @@ profile::mail::smarthost::cert_name: mx
 profile::mail::smarthost::dkim_domains:
   wmcloud_org:
     domain: wmcloud.org
-    selector: wmcs
+    selector:
+    - wmcs
+    - wmcs-rsa
   wmflabs_org:
     domain: wmflabs.org
-    selector: wmcs
+    selector:
+    - wmcs
+    - wmcs-rsa
 puppetmaster: cloudinfra-internal-puppetmaster-02.cloudinfra.eqiad.wmflabs
