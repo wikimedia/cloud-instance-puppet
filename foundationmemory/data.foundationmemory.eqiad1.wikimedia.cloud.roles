@@ -1,1 +1,2 @@
 - role::labs::mediawiki_vagrant
+- profile::wmcs::mediawiki_vagrant
