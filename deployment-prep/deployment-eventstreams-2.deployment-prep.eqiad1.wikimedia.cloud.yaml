@@ -18,6 +18,9 @@ profile::docker::runner::service_defs:
           kafka:
             metadata.broker.list: deployment-kafka-jumbo-5.deployment-prep.eqiad1.wikimedia.cloud:9092,deployment-kafka-jumbo-8.deployment-prep.eqiad1.wikimedia.cloud:9092,deployment-kafka-jumbo-9.deployment-prep.eqiad1.wikimedia.cloud:9092
             statistics.interval.ms: 10000
+          mediawiki_redacted_pages:
+            simplewiki:
+            - TestPage
           port: 8092
           schema_base_uris:
           - http://deployment-schema-3.deployment-prep.eqiad1.wikimedia.cloud/repositories/primary/jsonschema
@@ -83,4 +86,4 @@ profile::docker::runner::service_defs:
     namespace: wikimedia
     override_cmd: /srv/service/server.js -c /etc/eventstreams/config.yaml
     port: 8092
-    version: 2023-10-02-151622-production
+    version: 2024-01-22-205108-production
