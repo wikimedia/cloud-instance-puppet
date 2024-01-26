@@ -3,6 +3,7 @@ profile::toolforge::k8s::control_nodes:
 - toolsbeta-test-k8s-control-4.toolsbeta.eqiad1.wikimedia.cloud
 - toolsbeta-test-k8s-control-5.toolsbeta.eqiad1.wikimedia.cloud
 - toolsbeta-test-k8s-control-6.toolsbeta.eqiad1.wikimedia.cloud
+- toolsbeta-test-k8s-control-7.toolsbeta.eqiad1.wikimedia.cloud
 profile::toolforge::k8s::haproxy::keepalived_peers:
 - toolsbeta-test-k8s-haproxy-3.toolsbeta.eqiad1.wikimedia.cloud
 - toolsbeta-test-k8s-haproxy-4.toolsbeta.eqiad1.wikimedia.cloud
