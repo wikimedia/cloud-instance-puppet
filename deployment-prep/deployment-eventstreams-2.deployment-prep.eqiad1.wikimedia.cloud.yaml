@@ -18,6 +18,10 @@ profile::docker::runner::service_defs:
           kafka:
             metadata.broker.list: deployment-kafka-jumbo-5.deployment-prep.eqiad1.wikimedia.cloud:9092,deployment-kafka-jumbo-8.deployment-prep.eqiad1.wikimedia.cloud:9092,deployment-kafka-jumbo-9.deployment-prep.eqiad1.wikimedia.cloud:9092
             statistics.interval.ms: 10000
+          mediawiki_redacted_pages:
+            simple.wikipedia.beta.wmflabs.org:
+            - TestPage
+            - Beta_Beta_Beta
           port: 8092
           schema_base_uris:
           - http://deployment-schema-3.deployment-prep.eqiad1.wikimedia.cloud/repositories/primary/jsonschema
@@ -71,10 +75,6 @@ profile::docker::runner::service_defs:
                 each event (the ones returned by https://ores.wikimedia.org/v3/precache).'
               stream_aliases:
               - revision-score
-            mediawiki_redacted_pages:
-              simple.wikipedia.beta.wmflabs.org:
-              - TestPage
-              - Beta_Beta_Beta
           stream_config_object_path: streams
           stream_config_ttl: 300
           stream_config_uri: https://meta.wikimedia.beta.wmflabs.org/w/api.php?action=streamconfigs
