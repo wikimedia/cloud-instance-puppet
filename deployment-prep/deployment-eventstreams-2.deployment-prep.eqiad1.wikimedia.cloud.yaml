@@ -71,6 +71,10 @@ profile::docker::runner::service_defs:
                 each event (the ones returned by https://ores.wikimedia.org/v3/precache).'
               stream_aliases:
               - revision-score
+            mediawiki_redacted_pages:
+              simple.wikipedia.beta.wmflabs.org:
+              - TestPage
+              - Beta_Beta_Beta
           stream_config_object_path: streams
           stream_config_ttl: 300
           stream_config_uri: https://meta.wikimedia.beta.wmflabs.org/w/api.php?action=streamconfigs
@@ -83,4 +87,4 @@ profile::docker::runner::service_defs:
     namespace: wikimedia
     override_cmd: /srv/service/server.js -c /etc/eventstreams/config.yaml
     port: 8092
-    version: 2024-01-29-204601-production
+    version: 2024-01-29-212921-production
