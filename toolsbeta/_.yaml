@@ -66,7 +66,7 @@ profile::ssh::server::enable_hba: true
 profile::ssh::server::explicit_macs: false
 profile::ssh::server::puppetserver_ca_host_certs: true
 profile::toolforge::active_cronrunner: toolsbeta-sgecron-02.toolsbeta.eqiad1.wikimedia.cloud
-profile::toolforge::active_mail_relay: toolsbeta-mail-01.toolsbeta.eqiad.wmflabs
+profile::toolforge::active_mail_relay: toolsbeta-mail-2.toolsbeta.eqiad1.wikimedia.cloud
 profile::toolforge::active_proxy_host: toolsbeta-proxy-3
 profile::toolforge::canonical_domain: beta.toolforge.org
 profile::toolforge::canonical_scheme: http://
