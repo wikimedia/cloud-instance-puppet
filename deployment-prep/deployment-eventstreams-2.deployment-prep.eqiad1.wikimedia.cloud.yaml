@@ -87,4 +87,4 @@ profile::docker::runner::service_defs:
     namespace: wikimedia
     override_cmd: /srv/service/server.js -c /etc/eventstreams/config.yaml
     port: 8092
-    version: 2024-01-29-212921-production
+    version: 2024-01-30-113926-production
