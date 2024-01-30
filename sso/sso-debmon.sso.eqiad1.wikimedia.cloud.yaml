@@ -1,1 +1,2 @@
+profile::debmonitor::server::app_deployment: scap3
 profile::debmonitor::server::ssl_certs: cfssl
