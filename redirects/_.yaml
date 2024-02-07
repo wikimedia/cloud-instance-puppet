@@ -1,3 +1,4 @@
+phab.wmflabs.org: https://phabricator.wmcloud.org
 role::labs::redirector::default_url: https://wikitech.wikimedia.org/wiki/Nova_Resource:Redirects/Host_not_configured
 role::labs::redirector::redirects:
   codesearch.wmflabs.org: https://codesearch.wmcloud.org
