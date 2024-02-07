@@ -10,7 +10,7 @@ role::labs::redirector::redirects:
   livingstyleguide.wmflabs.org: https://design.wikimedia.org/style-guide
   logstash-beta.wmcloud.org: https://beta-logs.wmcloud.org
   phab.wmcloud.org: https://phabricator.wmcloud.org
-  phab.wmflabs.org: https://phabricator.wmcloud.org
+  phorge.wmcloud.org: https://phabricator.wmcloud.org
   php-security-checker.wmcloud.org: https://php-security-checker.toolforge.org
   reportcard.wmflabs.org: https://analytics.wikimedia.org/dashboards/reportcard
   space.wmflabs.org: https://diff.wikimedia.org
