@@ -1,4 +1,3 @@
-phab.wmflabs.org: https://phabricator.wmcloud.org
 role::labs::redirector::default_url: https://wikitech.wikimedia.org/wiki/Nova_Resource:Redirects/Host_not_configured
 role::labs::redirector::redirects:
   codesearch.wmflabs.org: https://codesearch.wmcloud.org
@@ -10,6 +9,7 @@ role::labs::redirector::redirects:
   living-style-guide.wmflabs.org: https://design.wikimedia.org/style-guide
   livingstyleguide.wmflabs.org: https://design.wikimedia.org/style-guide
   logstash-beta.wmcloud.org: https://beta-logs.wmcloud.org
+  phab.wmflabs.org: https://phabricator.wmcloud.org
   php-security-checker.wmcloud.org: https://php-security-checker.toolforge.org
   reportcard.wmflabs.org: https://analytics.wikimedia.org/dashboards/reportcard
   space.wmflabs.org: https://diff.wikimedia.org
