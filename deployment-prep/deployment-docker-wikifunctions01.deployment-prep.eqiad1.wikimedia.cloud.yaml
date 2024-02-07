@@ -17,7 +17,7 @@ profile::docker::runner::service_defs:
         module: ./app.js
         name: function-evaluator-js
       worker_heap_limit_mb: 500
-    image_name: wasm-javascript-all
+    image_name: omnibus
     namespace: repos/abstract-wiki/wikifunctions/function-evaluator
     override_cmd: -c /etc/function-evaluator-js/config.yaml
     port: 6928
@@ -37,7 +37,7 @@ profile::docker::runner::service_defs:
         module: ./app.js
         name: function-evaluator-py
       worker_heap_limit_mb: 500
-    image_name: wasm-python3-all
+    image_name: omnibus
     namespace: repos/abstract-wiki/wikifunctions/function-evaluator
     override_cmd: -c /etc/function-evaluator-py/config.yaml
     port: 6929
@@ -95,12 +95,12 @@ profile::docker::runner::service_defs:
       FUNCTION_EVALUATOR_TIMEOUT_MS: '9000'
       NODE_TLS_REJECT_UNAUTHORIZED: '0'
       ORCHESTRATOR_CONFIG: '{ "evaluatorConfigs": [ { "programmingLanguages": ["python-3-9",
-        "python-3-8", "python-3-7", "python-3", "python"], "evaluatorUri": "https://wikifunctions-evaluator-beta.wmflabs.org/1/v1/evaluate/",
-        "evaluatorWs": "", "useReentrance": false, "allowCustomDerializers": false
+        "python-3-8", "python-3-7", "python-3", "python"], "evaluatorUri": "https://wikifunctions-evaluator-python3-beta.wmcloud.org/1/v1/evaluate/",
+        "evaluatorWs": "", "useReentrance": false, "allowCustomDerializers": true
         }, { "programmingLanguages": ["javascript-es2020", "javascript-es2019", "javascript-es2018",
         "javascript-es2017", "javascript-es2016", "javascript-es2015", "javascript"],
-        "evaluatorUri": "https://wikifunctions-evaluator-beta.wmflabs.org/1/v1/evaluate/",
-        "evaluatorWs": "", "useReentrance": false, "allowCustomDerializers": false
+        "evaluatorUri": "https://wikifunctions-evaluator-javascript-beta.wmcloud.org/1/v1/evaluate/",
+        "evaluatorWs": "", "useReentrance": false, "allowCustomDerializers": true
         } ] }'
       ORCHESTRATOR_CONFIG_NEW: '{ "evaluatorConfigs": [ { "programmingLanguages":
         ["python-3-9", "python-3-8", "python-3-7", "python-3", "python"], "evaluatorUri":
@@ -110,6 +110,14 @@ profile::docker::runner::service_defs:
         "javascript-es2017", "javascript-es2016", "javascript-es2015", "javascript"],
         "evaluatorUri": "https://wikifunctions-evaluator-javascript-beta.wmcloud.org/1/v1/evaluate/",
         "evaluatorWs": "", "useReentrance": false, "allowCustomDerializers": true
+        } ] }'
+      ORCHESTRATOR_CONFIG_OLD: '{ "evaluatorConfigs": [ { "programmingLanguages":
+        ["python-3-9", "python-3-8", "python-3-7", "python-3", "python"], "evaluatorUri":
+        "https://wikifunctions-evaluator-beta.wmflabs.org/1/v1/evaluate/", "evaluatorWs":
+        "", "useReentrance": false, "allowCustomDerializers": false }, { "programmingLanguages":
+        ["javascript-es2020", "javascript-es2019", "javascript-es2018", "javascript-es2017",
+        "javascript-es2016", "javascript-es2015", "javascript"], "evaluatorUri": "https://wikifunctions-evaluator-beta.wmflabs.org/1/v1/evaluate/",
+        "evaluatorWs": "", "useReentrance": false, "allowCustomDerializers": false
         } ] }'
       ORCHESTRATOR_TIMEOUT_MS: '10000'
       PROGRAMMING_LANGUAGE_DIR: /srv/service/programming-languages
