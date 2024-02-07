@@ -95,13 +95,12 @@ profile::docker::runner::service_defs:
       FUNCTION_EVALUATOR_TIMEOUT_MS: '9000'
       NODE_TLS_REJECT_UNAUTHORIZED: '0'
       ORCHESTRATOR_CONFIG: '{ "evaluatorConfigs": [ { "programmingLanguages": ["python-3-9",
-        "python-3-8", "python-3-7", "python-3", "python"], "evaluatorUri": "https://wikifunctions-evaluator-python3-beta.wmcloud.org:6929/1/v1/evaluate/",
+        "python-3-8", "python-3-7", "python-3", "python"], "evaluatorUri": "http://172.16.1.154:6929/1/v1/evaluate/",
         "evaluatorWs": "", "useReentrance": false, "allowCustomDerializers": true
         }, { "programmingLanguages": ["javascript-es2020", "javascript-es2019", "javascript-es2018",
         "javascript-es2017", "javascript-es2016", "javascript-es2015", "javascript"],
-        "evaluatorUri": "https://wikifunctions-evaluator-javascript-beta.wmcloud.org:6928/1/v1/evaluate/",
-        "evaluatorWs": "", "useReentrance": false, "allowCustomDerializers": true
-        } ] }'
+        "evaluatorUri": "http://172.16.1.154:6928/1/v1/evaluate/", "evaluatorWs":
+        "", "useReentrance": false, "allowCustomDerializers": true } ] }'
       ORCHESTRATOR_CONFIG_NEW: '{ "evaluatorConfigs": [ { "programmingLanguages":
         ["python-3-9", "python-3-8", "python-3-7", "python-3", "python"], "evaluatorUri":
         "https://wikifunctions-evaluator-python3-beta.wmcloud.org/1/v1/evaluate/",
