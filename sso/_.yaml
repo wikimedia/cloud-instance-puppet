@@ -1,3 +1,2 @@
-debmonitor: sso-debmon.sso.eqiad1.wikimedia.cloud
 profile::openldap::backup: false
 puppetmaster: puppetprimary.sso.eqiad1.wikimedia.cloud
