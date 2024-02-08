@@ -1,3 +1,4 @@
+http_proxy: http://localhost
 profile::ncmonitor::nameservers:
 - ns0.wikimedia.org
 - ns1.wikimedia.org
