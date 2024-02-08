@@ -1,6 +1,2 @@
 http_proxy: http://localhost
-profile::ncmonitor::nameservers:
-- ns0.wikimedia.org
-- ns1.wikimedia.org
-- ns2.wikimedia.org
 puppetmaster: traffic-puppetmaster-buster.traffic.eqiad1.wikimedia.cloud
