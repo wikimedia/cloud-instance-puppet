@@ -1,4 +1,4 @@
-http_proxy: example.com
+http_proxy: http://example.com
 profile::ncmonitor::nameservers:
 - ns1.wikimedia.org
 puppetmaster: traffic-puppetmaster-buster.traffic.eqiad1.wikimedia.cloud
