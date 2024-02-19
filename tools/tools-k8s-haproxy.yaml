@@ -11,7 +11,6 @@ profile::toolforge::k8s::haproxy::keepalived_peers:
 profile::toolforge::k8s::haproxy::keepalived_vips:
 - k8s.svc.tools.eqiad1.wikimedia.cloud
 profile::toolforge::k8s::ingress_nodes:
-- tools-k8s-ingress-5.tools.eqiad1.wikimedia.cloud
 - tools-k8s-ingress-6.tools.eqiad1.wikimedia.cloud
 - tools-k8s-ingress-7.tools.eqiad1.wikimedia.cloud
 - tools-k8s-ingress-8.tools.eqiad1.wikimedia.cloud
