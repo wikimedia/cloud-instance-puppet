@@ -1,0 +1,2 @@
+mount_nfs: true
+profile::wmcs::nfsclient::nfs_version: '4.2'
