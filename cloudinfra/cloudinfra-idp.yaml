@@ -59,5 +59,9 @@ profile::idp::services:
 profile::idp::tgc_cookie_pin_to_session: false
 profile::idp::tgc_cookie_same_site: none
 profile::idp::u2f_jpa_enable: false
+profile::java::hardened_tls: false
+profile::java::java_packages:
+- variant: jdk
+  version: '17'
 profile::pki::client::ensure: present
 puppetmaster: cloudinfra-internal-puppetmaster-02.cloudinfra.eqiad.wmflabs
