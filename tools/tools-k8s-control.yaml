@@ -4,5 +4,7 @@ profile::toolforge::k8s::etcd_nodes:
 - tools-k8s-etcd-13.tools.eqiad1.wikimedia.cloud
 - tools-k8s-etcd-14.tools.eqiad1.wikimedia.cloud
 - tools-k8s-etcd-15.tools.eqiad1.wikimedia.cloud
+profile::wmcs::kubeadm::control::apiserver_cert_alternative_names:
+- k8s.svc.tools.eqiad1.wikimedia.cloud
 profile::wmcs::nfsclient::nfs_version: '4.2'
 swap_partition: false
