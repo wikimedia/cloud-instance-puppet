@@ -5,6 +5,7 @@ profile::toolforge::k8s::control_nodes:
 - tools-k8s-control-5.tools.eqiad1.wikimedia.cloud
 - tools-k8s-control-6.tools.eqiad1.wikimedia.cloud
 - tools-k8s-control-7.tools.eqiad1.wikimedia.cloud
+- tools-k8s-control-8.tools.eqiad1.wikimedia.cloud
 profile::toolforge::k8s::haproxy::keepalived_peers:
 - tools-k8s-haproxy-3.tools.eqiad1.wikimedia.cloud
 - tools-k8s-haproxy-4.tools.eqiad1.wikimedia.cloud
