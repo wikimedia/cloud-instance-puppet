@@ -2,7 +2,6 @@ labstore::traffic_shaping::egress: 800mbps
 mount_nfs: false
 profile::toolforge::k8s::apiserver_port: 6443
 profile::toolforge::k8s::control_nodes:
-- tools-k8s-control-5.tools.eqiad1.wikimedia.cloud
 - tools-k8s-control-6.tools.eqiad1.wikimedia.cloud
 - tools-k8s-control-7.tools.eqiad1.wikimedia.cloud
 - tools-k8s-control-8.tools.eqiad1.wikimedia.cloud
