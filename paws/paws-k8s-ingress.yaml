@@ -1,3 +1,0 @@
-labstore::traffic_shaping::egress: 800mbps
-profile::wmcs::kubeadm::docker_vol: false
-swap_partition: false
