@@ -8,6 +8,4 @@ profile::openstack::base::keystone_api_fqdn: fakehost.example.org
 profile::openstack::base::ldap_user_pass: fake_openstack_password
 profile::openstack::base::nova::db_pass: fake_db_password
 profile::openstack::base::nova::fullstack_pass: fullstackfakepassword
-profile::wmcs::backy2::backup_time: '*-*-* 2:00:00'
-profile::wmcs::backy2::cluster_name: fakeceph
 puppetmaster: abogott-puppetmaster.testlabs.eqiad.wmflabs
