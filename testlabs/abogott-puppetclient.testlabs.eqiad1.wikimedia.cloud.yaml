@@ -8,4 +8,4 @@ profile::openstack::base::keystone_api_fqdn: fakehost.example.org
 profile::openstack::base::ldap_user_pass: fake_openstack_password
 profile::openstack::base::nova::db_pass: fake_db_password
 profile::openstack::base::nova::fullstack_pass: fullstackfakepassword
-puppetmaster: abogott-puppetserver.testlabs.eqiad.wmflabs
+puppetmaster: abogott-puppetserver.testlabs.eqiad1.wikimedia.cloud
