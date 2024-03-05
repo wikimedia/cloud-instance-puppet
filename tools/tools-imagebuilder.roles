@@ -1,1 +1,1 @@
-[]
+- role::wmcs::toolforge::docker::image_builder
