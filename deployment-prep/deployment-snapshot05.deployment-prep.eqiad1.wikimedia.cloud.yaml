@@ -1,3 +1,4 @@
+labs_lvm::disk: /dev/sdb
 profile::dumps::generation::worker::common::dumps_misc_cronrunner: false
 profile::dumps::generation::worker::common::nfs_extra_mountopts: actimeo=0
 profile::dumps::generation::worker::common::php: /usr/bin/php7.4
