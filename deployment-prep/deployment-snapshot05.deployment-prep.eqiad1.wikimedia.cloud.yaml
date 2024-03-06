@@ -1,0 +1,10 @@
+profile::dumps::generation::worker::common::dumps_misc_cronrunner: false
+profile::dumps::generation::worker::common::nfs_extra_mountopts: actimeo=0
+profile::dumps::generation::worker::common::php: /usr/bin/php7.4
+profile::dumps::generation_worker_cron_php: /usr/bin/php7.4
+profile::services_proxy::envoy::local_clusters:
+- swift-https
+- search-https
+- search-omega-https
+- search-psi-https
+puppetmaster: deployment-puppetmaster04.deployment-prep.eqiad.wmflabs
