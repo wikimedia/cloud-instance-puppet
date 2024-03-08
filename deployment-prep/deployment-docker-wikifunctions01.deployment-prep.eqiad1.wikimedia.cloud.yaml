@@ -38,7 +38,8 @@ profile::docker::runner::service_defs:
         name: function-evaluator-js-wasm
       worker_heap_limit_mb: 500
     environment:
-      WASM_BINARY: /srv/service/programming-languages/wasmedge_quickjs.so
+      ASPIRATIONAL_WASM_BINARY: /srv/service/programming-languages/wasmedge_quickjs.so
+      WASM_BINARY: /srv/service/programming-languages/wasmedge_quickjs_uncompiled.wasm
     image_name: wasm-javascript-all
     namespace: repos/abstract-wiki/wikifunctions/function-evaluator
     override_cmd: -c /etc/function-evaluator-js-wasm/config.yaml
@@ -80,7 +81,8 @@ profile::docker::runner::service_defs:
         name: function-evaluator-py-wasm
       worker_heap_limit_mb: 500
     environment:
-      WASM_BINARY: /srv/service/programming-languages/rustpython.so
+      ASPIRATIONAL_WASM_BINARY: /srv/service/programming-languages/rustpython.so
+      WASM_BINARY: /srv/service/programming-languages/rustpython_uncompiled.wasm
     image_name: wasm-python3-all
     namespace: repos/abstract-wiki/wikifunctions/function-evaluator
     override_cmd: -c /etc/function-evaluator-py-wasm/config.yaml
