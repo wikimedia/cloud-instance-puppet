@@ -24,3 +24,4 @@ profile::wmcs::novaproxy::xff_fqdns:
 - wikiwho-api.wmcloud.org
 - wikiwho.wmflabs.org
 - ws-export-test.wmcloud.org
+puppetmaster: project-proxy-puppetserver-1.project-proxy.eqiad1.wikimedia.cloud
