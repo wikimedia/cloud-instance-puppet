@@ -136,7 +136,7 @@ profile::docker::runner::service_defs:
         "evaluatorUri": "https://wikifunctions-evaluator-javascript-beta.wmcloud.org/1/v1/evaluate/",
         "evaluatorWs": "", "useReentrance": false, "allowCustomDerializers": true
         } ] }'
-      ORCHESTRATOR_TIMEOUT_MS: '10000'
+      ORCHESTRATOR_TIMEOUT_MS: '15000'
       PROGRAMMING_LANGUAGE_DIR: /srv/service/programming-languages
       WASMEDGE_HOME: /srv/service/programming-languages/wasmedge
       WIKI_API_URL: https://wikifunctions.beta.wmflabs.org/w/api.php
