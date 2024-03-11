@@ -1,0 +1,2 @@
+mount_nfs: false
+profile::wmcs::nfs::standalone::cinder_attached: false
