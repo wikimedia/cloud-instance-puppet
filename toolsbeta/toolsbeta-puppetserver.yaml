@@ -1,6 +1,6 @@
 profile::puppet::agent::force_puppet7: true
 profile::puppetserver::puppetdb_urls:
-- http://toolsbeta-puppetdb-02.toolsbeta.eqiad.wmflabs
+- https://toolsbeta-puppetdb-02.toolsbeta.eqiad.wmflabs
 profile::ssh::ca::ca_key_id: toolsbeta SSH CA v1
 profile::ssh::ca::ca_key_secret: ssh/ca/ssh-ca
 profile::ssh::ca::ensure: present
