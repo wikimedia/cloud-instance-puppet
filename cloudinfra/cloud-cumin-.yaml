@@ -3,4 +3,5 @@ profile::openstack::eqiad1::cumin::aliases:
 profile::openstack::eqiad1::cumin::project_masters: []
 profile::openstack::eqiad1::cumin::project_pub_key: undef
 profile::openstack::eqiad1::cumin::project_ssh_priv_key_path: undef
+profile::puppet::agent::force_puppet7: true
 puppetmaster: cloudinfra-internal-puppetserver-1.cloudinfra.eqiad.wmflabs
