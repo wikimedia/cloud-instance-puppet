@@ -1,4 +1,5 @@
 acmechief_host: paws-acme-chief-01.paws.eqiad.wmflabs
+profile::puppet::agent::force_puppet7: true
 profile::wmcs::kubeadm::apiserver_fqdn: k8s.svc.paws.eqiad1.wikimedia.cloud
 profile::wmcs::kubeadm::component: thirdparty/kubeadm-k8s-1-21
 profile::wmcs::kubeadm::etcd_election_timeout: 3000
