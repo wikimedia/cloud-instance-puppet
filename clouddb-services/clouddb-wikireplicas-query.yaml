@@ -1,2 +1,3 @@
+profile::puppet::agent::force_puppet7: true
 profile::wmcs::db::wikireplicas::querysampler::in_setup: true
 puppetmaster: clouddb-services-puppetserver-1.clouddb-services.eqiad1.wikimedia.cloud
