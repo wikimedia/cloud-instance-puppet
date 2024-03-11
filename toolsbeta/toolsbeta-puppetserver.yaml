@@ -1,2 +1,8 @@
 profile::puppet::agent::force_puppet7: true
+profile::puppetmaster::common::puppetdb_hosts:
+- toolsbeta-puppetdb-02.toolsbeta.eqiad.wmflabs
+profile::puppetmaster::common::storeconfigs: puppetdb
+profile::ssh::ca::ca_key_id: toolsbeta SSH CA v1
+profile::ssh::ca::ca_key_secret: ssh/ca/ssh-ca
+profile::ssh::ca::ensure: present
 puppetmaster: puppet
