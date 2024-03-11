@@ -112,6 +112,6 @@ prometheus::node_exporter::collectors_extra:
 - processes
 prometheus_nodes:
 - toolsbeta-prometheus-1.toolsbeta.eqiad1.wikimedia.cloud
-puppetmaster: toolsbeta-puppetmaster-02.toolsbeta.eqiad1.wikimedia.cloud
+puppetmaster: toolsbeta-puppetmaster-04.toolsbeta.eqiad.wmflabs
 role::aptly::client::servername: tools-services-05.tools.eqiad1.wikimedia.cloud
 sonofgridengine::gridmaster: toolsbeta-sgegrid-master.toolsbeta.eqiad1.wikimedia.cloud
