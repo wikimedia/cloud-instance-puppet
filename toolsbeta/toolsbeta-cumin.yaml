@@ -1,4 +1,4 @@
 profile::openstack::eqiad1::cumin::aliases:
   k8s-node-all: P{C:kubeadm::core}
-profile::openstack::eqiad1::cumin::master::puppetdb_host: toolsbeta-puppetdb-02.toolsbeta.eqiad.wmflabs
+profile::openstack::eqiad1::cumin::master::puppetdb_host: toolsbeta-puppetdb-03.toolsbeta.eqiad1.wikimedia.cloud
 profile::openstack::eqiad1::cumin::project_ssh_priv_key_path: /root/.ssh/cumin
