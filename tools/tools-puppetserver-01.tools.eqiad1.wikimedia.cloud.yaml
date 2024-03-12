@@ -1,1 +1,4 @@
+profile::puppetmaster::common::puppetdb_hosts:
+- tools-puppetdb-2.tools.eqiad1.wikimedia.cloud
+profile::puppetmaster::common::storeconfigs: puppetdb
 puppetmaster: puppet
