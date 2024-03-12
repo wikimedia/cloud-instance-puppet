@@ -1,7 +1,7 @@
 profile::puppetmaster::common::puppetdb_hosts:
 - toolsbeta-puppetdb-02.toolsbeta.eqiad.wmflabs
 profile::puppetmaster::common::puppetdb_submit_only_hosts:
-- toolsbeta-puppetdb-03.toolsbeta.eqiad1.wikimedia.cloud
+- https://toolsbeta-puppetdb-03.toolsbeta.eqiad1.wikimedia.cloud
 profile::puppetmaster::common::storeconfigs: puppetdb
 profile::ssh::ca::ca_key_id: toolsbeta SSH CA v1
 profile::ssh::ca::ca_key_secret: ssh/ca/ssh-ca
