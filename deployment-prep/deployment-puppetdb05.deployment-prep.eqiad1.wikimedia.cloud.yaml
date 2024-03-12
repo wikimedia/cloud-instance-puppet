@@ -1,4 +1,4 @@
-profile::puppetdb::master: deployment-puppetserver-1.deployment-prep.eqiad1.wikimedia.cloud
+profile::puppetdb::master: deployment-puppetdb05.deployment-prep.eqiad1.wikimedia.cloud
 puppetmaster: puppet
 puppetmaster::servers:
   deployment-puppetserver-1.deployment-prep.eqiad1.wikimedia.cloud:
