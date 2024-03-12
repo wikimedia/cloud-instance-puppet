@@ -1,6 +1,3 @@
 profile::puppet::agent::force_puppet7: true
 profile::puppetserver::puppetdb_urls:
 - https://tools-puppetdb-1.toolsbeta.eqiad1.wikimedia.cloud
-profile::ssh::ca::ca_key_id: tools SSH CA v1
-profile::ssh::ca::ca_key_secret: ssh/ca/ssh-ca
-profile::ssh::ca::ensure: present
