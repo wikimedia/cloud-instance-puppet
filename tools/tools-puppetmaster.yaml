@@ -1,3 +1,5 @@
 profile::puppetmaster::common::puppetdb_hosts:
 - tools-puppetdb-1.tools.eqiad1.wikimedia.cloud
+profile::puppetmaster::common::puppetdb_submit_only_hosts:
+- https://tools-puppetdb-2.tools.eqiad1.wikimedia.cloud
 profile::puppetmaster::common::storeconfigs: puppetdb
