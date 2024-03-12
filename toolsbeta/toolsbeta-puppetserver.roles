@@ -1,1 +1,2 @@
 - role::puppetserver::cloud_vps_project
+- profile::ssh::ca
