@@ -4,4 +4,3 @@ profile::puppetserver::puppetdb_urls:
 profile::ssh::ca::ca_key_id: toolsbeta SSH CA v1
 profile::ssh::ca::ca_key_secret: ssh/ca/ssh-ca
 profile::ssh::ca::ensure: present
-puppetmaster: puppet
