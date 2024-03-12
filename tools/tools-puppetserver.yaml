@@ -1,3 +1,4 @@
 profile::puppet::agent::force_puppet7: true
 profile::puppetserver::puppetdb_urls:
 - https://tools-puppetdb-1.toolsbeta.eqiad1.wikimedia.cloud
+puppetmaster: puppet
