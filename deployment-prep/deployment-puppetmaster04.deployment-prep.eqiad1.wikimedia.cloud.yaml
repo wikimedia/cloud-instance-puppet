@@ -6,6 +6,6 @@ profile::puppetmaster::common::puppetdb_submit_only_hosts:
 profile::puppetmaster::common::storeconfigs: puppetdb
 puppetmaster: deployment-puppetmaster04.deployment-prep.eqiad.wmflabs
 role::puppetmaster::standalone::puppetdb_host:
-- deployment-puppetdb03.deployment-prep.eqiad.wmflabs
+- deployment-puppetdb05.deployment-prep.eqiad.wmflabs
 role::puppetmaster::standalone::storeconfigs: puppetdb
 role::puppetmaster::standalone::upload_facts: true
