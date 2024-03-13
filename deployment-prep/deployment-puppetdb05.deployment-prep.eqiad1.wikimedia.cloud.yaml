@@ -1,0 +1,7 @@
+profile::puppet::agent::force_puppet7: true
+profile::puppetdb::master: deployment-puppetdb05.deployment-prep.eqiad1.wikimedia.cloud
+puppetmaster: deployment-puppetserver-1.deployment-prep.eqiad1.wikimedia.cloud
+puppetmaster::servers:
+  deployment-puppetserver-1.deployment-prep.eqiad1.wikimedia.cloud:
+  - loadfactor: 10
+    worker: deployment-puppetserver-1.deployment-prep.eqiad1.wikimedia.cloud
