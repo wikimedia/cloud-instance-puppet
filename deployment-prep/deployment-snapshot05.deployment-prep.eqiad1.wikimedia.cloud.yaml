@@ -11,4 +11,4 @@ profile::services_proxy::envoy::local_clusters:
 - search-https
 - search-omega-https
 - search-psi-https
-puppetmaster: deployment-puppetserver1.deployment-prep.eqiad1.wikimedia.cloud
+puppetmaster: deployment-puppetserver-1.deployment-prep.eqiad1.wikimedia.cloud
