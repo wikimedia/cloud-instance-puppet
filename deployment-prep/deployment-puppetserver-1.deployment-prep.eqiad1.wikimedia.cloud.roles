@@ -1,3 +1,2 @@
 - role::puppetserver::cloud_vps_project
-- profile::conftool::master
 - profile::configmaster
