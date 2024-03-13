@@ -1,2 +1,4 @@
 mount_nfs: false
+profile::puppetmaster::common::puppetdb_hosts:
+- tools-puppetdb-2.tools.eqiad1.wikimedia.cloud
 role::puppetmaster::standalone::upload_facts: true
