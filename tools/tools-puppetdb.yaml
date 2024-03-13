@@ -1,5 +1,5 @@
-profile::puppetdb::master: tools-puppetdb-1.tools.eqiad1.wikimedia.cloud
+profile::puppetdb::master: tools-puppetdb-2.tools.eqiad1.wikimedia.cloud
 puppetmaster::servers:
-  tools-puppetserver-01.tools.eqiad1.wikimedia.cloud:
+  puppetserver-01.tools.eqiad1.wikimedia.cloud:
   - loadfactor: 10
     worker: tools-puppetserver-01.tools.eqiad1.wikimedia.cloud
