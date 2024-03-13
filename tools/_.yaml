@@ -51,6 +51,7 @@ profile::openstack::eqiad1::cumin::project_masters:
 - 172.16.5.85
 profile::openstack::eqiad1::cumin::project_pub_key: ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIO8as2dazxB8rDdZed/ee0prcEwOSpRJi22clMCCi7HG
 profile::openstack::eqiad1::ldap_user_pass: <not available here>
+profile::puppet::agent::force_puppet7: true
 profile::rsyslog::kubernetes::enable: false
 profile::ssh::server::challenge_response_auth: false
 profile::ssh::server::disable_agent_forwarding: false
