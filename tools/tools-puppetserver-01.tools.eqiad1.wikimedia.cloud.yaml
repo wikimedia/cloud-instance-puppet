@@ -1,2 +1,1 @@
-profile::puppetmaster::common::storeconfigs: puppetdb
-puppetmaster: puppet
+{}
