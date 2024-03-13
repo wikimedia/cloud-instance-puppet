@@ -4,6 +4,16 @@ profile::acme_chief::accounts:
     regr: '{"body": {}, "uri": "https://acme-v02.api.letsencrypt.org/acme/acct/87887184"}'
 profile::acme_chief::active: project-proxy-acme-chief-02.project-proxy.eqiad1.wikimedia.cloud
 profile::acme_chief::certificates:
+  customtools:
+    CN: svc.toolforge.org
+    SNI:
+    - svc.toolforge.org
+    - '*.svc.toolforge.org'
+    - svc.beta.toolforge.org
+    - '*.svc.beta.toolforge.org'
+    authorized_regexes:
+    - ^.+\.project-proxy\.eqiad1\.wikimedia\.cloud$
+    challenge: dns-01
   maps:
     CN: maps.wmcloud.org
     SNI:
@@ -47,9 +57,11 @@ profile::acme_chief::challenges:
     zone_update_cmd: /usr/local/bin/acme-chief-designate-sync.py
 profile::acme_chief::cloud::designate_sync_auth_url: https://openstack.eqiad1.wikimediacloud.org:25000/v3
 profile::acme_chief::cloud::designate_sync_project_names:
-- project-proxy
-- maps
 - cloudinfra
+- maps
+- project-proxy
+- tools
+- toolsbeta
 - wmflabsdotorg
 profile::acme_chief::cloud::designate_sync_region_name: eqiad1-r
 profile::acme_chief::cloud::designate_sync_tidyup_enabled: true
