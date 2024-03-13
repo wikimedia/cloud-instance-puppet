@@ -1,4 +1,5 @@
 acmechief_host: acmechief2002.codfw.wmnet
+jenkins_agent_username: deploy-jenkins
 profile::base::overlayfs: true
 profile::ci::pipeline::publisher::docker_registry_password: defined
 profile::ci::pipeline::publisher::docker_registry_user: ci-restricted
