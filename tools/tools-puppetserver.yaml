@@ -1,5 +1,5 @@
 profile::puppet::agent::force_puppet7: true
-profile::puppetserver::java_max_mem: 31g
+profile::puppetserver::java_max_mem: 30g
 profile::puppetserver::puppetdb_urls:
 - https://tools-puppetdb-2.tools.eqiad1.wikimedia.cloud
 puppetmaster: puppet
