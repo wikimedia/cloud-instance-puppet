@@ -1,8 +1,8 @@
 profile::conftool::master::sync_dir: /etc/conftool/data-local
 profile::puppetmaster::common::puppetdb_hosts:
-- deployment-puppetdb03.deployment-prep.eqiad.wmflabs
+- deployment-puppetdb05.deployment-prep.eqiad.wmflabs
 profile::puppetmaster::common::puppetdb_submit_only_hosts:
-- https://deployment-puppetdb05.deployment-prep.eqiad1.wikimedia.cloud
+- https://deployment-puppetdb03.deployment-prep.eqiad1.wikimedia.cloud
 profile::puppetmaster::common::storeconfigs: puppetdb
 puppetmaster: deployment-puppetmaster04.deployment-prep.eqiad.wmflabs
 role::puppetmaster::standalone::puppetdb_host:
