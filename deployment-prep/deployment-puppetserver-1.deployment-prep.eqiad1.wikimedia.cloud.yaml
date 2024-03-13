@@ -1,5 +1,7 @@
 profile::puppet::agent::force_puppet7: true
 profile::puppetmaster::common::puppetdb_host: deployment-puppetdb05.deployment-prep.eqiad1.wikimedia.cloud
+profile::puppetmaster::common::puppetdb_hosts:
+- deployment-puppetdb05.deployment-prep.eqiad1.wikimedia.cloud
 profile::puppetserver::java_max_mem: 7g
 profile::puppetserver::puppetdb_urls:
 - https://deployment-puppetdb05.deployment-prep.eqiad1.wikimedia.cloud
