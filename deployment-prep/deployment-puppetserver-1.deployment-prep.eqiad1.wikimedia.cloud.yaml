@@ -1,5 +1,6 @@
 profile::puppet::agent::force_puppet7: true
 profile::puppetmaster::common::storeconfigs: puppetdb
+profile::puppetserver::java_max_mem: 7g
 profile::puppetserver::puppetdb_urls:
 - https://deployment-puppetdb05.deployment-prep.eqiad1.wikimedia.cloud
 puppetmaster: puppet
