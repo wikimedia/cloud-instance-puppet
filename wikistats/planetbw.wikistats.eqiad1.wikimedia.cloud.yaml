@@ -1,5 +1,6 @@
 acmechief_host: acmechief2002.codfw.wmnet
 profile::base::overlayfs: true
+profile::ci::pipeline::publisher::docker_registry_password: defined
 profile::ci::pipeline::publisher::docker_registry_user: ci-restricted
 profile::contacts::role_contacts:
 - Collaboration Services
