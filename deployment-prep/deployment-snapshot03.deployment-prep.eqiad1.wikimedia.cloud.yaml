@@ -7,4 +7,3 @@ profile::services_proxy::envoy::local_clusters:
 - search-https
 - search-omega-https
 - search-psi-https
-puppetmaster: deployment-puppetmaster04.deployment-prep.eqiad.wmflabs
