@@ -1,4 +1,5 @@
 profile::puppetdb::master: deployment-puppetdb05.deployment-prep.eqiad1.wikimedia.cloud
+puppetmaster: puppet
 puppetmaster::servers:
   deployment-puppetmaster04.deployment-prep.eqiad.wmflabs:
   - loadfactor: 10
