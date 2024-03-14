@@ -13,19 +13,23 @@ profile::wmcs::novaproxy::mariadb_username: webproxy
 profile::wmcs::novaproxy::proxy_dns_ipv4: 185.15.56.49
 profile::wmcs::novaproxy::supported_zones:
   svc.beta.toolforge.org.:
+    acmechief_cert: customtools
     id: f9c23d8a-2a57-49c2-b72c-718d35b06834
     project: toolsbeta
     shared: false
   svc.toolforge.org.:
+    acmechief_cert: customtools
     id: 4a581638-b09a-4897-bfe9-db5f0981d48f
     project: tools
     shared: false
   wmcloud.org.:
+    acmechief_cert: wmflabs
     default: true
     id: 6ddcb082-69d6-43f4-9993-5c6bdc27dfc9
     project: cloudinfra
     shared: true
   wmflabs.org.:
+    acmechief_cert: wmflabs
     deprecated: true
     id: 553ef162-add7-4a5c-b115-9cabca662746
     project: wmflabsdotorg
