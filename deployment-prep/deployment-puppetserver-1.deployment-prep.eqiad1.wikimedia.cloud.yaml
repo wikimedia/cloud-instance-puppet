@@ -7,7 +7,7 @@ profile::puppetmaster::common::puppetdb_hosts:
 profile::puppetserver::extra_mounts:
   volatile: /srv/puppet_fileserver/volatile
 profile::puppetserver::git::repos:
-  private: /srv/git/labs/private
+  private: {}
 profile::puppetserver::java_max_mem: 7g
 profile::puppetserver::puppetdb_urls:
 - https://deployment-puppetdb05.deployment-prep.eqiad1.wikimedia.cloud
