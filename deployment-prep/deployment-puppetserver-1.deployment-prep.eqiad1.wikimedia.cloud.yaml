@@ -29,4 +29,4 @@ profile::tlsproxy::envoy::sni_support: 'no'
 profile::tlsproxy::envoy::ssl_provider: cfssl
 profile::tlsproxy::envoy::tls_port: 443
 profile::tlsproxy::envoy::upstream_response_timeout: 203.0
-puppetmaster: puppet
+puppetmaster: deployment-puppetserver-1.deployment-prep.eqiad1.wikimedia.cloud
