@@ -1,3 +1,4 @@
+private: {}
 profile::configmaster::server_aliases: []
 profile::configmaster::server_name: config-master.wikimedia.beta.wmflabs.org
 profile::puppet::agent::force_puppet7: true
@@ -6,6 +7,26 @@ profile::puppetmaster::common::puppetdb_hosts:
 - deployment-puppetdb05.deployment-prep.eqiad1.wikimedia.cloud
 profile::puppetserver::extra_mounts:
   volatile: /srv/puppet_fileserver/volatile
+profile::puppetserver::git::repos:
+  labs/private:
+    branch: master
+    hooks:
+      post-checkout: puppet:///modules/profile/puppetserver/git/operations/hooks/deploy-code.sh
+      post-commit: puppet:///modules/profile/puppetserver/git/operations/hooks/deploy-code.sh
+      post-merge: puppet:///modules/profile/puppetserver/git/operations/hooks/deploy-code.sh
+      pre-commit: puppet:///modules/puppetmaster/git/private/pre-commit
+      pre-merge: puppet:///modules/puppetmaster/git/private/pre-merge
+      pre-rebase: puppet:///modules/puppetmaster/git/private/pre-rebase
+    link: /etc/puppet/private
+  operations/puppet:
+    branch: production
+    hooks:
+      post-checkout: puppet:///modules/profile/puppetserver/git/operations/hooks/deploy-code.sh
+      post-commit: puppet:///modules/profile/puppetserver/git/operations/hooks/deploy-code.sh
+      post-merge: puppet:///modules/profile/puppetserver/git/operations/hooks/deploy-code.sh
+      pre-commit: puppet:///modules/puppetmaster/git/pre-commit
+      pre-merge: puppet:///modules/puppetmaster/git/pre-merge
+      pre-rebase: puppet:///modules/puppetmaster/git/pre-rebase
 profile::puppetserver::java_max_mem: 7g
 profile::puppetserver::puppetdb_urls:
 - https://deployment-puppetdb05.deployment-prep.eqiad1.wikimedia.cloud
