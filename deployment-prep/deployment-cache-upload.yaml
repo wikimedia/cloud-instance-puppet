@@ -56,4 +56,3 @@ profile::trafficserver::backend::mapping_rules:
   replacement: http://deployment-ms-fe04.deployment-prep.eqiad1.wikimedia.cloud
   target: http://upload.wikimedia.beta.wmflabs.org
   type: map
-puppetmaster: deployment-puppetmaster04.deployment-prep.eqiad.wmflabs
