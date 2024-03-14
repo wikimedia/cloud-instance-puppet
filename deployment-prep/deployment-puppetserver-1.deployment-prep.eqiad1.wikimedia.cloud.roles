@@ -1,4 +1,3 @@
 - role::puppetserver::cloud_vps_project
 - profile::conftool::master
 - profile::ssh::ca
-- profile::puppetserver::volatile
