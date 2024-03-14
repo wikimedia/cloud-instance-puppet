@@ -98,4 +98,3 @@ profile::docker::runner::service_defs:
     override_cmd: -c /etc/mediawiki-services-cxserver/config.yaml
     port: 8080
     version: 2019-05-08-064536-production
-puppetmaster: deployment-puppetmaster04.deployment-prep.eqiad.wmflabs
