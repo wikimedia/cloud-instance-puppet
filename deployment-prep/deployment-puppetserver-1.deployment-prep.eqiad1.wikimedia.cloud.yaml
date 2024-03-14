@@ -9,6 +9,7 @@ profile::puppetserver::extra_mounts:
 profile::puppetserver::java_max_mem: 7g
 profile::puppetserver::puppetdb_urls:
 - https://deployment-puppetdb05.deployment-prep.eqiad1.wikimedia.cloud
+profile::puppetserver::volatile::geoip_fetch_private: false
 profile::services_proxy::envoy::ensure: absent
 profile::ssh::ca::ca_key_id: deployment-prep SSH CA key v1
 profile::ssh::ca::ca_key_secret: ssh/ca/ssh-ca
