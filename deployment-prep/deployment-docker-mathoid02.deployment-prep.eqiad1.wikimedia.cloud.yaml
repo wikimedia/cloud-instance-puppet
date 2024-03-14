@@ -50,4 +50,3 @@ profile::docker::runner::service_defs:
     namespace: repos/mediawiki/services
     port: 10044
     version: latest
-puppetmaster: deployment-puppetmaster04.deployment-prep.eqiad.wmflabs
