@@ -12,7 +12,6 @@ profile::mediawiki::mcrouter_wancache::use_onhost_memcached: false
 profile::mediawiki::php::php_versions:
 - '7.2'
 - '7.4'
-puppetmaster: deployment-puppetmaster04.deployment-prep.eqiad.wmflabs
 snapshot::dumps::nfs_extra_mountopts: ''
 snapshot::dumps::php: /usr/bin/php7.4
 snapshot::dumps::runtype: regular
