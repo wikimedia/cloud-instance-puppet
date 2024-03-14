@@ -1,4 +1,3 @@
 profile::elasticsearch::dc_settings:
   certificate_name: deployment-elastic09.deployment-prep.eqiad.wmflabs
   tls_port: 9243
-puppetmaster: deployment-puppetmaster04.deployment-prep.eqiad.wmflabs
