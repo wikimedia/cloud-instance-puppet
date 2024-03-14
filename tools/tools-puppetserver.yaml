@@ -2,4 +2,3 @@ profile::puppetmaster::common::storeconfigs: puppetdb
 profile::puppetserver::java_max_mem: 28g
 profile::puppetserver::puppetdb_urls:
 - https://tools-puppetdb-2.tools.eqiad1.wikimedia.cloud
-puppetmaster: puppet
