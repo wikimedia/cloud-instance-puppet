@@ -64,14 +64,6 @@ profile::toolforge::active_proxy_host: tools-proxy-06
 profile::toolforge::checker_hosts:
 - tools-checker-04.tools.eqiad1.wikimedia.cloud
 profile::toolforge::disable_tool::disable_tool_db_host: tools.db.svc.wikimedia.cloud
-profile::toolforge::etcdir: /var/lib/gridengine/etc
-profile::toolforge::grid::base::collectors: /data/project/.system_sge/gridengine/collectors
-profile::toolforge::grid::base::geconf: /data/project/.system_sge/gridengine
-profile::toolforge::grid::base::project_path: /data/project
-profile::toolforge::grid::base::sge_root: /var/lib/gridengine
-profile::toolforge::grid::base::sysdir: /data/project/.system_sge
-profile::toolforge::grid::cronrunner::active_host: '%{alias(''profile::toolforge::active_cronrunner'')}'
-profile::toolforge::grid::webservicemonitor::active_host: '%{alias(''profile::toolforge::active_cronrunner'')}'
 profile::toolforge::harbor::url: tools-harbor.wmcloud.org
 profile::toolforge::k8s::client::buildservice_repository: tools-harbor.wmcloud.org
 profile::toolforge::prometheus::probes_pingthing_http_check_urls:
@@ -89,7 +81,3 @@ prometheus_nodes:
 - tools-prometheus-7.tools.eqiad1.wikimedia.cloud
 puppetmaster: tools-puppetserver-01.tools.eqiad1.wikimedia.cloud
 role::aptly::client::servername: tools-services-05.tools.eqiad1.wikimedia.cloud
-sonofgridengine::gridmaster: tools-sgegrid-master.tools.eqiad1.wikimedia.cloud
-ssh::server::disable_nist_kex: false
-ssh::server::enable_hba: true
-ssh::server::explicit_macs: false
