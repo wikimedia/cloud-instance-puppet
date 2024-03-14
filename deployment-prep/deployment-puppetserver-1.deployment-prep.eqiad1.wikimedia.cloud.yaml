@@ -6,12 +6,6 @@ profile::puppetmaster::common::puppetdb_hosts:
 - deployment-puppetdb05.deployment-prep.eqiad1.wikimedia.cloud
 profile::puppetserver::extra_mounts:
   volatile: /srv/puppet_fileserver/volatile
-profile::puppetserver::git::repos:
-  operations/puppet:
-    branch: production
-  private:
-    branch: master
-    init: true
 profile::puppetserver::java_max_mem: 7g
 profile::puppetserver::puppetdb_urls:
 - https://deployment-puppetdb05.deployment-prep.eqiad1.wikimedia.cloud
