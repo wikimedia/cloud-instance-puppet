@@ -10,7 +10,8 @@ profile::puppetdb::microservice::port: 8090
 profile::puppetdb::microservice::uwsgi_port: 8091
 profile::puppetdb::puppetboard_hosts: []
 puppetdb_major_version: 4
+puppetmaster: deployment-puppetmaster04.deployment-prep.eqiad.wmflabs
 puppetmaster::servers:
-  deployment-puppetserver-1.deployment-prep.eqiad1.wikimedia.cloud:
+  deployment-puppetmaster04.deployment-prep.eqiad.wmflabs:
   - loadfactor: 1
-    worker: deployment-deployment-puppetserver-1.deployment-prep.eqiad1.wikimedia.cloud
+    worker: deployment-puppetmaster04.deployment-prep.eqiad.wmflabs
