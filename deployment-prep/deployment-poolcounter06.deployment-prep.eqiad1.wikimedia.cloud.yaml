@@ -1,2 +1,1 @@
 profile::poolcounter::exporter_port: 9106
-puppetmaster: deployment-puppetmaster04.deployment-prep.eqiad.wmflabs
