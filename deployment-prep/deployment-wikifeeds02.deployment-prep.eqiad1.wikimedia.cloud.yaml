@@ -41,4 +41,3 @@ profile::docker::runner::service_defs:
     override_cmd: -c /etc/mediawiki-services-wikifeeds/config.yaml
     port: 8889
     version: 2023-11-28-215911-production
-puppetmaster: deployment-puppetmaster04.deployment-prep.eqiad.wmflabs
