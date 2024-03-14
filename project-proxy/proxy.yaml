@@ -16,9 +16,11 @@ profile::wmcs::novaproxy::supported_zones:
     default: true
     id: 6ddcb082-69d6-43f4-9993-5c6bdc27dfc9
     project: cloudinfra
+    shared: true
   wmflabs.org.:
     deprecated: true
     id: 553ef162-add7-4a5c-b115-9cabca662746
     project: wmflabsdotorg
+    shared: true
 profile::wmcs::novaproxy::token_validator_project: cloudinfra
 profile::wmcs::novaproxy::token_validator_username: cloudinfrakeystonevalidate
