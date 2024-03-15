@@ -1,4 +1,1 @@
-- profile::maps::apps
-- profile::maps::osm_master
-- profile::redis::master
-- profile::prometheus::postgres_exporter
+[]
