@@ -1,4 +1,4 @@
-acmechief_host: toolsbeta-acme-chief-01.toolsbeta.eqiad.wmflabs
+acmechief_host: toolsbeta-acme-chief-2.toolsbeta.eqiad1.wikimedia.cloud
 docker::builder_host: tools-docker-builder-06.tools.eqiad.wmflabs
 docker::password: not a real password
 docker::password_hash: $apr1$st5G0d8l$IcJeBIljkbSRhjrMIiH02/
