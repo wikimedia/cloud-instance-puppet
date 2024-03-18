@@ -1,3 +1,4 @@
 profile::puppet::agent::force_puppet7: true
 profile::puppetserver::autosign: /usr/local/sbin/validatelabsfqdn.py
 profile::puppetserver::java_max_mem: 28g
+profile::puppetserver::server_certname: puppetmaster.cloudinfra.wmflabs.org
