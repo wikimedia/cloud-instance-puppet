@@ -12,4 +12,4 @@ profile::mail::smarthost::dkim_domains:
     selector:
     - wmcs
     - wmcs-rsa
-puppetmaster: cloudinfra-internal-puppetmaster-02.cloudinfra.eqiad.wmflabs
+puppetmaster: cloudinfra-internal-puppetserver-1.cloudinfra.eqiad1.wikimedia.cloud
