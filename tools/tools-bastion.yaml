@@ -1,0 +1,5 @@
+labstore::traffic_shaping::egress: 800mbps
+labstore::traffic_shaping::nfs_read: 90mbps
+labstore::traffic_shaping::nfs_write: 85mbps
+login_server: true
+mount_nfs: true
