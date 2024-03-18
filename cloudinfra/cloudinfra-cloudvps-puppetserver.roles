@@ -1,2 +1,1 @@
 - role::puppetserver::cloud_vps_project
-- 'profile::puppet::agent::dns_alt_names: [puppetmaster.cloudinfra.wmflabs.org, puppet]'
