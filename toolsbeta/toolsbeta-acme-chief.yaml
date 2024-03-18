@@ -2,7 +2,7 @@ profile::acme_chief::accounts:
   aa96867bd252bd05c9e72746f8bdd234:
     directory: https://acme-v02.api.letsencrypt.org/directory
     regr: '{"body": {}, "uri": "https://acme-v02.api.letsencrypt.org/acme/acct/88487897"}'
-profile::acme_chief::active: toolsbeta-acme-chief-01.toolsbeta.eqiad.wmflabs
+profile::acme_chief::active: toolsbeta-acme-chief-2.toolsbeta.eqiad1.wikimedia.cloud
 profile::acme_chief::certificates:
   toolforge:
     CN: beta.toolforge.org
@@ -42,6 +42,5 @@ profile::acme_chief::cloud::designate_sync_project_names:
 profile::acme_chief::cloud::designate_sync_region_name: eqiad1-r
 profile::acme_chief::cloud::designate_sync_tidyup_enabled: true
 profile::acme_chief::cloud::designate_sync_username: toolsbeta-dns-manager
-profile::acme_chief::passive:
-- toolsbeta-acme-chief-2.toolsbeta.eqiad1.wikimedia.cloud
+profile::acme_chief::passive: []
 shared_acme_certificates: {}
