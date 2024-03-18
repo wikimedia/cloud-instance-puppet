@@ -64,4 +64,4 @@ profile::java::java_packages:
 - variant: jdk
   version: '17'
 profile::pki::client::ensure: present
-puppetmaster: cloudinfra-internal-puppetmaster-02.cloudinfra.eqiad.wmflabs
+puppetmaster: cloudinfra-internal-puppetserver-1.cloudinfra.eqiad1.wikimedia.cloud
