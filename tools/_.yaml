@@ -1,4 +1,4 @@
-acmechief_host: tools-acme-chief-01.tools.eqiad.wmflabs
+acmechief_host: tools-acme-chief-3.tools.eqiad1.wikimedia.cloud
 docker::builder_host: tools-imagebuilder-2.tools.eqiad1.wikimedia.cloud
 docker::registry: docker-registry.tools.wmflabs.org
 docker::registry_url: https://tools-docker-registry.wmflabs.org/v2/
