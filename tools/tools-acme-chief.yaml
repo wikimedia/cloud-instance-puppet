@@ -60,4 +60,6 @@ profile::acme_chief::cloud::designate_sync_tidyup_enabled: true
 profile::acme_chief::cloud::designate_sync_username: tools-dns-manager
 profile::acme_chief::passive:
 - tools-acme-chief-02.tools.eqiad.wmflabs
+- tools-acme-chief-3.tools.eqiad1.wikimedia.cloud
+- tools-acme-chief-4.tools.eqiad1.wikimedia.cloud
 shared_acme_certificates: {}
