@@ -7,8 +7,8 @@ profile::acme_chief::certificates:
   customcatalyst:
     CN: catalyst.wmcloud.org
     SNI:
-    - catalyst.wmclod.org
-    - '*.catalyst.wmclod.org'
+    - catalyst.wmcloud.org
+    - '*.catalyst.wmcloud.org'
     authorized_regexes:
     - ^.+\.project-proxy\.eqiad1\.wikimedia\.cloud$
     challenge: dns-01
