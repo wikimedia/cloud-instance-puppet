@@ -4,6 +4,14 @@ profile::acme_chief::accounts:
     regr: '{"body": {}, "uri": "https://acme-v02.api.letsencrypt.org/acme/acct/87887184"}'
 profile::acme_chief::active: project-proxy-acme-chief-02.project-proxy.eqiad1.wikimedia.cloud
 profile::acme_chief::certificates:
+  customcatalyst:
+    CN: catalyst.wmcloud.org
+    SNI:
+    - catalyst.wmclod.org
+    - '*.catalyst.wmclod.org'
+    authorized_regexes:
+    - ^.+\.project-proxy\.eqiad1\.wikimedia\.cloud$
+    challenge: dns-01
   customtools:
     CN: svc.toolforge.org
     SNI:
