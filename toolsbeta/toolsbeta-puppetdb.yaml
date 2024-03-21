@@ -1,6 +1,6 @@
 profile::puppetdb::database::shared_buffers: 768MB
 profile::puppetdb::filter_job_id: true
-profile::puppetdb::master: toolsbeta-puppetdb-02.toolsbeta.eqiad.wmflabs
+profile::puppetdb::master: toolsbeta-puppetdb-03.toolsbeta.eqiad1.wikimedia.cloud
 profile::puppetdb::microservice::enabled: false
 profile::puppetdb::slaves: []
 puppetdb_major_version: 4
