@@ -168,6 +168,7 @@ profile::openstack::main::region: eqiad1-r
 profile::pki::client::ensure: present
 profile::prometheus::cadvisor_exporter::port: 4194
 profile::prometheus::statsd_exporter::mappings: []
+profile::puppet::agent::force_puppet7: true
 profile::puppetdb::extra_authorized_hosts: deployment-cumin02.deployment-prep.eqiad.wmflabs
 profile::puppetdb::master: deployment-puppetdb02.deployment-prep.eqiad.wmflabs
 profile::puppetdb::slaves: []
