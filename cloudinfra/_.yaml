@@ -1,4 +1,1 @@
 acmechief_host: cloudinfra-acme-chief-02.cloudinfra.eqiad1.wikimedia.cloud
-passwords::root::extra_keys:
-  alex: ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAICYxCqZkGys8gZB6Mq61Fw08CB7m1huxpnpII2ay3e0H
-    krenair@gmail.com inspiron
