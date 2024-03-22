@@ -54,7 +54,7 @@ profile::acme_chief::cloud::designate_sync_project_names:
 profile::acme_chief::cloud::designate_sync_region_name: eqiad1-r
 profile::acme_chief::cloud::designate_sync_tidyup_enabled: true
 profile::acme_chief::cloud::designate_sync_username: cloudinfra-dns-manager
-profile::acme_chief::passive: []
+profile::acme_chief::passive: cloudinfra-acme-chief-02.cloudinfra.eqiad1.wikimedia.cloud
 profile::puppet::agent::force_puppet7: true
 puppetmaster: cloudinfra-internal-puppetserver-1.cloudinfra.eqiad1.wikimedia.cloud
 shared_acme_certificates: {}
