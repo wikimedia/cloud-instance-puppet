@@ -1,3 +1,4 @@
 profile::toolforge::canonical_domain: toolsbeta.wmflabs.org
 profile::toolforge::canonical_scheme: http://
+profile::toolforge::legacy_redirector::ssl_certificate_name: null
 profile::toolforge::proxy::do_https: false
