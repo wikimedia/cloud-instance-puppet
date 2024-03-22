@@ -1,2 +1,3 @@
 profile::puppet::agent::force_puppet7: true
+profile::puppetserver::java_max_mem: 3g
 puppetmaster: puppet
