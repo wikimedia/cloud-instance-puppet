@@ -2,7 +2,7 @@ profile::acme_chief::accounts:
   e64fc08777c45aa5fb82ce175758166a:
     directory: https://acme-v02.api.letsencrypt.org/directory
     regr: '{"body": {}, "uri": "https://acme-v02.api.letsencrypt.org/acme/acct/108357291"}'
-profile::acme_chief::active: cloudinfra-acme-chief-02.cloudinfra.eqiad1.wikimedia.cloud
+profile::acme_chief::active: cloudinfra-acme-chief-01.cloudinfra.eqiad1.wikimedia.cloud
 profile::acme_chief::certificates:
   enc:
     CN: puppet-enc.cloudinfra.wmcloud.org
@@ -54,7 +54,7 @@ profile::acme_chief::cloud::designate_sync_project_names:
 profile::acme_chief::cloud::designate_sync_region_name: eqiad1-r
 profile::acme_chief::cloud::designate_sync_tidyup_enabled: true
 profile::acme_chief::cloud::designate_sync_username: cloudinfra-dns-manager
-profile::acme_chief::passive: cloudinfra-acme-chief-01.cloudinfra.eqiad1.wikimedia.cloud
+profile::acme_chief::passive: cloudinfra-acme-chief-02.cloudinfra.eqiad1.wikimedia.cloud
 profile::puppet::agent::force_puppet7: true
 puppetmaster: cloudinfra-internal-puppetserver-1.cloudinfra.eqiad1.wikimedia.cloud
 shared_acme_certificates: {}
