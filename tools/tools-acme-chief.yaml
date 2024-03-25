@@ -22,8 +22,11 @@ profile::acme_chief::certificates:
     SNI:
     - tools.wmflabs.org
     - '*.tools.wmflabs.org'
+    - toolserver.org
+    - '*.toolserver.org'
     authorized_regexes:
     - ^tools-legacy-redirector\.tools\.eqiad\.wmflabs$
+    - ^tools-legacy-redirector-[0-9]+\.tools\.eqiad1\.wikimedia\.cloud$
     challenge: dns-01
   tools_mail:
     CN: mail.tools.wmflabs.org
