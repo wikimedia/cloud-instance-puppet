@@ -287,7 +287,6 @@ prometheus::varnishkafka_exporter::config:
   - /var/cache/varnishkafka/webrequest.stats.json
 prometheus_nodes: []
 public_tls_unified_cert_vendor: lets-encrypt
-puppetmaster: traffic-puppetmaster-buster.traffic.eqiad1.wikimedia.cloud
 zookeeper_clusters:
   main-deployment-prep:
     hosts:
