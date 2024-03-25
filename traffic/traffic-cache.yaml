@@ -36,7 +36,7 @@ profile::cache::ssl::unified::letsencrypt: false
 profile::cache::ssl::wikibase::acme_chief: true
 profile::cache::ssl::wikibase::letsencrypt: false
 prometheus_nodes: []
-puppetmaster: traffic-puppetmaster-buster.traffic.eqiad1.wikimedia.cloud
+puppetmaster: traffic-puppetserver-bookworm.traffic.eqiad1.wikimedia.cloud
 zookeeper_clusters:
   main-deployment-prep:
     hosts:
