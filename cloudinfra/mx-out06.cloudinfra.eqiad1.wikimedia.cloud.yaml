@@ -1,1 +1,1 @@
-profile::mail::smarthost::exim_primary_hostname: mx-out06.wmcloud.org
+profile::mail::smarthost::exim_primary_hostname: mx-out-b.wmcloud.org
