@@ -103,7 +103,7 @@ profile::toolforge::proxies:
 profile::toolforge::services::active_node: tools-services-05.tools.eqiad1.wikimedia.cloud
 profile::toolforge::services::updatetools_enabled: false
 profile::wmcs::kubeadm::component: thirdparty/kubeadm-k8s-1-21
-profile::wmcs::nfs::standalone::cinder_attached: true
+profile::wmcs::nfs::standalone::cinder_attached: false
 profile::wmcs::nfs::standalone::volumes:
 - toolsbeta
 profile::wmcs::services::toolsdb_replica_cnf::kubeconfig_path_template: /srv/toolsbeta/misc/shared/toolsbeta/project/{user}/.kube/config
