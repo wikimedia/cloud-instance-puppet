@@ -1,2 +1,0 @@
-mount_nfs: false
-role::puppetmaster::standalone::upload_facts: true
