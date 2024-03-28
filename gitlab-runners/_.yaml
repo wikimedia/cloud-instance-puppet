@@ -1,1 +1,2 @@
 profile::gitlab::runner::concurrent: 4
+puppetmaster: gitlab-runners-puppetserver-01.gitlab-runners.eqiad1.wikimedia.cloud
