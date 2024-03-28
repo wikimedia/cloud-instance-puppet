@@ -63,4 +63,5 @@ profile::acme_chief::cloud::designate_sync_tidyup_enabled: true
 profile::acme_chief::cloud::designate_sync_username: tools-dns-manager
 profile::acme_chief::passive:
 - tools-acme-chief-4.tools.eqiad1.wikimedia.cloud
+profile::puppetserver::ca_allow_san: true
 shared_acme_certificates: {}
