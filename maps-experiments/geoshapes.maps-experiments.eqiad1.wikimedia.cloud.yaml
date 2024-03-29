@@ -38,4 +38,4 @@ profile::docker::runner::service_defs:
     override_cmd: -c /etc/mediawiki-services-geoshapes/config.yaml
     port: 6536
     version: 2021-03-04-093059-publish
-puppetmaster: maps-puppetmaster02.maps-experiments.eqiad1.wikimedia.cloud
+puppetmaster: maps-experiments-puppetserver-1.maps-experiments.eqiad1.wikimedia.cloud
