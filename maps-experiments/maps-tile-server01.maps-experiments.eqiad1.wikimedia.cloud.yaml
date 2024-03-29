@@ -14,4 +14,4 @@ profile::docker::runner::service_defs:
     override_cmd: serve --config /etc/operations-software-tegola/maps-config/tegola/tegola.toml
     port: 8080
     version: 2021-11-18-210902-production
-puppetmaster: maps-puppetmaster02.maps-experiments.eqiad1.wikimedia.cloud
+puppetmaster: maps-experiments-puppetserver-1.maps-experiments.eqiad1.wikimedia.cloud
