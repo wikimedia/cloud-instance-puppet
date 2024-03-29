@@ -1,3 +1,0 @@
-mailman::lists_servername: polymorphic.lists.wmcloud.org
-profile::lists::enable_mm3: true
-puppetmaster: mailman-puppetserver-1.mailman.eqiad1.wikimedia.cloud
