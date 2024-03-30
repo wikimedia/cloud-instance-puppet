@@ -3,6 +3,26 @@ profile::puppet::agent::dns_alt_names:
 - puppetmaster.cloudinfra.wmflabs.org
 profile::puppet::agent::force_puppet7: true
 profile::puppetserver::autosign: /usr/local/sbin/validatelabsfqdn.py
+profile::puppetserver::git::repos:
+  labs/private:
+    branch: master
+    hooks:
+      post-checkout: puppet:///modules/profile/puppetserver/git/operations/hooks/deploy-code.sh
+      post-commit: puppet:///modules/profile/puppetserver/git/operations/hooks/deploy-code.sh
+      post-merge: puppet:///modules/profile/puppetserver/git/operations/hooks/deploy-code.sh
+      pre-commit: puppet:///modules/puppetmaster/git/private/pre-commit
+      pre-merge: puppet:///modules/puppetmaster/git/private/pre-merge
+      pre-rebase: puppet:///modules/puppetmaster/git/private/pre-rebase
+    link: /etc/puppet/private
+  operations/puppet:
+    branch: production
+    hooks:
+      post-checkout: puppet:///modules/profile/puppetserver/git/operations/hooks/deploy-code.sh
+      post-commit: puppet:///modules/profile/puppetserver/git/operations/hooks/deploy-code.sh
+      post-merge: puppet:///modules/profile/puppetserver/git/operations/hooks/deploy-code.sh
+      pre-commit: puppet:///modules/puppetmaster/git/pre-commit
+      pre-merge: puppet:///modules/puppetmaster/git/pre-merge
+      pre-rebase: puppet:///modules/puppetmaster/git/pre-rebase
 profile::puppetserver::java_max_mem: 28g
 profile::puppetserver::server_certname: puppetmaster.cloudinfra.wmflabs.org
 puppetmaster: cloudinfra-internal-puppetserver-1.cloudinfra.eqiad1.wikimedia.cloud
