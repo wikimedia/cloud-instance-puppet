@@ -1,3 +1,4 @@
 profile::etherpad::listen_ip: '::'
+profile::pki::client::ensure: present
 profile::tlsproxy::envoy::global_cert_name: etherpad.discovery.wmnet
 profile::tlsproxy::envoy::ssl_provider: cfssl
