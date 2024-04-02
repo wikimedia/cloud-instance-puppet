@@ -1,3 +1,4 @@
+profile::base::certificates::include_bundle_jks: true
 profile::java::java_packages:
 - variant: jdk
   version: '8'
@@ -18,8 +19,10 @@ profile::kafka::broker::num_recovery_threads_per_data_dir: 1
 profile::kafka::broker::num_replica_fetchers: 1
 profile::kafka::broker::plaintext: true
 profile::kafka::broker::prometheus_monitoring_enabled: true
-profile::kafka::broker::ssl_enabled: false
+profile::kafka::broker::ssl_enabled: true
+profile::kafka::broker::ssl_generate_certificates: true
 profile::kafka::broker::use_fixed_uid_gid: true
+profile::kafka::broker:use_pki_settings: true
 profile::kafka::mirror::consumer_ssl_enabled: false
 profile::kafka::mirror::destination_cluster_name: jumbo-deployment-prep
 profile::kafka::mirror::producer_ssl_enabled: false
@@ -29,3 +32,4 @@ profile::kafka::mirror::properties:
   producer_properties:
     batch.size: 65536
 profile::kafka::mirror::source_cluster_name: main
+profile::pki::client::ensure: present
