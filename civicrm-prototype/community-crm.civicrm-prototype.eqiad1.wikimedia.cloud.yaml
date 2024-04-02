@@ -1,1 +1,2 @@
+profile::pki::client::ensure: present
 puppetmaster: puppetserver.civicrm-prototype.eqiad1.wikimedia.cloud
