@@ -6,7 +6,7 @@ profile::puppetmaster::common::puppetdb_hosts:
 - deployment-puppetdb05.deployment-prep.eqiad1.wikimedia.cloud
 profile::puppetserver::extra_mounts:
   volatile: /srv/puppet_fileserver/volatile
-profile::puppetserver::java_max_mem: 7g
+profile::puppetserver::java_max_mem: 5g
 profile::puppetserver::puppetdb_urls:
 - https://deployment-puppetdb05.deployment-prep.eqiad1.wikimedia.cloud
 profile::puppetserver::scripts::has_puppetdb: true
