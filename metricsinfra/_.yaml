@@ -25,6 +25,12 @@ profile::grafana::domainrw: grafana-rw.wmcloud.org
 profile::grafana::enable_cas: true
 profile::grafana::server_aliases: []
 profile::puppet::agent::force_puppet7: true
+profile::wmcs::metricsinfra::alertmanager::api_rw_proxy::trusted_hosts:
+  tools:
+  - tools-prometheus-6.tools.eqiad1.wikimedia.cloud
+  - tools-prometheus-7.tools.eqiad1.wikimedia.cloud
+  toolsbeta:
+  - toolsbeta-prometheus-1.toolsbeta.eqiad1.wikimedia.cloud
 profile::wmcs::metricsinfra::alertmanager::project_proxy::trusted_hosts:
   tools:
   - tools-prometheus-6.tools.eqiad1.wikimedia.cloud
