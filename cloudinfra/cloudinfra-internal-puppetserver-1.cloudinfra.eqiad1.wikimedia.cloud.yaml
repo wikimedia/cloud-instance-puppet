@@ -1,2 +1,2 @@
 profile::puppet::agent::force_puppet7: true
-puppetmaster: puppet
+puppetmaster: cloudinfra-cloudvps-puppetserver-1.cloudinfra.eqiad1.wikimedia.cloud
