@@ -23,6 +23,6 @@ profile::puppetserver::git::repos:
       pre-commit: puppet:///modules/puppetmaster/git/pre-commit
       pre-merge: puppet:///modules/puppetmaster/git/pre-merge
       pre-rebase: puppet:///modules/puppetmaster/git/pre-rebase
-profile::puppetserver::java_max_mem: 28g
+profile::puppetserver::java_max_mem: 26g
 profile::puppetserver::server_certname: puppetmaster.cloudinfra.wmflabs.org
 puppetmaster: cloudinfra-internal-puppetserver-1.cloudinfra.eqiad1.wikimedia.cloud
