@@ -1,2 +1,0 @@
-puppetmaster: clouddb-services-puppetmaster-2.clouddb-services.eqiad1.wikimedia.cloud
-role::puppetmaster::standalone::upload_facts: true
