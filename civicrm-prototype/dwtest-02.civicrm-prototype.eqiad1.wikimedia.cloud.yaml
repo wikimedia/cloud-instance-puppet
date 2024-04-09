@@ -1,3 +1,4 @@
+profile::community_civicrm::config_nonce: RANDOM-NONCE
 profile::pki::client::ensure: present
 profile::tlsproxy::envoy::cfssl_options:
   hosts:
