@@ -1,3 +1,4 @@
+profile::pki::client::ensure: present
 profile::tlsproxy::envoy::cfssl_options:
   hosts:
   - ticket.wmcloud.org
