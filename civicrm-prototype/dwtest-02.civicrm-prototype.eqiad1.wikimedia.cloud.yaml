@@ -1,9 +1,3 @@
 profile::community_civicrm::config_nonce: RANDOM-NONCE
 profile::community_civicrm::dbpassword: FAKE-PASSWORD
 profile::community_civicrm::hash_salt: FAKE-HASH
-profile::pki::client::ensure: present
-profile::tlsproxy::envoy::cfssl_options:
-  hosts:
-  - civitest.wmcloud.org
-profile::tlsproxy::envoy::global_cert_name: dwtest-02.civicrm-prototype.eqiad1.wikimedia.cloud
-profile::tlsproxy::envoy::ssl_provider: cfssl
