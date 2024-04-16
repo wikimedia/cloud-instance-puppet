@@ -1,5 +1,0 @@
-profile::puppet::agent::environment: production
-profile::puppetserver::puppetdb_urls:
-- https://db7.puppet-dev.eqiad1.wikimedia.cloud
-profile::puppetserver::ssldir_on_srv: false
-puppetmaster: project-pm.puppet-dev.eqiad1.wikimedia.cloud
