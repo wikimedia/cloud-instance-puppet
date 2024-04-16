@@ -1,6 +1,0 @@
-deployment_group: wikidev
-profile::mediawiki::scap_client::is_master: true
-profile::puppetdb::master: puppetmaster-1003.devtools.eqiad1.wikimedia.cloud
-puppetmaster: puppetmaster-1003.devtools.eqiad1.wikimedia.cloud
-scap::enable_bootstrapping: false
-statsd: 127.0.0.1:8125
