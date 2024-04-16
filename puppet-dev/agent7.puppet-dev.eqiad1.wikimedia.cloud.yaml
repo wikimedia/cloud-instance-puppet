@@ -1,2 +1,0 @@
-profile::puppet::agent::certificate_revocation: 'false'
-puppetmaster: pm7.puppet-dev.eqiad1.wikimedia.cloud
