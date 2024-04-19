@@ -1,2 +1,3 @@
+profile::community_civicrm::httpd::site_name: community-crm.wmcloud.org
 profile::pki::client::ensure: present
 puppetmaster: puppetserver.civicrm-prototype.eqiad1.wikimedia.cloud
