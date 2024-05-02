@@ -1,5 +1,5 @@
 deployment_hosts:
-- 172.16.6.54
+- 172.16.4.117
 profile::gitlab::local_gems:
   /srv/gitlab-wmf-gems:
   - gitlab_phorge
@@ -8,4 +8,4 @@ profile::openstack::eqiad1::cumin::project_masters:
 profile::openstack::eqiad1::cumin::project_pub_key: ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIMw8mbG4loPs68BQHLthEQr3qHy9XY4j+DYua0usuxmZ
   root@cumin-master-1001
 scap::dsh::scap_masters:
-- deploy-1004.devtools.eqiad1.wikimedia.cloud
+- deploy-1006.devtools.eqiad1.wikimedia.cloud
