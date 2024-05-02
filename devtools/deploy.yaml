@@ -1,4 +1,4 @@
 deployment_group: wikidev
 profile::mediawiki::scap_client::is_master: true
-puppetmaster: puppetmaster.cloudinfra.wmflabs.org
+puppetmaster: puppetmaster-1003.devtools.eqiad1.wikimedia.cloud
 statsd: 127.0.0.1:8125
