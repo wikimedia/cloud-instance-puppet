@@ -4,6 +4,7 @@ profile::docker::runner::service_defs:
     bind_mounts:
       /etc/thumbor.d: /etc/thumbor.d
     config: {}
+    host_network: true
     image_name: operations-software-thumbor-plugins
     namespace: wikimedia
     port: 8080
