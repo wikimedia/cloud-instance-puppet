@@ -1,0 +1,7 @@
+profile::docker::runner::service_defs:
+  thumbor:
+    config: {}
+    image_name: operations-software-thumbor-plugins
+    namespace: wikimedia
+    port: 8080
+    version: 2023-10-06-153556-production
