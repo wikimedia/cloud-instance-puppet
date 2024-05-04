@@ -1,6 +1,8 @@
 docker::gvisor::ensure: absent
 profile::docker::runner::service_defs:
   thumbor:
+    bind_mounts:
+      /etc/thumbor.d: /etc/thumbor.d
     config: {}
     image_name: operations-software-thumbor-plugins
     namespace: wikimedia
