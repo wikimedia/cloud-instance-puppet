@@ -1,6 +1,7 @@
 profile::idm::development: true
 profile::idm::ldap_dn: cn=bitu,ou=profile,dc=wikimedia,dc=org
 profile::idm::ldap_dn_password: testtest
+profile::idm::mediaback_callback: /callback/
 profile::idm::mediawiki_key: bitu
 profile::idm::mediawiki_secret: secret
 profile::idm::oidc_secret: secret
