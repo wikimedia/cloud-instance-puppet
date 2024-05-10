@@ -1,4 +1,5 @@
 profile::idm::development: true
+profile::idm::enable_monitoring: false
 profile::idm::ldap_dn: cn=bitu,ou=profile,dc=wikimedia,dc=org
 profile::idm::ldap_dn_password: testtest
 profile::idm::mediaback_callback: /callback/
