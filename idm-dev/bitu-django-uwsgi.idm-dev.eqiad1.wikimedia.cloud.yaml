@@ -6,6 +6,7 @@ profile::idm::mediawiki_key: bitu
 profile::idm::mediawiki_secret: secret
 profile::idm::oidc_secret: secret
 profile::idm::oidc_service: idm
+profile::idm::redis_master: bitu-django-uwsgi.idm-dev.eqiad1.wikimedia.cloud
 profile::idm::server::django_mysql_db_host: localhost
 profile::idm::server::django_mysql_db_name: idm
 profile::idm::server::django_mysql_db_password: testtest
