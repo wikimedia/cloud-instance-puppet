@@ -1,6 +1,7 @@
 profile::idm::development: true
 profile::idm::ldap_dn: cn=bitu,ou=profile,dc=wikimedia,dc=org
 profile::idm::ldap_dn_password: testtest
+profile::idm::oidc_service: idm
 profile::idm::server::django_mysql_db_host: localhost
 profile::idm::server::django_mysql_db_name: idm
 profile::idm::server::django_mysql_db_password: testtest
