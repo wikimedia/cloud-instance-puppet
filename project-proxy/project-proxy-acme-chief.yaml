@@ -20,6 +20,14 @@ profile::acme_chief::certificates:
     authorized_regexes:
     - ^.+\.project-proxy\.eqiad1\.wikimedia\.cloud$
     challenge: dns-01
+  customo11y:
+    CN: o11y.wmcloud.org
+    SNI:
+    - o11y.wmcloud.org
+    - '*.o11y.wmcloud.org'
+    authorized_regexes:
+    - ^.+\.project-proxy\.eqiad1\.wikimedia\.cloud$
+    challenge: dns-01
   customtools:
     CN: svc.toolforge.org
     SNI:
@@ -77,6 +85,7 @@ profile::acme_chief::cloud::designate_sync_project_names:
 - catalyst-qte
 - cloudinfra
 - maps
+- o11y
 - project-proxy
 - tools
 - toolsbeta
