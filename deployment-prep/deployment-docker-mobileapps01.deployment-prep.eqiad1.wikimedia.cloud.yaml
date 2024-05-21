@@ -66,4 +66,4 @@ profile::docker::runner::service_defs:
     namespace: wikimedia
     override_cmd: -c /etc/mediawiki-services-mobileapps/config.yaml
     port: 8888
-    version: 2023-06-14-104313-production
+    version: 2024-05-21-113111-production
