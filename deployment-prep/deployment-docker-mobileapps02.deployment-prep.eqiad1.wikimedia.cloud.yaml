@@ -15,6 +15,18 @@ profile::docker::runner::service_defs:
       num_workers: ncpu * 1.5
       services:
       - conf:
+          corepagehtml_req:
+            headers:
+              accept-language: '{{accept-language}}'
+              host: '{{request.params.domain}}'
+            method: GET
+            uri: http://deployment-mediawiki11.deployment-prep.eqiad1.wikimedia.cloud/w/rest.php/v1/page/{{title}}/with_html'
+          corerevisionhtml_req:
+            headers:
+              accept-language: '{{accept-language}}'
+              host: '{{request.params.domain}}'
+            method: GET
+            uri: http://deployment-mediawiki11.deployment-prep.eqiad1.wikimedia.cloud/w/rest.php/v1/revision/{{revision}}/with_html
           cors: '*'
           mobile_html_csp: 'default-src ''none''; connect-src app://*.wikipedia.org
             https://*.wikipedia.org; media-src app://upload.wikimedia.org https://upload.wikimedia.org
