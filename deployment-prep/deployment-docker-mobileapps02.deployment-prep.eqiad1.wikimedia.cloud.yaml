@@ -20,7 +20,7 @@ profile::docker::runner::service_defs:
               accept-language: '{{accept-language}}'
               host: '{{request.params.domain}}'
             method: GET
-            uri: http://deployment-mediawiki11.deployment-prep.eqiad1.wikimedia.cloud/w/rest.php/v1/page/{{title}}/with_html'
+            uri: http://deployment-mediawiki11.deployment-prep.eqiad1.wikimedia.cloud/w/rest.php/v1/page/{{title}}/with_html
           corerevisionhtml_req:
             headers:
               accept-language: '{{accept-language}}'
