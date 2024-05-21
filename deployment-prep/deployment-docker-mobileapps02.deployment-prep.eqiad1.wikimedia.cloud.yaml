@@ -9,9 +9,6 @@ profile::docker::runner::service_defs:
         level: warn
         name: mobileapps
         streams:
-        - host: deployment-logstash03.deployment-prep.eqiad.wmflabs
-          port: 12201
-          type: gelf
         - type: stdout
       metrics: {}
       num_workers: ncpu * 1.5
