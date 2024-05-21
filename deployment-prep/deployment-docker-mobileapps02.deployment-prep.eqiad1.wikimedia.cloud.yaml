@@ -9,7 +9,8 @@ profile::docker::runner::service_defs:
         level: warn
         name: mobileapps
         streams:
-        - type: stdout
+        - named_levels: true
+          type: stdout
       metrics: {}
       num_workers: ncpu * 1.5
       services:
