@@ -1,2 +1,26 @@
 profile::puppet::agent::force_puppet7: true
+profile::puppetserver::hierarchy:
+- data_hash: cloudlib::httpyaml
+  name: Http Yaml
+  uri: https://puppet-enc.cloudinfra.wmcloud.org/v1/%{literal('%')}{::wmcs_project}/node/%{literal('%')}{facts.networking.fqdn}
+- name: cloud hierarchy
+  paths:
+  - cloud/%{literal('%')}{::wmcs_deployment}/%{literal('%')}{::wmcs_project}/hosts/%{literal('%')}{facts.networking.hostname}.yaml
+  - cloud/%{literal('%')}{::wmcs_deployment}/%{literal('%')}{::wmcs_project}/common.yaml
+  - cloud/%{literal('%')}{::wmcs_deployment}.yaml
+  - cloud.yaml
+- datadir: /etc/puppet/private/hieradata
+  name: Private hierarchy
+  paths:
+  - labs/%{literal('%')}{::wmcs_project}/common.yaml
+  - '%{literal(''%'')}{::wmcs_project}.yaml'
+  - labs.yaml
+- name: Common hierarchy
+  path: common.yaml
+- datadir: /etc/puppet/private/hieradata
+  name: Private Common hierarchy
+  path: common.yaml
+- datadir: /etc/puppet/private/hieradata
+  name: Private host hierarchy
+  path: hosts/%{facts.networking.hostname}.yaml
 puppetmaster: puppet
