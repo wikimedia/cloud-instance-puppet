@@ -1,2 +1,2 @@
-profile::gitlab::runner::ensure: present
+profile::gitlab::runner::ensure: absent
 puppetmaster: gitlab-runners-puppetserver-01.gitlab-runners.eqiad1.wikimedia.cloud
