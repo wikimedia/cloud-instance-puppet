@@ -22,5 +22,5 @@ profile::puppetserver::hierarchy:
   path: common.yaml
 - datadir: /etc/puppet/private/hieradata
   name: Private host hierarchy
-  path: hosts/%{facts.networking.hostname}.yaml
+  path: /hosts/%{literal('%')}{facts.networking.hostname}.yaml
 puppetmaster: puppet
