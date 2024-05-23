@@ -12,3 +12,6 @@ profile::cache::purge::kafka_topics:
 profile::cache::purge::tls_key_password: from_my_checks_this_is_unused_but_if_you_dont_set_it_puppet_breaks_amir
 profile::cache::purged::use_pki: true
 profile::cache::varnish::frontend::enable_http_redirection: false
+profile::lvs::realserver::ipip::interfaces:
+- '%{facts.interface_primary}'
+- lo
