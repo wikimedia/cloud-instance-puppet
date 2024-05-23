@@ -9,6 +9,7 @@ profile::cache::haproxy::http_redirection_port: 80
 profile::cache::purge::kafka_tls: true
 profile::cache::purge::kafka_topics:
 - eqiad.resource-purge
+profile::cache::purge::tls_key_password: from_my_checks_this_is_unused_but_if_you_dont_set_it_puppet_breaks_amir
 profile::cache::purged::use_pki: true
 profile::cache::varnish::frontend::enable_http_redirection: false
 profile::pki::client::ensure: present
