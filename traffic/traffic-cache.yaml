@@ -37,6 +37,7 @@ profile::cache::ssl::wikibase::acme_chief: true
 profile::cache::ssl::wikibase::letsencrypt: false
 prometheus_nodes: []
 puppetmaster: traffic-puppetserver-bookworm.traffic.eqiad1.wikimedia.cloud
+puppetmaster::enable_geoip: false
 zookeeper_clusters:
   main-deployment-prep:
     hosts:
