@@ -1,2 +1,1 @@
-profile::gerrit::host: gerrit.devtools.wmcloud.org
 profile::gerrit::ipv4: 172.16.1.232
