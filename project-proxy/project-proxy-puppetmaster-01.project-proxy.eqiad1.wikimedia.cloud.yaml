@@ -1,3 +1,0 @@
-profile::puppet::agent::force_puppet7: false
-puppetmaster: puppet
-role::puppetmaster::standalone::upload_facts: false
