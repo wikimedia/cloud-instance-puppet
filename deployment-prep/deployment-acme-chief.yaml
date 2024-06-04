@@ -19,6 +19,7 @@ profile::acme_chief::certificates:
     CN: '*.wikimedia.beta.wmflabs.org'
     SNI:
     - beta.wmflabs.org
+    - beta.wmcloud.org
     - m.wikidata.beta.wmflabs.org
     - wikidata.beta.wmflabs.org
     - m.wikifunctions.beta.wmflabs.org
