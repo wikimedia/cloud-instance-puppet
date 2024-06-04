@@ -44,7 +44,9 @@ profile::cache::haproxy::available_unified_certificates:
     critical_threshold: 15
     server_names:
     - '*.wikimedia.beta.wmflabs.org'
+    - '*.wikipedia.beta.wmcloud.org'
     - beta.wmflabs.org
+    - beta.wmcloud.org
     - m.wikidata.beta.wmflabs.org
     - wikidata.beta.wmflabs.org
     - m.wikifunctions.beta.wmflabs.org
