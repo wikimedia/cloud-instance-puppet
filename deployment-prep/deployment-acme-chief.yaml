@@ -44,6 +44,8 @@ profile::acme_chief::certificates:
     - '*.m.wiktionary.beta.wmflabs.org'
     - '*.wikipedia.beta.wmcloud.org'
     - '*.wikivoyage.beta.wmcloud.org'
+    - '*.m.wikipedia.beta.wmcloud.org'
+    - '*.m.wikivoyage.beta.wmcloud.org'
     authorized_regexes:
     - ^deployment-cache-(text|upload)08\.deployment-prep\.eqiad1\.wikimedia\.cloud$
     challenge: dns-01
