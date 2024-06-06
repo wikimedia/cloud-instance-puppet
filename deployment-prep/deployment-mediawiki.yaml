@@ -34,6 +34,10 @@ profile::tlsproxy::envoy::cfssl_options:
   - '*.m.wikimedia.beta.wmflabs.org'
   - wikidata.beta.wmflabs.org
   - wikifunctions.beta.wmflabs.org
+  - '*.wikipedia.beta.wmcloud.org'
+  - '*.wikivoyage.beta.wmcloud.org'
+  - '*.m.wikipedia.beta.wmcloud.org'
+  - '*.m.wikivoyage.beta.wmcloud.org'
 profile::tlsproxy::envoy::ensure: present
 profile::tlsproxy::envoy::global_cert_name: appservers.svc.deployment-prep.eqiad1.wikimedia.cloud
 profile::tlsproxy::envoy::retries: false
