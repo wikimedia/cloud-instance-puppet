@@ -45,6 +45,9 @@ profile::cache::haproxy::available_unified_certificates:
     server_names:
     - '*.wikimedia.beta.wmflabs.org'
     - '*.wikipedia.beta.wmcloud.org'
+    - '*.wikivoyage.beta.wmcloud.org'
+    - '*.m.wikipedia.beta.wmcloud.org'
+    - '*.m.wikivoyage.beta.wmcloud.org'
     - beta.wmflabs.org
     - beta.wmcloud.org
     - m.wikidata.beta.wmflabs.org
