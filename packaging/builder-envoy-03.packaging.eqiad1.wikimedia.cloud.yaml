@@ -1,5 +1,0 @@
-profile::docker::builder::prod_build_password: not_the_real_password
-profile::docker::builder::prune_images: false
-profile::docker::engine::packagename: docker.io
-profile::docker::engine::version: 18.09.1+dfsg1-7.1+deb10u2
-profile::docker::storage::loopback::dm_source: /dev/vd/docker
