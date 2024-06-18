@@ -88,7 +88,7 @@ profile::docker::runner::service_defs:
     environment:
       FUNCTION_EVALUATOR_TIMEOUT_MS: '9000'
       FUNCTION_ORCHESTRATOR_RATE_LIMIT_TTL_SECONDS: '180'
-      JS_EVAL_URI_SHOULD_WORK_BUT_DOESNT: <https://wikifunctions-evaluator-javascript-beta.wmcloud.org/1/v1/evaluate/>
+      JS_EVAL_URI_SHOULD_WORK_BUT_DOESNT: https://wikifunctions-evaluator-javascript-beta.wmcloud.org/1/v1/evaluate/
       NODE_TLS_REJECT_UNAUTHORIZED: '0'
       ORCHESTRATOR_CONFIG: '{ "addNestedMetadata": true, "evaluatorConfigs": [ { "programmingLanguages":
         ["python-3-9", "python-3-8", "python-3-7", "python-3", "python"], "evaluatorUri":
@@ -100,9 +100,9 @@ profile::docker::runner::service_defs:
         } ] }'
       ORCHESTRATOR_TIMEOUT_MS: '15000'
       PROGRAMMING_LANGUAGE_DIR: /srv/service/programming-languages
-      PY_EVAL_URI_SHOULD_WORK_BUT_DOESNT: <https://wikifunctions-evaluator-python3-beta.wmcloud.org/1/v1/evaluate/>
+      PY_EVAL_URI_SHOULD_WORK_BUT_DOESNT: https://wikifunctions-evaluator-python3-beta.wmcloud.org/1/v1/evaluate/
       WASMEDGE_HOME: /srv/service/programming-languages/wasmedge
-      WIKI_API_URL: <https://wikifunctions.beta.wmflabs.org/w/api.php>
+      WIKI_API_URL: https://wikifunctions.beta.wmflabs.org/w/api.php
     image_name: function-orchestrator
     namespace: repos/abstract-wiki/wikifunctions
     override_cmd: -c /etc/mediawiki-services-function-orchestrator/config.yaml
