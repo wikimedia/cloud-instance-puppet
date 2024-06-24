@@ -6,7 +6,7 @@ profile::docker::runner::service_defs:
   shellbox:
     config: {}
     image_name: mediawiki-libs-shellbox
-    namespace: mediawiki
+    namespace: wikimedia
     override_cmd: /usr/sbin/php-fpm7.2 --nodaemonize --fpm-config /etc/php/7.2/fpm/php-fpm.conf
     port: 7272
     version: 2024-06-13-133425-video
