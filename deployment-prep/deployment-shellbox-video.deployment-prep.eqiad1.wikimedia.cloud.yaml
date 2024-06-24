@@ -1,1 +1,14 @@
+profile::docker::engine::declare_service: true
+profile::docker::engine::packagename: docker.io
+profile::docker::engine::settings: {}
+profile::docker::engine::version: 20.10.5+dfsg1-1+deb11u2
+profile::docker::runner::service_defs:
+  changeprop:
+    config: {}
+    image_name: mediawiki-libs-shellbox
+    namespace: mediawiki
+    override_cmd: /usr/sbin/php-fpm7.2 --nodaemonize --fpm-config /etc/php/7.2/fpm/php-fpm.conf
+    port: 7272
+    version: 2024-06-13-133425-video
+    volume: true
 profile::tlsproxy::envoy::global_cert_name: shellbox-video.svc.deployment-prep.eqiad1.wikimedia.cloud
