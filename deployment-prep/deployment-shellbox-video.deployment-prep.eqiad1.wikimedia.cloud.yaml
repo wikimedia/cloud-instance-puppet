@@ -3,7 +3,7 @@ profile::docker::engine::packagename: docker.io
 profile::docker::engine::settings: {}
 profile::docker::engine::version: 20.10.5+dfsg1-1+deb11u2
 profile::docker::runner::service_defs:
-  changeprop:
+  shellbox:
     config: {}
     image_name: mediawiki-libs-shellbox
     namespace: mediawiki
