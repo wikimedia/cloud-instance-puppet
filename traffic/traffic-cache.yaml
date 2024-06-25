@@ -35,6 +35,7 @@ profile::cache::ssl::unified::certs_active: []
 profile::cache::ssl::unified::letsencrypt: false
 profile::cache::ssl::wikibase::acme_chief: true
 profile::cache::ssl::wikibase::letsencrypt: false
+profile::puppetserver::volatile::geoip_fetch_private: false
 prometheus_nodes: []
 puppetmaster: traffic-puppetserver-bookworm.traffic.eqiad1.wikimedia.cloud
 puppetmaster::enable_geoip: false
