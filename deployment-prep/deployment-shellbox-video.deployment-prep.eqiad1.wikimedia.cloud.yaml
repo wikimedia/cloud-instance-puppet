@@ -17,6 +17,8 @@ profile::docker::runner::service_defs:
       /srv/shellbox/config/: /srv/app/config
       /srv/shellbox/src: /srv/app/src
     config: {}
+    environment:
+      FCGI_MODE: FCGI_UNIX
     image_name: mediawiki-libs-shellbox
     namespace: wikimedia
     override_cmd: --nodaemonize
