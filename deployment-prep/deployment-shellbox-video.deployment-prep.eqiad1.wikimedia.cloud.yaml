@@ -14,6 +14,7 @@ profile::docker::runner::service_defs:
   shellbox:
     bind_mounts:
       /run/shared: /run/shared
+      /srv/shellbox/config/: /srv/app/config
     config: {}
     image_name: mediawiki-libs-shellbox
     namespace: wikimedia
