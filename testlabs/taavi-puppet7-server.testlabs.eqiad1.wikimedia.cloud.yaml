@@ -1,3 +1,0 @@
-profile::puppet::agent::force_puppet7: true
-profile::puppetserver::ssldir_on_srv: false
-puppetmaster: taavi-puppet7-server.testlabs.eqiad1.wikimedia.cloud
