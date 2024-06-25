@@ -11,8 +11,6 @@ profile::docker::runner::service_defs:
     image_name: httpd-fcgi
     port: 8080
     version: latest
-    volumes:
-    - fcgi_socket:/run/shared/:rw
   shellbox:
     bind_mounts:
       /run/shared: /run/shared
