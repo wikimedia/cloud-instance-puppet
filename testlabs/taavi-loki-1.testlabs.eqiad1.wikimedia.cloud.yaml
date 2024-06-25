@@ -1,3 +1,0 @@
-profile::nginx::variant: extras
-puppetmaster: taavi-pm-1.testlabs.eqiad1.wikimedia.cloud
-test: test
