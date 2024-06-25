@@ -3,12 +3,22 @@ profile::docker::engine::packagename: docker.io
 profile::docker::engine::settings: {}
 profile::docker::engine::version: 20.10.5+dfsg1-1+deb11u2
 profile::docker::runner::service_defs:
+  httpd:
+    bind_mounts: /run/shared:/run/shared
+    environment:
+      FCGI_MODE: FCGI_UNIX
+    image_name: httpd-fcgi
+    port: 8080
+    version: latest
+    volumes:
+    - fcgi_socket:/run/shared/:rw
   shellbox:
+    bind_mounts: /run/shared:/run/shared
     config: {}
     image_name: mediawiki-libs-shellbox
     namespace: wikimedia
     override_cmd: --nodaemonize
-    port: 8080
+    port: 8081
     version: 2024-06-13-133425-video
     volume: true
 profile::tlsproxy::envoy::global_cert_name: shellbox-video.svc.deployment-prep.eqiad1.wikimedia.cloud
