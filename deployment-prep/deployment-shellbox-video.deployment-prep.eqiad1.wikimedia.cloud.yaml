@@ -4,7 +4,8 @@ profile::docker::engine::settings: {}
 profile::docker::engine::version: 20.10.5+dfsg1-1+deb11u2
 profile::docker::runner::service_defs:
   httpd:
-    bind_mounts: /run/shared:/run/shared
+    bind_mounts:
+      /run/shared: /run/shared
     environment:
       FCGI_MODE: FCGI_UNIX
     image_name: httpd-fcgi
@@ -13,7 +14,8 @@ profile::docker::runner::service_defs:
     volumes:
     - fcgi_socket:/run/shared/:rw
   shellbox:
-    bind_mounts: /run/shared:/run/shared
+    bind_mounts:
+      /run/shared: /run/shared
     config: {}
     image_name: mediawiki-libs-shellbox
     namespace: wikimedia
