@@ -8,7 +8,7 @@ profile::docker::runner::service_defs:
     image_name: mediawiki-libs-shellbox
     namespace: wikimedia
     override_cmd: --nodaemonize
-    port: 7272
+    port: 8080
     version: 2024-06-13-133425-video
     volume: true
 profile::tlsproxy::envoy::global_cert_name: shellbox-video.svc.deployment-prep.eqiad1.wikimedia.cloud
