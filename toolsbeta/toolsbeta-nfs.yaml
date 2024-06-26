@@ -1,1 +1,2 @@
 mount_nfs: false
+profile::wmcs::services::toolsdb_replica_cnf::tools_project_prefix: toolsbeta
