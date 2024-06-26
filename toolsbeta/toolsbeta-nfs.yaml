@@ -1,2 +1,5 @@
 mount_nfs: false
+profile::wmcs::services::toolsdb_replica_cnf::kubeconfig_path_template: /srv/toolsbeta/misc/shared/toolsbeta/project/{user}/.kube/config
+profile::wmcs::services::toolsdb_replica_cnf::tool_replica_cnf_path: /srv/toolsbeta/misc/shared/toolsbeta/project
 profile::wmcs::services::toolsdb_replica_cnf::tools_project_prefix: toolsbeta
+profile::wmcs::services::toolsdb_replica_cnf::user_replica_cnf_path: /srv/toolsbeta/misc/shared/toolsbeta/home
