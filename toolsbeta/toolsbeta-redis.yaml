@@ -1,9 +1,11 @@
 profile::toolforge::redis_sentinel::keepalived_vips:
 - redis.svc.toolsbeta.eqiad1.wikimedia.cloud
 profile::toolforge::redis_sentinel::maxmemory: 1GB
-profile::toolforge::redis_sentinel::primary: toolsbeta-redis-1.toolsbeta.eqiad1.wikimedia.cloud
+profile::toolforge::redis_sentinel::primary: toolsbeta-redis-4.toolsbeta.eqiad1.wikimedia.cloud
 profile::toolforge::redis_sentinel::redis_hosts:
 - toolsbeta-redis-1.toolsbeta.eqiad1.wikimedia.cloud
 - toolsbeta-redis-2.toolsbeta.eqiad1.wikimedia.cloud
 - toolsbeta-redis-3.toolsbeta.eqiad1.wikimedia.cloud
 - toolsbeta-redis-4.toolsbeta.eqiad1.wikimedia.cloud
+- toolsbeta-redis-5.toolsbeta.eqiad1.wikimedia.cloud
+- toolsbeta-redis-6.toolsbeta.eqiad1.wikimedia.cloud
