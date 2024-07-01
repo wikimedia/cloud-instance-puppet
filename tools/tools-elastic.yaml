@@ -9,6 +9,8 @@ profile::elasticsearch::common_settings:
   - tools-elastic-2.tools.eqiad.wmflabs
   - tools-elastic-3.tools.eqiad.wmflabs
   - tools-elastic-4.tools.eqiad1.wikimedia.cloud
+  - tools-elastic-5.tools.eqiad1.wikimedia.cloud
+  - tools-elastic-6.tools.eqiad1.wikimedia.cloud
   cluster_name: tools
   curator_uses_unicast_hosts: false
   expected_nodes: 3
@@ -25,6 +27,8 @@ profile::elasticsearch::common_settings:
   - tools-elastic-2.tools.eqiad.wmflabs
   - tools-elastic-3.tools.eqiad.wmflabs
   - tools-elastic-4.tools.eqiad1.wikimedia.cloud
+  - tools-elastic-5.tools.eqiad1.wikimedia.cloud
+  - tools-elastic-6.tools.eqiad1.wikimedia.cloud
 profile::elasticsearch::config_version: '7'
 profile::elasticsearch::dc_settings:
   awareness_attributes: ''
