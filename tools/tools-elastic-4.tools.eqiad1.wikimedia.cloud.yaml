@@ -22,3 +22,4 @@ profile::elasticsearch::common_settings:
   - tools-elastic-2.tools.eqiad.wmflabs
   - tools-elastic-3.tools.eqiad.wmflabs
   - tools-elastic-4.tools.eqiad1.wikimedia.cloud
+profile::elasticsearch::version: '7.1'
