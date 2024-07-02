@@ -5,8 +5,6 @@ profile::elasticsearch::common_settings:
   auto_create_index: true
   awareness_attributes: ''
   cluster_hosts:
-  - tools-elastic-2.tools.eqiad.wmflabs
-  - tools-elastic-3.tools.eqiad.wmflabs
   - tools-elastic-4.tools.eqiad1.wikimedia.cloud
   - tools-elastic-5.tools.eqiad1.wikimedia.cloud
   - tools-elastic-6.tools.eqiad1.wikimedia.cloud
@@ -22,8 +20,6 @@ profile::elasticsearch::common_settings:
   short_cluster_name: omega
   transport_tcp_port: 9300
   unicast_hosts:
-  - tools-elastic-2.tools.eqiad.wmflabs
-  - tools-elastic-3.tools.eqiad.wmflabs
   - tools-elastic-4.tools.eqiad1.wikimedia.cloud
   - tools-elastic-5.tools.eqiad1.wikimedia.cloud
   - tools-elastic-6.tools.eqiad1.wikimedia.cloud
@@ -33,7 +29,7 @@ profile::elasticsearch::dc_settings:
 profile::elasticsearch::instances: {}
 profile::elasticsearch::rack: placeholder
 profile::elasticsearch::row: placeholder
-profile::elasticsearch::version: '7.4'
+profile::elasticsearch::version: '7.10'
 profile::java::egd_source: /dev/random
 profile::java::hardened_tls: false
 profile::prometheus::haproxy_exporter::listen_port: 9901
