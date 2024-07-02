@@ -1,2 +1,3 @@
 profile::elasticsearch::version: '7.10'
 profile::toolforge::elasticsearch::keepalived::host_priority: 120
+profile::toolforge::elasticsearch::keepalived::interface: ens3
