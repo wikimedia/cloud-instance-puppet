@@ -234,18 +234,6 @@ puppetmaster::geoip::fetch_private: false
 puppetmaster::geoip::use_proxy: false
 push_subscription_manager_password: nfSMHMKw4TwxnmuBYZVwsdb6
 pybal::configuration::config: etcd
-redis::shards:
-  sessions:
-    eqiad:
-      shard01:
-        host: 172.16.0.28
-        port: 6379
-      shard02:
-        host: 172.16.4.30
-        port: 6379
-      shard03:
-        host: 172.16.3.96
-        port: 6379
 restbase::deploy::public_key_file: puppet:///private/ssh/tin/servicedeploy_rsa.pub
 restbase::deploy::scap::public_key_file: puppet:///private/ssh/tin/servicedeploy_rsa.pub
 restbase::deployment: scap
