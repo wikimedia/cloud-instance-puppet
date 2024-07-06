@@ -1,5 +1,0 @@
-profile::memcached::extended_options:
-- modern
-profile::memcached::growth_factor: 1.15
-profile::memcached::size: 3000
-profile::memcached::version: present
