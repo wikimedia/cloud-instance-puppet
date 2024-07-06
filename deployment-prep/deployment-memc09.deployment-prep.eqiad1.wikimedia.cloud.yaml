@@ -1,2 +1,0 @@
-profile::redis::multidc::discovery: null
-profile::redis::multidc::version_override: 2
