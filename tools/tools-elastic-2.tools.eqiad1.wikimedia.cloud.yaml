@@ -1,2 +1,0 @@
-profile::toolforge::elasticsearch::keepalived::host_priority: 999
-profile::toolforge::elasticsearch::keepalived::interface: eth0
