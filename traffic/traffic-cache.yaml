@@ -220,6 +220,7 @@ profile::cache::ssl::wikibase::acme_chief: true
 profile::cache::ssl::wikibase::letsencrypt: false
 profile::cache::varnish::frontend::privileged_uds: /run/varnish-privileged.socket
 prometheus_nodes: []
+public_tls_unified_cert_vendor: lets-encrypt
 puppetmaster: traffic-puppetserver-bookworm.traffic.eqiad1.wikimedia.cloud
 puppetmaster::enable_geoip: false
 zookeeper_clusters:
