@@ -8,7 +8,6 @@ cache::app_def_be_opts:
   max_connections: 1000
   port: 80
 cache::cluster: text
-cache::lua_support: true
 cache::nodes:
   text:
     eqiad:
