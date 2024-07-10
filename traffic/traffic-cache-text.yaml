@@ -37,11 +37,6 @@ kafka_clusters:
         id: 5
     ipv6: false
     zookeeper_cluster_name: main-deployment-prep
-lvs::configuration::lvs_service_ips:
-  text:
-    eqiad: 127.0.0.1
-lvs::configuration::lvs_services: {}
-mtail::service_ensure: absent
 profile::cache::kafka::eventlogging::kafka_cluster_name: jumbo-eqiad
 profile::cache::kafka::statsv::kafka_cluster_name: jumbo-eqiad
 profile::cache::kafka::webrequest::kafka_cluster_name: jumbo-eqiad
