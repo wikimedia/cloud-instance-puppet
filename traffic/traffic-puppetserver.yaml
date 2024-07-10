@@ -1,3 +1,2 @@
 profile::puppet::agent::force_puppet7: true
 puppetmaster: puppet
-puppetmaster::enable_geoip: false
