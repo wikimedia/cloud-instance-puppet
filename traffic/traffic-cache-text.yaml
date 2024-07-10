@@ -19,7 +19,6 @@ cache::text::nodes:
   eqiad:
   - localhost
 cluster: cache_text
-do_acme: false
 kafka_clusters:
   analytics-traffic:
     brokers:
