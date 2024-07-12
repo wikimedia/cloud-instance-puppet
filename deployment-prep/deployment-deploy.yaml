@@ -1,6 +1,8 @@
 aptly::manage_nginx: false
+profile::base::labs::cleanup_puppet_client_bucket: true
 profile::ci::slave::labs::common::manage_srv: false
 profile::java::java_packages:
 - variant: jre-headless
   version: '11'
 profile::mediawiki::mcrouter_wancache::use_onhost_memcached: false
+profile::mediawiki::scap_client::is_master: true
