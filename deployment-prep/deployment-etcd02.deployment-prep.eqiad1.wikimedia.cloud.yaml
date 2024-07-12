@@ -5,4 +5,3 @@ profile::etcd::v3::cluster_name: beta
 profile::etcd::v3::discovery: '%{::hostname}=https://%{::fqdn}:2380'
 profile::etcd::v3::max_latency: 100
 profile::etcd::v3::use_client_certs: false
-sslcert::certificate::skip_private: true
