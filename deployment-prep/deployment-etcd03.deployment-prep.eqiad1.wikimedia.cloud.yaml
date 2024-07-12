@@ -1,1 +1,1 @@
-profile::etcd::v3::use_client_certs: true
+{}
