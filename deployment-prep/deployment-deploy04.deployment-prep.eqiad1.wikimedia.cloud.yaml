@@ -1,2 +1,4 @@
 aptly::manage_nginx: false
+profile::base::labs::cleanup_puppet_client_bucket: true
 profile::ci::slave::labs::common::manage_srv: false
+profile::mediawiki::scap_client::is_master: true
