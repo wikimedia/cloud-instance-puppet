@@ -1,3 +1,7 @@
+profile::ncmonitor::gerrit_ssh_key: dummy
+profile::ncmonitor::gerrit_ssh_pubkey: dummy
+profile::ncmonitor::markmonitor_api_password: dummy
+profile::ncmonitor::markmonitor_api_user: dummy
 profile::ncmonitor::nameservers:
 - ns1.wikimedia.org
 - ns2.wikimedia.org
