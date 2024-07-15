@@ -154,14 +154,12 @@ profile::nutcracker::redis_pools:
         port: 6379
     server_retry_timeout: 10000
 profile::openstack::eqiad1::cumin::project_masters:
-- 172.16.1.151
 - 172.16.2.62
 profile::openstack::eqiad1::cumin::project_pub_key: ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIHMS6pXywYSw1kaZQivozB8qUx0vd1gqiAnVqJuS365B
   root@deployment-cumin
 profile::openstack::eqiad1::cumin::puppetdb_host: deployment-puppetdb05.deployment-prep.eqiad.wmflabs
 profile::openstack::eqiad1::region: eqiad1-r
 profile::openstack::main::cumin::project_masters:
-- 172.16.1.151
 - 172.16.2.62
 profile::openstack::main::cumin::project_pub_key: ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIHMS6pXywYSw1kaZQivozB8qUx0vd1gqiAnVqJuS365B
   root@deployment-cumin
@@ -171,7 +169,7 @@ profile::pki::client::ensure: present
 profile::prometheus::cadvisor_exporter::port: 4194
 profile::prometheus::statsd_exporter::mappings: []
 profile::puppet::agent::force_puppet7: true
-profile::puppetdb::extra_authorized_hosts: deployment-cumin02.deployment-prep.eqiad.wmflabs
+profile::puppetdb::extra_authorized_hosts: deployment-cumin-3.deployment-prep.eqiad1.wikimedia.cloud
 profile::puppetdb::master: deployment-puppetdb02.deployment-prep.eqiad.wmflabs
 profile::puppetdb::slaves: []
 profile::puppetmaster::common::command_broadcast: true
