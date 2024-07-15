@@ -155,6 +155,7 @@ profile::nutcracker::redis_pools:
     server_retry_timeout: 10000
 profile::openstack::eqiad1::cumin::project_masters:
 - 172.16.1.151
+- 172.16.2.62
 profile::openstack::eqiad1::cumin::project_pub_key: ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIHMS6pXywYSw1kaZQivozB8qUx0vd1gqiAnVqJuS365B
   root@deployment-cumin
 profile::openstack::eqiad1::cumin::puppetdb_host: deployment-puppetdb05.deployment-prep.eqiad.wmflabs
