@@ -161,6 +161,7 @@ profile::openstack::eqiad1::cumin::puppetdb_host: deployment-puppetdb05.deployme
 profile::openstack::eqiad1::region: eqiad1-r
 profile::openstack::main::cumin::project_masters:
 - 172.16.1.151
+- 172.16.2.62
 profile::openstack::main::cumin::project_pub_key: ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIHMS6pXywYSw1kaZQivozB8qUx0vd1gqiAnVqJuS365B
   root@deployment-cumin
 profile::openstack::main::cumin::puppetdb_host: deployment-puppetdb05.deployment-prep.eqiad.wmflabs
