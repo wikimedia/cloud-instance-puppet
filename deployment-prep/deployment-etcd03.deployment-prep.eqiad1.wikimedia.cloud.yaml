@@ -1,2 +1,3 @@
+profile::etcd::cluster_bootstrap: false
 profile::toolforge::k8s::etcd_nodes:
 - deployment-etcd03.deployment-prep.eqiad1.wikimedia.cloud
