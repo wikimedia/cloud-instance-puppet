@@ -1,2 +1,1 @@
 acmechief_host: cloudinfra-acme-chief-02.cloudinfra.eqiad1.wikimedia.cloud
-profile::openstack::base::puppetmaster::encapi::git_updater_active_host: enc-1.cloudinfra.eqiad1.wikimedia.cloud
