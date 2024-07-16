@@ -1,3 +1,0 @@
-profile::openstack::eqiad1::cumin::aliases: {}
-profile::openstack::eqiad1::cumin::project_ssh_priv_key_path: /root/.ssh/cumin
-profile::openstack::eqiad1::region: eqiad1-r
