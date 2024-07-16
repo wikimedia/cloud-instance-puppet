@@ -1,2 +1,2 @@
-profile::openstack::base::puppetmaster::encapi::git_updater_active_host: enc-1.cloudinfra.eqiad1.wikimedia.cloud
+profile::openstack::base::puppetmaster::encapi::git_updater_active_host: enc-2.cloudinfra.eqiad1.wikimedia.cloud
 puppetmaster: cloudinfra-internal-puppetserver-1.cloudinfra.eqiad1.wikimedia.cloud
