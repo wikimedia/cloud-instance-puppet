@@ -1,1 +1,2 @@
 - profile::conftool::dbctl_client
+- profile::conftool::client
