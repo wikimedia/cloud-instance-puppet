@@ -14,6 +14,7 @@ elasticsearch::cluster_hosts:
 - deployment-elastic11.deployment-prep.eqiad1.wikimedia.cloud
 etcd::auth::common::root_password: secret
 etcd::use_ssl: true
+etcd_client_srv_domain: conftool.svc.deployment-prep.eqiad1.wikimedia.cloud.
 etcd_host: deployment-etcd05.deployment-prep.eqiad1.wikimedia.cloud
 etcd_port: 2379
 eventlogging_host: 10.68.18.111
