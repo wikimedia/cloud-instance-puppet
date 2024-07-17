@@ -16,7 +16,6 @@ profile::wmcs::novaproxy::xff_fqdns:
 - google-api-proxy.wmflabs.org
 - googlevision-api-proxy.wmflabs.org
 - utrs-beta.wmflabs.org
-- utrs.wmflabs.org
 - xtools.wmflabs.org
 - xtools.wmcloud.org
 - xtools-dev.wmcloud.org
