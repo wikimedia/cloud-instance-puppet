@@ -1,2 +1,3 @@
 mediawiki_singlenode::mediawiki_hostname: togetherjs.wmflabs.org
-profile::wmcs::novaproxy::xff_fqdns: patchdemo.wmflabs.org
+profile::wmcs::novaproxy::xff_fqdns:
+- patchdemo.wmflabs.org
