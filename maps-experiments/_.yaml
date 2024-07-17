@@ -1,2 +1,1 @@
-profile::rsyslog::kafka_shipper::kafka_brokers:
-- deployment-logstash03.deployment-prep.eqiad.wmflabs:9093
+{}
