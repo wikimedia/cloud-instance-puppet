@@ -1,1 +1,1 @@
-{}
+profile::mediawiki::common::load_geoip_data_from_puppetserver: false
