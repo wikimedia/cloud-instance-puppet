@@ -194,14 +194,14 @@ profile::services_proxy::envoy::listeners:
   port: 6500
   service: api-https
   timeout: 120s
-  upstream: deployment-mediawiki11.deployment-prep.eqiad1.wikimedia.cloud
+  upstream: appservers.svc.deployment-prep.eqiad1.wikimedia.cloud
   xfp: https
 - keepalive: 4s
   name: mwapi
   port: 6501
   service: api-https
   timeout: 60s
-  upstream: deployment-mediawiki11.deployment-prep.eqiad1.wikimedia.cloud
+  upstream: appservers.svc.deployment-prep.eqiad1.wikimedia.cloud
   xfp: https
 profile::ssh::server::puppetserver_ca_host_certs: true
 profile::swift::global_account_keys:
