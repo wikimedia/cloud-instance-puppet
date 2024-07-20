@@ -412,7 +412,7 @@ service::catalog:
     sites:
     - eqiad
     state: production
-service::configuration::http_proxy: url-downloader.svc.deployment-prep.eqiad1.wikimedia.cloud
+service::configuration::http_proxy: http://url-downloader.svc.deployment-prep.eqiad1.wikimedia.cloud:8080
 service::configuration::logstash_host: deployment-logstash03.deployment-prep.eqiad.wmflabs
 service::configuration::logstash_port: 12201
 service::deploy::scap::public_key_file: puppet:///private/ssh/tin/servicedeploy_rsa.pub
