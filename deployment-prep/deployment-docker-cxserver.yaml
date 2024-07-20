@@ -76,7 +76,7 @@ profile::docker::runner::service_defs:
               user-agent: '{{user-agent}}'
             method: post
             query: '{{ default(request.query, {}) }}'
-            uri: http://deployment-mediawiki11.deployment-prep.eqiad1.wikimedia.cloud/w/api.php
+            uri: http://appservers.svc.deployment-prep.eqiad1.wikimedia.cloud/w/api.php
           no_proxy_list:
           - wmflabs
           port: 8080
