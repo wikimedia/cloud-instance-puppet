@@ -1,0 +1,47 @@
+profile::docker::engine::declare_service: true
+profile::docker::engine::packagename: docker.io
+profile::docker::engine::settings: {}
+profile::docker::runner::service_defs:
+  mediawiki-services-push-notifications:
+    config:
+      logging:
+        level: trace
+      metrics:
+        port: 9100
+        type: prometheus
+      num_workers: 0
+      services:
+      - conf:
+          apns:
+            debug_topics:
+            - org.wikimedia.Notifications-Utility
+            - org.wikimedia.wikipedia.tfalpha
+            token:
+              key: /etc/mediawiki-services-push-notifications/AuthKey_RLKLAZ79HY.p8
+              keyId: RLKLAZ79HY
+              teamId: AKK7J2GV64
+          debug: true
+          enable_custom_cookie_jar: true
+          mw_subscription_manager_password: '%{lookup("push_subscription_manager_password")}'
+          mw_subscription_manager_username: PushSubscriptionManager2
+          mwapi_req:
+            body: '{{ default(request.query, {}) }}'
+            headers:
+              host: meta.wikimedia.beta.wmflabs.org
+              user-agent: '{{user-agent}}'
+              x-forwarded-proto: https
+            method: post
+            uri: http://appservers.svc.deployment-prep.eqiad1.wikimedia.cloud/w/api.php
+          port: 8900
+          queueing:
+            flushTimeoutMs: 10000
+          spec: ./spec.yaml
+          user_agent: push-notifications (beta)
+        module: ./dist/app.js
+        name: push-notifications
+    environment:
+      DEBUG: apn
+    namespace: wikimedia
+    override_cmd: -c /etc/mediawiki-services-push-notifications/config.yaml
+    port: 8900
+    version: 2021-08-20-154251-publish
