@@ -1,6 +1,6 @@
 profile::docker::engine::declare_service: true
 profile::docker::engine::settings: {}
-profile::docker::engine::version: 1.12.6-0~debian-jessie
+profile::docker::engine::version: 20.10.5+dfsg1-1+deb11u2
 profile::docker::runner::service_defs:
   mediawiki-services-wikifeeds:
     config:
