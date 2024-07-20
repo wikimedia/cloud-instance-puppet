@@ -18,7 +18,7 @@ profile::docker::runner::service_defs:
             method: get
             query:
               title: '{{request.params.title}}'
-            uri: http://deployment-mediawiki11.deployment-prep.eqiad1.wikimedia.cloud/w/index.php
+            uri: http://appservers.svc.deployment-prep.eqiad1.wikimedia.cloud/w/index.php
           mwapi_req:
             body: '{{ default(request.query, {}) }}'
             headers:
@@ -26,7 +26,7 @@ profile::docker::runner::service_defs:
               host: '{{request.params.domain}}'
               user-agent: '{{user-agent}}'
             method: post
-            uri: http://deployment-mediawiki11.deployment-prep.eqiad1.wikimedia.cloud/w/api.php
+            uri: http://appservers.svc.deployment-prep.eqiad1.wikimedia.cloud/w/api.php
           port: 8889
           restbase_req:
             body: '{{request.body}}'
