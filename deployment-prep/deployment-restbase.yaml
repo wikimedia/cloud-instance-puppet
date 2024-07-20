@@ -59,4 +59,3 @@ service::catalog:
     - eqiad
     - codfw
     state: production
-service::configuration::http_proxy: http://deployment-urldownloader03.deployment-prep.eqiad1.wikimedia.cloud:8080
