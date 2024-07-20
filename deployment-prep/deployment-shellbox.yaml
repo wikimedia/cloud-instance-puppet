@@ -1,8 +1,35 @@
+profile::docker::engine::declare_service: true
+profile::docker::engine::packagename: docker.io
+profile::docker::engine::settings: {}
+profile::docker::engine::version: 20.10.5+dfsg1-1+deb11u2
+profile::docker::runner::service_defs:
+  httpd:
+    bind_mounts:
+      /run/shared: /run/shared
+    environment:
+      FCGI_MODE: FCGI_UNIX
+    image_name: httpd-fcgi
+    port: 8080
+    version: latest
+  shellbox:
+    bind_mounts:
+      /run/shared: /run/shared
+      /srv/shellbox/config/: /srv/app/config
+      /srv/shellbox/src: /srv/app/src
+    config: {}
+    environment:
+      FCGI_MODE: FCGI_UNIX
+    image_name: mediawiki-libs-shellbox
+    namespace: wikimedia
+    override_cmd: --nodaemonize
+    port: 8081
+    version: 2024-06-13-133425-video
+    volume: true
 profile::envoy::ensure: present
 profile::tlsproxy::envoy::access_log: true
 profile::tlsproxy::envoy::capitalize_headers: true
 profile::tlsproxy::envoy::ensure: present
-profile::tlsproxy::envoy::global_cert_name: shellbox.svc.deployment-prep.eqiad1.wikimedia.cloud
+profile::tlsproxy::envoy::global_cert_name: shellbox-video.svc.deployment-prep.eqiad1.wikimedia.cloud
 profile::tlsproxy::envoy::retries: false
 profile::tlsproxy::envoy::services:
 - port: 8080
@@ -10,5 +37,5 @@ profile::tlsproxy::envoy::services:
   - '*'
 profile::tlsproxy::envoy::sni_support: 'no'
 profile::tlsproxy::envoy::ssl_provider: cfssl
-profile::tlsproxy::envoy::tls_port: 4008
+profile::tlsproxy::envoy::tls_port: 443
 profile::tlsproxy::envoy::upstream_response_timeout: 203.0
