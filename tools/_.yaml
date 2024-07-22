@@ -80,4 +80,4 @@ prometheus_nodes:
 - tools-prometheus-6.tools.eqiad1.wikimedia.cloud
 - tools-prometheus-7.tools.eqiad1.wikimedia.cloud
 puppetmaster: tools-puppetserver-01.tools.eqiad1.wikimedia.cloud
-role::aptly::client::servername: tools-services-05.tools.eqiad1.wikimedia.cloud
+role::aptly::client::servername: tools-services-06.tools.eqiad1.wikimedia.cloud
