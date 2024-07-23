@@ -21,7 +21,7 @@ profile::docker::runner::service_defs:
           password: cassandra
           username: cassandra
         hosts:
-        - deployment-sessionstore04.deployment-prep.eqiad1.wikimedia.cloud
+        - deployment-sessionstore06.deployment-prep.eqiad1.wikimedia.cloud
         keyspace: sessions
         table: values
       default_ttl: 84000
