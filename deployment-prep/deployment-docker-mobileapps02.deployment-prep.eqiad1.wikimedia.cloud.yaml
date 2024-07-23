@@ -20,13 +20,13 @@ profile::docker::runner::service_defs:
               accept-language: '{{accept-language}}'
               host: '{{request.params.domain}}'
             method: GET
-            uri: http://deployment-mediawiki11.deployment-prep.eqiad1.wikimedia.cloud/w/rest.php/v1/page/{{title}}/with_html
+            uri: http://deployment-mediawiki14.deployment-prep.eqiad1.wikimedia.cloud/w/rest.php/v1/page/{{title}}/with_html
           corerevisionhtml_req:
             headers:
               accept-language: '{{accept-language}}'
               host: '{{request.params.domain}}'
             method: GET
-            uri: http://deployment-mediawiki11.deployment-prep.eqiad1.wikimedia.cloud/w/rest.php/v1/revision/{{revision}}/with_html
+            uri: http://deployment-mediawiki14.deployment-prep.eqiad1.wikimedia.cloud/w/rest.php/v1/revision/{{revision}}/with_html
           cors: '*'
           mobile_html_csp: 'default-src ''none''; connect-src app://*.wikipedia.org
             https://*.wikipedia.org; media-src app://upload.wikimedia.org https://upload.wikimedia.org
@@ -46,7 +46,7 @@ profile::docker::runner::service_defs:
               host: '{{request.params.domain}}'
               user-agent: '{{user-agent}}'
             method: post
-            uri: http://deployment-mediawiki11.deployment-prep.eqiad1.wikimedia.cloud/w/load.php
+            uri: http://deployment-mediawiki14.deployment-prep.eqiad1.wikimedia.cloud/w/load.php
           mwapi_req:
             body: '{{ default(request.query, {}) }}'
             headers:
@@ -54,7 +54,7 @@ profile::docker::runner::service_defs:
               host: '{{request.params.domain}}'
               user-agent: '{{user-agent}}'
             method: post
-            uri: http://deployment-mediawiki11.deployment-prep.eqiad1.wikimedia.cloud/w/api.php
+            uri: http://deployment-mediawiki14.deployment-prep.eqiad1.wikimedia.cloud/w/api.php
           pcs_handles_redirects: false
           port: 8888
           restbase_compatibility:
