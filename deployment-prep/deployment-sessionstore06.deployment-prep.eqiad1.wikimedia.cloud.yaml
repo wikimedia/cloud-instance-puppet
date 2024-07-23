@@ -22,7 +22,7 @@ profile::docker::runner::service_defs:
           username: cassandra
         hosts:
         - deployment-sessionstore06.deployment-prep.eqiad1.wikimedia.cloud
-        keyspace: sessions
+        keyspace: kask
         table: values
       default_ttl: 84000
       listen_address: 0.0.0.0
