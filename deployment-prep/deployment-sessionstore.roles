@@ -1,1 +1,2 @@
-[]
+- role::beta::cassandra
+- role::beta::docker_services
