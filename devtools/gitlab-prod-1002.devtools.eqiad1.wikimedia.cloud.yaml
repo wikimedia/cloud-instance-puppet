@@ -1,4 +1,4 @@
-profile::firewall::provider: ferm
+profile::firewall::provider: nftables
 profile::gitlab::configure_projects_bot_token: invalid
 profile::gitlab::max_concurrency: 2
 profile::gitlab::max_storage_concurrency: 2
