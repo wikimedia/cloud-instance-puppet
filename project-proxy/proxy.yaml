@@ -22,6 +22,11 @@ profile::wmcs::novaproxy::supported_zones:
     id: 26033036-d9bf-458b-8f54-46e83084e0e4
     project: catalyst
     shared: false
+  duct.wmcloud.org.:
+    acmechief_cert: customduct
+    id: 299028a8-5994-48f1-96c1-41f8b2828dbc
+    project: duct
+    shared: false
   o11y.wmcloud.org.:
     acmechief_cert: customo11y
     id: 2bcf4348-890a-45f6-94e5-f280da089bae
