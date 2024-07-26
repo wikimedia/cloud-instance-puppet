@@ -1,5 +1,4 @@
-profile::firewall::provider: nftables
-profile::gitlab::active_host: gitlab-prod-1003.devtools.eqiad1.wikimedia.cloud
+profile::firewall::provider: ferm
 profile::gitlab::configure_projects_bot_token: invalid
 profile::gitlab::max_concurrency: 2
 profile::gitlab::max_storage_concurrency: 2
