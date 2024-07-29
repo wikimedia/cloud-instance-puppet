@@ -2,3 +2,4 @@
 - profile::rsyslog::udp_localhost_compat
 - role::beta::mediawiki
 - role::mediawiki::maintenance
+- profile::scap::dsh
