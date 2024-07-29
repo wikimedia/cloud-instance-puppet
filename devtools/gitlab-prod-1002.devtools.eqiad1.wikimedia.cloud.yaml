@@ -1,4 +1,5 @@
 profile::firewall::provider: ferm
 profile::gitlab::configure_projects_bot_token: invalid
+profile::gitlab::max_concurrency: 4
 profile::tlsproxy::envoy::firewall_srange: []
 puppetmaster: puppetmaster-1003.devtools.eqiad1.wikimedia.cloud
