@@ -1,9 +1,19 @@
+profile::ncmonitor::acmechief::conf_path: hieradata/common/certificates.yaml
+profile::ncmonitor::acmechief::remote_url: ssh://ncmonitor@gerrit.wikimedia.org:29418/operations/puppet
+profile::ncmonitor::dnsrepo::remote_url: ssh://ncmonitor@gerrit.wikimedia.org:29418/operations/dns
+profile::ncmonitor::dnsrepo::target_zone_path: templates/ncredir-parking
+profile::ncmonitor::gerrit::ssh_key_path: /etc/ncmonitor/gerrit.key
 profile::ncmonitor::gerrit_ssh_key: dummy
 profile::ncmonitor::gerrit_ssh_pubkey: dummy
 profile::ncmonitor::markmonitor_api_password: dummy
 profile::ncmonitor::markmonitor_api_user: dummy
 profile::ncmonitor::nameservers:
+- ns0.wikimedia.org
 - ns1.wikimedia.org
 - ns2.wikimedia.org
-- ns3.wikimedia.org
+profile::ncmonitor::ncredir::datfile_path: modules/ncredir/files/nc_redirects.dat
+profile::ncmonitor::ncredir::remote_url: ssh://ncmonitor@gerrit.wikimedia.org:29418/operations/puppet
+profile::ncmonitor::reviewers:
+- nobody@example.com
+profile::ncmonitor::suffix_list_path: /var/lib/ncmonitor/public_suffix_list.dat
 puppetmaster: traffic-puppetserver-bookworm.traffic.eqiad1.wikimedia.cloud
