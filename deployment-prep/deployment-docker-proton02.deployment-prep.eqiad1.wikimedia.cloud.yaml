@@ -1,0 +1,69 @@
+profile::docker::engine::declare_service: true
+profile::docker::engine::packagename: docker.io
+profile::docker::engine::settings: {}
+profile::docker::engine::version: 18.09.1+dfsg1-7.1+deb10u2
+profile::docker::runner::service_defs:
+  mediawiki-services-chromium-render:
+    config:
+      logging:
+        level: trace
+      metrics: {}
+      num_workers: 0
+      services:
+      - conf:
+          cors: '*'
+          mw_req:
+            headers:
+              host: '{{request.params.domain}}'
+              x-subdomain: '{{if(request.params.mobile, "M", "")}}'
+            method: get
+            query:
+              title: '{{request.params.title}}'
+            uri: https://{{extdomain}}/w/index.php
+          pdf_options:
+            displayHeaderFooter: false
+            format: Letter
+            landscape: false
+            margin:
+              bottom: 0.75in
+              left: 0.5in
+              right: 0.5in
+              top: 0.5in
+            pageRanges: ''
+            printBackground: true
+            scale: 1
+          port: 3030
+          puppeteer_options:
+            args:
+            - --no-sandbox
+            - --disable-setuid-sandbox
+            - --font-rendering-hinting=medium
+            - --enable-font-antialiasing
+            - --hide-scrollbars
+            - --disable-gpu
+            - --no-first-run
+            - --single-process
+            - --no-zygote
+            executablePath: /usr/bin/chromium
+            headless: true
+            host_blacklist: .*:.*|[\d.]+|.*\.wmnet|gistcdn\.githack\.com
+            ignoreHTTPSErrors: true
+            max_render_queue_size: 50
+            queue_health_logging_interval: 3600
+            render_concurrency: 3
+            render_execution_timeout: 90
+            render_queue_timeout: 60
+            timeout: 30000
+          restbase_req:
+            body: '{{request.body}}'
+            headers: '{{request.headers}}'
+            method: '{{request.method}}'
+            query: '{{ default(request.query, {}) }}'
+            uri: https://{{domain}}/api/rest_v1/{+path}
+          user_agent: WMF Proton beta
+        module: ./app.js
+        name: proton
+    namespace: wikimedia
+    override_cmd: -c /etc/mediawiki-services-chromium-render/config.yaml
+    port: 3030
+    version: 2024-02-05-181957-production
