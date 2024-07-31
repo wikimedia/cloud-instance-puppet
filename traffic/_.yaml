@@ -1,5 +1,1 @@
-profile::base::certificates::trusted_certs:
-  bundle: /etc/ssl/certs/wmf-ca-certificates.crt
-  certs:
-  - '%{facts.puppet_config.localcacert}'
-  - /etc/ssl/certs/%{lookup('profile::pki::client::root_ca_cn')}.pem
+{}
