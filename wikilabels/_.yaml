@@ -1,2 +1,1 @@
-ssh::server::disable_nist_kex: false
-ssh::server::explicit_macs: false
+{}
