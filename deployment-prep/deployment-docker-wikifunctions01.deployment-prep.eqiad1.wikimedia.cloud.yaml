@@ -95,11 +95,10 @@ profile::docker::runner::service_defs:
       JS_EVAL_URI_SHOULD_WORK_BUT_DOESNT: https://wikifunctions-evaluator-javascript-beta.wmcloud.org/1/v1/evaluate/
       NODE_TLS_REJECT_UNAUTHORIZED: '0'
       ORCHESTRATOR_CONFIG: '{ "addNestedMetadata": true, "evaluatorConfigs": [ { "programmingLanguages":
-        ["python-3-9", "python-3-8", "python-3-7", "python-3", "python"], "evaluatorUri":
-        "http://172.16.1.154:6939/1/v1/evaluate/", "evaluatorWs": "", "useReentrance":
-        false, "allowCustomDerializers": true }, { "programmingLanguages": ["javascript-es2020",
-        "javascript-es2019", "javascript-es2018", "javascript-es2017", "javascript-es2016",
-        "javascript-es2015", "javascript"], "evaluatorUri": "http://172.16.1.154:6938/1/v1/evaluate/",
+        ["Z610","Z611","Z612","Z613","Z614","Z615"], "evaluatorUri": "http://172.16.1.154:6939/1/v1/evaluate/",
+        "evaluatorWs": "", "useReentrance": false, "allowCustomDerializers": true
+        }, { "programmingLanguages": ["Z600", "Z601", "Z602", "Z603", "Z604", "Z605",
+        "Z606", "Z607", "Z608"], "evaluatorUri": "http://172.16.1.154:6938/1/v1/evaluate/",
         "evaluatorWs": "", "useReentrance": false, "allowCustomDerializers": true
         } ] }'
       ORCHESTRATOR_TIMEOUT_MS: '15000'
