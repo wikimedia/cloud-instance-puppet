@@ -1,2 +1,1 @@
-profile::openstack::eqiad1::cumin::project_pub_key: ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAILdyXUgYEYTUwlUztCXzcaEd5HsS91CkmIHKE+KTdGZ3
-  root@cloud-cumin-01
+profile::openstack::eqiad1::cumin::project_pub_key: ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAILdyXUgYEYTUwlUztCXzcaEd5HsS91CkmIHKE+KTdGZ3  root@cloud-cumin-01
