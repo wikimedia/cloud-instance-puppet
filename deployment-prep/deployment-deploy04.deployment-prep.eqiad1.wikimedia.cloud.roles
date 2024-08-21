@@ -1,4 +1,4 @@
 - role::beta::deploymentserver
-- role::deployment_server
+- role::deployment_server::kubernetes
 - role::aptly::server
 - profile::ci::slave::labs::common
