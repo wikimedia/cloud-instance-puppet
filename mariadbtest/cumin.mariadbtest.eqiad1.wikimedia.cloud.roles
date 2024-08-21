@@ -1,1 +1,1 @@
-- profile::openstack
+- profile::openstack::eqiad1::cumin
