@@ -427,3 +427,4 @@ zookeeper_clusters:
   main-deployment-prep:
     hosts:
       deployment-zookeeper-3.deployment-prep.eqiad1.wikimedia.cloud: '3'
+    ipv6: false
