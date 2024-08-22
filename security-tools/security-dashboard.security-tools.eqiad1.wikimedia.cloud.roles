@@ -3,7 +3,7 @@
 - ensure => present,
 - '}'
 - ''
-- 'apache::vhost { ''security-dashboard.security-tools.wmcloud.org'':'
+- 'apache::vhost { ''185.15.56.76'':'
 - port    => '80',
 - docroot => '/var/www/html',
 - '}'
