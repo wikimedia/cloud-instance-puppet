@@ -1,9 +1,9 @@
-- node 'webserver.example.com' {
+- node 'security-dashboard.security-tools.wmcloud.org' {
 - 'class { ''apache'':'
 - ensure => present,
 - '}'
 - ''
-- 'apache::vhost { ''example.com'':'
+- 'apache::vhost { ''security-dashboard.security-tools.wmcloud.org'':'
 - port    => '80',
 - docroot => '/var/www/html',
 - '}'
@@ -11,7 +11,7 @@
 - 'file { ''/var/www/html/index.html'':'
 - ensure  => file,
 - content => "<html> <head><title>Hello from Puppet!</title></head> <body><h1>Hello
-  from Puppet managed Apache on Ubuntu!</h1></body> </html>",
+  from Puppet managed Security Dashboard</h1></body> </html>",
 - require => Class['apache'],
 - '}'
 - ''
