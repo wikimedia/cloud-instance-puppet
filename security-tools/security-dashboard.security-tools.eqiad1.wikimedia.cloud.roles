@@ -1,2 +1,23 @@
-- profile::httpd
-- profile::python38
+- node 'webserver.example.com' {
+- 'class { ''apache'':'
+- ensure => present,
+- '}'
+- ''
+- 'apache::vhost { ''example.com'':'
+- port    => '80',
+- docroot => '/var/www/html',
+- '}'
+- ''
+- 'file { ''/var/www/html/index.html'':'
+- ensure  => file,
+- content => "<html> <head><title>Hello from Puppet!</title></head> <body><h1>Hello
+  from Puppet managed Apache on Ubuntu!</h1></body> </html>",
+- require => Class['apache'],
+- '}'
+- ''
+- 'service { ''apache2'':'
+- ensure => running,
+- enable => true,
+- require => Package['apache2'],
+- '}'
+- '}'
