@@ -1,4 +1,0 @@
-profile::community_civicrm::config_nonce: RANDOM-NONCE
-profile::community_civicrm::dbpassword: FAKE-PASSWORD
-profile::community_civicrm::hash_salt: FAKE-HASH
-profile::community_civicrm::httpd::site_name: civitest.wmcloud.org
