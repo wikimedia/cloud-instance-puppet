@@ -1,0 +1,2 @@
+profile::community_civicrm::git_branch: main
+profile::community_civicrm::httpd::site_name: community-crm.wmcloud.org
