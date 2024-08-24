@@ -5,6 +5,11 @@ profile::docker::runner::service_defs:
   mediawiki-services-chart-renderer:
     config:
       cors: '*'
+      services:
+      - conf:
+          port: 6284
+        module: ./dist/index.js
+        name: chart-renderer
     image_name: chart-renderer
     namespace: repos/mediawiki/services
     port: 6284
