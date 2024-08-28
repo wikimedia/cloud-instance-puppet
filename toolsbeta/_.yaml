@@ -106,8 +106,8 @@ profile::toolforge::proxies:
 profile::toolforge::services::active_node: deb.svc.toolforge.org
 profile::toolforge::services::updatetools_enabled: false
 profile::toolforge::web_domain: beta.toolforge.org
-profile::wmcs::kubeadm::component: thirdparty/kubeadm-k8s-1-25
-profile::wmcs::kubeadm::kubernetes_version: 1.25.16
+profile::wmcs::kubeadm::component: thirdparty/kubeadm-k8s-1-26
+profile::wmcs::kubeadm::kubernetes_version: 1.26.15
 prometheus::haproxy_exporter::endpoint: http://localhost:9900/stats;csv
 prometheus::node_exporter::collectors_extra:
 - processes
