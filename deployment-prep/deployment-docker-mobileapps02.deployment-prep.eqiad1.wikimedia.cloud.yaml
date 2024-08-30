@@ -65,7 +65,7 @@ profile::docker::runner::service_defs:
             method: '{{request.method}}'
             query: '{{ default(request.query, {}) }}'
             timeout: 60000
-            uri: http://deployment-restbase04.deployment-prep.eqiad1.wikimedia.cloud:7231/{{domain}}/v1/{+path}
+            uri: http://deployment-restbase05.deployment-prep.eqiad1.wikimedia.cloud:7231/{{domain}}/v1/{+path}
           use_coreparsoid_endpoint: true
           user_agent: Mobile-Content-Service/WMF
         module: ./app.js
