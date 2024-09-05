@@ -10,6 +10,7 @@ profile::docker::runner::service_defs:
         port: 9092
         type: prometheus
       num_workers: 0
+      service_name: eventstreams
       services:
       - conf:
           cors: '*'
