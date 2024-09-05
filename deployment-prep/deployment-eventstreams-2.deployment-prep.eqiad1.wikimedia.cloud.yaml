@@ -83,8 +83,8 @@ profile::docker::runner::service_defs:
         module: app.js
         name: eventstreams
       worker_heap_limit_mb: 250
-    image_name: mediawiki-services-eventstreams
-    namespace: wikimedia
+    image_name: eventstreams
+    namespace: repos/data-engineering
     override_cmd: /srv/service/server.js -c /etc/eventstreams/config.yaml
     port: 8092
-    version: 2024-01-30-131827-production
+    version: service-utils-migration-70784569
