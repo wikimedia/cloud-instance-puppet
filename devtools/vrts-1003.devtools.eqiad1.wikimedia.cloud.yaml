@@ -9,3 +9,4 @@ profile::vrts::database_port: '3306'
 profile::vrts::download_url: https://download.znuny.org/releases
 profile::vrts::passive_host: vrts-1003.devtools.eqiad1.wikimedia.cloud
 profile::vrts::public_dns: ticket.wmcloud.org
+profile::vrts::sql_exporter_start_date: '2024-01-01'
