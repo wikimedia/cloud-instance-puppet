@@ -1,4 +1,5 @@
 profile::ldap::client::labs::restricted_to:
 - ops
 - sre-admins
+- ops-limited
 profile::ssh::server::max_startups: 150:100:150
