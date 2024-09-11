@@ -1,2 +1,4 @@
 profile::puppet::agent::force_puppet7: true
+profile::puppetserver::extra_mounts:
+  volatile: /srv/puppet_fileserver/volatile
 puppetmaster: puppet
