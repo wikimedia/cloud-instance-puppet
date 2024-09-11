@@ -79,6 +79,7 @@ profile::trafficserver::backend::mapping_rules:
 - replacement: http://127.0.0.1:6533
   target: http://local-origin-server
   type: map
+profile::trafficserver::backend::monitor_enable: false
 profile::trafficserver::backend::outbound_tls_settings:
   cacert_dirpath: /etc/ssl/certs
   cacert_filename: Puppet_Internal_CA.pem
