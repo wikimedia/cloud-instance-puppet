@@ -33,3 +33,4 @@ profile::trafficserver::backend::mapping_rules:
   replacement: http://deployment-ms-fe03.deployment-prep.eqiad.wmflabs
   target: http://upload.beta.wmflabs.org
   type: map
+profile::trafficserver::backend::monitor_enable: false
