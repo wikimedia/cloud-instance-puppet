@@ -66,6 +66,7 @@ profile::cache::varnish::frontend::fe_vcl_config:
   varnish_probe_ms: 100
 profile::cache::varnish::frontend::separate_vcl:
 - misc
+profile::mediawiki::common::load_geoip_data_from_puppetserver: false
 profile::puppetserver::volatile::geoip_fetch_private: false
 profile::trafficserver::backend::default_lua_scripts:
 - set-x-cache
