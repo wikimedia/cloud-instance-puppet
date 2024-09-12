@@ -22,6 +22,7 @@ profile::cache::varnish::frontend::fe_vcl_config:
   upload_domain: upload.wikimedia.beta.wmflabs.org
   upload_webp_hits_threshold: 1000
   varnish_probe_ms: 100
+profile::mediawiki::common::load_geoip_data_from_puppetserver: false
 profile::trafficserver::backend::mapping_rules:
 - params:
   - '@plugin=/usr/lib/trafficserver/modules/tslua.so'
