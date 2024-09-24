@@ -1,4 +1,4 @@
-profile::firewall::provider: ferm
+profile::firewall::provider: nftables
 profile::gitlab::configure_projects_bot_token: invalid
 profile::tlsproxy::envoy::firewall_srange: []
 puppetmaster: puppetmaster-1003.devtools.eqiad1.wikimedia.cloud
