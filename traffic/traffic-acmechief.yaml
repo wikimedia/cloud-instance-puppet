@@ -3,7 +3,7 @@ authdns_servers:
   185.15.56.162: 185.15.56.162
   185.15.56.163: 185.15.56.163
 profile::acme_chief::accounts:
-  f0990a352564fba4ceed58fbde078965:
+  bb887f5a7dd905d8caefe18c540e72b5:
     directory: https://acme-v02.api.letsencrypt.org/directory
     regr: '{"body": {}, "uri": "https://acme-v02.api.letsencrypt.org/acme/acct/62787352"}'
 profile::acme_chief::active: traffic-acmechief01.traffic.eqiad1.wikimedia.cloud
