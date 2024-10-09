@@ -3,4 +3,4 @@ profile::toolforge::canonical_domain: toolsbeta.wmflabs.org
 profile::toolforge::canonical_scheme: http://
 profile::toolforge::k8s::apiserver_fqdn: k8s.toolsbeta.eqiad1.wikimedia.cloud
 profile::toolforge::proxy::do_https: true
-profile::toolforge::proxy:toolforge_api_vip_fqdn: api.toolsbeta.eqiad1.wikimedia.cloud
+profile::toolforge::proxy:toolforge_api_vip_fqdn: api.svc.toolsbeta.eqiad1.wikimedia.cloud
