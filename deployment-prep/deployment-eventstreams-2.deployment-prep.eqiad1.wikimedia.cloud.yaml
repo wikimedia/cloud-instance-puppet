@@ -88,4 +88,4 @@ profile::docker::runner::service_defs:
     namespace: repos/data-engineering
     override_cmd: /srv/service/server.js -c /etc/eventstreams/config.yaml
     port: 8092
-    version: service-utils-migration-dbf30a29
+    version: service-utils-migration-70784569
