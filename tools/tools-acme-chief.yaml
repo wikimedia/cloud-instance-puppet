@@ -9,6 +9,8 @@ profile::acme_chief::certificates:
     SNI:
     - toolforge.org
     - '*.toolforge.org'
+    - svc.toolforge.org
+    - '*.svc.toolforge.org'
     - tools.wmflabs.org
     - '*.tools.wmflabs.org'
     authorized_regexes:
