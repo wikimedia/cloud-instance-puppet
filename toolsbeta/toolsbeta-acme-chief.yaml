@@ -11,7 +11,6 @@ profile::acme_chief::certificates:
     - '*.toolsbeta.wmflabs.org'
     - beta.toolforge.org
     - '*.beta.toolforge.org'
-    - svc.beta.toolforge.org
     - '*.svc.beta.toolforge.org'
     authorized_regexes:
     - ^.+\.toolsbeta\.eqiad1\.wikimedia\.cloud$
