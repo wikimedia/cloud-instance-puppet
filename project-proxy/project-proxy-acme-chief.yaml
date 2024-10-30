@@ -66,11 +66,12 @@ profile::acme_chief::certificates:
     - ^.+\.project-proxy\.eqiad\.wmflabs$
     - ^.+\.project-proxy\.eqiad1\.wikimedia\.cloud$
     challenge: dns-01
-  wmflabs:
-    CN: wmflabs.org
+  wmcloud:
+    CN: wmcloud.org
     SNI:
     - wmflabs.org
     - '*.wmflabs.org'
+    - proxy.project-proxy.eqiad1.wmcloud.org
     - wmcloud.org
     - '*.wmcloud.org'
     authorized_regexes:
