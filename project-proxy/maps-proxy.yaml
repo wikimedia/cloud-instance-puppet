@@ -1,7 +1,7 @@
 profile::wmcs::proxy::static::acme_chief_certs:
 - maps
 - wma
-- wmflabs
+- wmcloud
 profile::wmcs::proxy::static::blocked_referers: schiebt-sie-ab.de
 profile::wmcs::proxy::static::proxy_mappings:
   '*.wma.wmcloud.org':
@@ -35,7 +35,7 @@ profile::wmcs::proxy::static::proxy_mappings:
     certname: tiles
     domain: maps-wma2.maps.eqiad1.wikimedia.cloud
   warper.wmflabs.org:
-    certname: wmflabs
+    certname: wmcloud
     domain: maps-warper4.maps.eqiad1.wikimedia.cloud
   wma.wmcloud.org:
     certname: wma
@@ -44,29 +44,29 @@ profile::wmcs::proxy::static::proxy_mappings:
     certname: wma
     domain: maps-wma2.maps.eqiad1.wikimedia.cloud
   wma0.wmflabs.org:
-    certname: wmflabs
+    certname: wmcloud
     domain: maps-wma2.maps.eqiad1.wikimedia.cloud
   wma1.wmflabs.org:
-    certname: wmflabs
+    certname: wmcloud
     domain: maps-wma2.maps.eqiad1.wikimedia.cloud
   wma2.wmflabs.org:
-    certname: wmflabs
+    certname: wmcloud
     domain: maps-wma2.maps.eqiad1.wikimedia.cloud
   wma3.wmflabs.org:
-    certname: wmflabs
+    certname: wmcloud
     domain: maps-wma2.maps.eqiad1.wikimedia.cloud
   wma4.wmflabs.org:
-    certname: wmflabs
+    certname: wmcloud
     domain: maps-wma2.maps.eqiad1.wikimedia.cloud
   wma5.wmflabs.org:
-    certname: wmflabs
+    certname: wmcloud
     domain: maps-wma2.maps.eqiad1.wikimedia.cloud
   wma6.wmflabs.org:
-    certname: wmflabs
+    certname: wmcloud
     domain: maps-wma2.maps.eqiad1.wikimedia.cloud
   wma7.wmflabs.org:
-    certname: wmflabs
+    certname: wmcloud
     domain: maps-wma2.maps.eqiad1.wikimedia.cloud
   wmatest.wmflabs.org:
-    certname: wmflabs
+    certname: wmcloud
     domain: maps-wma2.maps.eqiad1.wikimedia.cloud
