@@ -36,6 +36,67 @@ kafka_clusters:
         id: 5
     ipv6: false
     zookeeper_cluster_name: main-deployment-prep
+profile::cache::haproxykafka::ensure: absent
+profile::cache::haproxykafka::kafka:
+  batch_deadline: 1000ms
+  batch_size: 102400
+  dlq_topic: webrequest_errors
+  flush_timeout: 1000
+  rdkafka:
+    acks: all
+    batch.num.messages: 9000
+    client.id: '%{facts.hostname}'
+    compression.codec: snappy
+    queue.buffering.max.messages: 720000
+    queue.buffering.max.ms: 1000
+    security.protocol: SSL
+    ssl.ca.location: /etc/ssl/certs/wmf-ca-certificates.crt
+    ssl.cipher.suites: ECDHE-ECDSA-AES256-GCM-SHA384
+    ssl.curves.list: P-256
+    ssl.sigalgs.list: ECDSA+SHA256
+    topic.request.required.acks: 1
+  topic: webrequest_undefined
+profile::cache::haproxykafka::kafka_cluster_name: main-deployment-prep
+profile::cache::haproxykafka::logparser:
+  batch_deadline: 1000ms
+  batch_size: 102400
+profile::cache::haproxykafka::message_buffer: 1000000.0
+profile::cache::haproxykafka::monitoring:
+  enable_pprof: true
+  enable_prometheus: true
+  prometheus_parsing_buckets:
+  - 5.0e-06
+  - 1.0e-05
+  - 5.0e-05
+  - 0.0001
+  - 0.0005
+  - 0.001
+  - 0.005
+  prometheus_prefix: haproxykafka_
+  prometheus_processing_buckets:
+  - 1.0e-06
+  - 5.0e-06
+  - 1.0e-05
+  - 2.0e-05
+  - 3.0e-05
+  - 5.0e-05
+  - 0.0001
+  - 0.0005
+  - 0.001
+  server_bind: :9341
+profile::cache::haproxykafka::sdid: haproxykafka@0
+profile::cache::haproxykafka::socket:
+  batch_deadline: 1000ms
+  batch_size: 102400
+  group: haproxykafka
+  mode: '0622'
+  path: /var/run/haproxykafka/haproxykafka.sock
+  user: haproxykafka
+profile::cache::haproxykafka::transform_rules:
+  date_format: '2006-01-02T15:04:05Z'
+  date_tz: UTC
+  haproxy_format: 02/Jan/2006:15:04:05.000
+profile::cache::haproxykafka::workers: 2
 profile::cache::kafka::eventlogging::kafka_cluster_name: jumbo-eqiad
 profile::cache::kafka::statsv::kafka_cluster_name: jumbo-eqiad
 profile::cache::purge::backend_addr: 127.0.0.1:3128
