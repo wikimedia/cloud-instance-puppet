@@ -1,4 +1,3 @@
-profile::firewall::defs_from_etcd: false
 profile::wmcs::novaproxy::acme_certname: wmcloud
 profile::wmcs::novaproxy::api_hostnames:
 - proxy-eqiad1.wmflabs.org
