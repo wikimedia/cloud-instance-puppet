@@ -1,4 +1,6 @@
 aptly::manage_nginx: false
+profile::admin::groups:
+- deployment-docker
 profile::base::labs::cleanup_puppet_client_bucket: true
 profile::ci::slave::labs::common::manage_srv: false
 profile::java::java_packages:
