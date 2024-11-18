@@ -329,7 +329,7 @@ role::deployment::repo_config:
   servermon/servermon:
     service_name: gunicorn
   statsv/statsv:
-    upstream: https://gerrit.wikimedia.org/r/analytics/statsv
+    upstream: https://gerrit.wikimedia.org/r/performance/statsv
   test/testrepo:
     checkout_submodules: true
     service_name: puppet
