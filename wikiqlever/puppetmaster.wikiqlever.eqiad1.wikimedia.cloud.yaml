@@ -1,3 +1,2 @@
-noop: testing
 profile::puppet::agent::force_puppet7: true
 puppetmaster: puppet
