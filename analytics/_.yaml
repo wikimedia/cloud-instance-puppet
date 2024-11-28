@@ -99,7 +99,7 @@ kerberos_kdc_servers:
 - kdc.analytics.eqiad.wmflabs
 kerberos_kdc_servers_to_clients:
 - kdc.analytics.eqiad.wmflabs
-kerberos_realm_name: analytics.eqiad
+kerberos_realm_name: analytics.eqiad.wmflabs
 keyholder::require_encrypted_keys: nope
 network::allow_deployment_from_ips:
 - 172.16.5.168
