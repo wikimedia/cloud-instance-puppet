@@ -1,0 +1,2 @@
+- profile::java
+- profile::hadoop::master::standby
