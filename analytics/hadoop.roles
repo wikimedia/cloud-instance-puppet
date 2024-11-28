@@ -1,1 +1,2 @@
 - profile::kerberos::client
+- profile::kerberos::keytabs
