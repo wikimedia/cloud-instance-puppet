@@ -1,0 +1,3 @@
+- profile::kerberos::kdc
+- profile::kerberos::kadminserver
+- profile::kerberos::client
