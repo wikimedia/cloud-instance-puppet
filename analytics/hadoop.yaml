@@ -17,5 +17,6 @@ profile::hive::client::metastore_host: hadoop-coordinator-2.analytics.eqiad.wmfl
 profile::hive::client::server_host: hadoop-coordinator-2.analytics.eqiad.wmflabs
 profile::hive::client::server_port: 10000
 profile::hive::client::zookeeper_cluster_name: main-eqiad
-profile::oozie::client::oozie_host: hadoop-coordinator-2.analytics.eqiad.wmflabs
-profile::oozie::server::java_home: /usr/lib/jvm/java-8-openjdk-amd64/jre
+profile::java::java_packages:
+- variant: jdk
+  version: '8'
