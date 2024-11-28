@@ -95,8 +95,9 @@ kafka_clusters:
 kafka_message_max_bytes: 4194304
 kerberos::kadmin_server_fallback: kdc.analytics.eqiad.wmflabs
 kerberos::kadmin_server_primary: kdc.analytics.eqiad.wmflabs
-kerberos::kdc_servers: kdc.analytics.eqiad.wmflabs
-kerberos::realm_name: analytics.eqiad,wmflabs
+kerberos_kdc_servers: kdc.analytics.eqiad.wmflabs
+kerberos_kdc_servers_to_clients: kdc.analytics.eqiad.wmflabs
+kerberos_realm_name: analytics.eqiad,wmflabs
 keyholder::require_encrypted_keys: nope
 network::allow_deployment_from_ips:
 - 172.16.5.168
