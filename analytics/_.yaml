@@ -67,11 +67,6 @@ hadoop_clusters:
     yarn.scheduler.maximum-allocation-vcores: 3
     yarn.scheduler.minimum-allocation-mb: 0
     yarn.scheduler.minimum-allocation-vcores: 0
-    yarn_nodemanager_container_executor_config:
-      allowed.system.users: nobody,hive
-      banned.users: root,hdfs,yarn,mapred,bin
-      min.user.id: '1000'
-      yarn.nodemanager.linux-container-executor.group: yarn
     yarn_resourcemanager_opts: -Xms2048m -Xmx2048m
     yarn_site_extra_properties:
       spark.authenticate: 'true'
