@@ -1,2 +1,2 @@
-- include profile::java
-- include profile::hadoop::master
+- profile::java
+- profile::hadoop::master
