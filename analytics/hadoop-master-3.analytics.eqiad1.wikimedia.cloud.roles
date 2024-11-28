@@ -1,2 +1,3 @@
 - profile::java
 - profile::hadoop::master
+- profile::analytics::cluster::hadoop::yarn_capacity_scheduler
