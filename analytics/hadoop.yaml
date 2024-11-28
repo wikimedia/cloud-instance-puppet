@@ -1,6 +1,6 @@
-profile::analytics::database::meta::backup::rsync_dest: hadoop-master-4.analytics.eqiad.wmflabs::backup/mysql/analytics-meta
-profile::analytics::database::meta::backup_dest::hive::metastore_host: hadoop-coordinator-2.analytics.eqiad.wmflabs
-profile::analytics::database::meta::backup_dest::oozie_host: hadoop-coordinator-2.analytics.eqiad.wmflabs
+profile::analytics::database::meta::backup::rsync_dest: hadoop-master-4.analytics.eqiad1.wikimedia.cloud::backup/mysql/analytics-meta
+profile::analytics::database::meta::backup_dest::hive::metastore_host: hadoop-coordinator-2.analytics.eqiad1.wikimedia.cloud
+profile::analytics::database::meta::backup_dest::oozie_host: hadoop-coordinator-2.analytics.eqiad1.wikimedia.cloud
 profile::analytics::refinery::job::camus::kafka_cluster_name_mediawiki: jumbo
 profile::hadoop::logstash::enabled: false
 profile::hadoop::master::hadoop_user_groups: analytics-users analytics-privatedata-users
@@ -13,8 +13,8 @@ profile::hadoop::standby_master::use_kerberos: true
 profile::hadoop::worker::monitoring_enabled: false
 profile::hadoop::worker::use_kerberos: true
 profile::hive::client::java_home: /usr/lib/jvm/java-8-openjdk-amd64/jre
-profile::hive::client::metastore_host: hadoop-coordinator-2.analytics.eqiad.wmflabs
-profile::hive::client::server_host: hadoop-coordinator-2.analytics.eqiad.wmflabs
+profile::hive::client::metastore_host: hadoop-coordinator-2.analytics.eqiad1.wikimedia.cloud
+profile::hive::client::server_host: hadoop-coordinator-2.analytics.eqiad1.wikimedia.cloud
 profile::hive::client::server_port: 10000
 profile::hive::client::zookeeper_cluster_name: main-eqiad
 profile::java::java_packages:
