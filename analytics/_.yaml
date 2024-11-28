@@ -11,32 +11,32 @@ hadoop_clusters:
       -XX:CMSInitiatingOccupancyFraction=70 -XX:+CMSParallelRemarkEnabled
     hdfs_site_extra_properties:
       dfs.block.access.token.enable: 'true'
-      dfs.cluster.administrators: elukey,otto
+      dfs.cluster.administrators: btullis,otto
       dfs.data.transfer.protection: privacy
-      dfs.datanode.kerberos.principal: hdfs/_HOST@ANALYTICS.EQIAD.WMFLABS
+      dfs.datanode.kerberos.principal: hdfs/_HOST@ANALYTICS.EQIAD1.WIKIMEDIA.CLOUD
       dfs.datanode.keytab.file: /etc/security/keytabs/hadoop/hdfs.keytab
       dfs.encrypt.data.transfer: 'true'
       dfs.encrypt.data.transfer.cipher.key.bitlength: '128'
       dfs.encrypt.data.transfer.cipher.suites: AES/CTR/NoPadding
       dfs.http.policy: HTTPS_ONLY
-      dfs.journalnode.kerberos.internal.spnego.principal: HTTP/_HOST@ANALYTICS.EQIAD.WMFLABS
-      dfs.journalnode.kerberos.principal: hdfs/_HOST@ANALYTICS.EQIAD.WMFLABS
+      dfs.journalnode.kerberos.internal.spnego.principal: HTTP/_HOST@ANALYTICS.EQIAD1.WIKIMEDIA.CLOUD
+      dfs.journalnode.kerberos.principal: hdfs/_HOST@ANALYTICS.EQIAD1.WIKIMEDIA.CLOUD
       dfs.journalnode.keytab.file: /etc/security/keytabs/hadoop/hdfs.keytab
-      dfs.namenode.kerberos.principal: hdfs/_HOST@ANALYTICS.EQIAD.WMFLABS
+      dfs.namenode.kerberos.principal: hdfs/_HOST@ANALYTICS.EQIAD1.WIKIMEDIA.CLOUD
       dfs.namenode.keytab.file: /etc/security/keytabs/hadoop/hdfs.keytab
-      dfs.secondary.namenode.kerberos.principal: hdfs/_HOST@ANALYTICS.EQIAD.WMFLABS
+      dfs.secondary.namenode.kerberos.principal: hdfs/_HOST@ANALYTICS.EQIAD1.WIKIMEDIA.CLOUD
       dfs.secondary.namenode.keytab.file: /etc/security/keytabs/hadoop/hdfs.keytab
       dfs.web.authentication.kerberos.keytab: /etc/security/keytabs/hadoop/hdfs.keytab
     hdfs_trash_checkpoint_interval: 1440
     hdfs_trash_interval: 43200
     journalnode_hosts:
-    - hadoop-worker-1.analytics.eqiad.wmflabs
-    - hadoop-worker-2.analytics.eqiad.wmflabs
-    - hadoop-worker-3.analytics.eqiad.wmflabs
+    - hadoop-worker-1.analytics.eqiad1.wikimedia.cloud
+    - hadoop-worker-2.analytics.eqiad1.wikimedia.cloud
+    - hadoop-worker-3.analytics.eqiad1.wikimedia.cloud
     mapred_site_extra_properties:
       mapreduce.jobhistory.http.policy: HTTPS_ONLY
       mapreduce.jobhistory.keytab: /etc/security/keytabs/hadoop/mapred.keytab
-      mapreduce.jobhistory.principal: mapred/_HOST@ANALYTICS.EQIAD.WMFLABS
+      mapreduce.jobhistory.principal: mapred/_HOST@ANALYTICS.EQIAD1.WIKIMEDIA.CLOUD
       mapreduce.shuffle.ssl.enabled: 'true'
     mapreduce.map.java.opts: -Xmx1638m
     mapreduce.map.memory.mb: 2048
@@ -44,15 +44,15 @@ hadoop_clusters:
     mapreduce.reduce.memory.mb: 4096
     mapreduce_history_java_opts: -Xms2048m -Xmx2048m
     namenode_hosts:
-    - hadoop-master-3.analytics.eqiad.wmflabs
-    - hadoop-master-4.analytics.eqiad.wmflabs
+    - hadoop-master-3.analytics.eqiad1.wikimedia.cloud
+    - hadoop-master-4.analytics.eqiad1.wikimedia.cloud
     net_topology:
       hadoop-worker-1: /eqiad/Z1
       hadoop-worker-2: /eqiad/Z2
       hadoop-worker-3: /eqiad/Z3
     resourcemanager_hosts:
-    - hadoop-master-3.analytics.eqiad.wmflabs
-    - hadoop-master-4.analytics.eqiad.wmflabs
+    - hadoop-master-3.analytics.eqiad1.wikimedia.cloud
+    - hadoop-master-4.analytics.eqiad1.wikimedia.cloud
     ssl_client_config:
       ssl.client.truststore.location: /etc/hadoop/conf/truststore.jks
       ssl.client.truststore.password: '123456'
@@ -78,28 +78,28 @@ hadoop_clusters:
       yarn.nodemanager.container-executor.class: org.apache.hadoop.yarn.server.nodemanager.LinuxContainerExecutor
       yarn.nodemanager.keytab: /etc/security/keytabs/hadoop/yarn.keytab
       yarn.nodemanager.linux-container-executor.group: yarn
-      yarn.nodemanager.principal: yarn/_HOST@ANALYTICS.EQIAD.WMFLABS
+      yarn.nodemanager.principal: yarn/_HOST@ANALYTICS.EQIAD1.WIKIMEDIA.CLOUD
       yarn.resourcemanager.keytab: /etc/security/keytabs/hadoop/yarn.keytab
-      yarn.resourcemanager.principal: yarn/_HOST@ANALYTICS.EQIAD.WMFLABS
+      yarn.resourcemanager.principal: yarn/_HOST@ANALYTICS.EQIAD1.WIKIMEDIA.CLOUD
     zookeeper_cluster_name: main-eqiad
 kafka_clusters:
   jumbo-analytics:
     brokers:
-      k4-1.analytics.eqiad.wmflabs:
+      k4-1.analytics.eqiad1.wikimedia.cloud:
         id: 41
-      k4-2.analytics.eqiad.wmflabs:
+      k4-2.analytics.eqiad1.wikimedia.cloud:
         id: 42
-      k4-3.analytics.eqiad.wmflabs:
+      k4-3.analytics.eqiad1.wikimedia.cloud:
         id: 43
     zookeeper_cluster_name: main-eqiad
 kafka_message_max_bytes: 4194304
-kerberos::kadmin_server_fallback: kdc.analytics.eqiad.wmflabs
-kerberos::kadmin_server_primary: kdc.analytics.eqiad.wmflabs
+kerberos::kadmin_server_fallback: kdc.analytics.eqiad1.wikimedia.cloud
+kerberos::kadmin_server_primary: kdc.analytics.eqiad1.wikimedia.cloud
 kerberos_kdc_servers:
-- kdc.analytics.eqiad.wmflabs
+- kdc.analytics.eqiad1.wikimedia.cloud
 kerberos_kdc_servers_to_clients:
-- kdc.analytics.eqiad.wmflabs
-kerberos_realm_name: analytics.eqiad.wmflabs
+- kdc.analytics.eqiad1.wikimedia.cloud
+kerberos_realm_name: analytics.eqiad1.wikimedia.cloud
 keyholder::require_encrypted_keys: nope
 network::allow_deployment_from_ips:
 - 172.16.5.168
@@ -107,16 +107,14 @@ profile::analytics::refinery::job::data_purge::deploy_jobs: false
 profile::hadoop::common::hadoop_cluster_name: analytics-hadoop-labs
 profile::hadoop::firewall::master::ssl_enabled: true
 profile::hive::client::hive_metastore_kerberos_keytab_file: /etc/security/keytabs/hive/hive.keytab
-profile::hive::client::hive_metastore_kerberos_principal: hive/_HOST@ANALYTICS.EQIAD.WMFLABS
+profile::hive::client::hive_metastore_kerberos_principal: hive/_HOST@ANALYTICS.EQIAD1.WIKIMEDIA.CLOUD
 profile::hive::client::hive_metastore_sasl_enabled: true
 profile::hive::client::hive_server2_authentication: KERBEROS
 profile::hive::client::hive_server2_authentication_kerberos_keytab: /etc/security/keytabs/hive/hive.keytab
-profile::hive::client::hive_server2_authentication_kerberos_principal: hive/_HOST@ANALYTICS.EQIAD.WMFLABS
-profile::hive::client::metastore_host: hadoop-coordinator-2.eqiad.wmflabs
-profile::hive::client::server_host: hadoop-coordinator-2.eqiad.wmflabs
+profile::hive::client::hive_server2_authentication_kerberos_principal: hive/_HOST@ANALYTICS.EQIAD1.WIKIMEDIA.CLOUD
+profile::hive::client::metastore_host: hadoop-coordinator-2.analytics.eqiad1.wikimedia.cloud
+profile::hive::client::server_host: hadoop-coordinator-2.analytics.eqiad1.wikimedia.cloud
 profile::hive::client::server_port: 10000
-profile::hue::database_host: hadoop-coordinator-2.eqiad.wmflabs
-profile::hue::hive_server_host: hadoop-coordinator-2.eqiad.wmflabs
 profile::zookeeper::cluster_name: main-eqiad
 profile::zookeeper::is_critical: false
 profile::zookeeper::max_client_connections: 1024
@@ -149,6 +147,6 @@ scap::wmflabs_master: deployment-deploy03.deployment-prep.eqiad1.wikimedia.cloud
 zookeeper_clusters:
   main-eqiad:
     hosts:
-      zk1-1.analytics.eqiad.wmflabs: '101'
-      zk1-2.analytics.eqiad.wmflabs: '102'
-      zk1-3.analytics.eqiad.wmflabs: '103'
+      zk1-1.analytics.eqiad1.wikimedia.cloud: '101'
+      zk1-2.analytics.eqiad1.wikimedia.cloud: '102'
+      zk1-3.analytics.eqiad1.wikimedia.cloud: '103'
