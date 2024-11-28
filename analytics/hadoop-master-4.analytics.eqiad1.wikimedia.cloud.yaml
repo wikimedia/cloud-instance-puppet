@@ -1,0 +1,11 @@
+profile::kerberos::keytabs::keytabs_metadata:
+- filename: hdfs.keytab
+  group: hdfs
+  owner: hdfs
+  parent_dir_grp: hadoop
+  role: hadoop
+- filename: yarn.keytab
+  group: yarn
+  owner: yarn
+  parent_dir_grp: hadoop
+  role: hadoop
