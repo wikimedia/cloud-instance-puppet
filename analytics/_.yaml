@@ -46,6 +46,7 @@ hadoop_clusters:
     namenode_hosts:
     - hadoop-master-3.analytics.eqiad.wmflabs
     - hadoop-master-4.analytics.eqiad.wmflabs
+    net_topology: null
     resourcemanager_hosts:
     - hadoop-master-3.analytics.eqiad.wmflabs
     - hadoop-master-4.analytics.eqiad.wmflabs
