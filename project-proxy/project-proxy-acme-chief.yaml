@@ -12,6 +12,14 @@ profile::acme_chief::certificates:
     authorized_regexes:
     - ^.+\.project-proxy\.eqiad1\.wikimedia\.cloud$
     challenge: dns-01
+  customcatalyst-dev:
+    CN: catalyst-dev.wmcloud.org
+    SNI:
+    - catalyst-dev.wmcloud.org
+    - '*.catalyst-dev.wmcloud.org'
+    authorized_regexes:
+    - ^.+\.project-proxy\.eqiad1\.wikimedia\.cloud$
+    challenge: dns-01
   customcatalyst-qte:
     CN: catalyst-qte.wmcloud.org
     SNI:
