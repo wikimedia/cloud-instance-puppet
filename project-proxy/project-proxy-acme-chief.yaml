@@ -99,6 +99,7 @@ profile::acme_chief::challenges:
 profile::acme_chief::cloud::designate_sync_auth_url: https://openstack.eqiad1.wikimediacloud.org:25000/v3
 profile::acme_chief::cloud::designate_sync_project_names:
 - catalyst
+- catalyst-dev
 - catalyst-qte
 - cloudinfra
 - duct
