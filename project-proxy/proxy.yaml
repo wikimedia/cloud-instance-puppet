@@ -17,7 +17,7 @@ profile::wmcs::novaproxy::supported_zones:
   catalyst-dev.wmcloud.org.:
     acmechief_cert: customcatalyst-dev
     id: 35699886-add9-4ad3-88d7-5b2829f8c72c
-    project: catalyst-dev
+    project: 7209100e0e744a4fbdf447534d4eb825
     shared: false
   catalyst-qte.wmcloud.org.:
     acmechief_cert: customcatalyst-qte
