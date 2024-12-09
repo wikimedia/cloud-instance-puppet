@@ -1,5 +1,6 @@
 presto_clusters_secrets:
   analytics-hadoop-labs:
+    ssl_keystore_keypassword: batman
     ssl_keystore_password: batman
 profile::analytics::database::meta::backup::rsync_dest: hadoop-master-4.analytics.eqiad1.wikimedia.cloud::backup/mysql/analytics-meta
 profile::analytics::database::meta::backup_dest::hive::metastore_host: hadoop-coordinator-2.analytics.eqiad1.wikimedia.cloud
