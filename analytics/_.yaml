@@ -53,18 +53,6 @@ hadoop_clusters:
     resourcemanager_hosts:
     - hadoop-master-3.analytics.eqiad1.wikimedia.cloud
     - hadoop-master-4.analytics.eqiad1.wikimedia.cloud
-    ssl_client_config:
-      ssl.client.truststore.location: /etc/hadoop/conf/truststore.jks
-      ssl.client.truststore.password: '123456'
-      ssl.client.truststore.type: jks
-    ssl_server_config:
-      ssl.server.keystore.keypassword: '123456'
-      ssl.server.keystore.location: /etc/hadoop/conf/hadoop.keystore.jks
-      ssl.server.keystore.password: '123456'
-      ssl.server.keystore.type: jks
-      ssl.server.truststore.location: /etc/hadoop/conf/truststore.jks
-      ssl.server.truststore.password: '123456'
-      ssl.server.truststore.type: jks
     yarn.app.mapreduce.am.command-opts: -Xmx3276m
     yarn.app.mapreduce.am.resource.mb: 4096
     yarn.scheduler.maximum-allocation-mb: 6144
