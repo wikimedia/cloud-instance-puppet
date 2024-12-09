@@ -9,3 +9,8 @@ profile::kerberos::keytabs::keytabs_metadata:
   owner: yarn
   parent_dir_grp: hadoop
   role: hadoop
+- filename: HTTP.keytab
+  group: hdfs
+  owner: hdfs
+  parent_dir_grp: hadoop
+  role: hadoop
