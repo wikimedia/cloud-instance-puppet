@@ -26,7 +26,7 @@ hadoop_clusters:
       dfs.namenode.keytab.file: /etc/security/keytabs/hadoop/hdfs.keytab
       dfs.secondary.namenode.kerberos.principal: hdfs/_HOST@ANALYTICS.EQIAD1.WIKIMEDIA.CLOUD
       dfs.secondary.namenode.keytab.file: /etc/security/keytabs/hadoop/hdfs.keytab
-      dfs.web.authentication.kerberos.keytab: /etc/security/keytabs/hadoop/hdfs.keytab
+      dfs.web.authentication.kerberos.keytab: /etc/security/keytabs/hadoop/HTTP.keytab
     hdfs_trash_checkpoint_interval: 1440
     hdfs_trash_interval: 43200
     journalnode_hosts:
