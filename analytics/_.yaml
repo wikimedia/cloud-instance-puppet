@@ -7,6 +7,7 @@ hadoop_clusters:
       hadoop.rpc.protection: privacy
       hadoop.security.authentication: kerberos
       hadoop.ssl.enabled: 'true'
+    dfs_namenode_service_port: 8040
     hadoop_namenode_opts: -Xms4096m -Xmx4096m -XX:+UseParNewGC -XX:+UseConcMarkSweepGC
       -XX:CMSInitiatingOccupancyFraction=70 -XX:+CMSParallelRemarkEnabled
     hdfs_site_extra_properties:
