@@ -1,1 +1,2 @@
+profile::puppet::agent::facts_soft_limit: 4096
 swap_partition: false
