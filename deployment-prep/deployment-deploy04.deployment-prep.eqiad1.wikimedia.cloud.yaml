@@ -2,4 +2,10 @@ aptly::manage_nginx: false
 profile::base::labs::cleanup_puppet_client_bucket: true
 profile::ci::slave::labs::common::manage_srv: false
 profile::kubernetes::client::version: '1.23'
+profile::mediawiki::jobrunner::default_php_version: '8.1'
+profile::mediawiki::php::absented_php_versions:
+- '7.4'
+profile::mediawiki::php::php_versions:
+- '8.1'
 profile::mediawiki::scap_client::is_master: true
+profile::mediawiki::webserver::default_php_version: '8.1'
