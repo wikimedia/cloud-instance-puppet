@@ -1,1 +1,2 @@
-{}
+profile::base::production::role_description: CloudVPS monitoring infrastructure meta-monitor
+  endpoint
