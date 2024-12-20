@@ -10,8 +10,7 @@ profile::dumps::generation::worker::common::php: /usr/bin/php8.1
 profile::mediawiki::mcrouter_wancache::use_onhost_memcache: false
 profile::mediawiki::mcrouter_wancache::use_onhost_memcached: false
 profile::mediawiki::php::php_versions:
-- '7.2'
-- '7.4'
+- '8.1'
 snapshot::dumps::configs::php: /usr/bin/php8.1
 snapshot::dumps::nfs_extra_mountopts: ''
 snapshot::dumps::runtype: regular
