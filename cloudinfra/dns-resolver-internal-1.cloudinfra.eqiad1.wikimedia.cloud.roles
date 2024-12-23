@@ -1,1 +1,1 @@
-- profile::openstack::eqiad1::pdns::recursor::service
+- ::dnsrecursor
