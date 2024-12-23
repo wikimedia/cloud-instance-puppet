@@ -1,0 +1,10 @@
+profile::openstack::base::pdns::hosts:
+- auth_fqdn: ns0.openstack.eqiad1.wikimediacloud.org
+  host_fqdn: cloudservices1005.eqiad.wmnet
+  private_fqdn: cloudservices1005.private.eqiad.wikimedia.cloud
+- auth_fqdn: ns1.openstack.eqiad1.wikimediacloud.org
+  host_fqdn: cloudservices1006.eqiad.wmnet
+  private_fqdn: cloudservices1006.private.eqiad.wikimedia.cloud
+profile::openstack::base::pdns::legacy_tld: wmflabs
+profile::openstack::base::pdns::private_reverse_zones:
+- 16.172.in-addr.arpa
