@@ -5,3 +5,4 @@ profile::openstack::eqiad1::pdns::hosts:
 - auth_fqdn: ns1.openstack.eqiad1.wikimediacloud.org
   host_fqdn: cloudservices1006.eqiad.wmnet
   private_fqdn: cloudservices1006.private.eqiad.wikimedia.cloud
+puppetmaster: cloudinfra-internal-puppetserver-1.cloudinfra.eqiad1.wikimedia.cloud
