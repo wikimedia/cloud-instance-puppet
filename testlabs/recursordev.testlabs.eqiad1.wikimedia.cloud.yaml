@@ -1,1 +1,2 @@
+profile::openstack::base::pdns::legacy_tld: wmflabs
 puppetmaster: abogott-puppetserver.testlabs.eqiad1.wikimedia.cloud
