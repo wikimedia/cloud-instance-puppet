@@ -6,4 +6,6 @@ profile::openstack::base::pdns::hosts:
   host_fqdn: cloudservices1006.eqiad.wmnet
   private_fqdn: cloudservices1006.private.eqiad.wikimedia.cloud
 profile::openstack::base::pdns::legacy_tld: wmflabs
+profile::openstack::eqiad1::pdns::private_reverse_zones:
+- 16.172.in-addr.arpa
 puppetmaster: abogott-puppetserver.testlabs.eqiad1.wikimedia.cloud
