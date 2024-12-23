@@ -1,4 +1,4 @@
 profile::resolving::nameservers:
-- 172.16.2.137
+- recursordev.testlabs.eqiad1.wikimedia.cloud
 puppetmaster: cloudinfra-cloudvps-puppetserver-1.cloudinfra.eqiad1.wikimedia.cloud
 testkey: value
