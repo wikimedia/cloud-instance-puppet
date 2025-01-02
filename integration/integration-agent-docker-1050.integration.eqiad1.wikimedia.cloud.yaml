@@ -1,1 +1,2 @@
-{}
+profile::resolving::nameservers:
+- integration-dnsrecursor-temp.integration.eqiad1.wikimedia.cloud
