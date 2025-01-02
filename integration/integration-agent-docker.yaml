@@ -1,1 +1,3 @@
 profile::ci::dockervolume::size: 45G
+profile::resolving::nameservers:
+- integration-dnsrecursor-temp.integration.eqiad1.wikimedia.cloud
