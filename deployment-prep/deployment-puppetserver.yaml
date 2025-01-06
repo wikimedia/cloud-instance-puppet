@@ -9,6 +9,9 @@ profile::puppetserver::extra_mounts:
 profile::puppetserver::java_max_mem: 5g
 profile::puppetserver::puppetdb_urls:
 - https://deployment-puppetdb05.deployment-prep.eqiad1.wikimedia.cloud
+profile::puppetserver::reports:
+- store
+- logstash
 profile::puppetserver::scripts::has_puppetdb: true
 profile::puppetserver::swift_fetch_rings::active_server: deployment-puppetserver-1.deployment-prep.eqiad1.wikimedia.cloud
 profile::puppetserver::volatile::ip_reputation_config: {}
