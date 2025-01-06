@@ -1,4 +1,5 @@
 arclamp_host: deployment-webperf22.deployment-prep.eqiad1.wikimedia.cloud
+graphite_host: localhost
 profile::tlsproxy::envoy::capitalize_headers: false
 profile::tlsproxy::envoy::global_cert_name: '%{facts.fqdn}'
 profile::tlsproxy::envoy::sni_support: 'no'
