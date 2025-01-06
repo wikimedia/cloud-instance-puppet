@@ -211,7 +211,9 @@ profile::services_proxy::envoy::listeners:
   xfp: https
 profile::ssh::server::puppetserver_ca_host_certs: true
 profile::swift::global_account_keys:
-  codfw: &id001
+  codfw:
+    mw_media: abracadabra
+  deployment-prep:
     analytics_admin: nosuchpass
     dispersion: nosuchpass
     docker_registry: nosuchpass
@@ -226,8 +228,8 @@ profile::swift::global_account_keys:
     search_backup: nosuchpass4
     super_admin: nosuchpass1
     swift_dispersion: ahshaenae3Hai3quipah
-  deployment-prep: *id001
-  eqiad: *id001
+  eqiad:
+    mw_media: abracadabra
 profile::tlsproxy::envoy::ssl_provider: cfssl
 prometheus_nodes:
 - deployment-prometheus05.deployment-prep.eqiad1.wikimedia.cloud
