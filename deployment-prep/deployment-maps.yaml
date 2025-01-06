@@ -1,7 +1,7 @@
 cassandra::metrics::blacklist:
 - .*\.metrics\.Table\..*$
 cassandra::target_version: '2.2'
-postgresql::postgis::postgresql_postgis_package: ignored
+postgresql::postgis::postgresql_postgis_package: postgresql-15-postgis-3
 profile::cassandra::single_instance::dc: labs
 profile::cassandra::single_instance::graphite_host: prometheus-labmon.eqiad.wmnet
 profile::cassandra::single_instance::seeds:
