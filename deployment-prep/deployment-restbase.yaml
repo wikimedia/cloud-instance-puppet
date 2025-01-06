@@ -41,7 +41,7 @@ service::catalog:
       conftool:
         cluster: restbase
         service: restbase-ssl
-      depool_threshold: '.5'
+      depool_threshold: 0.5
       enabled: true
       monitors:
         IdleConnection:
