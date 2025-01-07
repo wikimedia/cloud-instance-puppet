@@ -1,0 +1,1 @@
+profile::puppetdb::database::wal_keep_segments: 128
