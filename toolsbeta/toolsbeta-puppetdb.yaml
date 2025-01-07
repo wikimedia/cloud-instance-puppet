@@ -1,5 +1,5 @@
 profile::puppetdb::database::shared_buffers: 768MB
-profile::puppetdb::database::wal_keep_segments: null
+profile::puppetdb::database::wal_keep_segments: 64
 profile::puppetdb::filter_job_id: true
 profile::puppetdb::master: toolsbeta-puppetdb-03.toolsbeta.eqiad1.wikimedia.cloud
 profile::puppetdb::microservice::enabled: false
