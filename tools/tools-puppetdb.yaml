@@ -1,4 +1,4 @@
-profile::puppetdb::database::wal_keep_segments: 64
+profile::puppetdb::database::wal_keep_segments: 128
 profile::puppetdb::master: tools-puppetdb-2.tools.eqiad1.wikimedia.cloud
 puppetmaster::servers:
   puppetserver-01.tools.eqiad1.wikimedia.cloud:
