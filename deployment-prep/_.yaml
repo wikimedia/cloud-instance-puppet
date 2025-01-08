@@ -83,8 +83,6 @@ profile::backup::ferm_directors: []
 profile::base::enable_kafka_shipping: true
 profile::cache::kafka::certificate::certificate_name: varnishkafka-deployment-prep
 profile::cache::kafka::certificate::ssl_key_password: qwerty
-profile::cache::kafka::eventlogging::kafka_cluster_name: jumbo-deployment-prep
-profile::cache::kafka::eventlogging::ssl_enabled: true
 profile::cache::kafka::statsv::kafka_cluster_name: main-deployment-prep
 profile::cache::kafka::webrequest::kafka_cluster_name: jumbo-deployment-prep
 profile::cache::kafka::webrequest::ssl_enabled: true
