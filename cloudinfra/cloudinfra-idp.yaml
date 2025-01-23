@@ -58,6 +58,7 @@ profile::idp::services:
     service_id: https://(.*)\.wmcloud\.org(/.*)?
 profile::idp::tgc_cookie_pin_to_session: false
 profile::idp::tgc_cookie_same_site: none
+profile::idp::theme: ''
 profile::idp::tomcat_version: tomcat9
 profile::idp::u2f_jpa_enable: false
 profile::java::hardened_tls: false
