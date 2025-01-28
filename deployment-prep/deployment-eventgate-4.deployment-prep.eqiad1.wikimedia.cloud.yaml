@@ -43,7 +43,7 @@ profile::docker::runner::service_defs:
     environment:
       NODE_TLS_REJECT_UNAUTHORIZED: '0'
     image_name: eventgate-wikimedia
-    namespace: wikimedia
+    namespace: repos/data-engineering
     override_cmd: /srv/service/node_modules/.bin/eventgate -c /etc/eventgate-analytics/config.yaml
     port: 8192
     version: v1.9.0
