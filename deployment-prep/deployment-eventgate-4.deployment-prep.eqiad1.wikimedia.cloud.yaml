@@ -37,7 +37,7 @@ profile::docker::runner::service_defs:
           topic_prefix: eqiad.
           user_agent: eventgate-analytics
         entrypoint: app
-        module: eventgate
+        module: '@wikimedia/eventgate'
         name: eventgate-analytics
       worker_heap_limit_mb: 250
     environment:
@@ -82,7 +82,7 @@ profile::docker::runner::service_defs:
           topic_prefix: eqiad.
           user_agent: eventgate-analytics-external
         entrypoint: app
-        module: eventgate
+        module: '@wikimedia/eventgate'
         name: eventgate-analytics-external
       worker_heap_limit_mb: 250
     environment:
@@ -127,7 +127,7 @@ profile::docker::runner::service_defs:
           topic_prefix: eqiad.
           user_agent: eventgate-logging-external
         entrypoint: app
-        module: eventgate
+        module: '@wikimedia/eventgate'
       worker_heap_limit_mb: 250
     environment:
       NODE_TLS_REJECT_UNAUTHORIZED: '0'
@@ -170,7 +170,7 @@ profile::docker::runner::service_defs:
           topic_prefix: eqiad.
           user_agent: eventgate-main
         entrypoint: app
-        module: eventgate
+        module: '@wikimedia/eventgate'
         name: eventgate-main
       worker_heap_limit_mb: 250
     environment:
