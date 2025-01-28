@@ -46,7 +46,7 @@ profile::docker::runner::service_defs:
     namespace: wikimedia
     override_cmd: /srv/service/node_modules/.bin/eventgate -c /etc/eventgate-analytics/config.yaml
     port: 8192
-    version: 2023-10-25-155509-production
+    version: v1.9.0
   eventgate-analytics-external:
     config:
       num_workers: 0
@@ -91,7 +91,7 @@ profile::docker::runner::service_defs:
     namespace: repos/data-engineering
     override_cmd: /srv/service/node_modules/.bin/eventgate -c /etc/eventgate-analytics-external/config.yaml
     port: 8492
-    version: v1.8.0
+    version: v1.9.0
   eventgate-logging-external:
     config:
       num_workers: 0
@@ -132,10 +132,10 @@ profile::docker::runner::service_defs:
     environment:
       NODE_TLS_REJECT_UNAUTHORIZED: '0'
     image_name: eventgate-wikimedia
-    namespace: wikimedia
+    namespace: repos/data-engineering
     override_cmd: /srv/service/node_modules/.bin/eventgate -c /etc/eventgate-logging-external/config.yaml
     port: 8992
-    version: 2023-10-25-155509-production
+    version: v1.9.0
   eventgate-main:
     config:
       num_workers: 0
@@ -176,7 +176,7 @@ profile::docker::runner::service_defs:
     environment:
       NODE_TLS_REJECT_UNAUTHORIZED: '0'
     image_name: eventgate-wikimedia
-    namespace: wikimedia
+    namespace: repos/data-engineering
     override_cmd: /srv/service/node_modules/.bin/eventgate -c /etc/eventgate-main/config.yaml
     port: 8292
-    version: 2023-10-25-155509-production
+    version: v1.9.0
