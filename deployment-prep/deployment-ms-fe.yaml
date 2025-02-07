@@ -1,4 +1,8 @@
 profile::envoy::ensure: present
+profile::lvs::realserver::pools:
+  swift:
+    services:
+    - swift-proxy
 profile::services_proxy::envoy::ensure: absent
 profile::swift::cluster_label: deployment-prep
 profile::tlsproxy::envoy::cfssl_options:
