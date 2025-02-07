@@ -2,7 +2,7 @@ profile::envoy::ensure: present
 profile::lvs::realserver::pools:
   swift:
     services:
-    - swift-proxy
+    - dummy
 profile::services_proxy::envoy::ensure: absent
 profile::swift::cluster_label: deployment-prep
 profile::tlsproxy::envoy::cfssl_options:
@@ -17,3 +17,18 @@ profile::tlsproxy::envoy::services:
 profile::tlsproxy::envoy::sni_support: 'no'
 profile::tlsproxy::envoy::ssl_provider: cfssl
 profile::tlsproxy::envoy::tls_port: 443
+service::catalog:
+  swift:
+    description: dummy
+    discovery:
+    - active_active: true
+      dnsdisc: dummy
+    encryption: true
+    ip:
+      eqiad:
+        default: 127.0.0.1
+    page: false
+    port: 1234
+    sites:
+    - eqiad
+    state: production
