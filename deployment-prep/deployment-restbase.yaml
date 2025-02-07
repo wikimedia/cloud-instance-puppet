@@ -10,6 +10,7 @@ profile::lvs::realserver::pools:
     - envoyproxy
 profile::restbase::hosts:
 - deployment-restbase05.deployment-prep.eqiad1.wikimedia.cloud
+profile::restbase::parsoid_uri: https://phabricator.wikimedia.org/T385902
 profile::restbase::recommendation_uri: http://deployment-sca01.deployment-prep.eqiad.wmflabs:9632
 profile::restbase::seeds_ng:
 - deployment-restbase05.deployment-prep.eqiad1.wikimedia.cloud
