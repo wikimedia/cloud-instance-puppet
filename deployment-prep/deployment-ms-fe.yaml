@@ -19,16 +19,10 @@ profile::tlsproxy::envoy::ssl_provider: cfssl
 profile::tlsproxy::envoy::tls_port: 443
 service::catalog:
   swift:
-    description: dummy
-    discovery:
-    - active_active: true
-      dnsdisc: dummy
-    encryption: true
+    description: dummy to make puppet happy
     ip:
       eqiad:
         default: 127.0.0.1
-    page: false
-    port: 1234
-    sites:
-    - eqiad
-    state: production
+    lvs:
+      class: low-traffic
+      enabled: false
