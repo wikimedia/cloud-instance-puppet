@@ -10,6 +10,7 @@ profile::maps::hosts:
 - '%{::fqdn}'
 profile::maps::osm_master::disable_replication_timer: false
 profile::maps::osm_master::disable_tile_generation_timer: false
+profile::maps::osm_master::disable_waterlines_import_timer: false
 profile::maps::osm_master::enable_tile_invalidation: true
 profile::maps::osm_master::use_replication_slots: true
 profile::maps::postgresql_common::maintenance_work_mem: 3GB
