@@ -1,6 +1,1 @@
-- 'sysctl::parameters { ''increase_inotify_limits'':'
-- values => {
-- '''fs.inotify.max_user_watches''   => 32768,'
-- '''fs.inotify.max_user_instances'' => 512,'
-- '},'
-- '}'
+[]
