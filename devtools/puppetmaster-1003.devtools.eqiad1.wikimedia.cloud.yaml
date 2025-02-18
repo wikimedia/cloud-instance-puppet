@@ -1,2 +1,2 @@
 profile::puppet::agent::force_puppet7: true
-puppetmaster: puppet
+puppetmaster: puppetmaster-1003.devtools.eqiad1.wikimedia.cloud
