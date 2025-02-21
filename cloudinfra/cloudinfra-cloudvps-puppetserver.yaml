@@ -2,7 +2,7 @@ profile::puppet::agent::dns_alt_names:
 - puppet
 - puppetmaster.cloudinfra.wmflabs.org
 profile::puppet::agent::force_puppet7: true
-profile::puppetserver::autosign: /usr/local/sbin/validatelabsfqdn.py
+profile::puppetserver::autosign: /usr/local/sbin/validatecloudvpsfqdn.py
 profile::puppetserver::git::repos:
   labs/private:
     branch: master
