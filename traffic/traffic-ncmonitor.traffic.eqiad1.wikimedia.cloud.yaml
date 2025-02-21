@@ -7,6 +7,28 @@ profile::ncmonitor::gerrit_ssh_key: dummy
 profile::ncmonitor::gerrit_ssh_pubkey: dummy
 profile::ncmonitor::markmonitor_api_password: dummy
 profile::ncmonitor::markmonitor_api_user: dummy
+profile::ncmonitor::markmonitor_ignored_domains:
+- getawikipedia.com
+- getonwikipedia.com
+- learn.wiki
+- pywikibot.org
+- wikimedia-dns.org
+- wikimedia.cloud
+- wikimedia.social
+- wikimediacloud.org
+- wikipediaafd.org
+- wikipediaeditors.com
+- wikipediaexperts.com
+- wikipediamustdie.com
+- wikipediaofficial.com
+- wikipediapagecreators.com
+- wikipediapublisher.com
+- wikipediasubmissions.com
+- wikipediawriters.com
+- wikipediawriting.com
+- wmftest.com
+- wmftest.net
+- wmftest.org
 profile::ncmonitor::nameservers:
 - ns0.wikimedia.org
 - ns1.wikimedia.org
