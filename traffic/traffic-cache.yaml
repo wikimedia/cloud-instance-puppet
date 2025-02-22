@@ -230,6 +230,7 @@ profile::cache::varnish::frontend::uds_group: root
 profile::cache::varnish::frontend::uds_owner: haproxy
 profile::mediawiki::common::load_geoip_data_from_puppetserver: false
 profile::pki::client::ensure: present
+profile::puppetserver::volatile::geoip_fetch_private: false
 profile::trafficserver::backend::monitor_enable: false
 prometheus_nodes: []
 public_tls_unified_cert_vendor: lets-encrypt
