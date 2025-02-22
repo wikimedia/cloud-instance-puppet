@@ -251,11 +251,13 @@ profile::cache::varnish::frontend::fe_vcl_config:
   varnish_probe_ms: 100
 profile::cache::varnish::frontend::listen_uds:
 - /run/varnish-frontend-0.socket
+profile::cache::varnish::frontend::packages_component: component/varnish-staging
 profile::cache::varnish::frontend::separate_vcl:
 - misc
 profile::cache::varnish::frontend::thread_pool_max: 12000
 profile::cache::varnish::frontend::uds_group: root
 profile::cache::varnish::frontend::uds_owner: haproxy
+profile::cache::varnish::frontend::varnish_ge_v7: true
 profile::puppetserver::volatile::geoip_fetch_private: false
 profile::trafficserver::backend::default_lua_scripts:
 - set-x-cache
