@@ -1,2 +1,2 @@
 profile::puppet::agent::force_puppet7: true
-puppetmaster: puppetbutitisabrokenname
+puppetmaster: puppet
