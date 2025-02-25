@@ -7,7 +7,6 @@ cache::app_def_be_opts:
   first_byte_timeout: 63s
   max_connections: 1000
   port: 80
-cache::cluster: text
 cache::nodes:
   text:
     eqiad:
