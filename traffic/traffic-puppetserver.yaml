@@ -1,3 +1,2 @@
 profile::puppet::agent::force_puppet7: true
-profile::puppetserver::volatile::geoip_fetch_private: false
 puppetmaster: puppet
