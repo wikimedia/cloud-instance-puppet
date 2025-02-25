@@ -1,22 +1,3 @@
-cache::alternate_domains:
-  ores.beta.wmflabs.org:
-    caching: pass
-cache::app_def_be_opts:
-  between_bytes_timeout: 31s
-  connect_timeout: 3s
-  first_byte_timeout: 63s
-  max_connections: 1000
-  port: 80
-cache::nodes:
-  text:
-    eqiad:
-    - localhost
-cache::req_handling:
-  default:
-    caching: normal
-cache::text::nodes:
-  eqiad:
-  - localhost
 cluster: cache_text
 kafka_cluster_name: analytics-traffic
 kafka_clusters:
@@ -242,7 +223,6 @@ profile::cache::ssl::wikibase::letsencrypt: false
 profile::cache::varnish::frontend::enable_http_redirection: false
 profile::cache::varnish::frontend::fe_extra_vcl:
 - normalize_path
-- geoip
 profile::cache::varnish::frontend::fe_vcl_config:
   admission_policy: exp
   allowed_methods: ^(GET|HEAD|OPTIONS|PATCH|POST|PURGE|PUT|DELETE)$
