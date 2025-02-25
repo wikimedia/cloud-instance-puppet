@@ -1,3 +1,7 @@
+cache::req_handling:
+  default:
+    caching: normal
+cluster: cache_text
 kafka_cluster_name: analytics-traffic
 kafka_clusters:
   analytics-traffic:
@@ -284,7 +288,7 @@ prometheus::varnishkafka_exporter::config:
 prometheus_nodes: []
 public_tls_unified_cert_vendor: lets-encrypt
 puppetmaster: traffic-puppetserver-bookworm.traffic.eqiad1.wikimedia.cloud
-puppetmaster::enable_geoip: true
+puppetmaster::enable_geoip: false
 zookeeper_clusters:
   main-deployment-prep:
     hosts:
