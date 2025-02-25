@@ -84,7 +84,6 @@ profile::acme_chief::cloud::designate_sync_tidyup_enabled: true
 profile::acme_chief::cloud::designate_sync_username: traffic-cloud-dns-manager
 profile::acme_chief::passive:
 - traffic-acmechief02.traffic.eqiad.wmflabs
-profile::cache::varnish::frontend::single_backend: true
 profile::mediawiki::common::load_geoip_data_from_puppetserver: false
 profile::puppet::agent::force_puppet7: true
 puppetmaster: traffic-puppetserver-bookworm.traffic.eqiad1.wikimedia.cloud
