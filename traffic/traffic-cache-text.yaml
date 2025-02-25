@@ -12,9 +12,6 @@ cache::nodes:
   text:
     eqiad:
     - localhost
-cache::req_handling:
-  default:
-    caching: normal
 cache::text::nodes:
   eqiad:
   - localhost
