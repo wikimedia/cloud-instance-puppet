@@ -1,11 +1,27 @@
 acmechief_host: traffic-acmechief01.traffic.eqiad1.wikimedia.cloud
+cache::alternate_domains:
+  ores.beta.wmflabs.org:
+    caching: pass
 cache::app_def_be_opts:
   between_bytes_timeout: 31s
   connect_timeout: 3s
   first_byte_timeout: 63s
   max_connections: 1000
   port: 80
+cache::cluster: text
 cache::lua_support: true
+cache::nodes:
+  text:
+    eqiad:
+    - localhost
+cache::req_handling:
+  default:
+    caching: normal
+cache::text::nodes:
+  eqiad:
+  - localhost
+cluster: cache_text
+do_acme: false
 kafka_cluster_name: analytics-traffic
 kafka_clusters:
   analytics-traffic:
@@ -15,6 +31,7 @@ kafka_clusters:
         id: 1
       deployment-kafka03.deployment-prep.eqiad.wmflabs:
         id: 2
+    ipv6: false
     zookeeper_cluster_name: main-deployment-prep
   main-deployment-prep:
     api_version: 0.9
@@ -23,6 +40,7 @@ kafka_clusters:
         id: 4
       deployment-kafka05.deployment-prep.eqiad.wmflabs:
         id: 5
+    ipv6: false
     zookeeper_cluster_name: main-deployment-prep
 lvs::configuration::lvs_service_ips:
   text:
@@ -207,6 +225,8 @@ profile::cache::haproxy::vars:
     name: req.auth
     value: str(ECDSA)
 profile::cache::haproxy::version: haproxy26
+profile::cache::kafka::eventlogging::kafka_cluster_name: jumbo-eqiad
+profile::cache::kafka::statsv::kafka_cluster_name: jumbo-eqiad
 profile::cache::kafka::webrequest::kafka_cluster_name: jumbo-eqiad
 profile::cache::purge::backend_addr: 127.0.0.1:3128
 profile::cache::purge::frontend_addr: /run/varnish-privileged.socket
@@ -219,19 +239,73 @@ profile::cache::ssl::unified::acme_chief: true
 profile::cache::ssl::unified::certs: []
 profile::cache::ssl::unified::certs_active: []
 profile::cache::ssl::unified::letsencrypt: false
-profile::cache::ssl::wikibase::acme_chief: true
+profile::cache::ssl::wikibase::acme_chief: false
+profile::cache::ssl::wikibase::le_subjects:
+- whatever.org
 profile::cache::ssl::wikibase::letsencrypt: false
 profile::cache::varnish::frontend::enable_http_redirection: false
+profile::cache::varnish::frontend::fe_extra_vcl:
+- normalize_path
+- geoip
+profile::cache::varnish::frontend::fe_vcl_config:
+  admission_policy: exp
+  allowed_methods: ^(GET|HEAD|OPTIONS|PATCH|POST|PURGE|PUT|DELETE)$
+  exp_policy_base: -20.3
+  exp_policy_rate: 0.1
+  keep: 1d
+  large_objects_cutoff: 262144
+  maps_domain: maps.beta.wmflabs.org
+  measure_domain_regex: ^measure-(eqiad|codfw|esams|ulsfo|eqsin|drmrs)\.wikimedia\.org$
+  public_clouds_shutdown: false
+  purge_host_regex: ^(?!(upload|upload\.wikimedia|maps)\.beta\.wmflabs\.org)
+  shortener_domain: w-beta.wmflabs.org
+  static_host: en.wikipedia.beta.wmflabs.org
+  top_domain: beta.wmflabs.org
+  upload_domain: upload.wikimedia.beta.wmflabs.org
+  upload_webp_hits_threshold: 1000
+  varnish_probe_ms: 100
 profile::cache::varnish::frontend::listen_uds:
 - /run/varnish-frontend-0.socket
 profile::cache::varnish::frontend::privileged_uds: /run/varnish-privileged.socket
+profile::cache::varnish::frontend::separate_vcl:
+- misc
 profile::cache::varnish::frontend::thread_pool_max: 12000
 profile::cache::varnish::frontend::uds_group: root
 profile::cache::varnish::frontend::uds_owner: haproxy
 profile::mediawiki::common::load_geoip_data_from_puppetserver: false
 profile::pki::client::ensure: present
 profile::puppetserver::volatile::geoip_fetch_private: false
+profile::trafficserver::backend::default_lua_scripts:
+- set-x-cache
+profile::trafficserver::backend::mapping_rules:
+- replacement: http://deployment-mediawiki12.deployment-prep.eqiad1.wikimedia.cloud
+  target: http://en.wikipedia.beta.wmflabs.org
+  type: map
+- replacement: http://deployment-ores01.deployment-prep.eqiad.wmflabs:8081
+  target: http://ores.beta.wmflabs.org
+  type: map
+- replacement: http://127.0.0.1:6533
+  target: http://local-origin-server
+  type: map
 profile::trafficserver::backend::monitor_enable: false
+profile::trafficserver::backend::outbound_tls_settings:
+  cacert_dirpath: /etc/ssl/certs
+  cacert_filename: Puppet_Internal_CA.pem
+  common:
+    cipher_suite: -ALL:ECDHE-ECDSA-AES256-GCM-SHA384:ECDHE-RSA-AES256-GCM-SHA384
+    enable_tlsv1: 0
+    enable_tlsv1_1: 0
+    enable_tlsv1_2: 1
+    enable_tlsv1_3: 0
+  verify_origin: true
+  verify_server_policy: ENFORCED
+prometheus::varnishkafka_exporter::config:
+  num_entries_to_get: 2
+  required_entries:
+  - kafka
+  - varnishkafka
+  stats_files:
+  - /var/cache/varnishkafka/webrequest.stats.json
 prometheus_nodes: []
 public_tls_unified_cert_vendor: lets-encrypt
 puppetmaster: traffic-puppetserver-bookworm.traffic.eqiad1.wikimedia.cloud
