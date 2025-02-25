@@ -1,4 +1,3 @@
-acmechief_host: traffic-acmechief01.traffic.eqiad1.wikimedia.cloud
 cache::alternate_domains:
   ores.beta.wmflabs.org:
     caching: pass
