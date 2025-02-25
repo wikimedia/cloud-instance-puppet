@@ -124,20 +124,9 @@ profile::cache::varnish::frontend::fe_vcl_config:
   varnish_probe_ms: 100
 profile::cache::varnish::frontend::separate_vcl:
 - misc
-profile::mediawiki::common::load_geoip_data_from_puppetserver: false
 profile::puppetserver::volatile::geoip_fetch_private: false
 profile::trafficserver::backend::default_lua_scripts:
 - set-x-cache
-profile::trafficserver::backend::mapping_rules:
-- replacement: http://deployment-mediawiki12.deployment-prep.eqiad1.wikimedia.cloud
-  target: http://en.wikipedia.beta.wmflabs.org
-  type: map
-- replacement: http://deployment-ores01.deployment-prep.eqiad.wmflabs:8081
-  target: http://ores.beta.wmflabs.org
-  type: map
-- replacement: http://127.0.0.1:6533
-  target: http://local-origin-server
-  type: map
 profile::trafficserver::backend::monitor_enable: false
 profile::trafficserver::backend::outbound_tls_settings:
   cacert_dirpath: /etc/ssl/certs
