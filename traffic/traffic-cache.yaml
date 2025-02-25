@@ -1,4 +1,3 @@
-cluster: cache_text
 kafka_cluster_name: analytics-traffic
 kafka_clusters:
   analytics-traffic:
