@@ -3,9 +3,6 @@ cache::nodes:
   upload:
     eqiad:
     - localhost
-cache::req_handling:
-  default:
-    caching: normal
 profile::cache::varnish::frontend::fe_extra_vcl:
 - normalize_path
 profile::cache::varnish::frontend::fe_vcl_config:
