@@ -284,7 +284,7 @@ prometheus::varnishkafka_exporter::config:
 prometheus_nodes: []
 public_tls_unified_cert_vendor: lets-encrypt
 puppetmaster: traffic-puppetserver-bookworm.traffic.eqiad1.wikimedia.cloud
-puppetmaster::enable_geoip: false
+puppetmaster::enable_geoip: true
 zookeeper_clusters:
   main-deployment-prep:
     hosts:
