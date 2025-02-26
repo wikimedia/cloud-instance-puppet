@@ -102,6 +102,9 @@ profile::cache::purge::use_pki: true
 profile::cache::ssl::wikibase::acme_chief: false
 profile::cache::ssl::wikibase::le_subjects:
 - whatever.org
+profile::cache::varnish::frontend::fe_extra_vcl:
+- normalize_path
+- geoip
 profile::cache::varnish::frontend::fe_vcl_config:
   admission_policy: exp
   allowed_methods: ^(GET|HEAD|OPTIONS|PATCH|POST|PURGE|PUT|DELETE)$
