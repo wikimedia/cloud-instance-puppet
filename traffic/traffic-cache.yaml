@@ -1,4 +1,4 @@
-acmechief_host: traffic-acmechief01.traffic.eqiad.wikimedia.cloud
+acmechief_host: traffic-acmechief01.traffic.eqiad1.wikimedia.cloud
 cache::req_handling:
   default:
     caching: normal
