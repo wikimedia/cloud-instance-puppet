@@ -224,9 +224,6 @@ profile::cache::ssl::wikibase::le_subjects:
 - whatever.org
 profile::cache::ssl::wikibase::letsencrypt: false
 profile::cache::varnish::frontend::enable_http_redirection: false
-profile::cache::varnish::frontend::fe_extra_vcl:
-- normalize_path
-- geoip
 profile::cache::varnish::frontend::fe_vcl_config:
   admission_policy: exp
   allowed_methods: ^(GET|HEAD|OPTIONS|PATCH|POST|PURGE|PUT|DELETE)$
