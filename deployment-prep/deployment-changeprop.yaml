@@ -9,5 +9,5 @@ profile::docker::runner::service_defs:
     namespace: wikimedia
     override_cmd: /srv/service/server.js -c /etc/changeprop/config.yaml
     port: 7272
-    version: 2025-03-03-200218-production
+    version: 2024-06-10-124545-production
     volume: true
