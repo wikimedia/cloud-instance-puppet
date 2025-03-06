@@ -9,7 +9,7 @@ profile::docker::runner::service_defs:
     namespace: wikimedia
     override_cmd: /srv/service/server.js -c /etc/changeprop/config.yaml
     port: 7272
-    version: 2024-06-10-124545-production
+    version: 2025-03-06-075118-production
     volume: true
   cpjobqueue:
     config: {}
@@ -17,5 +17,5 @@ profile::docker::runner::service_defs:
     namespace: wikimedia
     override_cmd: /srv/service/server.js -c /etc/cpjobqueue/config.yaml
     port: 7273
-    version: 2024-06-10-124545-production
+    version: 2025-03-06-075118-production
     volume: true
