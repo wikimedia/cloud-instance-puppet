@@ -38,3 +38,4 @@ profile::java::java_packages:
   version: '8'
 - variant: jdk-headless
   version: '11'
+puppetmaster: deployment-puppetserver-1.deployment-prep.eqiad1.wikimedia.cloud
