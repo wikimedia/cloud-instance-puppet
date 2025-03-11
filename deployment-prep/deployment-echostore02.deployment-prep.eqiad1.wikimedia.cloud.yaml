@@ -32,7 +32,7 @@ profile::docker::runner::service_defs:
     namespace: wikimedia
     override_cmd: ./kask --config /etc/mediawiki-services-kask/config.yaml
     port: 8080
-    version: v1.0.14
+    version: v1.0.10
 profile::java::java_packages:
 - variant: jdk-headless
   version: '8'
