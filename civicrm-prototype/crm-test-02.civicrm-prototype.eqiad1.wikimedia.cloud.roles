@@ -1,5 +1,2 @@
 - profile::community_civicrm::mail
 - community_civicrm::dovecot
-- 'systemd::sysuser { ''civimail'':'
-- home_dir          => '/var/lib/civimail',
-- '}'
