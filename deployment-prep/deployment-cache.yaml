@@ -195,11 +195,4 @@ profile::cache::varnish::frontend::uds_owner: haproxy
 profile::lvs::realserver::ipip::enabled: false
 profile::lvs::realserver::ipip::interfaces:
 - lo
-profile::wmcs::firewall::blocked_ips:
-- 8.208.0.0/12
-- 47.240.0.0/14
-- 47.244.0.0/15
-- 47.236.0.0/14
-- 47.246.0.0/16
-- 47.235.0.0/16
 public_tls_unified_cert_vendor: lets-encrypt
