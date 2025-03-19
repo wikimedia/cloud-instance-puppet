@@ -12,6 +12,7 @@ role::labs::redirector::redirects:
   phab.wmcloud.org: https://phabricator.wmcloud.org
   phorge.wmcloud.org: https://phabricator.wmcloud.org
   php-security-checker.wmcloud.org: https://php-security-checker.toolforge.org
+  qrank.wmcloud.org: https://qrank.toolforge.org/
   reportcard.wmflabs.org: https://analytics.wikimedia.org/dashboards/reportcard
   space.wmflabs.org: https://diff.wikimedia.org
   wcqs-beta.wmcloud.org: https://commons-query.wikimedia.org
