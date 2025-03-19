@@ -76,7 +76,6 @@ profile::acme_chief::challenges:
     resolver_port: 53
     zone_update_cmd: /usr/local/bin/acme-chief-designate-sync.py
 profile::acme_chief::cloud::designate_sync_auth_url: https://openstack.eqiad1.wikimediacloud.org:25000/v3
-profile::acme_chief::cloud::designate_sync_password: placeholder
 profile::acme_chief::cloud::designate_sync_project_names:
 - traffic
 profile::acme_chief::cloud::designate_sync_region_name: eqiad1-r
