@@ -1,4 +1,1 @@
 logstash_host: localhost
-profile::elasticsearch::cirrus::enable_remote_search: true
-profile::elasticsearch::cirrus::ssl_provider: cfssl
-role::labs::lvm::mnt::mount_point: /var/lib/elasticsearch
