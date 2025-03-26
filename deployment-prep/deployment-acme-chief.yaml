@@ -1,3 +1,67 @@
-logstash_host: localhost
-puppetmaster: deployment-puppetserver-1.deployment-prep.eqiad1.wikimedia.cloud
-puppetserver: deployment-puppetserver-1.deployment-prep.eqiad1.wikimedia.cloud
+authdns_servers:
+  185.15.56.162: 185.15.56.162
+  185.15.56.163: 185.15.56.163
+network::constants::mw_appserver_networks_private: []
+profile::acme_chief::accounts:
+  0f076461095e47a9dce5334db021a891:
+    directory: https://acme-v02.api.letsencrypt.org/directory
+    regr: '{"body": {}, "uri": "https://acme-v02.api.letsencrypt.org/acme/acct/53552803"}'
+profile::acme_chief::active: deployment-acme-chief05.deployment-prep.eqiad1.wikimedia.cloud
+profile::acme_chief::certificates:
+  mx:
+    CN: mail.beta.wmflabs.org
+    SNI:
+    - mail.beta.wmflabs.org
+    authorized_regexes:
+    - deployment-mx03\.deployment-prep\.eqiad1\.wikimedia\.cloud
+    challenge: dns-01
+  unified:
+    CN: '*.wikimedia.beta.wmflabs.org'
+    SNI:
+    - beta.wmflabs.org
+    - beta.wmcloud.org
+    - m.wikidata.beta.wmflabs.org
+    - wikidata.beta.wmflabs.org
+    - m.wikifunctions.beta.wmflabs.org
+    - wikifunctions.beta.wmflabs.org
+    - '*.wikibooks.beta.wmflabs.org'
+    - '*.wikimedia.beta.wmflabs.org'
+    - '*.wikinews.beta.wmflabs.org'
+    - '*.wikipedia.beta.wmflabs.org'
+    - '*.wikiquote.beta.wmflabs.org'
+    - '*.wikisource.beta.wmflabs.org'
+    - '*.wikiversity.beta.wmflabs.org'
+    - '*.wikivoyage.beta.wmflabs.org'
+    - '*.wiktionary.beta.wmflabs.org'
+    - '*.m.wikibooks.beta.wmflabs.org'
+    - '*.m.wikimedia.beta.wmflabs.org'
+    - '*.m.wikinews.beta.wmflabs.org'
+    - '*.m.wikipedia.beta.wmflabs.org'
+    - '*.m.wikiquote.beta.wmflabs.org'
+    - '*.m.wikisource.beta.wmflabs.org'
+    - '*.m.wikiversity.beta.wmflabs.org'
+    - '*.m.wikivoyage.beta.wmflabs.org'
+    - '*.m.wiktionary.beta.wmflabs.org'
+    - '*.wikipedia.beta.wmcloud.org'
+    - '*.wikivoyage.beta.wmcloud.org'
+    - '*.m.wikipedia.beta.wmcloud.org'
+    - '*.m.wikivoyage.beta.wmcloud.org'
+    authorized_regexes:
+    - ^deployment-cache-(text|upload)08\.deployment-prep\.eqiad1\.wikimedia\.cloud$
+    challenge: dns-01
+profile::acme_chief::challenges:
+  dns-01:
+    issuing_ca: letsencrypt.org
+    ns_records:
+    - ns0.openstack.eqiad1.wikimediacloud.org.
+    - ns1.openstack.eqiad1.wikimediacloud.org.
+    resolver_port: 53
+    zone_update_cmd: /usr/local/bin/acme-chief-designate-sync.py
+profile::acme_chief::cloud::designate_sync_auth_url: https://openstack.eqiad1.wikimediacloud.org:25000/v3
+profile::acme_chief::cloud::designate_sync_project_names:
+- deployment-prep
+profile::acme_chief::cloud::designate_sync_region_name: eqiad1-r
+profile::acme_chief::cloud::designate_sync_tidyup_enabled: true
+profile::acme_chief::cloud::designate_sync_username: deployment-prep-dns-manager
+profile::acme_chief::passive:
+- deployment-acme-chief06.deployment-prep.eqiad1.wikimedia.cloud
