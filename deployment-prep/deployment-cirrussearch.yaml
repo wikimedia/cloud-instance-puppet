@@ -2,3 +2,5 @@ logstash_host: localhost
 profile::opensearch::base_data_dir: /srv/opensearch
 profile::opensearch::cirrus::enable_remote_search: true
 profile::opensearch::cirrus::ssl_provider: cfssl
+puppetmaster: deployment-puppetserver-1.deployment-prep.eqiad1.wikimedia.cloud
+puppetserver: deployment-puppetserver-1.deployment-prep.eqiad1.wikimedia.cloud
