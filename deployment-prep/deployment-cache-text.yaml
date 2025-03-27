@@ -23,6 +23,12 @@ cache::text::nodes:
   - deployment-cache-text08.deployment-prep.eqiad.wmflabs
 cluster: cache_text
 profile::cache::base::purge_host_regex: ''
+profile::cache::haproxy::http_redirection_port: 80
+profile::cache::purge::kafka_tls: true
+profile::cache::purge::kafka_topics:
+- eqiad.resource-purge
+profile::cache::purge::tls_key_password: from_my_checks_this_is_unused_but_if_you_dont_set_it_puppet_breaks_amir
+profile::cache::purged::use_pki: true
 profile::cache::ssl::unified::acme_chief: true
 profile::cache::ssl::unified::certs: []
 profile::cache::ssl::unified::certs_active: []
@@ -33,6 +39,7 @@ profile::cache::ssl::wikibase::monitoring: false
 profile::cache::varnish::backend::be_extra_vcl:
 - text-common
 - normalize_path
+profile::cache::varnish::frontend::enable_http_redirection: false
 profile::cache::varnish::frontend::fe_extra_vcl:
 - normalize_path
 - geoip
@@ -52,11 +59,13 @@ profile::cache::varnish::frontend::fe_vcl_config:
   upload_domain: upload.wikimedia.beta.wmflabs.org
   upload_webp_hits_threshold: 1000
   varnish_probe_ms: 100
-profile::cache::varnish::frontend::packages_component: component/varnish6
+profile::cache::varnish::frontend::packages_component: component/varnish-staging
 profile::cache::varnish::frontend::separate_vcl:
 - misc
+profile::cache::varnish::frontend::varnish_ge_v7: true
 profile::cache::varnish::separate_vcl:
 - misc
+profile::pki::client::ensure: present
 profile::trafficserver::backend::mapping_rules:
 - params:
   - '@plugin=/usr/lib/trafficserver/modules/tslua.so'
