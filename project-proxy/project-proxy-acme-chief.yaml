@@ -4,6 +4,15 @@ profile::acme_chief::accounts:
     regr: '{"body": {}, "uri": "https://acme-v02.api.letsencrypt.org/acme/acct/87887184"}'
 profile::acme_chief::active: project-proxy-acme-chief-02.project-proxy.eqiad1.wikimedia.cloud
 profile::acme_chief::certificates:
+  custom-wikipeoplestats:
+    CN: wikipeoplestats.org
+    SNI:
+    - '*.quote.wikipeoplestats.org'
+    - '*.source.wikipeoplestats.org'
+    - '*.wikipeoplestats.org'
+    authorized_regexes:
+    - ^.+\.project-proxy\.eqiad1\.wikimedia\.cloud$
+    challenge: http-01
   customcatalyst:
     CN: catalyst.wmcloud.org
     SNI:
@@ -109,6 +118,7 @@ profile::acme_chief::cloud::designate_sync_project_names:
 - tools
 - toolsbeta
 - wmflabsdotorg
+- wikipeoplestats
 profile::acme_chief::cloud::designate_sync_region_name: eqiad1-r
 profile::acme_chief::cloud::designate_sync_tidyup_enabled: true
 profile::acme_chief::cloud::designate_sync_username: project-proxy-dns-manager
