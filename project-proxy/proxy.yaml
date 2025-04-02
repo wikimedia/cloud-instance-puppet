@@ -49,6 +49,12 @@ profile::wmcs::novaproxy::supported_zones:
     id: 4a581638-b09a-4897-bfe9-db5f0981d48f
     project: tools
     shared: false
+  wikipeoplestats.org.:
+    acmechief_cert: custom-wikipeoplestats
+    apex: true
+    id: null
+    project: wikipeoplestats
+    shared: false
   wmcloud.org.:
     acmechief_cert: wmcloud
     default: true
