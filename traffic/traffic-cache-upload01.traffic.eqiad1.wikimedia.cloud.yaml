@@ -1,2 +1,1 @@
-profile::cache::varnish::frontend::packages_component: component/varnish-staging
-profile::cache::varnish::frontend::varnish_ge_v7: true
+{}
