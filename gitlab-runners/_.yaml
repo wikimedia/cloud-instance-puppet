@@ -1,2 +1,1 @@
 profile::gitlab::runner::concurrent: 4
-profile::gitlab::runner::docker_gc_interval: 5m
