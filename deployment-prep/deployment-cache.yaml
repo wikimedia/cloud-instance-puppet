@@ -106,6 +106,7 @@ profile::cache::haproxy::del_headers:
     direction: response
     name: X-Varnish
 profile::cache::haproxy::do_ocsp: true
+profile::cache::haproxy::extended_logging: false
 profile::cache::haproxy::h2settings:
   header_table_size: 4096
   initial_window_size: 65535
@@ -132,6 +133,8 @@ profile::cache::haproxy::tls_ciphers: -ALL:ECDHE-ECDSA-AES256-GCM-SHA384:ECDHE-E
 profile::cache::haproxy::tls_port: 443
 profile::cache::haproxy::tls_session_lifetime: 86400
 profile::cache::haproxy::unified_acme_chief: true
+profile::cache::haproxy::use_benthos: false
+profile::cache::haproxy::use_haproxykafka: false
 profile::cache::haproxy::varnish_socket:
   address: /run/varnish-privileged.socket
   prefix: unix
