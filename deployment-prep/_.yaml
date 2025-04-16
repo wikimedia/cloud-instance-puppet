@@ -38,6 +38,8 @@ abuse_networks:
     - 146.108.0.0/15
     - 146.110.0.0/16
     - 154.16.246.0/24
+    - 193.43.72.0/24
+    - 14.160.0.0/11
 acmechief_host: deployment-acme-chief05.deployment-prep.eqiad1.wikimedia.cloud
 apt::use_experimental: true
 aptly::group: wikidev
