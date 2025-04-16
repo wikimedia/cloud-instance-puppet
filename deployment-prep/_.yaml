@@ -128,6 +128,9 @@ profile::cache::kafka::webrequest::kafka_cluster_name: jumbo-deployment-prep
 profile::cache::kafka::webrequest::ssl_enabled: true
 profile::cassandra::rack: rack1
 profile::cassandra::single_instance::super_pass: yimnepCykBadPylb
+profile::confd::instances:
+  main:
+    srv_dns: svc.deployment-prep.eqiad1.wikimedia.cloud
 profile::conftool::client::protocol: https
 profile::conftool::master::sync_dir: /etc/conftool/data-local
 profile::docker::builder::prune_images: false
