@@ -1,0 +1,4 @@
+profile::ssh::server::authorized_keys_file:
+- /etc/ssh/userkeys/%u
+- /etc/ssh/userkeys/%u.d/cumin
+- .ssh/authorized_keys
