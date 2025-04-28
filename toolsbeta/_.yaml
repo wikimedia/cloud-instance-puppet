@@ -66,32 +66,17 @@ profile::ssh::server::disable_nist_kex: false
 profile::ssh::server::enable_hba: true
 profile::ssh::server::explicit_macs: false
 profile::ssh::server::puppetserver_ca_host_certs: true
-profile::toolforge::active_cronrunner: toolsbeta-sgecron-02.toolsbeta.eqiad1.wikimedia.cloud
 profile::toolforge::active_mail_relay: toolsbeta-mail-2.toolsbeta.eqiad1.wikimedia.cloud
-profile::toolforge::active_proxy_host: toolsbeta-proxy-3
-profile::toolforge::canonical_domain: beta.toolforge.org
-profile::toolforge::canonical_scheme: http://
-profile::toolforge::disable_tool::disable_tool_db_host: tools.db.svc.wikimedia.cloud
 profile::toolforge::disable_tool::disable_tool_db_password: dummy
 profile::toolforge::docker::registry::active_node: toolsbeta-docker-registry-02.toolsbeta.eqiad1.wikimedia.cloud
 profile::toolforge::docker::registry::standby_node: undef
 profile::toolforge::elasticsearch::keepalived::host_priority: 100
 profile::toolforge::elasticsearch::keepalived::vip: 172.16.1.131
 profile::toolforge::etcdir: /var/lib/gridengine/etc
-profile::toolforge::grid::base::collectors: /data/project/.system_sge/gridengine/collectors
-profile::toolforge::grid::base::geconf: /data/project/.system_sge/gridengine
-profile::toolforge::grid::base::project_path: /data/project
-profile::toolforge::grid::base::sge_root: /var/lib/gridengine
-profile::toolforge::grid::base::sysdir: /data/project/.system_sge
-profile::toolforge::grid::cronrunner::active_host: '%{alias(''profile::toolforge::active_cronrunner'')}'
-profile::toolforge::grid::webservicemonitor::active_host: '%{alias(''profile::toolforge::active_cronrunner'')}'
 profile::toolforge::harbor::db_primary: ttg4ncgzifw.svc.trove.eqiad1.wikimedia.cloud
 profile::toolforge::harbor::url: toolsbeta-harbor.wmcloud.org
-profile::toolforge::jobs_api_fqdn: jobs.toolsbeta.wmflabs.org
-profile::toolforge::jobs_api_port: 30001
 profile::toolforge::k8s::calico_version: v3.21.0
 profile::toolforge::k8s::client::buildservice_repository: toolsbeta-harbor.wmcloud.org
-profile::toolforge::k8s::ingress_replicas: 3
 profile::toolforge::k8s::kubernetes_version: 1.21.8
 profile::toolforge::mail_domain: beta.toolforge.org
 profile::toolforge::mail_domains:
@@ -100,11 +85,6 @@ profile::toolforge::mail_domains:
 - toolsbeta.wmcloud.org
 profile::toolforge::prometheus::probes_pingthing_http_check_urls:
 - https://toolsbeta-harbor.wmcloud.org/api/v2.0/ping
-profile::toolforge::proxies:
-- toolsbeta-proxy-3.toolsbeta.eqiad1.wikimedia.cloud
-- toolsbeta-proxy-4.toolsbeta.eqiad1.wikimedia.cloud
-profile::toolforge::services::active_node: deb.svc.toolforge.org
-profile::toolforge::services::updatetools_enabled: false
 profile::toolforge::web_domain: beta.toolforge.org
 profile::wmcs::kubeadm::component: thirdparty/kubeadm-k8s-1-29
 profile::wmcs::kubeadm::kubernetes_version: 1.29.15
@@ -115,4 +95,3 @@ prometheus_nodes:
 - toolsbeta-prometheus-1.toolsbeta.eqiad1.wikimedia.cloud
 puppetmaster: toolsbeta-puppetserver-1.toolsbeta.eqiad1.wikimedia.cloud
 role::aptly::client::servername: deb.svc.toolforge.org
-sonofgridengine::gridmaster: toolsbeta-sgegrid-master.toolsbeta.eqiad1.wikimedia.cloud
