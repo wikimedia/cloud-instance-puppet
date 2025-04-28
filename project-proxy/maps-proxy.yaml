@@ -32,7 +32,7 @@ profile::wmcs::proxy::static::proxy_mappings:
     certname: wma
     domain: maps-wma2.maps.eqiad1.wikimedia.cloud
   label.wma.wmflabs.org:
-    certname: tiles
+    certname: wma
     domain: maps-wma2.maps.eqiad1.wikimedia.cloud
   warper.wmflabs.org:
     certname: wmcloud
