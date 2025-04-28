@@ -63,7 +63,6 @@ profile::toolforge::active_mail_relay: tools-mail-4.tools.eqiad1.wikimedia.cloud
 profile::toolforge::active_proxy_host: tools-proxy-06
 profile::toolforge::checker_hosts:
 - tools-checker-04.tools.eqiad1.wikimedia.cloud
-profile::toolforge::disable_tool::disable_tool_db_host: tools.db.svc.wikimedia.cloud
 profile::toolforge::harbor::url: tools-harbor.wmcloud.org
 profile::toolforge::k8s::client::buildservice_repository: tools-harbor.wmcloud.org
 profile::toolforge::prometheus::probes_pingthing_http_check_urls:
