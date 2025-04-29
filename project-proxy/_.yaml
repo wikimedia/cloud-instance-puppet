@@ -4,6 +4,8 @@ profile::wmcs::novaproxy::active_proxy: proxy-03
 profile::wmcs::novaproxy::all_proxies:
 - proxy-03.project-proxy.eqiad1.wikimedia.cloud
 - proxy-04.project-proxy.eqiad1.wikimedia.cloud
+- proxy-5.project-proxy.eqiad1.wikimedia.cloud
+- proxy-6.project-proxy.eqiad1.wikimedia.cloud
 profile::wmcs::novaproxy::api_readonly: false
 profile::wmcs::novaproxy::block_ref_re: koeri.boun.edu.tr
 profile::wmcs::novaproxy::block_ua_re: TweetmemeBot|\(Macintosh; Intel Mac OS X 10\.11;
