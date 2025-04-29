@@ -1,1 +1,5 @@
-{}
+profile::wmcs::novaproxy::keepalived_peers:
+- proxy-03.project-proxy.eqiad1.wikimedia.cloud
+- proxy-04.project-proxy.eqiad1.wikimedia.cloud
+profile::wmcs::novaproxy::keepalived_vips:
+- 172.16.5.140
