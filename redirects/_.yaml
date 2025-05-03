@@ -6,6 +6,7 @@ role::labs::redirector::redirects:
   graphite.wmflabs.org: https://wikitech.wikimedia.org/wiki/News/2023_Cloud_VPS_metrics_changes
   hatjitsu.wmflabs.org: https://hatjitsu.toolforge.org
   horizon.wmflabs.org: https://horizon.wikimedia.org
+  libraryupgrader2.wmcloud.org: https://libup.wmcloud.org
   living-style-guide.wmflabs.org: https://design.wikimedia.org/style-guide
   livingstyleguide.wmflabs.org: https://design.wikimedia.org/style-guide
   logstash-beta.wmcloud.org: https://beta-logs.wmcloud.org
