@@ -1,5 +1,5 @@
 profile::community_civicrm::civi_mail_user: test_user
-profile::community_civicrm::git_branch: main
+profile::community_civicrm::git_branch: labs_build
 profile::community_civicrm::httpd::site_name: community-crm.wmcloud.org
 profile::mail::default_mail_relay::enabled: false
 profile::pki::client::ensure: present
