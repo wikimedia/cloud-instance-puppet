@@ -34,7 +34,6 @@ profile::cache::varnish::frontend::fe_vcl_config:
   upload_domain: upload.wikimedia.beta.wmflabs.org
   upload_webp_hits_threshold: 1000
   varnish_probe_ms: 100
-profile::cache::varnish::frontend::packages_component: component/varnish6
 profile::trafficserver::backend::mapping_rules:
 - params:
   - '@plugin=/usr/lib/trafficserver/modules/tslua.so'
