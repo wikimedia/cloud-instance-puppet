@@ -63,7 +63,6 @@ profile::resolving::nameservers:
 profile::ssh::server::challenge_response_auth: false
 profile::ssh::server::disable_agent_forwarding: false
 profile::ssh::server::disable_nist_kex: false
-profile::ssh::server::enable_hba: true
 profile::ssh::server::explicit_macs: false
 profile::ssh::server::puppetserver_ca_host_certs: true
 profile::toolforge::active_mail_relay: toolsbeta-mail-2.toolsbeta.eqiad1.wikimedia.cloud
