@@ -7,6 +7,7 @@ profile::tlsproxy::envoy::ssl_provider: cfssl
 profile::vrts::active_host: vrts-1003.devtools.eqiad1.wikimedia.cloud
 profile::vrts::database_port: '3306'
 profile::vrts::download_url: https://download.znuny.org/releases
+profile::vrts::exim_deny_senders: ''
 profile::vrts::install_version: 6.5.10
 profile::vrts::passive_host: vrts-1003.devtools.eqiad1.wikimedia.cloud
 profile::vrts::public_dns: ticket.wmcloud.org
