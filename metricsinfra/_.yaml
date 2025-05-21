@@ -27,8 +27,8 @@ profile::grafana::server_aliases: []
 profile::puppet::agent::force_puppet7: true
 profile::wmcs::metricsinfra::alertmanager::api_rw_proxy::trusted_hosts:
   tools:
-  - tools-prometheus-6.tools.eqiad1.wikimedia.cloud
   - tools-prometheus-8.tools.eqiad1.wikimedia.cloud
+  - tools-prometheus-9.tools.eqiad1.wikimedia.cloud
   toolsbeta:
   - toolsbeta-prometheus-2.toolsbeta.eqiad1.wikimedia.cloud
 profile::wmcs::metricsinfra::alertmanager_active_host: metricsinfra-alertmanager-2.metricsinfra.eqiad1.wikimedia.cloud
