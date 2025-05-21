@@ -73,7 +73,7 @@ prometheus::node_exporter::collectors_extra:
 - processes
 prometheus::node_exporter::ignored_fs_types: ^(overlay|autofs|binfmt_misc|cgroup|configfs|debugfs|devpts|devtmpfs|fusectl|hugetlbfs|mqueue|nfs.*|nsfs|proc|procfs|pstore|rpc_pipefs|securityfs|sysfs|tracefs)$
 prometheus_nodes:
-- tools-prometheus-6.tools.eqiad1.wikimedia.cloud
 - tools-prometheus-8.tools.eqiad1.wikimedia.cloud
+- tools-prometheus-9.tools.eqiad1.wikimedia.cloud
 puppetmaster: tools-puppetserver-01.tools.eqiad1.wikimedia.cloud
 role::aptly::client::servername: deb.svc.toolforge.org
