@@ -2,8 +2,7 @@ acmechief_host: toolsbeta-acme-chief-2.toolsbeta.eqiad1.wikimedia.cloud
 docker::builder_host: tools-docker-builder-06.tools.eqiad.wmflabs
 docker::password: not a real password
 docker::password_hash: $apr1$st5G0d8l$IcJeBIljkbSRhjrMIiH02/
-docker::registry: docker-registry.tools.wmflabs.org
-docker::registry_url: https://tools-docker-registry.wmflabs.org/v2/
+docker::registry: docker-registry.svc.toolforge.org
 docker::username: docker
 dynamicproxy::banned_ips:
 - 70.179.6.9
