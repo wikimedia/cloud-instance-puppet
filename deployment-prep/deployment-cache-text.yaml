@@ -80,6 +80,9 @@ profile::trafficserver::backend::mapping_rules:
 - replacement: http://deployment-eventgate-4.deployment-prep.eqiad1.wikimedia.cloud:8492
   target: http://intake-analytics.wikimedia.beta.wmflabs.org
   type: map
+- replacement: http://deployment-eventgate-4.deployment-prep.eqiad1.wikimedia.cloud:8492/v1/events
+  target: http://(.*)/evt-103e/v2/events
+  type: regex_map
 - replacement: http://deployment-eventgate-4.deployment-prep.eqiad1.wikimedia.cloud:8992
   target: http://intake-logging.wikimedia.beta.wmflabs.org
   type: map
