@@ -46,6 +46,7 @@ profile::cache::varnish::frontend::fe_extra_vcl:
 profile::cache::varnish::frontend::fe_vcl_config:
   admission_policy: none
   allowed_methods: ^(GET|HEAD|OPTIONS|PATCH|POST|PURGE|PUT|DELETE)$
+  block_help: see https://wikitech.wikimedia.org/wiki/Beta/Blocked_help for more information.
   enable_geoiplookup: true
   keep: 1d
   large_objects_cutoff: 262144
