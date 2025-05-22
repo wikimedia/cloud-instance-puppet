@@ -38,6 +38,7 @@ profile::cache::ssl::wikibase::monitoring: false
 profile::cache::varnish::backend::be_extra_vcl:
 - text-common
 - normalize_path
+profile::cache::varnish::frontend::do_edge_uniques: true
 profile::cache::varnish::frontend::enable_http_redirection: false
 profile::cache::varnish::frontend::fe_extra_vcl:
 - normalize_path
