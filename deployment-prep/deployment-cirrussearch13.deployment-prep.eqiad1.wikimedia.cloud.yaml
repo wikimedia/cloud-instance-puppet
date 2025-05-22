@@ -1,0 +1,2 @@
+profile::opensearch::cirrus::certificate_domains:
+- deployment-cirrussearch13.deployment-prep.eqiad1.wikimedia.cloud
