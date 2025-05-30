@@ -1,1 +1,2 @@
 profile::gitlab::runner::buildkitd_dockerfile_frontend_enabled: true
+profile::gitlab::runner::buildkitd_gateway_frontend_enabled: true
