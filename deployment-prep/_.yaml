@@ -229,7 +229,7 @@ etcd_port: 2379
 eventlogging_host: 10.68.18.111
 eventlogging_statsd_host: prometheus-labmon.eqiad.wmnet
 kafka_clusters:
-  jumbo-deployment-prep: &id001
+  jumbo-deployment-prep:
     brokers:
       deployment-kafka-jumbo-5.deployment-prep.eqiad1.wikimedia.cloud:
         id: 1
@@ -242,7 +242,19 @@ kafka_clusters:
         rack: C
     ipv6: false
     zookeeper_cluster_name: main-deployment-prep
-  jumbo-eqiad: *id001
+  jumbo-eqiad:
+    brokers:
+      deployment-kafka-jumbo-5.deployment-prep.eqiad1.wikimedia.cloud:
+        id: 1
+        rack: A
+      deployment-kafka-jumbo-8.deployment-prep.eqiad1.wikimedia.cloud:
+        id: 2
+        rack: B
+      deployment-kafka-jumbo-9.deployment-prep.eqiad1.wikimedia.cloud:
+        id: 3
+        rack: C
+    ipv6: false
+    zookeeper_cluster_name: main-deployment-prep
   logging-codfw:
     brokers:
       deployment-kafka-logging01.deployment-prep.eqiad1.wikimedia.cloud:
@@ -257,7 +269,7 @@ kafka_clusters:
         rack: B
     ipv6: false
     zookeeper_cluster_name: main-deployment-prep
-  main-deployment-prep: &id002
+  main-deployment-prep:
     brokers:
       deployment-kafka-main-5.deployment-prep.eqiad1.wikimedia.cloud:
         id: 1
@@ -267,7 +279,16 @@ kafka_clusters:
         rack: B
     ipv6: false
     zookeeper_cluster_name: main-deployment-prep
-  main-eqiad: *id002
+  main-eqiad:
+    brokers:
+      deployment-kafka-main-5.deployment-prep.eqiad1.wikimedia.cloud:
+        id: 1
+        rack: A
+      deployment-kafka-main-6.deployment-prep.eqiad1.wikimedia.cloud:
+        id: 2
+        rack: B
+    ipv6: false
+    zookeeper_cluster_name: main-deployment-prep
 kafka_message_max_bytes: 4194304
 keyholder::require_encrypted_keys: 'no'
 mediawiki::redis_servers::codfw: []
