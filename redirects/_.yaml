@@ -16,6 +16,7 @@ role::labs::redirector::redirects:
   qrank.wmcloud.org: https://qrank.toolforge.org/
   reportcard.wmflabs.org: https://analytics.wikimedia.org/dashboards/reportcard
   space.wmflabs.org: https://diff.wikimedia.org
+  w-wiki.wmflabs.org: https://w.beta.wmcloud.org
   wcqs-beta.wmcloud.org: https://commons-query.wikimedia.org
   wcqs-beta.wmflabs.org: https://commons-query.wikimedia.org
   wdq.wmflabs.org: https://query.wikidata.org
