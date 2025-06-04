@@ -71,6 +71,7 @@ profile::cache::haproxy::available_unified_certificates:
     - '*.m.wikivoyage.beta.wmflabs.org'
     - '*.m.wiktionary.beta.wmflabs.org'
     - '*.zero.wikipedia.beta.wmflabs.org'
+    - w.beta.wmcloud.org
     warning_threshold: 21
 profile::cache::haproxy::del_headers:
   tls:
