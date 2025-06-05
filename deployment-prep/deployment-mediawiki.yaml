@@ -12,32 +12,50 @@ profile::tlsproxy::envoy::cfssl_options:
   hosts:
   - appservers.svc.deployment-prep.eqiad1.wikimedia.cloud
   - api.svc.deployment-prep.eqiad1.wikimedia.cloud
-  - '*.wikipedia.beta.wmflabs.org'
-  - '*.wiktionary.beta.wmflabs.org'
   - '*.wikibooks.beta.wmflabs.org'
+  - '*.wikifunctions.beta.wmflabs.org'
+  - '*.wikimedia.beta.wmflabs.org'
   - '*.wikinews.beta.wmflabs.org'
+  - '*.wikipedia.beta.wmflabs.org'
   - '*.wikiquote.beta.wmflabs.org'
   - '*.wikisource.beta.wmflabs.org'
   - '*.wikiversity.beta.wmflabs.org'
   - '*.wikivoyage.beta.wmflabs.org'
-  - '*.wikimedia.beta.wmflabs.org'
-  - '*.wikifunctions.beta.wmflabs.org'
-  - '*.m.wikipedia.beta.wmflabs.org'
-  - '*.m.wiktionary.beta.wmflabs.org'
+  - '*.wiktionary.beta.wmflabs.org'
+  - wikidata.beta.wmflabs.org
+  - wikifunctions.beta.wmflabs.org
   - '*.m.wikibooks.beta.wmflabs.org'
+  - '*.m.wikifunctions.beta.wmflabs.org'
+  - '*.m.wikimedia.beta.wmflabs.org'
   - '*.m.wikinews.beta.wmflabs.org'
+  - '*.m.wikipedia.beta.wmflabs.org'
   - '*.m.wikiquote.beta.wmflabs.org'
   - '*.m.wikisource.beta.wmflabs.org'
   - '*.m.wikiversity.beta.wmflabs.org'
   - '*.m.wikivoyage.beta.wmflabs.org'
-  - '*.m.wikifunctions.beta.wmflabs.org'
-  - '*.m.wikimedia.beta.wmflabs.org'
-  - wikidata.beta.wmflabs.org
-  - wikifunctions.beta.wmflabs.org
+  - '*.m.wiktionary.beta.wmflabs.org'
+  - '*.wikibooks.beta.wmcloud.org'
+  - '*.wikifunctions.beta.wmcloud.org'
+  - '*.wikimedia.beta.wmcloud.org'
+  - '*.wikinews.beta.wmcloud.org'
   - '*.wikipedia.beta.wmcloud.org'
+  - '*.wikiquote.beta.wmcloud.org'
+  - '*.wikisource.beta.wmcloud.org'
+  - '*.wikiversity.beta.wmcloud.org'
   - '*.wikivoyage.beta.wmcloud.org'
+  - '*.wiktionary.beta.wmcloud.org'
+  - wikidata.beta.wmcloud.org
+  - wikifunctions.beta.wmcloud.org
+  - '*.m.wikibooks.beta.wmcloud.org'
+  - '*.m.wikifunctions.beta.wmcloud.org'
+  - '*.m.wikimedia.beta.wmcloud.org'
+  - '*.m.wikinews.beta.wmcloud.org'
   - '*.m.wikipedia.beta.wmcloud.org'
+  - '*.m.wikiquote.beta.wmcloud.org'
+  - '*.m.wikisource.beta.wmcloud.org'
+  - '*.m.wikiversity.beta.wmcloud.org'
   - '*.m.wikivoyage.beta.wmcloud.org'
+  - '*.m.wiktionary.beta.wmcloud.org'
   - w.beta.wmcloud.org
 profile::tlsproxy::envoy::ensure: present
 profile::tlsproxy::envoy::global_cert_name: appservers.svc.deployment-prep.eqiad1.wikimedia.cloud
