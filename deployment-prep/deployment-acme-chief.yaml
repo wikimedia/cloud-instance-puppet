@@ -19,11 +19,10 @@ profile::acme_chief::certificates:
     CN: '*.wikimedia.beta.wmflabs.org'
     SNI:
     - beta.wmflabs.org
-    - beta.wmcloud.org
-    - m.wikidata.beta.wmflabs.org
     - wikidata.beta.wmflabs.org
-    - m.wikifunctions.beta.wmflabs.org
+    - m.wikidata.beta.wmflabs.org
     - wikifunctions.beta.wmflabs.org
+    - m.wikifunctions.beta.wmflabs.org
     - '*.wikibooks.beta.wmflabs.org'
     - '*.wikimedia.beta.wmflabs.org'
     - '*.wikinews.beta.wmflabs.org'
@@ -42,10 +41,29 @@ profile::acme_chief::certificates:
     - '*.m.wikiversity.beta.wmflabs.org'
     - '*.m.wikivoyage.beta.wmflabs.org'
     - '*.m.wiktionary.beta.wmflabs.org'
+    - beta.wmcloud.org
+    - wikidata.beta.wmcloud.org
+    - m.wikidata.beta.wmcloud.org
+    - wikifunctions.beta.wmcloud.org
+    - m.wikifunctions.beta.wmcloud.org
+    - '*.wikibooks.beta.wmcloud.org'
+    - '*.wikimedia.beta.wmcloud.org'
+    - '*.wikinews.beta.wmcloud.org'
     - '*.wikipedia.beta.wmcloud.org'
+    - '*.wikiquote.beta.wmcloud.org'
+    - '*.wikisource.beta.wmcloud.org'
+    - '*.wikiversity.beta.wmcloud.org'
     - '*.wikivoyage.beta.wmcloud.org'
+    - '*.wiktionary.beta.wmcloud.org'
+    - '*.m.wikibooks.beta.wmcloud.org'
+    - '*.m.wikimedia.beta.wmcloud.org'
+    - '*.m.wikinews.beta.wmcloud.org'
     - '*.m.wikipedia.beta.wmcloud.org'
+    - '*.m.wikiquote.beta.wmcloud.org'
+    - '*.m.wikisource.beta.wmcloud.org'
+    - '*.m.wikiversity.beta.wmcloud.org'
     - '*.m.wikivoyage.beta.wmcloud.org'
+    - '*.m.wiktionary.beta.wmcloud.org'
     - w.beta.wmcloud.org
     authorized_regexes:
     - ^deployment-cache-(text|upload)08\.deployment-prep\.eqiad1\.wikimedia\.cloud$
