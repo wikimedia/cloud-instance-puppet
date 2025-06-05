@@ -364,8 +364,6 @@ profile::maps::osm_master::replication_pass: JokpypNivgoackec
 profile::maps::osm_master::tilerator_pass: SherbevawshocVie
 profile::maps::osm_master::tileratorui_pass: CreympUxwodyark1
 profile::mediawiki::jobrunner::default_php_version: '8.1'
-profile::mediawiki::mcrouter_wancache::has_ssl: false
-profile::mediawiki::mcrouter_wancache::use_onhost_memcached: false
 profile::mediawiki::php::absented_php_versions:
 - '7.4'
 profile::mediawiki::php::icu63: true
