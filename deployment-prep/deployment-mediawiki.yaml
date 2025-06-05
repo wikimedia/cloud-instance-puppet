@@ -1,5 +1,4 @@
 profile::envoy::ensure: present
-profile::mediawiki::mcrouter_wancache::use_onhost_memcached: true
 profile::mediawiki::php::increase_open_files: true
 profile::mediawiki::webserver::has_tls: true
 profile::pki::client::ensure: present
