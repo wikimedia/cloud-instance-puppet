@@ -44,14 +44,7 @@ profile::cache::haproxy::available_unified_certificates:
     critical_threshold: 15
     server_names:
     - '*.wikimedia.beta.wmflabs.org'
-    - '*.wikipedia.beta.wmcloud.org'
-    - '*.wikivoyage.beta.wmcloud.org'
-    - '*.m.wikipedia.beta.wmcloud.org'
-    - '*.m.wikivoyage.beta.wmcloud.org'
     - beta.wmflabs.org
-    - beta.wmcloud.org
-    - m.wikidata.beta.wmflabs.org
-    - wikidata.beta.wmflabs.org
     - '*.wikibooks.beta.wmflabs.org'
     - '*.wikimedia.beta.wmflabs.org'
     - '*.wikinews.beta.wmflabs.org'
@@ -61,6 +54,7 @@ profile::cache::haproxy::available_unified_certificates:
     - '*.wikiversity.beta.wmflabs.org'
     - '*.wikivoyage.beta.wmflabs.org'
     - '*.wiktionary.beta.wmflabs.org'
+    - wikidata.beta.wmflabs.org
     - '*.m.wikibooks.beta.wmflabs.org'
     - '*.m.wikimedia.beta.wmflabs.org'
     - '*.m.wikinews.beta.wmflabs.org'
@@ -70,7 +64,28 @@ profile::cache::haproxy::available_unified_certificates:
     - '*.m.wikiversity.beta.wmflabs.org'
     - '*.m.wikivoyage.beta.wmflabs.org'
     - '*.m.wiktionary.beta.wmflabs.org'
-    - '*.zero.wikipedia.beta.wmflabs.org'
+    - m.wikidata.beta.wmflabs.org
+    - beta.wmcloud.org
+    - '*.wikibooks.beta.wmcloud.org'
+    - '*.wikimedia.beta.wmcloud.org'
+    - '*.wikinews.beta.wmcloud.org'
+    - '*.wikipedia.beta.wmcloud.org'
+    - '*.wikiquote.beta.wmcloud.org'
+    - '*.wikisource.beta.wmcloud.org'
+    - '*.wikiversity.beta.wmcloud.org'
+    - '*.wikivoyage.beta.wmcloud.org'
+    - '*.wiktionary.beta.wmcloud.org'
+    - wikidata.beta.wmcloud.org
+    - '*.m.wikibooks.beta.wmcloud.org'
+    - '*.m.wikimedia.beta.wmcloud.org'
+    - '*.m.wikinews.beta.wmcloud.org'
+    - '*.m.wikipedia.beta.wmcloud.org'
+    - '*.m.wikiquote.beta.wmcloud.org'
+    - '*.m.wikisource.beta.wmcloud.org'
+    - '*.m.wikiversity.beta.wmcloud.org'
+    - '*.m.wikivoyage.beta.wmcloud.org'
+    - '*.m.wiktionary.beta.wmcloud.org'
+    - m.wikidata.beta.wmcloud.org
     - w.beta.wmcloud.org
     warning_threshold: 21
 profile::cache::haproxy::del_headers:
