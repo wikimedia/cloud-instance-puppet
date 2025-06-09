@@ -3,6 +3,8 @@ docker::builder_host: tools-imagebuilder-2.tools.eqiad1.wikimedia.cloud
 docker::registry: docker-registry.svc.toolforge.org
 dynamicproxy::banned_ips:
 - 70.179.6.9
+- 108.14.213.0/24
+- 96.22.114.238/24
 dynamicproxy::blocked_referer_regex: hasty\.ai
 dynamicproxy::blocked_user_agent_regex: TweetmemeBot|Chrome/38\.0\.2125\.104|Applebot|QIHU
   360SE|RepoLookoutBot
