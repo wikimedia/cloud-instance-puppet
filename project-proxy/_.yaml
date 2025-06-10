@@ -2,8 +2,6 @@ acmechief_host: project-proxy-acme-chief-02.project-proxy.eqiad1.wikimedia.cloud
 profile::puppet::agent::force_puppet7: true
 profile::wmcs::novaproxy::active_proxy: proxy-5
 profile::wmcs::novaproxy::all_proxies:
-- proxy-03.project-proxy.eqiad1.wikimedia.cloud
-- proxy-04.project-proxy.eqiad1.wikimedia.cloud
 - proxy-5.project-proxy.eqiad1.wikimedia.cloud
 - proxy-6.project-proxy.eqiad1.wikimedia.cloud
 profile::wmcs::novaproxy::api_readonly: false
