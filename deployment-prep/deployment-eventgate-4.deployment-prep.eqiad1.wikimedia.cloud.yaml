@@ -91,7 +91,7 @@ profile::docker::runner::service_defs:
     namespace: repos/data-engineering
     override_cmd: /srv/service/node_modules/.bin/eventgate -c /etc/eventgate-analytics-external/config.yaml
     port: 8492
-    version: v1.13.0
+    version: v1.14.0
   eventgate-logging-external:
     config:
       num_workers: 0
