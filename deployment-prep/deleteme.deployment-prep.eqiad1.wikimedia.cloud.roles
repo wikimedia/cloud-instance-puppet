@@ -1,2 +1,2 @@
-- ferm
+- profile::firewall
 - profile::gitlab::runner
