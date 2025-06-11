@@ -39,6 +39,7 @@ profile::gitlab::runner::enable_exporter: true
 profile::gitlab::runner::ensure: present
 profile::gitlab::runner::ensure_buildkitd: present
 profile::gitlab::runner::restrict_firewall: true
+profile::gitlab::runner::token: dummy
 profile::gitlab::runner::user: gitlab-runner
 profile::monitoring::nrpe_check_disk_options: -w 6% -c 3% -W 6% -K 3% -l -e -A -i
   "/srv/sd[a-b][1-3]" -i "/srv/nvme[0-9]n[0-9]p[0-9]" -i '/(var/lib|run)/docker/*'
