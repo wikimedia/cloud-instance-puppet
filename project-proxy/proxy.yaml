@@ -4,6 +4,8 @@ profile::wmcs::novaproxy::api_hostnames:
 - proxy-eqiad1.wmflabs.org
 - proxy-eqiad1.wmcloud.org
 - proxy.project-proxy.eqiad1.wmcloud.org
+profile::wmcs::novaproxy::banned_ips:
+- 35.224.154.106
 profile::wmcs::novaproxy::dns_updater_project: cloudinfra
 profile::wmcs::novaproxy::dns_updater_username: project-proxy-dns-manager
 profile::wmcs::novaproxy::keepalived_vips:
