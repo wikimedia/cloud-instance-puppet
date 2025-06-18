@@ -122,6 +122,7 @@ profile::trafficserver::backend::mapping_rules:
   - '@pparam="5B 5D 26 27 2B 3D"'
   - '@plugin=/usr/lib/trafficserver/modules/tslua.so'
   - '@pparam=/etc/trafficserver/lua/rb-mw-mangling.lua'
+  - '@plugin=/usr/lib/trafficserver/modules/tslua.so'
   - '@pparam=/etc/trafficserver/lua/rb-mw-mangling-beta.lua'
   replacement: http://deployment-mediawiki14.deployment-prep.eqiad1.wikimedia.cloud
   target: /
