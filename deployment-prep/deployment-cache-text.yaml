@@ -1,6 +1,8 @@
 cache::alternate_domains:
   config-master.wikimedia.beta.wmflabs.org:
     caching: pass
+  performance.wikimedia.beta.wmcloud.org:
+    caching: normal
   performance.wikimedia.beta.wmflabs.org:
     caching: normal
 cache::app_def_be_opts:
@@ -78,6 +80,9 @@ profile::trafficserver::backend::mapping_rules:
   type: map
 - replacement: http://deployment-webperf21.deployment-prep.eqiad1.wikimedia.cloud
   target: http://performance.wikimedia.beta.wmflabs.org
+  type: map
+- replacement: http://deployment-webperf21.deployment-prep.eqiad1.wikimedia.cloud
+  target: http://performance.wikimedia.beta.wmcloud.org
   type: map
 - replacement: http://deployment-eventgate-4.deployment-prep.eqiad1.wikimedia.cloud:8492
   target: http://intake-analytics.wikimedia.beta.wmflabs.org
