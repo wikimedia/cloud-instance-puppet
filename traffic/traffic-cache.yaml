@@ -70,6 +70,7 @@ profile::cache::haproxy::available_unified_certificates:
     - /etc/acmecerts/unified/live/rsa-2048.chained.crt.key
     - /etc/acmecerts/unified/live/ec-prime256v1.chained.crt.key
     critical_threshold: 15
+    ocsp: false
     server_names:
     - wikipedia.org
     - '*.wikipedia.org'
