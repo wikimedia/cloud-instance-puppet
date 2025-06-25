@@ -1,5 +1,2 @@
-profile::gitlab::configure_projects_bot_token: addedlater
-profile::gitlab::ldap_group_sync_bot_token: addedlater
 profile::gitlab::service_ip_v4: 172.16.19.98
-profile::ssh::server::manage_host_keys: false
 puppetmaster: puppetmaster-1003.devtools.eqiad1.wikimedia.cloud
