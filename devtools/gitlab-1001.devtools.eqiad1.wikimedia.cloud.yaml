@@ -1,3 +1,4 @@
+profile::gitlab::active_host: gitlab-1001.devtools.eqiad1.wikimedia.cloud
 profile::gitlab::configure_projects_bot_token: addedlater
 profile::gitlab::service_ip_v4: 172.16.19.98
 puppetmaster: puppetmaster-1003.devtools.eqiad1.wikimedia.cloud
