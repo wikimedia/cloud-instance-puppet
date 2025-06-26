@@ -3,7 +3,6 @@ profile::gitlab::runner::buildkitd_allowed_gateway_sources:
 - docker-registry.wikimedia.org/repos/releng/blubber/buildkit
 - docker-registry.wikimedia.org/repos/releng/buildkit/dockerfile-frontend
 profile::gitlab::runner::buildkitd_dockerfile_frontend_enabled: true
-profile::gitlab::runner::buildkitd_gateway_frontend_enabled: true
 profile::gitlab::runner::docker_network: bridge
 profile::gitlab::runner::docker_settings:
   log-driver: none
