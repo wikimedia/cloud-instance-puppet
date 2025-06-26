@@ -5,9 +5,6 @@ profile::gitlab::runner::buildkitd_allowed_gateway_sources:
 profile::gitlab::runner::buildkitd_dockerfile_frontend_enabled: true
 profile::gitlab::runner::buildkitd_gateway_frontend_enabled: true
 profile::gitlab::runner::buildkitd_image: docker-registry.wikimedia.org/repos/releng/buildkit:wmf-v0.20.0-2
-profile::gitlab::runner::clear_interval:
-  interval: '*-*-* 05:00:00'
-  start: OnCalendar
 profile::gitlab::runner::docker_network: bridge
 profile::gitlab::runner::docker_settings:
   log-driver: none
