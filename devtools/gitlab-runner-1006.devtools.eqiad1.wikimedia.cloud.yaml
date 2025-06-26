@@ -5,4 +5,4 @@ profile::gitlab::runner::docker_volume: true
 profile::gitlab::runner::enable_registry_proxy: true
 profile::gitlab::runner::registry_proxy_environment:
   REGISTRY_PROXY_REMOTEURL: https://registry-1.docker.io
-puppetmaster: puppetmaster-1003.devtools.eqiad1.wikimedia.cloud
+profile::gitlab::runner::token: glrt-t2_xJQoqY6cWPR_ExTz_ZfH
