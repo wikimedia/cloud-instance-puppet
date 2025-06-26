@@ -11,7 +11,6 @@ profile::gitlab::runner::clear_interval:
 profile::gitlab::runner::docker_network: bridge
 profile::gitlab::runner::docker_settings:
   log-driver: none
-profile::gitlab::runner::docker_subnet: 172.21.0.0/16
 profile::gitlab::runner::docker_volume: true
 profile::gitlab::runner::docker_volume_max: 8
 profile::gitlab::runner::docker_volume_min: 5
