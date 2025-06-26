@@ -36,6 +36,61 @@ profile::cache::haproxy::add_headers:
   - direction: request
     name: X-Analytics-TLS
     value: vers=%[ssl_fc_protocol];keyx=unknown;auth=%[var(req.auth)];ciph=%[var(req.ciph)];prot=%[var(req.h2s)];sess=%[var(req.sess)]
+profile::cache::haproxy::available_certificates:
+  unified:
+    cert_paths:
+    - /etc/acmecerts/unified/live/rsa-2048.chained.crt.key
+    - /etc/acmecerts/unified/live/ec-prime256v1.chained.crt.key
+    critical_threshold: 15
+    ocsp: false
+    server_names:
+    - '*.wikimedia.beta.wmflabs.org'
+    - beta.wmflabs.org
+    - '*.wikibooks.beta.wmflabs.org'
+    - '*.wikimedia.beta.wmflabs.org'
+    - '*.wikinews.beta.wmflabs.org'
+    - '*.wikipedia.beta.wmflabs.org'
+    - '*.wikiquote.beta.wmflabs.org'
+    - '*.wikisource.beta.wmflabs.org'
+    - '*.wikiversity.beta.wmflabs.org'
+    - '*.wikivoyage.beta.wmflabs.org'
+    - '*.wiktionary.beta.wmflabs.org'
+    - wikidata.beta.wmflabs.org
+    - www.wikidata.beta.wmflabs.org
+    - '*.m.wikibooks.beta.wmflabs.org'
+    - '*.m.wikimedia.beta.wmflabs.org'
+    - '*.m.wikinews.beta.wmflabs.org'
+    - '*.m.wikipedia.beta.wmflabs.org'
+    - '*.m.wikiquote.beta.wmflabs.org'
+    - '*.m.wikisource.beta.wmflabs.org'
+    - '*.m.wikiversity.beta.wmflabs.org'
+    - '*.m.wikivoyage.beta.wmflabs.org'
+    - '*.m.wiktionary.beta.wmflabs.org'
+    - m.wikidata.beta.wmflabs.org
+    - beta.wmcloud.org
+    - '*.wikibooks.beta.wmcloud.org'
+    - '*.wikimedia.beta.wmcloud.org'
+    - '*.wikinews.beta.wmcloud.org'
+    - '*.wikipedia.beta.wmcloud.org'
+    - '*.wikiquote.beta.wmcloud.org'
+    - '*.wikisource.beta.wmcloud.org'
+    - '*.wikiversity.beta.wmcloud.org'
+    - '*.wikivoyage.beta.wmcloud.org'
+    - '*.wiktionary.beta.wmcloud.org'
+    - wikidata.beta.wmcloud.org
+    - www.wikidata.beta.wmcloud.org
+    - '*.m.wikibooks.beta.wmcloud.org'
+    - '*.m.wikimedia.beta.wmcloud.org'
+    - '*.m.wikinews.beta.wmcloud.org'
+    - '*.m.wikipedia.beta.wmcloud.org'
+    - '*.m.wikiquote.beta.wmcloud.org'
+    - '*.m.wikisource.beta.wmcloud.org'
+    - '*.m.wikiversity.beta.wmcloud.org'
+    - '*.m.wikivoyage.beta.wmcloud.org'
+    - '*.m.wiktionary.beta.wmcloud.org'
+    - m.wikidata.beta.wmcloud.org
+    - w.beta.wmcloud.org
+    warning_threshold: 21
 profile::cache::haproxy::available_unified_certificates:
   lets-encrypt:
     cert_paths:
@@ -123,6 +178,8 @@ profile::cache::haproxy::del_headers:
     direction: response
     name: X-Varnish
 profile::cache::haproxy::do_ocsp: true
+profile::cache::haproxy::enabled_certificates:
+- unified
 profile::cache::haproxy::extended_logging: false
 profile::cache::haproxy::h2settings:
   header_table_size: 4096
