@@ -4,8 +4,6 @@ profile::gitlab::runner::buildkitd_allowed_gateway_sources:
 - docker-registry.wikimedia.org/repos/releng/buildkit/dockerfile-frontend
 profile::gitlab::runner::buildkitd_dockerfile_frontend_enabled: true
 profile::gitlab::runner::docker_network: bridge
-profile::gitlab::runner::docker_settings:
-  log-driver: none
 profile::gitlab::runner::docker_volume: true
 profile::gitlab::runner::docker_volume_max: 8
 profile::gitlab::runner::docker_volume_min: 5
