@@ -4,7 +4,6 @@ profile::gitlab::runner::buildkitd_allowed_gateway_sources:
 - docker-registry.wikimedia.org/repos/releng/buildkit/dockerfile-frontend
 profile::gitlab::runner::buildkitd_dockerfile_frontend_enabled: true
 profile::gitlab::runner::buildkitd_gateway_frontend_enabled: true
-profile::gitlab::runner::buildkitd_image: docker-registry.wikimedia.org/repos/releng/buildkit:wmf-v0.20.0-2
 profile::gitlab::runner::docker_network: bridge
 profile::gitlab::runner::docker_settings:
   log-driver: none
