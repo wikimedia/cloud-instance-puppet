@@ -252,7 +252,6 @@ profile::cache::haproxy::vars:
     direction: request
     name: req.auth
     value: str(ECDSA)
-profile::cache::haproxy::version: haproxy26
 profile::cache::haproxykafka::ensure: absent
 profile::cache::purge::backend_addr: 127.0.0.1:3128
 profile::cache::purge::frontend_addr: /run/varnish-privileged.socket
