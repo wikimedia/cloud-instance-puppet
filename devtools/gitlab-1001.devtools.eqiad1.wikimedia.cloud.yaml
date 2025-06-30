@@ -1,3 +1,2 @@
-profile::gitlab::configure_projects_bot_token: addlater
 profile::gitlab::enable_custom_exporter: false
 puppetmaster: puppetmaster-1003.devtools.eqiad1.wikimedia.cloud
