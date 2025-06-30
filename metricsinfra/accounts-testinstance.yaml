@@ -1,0 +1,2 @@
+profile::systemd::timesyncd::ntp_servers:
+- ntp.ubuntu.com
