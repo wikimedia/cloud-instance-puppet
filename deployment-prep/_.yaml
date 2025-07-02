@@ -674,7 +674,7 @@ service::catalog:
     page: false
     port: 443
     probes:
-    - host: en.wikipedia.beta.wmflabs.org
+    - host: en.wikipedia.beta.wmcloud.org
       path: /w/api.php?action=query&meta=siteinfo
       type: http
     sites:
