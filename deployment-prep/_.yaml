@@ -388,10 +388,10 @@ profile::logstash::collector::input_kafka_ssl_truststore_passwords:
   main-codfw: qwerty
   main-eqiad: qwerty
 profile::mail::mx::dkim_domain: beta.wmflabs.org
-profile::mail::mx::verp_bounce_post_url: http://meta.wikimedia.beta.wmflabs.org/w/api.php
+profile::mail::mx::verp_bounce_post_url: http://meta.wikimedia.beta.wmcloud.org/w/api.php
 profile::mail::mx::verp_domains:
 - beta.wmflabs.org
-profile::mail::mx::verp_post_connect_server: meta.wikimedia.beta.wmflabs.org
+profile::mail::mx::verp_post_connect_server: meta.wikimedia.beta.wmcloud.org
 profile::maps::apps::redis_pass: IlNijCeenZelteec
 profile::maps::apps::tilerator_ncpu_ratio: 0.3
 profile::maps::cassandra::kartotherian_pass: IacUvEebsyePerub
