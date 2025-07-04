@@ -28,7 +28,7 @@ profile::docker::runner::service_defs:
           schema_uri_field: $schema
           stream_config_object_path: streams
           stream_config_ttl: 60
-          stream_config_uri: https://meta.wikimedia.beta.wmflabs.org/w/api.php?action=streamconfigs&format=json&constraints=destination_event_service=eventgate-analytics
+          stream_config_uri: https://meta.wikimedia.beta.wmcloud.org/w/api.php?action=streamconfigs&format=json&constraints=destination_event_service=eventgate-analytics
           stream_field: meta.stream
           test_events:
           - $schema: /test/event/1.0.0
@@ -73,7 +73,7 @@ profile::docker::runner::service_defs:
           schema_uri_field: $schema
           stream_config_object_path: streams
           stream_config_ttl: 60
-          stream_config_uri: https://meta.wikimedia.beta.wmflabs.org/w/api.php?action=streamconfigs&format=json&constraints=destination_event_service=eventgate-analytics-external
+          stream_config_uri: https://meta.wikimedia.beta.wmcloud.org/w/api.php?action=streamconfigs&format=json&constraints=destination_event_service=eventgate-analytics-external
           stream_field: meta.stream
           test_events:
           - $schema: /test/event/1.0.0
@@ -118,7 +118,7 @@ profile::docker::runner::service_defs:
           schema_uri_field: $schema
           stream_config_object_path: streams
           stream_config_ttl: 60
-          stream_config_uri: https://meta.wikimedia.beta.wmflabs.org/w/api.php?action=streamconfigs&format=json&constraints=destination_event_service=eventgate-logging-external
+          stream_config_uri: https://meta.wikimedia.beta.wmcloud.org/w/api.php?action=streamconfigs&format=json&constraints=destination_event_service=eventgate-logging-external
           stream_field: meta.stream
           test_events:
           - $schema: /test/event/1.0.0
@@ -161,7 +161,7 @@ profile::docker::runner::service_defs:
           schema_uri_field: $schema
           stream_config_object_path: streams
           stream_config_ttl: 60
-          stream_config_uri: https://meta.wikimedia.beta.wmflabs.org/w/api.php?action=streamconfigs&format=json&constraints=destination_event_service=eventgate-main
+          stream_config_uri: https://meta.wikimedia.beta.wmcloud.org/w/api.php?action=streamconfigs&format=json&constraints=destination_event_service=eventgate-main
           stream_field: meta.stream
           test_events:
           - $schema: /test/event/1.0.0
