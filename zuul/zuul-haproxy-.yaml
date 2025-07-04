@@ -1,2 +1,0 @@
-profile::zuul::haproxy::kubernetes_hosts:
-- 172.16.10.149
