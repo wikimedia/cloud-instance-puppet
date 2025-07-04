@@ -27,7 +27,7 @@ profile::docker::runner::service_defs:
           mwapi_req:
             body: '{{ default(request.query, {}) }}'
             headers:
-              host: meta.wikimedia.beta.wmflabs.org
+              host: meta.wikimedia.beta.wmcloud.org
               user-agent: '{{user-agent}}'
               x-forwarded-proto: https
             method: post
