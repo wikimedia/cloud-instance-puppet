@@ -68,7 +68,7 @@ profile::docker::runner::service_defs:
               appSecret: dummysecret
               languages: /srv/service/config/Youdao.yaml
             defaults: /srv/service/config/mt-defaults.wikimedia.yaml
-          mw_host: en.wikipedia.beta.wmflabs.org
+          mw_host: en.wikipedia.beta.wmcloud.org
           mwapi_req:
             body: '{{request.body}}'
             headers:
