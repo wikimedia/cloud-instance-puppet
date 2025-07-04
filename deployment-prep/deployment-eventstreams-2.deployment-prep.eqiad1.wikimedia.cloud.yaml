@@ -78,7 +78,7 @@ profile::docker::runner::service_defs:
               - revision-score
           stream_config_object_path: streams
           stream_config_ttl: 300
-          stream_config_uri: https://meta.wikimedia.beta.wmflabs.org/w/api.php?action=streamconfigs
+          stream_config_uri: https://meta.wikimedia.beta.wmcloud.org/w/api.php?action=streamconfigs
           stream_ui_enabled: true
           user_agent: eventstreams-beta
         module: app.js
