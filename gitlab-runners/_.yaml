@@ -1,1 +1,3 @@
+profile::base::labs::unattended_distro: absent
+profile::base::labs::unattended_wmf: absent
 profile::gitlab::runner::concurrent: 4
