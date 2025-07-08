@@ -1,4 +1,6 @@
-cache::alternate_domains: {}
+cache::alternate_domains:
+  upload.wikimedia.beta.wmcloud.org:
+    caching: pass
 cache::cluster: upload
 cache::lua_support: true
 cache::nodes:
