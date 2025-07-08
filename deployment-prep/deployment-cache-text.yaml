@@ -1,4 +1,6 @@
 cache::alternate_domains:
+  config-master.wikimedia.beta.wmcloud.org:
+    caching: pass
   config-master.wikimedia.beta.wmflabs.org:
     caching: pass
   performance.wikimedia.beta.wmcloud.org:
@@ -98,6 +100,9 @@ profile::trafficserver::backend::mapping_rules:
   type: map
 - replacement: http://deployment-eventstreams-2.deployment-prep.eqiad1.wikimedia.cloud:8093
   target: http://stream-test.wikimedia.beta.wmflabs.org
+  type: map
+- replacement: https://deployment-puppetmaster04.deployment-prep.eqiad1.wikimedia.cloud
+  target: http://config-master.wikimedia.beta.wmcloud.org
   type: map
 - replacement: https://deployment-puppetmaster04.deployment-prep.eqiad1.wikimedia.cloud
   target: http://config-master.wikimedia.beta.wmflabs.org
