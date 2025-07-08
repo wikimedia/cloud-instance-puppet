@@ -57,11 +57,11 @@ profile::cache::varnish::frontend::fe_vcl_config:
   maps_domain: maps.beta.wmflabs.org
   measure_domain_regex: ^measure-(eqiad|codfw|esams|ulsfo|eqsin|drmrs)\.wikimedia\.org$
   public_clouds_shutdown: false
-  purge_host_regex: /^(?!(upload\.wikimedia.beta\.wmflabs\.org|maps\.beta\.wmflabs\.org|upload\.wikimedia\.beta\.wmcloud\.org|maps\.wikimedia\.beta\.wmcloud\.org))
+  purge_host_regex: ^(?!(upload\.wikimedia.beta\.wmflabs\.org|maps\.beta\.wmflabs\.org|upload\.wikimedia\.beta\.wmcloud\.org|maps\.wikimedia\.beta\.wmcloud\.org))
   shortener_domain: w.beta.wmcloud.org
   static_host: en.wikipedia.beta.wmcloud.org
   top_domain: beta.wmflabs.org
-  upload_domain: upload.wikimedia.beta.wmflabs.org
+  upload_domain: upload.wikimedia.beta.wmcloud.org
   upload_webp_hits_threshold: 1000
   varnish_probe_ms: 100
 profile::cache::varnish::frontend::separate_vcl:
