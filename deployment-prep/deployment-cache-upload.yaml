@@ -25,7 +25,7 @@ profile::cache::varnish::frontend::fe_vcl_config:
   enable_geoiplookup: true
   keep: 1d
   large_objects_cutoff: 262144
-  maps_domain: maps.beta.wmflabs.org
+  maps_domain: maps.wikimedia.beta.wmcloud.org
   measure_domain_regex: ^measure-(eqiad|codfw|esams|ulsfo|eqsin|drmrs)\.wikimedia\.org$
   pass_random: false
   purge_host_regex: ^(upload\.wikimedia.beta\.wmflabs\.org|maps\.beta\.wmflabs\.org|upload\.wikimedia\.beta\.wmcloud\.org|maps\.wikimedia\.beta\.wmcloud\.org)$
