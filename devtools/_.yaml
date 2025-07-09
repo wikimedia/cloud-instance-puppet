@@ -1,7 +1,5 @@
 deployment_hosts:
 - 172.16.4.117
-profile::base::labs::unattended_distro: absent
-profile::base::labs::unattended_wmf: absent
 profile::gitlab::local_gems:
   /srv/gitlab-wmf-gems:
   - gitlab_phorge
