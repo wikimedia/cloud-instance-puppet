@@ -1,5 +1,5 @@
-aptly::manage_nginx: false
 profile::base::labs::cleanup_puppet_client_bucket: true
 profile::ci::slave::labs::common::manage_srv: false
+profile::gerrit::sshkey::exported: true
 profile::kubernetes::client::version: '1.23'
 profile::mediawiki::scap_client::is_master: true
