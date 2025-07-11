@@ -1,7 +1,6 @@
 profile::hcaptcha::hcaptcha_secret: s3cr3t
 profile::hcaptcha::hcaptcha_sitekey: somesitekey
 profile::hcaptcha::proxy::ip_hash_salt: nomnomnom
-profile::hcaptcha::proxy::nginx_ipblinding_conf: "access_by_lua_block {\n  ngx.say(\"\
-  hello world\");\n}\n"
+profile::hcaptcha::proxy::nginx_ipblinding_conf: null
 profile::hcaptcha::proxy::nginx_private_conf: proxy_set_header X-Clacks-Overhead "GNU
   Terry Pratchett";
