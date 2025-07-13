@@ -1,2 +1,3 @@
 profile::memcached::firewall_srange: null
-profile::memcached::firewall_src_sets: null
+profile::memcached::firewall_src_sets:
+- DOMAIN_NETWORKS
