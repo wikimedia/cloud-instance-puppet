@@ -1,0 +1,9 @@
+profile::base::labs::unattended_distro: absent
+profile::base::labs::unattended_wmf: absent
+profile::gitlab::active_host: gitlab-1002.devtools.eqiad1.wikimedia.cloud
+profile::gitlab::enable_custom_exporter: false
+profile::gitlab::external_url: https://%{lookup('profile::gitlab::service_name')}/
+profile::gitlab::service_ip_v4: 172.16.16.36
+profile::gitlab::service_ip_v6: '::'
+profile::gitlab::service_name: gitlab.devtools.wmcloud.org
+puppetmaster: puppetmaster-1003.devtools.eqiad1.wikimedia.cloud
