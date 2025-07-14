@@ -42,7 +42,7 @@ profile::cache::haproxy::available_certificates:
     - /etc/acmecerts/unified/live/rsa-2048.chained.crt.key
     - /etc/acmecerts/unified/live/ec-prime256v1.chained.crt.key
     critical_threshold: 15
-    do_ocsp: false
+    ocsp: false
     server_names:
     - '*.wikimedia.beta.wmflabs.org'
     - beta.wmflabs.org
@@ -97,7 +97,7 @@ profile::cache::haproxy::available_unified_certificates:
     - /etc/acmecerts/unified/live/rsa-2048.chained.crt.key
     - /etc/acmecerts/unified/live/ec-prime256v1.chained.crt.key
     critical_threshold: 15
-    do_ocsp: false
+    ocsp: false
     server_names:
     - '*.wikimedia.beta.wmflabs.org'
     - beta.wmflabs.org
