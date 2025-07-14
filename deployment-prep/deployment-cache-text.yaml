@@ -7,6 +7,16 @@ cache::alternate_domains:
     caching: normal
   performance.wikimedia.beta.wmflabs.org:
     caching: normal
+  stream.wikimedia.beta.wmcloud.org:
+    caching: normal
+    subpaths:
+      ^/v2/stream/.+:
+        caching: pipe
+  stream.wikimedia.beta.wmflabs.org:
+    caching: normal
+    subpaths:
+      ^/v2/stream/.+:
+        caching: pipe
 cache::app_def_be_opts:
   between_bytes_timeout: 30s
   connect_timeout: 3s
