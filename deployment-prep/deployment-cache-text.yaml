@@ -1,11 +1,7 @@
 cache::alternate_domains:
   config-master.wikimedia.beta.wmcloud.org:
     caching: pass
-  config-master.wikimedia.beta.wmflabs.org:
-    caching: pass
   performance.wikimedia.beta.wmcloud.org:
-    caching: normal
-  performance.wikimedia.beta.wmflabs.org:
     caching: normal
   stream.wikimedia.beta.wmcloud.org:
     caching: normal
@@ -64,13 +60,13 @@ profile::cache::varnish::frontend::fe_vcl_config:
   enable_geoiplookup: true
   keep: 1d
   large_objects_cutoff: 262144
-  maps_domain: maps.beta.wmflabs.org
+  maps_domain: maps.wikimedia.beta.wmcloud.org
   measure_domain_regex: ^measure-(eqiad|codfw|esams|ulsfo|eqsin|drmrs)\.wikimedia\.org$
   public_clouds_shutdown: false
   purge_host_regex: ^(?!(upload\.wikimedia.beta\.wmflabs\.org|maps\.beta\.wmflabs\.org|upload\.wikimedia\.beta\.wmcloud\.org|maps\.wikimedia\.beta\.wmcloud\.org))
   shortener_domain: w.beta.wmcloud.org
   static_host: en.wikipedia.beta.wmcloud.org
-  top_domain: beta.wmflabs.org
+  top_domain: beta.wmcloud.org
   upload_domain: upload.wikimedia.beta.wmcloud.org
   upload_webp_hits_threshold: 1000
   varnish_probe_ms: 100
@@ -89,9 +85,6 @@ profile::trafficserver::backend::mapping_rules:
   - '@pparam=/etc/trafficserver/lua/x-mediawiki-original.lua'
   replacement: http://deployment-ms-fe04.deployment-prep.eqiad1.wikimedia.cloud
   target: http://upload.wikimedia.beta.wmcloud.org
-  type: map
-- replacement: http://deployment-webperf21.deployment-prep.eqiad1.wikimedia.cloud
-  target: http://performance.wikimedia.beta.wmflabs.org
   type: map
 - replacement: http://deployment-webperf21.deployment-prep.eqiad1.wikimedia.cloud
   target: http://performance.wikimedia.beta.wmcloud.org
@@ -113,9 +106,6 @@ profile::trafficserver::backend::mapping_rules:
   type: map
 - replacement: https://deployment-puppetmaster04.deployment-prep.eqiad1.wikimedia.cloud
   target: http://config-master.wikimedia.beta.wmcloud.org
-  type: map
-- replacement: https://deployment-puppetmaster04.deployment-prep.eqiad1.wikimedia.cloud
-  target: http://config-master.wikimedia.beta.wmflabs.org
   type: map
 - params:
   - '@plugin=/usr/lib/trafficserver/modules/tslua.so'
