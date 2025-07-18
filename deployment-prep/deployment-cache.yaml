@@ -43,31 +43,9 @@ profile::cache::haproxy::available_certificates:
     - /etc/acmecerts/unified/live/ec-prime256v1.chained.crt.key
     critical_threshold: 15
     server_names:
-    - '*.wikimedia.beta.wmflabs.org'
-    - beta.wmflabs.org
-    - '*.wikibooks.beta.wmflabs.org'
-    - '*.wikimedia.beta.wmflabs.org'
-    - '*.wikinews.beta.wmflabs.org'
-    - '*.wikipedia.beta.wmflabs.org'
-    - '*.wikiquote.beta.wmflabs.org'
-    - '*.wikisource.beta.wmflabs.org'
-    - '*.wikiversity.beta.wmflabs.org'
-    - '*.wikivoyage.beta.wmflabs.org'
-    - '*.wiktionary.beta.wmflabs.org'
-    - wikidata.beta.wmflabs.org
-    - www.wikidata.beta.wmflabs.org
-    - '*.m.wikibooks.beta.wmflabs.org'
-    - '*.m.wikimedia.beta.wmflabs.org'
-    - '*.m.wikinews.beta.wmflabs.org'
-    - '*.m.wikipedia.beta.wmflabs.org'
-    - '*.m.wikiquote.beta.wmflabs.org'
-    - '*.m.wikisource.beta.wmflabs.org'
-    - '*.m.wikiversity.beta.wmflabs.org'
-    - '*.m.wikivoyage.beta.wmflabs.org'
-    - '*.m.wiktionary.beta.wmflabs.org'
-    - m.wikidata.beta.wmflabs.org
     - beta.wmcloud.org
     - '*.wikibooks.beta.wmcloud.org'
+    - '*.wikidata.beta.wmcloud.org'
     - '*.wikimedia.beta.wmcloud.org'
     - '*.wikinews.beta.wmcloud.org'
     - '*.wikipedia.beta.wmcloud.org'
@@ -76,8 +54,6 @@ profile::cache::haproxy::available_certificates:
     - '*.wikiversity.beta.wmcloud.org'
     - '*.wikivoyage.beta.wmcloud.org'
     - '*.wiktionary.beta.wmcloud.org'
-    - wikidata.beta.wmcloud.org
-    - www.wikidata.beta.wmcloud.org
     - '*.m.wikibooks.beta.wmcloud.org'
     - '*.m.wikimedia.beta.wmcloud.org'
     - '*.m.wikinews.beta.wmcloud.org'
@@ -87,8 +63,33 @@ profile::cache::haproxy::available_certificates:
     - '*.m.wikiversity.beta.wmcloud.org'
     - '*.m.wikivoyage.beta.wmcloud.org'
     - '*.m.wiktionary.beta.wmcloud.org'
-    - m.wikidata.beta.wmcloud.org
     - w.beta.wmcloud.org
+    - wikidata.beta.wmcloud.org
+    - wikimedia.beta.wmcloud.org
+    - wikipedia.beta.wmcloud.org
+    - beta.wmflabs.org
+    - '*.wikibooks.beta.wmflabs.org'
+    - '*.wikidata.beta.wmflabs.org'
+    - '*.wikimedia.beta.wmflabs.org'
+    - '*.wikinews.beta.wmflabs.org'
+    - '*.wikipedia.beta.wmflabs.org'
+    - '*.wikiquote.beta.wmflabs.org'
+    - '*.wikisource.beta.wmflabs.org'
+    - '*.wikiversity.beta.wmflabs.org'
+    - '*.wikivoyage.beta.wmflabs.org'
+    - '*.wiktionary.beta.wmflabs.org'
+    - '*.m.wikibooks.beta.wmflabs.org'
+    - '*.m.wikimedia.beta.wmflabs.org'
+    - '*.m.wikinews.beta.wmflabs.org'
+    - '*.m.wikipedia.beta.wmflabs.org'
+    - '*.m.wikiquote.beta.wmflabs.org'
+    - '*.m.wikisource.beta.wmflabs.org'
+    - '*.m.wikiversity.beta.wmflabs.org'
+    - '*.m.wikivoyage.beta.wmflabs.org'
+    - '*.m.wiktionary.beta.wmflabs.org'
+    - wikidata.beta.wmflabs.org
+    - wikimedia.beta.wmflabs.org
+    - wikipedia.beta.wmflabs.org
     warning_threshold: 21
 profile::cache::haproxy::available_unified_certificates:
   lets-encrypt:
@@ -97,31 +98,9 @@ profile::cache::haproxy::available_unified_certificates:
     - /etc/acmecerts/unified/live/ec-prime256v1.chained.crt.key
     critical_threshold: 15
     server_names:
-    - '*.wikimedia.beta.wmflabs.org'
-    - beta.wmflabs.org
-    - '*.wikibooks.beta.wmflabs.org'
-    - '*.wikimedia.beta.wmflabs.org'
-    - '*.wikinews.beta.wmflabs.org'
-    - '*.wikipedia.beta.wmflabs.org'
-    - '*.wikiquote.beta.wmflabs.org'
-    - '*.wikisource.beta.wmflabs.org'
-    - '*.wikiversity.beta.wmflabs.org'
-    - '*.wikivoyage.beta.wmflabs.org'
-    - '*.wiktionary.beta.wmflabs.org'
-    - wikidata.beta.wmflabs.org
-    - www.wikidata.beta.wmflabs.org
-    - '*.m.wikibooks.beta.wmflabs.org'
-    - '*.m.wikimedia.beta.wmflabs.org'
-    - '*.m.wikinews.beta.wmflabs.org'
-    - '*.m.wikipedia.beta.wmflabs.org'
-    - '*.m.wikiquote.beta.wmflabs.org'
-    - '*.m.wikisource.beta.wmflabs.org'
-    - '*.m.wikiversity.beta.wmflabs.org'
-    - '*.m.wikivoyage.beta.wmflabs.org'
-    - '*.m.wiktionary.beta.wmflabs.org'
-    - m.wikidata.beta.wmflabs.org
     - beta.wmcloud.org
     - '*.wikibooks.beta.wmcloud.org'
+    - '*.wikidata.beta.wmcloud.org'
     - '*.wikimedia.beta.wmcloud.org'
     - '*.wikinews.beta.wmcloud.org'
     - '*.wikipedia.beta.wmcloud.org'
@@ -130,8 +109,6 @@ profile::cache::haproxy::available_unified_certificates:
     - '*.wikiversity.beta.wmcloud.org'
     - '*.wikivoyage.beta.wmcloud.org'
     - '*.wiktionary.beta.wmcloud.org'
-    - wikidata.beta.wmcloud.org
-    - www.wikidata.beta.wmcloud.org
     - '*.m.wikibooks.beta.wmcloud.org'
     - '*.m.wikimedia.beta.wmcloud.org'
     - '*.m.wikinews.beta.wmcloud.org'
@@ -141,8 +118,33 @@ profile::cache::haproxy::available_unified_certificates:
     - '*.m.wikiversity.beta.wmcloud.org'
     - '*.m.wikivoyage.beta.wmcloud.org'
     - '*.m.wiktionary.beta.wmcloud.org'
-    - m.wikidata.beta.wmcloud.org
     - w.beta.wmcloud.org
+    - wikidata.beta.wmcloud.org
+    - wikimedia.beta.wmcloud.org
+    - wikipedia.beta.wmcloud.org
+    - beta.wmflabs.org
+    - '*.wikibooks.beta.wmflabs.org'
+    - '*.wikidata.beta.wmflabs.org'
+    - '*.wikimedia.beta.wmflabs.org'
+    - '*.wikinews.beta.wmflabs.org'
+    - '*.wikipedia.beta.wmflabs.org'
+    - '*.wikiquote.beta.wmflabs.org'
+    - '*.wikisource.beta.wmflabs.org'
+    - '*.wikiversity.beta.wmflabs.org'
+    - '*.wikivoyage.beta.wmflabs.org'
+    - '*.wiktionary.beta.wmflabs.org'
+    - '*.m.wikibooks.beta.wmflabs.org'
+    - '*.m.wikimedia.beta.wmflabs.org'
+    - '*.m.wikinews.beta.wmflabs.org'
+    - '*.m.wikipedia.beta.wmflabs.org'
+    - '*.m.wikiquote.beta.wmflabs.org'
+    - '*.m.wikisource.beta.wmflabs.org'
+    - '*.m.wikiversity.beta.wmflabs.org'
+    - '*.m.wikivoyage.beta.wmflabs.org'
+    - '*.m.wiktionary.beta.wmflabs.org'
+    - wikidata.beta.wmflabs.org
+    - wikimedia.beta.wmflabs.org
+    - wikipedia.beta.wmflabs.org
     warning_threshold: 21
 profile::cache::haproxy::del_headers:
   tls:
