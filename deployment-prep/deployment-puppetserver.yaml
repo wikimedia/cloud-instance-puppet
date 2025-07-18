@@ -29,7 +29,6 @@ profile::tlsproxy::envoy::cfssl_options:
   - '%{facts.fqdn}'
   - config-master
   - config-master.wikimedia.beta.wmcloud.org
-  - config-master.wikimedia.beta.wmflabs.org
 profile::tlsproxy::envoy::ensure: present
 profile::tlsproxy::envoy::global_cert_name: '%{facts.fqdn}'
 profile::tlsproxy::envoy::retries: false
