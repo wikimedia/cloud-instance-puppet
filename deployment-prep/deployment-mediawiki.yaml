@@ -36,6 +36,7 @@ profile::tlsproxy::envoy::cfssl_options:
   - wikimedia.beta.wmcloud.org
   - wikipedia.beta.wmcloud.org
   - '*.wikibooks.beta.wmflabs.org'
+  - '*.wikidata.beta.wmflabs.org'
   - '*.wikimedia.beta.wmflabs.org'
   - '*.wikinews.beta.wmflabs.org'
   - '*.wikipedia.beta.wmflabs.org'
@@ -44,7 +45,6 @@ profile::tlsproxy::envoy::cfssl_options:
   - '*.wikiversity.beta.wmflabs.org'
   - '*.wikivoyage.beta.wmflabs.org'
   - '*.wiktionary.beta.wmflabs.org'
-  - '*.wikidata.beta.wmflabs.org'
   - '*.m.wikibooks.beta.wmflabs.org'
   - '*.m.wikimedia.beta.wmflabs.org'
   - '*.m.wikinews.beta.wmflabs.org'
