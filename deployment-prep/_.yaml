@@ -355,6 +355,7 @@ apt::use_experimental: true
 aptly::group: wikidev
 aptly::manage_nginx: false
 aptly::owner: jenkins-deploy
+bd808: wuz here (testing git history update)
 beta::syncsiteresources::user: www-data
 confd::srv_dns: ''
 conftool::hosts: []
