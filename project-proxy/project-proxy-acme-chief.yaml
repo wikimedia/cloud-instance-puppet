@@ -2,7 +2,7 @@ profile::acme_chief::accounts:
   c98be4b64bc07c6ab71627b78fcdeb0e:
     directory: https://acme-v02.api.letsencrypt.org/directory
     regr: '{"body": {}, "uri": "https://acme-v02.api.letsencrypt.org/acme/acct/87887184"}'
-profile::acme_chief::active: project-proxy-acme-chief-02.project-proxy.eqiad1.wikimedia.cloud
+profile::acme_chief::active: project-proxy-acme-chief-03.project-proxy.eqiad1.wikimedia.cloud
 profile::acme_chief::certificates:
   customcatalyst:
     CN: catalyst.wmcloud.org
@@ -116,7 +116,7 @@ profile::acme_chief::cloud::designate_sync_username: project-proxy-dns-manager
 profile::acme_chief::http_challenge_support: present
 profile::acme_chief::passive: []
 profile::ssh::client::extra_ssh_keys:
-  project-proxy-acme-chief-02.project-proxy.eqiad1.wikimedia.cloud:
+  project-proxy-acme-chief-03.project-proxy.eqiad1.wikimedia.cloud:
     key: AAAAC3NzaC1lZDI1NTE5AAAAIG0ARyNw7KNOEm8YjwVXctaUt41gzrsvIn8yfDdRZFaa
     type: ssh-ed25519
 profile::ssh::client::manage_ssh_keys: true
