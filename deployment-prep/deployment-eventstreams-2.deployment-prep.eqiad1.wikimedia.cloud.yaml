@@ -88,4 +88,4 @@ profile::docker::runner::service_defs:
     namespace: repos/data-engineering
     override_cmd: /srv/service/server.js -c /etc/eventstreams/config.yaml
     port: 8092
-    version: v0.15.0
+    version: v0.17.0
