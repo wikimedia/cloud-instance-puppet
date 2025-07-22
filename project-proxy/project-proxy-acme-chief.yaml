@@ -2,7 +2,7 @@ profile::acme_chief::accounts:
   c98be4b64bc07c6ab71627b78fcdeb0e:
     directory: https://acme-v02.api.letsencrypt.org/directory
     regr: '{"body": {}, "uri": "https://acme-v02.api.letsencrypt.org/acme/acct/87887184"}'
-profile::acme_chief::active: project-proxy-acme-chief-02.project-proxy.eqiad1.wikimedia.cloud
+profile::acme_chief::active: project-proxy-acme-chief-03.project-proxy.eqiad1.wikimedia.cloud
 profile::acme_chief::certificates:
   customcatalyst:
     CN: catalyst.wmcloud.org
