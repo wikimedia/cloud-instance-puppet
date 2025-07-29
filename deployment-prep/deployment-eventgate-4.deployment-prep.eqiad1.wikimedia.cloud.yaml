@@ -4,6 +4,9 @@ profile::docker::engine::settings: {}
 profile::docker::runner::service_defs:
   eventgate-analytics:
     config:
+      metrics:
+      - port: 9102
+        type: prometheus
       num_workers: 0
       services:
       - conf:
@@ -97,6 +100,9 @@ profile::docker::runner::service_defs:
     version: v1.18.0
   eventgate-logging-external:
     config:
+      metrics:
+      - port: 9102
+        type: prometheus
       num_workers: 0
       services:
       - conf:
@@ -141,6 +147,9 @@ profile::docker::runner::service_defs:
     version: v1.18.0
   eventgate-main:
     config:
+      metrics:
+      - port: 9102
+        type: prometheus
       num_workers: 0
       services:
       - conf:
