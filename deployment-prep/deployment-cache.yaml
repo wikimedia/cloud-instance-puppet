@@ -39,7 +39,6 @@ profile::cache::haproxy::add_headers:
 profile::cache::haproxy::available_certificates:
   unified:
     cert_paths:
-    - /etc/acmecerts/unified/live/rsa-2048.chained.crt.key
     - /etc/acmecerts/unified/live/ec-prime256v1.chained.crt.key
     critical_threshold: 15
     server_names:
