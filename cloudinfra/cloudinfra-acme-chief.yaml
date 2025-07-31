@@ -11,34 +11,16 @@ profile::acme_chief::certificates:
     - ^enc-[12]\.cloudinfra\.eqiad1\.wikimedia\.cloud$
     challenge: dns-01
   mx:
-    CN: mx-out.wmflabs.org
+    CN: mx-out-a.wmcloud.org
     SNI:
-    - mx-out01.wmflabs.org
-    - mx-out02.wmflabs.org
-    - mx-out.wmcloud.org
-    - mx-out01.wmcloud.org
-    - mx-out02.wmcloud.org
-    - mx-out01.cloudinfra.eqiad1.wikimedia.cloud
-    - mx-out02.cloudinfra.eqiad1.wikimedia.cloud
-    - mx-out03.wmflabs.org
-    - mx-out04.wmflabs.org
-    - mx-out03.wmcloud.org
-    - mx-out04.wmcloud.org
-    - mx-out03.cloudinfra.eqiad1.wikimedia.cloud
-    - mx-out04.cloudinfra.eqiad1.wikimedia.cloud
-    - mx-out05.wmflabs.org
-    - mx-out06.wmflabs.org
-    - mx-out05.wmcloud.org
-    - mx-out06.wmcloud.org
-    - mx-out05.cloudinfra.eqiad1.wikimedia.cloud
-    - mx-out06.cloudinfra.eqiad1.wikimedia.cloud
     - mx-out-a.wmcloud.org
     - mx-out-b.wmcloud.org
-    - mx-out-a.cloudinfra.eqiad1.wikimedia.cloud
-    - mx-out-b.cloudinfra.eqiad1.wikimedia.cloud
+    - mx-out03.wmcloud.org
+    - mx-out04.wmcloud.org
+    - mx-out05.cloudinfra.eqiad1.wikimedia.cloud
+    - mx-out06.cloudinfra.eqiad1.wikimedia.cloud
     authorized_regexes:
-    - ^.+\.cloudinfra\.eqiad\.wmflabs$
-    - ^.+\.cloudinfra\.eqiad1\.wikimedia\.cloud$
+    - ^mx-out-\d+\.cloudinfra\.eqiad1\.wikimedia\.cloud$
     challenge: dns-01
   rsyslog:
     CN: syslogaudit.svc.eqiad1.wikimedia.cloud
