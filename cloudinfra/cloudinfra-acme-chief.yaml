@@ -20,7 +20,7 @@ profile::acme_chief::certificates:
     - mx-out05.cloudinfra.eqiad1.wikimedia.cloud
     - mx-out06.cloudinfra.eqiad1.wikimedia.cloud
     authorized_regexes:
-    - ^mx-out-\d+\.cloudinfra\.eqiad1\.wikimedia\.cloud$
+    - ^mx-out\d+\.cloudinfra\.eqiad1\.wikimedia\.cloud$
     challenge: dns-01
   rsyslog:
     CN: syslogaudit.svc.eqiad1.wikimedia.cloud
