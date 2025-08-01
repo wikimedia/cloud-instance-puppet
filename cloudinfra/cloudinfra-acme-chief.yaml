@@ -4,12 +4,11 @@ profile::acme_chief::accounts:
     regr: '{"body": {}, "uri": "https://acme-v02.api.letsencrypt.org/acme/acct/108357291"}'
 profile::acme_chief::active: cloudinfra-acme-chief-02.cloudinfra.eqiad1.wikimedia.cloud
 profile::acme_chief::certificates:
-  dockerregistry:
-    CN: docker.wmcloud.org
-    SNI:
-    - dockerregistry.wmcloud.org
+  docker-registry:
+    CN: docker-registry.wmcloud.org
+    SNI: []
     authorized_regexes:
-    - ^docker-registry-[0-9]+\.cloudinfra\.eqiad\.wmflabs$
+    - ^docker-registry-[0-9]+\.cloudinfra\.eqiad\.wikimedia.cloud$
     challenge: dns-01
   enc:
     CN: puppet-enc.cloudinfra.wmcloud.org
