@@ -1,5 +1,7 @@
 docker::builder_host: localhost
+docker::password_hash: fake
 docker::registry: localhost
+docker::username: docker
 profile::toolforge::docker::registry::active_node: docker-registry-testdev-2.magnum.codfw1dev.wikimedia.cloud
 profile::toolforge::docker::registry::ssl_certificate_name: docker-registry
 profile::toolforge::docker::registry::standby_node: docker-registry-testdev-2.magnum.codfw1dev.wikimedia.cloud
