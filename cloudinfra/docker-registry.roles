@@ -1,1 +1,2 @@
 - profile::toolforge::docker::registry
+- profile::toolforge::docker::image_builder
