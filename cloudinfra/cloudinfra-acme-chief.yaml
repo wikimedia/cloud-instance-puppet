@@ -8,7 +8,7 @@ profile::acme_chief::certificates:
     CN: docker-registry.wmcloud.org
     SNI: []
     authorized_regexes:
-    - ^docker-registry-[0-9]+\.cloudinfra\.eqiad\.wikimedia.cloud$
+    - ^docker-registry-[0-9]+\.cloudinfra\.eqiad1\.wikimedia.cloud$
     challenge: dns-01
   enc:
     CN: puppet-enc.cloudinfra.wmcloud.org
