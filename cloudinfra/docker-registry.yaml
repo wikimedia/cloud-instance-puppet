@@ -5,4 +5,4 @@ docker::username: docker
 profile::toolforge::docker::registry::active_node: docker-registry-testdev-2.magnum.codfw1dev.wikimedia.cloud
 profile::toolforge::docker::registry::ssl_certificate_name: dockerregistry
 profile::toolforge::docker::registry::standby_node: docker-registry-testdev-2.magnum.codfw1dev.wikimedia.cloud
-puppetmaster: magnum-puppetserver-testdev.magnum.codfw1dev.wikimedia.cloud
+puppetmaster: cloudinfra-internal-puppetserver-1.cloudinfra.eqiad1.wikimedia.cloud
