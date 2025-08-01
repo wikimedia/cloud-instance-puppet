@@ -1,4 +1,4 @@
-docker::builder_host: localhost
+docker::builder_host: 172.16.18.89
 docker::password_hash: fake
 docker::registry: localhost
 docker::username: docker
