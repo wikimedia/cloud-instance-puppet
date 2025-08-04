@@ -1,5 +1,4 @@
 docker::builder_host: localhost
-docker::password_hash: fake
 docker::registry: docker-registry.wmcloud.org
 docker::username: docker
 profile::toolforge::docker::registry::active_node: docker-registry-testdev-2.magnum.codfw1dev.wikimedia.cloud
