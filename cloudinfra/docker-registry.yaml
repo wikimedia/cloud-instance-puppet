@@ -1,4 +1,4 @@
-docker::builder_host: localhost
+docker::builder_host: docker-registry.wmcloud.org
 docker::registry: docker-registry.wmcloud.org
 docker::username: docker
 profile::toolforge::docker::registry::active_node: docker-registry-testdev-2.magnum.codfw1dev.wikimedia.cloud
