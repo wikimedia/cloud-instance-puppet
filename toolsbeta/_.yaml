@@ -62,6 +62,9 @@ profile::ssh::server::disable_agent_forwarding: false
 profile::ssh::server::disable_nist_kex: false
 profile::ssh::server::explicit_macs: false
 profile::ssh::server::puppetserver_ca_host_certs: true
+profile::systemd::timesyncd::ntp_servers:
+- ntp-5.cloudinfra.eqiad1.wikimedia.cloud
+- ntp-6.cloudinfra.eqiad1.wikimedia.cloud
 profile::toolforge::active_mail_relay: toolsbeta-mail-2.toolsbeta.eqiad1.wikimedia.cloud
 profile::toolforge::disable_tool::disable_tool_db_password: dummy
 profile::toolforge::docker::registry::active_node: toolsbeta-docker-registry-02.toolsbeta.eqiad1.wikimedia.cloud
