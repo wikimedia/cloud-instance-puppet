@@ -53,6 +53,6 @@ profile::wmcs::metricsinfra::prometheus_manager::sync_exclude_projects:
 - admin-monitoring
 - trove
 profile::wmcs::metricsinfra::thanos_fe_hosts:
-- metricsinfra-thanos-fe-1.metricsinfra.eqiad1.wikimedia.cloud
+- metricsinfra-thanos-fe-2.metricsinfra.eqiad1.wikimedia.cloud
 prometheus::node_puppet_agent::debug: true
 puppetmaster: metricsinfra-puppetserver-1.metricsinfra.eqiad1.wikimedia.cloud
