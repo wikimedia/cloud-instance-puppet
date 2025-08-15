@@ -1,1 +1,1 @@
-base::sysctl::inotify::max_user_instances: 1028
+base::sysctl::inotify::max_user_instances: 1024
