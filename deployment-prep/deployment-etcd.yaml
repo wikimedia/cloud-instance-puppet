@@ -6,7 +6,6 @@ profile::etcd::v3::discovery: '%{::hostname}=https://%{::fqdn}:2380'
 profile::etcd::v3::max_latency: 100
 profile::etcd::v3::use_client_certs: false
 profile::etcd::v3::use_pki_certs: true
-prometheus::instances: {}
 prometheus::instances_defaults:
   hosts: null
   k8s_cluster_name: null
