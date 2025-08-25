@@ -1,1 +1,9 @@
 bd808: wuz here
+booleanValueFalse: false
+booleanValueTrue: true
+nullValue: null
+numberValue: 123
+profile::kubernetes::client::version: '1.31'
+profile::puppetserver::autosign: true
+puppetmaster: puppet
+stringValue: '123'
