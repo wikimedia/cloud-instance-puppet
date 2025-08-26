@@ -2,11 +2,11 @@ bd808: wuz here
 booleanValueFalse: false
 booleanValueTrue: true
 mapValue:
-  first:
+  arrayValue:
   - 1
-  fourth: null
-  second: 2
-  third: '3'
+  nullValue: null
+  numberValue: 2
+  stringValue: '3'
 nullValue: null
 numberValue: 123
 profile::kubernetes::client::version: '1.31'
