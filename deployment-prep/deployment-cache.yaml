@@ -136,6 +136,7 @@ profile::cache::haproxy::redirection_timeout:
   keep_alive: 3
   server: 0
   tunnel: 0
+profile::cache::haproxy::set_x_provenance: true
 profile::cache::haproxy::timeout:
   client: 120
   client_fin: 120
