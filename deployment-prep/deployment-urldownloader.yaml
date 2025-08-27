@@ -5,3 +5,4 @@ profile::hcaptcha::proxy::nginx_ipblinding_conf: ''
 profile::hcaptcha::proxy::nginx_private_conf: proxy_set_header X-Clacks-Overhead "GNU
   Terry Pratchett";
 profile::hcaptcha::proxy::wikimedia_domains: '%{alias(''wikimedia_domains'')}'
+profile::nginx::variant: extras
