@@ -1,5 +1,8 @@
 abuse_networks:
   allowed_nets:
+    comment: 'T393481: Allow traffic to these networks'
+    context:
+    - varnish
     networks:
     - 69.92.197.0/24
   blocked_nets:
