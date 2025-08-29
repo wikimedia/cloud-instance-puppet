@@ -1,6 +1,10 @@
 abuse_networks:
+  allowed_nets:
+    networks:
+    - 69.92.197.0/24
   blocked_nets:
     networks:
+    - 69.92.197.0/24
     - 5.0.0.0/8
     - 13.0.0.0/8
     - 14.0.0.0/9
