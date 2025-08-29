@@ -80,7 +80,7 @@ profile::toolforge::k8s::kubernetes_version: 1.21.8
 profile::toolforge::mail_domain: beta.toolforge.org
 profile::toolforge::mail_domains:
 - beta.toolforge.org
-- toolsbeta.wmflabs.org
+- toolsbeta.org
 - toolsbeta.wmcloud.org
 profile::toolforge::prometheus::probes_pingthing_http_check_urls:
 - https://toolsbeta-harbor.wmcloud.org/api/v2.0/ping
