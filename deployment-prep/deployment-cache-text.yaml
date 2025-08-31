@@ -53,20 +53,6 @@ profile::cache::varnish::frontend::enable_http_redirection: false
 profile::cache::varnish::frontend::fe_extra_vcl:
 - normalize_path
 - geoip
-profile::cache::varnish::frontend::fe_vcl_config:
-  block_help: see https://wikitech.wikimedia.org/wiki/Beta/Blocked for more information.
-  keep: 1d
-  large_objects_cutoff: 262144
-  maps_domain: maps.wikimedia.beta.wmcloud.org
-  measure_domain_regex: ^measure-(eqiad|codfw|esams|ulsfo|eqsin|drmrs)\.wikimedia\.org$
-  public_clouds_shutdown: false
-  purge_host_regex: ^.*\.beta\.wmcloud\.org$
-  shortener_domain: w.beta.wmcloud.org
-  static_host: en.wikipedia.beta.wmcloud.org
-  top_domain: beta.wmcloud.org
-  upload_domain: upload.wikimedia.beta.wmcloud.org
-  upload_webp_hits_threshold: 1000
-  varnish_probe_ms: 100
 profile::cache::varnish::frontend::separate_vcl:
 - misc
 profile::cache::varnish::separate_vcl:
