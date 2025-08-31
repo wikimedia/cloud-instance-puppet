@@ -55,7 +55,6 @@ profile::cache::varnish::frontend::fe_extra_vcl:
 - geoip
 profile::cache::varnish::frontend::fe_vcl_config:
   block_help: see https://wikitech.wikimedia.org/wiki/Beta/Blocked for more information.
-  enable_geoiplookup: true
   keep: 1d
   large_objects_cutoff: 262144
   maps_domain: maps.wikimedia.beta.wmcloud.org
