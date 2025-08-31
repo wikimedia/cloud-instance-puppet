@@ -54,7 +54,6 @@ profile::cache::varnish::frontend::fe_extra_vcl:
 - normalize_path
 - geoip
 profile::cache::varnish::frontend::fe_vcl_config:
-  admission_policy: none
   block_help: see https://wikitech.wikimedia.org/wiki/Beta/Blocked for more information.
   enable_geoiplookup: true
   keep: 1d
