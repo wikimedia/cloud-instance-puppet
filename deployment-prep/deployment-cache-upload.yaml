@@ -18,19 +18,6 @@ profile::cache::ssl::unified::certs_active: []
 profile::cache::ssl::unified::letsencrypt: false
 profile::cache::varnish::frontend::fe_extra_vcl:
 - normalize_path
-profile::cache::varnish::frontend::fe_vcl_config:
-  block_help: see https://wikitech.wikimedia.org/wiki/Beta/Blocked for more information.
-  keep: 1d
-  large_objects_cutoff: 262144
-  maps_domain: maps.wikimedia.beta.wmcloud.org
-  measure_domain_regex: ^measure-(eqiad|codfw|esams|ulsfo|eqsin|drmrs)\.wikimedia\.org$
-  purge_host_regex: ^.*\.beta\.wmcloud\.org$
-  shortener_domain: w.beta.wmcloud.org
-  static_host: en.wikipedia.beta.wmcloud.org
-  top_domain: beta.wmflabs.org
-  upload_domain: upload.wikimedia.beta.wmcloud.org
-  upload_webp_hits_threshold: 1000
-  varnish_probe_ms: 100
 profile::trafficserver::backend::mapping_rules:
 - params:
   - '@plugin=/usr/lib/trafficserver/modules/tslua.so'
