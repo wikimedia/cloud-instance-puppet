@@ -85,8 +85,8 @@ profile::toolforge::mail_domains:
 profile::toolforge::prometheus::probes_pingthing_http_check_urls:
 - https://toolsbeta-harbor.wmcloud.org/api/v2.0/ping
 profile::toolforge::web_domain: beta.toolforge.org
-profile::wmcs::kubeadm::component: thirdparty/kubeadm-k8s-1-29
-profile::wmcs::kubeadm::kubernetes_version: 1.29.15
+profile::wmcs::kubeadm::component: thirdparty/kubeadm-k8s-1-30
+profile::wmcs::kubeadm::kubernetes_version: 1.30.14
 prometheus::haproxy_exporter::endpoint: http://localhost:9900/stats;csv
 prometheus::node_exporter::collectors_extra:
 - processes
