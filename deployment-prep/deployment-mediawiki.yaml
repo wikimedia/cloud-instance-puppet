@@ -1,5 +1,10 @@
 profile::envoy::ensure: present
+profile::mediawiki::php::absented_php_versions:
+- '8.1'
 profile::mediawiki::php::increase_open_files: true
+profile::mediawiki::php::php_versions:
+- '8.3'
+profile::mediawiki::webserver::default_php_version: '8.3'
 profile::mediawiki::webserver::has_tls: true
 profile::pki::client::ensure: present
 profile::rsyslog::kafka_shipper::json_lines_port: 10514
