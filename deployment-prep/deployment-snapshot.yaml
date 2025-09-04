@@ -5,7 +5,6 @@ dumps_managed_subdirs:
 - /mnt/dumpsdata/xmldatadumps/private
 - /mnt/dumpsdata/xmldatadumps/temp
 dumps_nfs_server: ''
-mediawiki_php7: true
 profile::dumps::generation::worker::common::php: /usr/bin/php8.1
 profile::mediawiki::php::php_versions:
 - '8.1'
