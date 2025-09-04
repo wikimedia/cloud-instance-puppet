@@ -4,7 +4,6 @@ profile::ci::slave::labs::common::manage_srv: false
 profile::java::java_packages:
 - variant: jre-headless
   version: '17'
-profile::mediawiki::mcrouter_wancache::use_onhost_memcached: false
 profile::mediawiki::php::absented_php_versions:
 - '8.1'
 profile::mediawiki::php::php_versions:
