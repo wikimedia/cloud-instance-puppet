@@ -76,6 +76,7 @@ profile::docker::runner::service_defs:
       worker_heap_limit_mb: 750
       worker_heartbeat_timeout: 15000
     environment:
+      NODE_ENV: beta
       NODE_TLS_REJECT_UNAUTHORIZED: 0
     namespace: wikimedia
     override_cmd: -c /etc/mediawiki-services-mobileapps/config.yaml
