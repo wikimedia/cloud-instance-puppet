@@ -51,6 +51,7 @@ profile::docker::runner::service_defs:
             body: '{{ default(request.query, {}) }}'
             headers:
               accept-language: '{{accept-language}}'
+              content-type: application/x-www-form-urlencoded
               host: '{{request.params.domain}}'
               user-agent: '{{user-agent}}'
             method: post
