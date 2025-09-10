@@ -28,6 +28,8 @@ profile::docker::runner::service_defs:
             method: GET
             uri: https://deployment-mediawiki14.deployment-prep.eqiad1.wikimedia.cloud/w/rest.php/v1/revision/{{revision}}/with_html
           cors: '*'
+          http_client:
+            use_service_mesh: false
           mobile_html_csp: 'default-src ''none''; connect-src app://*.wikipedia.org
             https://*.wikipedia.org; media-src app://upload.wikimedia.org https://upload.wikimedia.org
             ''self''; img-src app://*.wikimedia.org https://*.wikimedia.org app://wikimedia.org
