@@ -1,2 +1,1 @@
-profile::toolforge::k8s::apiserver_fqdn: k8s.toolsbeta.eqiad1.wikimedia.cloud
 profile::toolforge::prometheus::storage_retention_size: 9GB
