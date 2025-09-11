@@ -74,6 +74,7 @@ profile::toolforge::elasticsearch::keepalived::vip: 172.16.1.131
 profile::toolforge::etcdir: /var/lib/gridengine/etc
 profile::toolforge::harbor::db_primary: w6pgt6thhot.svc.trove.eqiad1.wikimedia.cloud
 profile::toolforge::harbor::url: toolsbeta-harbor.wmcloud.org
+profile::toolforge::k8s::apiserver_fqdn: k8s.svc.toolsbeta.eqiad1.wikimedia.cloud
 profile::toolforge::k8s::calico_version: v3.21.0
 profile::toolforge::k8s::client::buildservice_repository: toolsbeta-harbor.wmcloud.org
 profile::toolforge::k8s::kubernetes_version: 1.21.8
