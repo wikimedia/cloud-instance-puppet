@@ -13,7 +13,9 @@ profile::wmcs::novaproxy::proxy_dns_ipv6: 2a02:ec80:a000:1::1d
 profile::wmcs::novaproxy::use_ssl: true
 profile::wmcs::novaproxy::xff_fqdns:
 - accounts.wmflabs.org
+- accounts.wmcloud.org
 - accounts-dev.wmflabs.org
+- accounts-dev.wmcloud.org
 - google-api-proxy.wmflabs.org
 - googlevision-api-proxy.wmflabs.org
 - utrs-beta.wmflabs.org
