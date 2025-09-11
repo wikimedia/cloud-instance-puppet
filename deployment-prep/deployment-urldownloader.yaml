@@ -1,3 +1,5 @@
+lvs::realserver::realserver_ips:
+- 10.2.2.12
 profile::hcaptcha::hcaptcha_secret: s3cr3t
 profile::hcaptcha::hcaptcha_sitekey: somesitekey
 profile::hcaptcha::proxy::ip_hash_salt: nomnomnom
