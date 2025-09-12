@@ -22,7 +22,7 @@ service::catalog:
     encryption: true
     ip:
       eqiad:
-        default: 127.0.0.1
+        default: 127.0.0.2
     lvs:
       class: low-traffic
       conftool:
