@@ -96,6 +96,8 @@ profile::trafficserver::backend::mapping_rules:
   - '@pparam="3A 40 21 24 28 29 2A 2C 3B 27"'
   - '@pparam="5B 5D 26 2B 3D"'
   - '@plugin=/usr/lib/trafficserver/modules/tslua.so'
+  - '@pparam=/etc/trafficserver/lua/rb-mw-mangling-beta.lua'
+  - '@plugin=/usr/lib/trafficserver/modules/tslua.so'
   - '@pparam=/etc/trafficserver/lua/rb-mw-mangling.lua'
   - '@plugin=/usr/lib/trafficserver/modules/conf_remap.so'
   - '@pparam=proxy.config.http.server_session_sharing.match=ip'
@@ -103,6 +105,8 @@ profile::trafficserver::backend::mapping_rules:
   target: http://(.*)/api/rest_v1
   type: regex_map
 - params:
+  - '@plugin=/usr/lib/trafficserver/modules/tslua.so'
+  - '@pparam=/etc/trafficserver/lua/rb-mw-mangling-beta.lua'
   - '@plugin=/usr/lib/trafficserver/modules/tslua.so'
   - '@pparam=/etc/trafficserver/lua/rb-mw-mangling.lua'
   replacement: http://deployment-mediawiki13.deployment-prep.eqiad1.wikimedia.cloud/w/api.php
@@ -114,9 +118,9 @@ profile::trafficserver::backend::mapping_rules:
   - '@pparam="3A 2F 40 21 24 28 29 2A 2C 3B"'
   - '@pparam="5B 5D 26 27 2B 3D"'
   - '@plugin=/usr/lib/trafficserver/modules/tslua.so'
-  - '@pparam=/etc/trafficserver/lua/rb-mw-mangling.lua'
-  - '@plugin=/usr/lib/trafficserver/modules/tslua.so'
   - '@pparam=/etc/trafficserver/lua/rb-mw-mangling-beta.lua'
+  - '@plugin=/usr/lib/trafficserver/modules/tslua.so'
+  - '@pparam=/etc/trafficserver/lua/rb-mw-mangling.lua'
   replacement: http://deployment-mediawiki14.deployment-prep.eqiad1.wikimedia.cloud
   target: /
   type: map
