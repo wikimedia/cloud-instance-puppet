@@ -13,36 +13,37 @@ profile::nginx::managed: false
 profile::nginx::modules:
 - lua
 profile::nginx::variant: extras
-proxoid:
-  description: dummy config to ensure clean puppet run
-  discovery:
-  - active_active: true
-    dnsdisc: proxoid
-  encryption: true
-  ip:
-    eqiad:
-      default: 127.0.0.1
-  lvs:
-    class: low-traffic
-    conftool:
-      cluster: proxoid
-      service: nginx
-    depool_threshold: 0.5
-    enabled: true
-    monitors:
-      IdleConnection:
-        max-delay: 300
-        timeout-clean-reconnect: 3
-      ProxyFetch:
-        url:
-        - http://localhost/healthz
-    scheduler: mh
-    scheduler_flag: mh-port
-  page: false
-  port: 4260
-  probes:
-  - path: /healthz
-    type: http
-  sites:
-  - eqiad
-  state: production
+service::catalog:
+  proxoid:
+    description: dummy config to ensure clean puppet run
+    discovery:
+    - active_active: true
+      dnsdisc: proxoid
+    encryption: true
+    ip:
+      eqiad:
+        default: 127.0.0.1
+    lvs:
+      class: low-traffic
+      conftool:
+        cluster: proxoid
+        service: nginx
+      depool_threshold: 0.5
+      enabled: true
+      monitors:
+        IdleConnection:
+          max-delay: 300
+          timeout-clean-reconnect: 3
+        ProxyFetch:
+          url:
+          - http://localhost/healthz
+      scheduler: mh
+      scheduler_flag: mh-port
+    page: false
+    port: 4260
+    probes:
+    - path: /healthz
+      type: http
+    sites:
+    - eqiad
+    state: production
