@@ -7,7 +7,9 @@ profile::hcaptcha::proxy::nginx_private_conf: proxy_set_header X-Clacks-Overhead
   Terry Pratchett";
 profile::hcaptcha::proxy::wikimedia_domains: '%{alias(''wikimedia_domains'')}'
 profile::lvs::realserver::pools:
-  proxoid: {}
+  proxoid:
+    services:
+    - nginx
 profile::nginx::managed: false
 profile::nginx::modules:
 - lua
