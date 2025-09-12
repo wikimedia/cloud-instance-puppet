@@ -20,8 +20,6 @@ proxoid:
     dnsdisc: proxoid
   encryption: true
   ip:
-    codfw:
-      default: 127.0.0.1
     eqiad:
       default: 127.0.0.1
   lvs:
@@ -47,5 +45,4 @@ proxoid:
     type: http
   sites:
   - eqiad
-  - codfw
   state: production
