@@ -71,7 +71,6 @@ profile::toolforge::docker::registry::active_node: toolsbeta-docker-registry-02.
 profile::toolforge::docker::registry::standby_node: undef
 profile::toolforge::elasticsearch::keepalived::host_priority: 100
 profile::toolforge::elasticsearch::keepalived::vip: 172.16.1.131
-profile::toolforge::etcdir: /var/lib/gridengine/etc
 profile::toolforge::harbor::db_primary: w6pgt6thhot.svc.trove.eqiad1.wikimedia.cloud
 profile::toolforge::harbor::url: toolsbeta-harbor.wmcloud.org
 profile::toolforge::k8s::apiserver_fqdn: k8s.svc.toolsbeta.eqiad1.wikimedia.cloud
