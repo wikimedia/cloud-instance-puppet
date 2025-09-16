@@ -49,7 +49,7 @@ profile::docker::runner::service_defs:
     namespace: repos/data-engineering
     override_cmd: /srv/service/node_modules/.bin/eventgate -c /etc/eventgate-analytics/config.yaml
     port: 8192
-    version: v1.19.0
+    version: service-utils-migration-633b4604
   eventgate-analytics-external:
     config:
       metrics:
@@ -144,7 +144,7 @@ profile::docker::runner::service_defs:
     namespace: repos/data-engineering
     override_cmd: /srv/service/node_modules/.bin/eventgate -c /etc/eventgate-logging-external/config.yaml
     port: 8992
-    version: v1.19.0
+    version: service-utils-migration-633b4604
   eventgate-main:
     config:
       metrics:
