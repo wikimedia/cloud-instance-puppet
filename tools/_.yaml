@@ -56,18 +56,11 @@ profile::rsyslog::kubernetes::enable: false
 profile::ssh::server::challenge_response_auth: false
 profile::ssh::server::disable_agent_forwarding: false
 profile::ssh::server::explicit_macs: false
-profile::toolforge::active_cronrunner: tools-sgecron-2.tools.eqiad1.wikimedia.cloud
 profile::toolforge::active_mail_relay: tools-mail-4.tools.eqiad1.wikimedia.cloud
-profile::toolforge::active_proxy_host: tools-proxy-06
-profile::toolforge::checker_hosts:
-- tools-checker-04.tools.eqiad1.wikimedia.cloud
 profile::toolforge::harbor::url: tools-harbor.wmcloud.org
 profile::toolforge::k8s::client::buildservice_repository: tools-harbor.wmcloud.org
 profile::toolforge::prometheus::probes_pingthing_http_check_urls:
 - https://tools-harbor.wmcloud.org/api/v2.0/ping
-profile::toolforge::proxies:
-- tools-proxy-05.tools.eqiad.wmflabs
-- tools-proxy-06.tools.eqiad.wmflabs
 profile::wmcs::kubeadm::component: thirdparty/kubeadm-k8s-1-30
 profile::wmcs::kubeadm::kubernetes_version: 1.30.14
 prometheus::node_exporter::collectors_extra:
