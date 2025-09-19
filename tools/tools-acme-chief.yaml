@@ -13,8 +13,8 @@ profile::acme_chief::certificates:
     - tools.wmflabs.org
     - '*.tools.wmflabs.org'
     authorized_regexes:
-    - ^tools-proxy-[0-9]+\.tools\.eqiad\.wmflabs$
     - ^tools-proxy-[0-9]+\.tools\.eqiad1\.wikimedia\.cloud$
+    - ^tools-k8s-haproxy-[0-9]+\.tools\.eqiad1\.wikimedia\.cloud$
     - ^tools-docker-registry-[0-9]+\.tools\.eqiad1\.wikimedia\.cloud$
     - ^tools-harbor-[0-9]+\.tools\.eqiad1\.wikimedia\.cloud$
     challenge: dns-01
