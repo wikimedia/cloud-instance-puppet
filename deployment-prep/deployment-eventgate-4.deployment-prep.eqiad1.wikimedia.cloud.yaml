@@ -8,6 +8,7 @@ profile::docker::runner::service_defs:
       - port: 9102
         type: prometheus
       num_workers: 0
+      service_name: eventgate-analytics
       services:
       - conf:
           allow_absolute_schema_uris: false
@@ -56,6 +57,7 @@ profile::docker::runner::service_defs:
       - port: 9103
         type: prometheus
       num_workers: 0
+      service_name: eventgate-analytics-external
       services:
       - conf:
           allow_absolute_schema_uris: false
@@ -104,6 +106,7 @@ profile::docker::runner::service_defs:
       - port: 9104
         type: prometheus
       num_workers: 0
+      service_name: eventgate-logging-external
       services:
       - conf:
           allow_absolute_schema_uris: true
@@ -151,6 +154,7 @@ profile::docker::runner::service_defs:
       - port: 9105
         type: prometheus
       num_workers: 0
+      service_name: eventgate-main
       services:
       - conf:
           allow_absolute_schema_uris: false
