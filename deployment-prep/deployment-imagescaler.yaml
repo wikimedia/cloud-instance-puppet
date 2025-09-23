@@ -96,7 +96,7 @@ profile::prometheus::statsd_exporter::mappings:
 swift::proxy::private_container_list:
 - wikisource-en-local-public
 thumbor::mediawiki::shared_secret: 411urthumbs4r3b3longtoUS
-thumbor::poolcounter_server: deployment-poolcounter05.deployment-prep.eqiad.wmflabs
+thumbor::poolcounter_server: deployment-poolcounter07.deployment-prep.eqiad1.wikimedia.cloud
 thumbor::stl_support: true
 thumbor_memcached_servers:
 - deployment-imagescaler01.eqiad.wmflabs
