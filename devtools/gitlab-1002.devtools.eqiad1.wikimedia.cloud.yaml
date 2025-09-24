@@ -1,13 +1,1 @@
-profile::gitlab::active_host: gitlab-1002.devtools.eqiad1.wikimedia.cloud
-profile::gitlab::enable_custom_exporter: false
-profile::gitlab::external_url: https://%{lookup('profile::gitlab::service_name')}/
-profile::gitlab::nginx_listen_addresses:
-- '%{lookup(''profile::gitlab::service_ip_v4'')}'
-- '%{lookup(''profile::gitlab::service_ip_v6'')}'
-profile::gitlab::service_ip_v4: 172.16.16.36
-profile::gitlab::service_ip_v6: 2a02:ec80:a000:1::285
-profile::gitlab::service_name: gitlab.devtools.wmcloud.org
-profile::gitlab::ssh_listen_addresses:
-- '%{lookup(''profile::gitlab::service_ip_v4'')}'
-- '%{lookup(''profile::gitlab::service_ip_v6'')}'
-puppetmaster: puppetmaster-1003.devtools.eqiad1.wikimedia.cloud
+{}
