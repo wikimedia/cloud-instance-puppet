@@ -7,6 +7,7 @@ profile::toolforge::k8s::control_nodes:
 - tools-k8s-control-9.tools.eqiad1.wikimedia.cloud
 profile::toolforge::k8s::haproxy::keepalived_peers:
 - tools-k8s-haproxy-7.tools.eqiad1.wikimedia.cloud
+- tools-k8s-haproxy-8.tools.eqiad1.wikimedia.cloud
 profile::toolforge::k8s::haproxy::keepalived_vips:
 - 172.16.18.169
 - 2a02:ec80:a000:1::2bc
