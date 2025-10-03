@@ -2,4 +2,4 @@ profile::toolforge::k8s::haproxy::keepalived_peers:
 - tools-k8s-haproxy-5.tools.eqiad1.wikimedia.cloud
 - tools-k8s-haproxy-6.tools.eqiad1.wikimedia.cloud
 profile::toolforge::k8s::haproxy::keepalived_vips:
-- k8s.svc.tools.eqiad1.wikimedia.cloud
+- 172.16.6.113
