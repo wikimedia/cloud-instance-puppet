@@ -1,4 +1,0 @@
-profile::toolforge::k8s::haproxy::keepalived_peers:
-- toolsbeta-test-k8s-haproxy-6.toolsbeta.eqiad1.wikimedia.cloud
-profile::toolforge::k8s::haproxy::keepalived_vips:
-- 172.16.2.161
