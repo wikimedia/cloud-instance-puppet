@@ -84,6 +84,7 @@ profile::toolforge::mail_domains:
 - toolsbeta.wmcloud.org
 profile::toolforge::prometheus::probes_pingthing_http_check_urls:
 - https://toolsbeta-harbor.wmcloud.org/api/v2.0/ping
+profile::toolforge::static::static_domain: toolsbeta-static.wmcloud.org
 profile::toolforge::web_domain: beta.toolforge.org
 profile::wmcs::kubeadm::component: thirdparty/kubeadm-k8s-1-30
 profile::wmcs::kubeadm::kubernetes_version: 1.30.14
