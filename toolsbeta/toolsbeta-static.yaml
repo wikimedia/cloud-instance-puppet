@@ -1,2 +1,1 @@
 mount_nfs: true
-profile::toolforge::static::static_domain: toolsbeta-static.wmcloud.org
