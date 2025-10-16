@@ -1,0 +1,21 @@
+profile::codesearch::ports:
+  analytics: 6094
+  apps: 6099
+  armchairgm: 6087
+  bundled: 6089
+  core: 6084
+  deployed: 6090
+  devtools: 6098
+  extensions: 6081
+  libraries: 6093
+  milkshake: 6088
+  ooui: 6085
+  operations: 6086
+  puppet: 6095
+  pywikibot: 6091
+  search: 6080
+  services: 6092
+  shouthow: 6096
+  skins: 6082
+  things: 6083
+  wmcs: 6097
