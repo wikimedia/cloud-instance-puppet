@@ -1,3 +1,0 @@
-- role::aptly::client
-- profile::toolforge::infrastructure
-- role::wmcs::nfs::standalone
