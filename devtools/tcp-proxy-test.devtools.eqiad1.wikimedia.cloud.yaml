@@ -1,3 +1,4 @@
+profile::envoy::ensure: present
 profile::services_proxy::tcp::listen_ipv6: true
 profile::services_proxy::tcp::listeners:
 - name: gerrit-ssh-upstream
