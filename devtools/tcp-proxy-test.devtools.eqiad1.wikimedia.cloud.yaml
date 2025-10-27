@@ -1,1 +1,8 @@
+profile::services_proxy::tcp::listen_ipv6: true
+profile::services_proxy::tcp::listeners:
+- name: gerrit-ssh-upstream
+  port: 29418
+  service: gerrit-ssh
+  timeout: 5s
+  upstream: gerrit.wikimedia.org
 puppetmaster: puppetmaster-1003.devtools.eqiad1.wikimedia.cloud
