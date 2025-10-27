@@ -62,7 +62,7 @@ profile::toolforge::k8s::client::buildservice_repository: tools-harbor.wmcloud.o
 profile::toolforge::prometheus::probes_pingthing_http_check_urls:
 - https://tools-harbor.wmcloud.org/api/v2.0/ping
 profile::toolforge::toolviews::mysql_db: s53734__toolviews_p
-profile::toolforge::toolviews::mysql_host: tools.db.svc.eqiad1.wikimedia.cloud
+profile::toolforge::toolviews::mysql_host: tools.db.svc.wikimedia.cloud
 profile::toolforge::toolviews::mysql_user: s53734
 profile::wmcs::kubeadm::component: thirdparty/kubeadm-k8s-1-30
 profile::wmcs::kubeadm::kubernetes_version: 1.30.14
