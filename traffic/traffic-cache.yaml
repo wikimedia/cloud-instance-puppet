@@ -299,6 +299,7 @@ profile::cache::varnish::frontend::single_backend: true
 profile::cache::varnish::frontend::thread_pool_max: 12000
 profile::cache::varnish::frontend::uds_group: root
 profile::cache::varnish::frontend::uds_owner: haproxy
+profile::cache::varnish::frontend::use_private_repo: false
 profile::mediawiki::common::load_geoip_data_from_puppetserver: false
 profile::pki::client::ensure: present
 profile::puppetserver::volatile::geoip_fetch_private: false
