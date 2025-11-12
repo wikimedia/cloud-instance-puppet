@@ -1,6 +1,10 @@
 profile::docker::engine::declare_service: true
 profile::docker::engine::packagename: docker.io
-profile::docker::engine::settings: {}
+profile::docker::engine::settings:
+  log-driver: json-file
+  log-opts:
+    max-file: 2
+    max-size: 50m
 profile::docker::engine::version: 18.09.1+dfsg1-7.1+deb10u2
 profile::docker::runner::service_defs:
   mediawiki-services-mobileapps:
