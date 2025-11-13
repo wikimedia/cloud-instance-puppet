@@ -646,6 +646,11 @@ profile::conftool::client::protocol: https
 profile::conftool::master::sync_dir: /etc/conftool/data-local
 profile::docker::builder::prune_images: false
 profile::docker::engine::packagename: docker.io
+profile::docker::engine::settings:
+  log-driver: json-file
+  log-opts:
+    max-file: '2'
+    max-size: 50m
 profile::elasticsearch::base_data_dir: /srv/elasticsearch
 profile::elasticsearch::cirrus::tls_port: 9243
 profile::elasticsearch::dc_settings:
