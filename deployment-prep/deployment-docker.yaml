@@ -1,5 +1,0 @@
-profile::docker::engine::settings:
-  log-driver: json-file
-  log-opts:
-    max-file: '2'
-    max-size: 50m
