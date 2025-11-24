@@ -48,7 +48,7 @@ profile::docker::runner::service_defs:
     namespace: repos/data-engineering
     override_cmd: /srv/service/node_modules/.bin/eventgate -c /etc/eventgate-analytics/config.yaml
     port: 8192
-    version: v1.24.0
+    version: service-runner-config-cleanup-1ebaa2da
   eventgate-analytics-external:
     config:
       metrics:
@@ -97,7 +97,7 @@ profile::docker::runner::service_defs:
     namespace: repos/data-engineering
     override_cmd: /srv/service/node_modules/.bin/eventgate -c /etc/eventgate-analytics-external/config.yaml
     port: 8492
-    version: v1.24.0
+    version: service-runner-config-cleanup-1ebaa2da
   eventgate-logging-external:
     config:
       metrics:
@@ -145,7 +145,7 @@ profile::docker::runner::service_defs:
     namespace: repos/data-engineering
     override_cmd: /srv/service/node_modules/.bin/eventgate -c /etc/eventgate-logging-external/config.yaml
     port: 8992
-    version: v1.24.0
+    version: service-runner-config-cleanup-1ebaa2da
   eventgate-main:
     config:
       metrics:
@@ -193,4 +193,4 @@ profile::docker::runner::service_defs:
     namespace: repos/data-engineering
     override_cmd: /srv/service/node_modules/.bin/eventgate -c /etc/eventgate-main/config.yaml
     port: 8292
-    version: v1.24.0
+    version: service-runner-config-cleanup-1ebaa2da
