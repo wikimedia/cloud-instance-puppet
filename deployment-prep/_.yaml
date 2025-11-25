@@ -688,6 +688,7 @@ profile::maps::osm_master::kartotherian_pass: viarcEgOucukAvwa
 profile::maps::osm_master::osmimporter_pass: shapfiwunogdujye
 profile::maps::osm_master::osmupdater_pass: FighnaHiSluEkjue
 profile::maps::osm_master::replication_pass: JokpypNivgoackec
+profile::maps::osm_master::tegola_pass: SherbevawshocVie
 profile::maps::osm_master::tilerator_pass: SherbevawshocVie
 profile::maps::osm_master::tileratorui_pass: CreympUxwodyark1
 profile::mediawiki::jobrunner::default_php_version: '8.1'
