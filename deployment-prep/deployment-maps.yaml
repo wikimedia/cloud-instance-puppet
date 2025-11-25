@@ -12,7 +12,6 @@ profile::maps::osm_master::disable_replication_timer: false
 profile::maps::osm_master::disable_tile_generation_timer: false
 profile::maps::osm_master::disable_waterlines_import_timer: false
 profile::maps::osm_master::enable_tile_invalidation: true
-profile::maps::osm_master::tegola_pass: T411004 placeholder to make puppet compile
 profile::maps::osm_master::use_replication_slots: true
 profile::maps::postgresql_common::maintenance_work_mem: 3GB
 profile::maps::postgresql_common::shared_buffers: 4GB
