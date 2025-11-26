@@ -4,6 +4,7 @@ profile::docker::runner::service_defs:
     config:
       allow_absolute_schema_uris: false
       csp: false
+      entrypoint: app
       error_stream: eventgate-analytics.error.validation
       eventgate_factory_module: /srv/service/eventgate-wikimedia.js
       id_field: meta.id
@@ -34,7 +35,6 @@ profile::docker::runner::service_defs:
           stream: eventgate-analytics.test.event
       topic_prefix: eqiad.
       user_agent: eventgate-analytics
-    entrypoint: app
     environment:
       NODE_TLS_REJECT_UNAUTHORIZED: '0'
     image_name: eventgate-wikimedia
@@ -48,6 +48,7 @@ profile::docker::runner::service_defs:
     config:
       allow_absolute_schema_uris: false
       csp: false
+      entrypoint: app
       error_stream: eventgate-analytics-external.error.validation
       eventgate_factory_module: /srv/service/eventgate-wikimedia.js
       id_field: meta.id
@@ -78,7 +79,6 @@ profile::docker::runner::service_defs:
           stream: eventgate-analytics-external.test.event
       topic_prefix: eqiad.
       user_agent: eventgate-analytics-external
-    entrypoint: app
     environment:
       NODE_TLS_REJECT_UNAUTHORIZED: '0'
     image_name: eventgate-wikimedia
@@ -92,6 +92,7 @@ profile::docker::runner::service_defs:
     config:
       allow_absolute_schema_uris: true
       csp: false
+      entrypoint: app
       error_stream: eventgate-logging-external.error.validation
       eventgate_factory_module: /srv/service/eventgate-wikimedia.js
       id_field: meta.id
@@ -122,7 +123,6 @@ profile::docker::runner::service_defs:
           stream: eventgate-logging-external.test.event
       topic_prefix: eqiad.
       user_agent: eventgate-logging-external
-    entrypoint: app
     environment:
       NODE_TLS_REJECT_UNAUTHORIZED: '0'
     image_name: eventgate-wikimedia
@@ -135,6 +135,7 @@ profile::docker::runner::service_defs:
     config:
       allow_absolute_schema_uris: false
       csp: false
+      entrypoint: app
       error_stream: eventgate-main.error.validation
       eventgate_factory_module: /srv/service/eventgate-wikimedia.js
       id_field: meta.id
@@ -164,7 +165,6 @@ profile::docker::runner::service_defs:
           stream: eventgate-main.test.event
       topic_prefix: eqiad.
       user_agent: eventgate-main
-    entrypoint: app
     environment:
       NODE_TLS_REJECT_UNAUTHORIZED: '0'
     image_name: eventgate-wikimedia
