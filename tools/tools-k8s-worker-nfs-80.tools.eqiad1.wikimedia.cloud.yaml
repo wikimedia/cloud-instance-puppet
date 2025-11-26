@@ -1,1 +1,1 @@
-profile::wmcs::kubeadm::infra_tracing::nfs::ensure: present
+{}
