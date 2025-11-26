@@ -16,6 +16,8 @@ profile::docker::runner::service_defs:
       max_body_size: 10mb
       metrics:
         port: 9102
+      module: '@wikimedia/eventgate'
+      name: eventgate-analytics
       port: 8192
       schema_base_uris:
       - http://schema-beta.wmflabs.org/repositories/primary/jsonschema/
@@ -38,8 +40,6 @@ profile::docker::runner::service_defs:
     environment:
       NODE_TLS_REJECT_UNAUTHORIZED: '0'
     image_name: eventgate-wikimedia
-    module: '@wikimedia/eventgate'
-    name: eventgate-analytics
     namespace: repos/data-engineering
     override_cmd: /srv/service/node_modules/.bin/eventgate -c /etc/eventgate-analytics/config.yaml
     port: 8192
@@ -60,6 +60,8 @@ profile::docker::runner::service_defs:
       max_body_size: 10mb
       metrics:
         port: 9103
+      module: '@wikimedia/eventgate'
+      name: eventgate-analytics-external
       port: 8492
       schema_base_uris:
       - http://schema-beta.wmflabs.org/repositories/primary/jsonschema/
@@ -82,8 +84,6 @@ profile::docker::runner::service_defs:
     environment:
       NODE_TLS_REJECT_UNAUTHORIZED: '0'
     image_name: eventgate-wikimedia
-    module: '@wikimedia/eventgate'
-    name: eventgate-analytics-external
     namespace: repos/data-engineering
     override_cmd: /srv/service/node_modules/.bin/eventgate -c /etc/eventgate-analytics-external/config.yaml
     port: 8492
@@ -104,6 +104,8 @@ profile::docker::runner::service_defs:
       max_body_size: 10mb
       metrics:
         port: 9104
+      module: '@wikimedia/eventgate'
+      name: eventgate-logging-external
       port: 8992
       schema_base_uris:
       - http://schema-beta.wmflabs.org/repositories/primary/jsonschema/
@@ -126,7 +128,6 @@ profile::docker::runner::service_defs:
     environment:
       NODE_TLS_REJECT_UNAUTHORIZED: '0'
     image_name: eventgate-wikimedia
-    module: '@wikimedia/eventgate'
     namespace: repos/data-engineering
     override_cmd: /srv/service/node_modules/.bin/eventgate -c /etc/eventgate-logging-external/config.yaml
     port: 8992
@@ -147,6 +148,8 @@ profile::docker::runner::service_defs:
       max_body_size: 10mb
       metrics:
         port: 9105
+      module: '@wikimedia/eventgate'
+      name: eventgate-main
       port: 8292
       schema_base_uris:
       - http://schema-beta.wmflabs.org/repositories/primary/jsonschema/
@@ -168,8 +171,6 @@ profile::docker::runner::service_defs:
     environment:
       NODE_TLS_REJECT_UNAUTHORIZED: '0'
     image_name: eventgate-wikimedia
-    module: '@wikimedia/eventgate'
-    name: eventgate-main
     namespace: repos/data-engineering
     override_cmd: /srv/service/node_modules/.bin/eventgate -c /etc/eventgate-main/config.yaml
     port: 8292
