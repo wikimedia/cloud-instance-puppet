@@ -1,1 +1,4 @@
 profile::gitlab::runner::concurrent: 4
+profile::gitlab::runner::environment:
+  KOKKURI_REGISTRY_CACHE: registry.cloud.releng.team
+  KOKKURI_REGISTRY_PUBLIC: registry.cloud.releng.team
