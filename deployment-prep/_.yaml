@@ -702,7 +702,7 @@ profile::mediawiki::php::php_versions:
 - '8.3'
 profile::mediawiki::php::restarts::ensure: present
 profile::mediawiki::php::restarts::opcache_limit: 100
-profile::mediawiki::webserver::default_php_version: '8.1'
+profile::mediawiki::webserver::default_php_version: '8.3'
 profile::mediawiki::webserver::stream_to_logstash: true
 profile::nutcracker::memcached_pools: []
 profile::nutcracker::monitor_port: 0
