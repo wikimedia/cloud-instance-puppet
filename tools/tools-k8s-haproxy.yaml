@@ -6,6 +6,9 @@ profile::toolforge::k8s::control_nodes:
 - tools-k8s-control-7.tools.eqiad1.wikimedia.cloud
 - tools-k8s-control-8.tools.eqiad1.wikimedia.cloud
 - tools-k8s-control-9.tools.eqiad1.wikimedia.cloud
+profile::toolforge::k8s::haproxy::disabled_hosts:
+- campwiz.toolforge.org
+- himo.toolforge.org
 profile::toolforge::k8s::haproxy::keepalived_peers:
 - tools-k8s-haproxy-7.tools.eqiad1.wikimedia.cloud
 - tools-k8s-haproxy-8.tools.eqiad1.wikimedia.cloud
