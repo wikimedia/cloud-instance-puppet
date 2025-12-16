@@ -1,4 +1,7 @@
 mtail::from_component: true
+mtail::group: adm
+mtail::logs:
+- /var/log/exim4/mainlog
 profile::mail::default_mail_relay::enabled: false
 profile::mail::smarthost::cert_name: mx
 profile::mail::smarthost::dkim_domains:
