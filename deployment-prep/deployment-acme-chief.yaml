@@ -10,7 +10,7 @@ profile::acme_chief::certificates:
     SNI:
     - mail.beta.wmflabs.org
     authorized_regexes:
-    - deployment-mx03\.deployment-prep\.eqiad1\.wikimedia\.cloud
+    - deployment-mx[0-9]+\.deployment-prep\.eqiad1\.wikimedia\.cloud
     challenge: dns-01
   unified:
     CN: '*.wikipedia.beta.wmcloud.org'
