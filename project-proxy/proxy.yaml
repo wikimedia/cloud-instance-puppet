@@ -53,6 +53,10 @@ profile::wmcs::novaproxy::supported_zones:
     id: 4a581638-b09a-4897-bfe9-db5f0981d48f
     project: tools
     shared: false
+  wikilovesmonuments.az.:
+    acmechief_cert: customwlmaz
+    project: c1070625e313481a8e32bb636910ec44
+    shared: false
   wmcloud.org.:
     acmechief_cert: wmcloud
     default: true
