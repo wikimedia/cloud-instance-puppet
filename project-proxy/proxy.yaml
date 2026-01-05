@@ -55,6 +55,7 @@ profile::wmcs::novaproxy::supported_zones:
     shared: false
   wikilovesmonuments.az.:
     acmechief_cert: customwlmaz
+    apex: true
     project: c1070625e313481a8e32bb636910ec44
     shared: false
   wmcloud.org.:
