@@ -5,11 +5,9 @@ profile::base::puppet::dns_alt_names:
 - tools-k8s-etcd-15.tools.eqiad1.wikimedia.cloud
 profile::etcd::cluster_bootstrap: false
 profile::puppet::agent::dns_alt_names:
-- tools-k8s-etcd-24.tools.eqiad1.wikimedia.cloud
 - tools-k8s-etcd-25.tools.eqiad1.wikimedia.cloud
 - tools-k8s-etcd-26.tools.eqiad1.wikimedia.cloud
 profile::toolforge::k8s::etcd_nodes:
-- tools-k8s-etcd-24.tools.eqiad1.wikimedia.cloud
 - tools-k8s-etcd-25.tools.eqiad1.wikimedia.cloud
 - tools-k8s-etcd-26.tools.eqiad1.wikimedia.cloud
 profile::wmcs::kubeadm::etcd_snapshot_count: 100000
