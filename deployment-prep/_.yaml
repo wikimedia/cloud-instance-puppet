@@ -840,6 +840,8 @@ profile::swift::global_account_keys:
   eqiad:
     mw_media: abracadabra
 profile::tlsproxy::envoy::ssl_provider: cfssl
+profile::tlsproxy::envoy::upstream_sni: null
+profile::tlsproxy::envoy::upstream_tls: false
 prometheus_nodes:
 - deployment-prometheus05.deployment-prep.eqiad1.wikimedia.cloud
 puppetdb::password::replication: ''
