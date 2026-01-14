@@ -64,8 +64,8 @@ profile::toolforge::prometheus::probes_pingthing_http_check_urls:
 profile::toolforge::toolviews::mysql_db: s53734__toolviews_p
 profile::toolforge::toolviews::mysql_host: tools.db.svc.wikimedia.cloud
 profile::toolforge::toolviews::mysql_user: s53734
-profile::wmcs::kubeadm::component: thirdparty/kubeadm-k8s-1-30
-profile::wmcs::kubeadm::kubernetes_version: 1.30.14
+profile::wmcs::kubeadm::component: thirdparty/kubeadm-k8s-1-31
+profile::wmcs::kubeadm::kubernetes_version: 1.31.14
 prometheus::node_exporter::collectors_extra:
 - processes
 prometheus::node_exporter::ignored_fs_types: ^(overlay|autofs|binfmt_misc|cgroup|configfs|debugfs|devpts|devtmpfs|fusectl|hugetlbfs|mqueue|nfs.*|nsfs|proc|procfs|pstore|rpc_pipefs|securityfs|sysfs|tracefs)$
