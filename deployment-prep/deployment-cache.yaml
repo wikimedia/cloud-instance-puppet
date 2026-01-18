@@ -215,4 +215,11 @@ profile::cache::varnish::frontend::uds_owner: haproxy
 profile::lvs::realserver::ipip::enabled: false
 profile::lvs::realserver::ipip::interfaces:
 - lo
+prometheus::varnishkafka_exporter::config:
+  num_entries_to_get: 2
+  required_entries:
+  - kafka
+  - varnishkafka
+  stats_files:
+  - /var/cache/varnishkafka/webrequest.stats.json
 public_tls_unified_cert_vendor: lets-encrypt
