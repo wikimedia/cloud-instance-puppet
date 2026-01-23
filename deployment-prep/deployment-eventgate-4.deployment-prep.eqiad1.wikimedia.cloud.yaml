@@ -51,46 +51,39 @@ profile::docker::runner::service_defs:
     version: v1.26.0
   eventgate-analytics-external:
     config:
+      allow_absolute_schema_uris: false
+      csp: false
+      error_stream: eventgate-analytics-external.error.validation
+      eventgate_factory_module: /srv/service/eventgate-wikimedia.js
+      id_field: meta.id
+      kafka:
+        conf:
+          metadata.broker.list: deployment-kafka-jumbo-5.deployment-prep.eqiad1.wikimedia.cloud:9092,deployment-kafka-jumbo-8.deployment-prep.eqiad1.wikimedia.cloud:9092,deployment-kafka-jumbo-9.deployment-prep.eqiad1.wikimedia.cloud:9092
+          statistics.interval.ms: 10000
+        topic_conf: {}
+      max_body_size: 10mb
       metrics:
       - port: 9103
         type: prometheus
-      num_workers: 0
+      port: 8492
+      schema_base_uris:
+      - http://schema-beta.wmflabs.org/repositories/primary/jsonschema/
+      - http://schema-beta.wmflabs.org/repositories/secondary/jsonschema/
+      schema_precache_uris:
+      - /error/1.0.0
+      - /test/event/1.0.0
+      schema_uri_field: $schema
       service_name: eventgate-analytics-external
-      services:
-      - conf:
-          allow_absolute_schema_uris: false
-          csp: false
-          error_stream: eventgate-analytics-external.error.validation
-          eventgate_factory_module: /srv/service/eventgate-wikimedia.js
-          id_field: meta.id
-          kafka:
-            conf:
-              metadata.broker.list: deployment-kafka-jumbo-5.deployment-prep.eqiad1.wikimedia.cloud:9092,deployment-kafka-jumbo-8.deployment-prep.eqiad1.wikimedia.cloud:9092,deployment-kafka-jumbo-9.deployment-prep.eqiad1.wikimedia.cloud:9092
-              statistics.interval.ms: 10000
-            topic_conf: {}
-          max_body_size: 10mb
-          port: 8492
-          schema_base_uris:
-          - http://schema-beta.wmflabs.org/repositories/primary/jsonschema/
-          - http://schema-beta.wmflabs.org/repositories/secondary/jsonschema/
-          schema_precache_uris:
-          - /error/1.0.0
-          - /test/event/1.0.0
-          schema_uri_field: $schema
-          stream_config_object_path: streams
-          stream_config_ttl: 60
-          stream_config_uri: https://meta.wikimedia.beta.wmcloud.org/w/api.php?action=streamconfigs&format=json&constraints=destination_event_service=eventgate-analytics-external
-          stream_field: meta.stream
-          test_events:
-          - $schema: /test/event/1.0.0
-            meta:
-              stream: eventgate-analytics-external.test.event
-          topic_prefix: eqiad.
-          user_agent: eventgate-analytics-external
-        entrypoint: app
-        module: '@wikimedia/eventgate'
-        name: eventgate-analytics-external
-      worker_heap_limit_mb: 250
+      stream_config_object_path: streams
+      stream_config_ttl: 60
+      stream_config_uri: https://meta.wikimedia.beta.wmcloud.org/w/api.php?action=streamconfigs&format=json&constraints=destination_event_service=eventgate-analytics-external
+      stream_field: meta.stream
+      test_events:
+      - $schema: /test/event/1.0.0
+        meta:
+          stream: eventgate-analytics-external.test.event
+      topic_prefix: eqiad.
+      user_agent: eventgate-analytics-external
     environment:
       NODE_TLS_REJECT_UNAUTHORIZED: '0'
     image_name: eventgate-wikimedia
