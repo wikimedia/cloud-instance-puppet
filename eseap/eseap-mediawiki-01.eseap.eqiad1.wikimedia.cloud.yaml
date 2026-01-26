@@ -1,1 +1,22 @@
-{}
+cluster: eseap
+has_lvs: false
+mediawiki::sites:
+- defaults:
+    declare_site: false
+    ensure: present
+    public_rewrites: true
+  name: main
+  priority: 3
+  vhosts:
+  - name: eseap.wmcloud.org
+    params:
+      docroot: /srv/mediawiki/docroot/eseap.wmcloud.org
+      server_aliases:
+      - eseap.wmcloud.org
+      server_name: landingwiki
+      short_urls: true
+profile::mediawiki::php::enable_fpm: true
+profile::mediawiki::php::php_versions:
+- '8.3'
+profile::mediawiki::webserver::default_php_version: '8.3'
+profile::mediawiki::webserver::has_tls: false
