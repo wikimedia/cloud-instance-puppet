@@ -1,4 +1,3 @@
-cluster: eseap
 has_lvs: false
 mediawiki::sites:
 - defaults:
