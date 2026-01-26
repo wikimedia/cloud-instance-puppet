@@ -1,4 +1,5 @@
 has_lvs: false
+mediawiki::common_sites: []
 mediawiki::sites:
 - defaults:
     declare_site: false
