@@ -14,6 +14,7 @@ mediawiki::sites:
       - eseap.wmcloud.org
       server_name: landingwiki
       short_urls: true
+mediawiki::users::web: www-data
 profile::mediawiki::php::enable_fpm: true
 profile::mediawiki::php::php_versions:
 - '8.3'
