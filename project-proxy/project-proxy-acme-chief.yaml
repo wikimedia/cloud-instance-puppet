@@ -28,14 +28,6 @@ profile::acme_chief::certificates:
     authorized_regexes:
     - ^.+\.project-proxy\.eqiad1\.wikimedia\.cloud$
     challenge: dns-01
-  customduct:
-    CN: duct.wmcloud.org
-    SNI:
-    - duct.wmcloud.org
-    - '*.duct.wmcloud.org'
-    authorized_regexes:
-    - ^.+\.project-proxy\.eqiad1\.wikimedia\.cloud$
-    challenge: dns-01
   customo11y:
     CN: o11y.wmcloud.org
     SNI:
@@ -106,7 +98,6 @@ profile::acme_chief::cloud::designate_sync_project_names:
 - catalyst-dev
 - catalyst-qte
 - cloudinfra
-- duct
 - maps
 - o11y
 - project-proxy
