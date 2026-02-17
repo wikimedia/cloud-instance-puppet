@@ -1,3 +1,4 @@
 mount_nfs: true
+profile::wmcs::kubeadm::infra_tracing::in_k8s_node: true
 profile::wmcs::kubeadm::infra_tracing::nfs::ensure: present
 profile::wmcs::nfsclient::nfs_version: '4.2'
