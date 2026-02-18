@@ -3,3 +3,5 @@ profile::mail::default_mail_relay::enabled: false
 profile::toolforge::base::is_mail_relay: true
 profile::toolforge::cert_name: toolsbeta
 profile::toolforge::mailrelay::external_hostname: mail.toolsbeta.wmcloud.org
+profile::wmcs::kubeadm::infra_tracing::loki_url: https://infra-tracing-loki.svc.toolsbeta.eqiad1.wikimedia.cloud:30004
+profile::wmcs::kubeadm::infra_tracing::nfs::ensure: present
