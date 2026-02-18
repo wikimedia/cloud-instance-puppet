@@ -1,1 +1,2 @@
 - role::wmcs::toolforge::bastion
+- profile::wmcs::kubeadm::infra_tracing::nfs
