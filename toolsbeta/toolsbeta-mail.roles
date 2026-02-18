@@ -1,1 +1,2 @@
 - role::wmcs::toolforge::mailrelay
+- profile::wmcs::kubeadm::infra_tracing::nfs
