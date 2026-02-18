@@ -1,1 +1,3 @@
 mount_nfs: true
+profile::wmcs::kubeadm::infra_tracing::loki_url: https://infra-tracing-loki.svc.toolsbeta.eqiad1.wikimedia.cloud:30004
+profile::wmcs::kubeadm::infra_tracing::nfs::ensure: present
