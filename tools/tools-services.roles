@@ -1,1 +1,2 @@
 - role::wmcs::toolforge::services
+- profile::wmcs::kubeadm::infra_tracing::nfs
