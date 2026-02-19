@@ -4,3 +4,5 @@ mtail::logs:
 - /var/log/exim4/mainlog
 profile::toolforge::base::is_mail_relay: true
 profile::toolforge::mailrelay::external_hostname: mail.tools.wmcloud.org
+profile::wmcs::kubeadm::infra_tracing::loki_url: https://infra-tracing-loki.svc.tools.eqiad1.wikimedia.cloud:30004/
+profile::wmcs::kubeadm::infra_tracing::nfs::ensure: present
