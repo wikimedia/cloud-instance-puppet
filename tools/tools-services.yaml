@@ -1,2 +1,4 @@
 labstore::traffic_shaping::egress: 800mbps
 mount_nfs: true
+profile::wmcs::kubeadm::infra_tracing::loki_url: https://infra-tracing-loki.svc.tools.eqiad1.wikimedia.cloud:30004/
+profile::wmcs::kubeadm::infra_tracing::nfs::ensure: present
