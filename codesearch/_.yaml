@@ -1,1 +1,1 @@
-{}
+profile::firewall::defs_from_etcd: false
