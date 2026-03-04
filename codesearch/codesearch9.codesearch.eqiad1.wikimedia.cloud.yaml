@@ -1,1 +1,2 @@
-profile::confd::instances: {}
+profile::firewall::defs_from_etcd: false
+profile::firewall::defs_from_etcd_nft: false
