@@ -1,3 +1,1 @@
-profile::confd::instances:
-  main:
-    interval: 300
+profile::confd::instances: {}
