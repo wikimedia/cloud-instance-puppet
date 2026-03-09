@@ -1,4 +1,3 @@
-labstore::traffic_shaping::egress: 800mbps
 mount_nfs: false
 profile::logrotate::hourly: true
 profile::toolforge::k8s::apiserver_port: 6443
@@ -6,6 +5,7 @@ profile::toolforge::k8s::control_nodes:
 - tools-k8s-control-7.tools.eqiad1.wikimedia.cloud
 - tools-k8s-control-8.tools.eqiad1.wikimedia.cloud
 - tools-k8s-control-9.tools.eqiad1.wikimedia.cloud
+profile::toolforge::k8s::gateway_nodes: []
 profile::toolforge::k8s::haproxy::disabled_hosts: []
 profile::toolforge::k8s::haproxy::keepalived_peers:
 - tools-k8s-haproxy-7.tools.eqiad1.wikimedia.cloud
@@ -17,5 +17,3 @@ profile::toolforge::k8s::ingress_nodes:
 - tools-k8s-ingress-7.tools.eqiad1.wikimedia.cloud
 - tools-k8s-ingress-8.tools.eqiad1.wikimedia.cloud
 - tools-k8s-ingress-9.tools.eqiad1.wikimedia.cloud
-profile::toolforge::k8s::ingress_port: 30000
-prometheus::haproxy_exporter::endpoint: http://localhost:8404/stats;csv
