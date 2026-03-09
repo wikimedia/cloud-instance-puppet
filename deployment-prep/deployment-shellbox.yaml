@@ -2,8 +2,7 @@ profile::docker::engine::declare_service: true
 profile::docker::engine::version: 20.10.5+dfsg1-1+deb11u2
 profile::docker::runner::service_defs:
   httpd:
-    bind_mounts:
-      /run/shared: /run/shared
+    bind_mounts: {}
     environment:
       FCGI_MODE: FCGI_UNIX
     image_name: httpd-fcgi
@@ -11,7 +10,6 @@ profile::docker::runner::service_defs:
     version: latest
   shellbox:
     bind_mounts:
-      /run/shared: /run/shared
       /srv/shellbox/config/: /srv/app/config
       /srv/shellbox/src: /srv/app/src
     config: {}
