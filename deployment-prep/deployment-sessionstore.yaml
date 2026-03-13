@@ -32,7 +32,5 @@ profile::docker::runner::service_defs:
     port: 8080
     version: v1.0.10
 profile::java::java_packages:
-- variant: jdk-headless
-  version: '8'
-- variant: jdk-headless
+- variant: jdk
   version: '11'
