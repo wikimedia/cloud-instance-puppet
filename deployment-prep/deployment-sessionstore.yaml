@@ -6,7 +6,7 @@ profile::cassandra::settings:
   default_instance_params:
     rpc_address: '%{::ipaddress}'
   listen_address: '%{::ipaddress}'
-  logstash_host: logstash.svc.deployment-prep.eqiad1.wikimedia.cloud
+  logstash_host: logs-api.svc.logging.eqiad1.wikimedia.cloud
   target_version: 4.x
 profile::docker::engine::declare_service: true
 profile::docker::engine::version: 18.09.1+dfsg1-7.1+deb10u3
