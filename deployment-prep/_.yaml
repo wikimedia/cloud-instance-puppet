@@ -1132,7 +1132,7 @@ role::deployment::repo_config:
     upstream: https://gerrit.wikimedia.org/r/mediawiki/services/zotero/translators
 role::deployment::services::key_fingerprint: e6:d0:61:5e:e5:c7:5d:2d:3e:8e:c8:a5:eb:f3:c2:63
 role::labs::nfsclient:mode: hard
-role::logging::mediawiki::udp2log::logstash_host: logstash.svc.deployment-prep.eqiad1.wikimedia.cloud
+role::logging::mediawiki::udp2log::logstash_host: logs-api.svc.logging.eqiad1.wikimedia.cloud
 role::logging::mediawiki::udp2log::rotate: 15
 role::ocg::redis_servers:
   deployment-pdf01:
@@ -1201,7 +1201,7 @@ service::catalog:
     - eqiad
     state: production
 service::configuration::http_proxy: http://url-downloader.svc.deployment-prep.eqiad1.wikimedia.cloud:8080
-service::configuration::logstash_host: logstash.svc.deployment-prep.eqiad1.wikimedia.cloud
+service::configuration::logstash_host: logs-api.svc.logging.eqiad1.wikimedia.cloud
 service::configuration::logstash_port: 12201
 service::deploy::scap::public_key_file: puppet:///private/ssh/tin/servicedeploy_rsa.pub
 shared_acme_certificates: {}
