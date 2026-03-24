@@ -1,6 +1,7 @@
 abuse_networks:
   blocked_nets:
     networks:
+    - 4.192.0.0/12
     - 5.0.0.0/8
     - 13.0.0.0/8
     - 14.0.0.0/9
