@@ -1,5 +1,1 @@
-mediawiki::users::web: www-data
-profile::mediawiki::php::enable_fpm: true
-profile::mediawiki::php::php_versions:
-- '8.3'
-profile::mediawiki::webserver::default_php_version: '8.3'
+{}
