@@ -1,1 +1,3 @@
-{}
+profile::labs::eseap::mediawiki::server_aliases:
+- eseap.org
+profile::labs::eseap::mediawiki::server_name: eseap.wmcloud.org
