@@ -1,9 +1,9 @@
 labstore::traffic_shaping::egress: 800mbps
 profile::toolforge::k8s::apiserver_fqdn: k8s.tools.eqiad1.wikimedia.cloud
 profile::toolforge::k8s::etcd_nodes:
-- tools-k8s-etcd-13.tools.eqiad1.wikimedia.cloud
-- tools-k8s-etcd-14.tools.eqiad1.wikimedia.cloud
-- tools-k8s-etcd-15.tools.eqiad1.wikimedia.cloud
+- tools-k8s-etcd-29.tools.eqiad1.wikimedia.cloud
+- tools-k8s-etcd-30.tools.eqiad1.wikimedia.cloud
+- tools-k8s-etcd-31.tools.eqiad1.wikimedia.cloud
 profile::wmcs::kubeadm::control::apiserver_cert_alternative_names:
 - k8s.svc.tools.eqiad1.wikimedia.cloud
 profile::wmcs::nfsclient::nfs_version: '4.2'
