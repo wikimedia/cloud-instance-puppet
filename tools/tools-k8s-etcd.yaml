@@ -1,8 +1,8 @@
 mount_nfs: false
 profile::base::puppet::dns_alt_names:
-- tools-k8s-etcd-13.tools.eqiad1.wikimedia.cloud
-- tools-k8s-etcd-14.tools.eqiad1.wikimedia.cloud
-- tools-k8s-etcd-15.tools.eqiad1.wikimedia.cloud
+- tools-k8s-etcd-29.tools.eqiad1.wikimedia.cloud
+- tools-k8s-etcd-30.tools.eqiad1.wikimedia.cloud
+- tools-k8s-etcd-31.tools.eqiad1.wikimedia.cloud
 profile::etcd::cluster_bootstrap: false
 profile::puppet::agent::dns_alt_names:
 - tools-k8s-etcd-29.tools.eqiad1.wikimedia.cloud
