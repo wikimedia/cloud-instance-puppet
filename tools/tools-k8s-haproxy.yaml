@@ -9,7 +9,7 @@ profile::toolforge::k8s::gateway_nodes:
 - tools-k8s-gateway-1.tools.eqiad1.wikimedia.cloud
 - tools-k8s-gateway-2.tools.eqiad1.wikimedia.cloud
 - tools-k8s-gateway-3.tools.eqiad1.wikimedia.cloud
-profile::toolforge::k8s::gateway_traffic_percentage: 10
+profile::toolforge::k8s::gateway_traffic_percentage: 25
 profile::toolforge::k8s::haproxy::disabled_hosts: []
 profile::toolforge::k8s::haproxy::keepalived_peers:
 - tools-k8s-haproxy-7.tools.eqiad1.wikimedia.cloud
