@@ -10,3 +10,4 @@ profile::mediawiki::php::php_versions:
 - '8.3'
 profile::mediawiki::scap_client::is_master: true
 profile::mediawiki::webserver::default_php_version: '8.3'
+profile::tlsproxy::envoy::global_cert_name: '%{facts.fqdn}'
