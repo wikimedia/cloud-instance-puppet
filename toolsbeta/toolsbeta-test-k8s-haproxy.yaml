@@ -12,4 +12,3 @@ profile::toolforge::k8s::haproxy::keepalived_peers:
 profile::toolforge::k8s::haproxy::keepalived_vips:
 - 172.16.18.110
 - 2a02:ec80:a000:1::8f
-profile::toolforge::k8s::ingress_nodes: []
