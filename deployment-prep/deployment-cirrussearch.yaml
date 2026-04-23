@@ -1,4 +1,7 @@
-logstash_host: localhost
+lookup_options:
+  profile::opensearch::common_settings:
+    merge:
+      strategy: first
 profile::opensearch::base_data_dir: /srv/opensearch
 profile::opensearch::cirrus::enable_remote_search: true
 profile::opensearch::cirrus::ssl_provider: cfssl
