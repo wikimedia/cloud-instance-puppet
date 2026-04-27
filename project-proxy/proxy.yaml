@@ -35,7 +35,7 @@ profile::wmcs::novaproxy::supported_zones:
     shared: false
   dev.lingualibre.org.:
     acmechief_cert: customlingualibre
-    project: lingualibre
+    project: d4223c92baa3400e8c4be04a96e61f7f
     shared: false
   o11y.wmcloud.org.:
     acmechief_cert: customo11y
