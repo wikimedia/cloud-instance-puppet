@@ -28,6 +28,13 @@ profile::acme_chief::certificates:
     authorized_regexes:
     - ^.+\.project-proxy\.eqiad1\.wikimedia\.cloud$
     challenge: dns-01
+  customlingualibre:
+    CN: dev.lingualibre.org
+    SNI:
+    - dev.lingualibre.org
+    authorized_regexes:
+    - ^.+\.project-proxy\.eqiad1\.wikimedia\.cloud$
+    challenge: http-01
   customo11y:
     CN: o11y.wmcloud.org
     SNI:
@@ -50,13 +57,6 @@ profile::acme_chief::certificates:
     CN: wikilovesmonuments.az
     SNI:
     - wikilovesmonuments.az
-    authorized_regexes:
-    - ^.+\.project-proxy\.eqiad1\.wikimedia\.cloud$
-    challenge: http-01
-  lingualibre:
-    CN: dev.lingualibre.org
-    SNI:
-    - dev.lingualibre.org
     authorized_regexes:
     - ^.+\.project-proxy\.eqiad1\.wikimedia\.cloud$
     challenge: http-01
