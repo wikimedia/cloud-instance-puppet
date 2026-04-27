@@ -53,6 +53,13 @@ profile::acme_chief::certificates:
     authorized_regexes:
     - ^.+\.project-proxy\.eqiad1\.wikimedia\.cloud$
     challenge: http-01
+  lingualibre:
+    CN: dev.lingualibre.org
+    SNI:
+    - dev.lingualibre.org
+    authorized_regexes:
+    - ^.+\.project-proxy\.eqiad1\.wikimedia\.cloud$
+    challenge: http-01
   maps:
     CN: maps.wmcloud.org
     SNI:
