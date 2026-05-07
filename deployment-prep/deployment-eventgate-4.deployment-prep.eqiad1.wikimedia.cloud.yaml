@@ -34,6 +34,8 @@ profile::docker::runner::service_defs:
         meta:
           stream: eventgate-analytics.test.event
       topic_prefix: eqiad.
+      transforms:
+      - eventgateWikimediaDefaults
       user_agent: eventgate-analytics
     environment:
       NODE_TLS_REJECT_UNAUTHORIZED: '0'
@@ -76,6 +78,9 @@ profile::docker::runner::service_defs:
         meta:
           stream: eventgate-analytics-external.test.event
       topic_prefix: eqiad.
+      transforms:
+      - eventgateWikimediaDefaults
+      - processEdgeUniques
       user_agent: eventgate-analytics-external
     environment:
       NODE_TLS_REJECT_UNAUTHORIZED: '0'
@@ -83,7 +88,7 @@ profile::docker::runner::service_defs:
     namespace: repos/data-engineering
     override_cmd: /srv/service/node_modules/.bin/eventgate -c /etc/eventgate-analytics-external/config.yaml
     port: 8492
-    version: v1.26.0
+    version: configurable-transforms-557a833c
   eventgate-logging-external:
     config:
       allow_absolute_schema_uris: true
@@ -118,6 +123,8 @@ profile::docker::runner::service_defs:
         meta:
           stream: eventgate-logging-external.test.event
       topic_prefix: eqiad.
+      transforms:
+      - eventgateWikimediaDefaults
       user_agent: eventgate-logging-external
     environment:
       NODE_TLS_REJECT_UNAUTHORIZED: '0'
@@ -166,6 +173,8 @@ profile::docker::runner::service_defs:
         entrypoint: app
         module: '@wikimedia/eventgate'
         name: eventgate-main
+      transforms:
+      - eventgateWikimediaDefaults
       worker_heap_limit_mb: 250
     environment:
       NODE_TLS_REJECT_UNAUTHORIZED: '0'
