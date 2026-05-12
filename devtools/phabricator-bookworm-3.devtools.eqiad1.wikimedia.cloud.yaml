@@ -1,0 +1,4 @@
+profile::phabricator::migration::deploy_user: phab-deploy
+profile::phabricator::migration::dst_hosts: phabricator-bookworm-3.devtools.eqiad1.wikimedia.cloud
+profile::phabricator::migration::phabdir: /srv/phab
+profile::phabricator::migration::storage_user: phadmin
