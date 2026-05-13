@@ -132,7 +132,7 @@ profile::docker::runner::service_defs:
     namespace: repos/data-engineering
     override_cmd: /srv/service/node_modules/.bin/eventgate -c /etc/eventgate-logging-external/config.yaml
     port: 8992
-    version: v1.26.0
+    version: v1.30.0
   eventgate-main:
     config:
       metrics:
