@@ -1,1 +1,2 @@
 - role::labs::eseap::mediawiki::landingwiki
+- role::labs::eseap::youth::directory
