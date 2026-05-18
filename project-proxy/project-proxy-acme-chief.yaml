@@ -29,8 +29,9 @@ profile::acme_chief::certificates:
     - ^.+\.project-proxy\.eqiad1\.wikimedia\.cloud$
     challenge: dns-01
   customlingualibre:
-    CN: dev.lingualibre.org
+    CN: lingualibre.org
     SNI:
+    - lingualibre.org
     - dev.lingualibre.org
     authorized_regexes:
     - ^.+\.project-proxy\.eqiad1\.wikimedia\.cloud$
