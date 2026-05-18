@@ -33,7 +33,7 @@ profile::wmcs::novaproxy::supported_zones:
     id: 26033036-d9bf-458b-8f54-46e83084e0e4
     project: catalyst
     shared: false
-  dev.lingualibre.org.:
+  lingualibre.org.:
     acmechief_cert: customlingualibre
     apex: true
     project: d4223c92baa3400e8c4be04a96e61f7f
