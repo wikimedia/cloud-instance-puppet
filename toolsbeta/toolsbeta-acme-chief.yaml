@@ -44,5 +44,4 @@ profile::acme_chief::cloud::designate_sync_region_name: eqiad1-r
 profile::acme_chief::cloud::designate_sync_tidyup_enabled: true
 profile::acme_chief::cloud::designate_sync_username: toolsbeta-dns-manager
 profile::acme_chief::passive: []
-profile::firewall::provider: nftables
 shared_acme_certificates: {}
