@@ -1,3 +1,4 @@
+profile::firewall::provider: nftables
 profile::puppetdb::database::shared_buffers: 768MB
 profile::puppetdb::database::wal_keep_segments: 128
 profile::puppetdb::filter_job_id: true
