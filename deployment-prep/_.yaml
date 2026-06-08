@@ -1853,10 +1853,6 @@ confd::srv_dns: ''
 conftool::hosts: []
 conftool::password: a_secret
 docker::registry: docker-registry.discovery.wmnet
-elasticsearch::cluster_hosts:
-- deployment-elastic09.deployment-prep.eqiad1.wikimedia.cloud
-- deployment-elastic10.deployment-prep.eqiad1.wikimedia.cloud
-- deployment-elastic11.deployment-prep.eqiad1.wikimedia.cloud
 etcd::auth::common::root_password: secret
 etcd::use_ssl: true
 etcd_client_srv_domain: conftool.svc.deployment-prep.eqiad1.wikimedia.cloud
@@ -1968,10 +1964,6 @@ profile::docker::engine::settings:
   log-opts:
     max-file: '2'
     max-size: 50m
-profile::elasticsearch::base_data_dir: /srv/elasticsearch
-profile::elasticsearch::cirrus::tls_port: 9243
-profile::elasticsearch::dc_settings:
-  tls_port: 9243
 profile::envoy::ensure: present
 profile::java::egd_source: /dev/random
 profile::java::hardened_tls: false
@@ -2150,9 +2142,6 @@ role::deployment::repo_config:
     checkout_submodules: true
     service_name: cxserver
     upstream: https://gerrit.wikimedia.org/r/mediawiki/services/cxserver/deploy
-  elasticsearch/plugins:
-    gitfat_enabled: true
-    upstream: https://gerrit.wikimedia.org/r/operations/software/elasticsearch/plugins
   eventlogging/eventbus:
     checkout_submodules: true
     upstream: https://gerrit.wikimedia.org/r/eventlogging
