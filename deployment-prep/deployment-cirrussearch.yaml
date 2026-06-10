@@ -1,8 +1,13 @@
 logstash_host: localhost
+profile::base::overlayfs: true
+profile::base::production::role_description: cirrussearch
 profile::opensearch::base_data_dir: /srv/opensearch
 profile::opensearch::cirrus::enable_remote_search: true
 profile::opensearch::cirrus::expose_http: false
 profile::opensearch::cirrus::ferm_srange: ''
+profile::opensearch::cirrus::oci_image::name: opensearch
+profile::opensearch::cirrus::oci_image::ns: repos/data-engineering
+profile::opensearch::cirrus::oci_image::version: 2026-05-13-143357-2b2e022d3e2756b0dbd31d66e341a587f5d3b8d7-production2
 profile::opensearch::cirrus::ssl_provider: cfssl
 profile::opensearch::cirrus::storage_device: sda
 profile::opensearch::common_settings:
