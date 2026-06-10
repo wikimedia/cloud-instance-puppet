@@ -1,2 +1,2 @@
 profile::zuul::haproxy::kubernetes_hosts:
-- https://172.16.16.103:6443
+- 172.16.16.103
