@@ -10,6 +10,7 @@ profile::opensearch::cirrus::oci_image::ns: repos/data-engineering
 profile::opensearch::cirrus::oci_image::version: 2026-05-13-143357-2b2e022d3e2756b0dbd31d66e341a587f5d3b8d7-production2
 profile::opensearch::cirrus::ssl_provider: cfssl
 profile::opensearch::cirrus::storage_device: sda
+profile::opensearch::cirrus::use_volumes: true
 profile::opensearch::common_settings:
   auto_create_index: +apifeatureusage-*,-*
   awareness_attributes: ''
