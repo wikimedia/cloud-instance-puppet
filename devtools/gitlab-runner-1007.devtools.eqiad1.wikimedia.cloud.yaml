@@ -1,4 +1,4 @@
-profile::base::labs::unattended_distro: present
-profile::base::labs::unattended_osbpo: present
-profile::base::labs::unattended_wmf: present
+profile::base::labs::unattended_distro: absent
+profile::base::labs::unattended_osbpo: absent
+profile::base::labs::unattended_wmf: absent
 profile::gitlab::runner::token: glrt-t2_xJQoqY6cWPR_ExTz_ZfH
