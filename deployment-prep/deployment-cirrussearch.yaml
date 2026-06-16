@@ -58,5 +58,13 @@ profile::opensearch::native_lib_path: /usr/share/opensearch/plugins/opensearch-k
 profile::opensearch::rack: ''
 profile::opensearch::row: ''
 profile::opensearch::version: 1.3.20
+profile::tlsproxy::envoy::capitalize_headers: false
+profile::tlsproxy::envoy::cfssl_options:
+  hosts:
+  - '%{facts.networking.fqdn}'
+profile::tlsproxy::envoy::global_cert_name: '%{facts.networking.fqdn}'
+profile::tlsproxy::envoy::sni_support: 'no'
+profile::tlsproxy::envoy::ssl_provider: cfssl
+profile::tlsproxy::envoy::tls_port: 9243
 puppetmaster: deployment-puppetserver-1.deployment-prep.eqiad1.wikimedia.cloud
 puppetserver: deployment-puppetserver-1.deployment-prep.eqiad1.wikimedia.cloud
