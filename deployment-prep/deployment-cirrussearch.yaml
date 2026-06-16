@@ -62,6 +62,10 @@ profile::tlsproxy::envoy::cfssl_options:
   hosts:
   - '%{facts.networking.fqdn}'
 profile::tlsproxy::envoy::global_cert_name: '%{facts.networking.fqdn}'
+profile::tlsproxy::envoy::services:
+- port: 9200
+  server_names:
+  - '*'
 profile::tlsproxy::envoy::sni_support: 'no'
 profile::tlsproxy::envoy::ssl_provider: cfssl
 profile::tlsproxy::envoy::tls_port: 9243
