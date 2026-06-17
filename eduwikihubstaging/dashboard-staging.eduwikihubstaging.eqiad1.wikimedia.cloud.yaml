@@ -1,0 +1,4 @@
+profile::cloudvps::instance::extra_user_keys:
+  debian:
+  - ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCDBEkFr8egeiZz8HnVKTwohHhsla0cQPlhG+8Ra4qmhspW26yn+WBVhaWW7VDb5lyss8MKhLhhu3tntGBqqCG84v3tBkgmSWYOfIxsPs3d3ca13gZJyPqOGNxeEUfXvKvFiqBsDrgax92IOOzgXW2DdTIxRtjJDato7ggqO1EnNI2elTujK39vH0dUWxAlJ3dyrVAO71DDuw9VR/GZ9CsbFHesmKzGpp+zH3MLKTNvT0V5FikotqRXalgXLfgGl2AVVI97TQMIC1gxte0LzEJE6BjMn1c4uCWiKcul+EI+woPvCkJym0JOzIWSxcKbS5OWPh8nj7ob/Ap996trwapL
+    rsa-key-20250915
