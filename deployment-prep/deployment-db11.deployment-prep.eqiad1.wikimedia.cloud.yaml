@@ -1,3 +1,0 @@
-mariadb::config::basedir: /opt/wmf-mariadb106
-mariadb::package: wmf-mariadb106
-profile::mariadb::section_ports: {}
