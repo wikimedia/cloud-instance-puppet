@@ -1,5 +1,8 @@
 profile::releases::mediawiki::http_port: 8080
 profile::releases::mediawiki::jenkins_agent_key: ssh-rsa test
+profile::releases::mediawiki::jenkins_service_enable: mask
+profile::releases::mediawiki::jenkins_service_ensure: stopped
+profile::releases::mediawiki::jenkins_service_monitor: false
 profile::releases::mediawiki::prefix: /
 profile::releases::mediawiki::server_admin: noc@wikimedia.org
 profile::releases::mediawiki::sitename: releases.wikimedia.org
