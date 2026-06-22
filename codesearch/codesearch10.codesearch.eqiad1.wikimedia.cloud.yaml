@@ -1,0 +1,2 @@
+profile::firewall::defs_from_etcd: fals
+profile::firewall::defs_from_etcd_nft: false
