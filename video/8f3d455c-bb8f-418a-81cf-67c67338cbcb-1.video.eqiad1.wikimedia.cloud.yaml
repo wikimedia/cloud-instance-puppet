@@ -1,4 +1,0 @@
-mount_nfs: false
-profile::wmcs::nfs::standalone::cinder_attached: false
-profile::wmcs::nfs::standalone::volumes:
-- 8f3d455c-bb8f-418a-81cf-67c67338cbcb
