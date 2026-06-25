@@ -16,10 +16,10 @@ profile::opensearch::common_settings:
   awareness_attributes: ''
   bulk_thread_pool_executors: 5
   certificate_name: '%{::fqdn}'
-  heap_memory: 4g
   ltr_cache_size: 100mb
   reindex_remote_whitelist: ''
   search_shard_count_limit: 1000
+profile::opensearch::common_settings::heap_memory: 4g
 profile::opensearch::config_version: '1'
 profile::opensearch::dc_settings: {}
 profile::opensearch::native_lib_path: /usr/share/opensearch/plugins/opensearch-knn/lib
