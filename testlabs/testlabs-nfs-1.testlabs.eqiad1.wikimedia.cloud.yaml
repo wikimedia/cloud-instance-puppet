@@ -1,5 +1,0 @@
-foo: bar
-mount_nfs: false
-profile::wmcs::nfs::standalone::cinder_attached: false
-profile::wmcs::nfs::standalone::volumes:
-- testlabs
