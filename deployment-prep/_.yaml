@@ -2076,6 +2076,71 @@ profile::pki::client::ensure: present
 profile::prometheus::cadvisor_exporter::port: 4194
 profile::prometheus::statsd_exporter::mappings: []
 profile::puppet::agent::force_puppet7: true
+profile::puppet::agent::puppetserver_ca_cert: '-----BEGIN CERTIFICATE-----
+
+  MIIFozCCA4ugAwIBAgIUV4VSPnH+c7UmEXSLArmrjEUlJiUwDQYJKoZIhvcNAQEL
+
+  BQAwTTFLMEkGA1UEAwxCUHVwcGV0IENBOiBkZXBsb3ltZW50LXB1cHBldG1hc3Rl
+
+  cjAzLmRlcGxveW1lbnQtcHJlcC5lcWlhZC53bWZsYWJzMB4XDTIzMDUyNjEwMjUy
+
+  N1oXDTMzMDUyMzEwMjUyN1owTTFLMEkGA1UEAwxCUHVwcGV0IENBOiBkZXBsb3lt
+
+  ZW50LXB1cHBldG1hc3RlcjAzLmRlcGxveW1lbnQtcHJlcC5lcWlhZC53bWZsYWJz
+
+  MIICIjANBgkqhkiG9w0BAQEFAAOCAg8AMIICCgKCAgEArzSvbRKTE5tjIb76Yzvv
+
+  2K7n4Kbkam/JSlNXKWL+ryxTvuFSJFktqQe66DpV2F/GAnDx+Q7UJ//vWjgh9Rf6
+
+  mFYkwr/dcBUYo6bML3TH11HH0XXYpMPTzVYK72UxKcpePsMjDm9NtHdyFHZrWPUx
+
+  LcMBj9qTxWOfBTllpaL4WTvx+/++K/l/lACW8i0uKincWReg+P0UVxlbq+i5vWDa
+
+  Zsn/gBYTFSVjkEpxryLq3t0JJ0jjpLulfMFT2sFONWffFwv51gsn93yINr00bDWP
+
+  hN67ROVr4exKmMdOJr/hb5xJ9rpmiMwDJ4NihYdNUmMAVinrT5U8q0N9W9iR6uJS
+
+  g+A/ldHSRtrecQ1025zahIj+PgR6xys5YSKUsbmEIyilWva2siRqoENlueYpKJST
+
+  TUNKym4OfLqnnFsNKkIQUHXIyw7NVtWr2gk1WAFcww2gl/p+0GDV8bSMVaHnujg8
+
+  8rKoclz/0eBdTOT5QeM14+GK9uYfXWxWoi4JOw1NDdY+qvfAywbRNUiZoVRw5YvV
+
+  94y+WnJHbmWk2NzrYRH6XvmmByq7z+QwoPidQAChxnYJcmtCaO2vKYpsdI0LI33C
+
+  oxH/rRRFZiZEZrUbmB95CELTssyeJNzdCHM4jgEVmCh13f5eSQdMfAs+PCNE2pvp
+
+  lXtUu5o23Xio8dM7S51PIKUCAwEAAaN7MHkwDwYDVR0TAQH/BAUwAwEB/zA3Bglg
+
+  hkgBhvhCAQ0EKhYoUHVwcGV0IFJ1YnkvT3BlblNTTCBJbnRlcm5hbCBDZXJ0aWZp
+
+  Y2F0ZTAOBgNVHQ8BAf8EBAMCAQYwHQYDVR0OBBYEFK/sN3bB7qPdmMBWIDW0nusg
+
+  b8PbMA0GCSqGSIb3DQEBCwUAA4ICAQAi8zVa56HZzr8j9E/CzeNiKmoq/t+YW1bN
+
+  pFPislEo+iy3AaYOG5LxOqmhOwLjrSLzD2b4omHJ+6b0heKuxyB1Hr/WcroltZkS
+
+  +YFbZ1OScfY4XOmqQnteXynilqAU/kvpZHt3i/8z2VKtDjMPiCKNcH2zag3vJKgv
+
+  etY0rm/q1ue6gMSKq09aSdSB9lYLrWr2wApMDDHoqdKricjr9IpMTIvbFuVIwg6W
+
+  3G8b0Osf8e+Vk5uGqkXL5H3xr9og5yXrTUNg2KSxdIchWbBqaMp8yN+Z5UiAMir+
+
+  mJfvD4bLHFh1bC7g61Ie+WzuVwq5n0+0fklx74c+1UMBdfAYh9/pMXsQvn3pzGKr
+
+  DuxjIO8Yz3jgbD2lhOpDy20IIYM8+ixwLYJA64P5ZQ9JbQIVhckmnesHD2RXX5bc
+
+  I426BKdFL9ky5f7W2wk+pnMFPPmdtU9PNTGAAlsU+RNybic+wsnhiR2ADEKukgnR
+
+  NVbKBibWZMlqFsfNTbZs+L48gZ7RX36AyLyC5Tbr83sn+TL8ZUBTlSYLmcF2bvdD
+
+  pYZa7p+kqsgi2yTh+NLuuCOtQ4dCZEUa5t6mecxabJjwjunl0kppEcQWekqcEtw/
+
+  8Iq2qXxQlj0Sb0nAP3/GJaTgmwew9Nzh0eEKLLodOA7SVLSr+juHkQKX2a9hpP36
+
+  kobOg2rtIg==
+
+  -----END CERTIFICATE-----'
 profile::puppetdb::extra_authorized_hosts: deployment-cumin-3.deployment-prep.eqiad1.wikimedia.cloud
 profile::puppetdb::master: deployment-puppetdb02.deployment-prep.eqiad.wmflabs
 profile::puppetdb::slaves: []
