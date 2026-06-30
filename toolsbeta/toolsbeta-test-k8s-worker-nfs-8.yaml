@@ -1,3 +1,4 @@
+dumps_dist_active_vps: dumps-nfs.wikimedia.org
 dumps_dist_nfs_servers:
 - clouddumps1001.wikimedia.org
 - clouddumps1002.wikimedia.org
