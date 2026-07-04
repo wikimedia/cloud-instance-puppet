@@ -54,7 +54,7 @@ profile::idp::services:
     id: 6
     profile_format: FLAT
     service_class: OidcRegisteredService
-    service_id: http://127.0.0.1:8000/auth/callback(/.*)?
+    service_id: https?://127.0.0.1:(8000|3000.)/auth/callback(/.*)?
   o11y_wmflabs_org:
     id: 3
     service_id: https://(.*)\.monitoring\.wmflabs\.org(/.*)?
