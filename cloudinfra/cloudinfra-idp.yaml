@@ -50,6 +50,11 @@ profile::idp::services:
     profile_format: FLAT
     service_class: OidcRegisteredService
     service_id: https://gitlab\.devtools\.wmcloud\.org(/.*)?
+  local_dev:
+    id: 6
+    profile_format: FLAT
+    service_class: OidcRegisteredService
+    service_id: http://127.0.0.1:8000/auth/callback(/.*)?
   o11y_wmflabs_org:
     id: 3
     service_id: https://(.*)\.monitoring\.wmflabs\.org(/.*)?
