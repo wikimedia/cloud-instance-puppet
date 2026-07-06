@@ -1,2 +1,3 @@
 - role::wmcs::nfs::standalone
 - profile::wmcs::services::toolsdb_replica_cnf
+- profile::wmcs::nfs::daily_file_cleanup
