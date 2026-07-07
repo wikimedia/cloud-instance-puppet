@@ -1,5 +1,4 @@
 profile::wmcs::proxy::static::acme_chief_certs:
-- maps
 - wma
 - wmcloud
 profile::wmcs::proxy::static::blocked_referers: schiebt-sie-ab.de
