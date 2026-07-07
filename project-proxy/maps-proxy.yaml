@@ -6,9 +6,6 @@ profile::wmcs::proxy::static::proxy_mappings:
   '*.wma.wmcloud.org':
     certname: wma
     domain: maps-wma2.maps.eqiad1.wikimedia.cloud
-  warper.wmflabs.org:
-    certname: wmcloud
-    domain: maps-warper4.maps.eqiad1.wikimedia.cloud
   wma.wmcloud.org:
     certname: wma
     domain: maps-wma2.maps.eqiad1.wikimedia.cloud
