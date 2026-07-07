@@ -14,5 +14,5 @@ profile::wmcs::proxy::static::proxy_mappings:
     certname: wma
     domain: maps-wma2.maps.eqiad1.wikimedia.cloud
   wma.wmflabs.org:
-    certname: wma
+    certname: wmcloud
     domain: maps-wma2.maps.eqiad1.wikimedia.cloud
