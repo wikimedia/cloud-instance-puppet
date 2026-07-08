@@ -1,0 +1,10 @@
+phabricator::mysql::slave: localhost
+phabricator_admin_pass: app_pass
+phabricator_admin_user: app_user
+phabricator_daemons_pass: app_pass
+phabricator_daemons_user: app_user
+phabricator_server: phabricator-trixie.devtools.eqiad1.wikimedia.cloud
+phabricator_servers:
+- phabricator-trixie.devtools.eqiad1.wikimedia.cloud
+profile::phabricator::main::database_datadir: /srv/sqldata
+profile::tlsproxy::envoy::global_cert_name: phabricator-trixie.devtools.eqiad1.wikimedia.cloud
