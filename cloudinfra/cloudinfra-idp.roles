@@ -1,1 +1,3 @@
-- profile::idp::standalone
+- profile::firewall
+- profile::idp
+- profile::java
