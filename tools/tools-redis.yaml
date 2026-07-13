@@ -5,3 +5,4 @@ profile::toolforge::redis_sentinel::keepalived_vips:
 profile::toolforge::redis_sentinel::primary: tools-redis-8.tools.eqiad1.wikimedia.cloud
 profile::toolforge::redis_sentinel::redis_hosts:
 - tools-redis-8.tools.eqiad1.wikimedia.cloud
+- tools-redis-9.tools.eqiad1.wikimedia.cloud
