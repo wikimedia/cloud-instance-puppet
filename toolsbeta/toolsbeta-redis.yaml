@@ -5,3 +5,5 @@ profile::toolforge::redis_sentinel::maxmemory: 1GB
 profile::toolforge::redis_sentinel::primary: toolsbeta-redis-7.toolsbeta.eqiad1.wikimedia.cloud
 profile::toolforge::redis_sentinel::redis_hosts:
 - toolsbeta-redis-7.toolsbeta.eqiad1.wikimedia.cloud
+- toolsbeta-redis-8.toolsbeta.eqiad1.wikimedia.cloud
+- toolsbeta-redis-9.toolsbeta.eqiad1.wikimedia.cloud
