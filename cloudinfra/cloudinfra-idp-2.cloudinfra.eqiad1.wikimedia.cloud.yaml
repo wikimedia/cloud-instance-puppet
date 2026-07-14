@@ -1,3 +1,6 @@
+profile::idp::actuators:
+- sso
+- ssoSessions
 profile::idp::memcached_enable: false
 profile::idp::tomcat_version: tomcat10
 profile::java::java_packages:
