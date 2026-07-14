@@ -6,3 +6,4 @@ profile::toolforge::redis_sentinel::primary: tools-redis-8.tools.eqiad1.wikimedi
 profile::toolforge::redis_sentinel::redis_hosts:
 - tools-redis-8.tools.eqiad1.wikimedia.cloud
 - tools-redis-9.tools.eqiad1.wikimedia.cloud
+- tools-redis-10.tools.eqiad1.wikimedia.cloud
