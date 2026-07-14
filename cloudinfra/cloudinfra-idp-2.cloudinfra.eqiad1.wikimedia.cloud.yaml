@@ -2,6 +2,9 @@ profile::idp::actuators:
 - sso
 - ssoSessions
 profile::idp::memcached_enable: false
+profile::idp::redis_enable: true
+profile::idp::redis_port: 6379
+profile::idp::redis_server: localhost
 profile::idp::tomcat_version: tomcat10
 profile::java::java_packages:
 - variant: jdk
