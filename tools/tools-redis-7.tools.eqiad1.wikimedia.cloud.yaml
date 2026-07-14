@@ -1,7 +1,0 @@
-profile::toolforge::redis_sentinel::keepalived_vips:
-- 172.16.2.46
-profile::toolforge::redis_sentinel::primary: tools-redis-5.tools.eqiad1.wikimedia.cloud
-profile::toolforge::redis_sentinel::redis_hosts:
-- tools-redis-5.tools.eqiad1.wikimedia.cloud
-- tools-redis-6.tools.eqiad1.wikimedia.cloud
-- tools-redis-7.tools.eqiad1.wikimedia.cloud
