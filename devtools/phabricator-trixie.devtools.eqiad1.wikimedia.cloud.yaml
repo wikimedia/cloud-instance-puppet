@@ -1,8 +1,8 @@
 phabricator::mysql::slave: localhost
-phabricator_admin_pass: app_pass
-phabricator_admin_user: app_user
-phabricator_daemons_pass: app_pass
-phabricator_daemons_user: app_user
+phabricator_admin_pass: Password123!
+phabricator_admin_user: phabricator
+phabricator_daemons_pass: phabricator
+phabricator_daemons_user: Password123!
 phabricator_server: phabricator-trixie.devtools.eqiad1.wikimedia.cloud
 phabricator_servers:
 - phabricator-trixie.devtools.eqiad1.wikimedia.cloud
