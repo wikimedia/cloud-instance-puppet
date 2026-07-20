@@ -7,8 +7,8 @@ profile::releases::mediawiki::jenkins_service_ensure: stopped
 profile::releases::mediawiki::jenkins_service_monitor: false
 profile::releases::mediawiki::prefix: /
 profile::releases::mediawiki::server_admin: noc@wikimedia.org
-profile::releases::mediawiki::sitename: releases.wikimedia.org
-profile::releases::mediawiki::sitename_jenkins: releases-jenkins.wikimedia.org
+profile::releases::mediawiki::sitename: releases.wmcloud.org
+profile::releases::mediawiki::sitename_jenkins: releases-jenkins.wmcloud.org
 profile::tlsproxy::envoy::cfssl_options:
   hosts:
   - releases.devtools.wmnet
