@@ -4,6 +4,7 @@ phabricator_admin_user: app_user
 phabricator_altdomain: phab-new.wmcloud.org
 phabricator_daemons_pass: app_pass
 phabricator_daemons_user: app_user
+phabricator_domain: phabricator.wmcloud.org
 phabricator_server: phabricator-trixie.devtools.eqiad1.wikimedia.cloud
 phabricator_servers:
 - phabricator-trixie.devtools.eqiad1.wikimedia.cloud
