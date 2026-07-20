@@ -1,7 +1,6 @@
 profile::base::enable_kafka_shipping: false
 profile::base::remote_syslog_tls:
   eqiad:
-  - syslog-server05.auditlogging.eqiad1.wikimedia.cloud:6514
   - syslog-server06.auditlogging.eqiad1.wikimedia.cloud:6514
 profile::base::remote_syslog_tls_client_auth: false
 profile::base::remote_syslog_tls_server_auth: x509/name
