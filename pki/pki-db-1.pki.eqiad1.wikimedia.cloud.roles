@@ -1,0 +1,4 @@
+- profile::mariadb::packages_wmf
+- mariadb::service
+- mariadb::config
+- profile::pki::client
