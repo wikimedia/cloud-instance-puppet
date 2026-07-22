@@ -54,6 +54,13 @@ profile::acme_chief::certificates:
     authorized_regexes:
     - ^.+\.project-proxy\.eqiad1\.wikimedia\.cloud$
     challenge: dns-01
+  customwikibase:
+    CN: explorer.wikiba.se
+    SNI:
+    - explorer.wikiba.se
+    authorized_regexes:
+    - ^.+\.project-proxy\.eqiad1\.wikimedia\.cloud$
+    challenge: http-01
   customwlmaz:
     CN: wikilovesmonuments.az
     SNI:
