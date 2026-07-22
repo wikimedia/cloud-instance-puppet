@@ -1,2 +1,24 @@
-profile::elasticsearch::dc_settings: {}
+profile::elasticsearch::common_settings:
+  auto_create_index: true
+  awareness_attributes: ''
+  cluster_hosts:
+  - tools-opensearch-1.tools.eqiad1.wikimedia.cloud
+  - tools-opensearch-2.tools.eqiad1.wikimedia.cloud
+  - tools-opensearch-3.tools.eqiad1.wikimedia.cloud
+  cluster_name: toolforge
+  curator_uses_unicast_hosts: false
+  expected_nodes: 3
+  heap_memory: 8G
+  http_port: 9200
+  minimum_master_nodes: 2
+  recover_after_nodes: 2
+  recover_after_time: 1m
+  send_logs_to_logstash: false
+  short_cluster_name: omega
+  transport_tcp_port: 9300
+  unicast_hosts:
+  - tools-opensearch-1.tools.eqiad1.wikimedia.cloud
+  - tools-opensearch-2.tools.eqiad1.wikimedia.cloud
+  - tools-opensearch-3.tools.eqiad1.wikimedia.cloud
+profile::opensearch::dc_settings: {}
 profile::opensearch::instances: {}
