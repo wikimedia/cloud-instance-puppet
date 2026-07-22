@@ -34,6 +34,11 @@ profile::wmcs::novaproxy::supported_zones:
     id: 26033036-d9bf-458b-8f54-46e83084e0e4
     project: catalyst
     shared: false
+  explorer.wikiba.se.:
+    acmechief_cert: customwikibase
+    apex: true
+    project: wikidata-dev
+    shared: false
   lingualibre.org.:
     acmechief_cert: customlingualibre
     apex: true
