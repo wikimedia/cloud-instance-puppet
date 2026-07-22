@@ -1,4 +1,4 @@
-profile::elasticsearch::common_settings:
+profile::opensearch::common_settings:
   auto_create_index: true
   awareness_attributes: ''
   cluster_hosts:
