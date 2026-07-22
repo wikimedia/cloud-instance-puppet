@@ -11,6 +11,9 @@ profile::opensearch::common_settings:
   expected_nodes: 3
   heap_memory: 8G
   http_port: 9200
+  initial_cluster_manager_nodes:
+  - tools-opensearch-1-toolforge
+  - tools-opensearch-2-toolforge
   recover_after_nodes: 2
   recover_after_time: 1m
   send_logs_to_logstash: false
