@@ -26,3 +26,5 @@ profile::opensearch::common_settings:
 profile::opensearch::dc_settings: {}
 profile::opensearch::instances: {}
 profile::opensearch::version: 2.19.5
+profile::toolforge::opensearch::keepalived::vips:
+- opensearch.svc.tools.eqiad1.wikimedia.cloud
