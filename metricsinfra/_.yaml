@@ -47,8 +47,8 @@ profile::wmcs::metricsinfra::prometheus_alertmanager_hosts:
 - metricsinfra-alertmanager-2.metricsinfra.eqiad1.wikimedia.cloud
 - metricsinfra-alertmanager-3.metricsinfra.eqiad1.wikimedia.cloud
 profile::wmcs::metricsinfra::prometheus_hosts:
-- metricsinfra-prometheus-3.metricsinfra.eqiad1.wikimedia.cloud
 - metricsinfra-prometheus-4.metricsinfra.eqiad1.wikimedia.cloud
+- metricsinfra-prometheus-5.metricsinfra.eqiad1.wikimedia.cloud
 profile::wmcs::metricsinfra::prometheus_manager::sync_exclude_projects:
 - admin-monitoring
 - trove
