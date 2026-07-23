@@ -1,2 +1,2 @@
 mount_nfs: false
-puppetserver: puppetserver.testlabs.eqiad1.wikimedia.cloud
+puppetmaster: puppetserver.testlabs.eqiad1.wikimedia.cloud
