@@ -3,6 +3,7 @@ profile::ci::pipeline::publisher::docker_registry_user: ci-restricted
 profile::releases::mediawiki::http_port: 8080
 profile::releases::mediawiki::jenkins_agent_key: ssh-rsa test
 profile::releases::mediawiki::jenkins_service_enable: manual
+profile::releases::mediawiki::jenkins_service_ensure: stopped
 profile::releases::mediawiki::jenkins_service_monitor: false
 profile::releases::mediawiki::prefix: /
 profile::releases::mediawiki::server_admin: noc@wikimedia.org
