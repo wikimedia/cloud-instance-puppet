@@ -17,6 +17,7 @@ profile::opensearch::common_settings:
   - tools-opensearch-2-toolforge
   recover_after_nodes: 2
   recover_after_time: 1m
+  reindex_remote_whitelist: elasticsearch.svc.tools.eqiad1.wikimedia.cloud:80
   send_logs_to_logstash: false
   short_cluster_name: omega
   transport_tcp_port: 9300
