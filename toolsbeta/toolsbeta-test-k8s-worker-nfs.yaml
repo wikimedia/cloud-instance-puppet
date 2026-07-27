@@ -1,3 +1,4 @@
+dumps_use_nfs_lb: true
 mount_nfs: true
 profile::wmcs::kubeadm::infra_tracing::nfs::ensure: present
 profile::wmcs::kubeadm::infra_tracing::nfs::in_k8s_node: true
