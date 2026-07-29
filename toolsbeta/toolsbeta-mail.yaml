@@ -1,4 +1,3 @@
-dumps_use_nfs_lb: true
 mount_nfs: true
 profile::mail::default_mail_relay::enabled: false
 profile::toolforge::base::is_mail_relay: true
