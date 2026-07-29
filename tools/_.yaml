@@ -1,6 +1,7 @@
 acmechief_host: tools-acme-chief-3.tools.eqiad1.wikimedia.cloud
 docker::builder_host: tools-imagebuilder-2.tools.eqiad1.wikimedia.cloud
 docker::registry: docker-registry.svc.toolforge.org
+dumps_use_nfs_lb: true
 dynamicproxy::banned_ips:
 - 47.79.194.173/19
 - 70.179.6.9
