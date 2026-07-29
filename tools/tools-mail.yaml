@@ -1,4 +1,3 @@
-dumps_use_nfs_lb: true
 mount_nfs: true
 mtail::group: adm
 mtail::logs:
