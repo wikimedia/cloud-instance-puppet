@@ -4,7 +4,7 @@ profile::docker::runner::service_defs:
   mediawiki-services-mobileapps:
     config:
       logging:
-        level: trace
+        level: info
         name: mobileapps
         streams:
         - named_levels: true
