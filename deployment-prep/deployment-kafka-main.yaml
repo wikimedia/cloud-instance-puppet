@@ -1,7 +1,7 @@
 profile::base::certificates::include_bundle_jks: true
 profile::java::java_packages:
 - variant: jdk
-  version: '8'
+  version: '21'
 profile::kafka::broker::auth_acls_enabled: true
 profile::kafka::broker::confluent_distribution: '77'
 profile::kafka::broker::inter_broker_protocol_version: '3.7'
