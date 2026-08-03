@@ -1,8 +1,0 @@
-profile::wcms::nfs::standalone::cinder_attached: true
-profile::wcms::nfs::standalone::host_scratch: true
-profile::wcms::nfs::standalone::volumes:
-- scratch
-profile::wmcs::nfs::standalone::cinder_attached: false
-profile::wmcs::nfs::standalone::host_scratch: true
-profile::wmcs::nfs::standalone::volumes:
-- scratch
