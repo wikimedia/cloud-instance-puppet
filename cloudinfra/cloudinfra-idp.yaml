@@ -6,14 +6,6 @@ ldap:
   rw-server: localhost
   rw-server-fallback: localhost
 profile::debmonitor::client::ensure: present
-profile::idp::client::httpd::sites:
-  idp-test-login.wmcloud.org:
-    document_root: /srv/
-    enable_monitor: false
-    proxied_as_https: true
-    vhost_content: profile/idp/client/httpd-uwsgi.erb
-    vhost_settings:
-      uwsgi_port: 8081
 profile::idp::delegated_authenticators:
 - auto_redirect_type: SERVER
   client_name: WMF_Production
