@@ -1,4 +1,0 @@
-mount_nfs: false
-profile::wcms::nfs::standalone::cinder_attached: false
-profile::wcms::nfs::standalone::volumes:
-- maps
