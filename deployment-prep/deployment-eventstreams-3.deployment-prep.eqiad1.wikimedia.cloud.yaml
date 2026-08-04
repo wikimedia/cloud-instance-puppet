@@ -1,0 +1,89 @@
+profile::docker::engine::declare_service: true
+profile::docker::runner::service_defs:
+  eventstreams:
+    config:
+      logging:
+        level: info
+      metrics:
+        port: 9092
+        type: prometheus
+      num_workers: 0
+      service_name: eventstreams
+      services:
+      - conf:
+          cors: '*'
+          csp: default-src 'none'; script-src 'self' 'unsafe-inline'; connect-src
+            *; style-src 'self' 'unsafe-inline'; img-src 'self'; font-src 'self'
+          kafka:
+            metadata.broker.list: deployment-kafka-jumbo-5.deployment-prep.eqiad1.wikimedia.cloud:9092,deployment-kafka-jumbo-8.deployment-prep.eqiad1.wikimedia.cloud:9092,deployment-kafka-jumbo-9.deployment-prep.eqiad1.wikimedia.cloud:9092
+            statistics.interval.ms: 10000
+          mediawiki_redacted_pages:
+            simple.wikipedia.beta.wmcloud.org:
+            - TestPage
+            - Beta_Beta_Beta
+          port: 8092
+          schema_base_uris:
+          - http://deployment-schema-3.deployment-prep.eqiad1.wikimedia.cloud/repositories/primary/jsonschema
+          - http://deployment-schema-3.deployment-prep.eqiad1.wikimedia.cloud/repositories/secondary/jsonschema
+          schema_latest_version: latest
+          spec: ./spec.yaml
+          stream_config_defaults:
+            medawiki.page-create:
+              description: 'MediaWiki page create events. This page create stream
+
+                is just the first revision create event for each page.
+
+                As such, it reuses the mediawiki/revision/create schema.'
+              stream_aliases:
+              - page-create
+            mediawiki.page-delete:
+              stream_aliases:
+              - page-delete
+            mediawiki.page-links-change:
+              stream_aliases:
+              - page-links-change
+            mediawiki.page-move:
+              stream_aliases:
+              - page-move
+            mediawiki.page-properties-change:
+              stream_aliases:
+              - page-properties-change
+            mediawiki.page-undelete:
+              stream_aliases:
+              - page-undelete
+            mediawiki.recentchange:
+              stream_aliases:
+              - recentchange
+            mediawiki.revision-create:
+              stream_aliases:
+              - revision-create
+            mediawiki.revision-score:
+              description: 'MediaWiki revision score events. Every new revision in
+                an
+
+                ORES enabled wiki should have a revision-score event.
+
+                This schema is structured differently than ORES API results, as
+
+                event schemas should map well into RDBMS / SQL environments where
+
+                columns must be strongly typed.
+
+                NOTE: Only the most commonly used ORES model scores are included in
+
+                each event (the ones returned by https://ores.wikimedia.org/v3/precache).'
+              stream_aliases:
+              - revision-score
+          stream_config_object_path: streams
+          stream_config_ttl: 300
+          stream_config_uri: https://meta.wikimedia.beta.wmcloud.org/w/api.php?action=streamconfigs
+          stream_ui_enabled: true
+          user_agent: eventstreams-beta
+        module: app.js
+        name: eventstreams
+      worker_heap_limit_mb: 250
+    image_name: eventstreams
+    namespace: repos/data-engineering
+    override_cmd: /srv/service/server.js -c /etc/eventstreams/config.yaml
+    port: 8092
+    version: node24-update-693cfcc5
