@@ -1,1 +1,2 @@
 - role::logging::opensearch::collector
+- profile::opensearch::api::httpd_proxy
