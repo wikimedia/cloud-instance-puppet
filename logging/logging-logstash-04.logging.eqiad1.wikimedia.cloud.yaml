@@ -1,7 +1,1 @@
-profile::opensearch::api::httpd_proxy::auth_file: /etc/opensearch-api-htpasswd
-profile::opensearch::api::httpd_proxy::auth_realm: local
-profile::opensearch::api::httpd_proxy::auth_type: local-api
-profile::opensearch::api::httpd_proxy::group_file: /etc/opensearch-api-htgroup
-profile::opensearch::api::httpd_proxy::manage_local_users: false
-profile::opensearch::api::httpd_proxy::serveradmin: https://wikitech.wikimedia.org/wiki/SRE/Observability
-profile::opensearch::api::httpd_proxy::vhost: logs-api.svc.logging.eqiad1.wikimedia.cloud
+{}
