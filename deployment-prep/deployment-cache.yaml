@@ -200,6 +200,9 @@ profile::cache::haproxy::vars:
 profile::cache::haproxykafka::ensure: absent
 profile::cache::purge::backend_addr: 127.0.0.1:3128
 profile::cache::purge::frontend_addr: /run/varnish-privileged.socket
+profile::cache::varnish::frontend::fe_vcl_config:
+  thumb_domain: placeholder.beta.wmcloud.org
+  upload_webp_hits_threshold: 90
 profile::cache::varnish::frontend::listen_uds:
 - /run/varnish-frontend-0.socket
 - /run/varnish-frontend-1.socket
