@@ -1,5 +1,6 @@
 confd::srv_dns: deployment-prep.eqiad.wmflabs
 mtail::service_ensure: absent
+profile::cache::base::log_slow_request_threshold: 300.0
 profile::cache::haproxy::acls:
   tls:
   - criterion: var(txn.xwd_count)
