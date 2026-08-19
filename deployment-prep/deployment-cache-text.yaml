@@ -53,6 +53,7 @@ profile::cache::varnish::frontend::enable_http_redirection: false
 profile::cache::varnish::frontend::fe_extra_vcl:
 - normalize_path
 - geoip
+- media
 profile::cache::varnish::frontend::separate_vcl:
 - misc
 profile::cache::varnish::separate_vcl:
