@@ -1,2 +1,1 @@
-profile::logstash::collector::opensearch_output_password: logstash
-profile::logstash::collector::opensearch_output_username: logstash
+{}
