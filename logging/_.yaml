@@ -1,7 +1,1 @@
-profile::logstash::collector::opensearch_output_password: logstash
-profile::logstash::collector::opensearch_output_username: logstash
-profile::opensearch::api::httpd_proxy::use_tls_endpoint: true
-profile::opensearch::curator::password: curator
-profile::opensearch::curator::username: curator
-profile::prometheus::es_exporter::password: prometheus
-profile::prometheus::es_exporter::username: prometheus
+{}
