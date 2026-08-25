@@ -3,4 +3,4 @@ profile::beta::autoupdater::run_updater: false
 profile::kubernetes::client::version: '1.23'
 profile::mediawiki::php::php_versions:
 - '8.5'
-profile::mediawiki::scap_client::is_master: false
+profile::mediawiki::scap_client::is_master: true
