@@ -1,3 +1,0 @@
-- profile::rsyslog::kafka_shipper
-- role::beta::deploymentserver
-- role::deployment_server
