@@ -1,3 +1,2 @@
 - profile::pki::root_ca
-- ''
 - profile::pki::client
