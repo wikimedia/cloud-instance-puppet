@@ -1,1 +1,3 @@
-{}
+profile::pki::root_ca::bootstrap: true
+profile::pki::root_ca::rsa_intermediates:
+- BetaLogs_OpenSearch
