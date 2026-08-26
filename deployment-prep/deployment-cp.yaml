@@ -204,6 +204,7 @@ profile::cache::purge::backend_addr: 127.0.0.1:3128
 profile::cache::purge::frontend_addr: /run/varnish-privileged.socket
 profile::cache::purge::tls_key_password: from_my_checks_this_is_unused_but_if_you_dont_set_it_puppet_breaks_amir
 profile::cache::purged::use_pki: true
+profile::cache::varnish::frontend::enable_http_redirection: false
 profile::cache::varnish::frontend::fe_vcl_config:
   thumb_domain: placeholder.beta.wmcloud.org
   upload_webp_hits_threshold: 90
