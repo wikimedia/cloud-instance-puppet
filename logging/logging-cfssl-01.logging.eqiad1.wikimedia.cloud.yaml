@@ -1,4 +1,1 @@
-profile::pki::root_ca::bootstrap: true
-profile::pki::root_ca::key_params:
-  algo: rsa
-  size: 4096
+{}
