@@ -12,6 +12,9 @@ cache::upload::nodes:
   eqiad:
   - deployment-cache-upload09.deployment-prep.eqiad1.wikimedia.cloud
 profile::cache::base::varnish_version: 5
+profile::cache::purge::kafka_tls: true
+profile::cache::purge::kafka_topics:
+- eqiad.resource-purge
 profile::cache::ssl::unified::acme_chief: true
 profile::cache::ssl::unified::certs: []
 profile::cache::ssl::unified::certs_active: []
