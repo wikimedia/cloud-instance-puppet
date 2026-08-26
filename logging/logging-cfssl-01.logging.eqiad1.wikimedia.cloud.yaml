@@ -1,4 +1,3 @@
-profile::pki::root_ca::bootstrap: true
 profile::pki::root_ca::intermediates: []
 profile::pki::root_ca::key_params:
   algo: rsa
