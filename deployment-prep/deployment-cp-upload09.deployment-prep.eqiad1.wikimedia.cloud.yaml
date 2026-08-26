@@ -6,6 +6,7 @@ cache::upload::nodes:
   eqiad:
   - deployment-cp-upload09.deployment-prep.eqiad1.wikimedia.cloud
 profile::cache::haproxy::http_redirection_port: 80
+profile::cache::haproxy::version: haproxy32
 profile::cache::purge::kafka_tls: true
 profile::cache::purge::kafka_topics:
 - eqiad.resource-purge
