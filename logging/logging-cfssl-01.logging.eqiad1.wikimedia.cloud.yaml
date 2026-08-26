@@ -1,1 +1,1 @@
-{}
+profile::pki::root_ca::bootstrap: true
