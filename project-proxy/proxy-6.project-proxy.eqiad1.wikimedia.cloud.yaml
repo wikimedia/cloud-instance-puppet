@@ -1,3 +1,4 @@
+profile::firewall::provider: nftables
 profile::wmcs::novaproxy::keepalived_peers:
 - proxy-5.project-proxy.eqiad1.wikimedia.cloud
 - proxy-6.project-proxy.eqiad1.wikimedia.cloud
