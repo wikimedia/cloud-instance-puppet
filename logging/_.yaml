@@ -7,5 +7,6 @@ profile::opensearch::common_settings:
   disable_security_plugin: false
 profile::opensearch::dashboards::opensearch_api_password: kibana
 profile::opensearch::dashboards::opensearch_api_username: kibana
+profile::pki::client::root_ca_source: puppet:///modules/profile/pki/logging/ROOT/LOGGING_EQIAD1_WIKIMEDIA_CLOUD_CA.pem
 profile::prometheus::es_exporter::password: prometheus
 profile::prometheus::es_exporter::username: prometheus
