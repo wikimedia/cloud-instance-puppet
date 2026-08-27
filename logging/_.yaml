@@ -5,5 +5,7 @@ profile::opensearch::common_settings:
   curator_password: curator
   curator_username: curator
   disable_security_plugin: false
+profile::opensearch::dashboards::opensearch_api_password: kibana
+profile::opensearch::dashboards::opensearch_api_username: kibana
 profile::prometheus::es_exporter::password: prometheus
 profile::prometheus::es_exporter::username: prometheus
