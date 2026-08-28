@@ -2,6 +2,7 @@ profile::logstash::collector::opensearch_output_password: logstash
 profile::logstash::collector::opensearch_output_username: logstash
 profile::opensearch::api::httpd_proxy::use_tls_endpoint: true
 profile::opensearch::common_settings:
+  curator_ca_cert_override: /etc/ssl/localcerts/BetaLogs_OpenSearch.ca.pem
   curator_password: curator
   curator_username: curator
   disable_security_plugin: false
