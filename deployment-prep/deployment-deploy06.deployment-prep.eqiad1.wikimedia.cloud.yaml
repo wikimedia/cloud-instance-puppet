@@ -1,3 +1,4 @@
+__COMMENT__: MANAGED WITH TOFU. EDITS VIA HORIZON WILL BE LOST.
 profile::base::labs::cleanup_puppet_client_bucket: true
 profile::beta::autoupdater::run_updater: false
 profile::kubernetes::client::version: '1.23'
