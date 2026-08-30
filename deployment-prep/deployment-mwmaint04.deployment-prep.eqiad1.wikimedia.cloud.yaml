@@ -1,0 +1,3 @@
+__COMMENT__: MANAGED WITH TOFU. EDITS VIA HORIZON WILL BE LOST.
+profile::mediawiki::php::php_versions:
+- '8.5'
