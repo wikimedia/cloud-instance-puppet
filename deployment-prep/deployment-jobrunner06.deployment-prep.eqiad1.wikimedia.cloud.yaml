@@ -1,3 +1,4 @@
+__COMMENT__: MANAGED WITH TOFU. EDITS VIA HORIZON WILL BE LOST.
 profile::mediawiki::jobrunner::default_php_version: '8.5'
 profile::mediawiki::php::php_versions:
 - '8.5'
