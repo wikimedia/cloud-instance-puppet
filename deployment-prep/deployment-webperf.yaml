@@ -1,3 +1,4 @@
+__COMMENT__: MANAGED WITH TOFU. EDITS VIA HORIZON WILL BE LOST.
 arclamp_host: deployment-webperf22.deployment-prep.eqiad1.wikimedia.cloud
 graphite_host: localhost
 profile::tlsproxy::envoy::capitalize_headers: false
