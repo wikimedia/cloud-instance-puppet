@@ -1,0 +1,5 @@
+profile::mediawiki::jobrunner::default_php_version: '8.5'
+profile::mediawiki::php::absented_php_versions:
+- '8.3'
+profile::mediawiki::php::php_versions:
+- '8.5'
