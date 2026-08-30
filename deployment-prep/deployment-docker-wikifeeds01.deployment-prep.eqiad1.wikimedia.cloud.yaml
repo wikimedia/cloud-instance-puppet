@@ -1,1 +1,2 @@
+__COMMENT__: MANAGED WITH TOFU. EDITS VIA HORIZON WILL BE LOST.
 profile::docker::engine::version: 26.1.5+dfsg1-9+deb13u1
