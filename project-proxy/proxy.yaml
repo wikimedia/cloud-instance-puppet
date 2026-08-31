@@ -65,6 +65,12 @@ profile::wmcs::novaproxy::supported_zones:
     apex: true
     project: c1070625e313481a8e32bb636910ec44
     shared: false
+  wma.wmcloud.org.:
+    acmechief_cert: wma
+    apex: true
+    id: 896b8e16-3323-4b87-ab65-ec685beb13ff
+    project: maps
+    shared: false
   wmcloud.org.:
     acmechief_cert: wmcloud
     default: true
