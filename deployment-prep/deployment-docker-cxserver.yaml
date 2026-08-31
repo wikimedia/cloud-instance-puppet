@@ -39,3 +39,7 @@ profile::docker::runner::service_defs:
       templatemapping:
         database: /srv/service/config/templatemapping.db
       user_agent: CXServer/WMF
+    namespace: wikimedia
+    override_cmd: -c /etc/mediawiki-services-cxserver/config.yaml
+    port: 8080
+    version: 2026-08-24-032908-production
