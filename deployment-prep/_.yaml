@@ -2966,6 +2966,8 @@ scap::dsh::groups:
     hosts:
     - deployment-mediawiki13.deployment-prep.eqiad1.wikimedia.cloud
     - deployment-mediawiki14.deployment-prep.eqiad1.wikimedia.cloud
+    - deployment-mediawiki15.deployment-prep.eqiad1.wikimedia.cloud
+    - deployment-mediawiki16.deployment-prep.eqiad1.wikimedia.cloud
   arclamp:
     hosts:
     - deployment-webperf22.deployment-prep.eqiad1.wikimedia.cloud
@@ -2977,12 +2979,17 @@ scap::dsh::groups:
   mediawiki-appserver-canaries:
     hosts:
     - deployment-mediawiki14.deployment-prep.eqiad1.wikimedia.cloud
+    - deployment-mediawiki16.deployment-prep.eqiad1.wikimedia.cloud
   mediawiki-installation:
     hosts:
     - deployment-jobrunner05.deployment-prep.eqiad1.wikimedia.cloud
     - deployment-mediawiki13.deployment-prep.eqiad1.wikimedia.cloud
     - deployment-mediawiki14.deployment-prep.eqiad1.wikimedia.cloud
     - deployment-mwmaint03.deployment-prep.eqiad1.wikimedia.cloud
+    - deployment-jobrunner06.deployment-prep.eqiad1.wikimedia.cloud
+    - deployment-mediawiki15.deployment-prep.eqiad1.wikimedia.cloud
+    - deployment-mediawiki16.deployment-prep.eqiad1.wikimedia.cloud
+    - deployment-mwmaint04.deployment-prep.eqiad1.wikimedia.cloud
   restbase-betacluster:
     hosts:
     - deployment-restbase05.deployment-prep.eqiad1.wikimedia.cloud
