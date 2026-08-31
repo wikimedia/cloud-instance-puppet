@@ -1,37 +1,41 @@
-cors: '*'
-dictionary:
-  JsonDict:
-    languages: /srv/service/config/JsonDict.yaml
-jwt_secret: H.9F-.|,SC#Von%?Tklo"a<uPFOcxI$>
-languages: /srv/service/config/languages.yaml
-logging:
-  level: trace
-  name: cxserver
-mt:
-  Apertium:
-    api: http://apertium-beta.wmflabs.org
-    languages: /srv/service/config/Apertium.wikimedia.yaml
-  Google:
-    api: https://www.googleapis.com/language/translate/v2
-    key: dummykey
-    languages: /srv/service/config/Google.yaml
-  LingoCloud:
-    account: wikimedia
-    api: https://api.interpreter.caiyunai.com/v1
-    key: dummykey
-    languages: /srv/service/config/LingoCloud.yaml
-  TestClient:
-    languages: /srv/service/config/TestClient.yaml
-  defaults: /srv/service/config/mt-defaults.wikimedia.yaml
-mw_host: en.wikipedia.beta.wmcloud.org
-mwapi_uri: http://appservers.svc.deployment-prep.eqiad1.wikimedia.cloud/w/api.php
-no_proxy_list:
-- wmflabs
-- wmcloud
-port: 8080
-proxy: null
-ratelimiter_key: x-client-ip
-ratelimiter_rate: 10
-templatemapping:
-  database: /srv/service/config/templatemapping.db
-user_agent: CXServer/WMF
+profile::docker::engine::declare_service: true
+profile::docker::runner::service_defs:
+  mediawiki-services-cxserver:
+    config:
+      cors: '*'
+      dictionary:
+        JsonDict:
+          languages: /srv/service/config/JsonDict.yaml
+      jwt_secret: H.9F-.|,SC#Von%?Tklo"a<uPFOcxI$>
+      languages: /srv/service/config/languages.yaml
+      logging:
+        level: trace
+        name: cxserver
+      mt:
+        Apertium:
+          api: http://apertium-beta.wmflabs.org
+          languages: /srv/service/config/Apertium.wikimedia.yaml
+        Google:
+          api: https://www.googleapis.com/language/translate/v2
+          key: dummykey
+          languages: /srv/service/config/Google.yaml
+        LingoCloud:
+          account: wikimedia
+          api: https://api.interpreter.caiyunai.com/v1
+          key: dummykey
+          languages: /srv/service/config/LingoCloud.yaml
+        TestClient:
+          languages: /srv/service/config/TestClient.yaml
+        defaults: /srv/service/config/mt-defaults.wikimedia.yaml
+      mw_host: en.wikipedia.beta.wmcloud.org
+      mwapi_uri: http://appservers.svc.deployment-prep.eqiad1.wikimedia.cloud/w/api.php
+      no_proxy_list:
+      - wmflabs
+      - wmcloud
+      port: 8080
+      proxy: null
+      ratelimiter_key: x-client-ip
+      ratelimiter_rate: 10
+      templatemapping:
+        database: /srv/service/config/templatemapping.db
+      user_agent: CXServer/WMF
