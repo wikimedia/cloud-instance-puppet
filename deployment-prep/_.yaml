@@ -1988,18 +1988,39 @@ apt::use_experimental: true
 aptly::group: wikidev
 aptly::manage_nginx: false
 aptly::owner: jenkins-deploy
+arclamp_host: deployment-webperf22.deployment-prep.eqiad1.wikimedia.cloud
 beta::syncsiteresources::user: www-data
+cache::nodes:
+  text:
+    eqiad:
+    - deployment-cache-text08.deployment-prep.eqiad1.wikimedia.cloud
+  upload:
+    eqiad:
+    - deployment-cache-upload08.deployment-prep.eqiad1.wikimedia.cloud
+cache_hosts:
+- 172.16.19.232
+- 2a02:ec80:a000:1::2f3
+- 172.16.17.55
+- 2a02:ec80:a000:1::31d
+- 172.16.3.164
+- 172.16.3.146
 confd::srv_dns: ''
 conftool::hosts: []
 conftool::password: a_secret
+deployment_group: wikidev
+deployment_hosts:
+- 172.16.1.63
+deployment_server: deployment-deploy04.deployment-prep.eqiad1.wikimedia.cloud
 docker::registry: docker-registry.discovery.wmnet
 etcd::auth::common::root_password: secret
+etcd::autogen_pwd_seed: ''
 etcd::use_ssl: true
 etcd_client_srv_domain: conftool.svc.deployment-prep.eqiad1.wikimedia.cloud
 etcd_host: deployment-etcd05.deployment-prep.eqiad1.wikimedia.cloud
 etcd_port: 2379
 eventlogging_host: 10.68.18.111
 eventlogging_statsd_host: prometheus-labmon.eqiad.wmnet
+has_lvs: false
 kafka_clusters:
   jumbo-deployment-prep:
     brokers:
@@ -2063,9 +2084,166 @@ kafka_clusters:
     zookeeper_cluster_name: main-deployment-prep
 kafka_message_max_bytes: 4194304
 keyholder::require_encrypted_keys: 'no'
+keyholder::trusted_groups:
+- wikidev
+logstash::heap_memory: 1G
+logstash::pipeline_batch_size: 1000
+logstash_gelf_port: 12201
+logstash_host: logstash.svc.deployment-prep.eqiad1.wikimedia.cloud
+logstash_json_lines_port: 11514
+logstash_logback_port: 11514
+logstash_syslog_port: 10514
 mediawiki::redis_servers::codfw: []
+mediawiki::sites:
+- name: beta-specific
+  priority: 1
+  source: mediawiki/apache/beta/sites/beta_specific.conf
+- name: main
+  priority: 1
+  source: mediawiki/apache/beta/sites/main.conf
+- defaults:
+    declare_site: false
+    docroot: /srv/mediawiki/docroot/standard-docroot
+    domain_suffix: beta.wmcloud.org
+    legacy_rewrites: false
+    public_rewrites: true
+    short_urls: false
+    variant_aliases:
+    - sr
+    - sr-ec
+    - sr-el
+    - zh
+    - zh-hans
+    - zh-hant
+    - zh-cn
+    - zh-hk
+    - zh-sg
+    - zh-tw
+  name: beta_sites
+  priority: 2
+  vhosts:
+  - name: wikidata
+    params:
+      additional_rewrites:
+        early: []
+        late: []
+      docroot: /srv/mediawiki/docroot/wikidata.org
+      server_name: www.wikidata.beta.wmcloud.org
+      wikibase_rewrites: true
+  - name: wiktionary
+    params:
+      docroot: /srv/mediawiki/docroot/wiktionary.org
+      server_aliases:
+      - '*.wiktionary.beta.wmcloud.org'
+  - name: wikiquote
+    params:
+      docroot: /srv/mediawiki/docroot/wikiquote.org
+      server_aliases:
+      - '*.wikiquote.beta.wmcloud.org'
+  - name: wikimedia-misc-sites
+    params:
+      docroot: /srv/mediawiki/docroot/wikimedia.org
+      server_aliases:
+      - foundation.wikimedia.beta.wmcloud.org
+      - incubator.wikimedia.beta.wmcloud.org
+      - login.wikimedia.beta.wmcloud.org
+      - meta.wikimedia.beta.wmcloud.org
+      - vote.wikimedia.beta.wmcloud.org
+  - name: wikimediacommons
+    params:
+      additional_rewrites:
+        early: []
+        late:
+        - '    # /data/ path T163922'
+        - '    RewriteRule ^/data/(.*)/(.*)$ %%{}{ENV:RW_PROTO}://commons.wikimedia.org/wiki/Special:PageData/$1/$2
+          [R=301,QSA]'
+      server_name: commons.wikimedia.beta.wmcloud.org
+      wikibase_rewrites: true
+  - name: wikipedia
+    params:
+      additional_rewrites:
+        early: []
+        late:
+        - '    RewriteRule ^/data/(.*)/(.*)$ /wiki/Special:PageData/$1/$2 [R=303,QSA]'
+      docroot: /srv/mediawiki/docroot/wikipedia.org
+      server_aliases:
+      - '*.wikipedia.beta.wmcloud.org'
+  - name: wikibooks
+    params:
+      docroot: /srv/mediawiki/docroot/wikibooks.org
+      server_aliases:
+      - '*.wikibooks.beta.wmcloud.org'
+  - name: wikisource
+    params:
+      docroot: /srv/mediawiki/docroot/wikisource.org
+      server_aliases:
+      - '*.wikisource.beta.wmcloud.org'
+  - name: wikinews
+    params:
+      docroot: /srv/mediawiki/docroot/wikinews.org
+      server_aliases:
+      - '*.wikinews.beta.wmcloud.org'
+  - name: wikiversity
+    params:
+      docroot: /srv/mediawiki/docroot/wikiversity.org
+      server_aliases:
+      - '*.wikiversity.beta.wmcloud.org'
+  - name: wikivoyage
+    params:
+      docroot: /srv/mediawiki/docroot/wikivoyage.org
+      server_aliases:
+      - '*.wikivoyage.beta.wmcloud.org'
+      variant_aliases:
+      - zh
+      - zh-hans
+      - zh-hant
+      - zh-cn
+      - zh-hk
+      - zh-mo
+      - zh-my
+      - zh-sg
+      - zh-tw
+- defaults:
+    docroot: /srv/mediawiki/docroot/auth
+    domain_suffix: beta.wmcloud.org
+    legacy_rewrites: false
+    public_rewrites: false
+  name: auth
+  priority: 2
+  vhosts:
+  - name: auth
+    params:
+      additional_rewrites:
+        early:
+        - '    # Redirect requests for the root of the domain to something nice'
+        - '    RewriteRule ^/$ https://www.wikimedia.beta.wmcloud.org [R=302,L]'
+        - '    # Serve static files before the below RewriteRule can match (T385520)'
+        - '    RewriteRule ^/\.well-known/ - [L]'
+        - '    RewriteRule ^/static/ - [L]'
+        - '    # T365162 strip the prefix used to identify the wiki'
+        - '    # (T380551#10368927 don''t mess up the 404 error page)'
+        - '    RewriteCond %%{}{REQUEST_URI} !=/w/404.html'
+        - '    RewriteRule ^/([^/]*)/(.*)$ /$2'
+        - '    # Primary wiki redirector: [this applies after the prefix is stripped
+          above]'
+        - '    RewriteRule ^/$ /w/index.php'
+        - '    # Custom error page (T383952)'
+        - '    ErrorDocument 404 /404.html'
+        late: []
+      server_aliases:
+      - auth.wikimedia.beta.wmcloud.org
+- name: www.wikimedia.beta.wmcloud.org
+  priority: 10
+  template: mediawiki/apache/sites/included/www.wikimedia.org.conf.erb
 mediawiki::users::web: www-data
+mediawiki::web::sites::domain_suffix: beta.wmcloud.org
+misc::syslog-server::basepath: /data/project/syslog
 mount_nfs: false
+nfs_mounts:
+  dumps: false
+  home: false
+  project: false
+  scratch: false
 parsoid::mwapi_proxy: ''
 passwords::root::extra_keys:
   alex: ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAICYxCqZkGys8gZB6Mq61Fw08CB7m1huxpnpII2ay3e0H
@@ -2082,21 +2260,103 @@ passwords::root::extra_keys:
     taavi@runko
   twentyafterfour: ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDPe9i/PI48Xk3BwCBSJ3L/o4n8noRBEFrINAPLVw4SDPmMOgPu5/HyvdxWkS47li2PQnDx4EobYE4WErxdQ0nB/Fe43ZzWEFQ6RvWuuPAxUwEFcGhraDHFFQc/TLh7adtNA247jUhLCQN/O3Nb6Qq1RPuAZgF59UuWKPNwnSOCOyLV0zHvqhjUkWmDcCI7sln1Kbv+JiEKBrVyokpv18pgCgyKL54UvFRbVD/aU7qu1DyJCFZ0GTitqFX0OMHjEyCo2bGPFUAHBkbKn/lsNz4hXNjF9iorxBvl1ZXLCRMkdRJBA6xGgLGWPXBQOXbUTc+9ow05KH0kHmQu5lXez7CZ
     twentyafterfour@wikiafterfour
+profile::apt::purge_sources: true
 profile::backup::director_seed: ''
 profile::backup::ferm_directors: []
+profile::base::certificates::trusted_certs:
+  bundle: /etc/ssl/certs/wmf-ca-certificates.crt
+  certs:
+  - '%{facts.puppet_config.localcacert}'
+  - /etc/ssl/certs/%{lookup('profile::pki::client::root_ca_cn')}.pem
+profile::base::core_dump_pattern: /data/project/cores/%{facts.networking.hostname}-core.%h.%e.%p.%t
 profile::base::enable_kafka_shipping: true
+profile::cache::base::use_geo_ip: false
+profile::cache::haproxy::monitoring_enabled: false
+profile::cache::haproxykafka::ensure: absent
+profile::cache::haproxykafka::kafka:
+  batch_deadline: 1000ms
+  batch_size: 102400
+  dlq_topic: webrequest_errors
+  flush_timeout: 1000
+  rdkafka:
+    acks: all
+    batch.num.messages: 9000
+    client.id: '%{facts.networking.hostname}'
+    compression.codec: snappy
+    queue.buffering.max.messages: 720000
+    queue.buffering.max.ms: 1000
+    security.protocol: SSL
+    ssl.ca.location: /etc/ssl/certs/wmf-ca-certificates.crt
+    ssl.cipher.suites: ECDHE-ECDSA-AES256-GCM-SHA384
+    ssl.curves.list: P-256
+    ssl.sigalgs.list: ECDSA+SHA256
+    topic.request.required.acks: 1
+  topic: webrequest_undefined
+profile::cache::haproxykafka::kafka_cluster_name: main-deployment-prep
+profile::cache::haproxykafka::logparser:
+  batch_deadline: 1000ms
+  batch_size: 102400
+profile::cache::haproxykafka::message_buffer: 1000000.0
+profile::cache::haproxykafka::monitoring:
+  enable_pprof: true
+  enable_prometheus: true
+  prometheus_parsing_buckets:
+  - 5.0e-06
+  - 1.0e-05
+  - 5.0e-05
+  - 0.0001
+  - 0.0005
+  - 0.001
+  - 0.005
+  prometheus_prefix: haproxykafka_
+  prometheus_processing_buckets:
+  - 1.0e-06
+  - 5.0e-06
+  - 1.0e-05
+  - 2.0e-05
+  - 3.0e-05
+  - 5.0e-05
+  - 0.0001
+  - 0.0005
+  - 0.001
+  server_bind: :9341
+profile::cache::haproxykafka::sdid: haproxykafka@0
+profile::cache::haproxykafka::socket:
+  batch_deadline: 1000ms
+  batch_size: 102400
+  group: haproxykafka
+  mode: '0622'
+  path: /var/run/haproxykafka/haproxykafka.sock
+  user: haproxykafka
+profile::cache::haproxykafka::transform_rules:
+  date_format: '2006-01-02T15:04:05Z'
+  date_tz: UTC
+  haproxy_format: 02/Jan/2006:15:04:05.000
+profile::cache::haproxykafka::workers: 2
 profile::cache::kafka::certificate::certificate_name: varnishkafka-deployment-prep
 profile::cache::kafka::certificate::ssl_key_password: qwerty
 profile::cache::kafka::statsv::kafka_cluster_name: main-deployment-prep
 profile::cache::kafka::webrequest::kafka_cluster_name: jumbo-deployment-prep
 profile::cache::kafka::webrequest::ssl_enabled: true
+profile::cache::purge::kafka_cluster_name: main-deployment-prep
+profile::cache::varnish::frontend::enable_monitoring: false
+profile::cassandra::allow_analytics: false
+profile::cassandra::instances:
+  deployment-restbase05.deployment-prep.eqiad1.wikimedia.cloud: {}
 profile::cassandra::rack: rack1
+profile::cassandra::settings:
+  default_instance_params:
+    rpc_address: '%{facts.networking.ip}'
+  listen_address: '%{facts.networking.ip}'
+  logstash_host: logstash.svc.deployment-prep.eqiad1.wikimedia.cloud
+  target_version: 4.x
 profile::cassandra::single_instance::super_pass: yimnepCykBadPylb
 profile::confd::instances:
   main:
     srv_dns: svc.deployment-prep.eqiad1.wikimedia.cloud
 profile::conftool::client::protocol: https
 profile::conftool::master::sync_dir: /etc/conftool/data-local
+profile::cxserver::apertium_uri: http://apertium-beta.wmflabs.org
 profile::docker::builder::prune_images: false
 profile::docker::engine::packagename: docker.io
 profile::docker::engine::settings:
@@ -2105,11 +2365,35 @@ profile::docker::engine::settings:
     max-file: '2'
     max-size: 50m
 profile::envoy::ensure: present
+profile::etcd::tlsproxy::listen_port: 2379
+profile::etcd::tlsproxy::read_only: false
+profile::etcd::tlsproxy::tls_upstream: false
+profile::etcd::tlsproxy::upstream_port: 2378
 profile::java::egd_source: /dev/random
 profile::java::hardened_tls: false
 profile::kafka::broker::log_retention_bytes: 134217728
 profile::kafka::broker::log_segment_bytes: 134217728
 profile::kafka::broker::monitoring_enabled: true
+profile::keyholder::server::agents:
+  analytics_deploy:
+    trusted_groups:
+    - project-%{::wmcs_project}
+  deploy-service:
+    trusted_groups:
+    - wikidev
+  dumpsdeploy:
+    trusted_groups:
+    - project-%{::wmcs_project}
+  mwdeploy:
+    trusted_groups:
+    - wikidev
+    - mwdeploy
+  phabricator:
+    trusted_groups:
+    - project-%{::wmcs_project}
+  scap:
+    trusted_groups:
+    - project-%{::wmcs_project}
 profile::kubernetes::deployment_server::user_defaults:
   group: wikidev
   mode: '0640'
@@ -2119,6 +2403,9 @@ profile::logstash::collector::input_kafka_ssl_truststore_passwords:
   logging-eqiad: qwerty
   main-codfw: qwerty
   main-eqiad: qwerty
+profile::lvs::realserver::use_conftool: false
+profile::mail::default_mail_relay::mediawiki_smarthosts:
+- deployment-mx04.deployment-prep.eqiad1.wikimedia.cloud
 profile::mail::mx::dkim_domain: beta.wmflabs.org
 profile::mail::mx::verp_bounce_post_url: http://meta.wikimedia.beta.wmcloud.org/w/api.php
 profile::mail::mx::verp_domains:
@@ -2126,6 +2413,7 @@ profile::mail::mx::verp_domains:
 profile::mail::mx::verp_post_connect_server: meta.wikimedia.beta.wmcloud.org
 profile::maps::apps::redis_pass: IlNijCeenZelteec
 profile::maps::apps::tilerator_ncpu_ratio: 0.3
+profile::maps::apps::wikidata_query_service: https://query.wikidata.org/bigdata/namespace/wdq/sparql
 profile::maps::cassandra::kartotherian_pass: IacUvEebsyePerub
 profile::maps::cassandra::tilerator_pass: BlilraHewlEdRemt
 profile::maps::cassandra::tileratorui_pass: PikDityewcatNod1
@@ -2137,23 +2425,95 @@ profile::maps::osm_master::replication_pass: JokpypNivgoackec
 profile::maps::osm_master::tegola_pass: SherbevawshocVie
 profile::maps::osm_master::tilerator_pass: SherbevawshocVie
 profile::maps::osm_master::tileratorui_pass: CreympUxwodyark1
+profile::mediawiki::apc_shm_size: 128M
+profile::mediawiki::deployment::server::rsync_host: deployment-deploy04.deployment-prep.eqiad1.wikimedia.cloud
+profile::mediawiki::httpd::enable_forensic_log: true
 profile::mediawiki::jobrunner::default_php_version: '8.3'
+profile::mediawiki::jobrunner::expose_endpoint: true
+profile::mediawiki::jobrunner::runners:
+  basic: 5
+  gwt: 1
+profile::mediawiki::mcrouter_wancache::memcached_notls_port: 11211
+profile::mediawiki::mcrouter_wancache::memcached_tls_port: 11214
+profile::mediawiki::mcrouter_wancache::prometheus_exporter: true
+profile::mediawiki::mcrouter_wancache::shards:
+  gutter:
+    eqiad:
+      shard01:
+        host: deployment-memc13
+  wancache:
+    eqiad:
+      shard01:
+        host: deployment-memc11
+      shard02:
+        host: deployment-memc12
+  wikifunctions:
+    eqiad: {}
 profile::mediawiki::php::absented_php_versions:
 - '7.4'
 - '8.1'
+profile::mediawiki::php::enable_fpm: true
+profile::mediawiki::php::enable_request_profiling: true
 profile::mediawiki::php::fpm_config:
   opcache.interned_strings_buffer: 256
   opcache.memory_consumption: 1536
   opcache.validate_timestamps: 0
 profile::mediawiki::php::icu63: true
+profile::mediawiki::php::icu67: true
 profile::mediawiki::php::monitoring::password: notarealpassword
 profile::mediawiki::php::monitoring::salt: 9sBweWh0
 profile::mediawiki::php::php_versions:
 - '8.3'
 profile::mediawiki::php::restarts::ensure: present
 profile::mediawiki::php::restarts::opcache_limit: 100
+profile::mediawiki::scap_client::deployment_dir_linked_to_staging_dir: true
+profile::mediawiki::vhost_feature_flags: {}
 profile::mediawiki::webserver::default_php_version: '8.3'
+profile::mediawiki::webserver::has_tls: false
 profile::mediawiki::webserver::stream_to_logstash: true
+profile::memcached::enable_tls: false
+profile::memcached::extended_options:
+- slab_reassign
+profile::memcached::extstore_ensure: absent
+profile::memcached::extstore_path: /srv/memcached
+profile::memcached::extstore_size: 20
+profile::memcached::growth_factor: 1.05
+profile::memcached::localcacert: null
+profile::memcached::max_seq_reqs: 200
+profile::memcached::min_slab_size: 5
+profile::memcached::notls_port: null
+profile::memcached::performance_cpu_governor: false
+profile::memcached::port: 11211
+profile::memcached::size: 3000
+profile::memcached::ssl_cert: null
+profile::memcached::ssl_key: null
+profile::memcached::threads: null
+profile::memcached::version: present
+profile::monitoring::cluster: '%{alias(''cluster'')}'
+profile::monitoring::contact_group: '%{alias(''contactgroups'')}'
+profile::monitoring::do_paging: '%{alias(''do_paging'')}'
+profile::monitoring::hardware_monitoring: absent
+profile::monitoring::hosts:
+  '%{facts.networking.hostname}':
+    critical: '%{alias(''profile::monitoring::is_critical'')}'
+profile::monitoring::is_critical: false
+profile::monitoring::monitor_screens: false
+profile::monitoring::monitoring_hosts: '%{alias(''monitoring_hosts'')}'
+profile::monitoring::nagios_group: '%{alias(''nagios_group'')}'
+profile::monitoring::notifications_enabled: false
+profile::monitoring::nrpe_check_disk_critical: false
+profile::monitoring::nrpe_check_disk_options: -w 6% -c 3% -W 6% -K 3% -l -e -A -i
+  "/srv/sd[a-b][1-3]" -i "/srv/nvme[0-9]n[0-9]p[0-9]" --exclude-type=fuse.fuse_dfs
+  --exclude-type=tracefs
+profile::monitoring::raid_check: false
+profile::monitoring::raid_check_interval: 10
+profile::monitoring::raid_retry_interval: 10
+profile::monitoring::raid_write_cache_policy: null
+profile::monitoring::services:
+  ssh:
+    check_command: check_ssh
+    description: SSH
+    notes_url: https://wikitech.wikimedia.org/wiki/SSH/monitoring
 profile::nutcracker::memcached_pools: []
 profile::nutcracker::monitor_port: 0
 profile::nutcracker::redis_pools:
@@ -2167,6 +2527,7 @@ profile::nutcracker::redis_pools:
         host: 10.68.23.169
         port: 6379
     server_retry_timeout: 10000
+profile::openstack::eqiad1::cumin::master::puppetdb_host: deployment-puppetdb05.deployment-prep.eqiad1.wikimedia.cloud
 profile::openstack::eqiad1::cumin::project_masters:
 - 172.16.2.62
 profile::openstack::eqiad1::cumin::project_pub_key: ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIHMS6pXywYSw1kaZQivozB8qUx0vd1gqiAnVqJuS365B
@@ -2179,8 +2540,10 @@ profile::openstack::main::cumin::project_pub_key: ssh-ed25519 AAAAC3NzaC1lZDI1NT
   root@deployment-cumin
 profile::openstack::main::cumin::puppetdb_host: deployment-puppetdb05.deployment-prep.eqiad.wmflabs
 profile::openstack::main::region: eqiad1-r
+profile::php_fpm::fcgi_port: 8000
 profile::pki::client::ensure: present
 profile::prometheus::cadvisor_exporter::port: 4194
+profile::prometheus::memcached_exporter::arguments: ''
 profile::prometheus::statsd_exporter::mappings: []
 profile::puppet::agent::force_puppet7: true
 profile::puppet::agent::puppetserver_ca_cert: '-----BEGIN CERTIFICATE-----
@@ -2256,8 +2619,31 @@ profile::puppetmaster::common::puppetdb_host: deployment-puppetdb03.deployment-p
 profile::puppetmaster::common::puppetdb_hosts:
 - deployment-puppetdb03.deployment-prep.eqiad.wmflabs
 - deployment-puppetdb02.deployment-prep.eqiad.wmflabs
+profile::query_service::federation_user_agent: Wikimedia Commons Query Service; test
+profile::recommendation_api::wdqs_uri: http://wdqs-test.wmflabs.org
 profile::redis::master::password: IlNijCeenZelteec
+profile::restbase::cassandra_datacenters:
+- datacenter1
+profile::restbase::cassandra_local_dc: datacenter1
+profile::restbase::cassandra_password: cassandra
+profile::restbase::cassandra_tls: {}
+profile::restbase::cassandra_user: cassandra
+profile::restbase::citoid_uri: http://deployment-docker-citoid02.deployment-prep.eqiad1.wikimedia.cloud:1970
+profile::restbase::cxserver_uri: http://deployment-docker-cxserver02.deployment-prep.eqiad1.wikimedia.cloud:8080
+profile::restbase::event_service_uri: http://deployment-eventgate-4.deployment-prep.eqiad1.wikimedia.cloud:8292/v1/events
+profile::restbase::hosts:
+- deployment-restbase05.deployment-prep.eqiad1.wikimedia.cloud
+profile::restbase::logging_label: restbase
+profile::restbase::mathoid_uri: http://deployment-docker-mathoid02.deployment-prep.eqiad1.wikimedia.cloud:10044
+profile::restbase::mobileapps_uri: http://deployment-docker-mobileapps02.deployment-prep.eqiad1.wikimedia.cloud:8888
+profile::restbase::monitor_domain: en.wikipedia.org
+profile::restbase::proton_uri: http://deployment-docker-proton01.deployment-prep.eqiad1.wikimedia.cloud:3030
 profile::restbase::salt_key: secretkey
+profile::restbase::seeds_ng:
+- deployment-restbase05.deployment-prep.eqiad1.wikimedia.cloud
+profile::restbase::wikifeeds_uri: http://wikifeeds.svc.deployment-prep.eqiad1.wikimedia.cloud:8889
+profile::rsyslog::kafka_destination_clusters:
+  eqiad: logging-eqiad
 profile::rsyslog::kafka_shipper::enable: true
 profile::rsyslog::kafka_shipper::kafka_brokers:
 - deployment-kafka-logging01.deployment-prep.eqiad1.wikimedia.cloud:9093
@@ -2285,6 +2671,47 @@ profile::services_proxy::envoy::listeners:
   upstream: appservers.svc.deployment-prep.eqiad1.wikimedia.cloud
   xfp: https
 profile::ssh::server::puppetserver_ca_host_certs: true
+profile::swift::accounts:
+  mw_media:
+    access: .admin
+    account_name: AUTH_mw
+    auth: http://deployment-ms-fe04.deployment-prep.eqiad1.wikimedia.cloud
+    user: mw:media
+  mw_thumbor:
+    access: ''
+    account_name: AUTH_mw
+    auth: http://deployment-ms-fe04.deployment-prep.eqiad1.wikimedia.cloud
+    stats_enabled: 'no'
+    user: mw:thumbor
+  netbox_attachments:
+    access: .admin
+    account_name: AUTH_netbox
+    auth: http://deployment-ms-fe04.deployment-prep.eqiad1.wikimedia.cloud
+    stats_enabled: 'no'
+    user: netbox:attachments
+  pagecompilation_zim:
+    access: .admin
+    account_name: AUTH_pagecompilation
+    auth: http://deployment-ms-fe04.deployment-prep.eqiad1.wikimedia.cloud
+    user: pagecompilation:zim
+  performance_arclamp:
+    access: .admin
+    account_name: AUTH_performance
+    auth: http://deployment-ms-fe04.deployment-prep.eqiad1.wikimedia.cloud
+    user: performance:arclamp
+  phabricator_files:
+    access: .admin
+    account_name: AUTH_phab
+    auth: http://deployment-ms-fe04.deployment-prep.eqiad1.wikimedia.cloud
+    user: phabricator:files
+  swift_dispersion:
+    access: .admin
+    account_name: AUTH_dispersion
+    auth: http://deployment-ms-fe04.deployment-prep.eqiad1.wikimedia.cloud
+    stats_enabled: 'no'
+    user: swift:dispersion
+profile::swift::cluster: deployment-prep
+profile::swift::cluster_label: deployment-prep
 profile::swift::global_account_keys:
   codfw:
     mw_media: abracadabra
@@ -2305,9 +2732,103 @@ profile::swift::global_account_keys:
     swift_dispersion: ahshaenae3Hai3quipah
   eqiad:
     mw_media: abracadabra
+profile::swift::hash_path_suffix: abcdef
+profile::swift::proxy::memcached_servers:
+- deployment-ms-fe04.deployment-prep.eqiad1.wikimedia.cloud
+profile::swift::proxy::private_container_list: []
+profile::swift::proxy::proxy_service_host: deployment-ms-fe04.deployment-prep.eqiad1.wikimedia.cloud
+profile::swift::proxy::rewrite_account: mw_media
+profile::swift::proxy::shard_container_list:
+- global-data-math-render
+- wikipedia-commons-local-public
+- wikipedia-commons-local-temp
+- wikipedia-commons-local-thumb
+- wikipedia-commons-local-transcoded
+- wikipedia-de-local-public
+- wikipedia-de-local-temp
+- wikipedia-de-local-thumb
+- wikipedia-de-local-transcoded
+- wikipedia-en-local-public
+- wikipedia-en-local-temp
+- wikipedia-en-local-thumb
+- wikipedia-en-local-transcoded
+- wikipedia-fi-local-public
+- wikipedia-fi-local-temp
+- wikipedia-fi-local-thumb
+- wikipedia-fi-local-transcoded
+- wikipedia-fr-local-public
+- wikipedia-fr-local-temp
+- wikipedia-fr-local-thumb
+- wikipedia-fr-local-transcoded
+- wikipedia-he-local-public
+- wikipedia-he-local-temp
+- wikipedia-he-local-thumb
+- wikipedia-he-local-transcoded
+- wikipedia-hu-local-public
+- wikipedia-hu-local-temp
+- wikipedia-hu-local-thumb
+- wikipedia-hu-local-transcoded
+- wikipedia-id-local-public
+- wikipedia-id-local-temp
+- wikipedia-id-local-thumb
+- wikipedia-id-local-transcoded
+- wikipedia-it-local-public
+- wikipedia-it-local-temp
+- wikipedia-it-local-thumb
+- wikipedia-it-local-transcoded
+- wikipedia-ja-local-public
+- wikipedia-ja-local-temp
+- wikipedia-ja-local-thumb
+- wikipedia-ja-local-transcoded
+- wikipedia-ro-local-public
+- wikipedia-ro-local-temp
+- wikipedia-ro-local-thumb
+- wikipedia-ro-local-transcoded
+- wikipedia-ru-local-public
+- wikipedia-ru-local-temp
+- wikipedia-ru-local-thumb
+- wikipedia-ru-local-transcoded
+- wikipedia-th-local-public
+- wikipedia-th-local-temp
+- wikipedia-th-local-thumb
+- wikipedia-th-local-transcoded
+- wikipedia-tr-local-public
+- wikipedia-tr-local-temp
+- wikipedia-tr-local-thumb
+- wikipedia-tr-local-transcoded
+- wikipedia-uk-local-public
+- wikipedia-uk-local-temp
+- wikipedia-uk-local-thumb
+- wikipedia-uk-local-transcoded
+- wikipedia-zh-local-public
+- wikipedia-zh-local-temp
+- wikipedia-zh-local-thumb
+- wikipedia-zh-local-transcoded
+profile::swift::proxy::statsd_host: localhost
+profile::swift::proxy::thumborhost: deployment-imagescaler04.deployment-prep.eqiad1.wikimedia.cloud:8888
+profile::swift::proxyhosts:
+- deployment-ms-fe04
+profile::swift::replication_accounts:
+  mw_media:
+    cluster_codfw: http://deployment-ms-fe04.deployment-prep.eqiad1.wikimedia.cloud/v1/
+profile::swift::stats_reporter_host: somenonexistenthost
+profile::swift::storage::container_replicator_concurrency: 1
+profile::swift::storage::container_replicator_interval: 1200
+profile::swift::storage::object_replicator_concurrency: 1
+profile::swift::storage::object_replicator_interval: 1800
+profile::swift::storage::object_server_default_workers: 12
+profile::swift::storage::statsd_host: localhost
+profile::swift::storagehosts:
+- deployment-ms-be07
+- deployment-ms-be08
+profile::syslog::remote::central_hosts_tls: {}
+profile::syslog::remote::enable: false
 profile::tlsproxy::envoy::ssl_provider: cfssl
 profile::tlsproxy::envoy::upstream_sni: null
 profile::tlsproxy::envoy::upstream_tls: false
+profile::trafficserver::backend::monitor_enable: false
+profile::trafficserver::backend::ram_cache_size: 134217728
+profile::url_downloader::url_downloader_port: 8080
 prometheus_nodes:
 - deployment-prometheus05.deployment-prep.eqiad1.wikimedia.cloud
 puppetdb::password::replication: ''
@@ -2323,6 +2844,8 @@ restbase::deploy::public_key_file: puppet:///private/ssh/tin/servicedeploy_rsa.p
 restbase::deploy::scap::public_key_file: puppet:///private/ssh/tin/servicedeploy_rsa.pub
 restbase::deployment: scap
 role::cache::text::cluster: cache_text
+role::cxserver::cxserver_port: 8080
+role::deployment::mediawiki::key_fingerprint: f0:54:06:fa:17:27:97:a2:cc:69:a0:a7:df:4c:0a:e3
 role::deployment::repo_config:
   abacist/abacist:
     upstream: https://gerrit.wikimedia.org/r/analytics/abacist
@@ -2427,6 +2950,7 @@ role::deployment::repo_config:
     upstream: https://gerrit.wikimedia.org/r/mediawiki/services/zotero/translators
 role::deployment::services::key_fingerprint: e6:d0:61:5e:e5:c7:5d:2d:3e:8e:c8:a5:eb:f3:c2:63
 role::labs::nfsclient:mode: hard
+role::logging::mediawiki::log_directory: /data/project/logs
 role::logging::mediawiki::udp2log::logstash_host: logs-api.svc.logging.eqiad1.wikimedia.cloud
 role::logging::mediawiki::udp2log::rotate: 15
 role::ocg::redis_servers:
@@ -2434,6 +2958,41 @@ role::ocg::redis_servers:
     host: deployment-pdf01.deployment-prep.eqiad.wmflabs
     port: 6379
 role::puppetmaster::puppetdb::shared_buffers: 768MB
+scap::deployment_server: deployment-deploy04.deployment-prep.eqiad1.wikimedia.cloud
+scap::dsh::groups:
+  api_appserver:
+    hosts: []
+  appserver:
+    hosts:
+    - deployment-mediawiki13.deployment-prep.eqiad1.wikimedia.cloud
+    - deployment-mediawiki14.deployment-prep.eqiad1.wikimedia.cloud
+  arclamp:
+    hosts:
+    - deployment-webperf22.deployment-prep.eqiad1.wikimedia.cloud
+  jobrunner:
+    hosts:
+    - deployment-jobrunner05.deployment-prep.eqiad1.wikimedia.cloud
+  mediawiki-api-canaries:
+    hosts: []
+  mediawiki-appserver-canaries:
+    hosts:
+    - deployment-mediawiki14.deployment-prep.eqiad1.wikimedia.cloud
+  mediawiki-installation:
+    hosts:
+    - deployment-jobrunner05.deployment-prep.eqiad1.wikimedia.cloud
+    - deployment-mediawiki13.deployment-prep.eqiad1.wikimedia.cloud
+    - deployment-mediawiki14.deployment-prep.eqiad1.wikimedia.cloud
+    - deployment-mwmaint03.deployment-prep.eqiad1.wikimedia.cloud
+  restbase-betacluster:
+    hosts:
+    - deployment-restbase05.deployment-prep.eqiad1.wikimedia.cloud
+  testserver:
+    hosts: []
+  webperf:
+    hosts:
+    - deployment-webperf21.deployment-prep.eqiad1.wikimedia.cloud
+scap::dsh::scap_masters:
+- deployment-deploy04.deployment-prep.eqiad1.wikimedia.cloud
 scap::keyholder_agents:
   analytics_deploy:
     trusted_groups:
@@ -2456,6 +3015,19 @@ scap::keyholder_agents:
     trusted_groups:
     - project-deployment-prep
     - deploy-service
+scap::manage_logstash_credentials: true
+scap::sources:
+  cassandra/logstash-logback-encoder:
+    repository: operations/software/logstash-logback-encoder
+  dumps/dumps:
+    repository: operations/dumps
+    scap_repository: operations/dumps/scap
+  performance/navtiming:
+    repository: performance/navtiming
+  restbase/deploy:
+    repository: mediawiki/services/restbase/deploy
+  statsv/statsv:
+    repository: performance/statsv
 scap::version: present
 send_puppet_failure_emails: false
 service::catalog:
@@ -2498,16 +3070,23 @@ service::catalog:
 service::configuration::http_proxy: http://url-downloader.svc.deployment-prep.eqiad1.wikimedia.cloud:8080
 service::configuration::logstash_host: logs-api.svc.logging.eqiad1.wikimedia.cloud
 service::configuration::logstash_port: 12201
+service::configuration::mwapi_host: http://appservers.svc.deployment-prep.eqiad1.wikimedia.cloud
+service::configuration::restbase_uri: http://deployment-restbase05.deployment-prep.eqiad1.wikimedia.cloud:7231
 service::deploy::scap::public_key_file: puppet:///private/ssh/tin/servicedeploy_rsa.pub
 shared_acme_certificates: {}
 statsd: prometheus-labmon.eqiad.wmnet
+swift_aux_partitions: []
 swift_clusters:
   deployment-prep:
     cluster_name: deployment-prep
     ring_manager: deployment-ms-fe04.deployment-prep.eqiad1.wikimedia.cloud
+swift_storage_drives:
+- /dev/sdb
 thumbor::swift::swift_host: http://deployment-ms-fe04.deployment-prep.eqiad1.wikimedia.cloud
+udp2log_aggregator: deployment-mwlog02.deployment-prep.eqiad1.wikimedia.cloud:8420
 zookeeper_clusters:
   main-deployment-prep:
     hosts:
       deployment-zookeeper-3.deployment-prep.eqiad1.wikimedia.cloud: '3'
     ipv6: false
+zotero::http_proxy: url-downloader.svc.deployment-prep.eqiad1.wikimedia.cloud:8080
