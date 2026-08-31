@@ -3,6 +3,7 @@ role::labs::redirector::redirects:
   codesearch.wmflabs.org: https://codesearch.wmcloud.org
   dash.wmcloud.org: https://outreachdashboard.wmflabs.org
   discourse-mediawiki.wmflabs.org: https://wmds-archive.toolforge.org
+  discuss-space.wmflabs.org: https://space-archive.toolforge.org
   graphite.wmflabs.org: https://wikitech.wikimedia.org/wiki/News/2023_Cloud_VPS_metrics_changes
   hatjitsu.wmflabs.org: https://hatjitsu.toolforge.org
   horizon.wmflabs.org: https://horizon.wikimedia.org
