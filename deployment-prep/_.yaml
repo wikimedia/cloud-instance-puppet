@@ -2997,6 +2997,7 @@ scap::dsh::groups:
   webperf:
     hosts:
     - deployment-webperf21.deployment-prep.eqiad1.wikimedia.cloud
+    - deployment-webperf31.deployment-prep.eqiad1.wikimedia.cloud
 scap::dsh::scap_masters:
 - deployment-deploy04.deployment-prep.eqiad1.wikimedia.cloud
 scap::keyholder_agents:
