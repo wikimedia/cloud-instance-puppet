@@ -2970,6 +2970,7 @@ scap::dsh::groups:
   arclamp:
     hosts:
     - deployment-webperf22.deployment-prep.eqiad1.wikimedia.cloud
+    - deployment-arclamp01.deployment-prep.eqiad1.wikimedia.cloud
   jobrunner:
     hosts:
     - deployment-jobrunner05.deployment-prep.eqiad1.wikimedia.cloud
