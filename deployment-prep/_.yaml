@@ -1988,7 +1988,6 @@ apt::use_experimental: true
 aptly::group: wikidev
 aptly::manage_nginx: false
 aptly::owner: jenkins-deploy
-arclamp_host: deployment-webperf22.deployment-prep.eqiad1.wikimedia.cloud
 beta::syncsiteresources::user: www-data
 cache::nodes:
   text:
