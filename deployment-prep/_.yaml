@@ -3028,6 +3028,7 @@ scap::sources:
   dumps/dumps:
     repository: operations/dumps
     scap_repository: operations/dumps/scap
+  performance/arc-lamp: {}
   performance/navtiming:
     repository: performance/navtiming
   restbase/deploy:
