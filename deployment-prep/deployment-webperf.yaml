@@ -5,7 +5,7 @@ profile::tlsproxy::envoy::capitalize_headers: false
 profile::tlsproxy::envoy::global_cert_name: '%{facts.fqdn}'
 profile::tlsproxy::envoy::sni_support: 'no'
 profile::webperf::site::excimer_mysql_db: excimer
-profile::webperf::site::excimer_mysql_host: deployment-db11.deployment-prep.eqiad1.wikimedia.cloud
+profile::webperf::site::excimer_mysql_host: deployment-db15.deployment-prep.eqiad1.wikimedia.cloud
 profile::webperf::site::excimer_mysql_password: PoK9JCfy4Y3JmuUiRnHNiJs
 profile::webperf::site::excimer_mysql_user: excimer_ui_server
 profile::webperf::site::private_name: '%{facts.fqdn}'
@@ -13,7 +13,7 @@ profile::webperf::site::server_name: performance.wikimedia.beta.wmcloud.org
 profile::webperf::xhgui::mysql_admin_password: ei9Eim3cThoh7iet
 profile::webperf::xhgui::mysql_admin_user: xhguiadmin
 profile::webperf::xhgui::mysql_db: xhgui
-profile::webperf::xhgui::mysql_host: deployment-db11.deployment-prep.eqiad1.wikimedia.cloud
+profile::webperf::xhgui::mysql_host: deployment-db15.deployment-prep.eqiad1.wikimedia.cloud
 profile::webperf::xhgui::mysql_password: Thiz8Ev8Xetho8mu
 profile::webperf::xhgui::mysql_user: xhgui
 statsd: localhost:8125
