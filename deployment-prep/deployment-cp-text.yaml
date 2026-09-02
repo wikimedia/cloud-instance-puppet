@@ -68,7 +68,7 @@ profile::trafficserver::backend::mapping_rules:
   replacement: http://deployment-ms-fe04.deployment-prep.eqiad1.wikimedia.cloud
   target: http://upload.wikimedia.beta.wmcloud.org
   type: map
-- replacement: http://deployment-webperf21.deployment-prep.eqiad1.wikimedia.cloud
+- replacement: http://deployment-webperf31.deployment-prep.eqiad1.wikimedia.cloud
   target: http://performance.wikimedia.beta.wmcloud.org
   type: map
 - replacement: http://deployment-eventgate-4.deployment-prep.eqiad1.wikimedia.cloud:8492
