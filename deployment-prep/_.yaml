@@ -2633,7 +2633,7 @@ profile::restbase::event_service_uri: http://deployment-eventgate-4.deployment-p
 profile::restbase::hosts:
 - deployment-restbase05.deployment-prep.eqiad1.wikimedia.cloud
 profile::restbase::logging_label: restbase
-profile::restbase::mathoid_uri: http://deployment-docker-mathoid02.deployment-prep.eqiad1.wikimedia.cloud:10044
+profile::restbase::mathoid_uri: http://deployment-docker-mathoid03.deployment-prep.eqiad1.wikimedia.cloud:10044
 profile::restbase::mobileapps_uri: http://deployment-docker-mobileapps02.deployment-prep.eqiad1.wikimedia.cloud:8888
 profile::restbase::monitor_domain: en.wikipedia.org
 profile::restbase::proton_uri: http://deployment-docker-proton01.deployment-prep.eqiad1.wikimedia.cloud:3030
