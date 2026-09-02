@@ -1,8 +1,9 @@
 __COMMENT__: MANAGED WITH TOFU. EDITS VIA HORIZON WILL BE LOST.
 arclamp_host: arclamp.svc.deployment-prep.eqiad1.wikimedia.cloud
 graphite_host: localhost
+profile::tlsproxy::envoy::access_log: true
 profile::tlsproxy::envoy::capitalize_headers: false
-profile::tlsproxy::envoy::global_cert_name: '%{facts.fqdn}'
+profile::tlsproxy::envoy::global_cert_name: webperf.svc.deployment-prep.eqiad1.wikimedia.cloud
 profile::tlsproxy::envoy::sni_support: 'no'
 profile::webperf::site::excimer_mysql_db: excimer
 profile::webperf::site::excimer_mysql_host: deployment-db15.deployment-prep.eqiad1.wikimedia.cloud
