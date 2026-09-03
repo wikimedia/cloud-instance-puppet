@@ -1,4 +1,5 @@
 profile::firewall::defs_from_etcd: false
+profile::firewall::provider: nftables
 profile::logrotate::hourly: true
 profile::wmcs::novaproxy::acme_certname: wmcloud
 profile::wmcs::novaproxy::api_hostnames:
