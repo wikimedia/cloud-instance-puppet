@@ -110,7 +110,7 @@ profile::trafficserver::backend::mapping_rules:
   - '@pparam=/etc/trafficserver/lua/rb-mw-mangling-beta.lua'
   - '@plugin=/usr/lib/trafficserver/modules/tslua.so'
   - '@pparam=/etc/trafficserver/lua/rb-mw-mangling.lua'
-  replacement: http://deployment-mediawiki15.deployment-prep.eqiad1.wikimedia.cloud/w/api.php
+  replacement: http://deployment-mediawiki13.deployment-prep.eqiad1.wikimedia.cloud/w/api.php
   target: http://(.*)/w/api.php
   type: regex_map
 - params:
@@ -122,7 +122,7 @@ profile::trafficserver::backend::mapping_rules:
   - '@pparam=/etc/trafficserver/lua/rb-mw-mangling-beta.lua'
   - '@plugin=/usr/lib/trafficserver/modules/tslua.so'
   - '@pparam=/etc/trafficserver/lua/rb-mw-mangling.lua'
-  replacement: http://deployment-mediawiki16.deployment-prep.eqiad1.wikimedia.cloud
+  replacement: http://deployment-mediawiki14.deployment-prep.eqiad1.wikimedia.cloud
   target: /
   type: map
 varnish_version4: true
