@@ -2438,7 +2438,7 @@ profile::maps::osm_master::tilerator_pass: SherbevawshocVie
 profile::maps::osm_master::tileratorui_pass: CreympUxwodyark1
 profile::mediawiki::apc_shm_size: 128M
 profile::mediawiki::deployment::server::rsync_host: deployment-deploy04.deployment-prep.eqiad1.wikimedia.cloud
-profile::mediawiki::httpd::enable_forensic_log: true
+profile::mediawiki::httpd::enable_forensic_log: false
 profile::mediawiki::jobrunner::default_php_version: '8.3'
 profile::mediawiki::jobrunner::expose_endpoint: true
 profile::mediawiki::jobrunner::runners:
