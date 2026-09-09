@@ -3106,7 +3106,7 @@ swift_clusters:
 swift_storage_drives:
 - /dev/sdb
 thumbor::swift::swift_host: http://deployment-ms-fe04.deployment-prep.eqiad1.wikimedia.cloud
-udp2log_aggregator: deployment-mwlog02.deployment-prep.eqiad1.wikimedia.cloud:8420
+udp2log_aggregator: mwlog.svc.deployment-prep.eqiad1.wikimedia.cloud:8420
 zookeeper_clusters:
   main-deployment-prep:
     hosts:
