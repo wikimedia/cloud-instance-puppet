@@ -2963,6 +2963,7 @@ role::deployment::services::key_fingerprint: e6:d0:61:5e:e5:c7:5d:2d:3e:8e:c8:a5
 role::labs::nfsclient:mode: hard
 role::logging::mediawiki::log_directory: /data/project/logs
 role::logging::mediawiki::udp2log::logstash_host: logs-api.svc.logging.eqiad1.wikimedia.cloud
+role::logging::mediawiki::udp2log::monitor: false
 role::logging::mediawiki::udp2log::rotate: 15
 role::ocg::redis_servers:
   deployment-pdf01:
