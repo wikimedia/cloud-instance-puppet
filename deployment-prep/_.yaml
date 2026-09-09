@@ -2658,6 +2658,9 @@ profile::rsyslog::kafka_destination_clusters:
 profile::rsyslog::kafka_shipper::enable: true
 profile::rsyslog::kafka_shipper::kafka_brokers:
 - deployment-kafka-logging01.deployment-prep.eqiad1.wikimedia.cloud:9093
+profile::rsyslog::udp_tee::destinations:
+- deployment-mwlog02.deployment-prep.eqiad1.wikimedia.cloud:8421
+- deployment-mwlog02.deployment-prep.eqiad1.wikimedia.cloud:8421
 profile::services_proxy::envoy::enabled_listeners:
 - shellbox
 - mwapi
