@@ -2477,6 +2477,7 @@ profile::mediawiki::php::php_versions:
 - '8.3'
 profile::mediawiki::php::restarts::ensure: present
 profile::mediawiki::php::restarts::opcache_limit: 100
+profile::mediawiki::scap_client::betacluster_udplog_host: mwlog.svc.deployment-prep.eqiad1.wikimedia.cloud
 profile::mediawiki::scap_client::deployment_dir_linked_to_staging_dir: true
 profile::mediawiki::vhost_feature_flags: {}
 profile::mediawiki::webserver::default_php_version: '8.3'
