@@ -154,9 +154,7 @@ profile::cache::haproxy::tls_port: 443
 profile::cache::haproxy::tls_session_lifetime: 86400
 profile::cache::haproxy::unified_acme_chief: true
 profile::cache::haproxy::use_benthos: false
-profile::cache::haproxy::use_datacenter_provenance: true
 profile::cache::haproxy::use_haproxykafka: false
-profile::cache::haproxy::use_res_proxy_provenance: true
 profile::cache::haproxy::varnish_socket:
   address: /run/varnish-privileged.socket
   prefix: unix
