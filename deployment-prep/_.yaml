@@ -2023,6 +2023,7 @@ deployment_hosts:
 - 172.16.1.63
 deployment_server: deployment-deploy04.deployment-prep.eqiad1.wikimedia.cloud
 docker::registry: docker-registry.discovery.wmnet
+docker_registry_endpoint: docker-registry.discovery.wmnet
 etcd::auth::common::root_password: secret
 etcd::autogen_pwd_seed: ''
 etcd::use_ssl: true
