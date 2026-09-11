@@ -4,6 +4,7 @@ docker::password: not a real password
 docker::password_hash: $apr1$st5G0d8l$IcJeBIljkbSRhjrMIiH02/
 docker::registry: docker-registry.svc.toolforge.org
 docker::username: docker
+docker_registry_endpoint: docker-registry.svc.toolforge.org
 dumps_use_nfs_lb: true
 dynamicproxy::banned_ips:
 - 70.179.6.9
