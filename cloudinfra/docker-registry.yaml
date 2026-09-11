@@ -1,6 +1,7 @@
 docker::builder_host: docker-registry.wmcloud.org
 docker::registry: docker-registry.wmcloud.org
 docker::username: docker
+docker_registry_endpoint: docker-registry.wmcloud.org
 profile::toolforge::docker::registry::active_node: docker-registry-docker-registry-01.cloudinfra.eqiad1.wikmedia.cloud
 profile::toolforge::docker::registry::ssl_certificate_name: docker-registry
 profile::toolforge::docker::registry::standby_node: docker-registry-01.cloudinfra.eqiad1.wikmedia.cloud
