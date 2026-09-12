@@ -2543,6 +2543,8 @@ profile::nutcracker::redis_pools:
 profile::openstack::eqiad1::cumin::master::puppetdb_host: deployment-puppetdb05.deployment-prep.eqiad1.wikimedia.cloud
 profile::openstack::eqiad1::cumin::project_masters:
 - 172.16.2.62
+- 172.16.18.197
+- 2a02:ec80:a000:1::191
 profile::openstack::eqiad1::cumin::project_pub_key: ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIHMS6pXywYSw1kaZQivozB8qUx0vd1gqiAnVqJuS365B
   root@deployment-cumin
 profile::openstack::eqiad1::cumin::puppetdb_host: deployment-puppetdb05.deployment-prep.eqiad.wmflabs
