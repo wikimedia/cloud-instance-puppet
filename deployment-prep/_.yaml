@@ -2971,7 +2971,6 @@ role::ocg::redis_servers:
   deployment-pdf01:
     host: deployment-pdf01.deployment-prep.eqiad.wmflabs
     port: 6379
-role::puppetmaster::puppetdb::shared_buffers: 768MB
 scap::deployment_server: deployment-deploy04.deployment-prep.eqiad1.wikimedia.cloud
 scap::dsh::groups:
   api_appserver:
