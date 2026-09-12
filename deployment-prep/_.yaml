@@ -2624,11 +2624,6 @@ profile::puppet::agent::puppetserver_ca_cert: '-----BEGIN CERTIFICATE-----
   kobOg2rtIg==
 
   -----END CERTIFICATE-----'
-profile::puppetmaster::common::command_broadcast: true
-profile::puppetmaster::common::puppetdb_host: deployment-puppetdb03.deployment-prep.eqiad.wmflabs
-profile::puppetmaster::common::puppetdb_hosts:
-- deployment-puppetdb03.deployment-prep.eqiad.wmflabs
-- deployment-puppetdb02.deployment-prep.eqiad.wmflabs
 profile::query_service::federation_user_agent: Wikimedia Commons Query Service; test
 profile::recommendation_api::wdqs_uri: http://wdqs-test.wmflabs.org
 profile::redis::master::password: IlNijCeenZelteec
