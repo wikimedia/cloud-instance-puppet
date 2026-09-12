@@ -1,3 +1,4 @@
 __COMMENT__: MANAGED WITH TOFU. EDITS VIA HORIZON WILL BE LOST.
-profile::openstack::eqiad1::cumin::aliases: {}
+profile::openstack::eqiad1::cumin::aliases:
+  all: O{project:deployment-prep}
 profile::openstack::eqiad1::cumin::project_ssh_priv_key_path: /root/.ssh/cumin
