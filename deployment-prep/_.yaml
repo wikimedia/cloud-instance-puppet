@@ -2624,9 +2624,6 @@ profile::puppet::agent::puppetserver_ca_cert: '-----BEGIN CERTIFICATE-----
   kobOg2rtIg==
 
   -----END CERTIFICATE-----'
-profile::puppetdb::extra_authorized_hosts: deployment-cumin-3.deployment-prep.eqiad1.wikimedia.cloud
-profile::puppetdb::master: deployment-puppetdb02.deployment-prep.eqiad.wmflabs
-profile::puppetdb::slaves: []
 profile::puppetmaster::common::command_broadcast: true
 profile::puppetmaster::common::puppetdb_host: deployment-puppetdb03.deployment-prep.eqiad.wmflabs
 profile::puppetmaster::common::puppetdb_hosts:
