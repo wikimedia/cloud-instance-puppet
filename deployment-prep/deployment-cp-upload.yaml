@@ -11,7 +11,6 @@ cache::req_handling:
 cache::upload::nodes:
   eqiad:
   - deployment-cp-upload09.deployment-prep.eqiad1.wikimedia.cloud
-profile::cache::base::varnish_version: 5
 profile::cache::purge::kafka_tls: true
 profile::cache::purge::kafka_topics:
 - eqiad.resource-purge
