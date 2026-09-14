@@ -2005,6 +2005,7 @@ cache::nodes:
   text:
     eqiad:
     - deployment-cache-text08.deployment-prep.eqiad1.wikimedia.cloud
+    - deployment-cp-text09.deployment-prep.eqiad1.wikimedia.cloud
   upload:
     eqiad:
     - deployment-cache-upload08.deployment-prep.eqiad1.wikimedia.cloud
