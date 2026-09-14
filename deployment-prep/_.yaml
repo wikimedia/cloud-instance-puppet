@@ -2009,6 +2009,7 @@ cache::nodes:
   upload:
     eqiad:
     - deployment-cache-upload08.deployment-prep.eqiad1.wikimedia.cloud
+    - deployment-cp-upload09.deployment-prep.eqiad1.wikimedia.cloud
 cache_hosts:
 - 172.16.19.232
 - 2a02:ec80:a000:1::2f3
