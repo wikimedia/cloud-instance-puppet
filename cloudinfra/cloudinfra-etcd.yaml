@@ -1,4 +1,3 @@
 profile::etcd::cluster_bootstrap: true
-profile::wmcs::kubeadm::etcd_nodes:
-- cloudinfra-etcd-1.cloudinfra.eqiad1.wikimedia.cloud
+profile::wmcs::kubeadm::etcd_nodes: []
 puppetmaster: cloudinfra-internal-puppetserver-1.cloudinfra.eqiad1.wikimedia.cloud
