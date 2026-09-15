@@ -2017,6 +2017,10 @@ cache_hosts:
 - 2a02:ec80:a000:1::31d
 - 172.16.3.164
 - 172.16.3.146
+- 172.16.17.206
+- 2a02:ec80:a000:1::411
+- 172.16.19.48
+- 2a02:ec80:a000:1::462
 confd::srv_dns: ''
 conftool::hosts: []
 conftool::password: a_secret
