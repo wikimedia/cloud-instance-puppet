@@ -9,6 +9,7 @@ profile::opensearch::common_settings:
   - tools-opensearch-3.tools.eqiad1.wikimedia.cloud
   cluster_name: toolforge
   curator_uses_unicast_hosts: false
+  disable_security_plugin: true
   expected_nodes: 3
   heap_memory: 8G
   http_port: 9200
