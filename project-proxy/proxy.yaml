@@ -12,6 +12,7 @@ profile::wmcs::novaproxy::banned_ips:
 - 47.76.0.0/14
 profile::wmcs::novaproxy::dns_updater_project: cloudinfra
 profile::wmcs::novaproxy::dns_updater_username: project-proxy-dns-manager
+profile::wmcs::novaproxy::keepalived_peers: []
 profile::wmcs::novaproxy::keepalived_vips:
 - 172.16.16.6
 - 2a02:ec80:a000:1::1d
