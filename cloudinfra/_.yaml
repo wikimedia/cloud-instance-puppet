@@ -1,1 +1,3 @@
 acmechief_host: cloudinfra-acme-chief-02.cloudinfra.eqiad1.wikimedia.cloud
+profile::wmcs::cloudinfra::backup_hosts:
+- cloudinfra-backup-1.cloudinfra.eqiad1.wikimedia.cloud
