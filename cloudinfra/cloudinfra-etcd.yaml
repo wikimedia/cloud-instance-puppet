@@ -1,4 +1,7 @@
-profile::etcd::cluster_bootstrap: false
+profile::wmcs::etcd::peer_hosts:
+- cloudinfra-etcd-1.cloudinfra.eqiad1.wikimedia.cloud
+- cloudinfra-etcd-2.cloudinfra.eqiad1.wikimedia.cloud
+- cloudinfra-etcd-3.cloudinfra.eqiad1.wikimedia.cloud
 profile::wmcs::kubeadm::etcd_nodes:
 - cloudinfra-etcd-1.cloudinfra.eqiad1.wikimedia.cloud
 - cloudinfra-etcd-2.cloudinfra.eqiad1.wikimedia.cloud
