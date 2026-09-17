@@ -1,1 +1,2 @@
+profile::wmcs::cloudinfra::mariadb_backup::db_host: cloudinfra-db-5.cloudinfra.eqiad1.wikimedia.cloud
 puppetmaster: cloudinfra-internal-puppetserver-1.cloudinfra.eqiad1.wikimedia.cloud
