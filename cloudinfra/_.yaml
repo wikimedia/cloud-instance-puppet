@@ -1,7 +1,7 @@
 acmechief_host: cloudinfra-acme-chief-02.cloudinfra.eqiad1.wikimedia.cloud
 profile::wmcs::cloudinfra::backup_hosts:
 - cloudinfra-backup-1.cloudinfra.eqiad1.wikimedia.cloud
-profile::wmcs::etcd::backup_hosts: '%{lookup(''profile::wmcs::cloudinfra::backup_hosts'')}'
+profile::wmcs::etcd::backup_hosts: '%{alias(''profile::wmcs::cloudinfra::backup_hosts'')}'
 profile::wmcs::etcd::peer_hosts:
 - cloudinfra-etcd-1.cloudinfra.eqiad1.wikimedia.cloud
 - cloudinfra-etcd-2.cloudinfra.eqiad1.wikimedia.cloud
