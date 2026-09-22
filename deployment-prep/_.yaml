@@ -2983,6 +2983,7 @@ scap::dsh::groups:
   jobrunner:
     hosts:
     - deployment-jobrunner05.deployment-prep.eqiad1.wikimedia.cloud
+    - deployment-jobrunner06.deployment-prep.eqiad1.wikimedia.cloud
   mediawiki-api-canaries:
     hosts: []
   mediawiki-appserver-canaries:
