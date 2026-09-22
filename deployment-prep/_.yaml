@@ -2023,6 +2023,8 @@ conftool::password: a_secret
 deployment_group: wikidev
 deployment_hosts:
 - 172.16.1.63
+- 172.16.20.143
+- 2a02:ec80:a000:1::101
 deployment_server: deployment-deploy04.deployment-prep.eqiad1.wikimedia.cloud
 docker::registry: docker-registry.discovery.wmnet
 docker_registry_endpoint: docker-registry.discovery.wmnet
@@ -2657,7 +2659,6 @@ profile::rsyslog::kafka_shipper::enable: true
 profile::rsyslog::kafka_shipper::kafka_brokers:
 - deployment-kafka-logging01.deployment-prep.eqiad1.wikimedia.cloud:9093
 profile::rsyslog::udp_tee::destinations:
-- deployment-mwlog02.deployment-prep.eqiad1.wikimedia.cloud:8421
 - deployment-mwlog03.deployment-prep.eqiad1.wikimedia.cloud:8421
 profile::services_proxy::envoy::enabled_listeners:
 - shellbox
@@ -3009,6 +3010,7 @@ scap::dsh::groups:
     - deployment-webperf31.deployment-prep.eqiad1.wikimedia.cloud
 scap::dsh::scap_masters:
 - deployment-deploy04.deployment-prep.eqiad1.wikimedia.cloud
+- deployment-deploy06.deployment-prep.eqiad1.wikimedia.cloud
 scap::keyholder_agents:
   analytics_deploy:
     trusted_groups:
