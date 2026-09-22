@@ -5,4 +5,4 @@ profile::redis::master::settings:
   bind: '0.0.0.0 ::'
   maxmemory: 128mb
   save: ''
-  stop-writes-on-bgsave-error: 'false'
+  stop-writes-on-bgsave-error: 'no'
