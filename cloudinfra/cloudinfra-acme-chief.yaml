@@ -16,6 +16,13 @@ profile::acme_chief::certificates:
     authorized_regexes:
     - ^enc-\d+\.cloudinfra\.eqiad1\.wikimedia\.cloud$
     challenge: dns-01
+  etcd:
+    CN: svc.cloudinfra.eqiad1.wikimedia.cloud
+    SNI:
+    - svc.cloudinfra.eqiad1.wikimedia.cloud
+    authorized_regexes:
+    - ^cloudinfra-etcd-\d+\.cloudinfra\.eqiad1\.wikimedia\.cloud$
+    challenge: dns-01
   mx:
     CN: mx-out-a.wmcloud.org
     SNI:
