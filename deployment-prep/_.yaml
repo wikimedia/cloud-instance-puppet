@@ -2974,8 +2974,6 @@ scap::dsh::groups:
     hosts: []
   appserver:
     hosts:
-    - deployment-mediawiki13.deployment-prep.eqiad1.wikimedia.cloud
-    - deployment-mediawiki14.deployment-prep.eqiad1.wikimedia.cloud
     - deployment-mediawiki15.deployment-prep.eqiad1.wikimedia.cloud
     - deployment-mediawiki16.deployment-prep.eqiad1.wikimedia.cloud
   arclamp:
@@ -2983,19 +2981,14 @@ scap::dsh::groups:
     - deployment-arclamp01.deployment-prep.eqiad1.wikimedia.cloud
   jobrunner:
     hosts:
-    - deployment-jobrunner05.deployment-prep.eqiad1.wikimedia.cloud
     - deployment-jobrunner06.deployment-prep.eqiad1.wikimedia.cloud
   mediawiki-api-canaries:
     hosts: []
   mediawiki-appserver-canaries:
     hosts:
-    - deployment-mediawiki14.deployment-prep.eqiad1.wikimedia.cloud
     - deployment-mediawiki16.deployment-prep.eqiad1.wikimedia.cloud
   mediawiki-installation:
     hosts:
-    - deployment-jobrunner05.deployment-prep.eqiad1.wikimedia.cloud
-    - deployment-mediawiki13.deployment-prep.eqiad1.wikimedia.cloud
-    - deployment-mediawiki14.deployment-prep.eqiad1.wikimedia.cloud
     - deployment-jobrunner06.deployment-prep.eqiad1.wikimedia.cloud
     - deployment-mediawiki15.deployment-prep.eqiad1.wikimedia.cloud
     - deployment-mediawiki16.deployment-prep.eqiad1.wikimedia.cloud
