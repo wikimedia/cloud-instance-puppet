@@ -18,8 +18,8 @@ profile::docker::runner::service_defs:
         type: prometheus
       port: 8192
       schema_base_uris:
-      - http://schema-beta.wmflabs.org/repositories/primary/jsonschema/
-      - http://schema-beta.wmflabs.org/repositories/secondary/jsonschema/
+      - http://schema-beta.wmcloud.org/repositories/primary/jsonschema/
+      - http://schema-beta.wmcloud.org/repositories/secondary/jsonschema/
       schema_precache_uris:
       - /error/1.0.0
       - /test/event/1.0.0
@@ -62,8 +62,8 @@ profile::docker::runner::service_defs:
         type: prometheus
       port: 8492
       schema_base_uris:
-      - http://schema-beta.wmflabs.org/repositories/primary/jsonschema/
-      - http://schema-beta.wmflabs.org/repositories/secondary/jsonschema/
+      - http://schema-beta.wmcloud.org/repositories/primary/jsonschema/
+      - http://schema-beta.wmcloud.org/repositories/secondary/jsonschema/
       schema_precache_uris:
       - /error/1.0.0
       - /test/event/1.0.0
@@ -107,7 +107,7 @@ profile::docker::runner::service_defs:
         type: prometheus
       port: 8992
       schema_base_uris:
-      - http://schema-beta.wmflabs.org/repositories/primary/jsonschema/
+      - http://schema-beta.wmcloud.org/repositories/primary/jsonschema/
       schema_precache_uris:
       - /error/1.0.0
       - /test/event/1.0.0
@@ -155,7 +155,7 @@ profile::docker::runner::service_defs:
           max_body_size: 10mb
           port: 8292
           schema_base_uris:
-          - http://schema-beta.wmflabs.org/repositories/primary/jsonschema/
+          - http://schema-beta.wmcloud.org/repositories/primary/jsonschema/
           schema_precache_uris:
           - /error/1.0.0
           - /test/event/1.0.0
