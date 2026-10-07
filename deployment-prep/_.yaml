@@ -2622,8 +2622,6 @@ profile::logstash::collector::input_kafka_ssl_truststore_passwords:
   logging-eqiad: qwerty
   main-codfw: qwerty
   main-eqiad: qwerty
-profile::lvs::realserver::ipip::ipip_src4: 172.16.0.0/12
-profile::lvs::realserver::ipip::ipip_src6: 100::/64
 profile::lvs::realserver::use_conftool: false
 profile::mail::default_mail_relay::mediawiki_smarthosts:
 - deployment-mx04.deployment-prep.eqiad1.wikimedia.cloud
