@@ -3251,6 +3251,7 @@ scap::sources:
   statsv/statsv:
     repository: performance/statsv
 scap::version: present
+scap::wmflabs_master: deployment-deploy06.deployment-prep.eqiad1.wikimedia.cloud
 send_puppet_failure_emails: false
 service::catalog:
   api-https:
