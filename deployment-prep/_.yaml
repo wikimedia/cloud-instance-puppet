@@ -2235,7 +2235,7 @@ deployment_hosts:
 - 172.16.1.63
 - 172.16.20.143
 - 2a02:ec80:a000:1::101
-deployment_server: deployment-deploy04.deployment-prep.eqiad1.wikimedia.cloud
+deployment_server: deployment-deploy06.deployment-prep.eqiad1.wikimedia.cloud
 docker::registry: docker-registry.discovery.wmnet
 docker_registry_endpoint: docker-registry.discovery.wmnet
 etcd::auth::common::root_password: secret
@@ -2652,7 +2652,7 @@ profile::maps::osm_master::tegola_pass: SherbevawshocVie
 profile::maps::osm_master::tilerator_pass: SherbevawshocVie
 profile::maps::osm_master::tileratorui_pass: CreympUxwodyark1
 profile::mediawiki::apc_shm_size: 128M
-profile::mediawiki::deployment::server::rsync_host: deployment-deploy04.deployment-prep.eqiad1.wikimedia.cloud
+profile::mediawiki::deployment::server::rsync_host: deployment-deploy06.deployment-prep.eqiad1.wikimedia.cloud
 profile::mediawiki::httpd::enable_forensic_log: false
 profile::mediawiki::jobrunner::default_php_version: '8.3'
 profile::mediawiki::jobrunner::expose_endpoint: true
@@ -3178,7 +3178,7 @@ role::ocg::redis_servers:
   deployment-pdf01:
     host: deployment-pdf01.deployment-prep.eqiad.wmflabs
     port: 6379
-scap::deployment_server: deployment-deploy04.deployment-prep.eqiad1.wikimedia.cloud
+scap::deployment_server: deployment-deploy06.deployment-prep.eqiad1.wikimedia.cloud
 scap::dsh::groups:
   api_appserver:
     hosts: []
