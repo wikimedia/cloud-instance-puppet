@@ -2240,7 +2240,6 @@ conftool::hosts: []
 conftool::password: a_secret
 deployment_group: wikidev
 deployment_hosts:
-- 172.16.1.63
 - 172.16.20.143
 - 2a02:ec80:a000:1::101
 deployment_server: deployment-deploy06.deployment-prep.eqiad1.wikimedia.cloud
