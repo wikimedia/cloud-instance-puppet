@@ -1,7 +1,12 @@
 profile::ci::docker::settings:
+  builder:
+    gc:
+      defaultKeepStorage: 20GB
+      enabled: true
   default-ulimits:
     nofile:
       Hard: 65536
       Name: nofile
       Soft: 65536
+  log-driver: none
 profile::ci::dockervolume::size: 45G
