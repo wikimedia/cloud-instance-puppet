@@ -1,3 +1,0 @@
-- role::beta::deploymentserver
-- role::deployment_server
-- profile::ci::slave::labs::common
