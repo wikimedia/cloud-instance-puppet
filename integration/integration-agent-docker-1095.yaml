@@ -6,6 +6,7 @@ profile::ci::docker::settings:
   default-ulimits:
     nofile:
       Hard: 65536
+      Name: nofile
       Soft: 65536
   log-driver: none
 profile::ci::dockervolume::size: 45G
