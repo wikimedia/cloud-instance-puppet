@@ -3219,7 +3219,6 @@ scap::dsh::groups:
     hosts:
     - deployment-webperf31.deployment-prep.eqiad1.wikimedia.cloud
 scap::dsh::scap_masters:
-- deployment-deploy04.deployment-prep.eqiad1.wikimedia.cloud
 - deployment-deploy06.deployment-prep.eqiad1.wikimedia.cloud
 scap::keyholder_agents:
   analytics_deploy:
