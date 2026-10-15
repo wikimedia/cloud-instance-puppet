@@ -86,4 +86,4 @@ profile::docker::runner::service_defs:
     namespace: repos/data-engineering
     override_cmd: /srv/service/server.js -c /etc/eventstreams/config.yaml
     port: 8092
-    version: node24-update-693cfcc5
+    version: vite-migration-b8e62417
