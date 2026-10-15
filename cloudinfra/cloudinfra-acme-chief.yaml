@@ -12,10 +12,7 @@ profile::acme_chief::certificates:
     challenge: dns-01
   enc:
     CN: puppet-enc.cloudinfra.wmcloud.org
-    SNI:
-    - cloudinfra-etcd-1.cloudinfra.eqiad1.wikimedia.cloud
-    - cloudinfra-etcd-2.cloudinfra.eqiad1.wikimedia.cloud
-    - cloudinfra-etcd-3.cloudinfra.eqiad1.wikimedia.cloud
+    SNI: []
     authorized_regexes:
     - ^enc-\d+\.cloudinfra\.eqiad1\.wikimedia\.cloud$
     challenge: dns-01
@@ -23,6 +20,9 @@ profile::acme_chief::certificates:
     CN: svc.cloudinfra.eqiad1.wikimedia.cloud
     SNI:
     - svc.cloudinfra.eqiad1.wikimedia.cloud
+    - cloudinfra-etcd-1.cloudinfra.eqiad1.wikimedia.cloud
+    - cloudinfra-etcd-2.cloudinfra.eqiad1.wikimedia.cloud
+    - cloudinfra-etcd-3.cloudinfra.eqiad1.wikimedia.cloud
     authorized_regexes:
     - ^cloudinfra-etcd-\d+\.cloudinfra\.eqiad1\.wikimedia\.cloud$
     challenge: dns-01
