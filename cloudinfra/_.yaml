@@ -6,3 +6,5 @@ profile::wmcs::etcd::peer_hosts:
 - cloudinfra-etcd-1.cloudinfra.eqiad1.wikimedia.cloud
 - cloudinfra-etcd-2.cloudinfra.eqiad1.wikimedia.cloud
 - cloudinfra-etcd-3.cloudinfra.eqiad1.wikimedia.cloud
+profile::wmcs::waf::waf_hosts:
+- waf-1.cloudinfra.eqiad1.wikimedia.cloud
