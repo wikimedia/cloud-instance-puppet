@@ -1,5 +1,6 @@
 acmechief_host: cloudinfra-acme-chief-02.cloudinfra.eqiad1.wikimedia.cloud
 etcd_client_srv_domain: svc.cloudinfra.eqiad1.wikimedia.cloud
+etcd_client_trusted_ca_cert: /etc/ssl/certs/ca-certificates.crt
 profile::wmcs::cloudinfra::backup_hosts:
 - cloudinfra-backup-1.cloudinfra.eqiad1.wikimedia.cloud
 profile::wmcs::etcd::backup_hosts: '%{alias(''profile::wmcs::cloudinfra::backup_hosts'')}'
