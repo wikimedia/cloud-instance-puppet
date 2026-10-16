@@ -1,2 +1,3 @@
+profile::wmcs::waf::hiddenparma::db_host: cloudinfra-db-5.cloudinfra.eqiad1.wikimedia.cloud
 profile::wmcs::waf::hiddenparma::tag: 2026-10-01-111022
 puppetmaster: cloudinfra-internal-puppetserver-1.cloudinfra.eqiad1.wikimedia.cloud
