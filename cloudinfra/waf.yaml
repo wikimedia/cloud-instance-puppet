@@ -1,3 +1,5 @@
+profile::conftool2git::active_host: waf-1.cloudinfra.eqiad1.wikimedia.cloud
+profile::conftool2git::pubkey: ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIPBhi5qgF7egc0Zctym+jQxN8OuH7kxaqjO8XnZs/PeE
 profile::wmcs::waf::hiddenparma::db_host: cloudinfra-db-5.cloudinfra.eqiad1.wikimedia.cloud
 profile::wmcs::waf::hiddenparma::tag: 2026-10-19-082110
 puppetmaster: cloudinfra-internal-puppetserver-1.cloudinfra.eqiad1.wikimedia.cloud
