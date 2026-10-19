@@ -4,6 +4,7 @@ profile::etcd::tlsproxy::acls:
   /conftool:
   - root
   - conftool
+profile::etcd::tlsproxy::allow_unauth_ro: false
 profile::etcd::tlsproxy::cert_name: etcd
 profile::etcd::tlsproxy::cert_provider: acmechief
 profile::etcd::tlsproxy::listen_port: 4001
