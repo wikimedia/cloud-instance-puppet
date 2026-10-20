@@ -20,37 +20,6 @@ passwords::root::extra_keys:
   zhuyifei1999: ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCdm+Kiet0U2AjfPLFKIZLh57pXruVzlIfSypwSt7GRlZ+0sGhExYWvXdreW5zgZRJ3aXzR84qaZOqpwgHuVFlfMszXzq3E6p9dZ/bATP/lvIkucJJ2RL5C4ABvfwd4MHs68rW9UGwPVWn1qQftvoNpeDCu4t50uLbP9vcEXzaXrVioHROPoEpqk4YofHQS9F4HIKDbfjTFwUb5YQ/lsajuK0EZXlAELoaZ7s+uBolyBmXkIjWOjyGwHCoBU1FPiufLwLYuMZz0iAqw930dgoi89VgaPhlu12j2yP+2BZ3XkEgpzNBmZ/3lwVvRPyUnWw2pBU4qvs00FUARzx/WTRSJ
     zhuyifei1999@zhuyifei1999-ThinkPad-X260
 profile::base::core_dump_pattern: core
-profile::elasticsearch::base_config_dir: /etc/elasticsearch
-profile::elasticsearch::base_data_dir: /srv/elasticsearch
-profile::elasticsearch::common_settings:
-  auto_create_index: true
-  awareness_attributes: ''
-  cluster_hosts:
-  - toolsbeta-elastic7-1.toolsbeta.eqiad.wmflabs
-  - toolsbeta-elastic7-2.toolsbeta.eqiad.wmflabs
-  - toolsbeta-elastic7-3.toolsbeta.eqiad.wmflabs
-  cluster_name: labs-tools
-  curator_uses_unicast_hosts: false
-  expected_nodes: 3
-  heap_memory: 4G
-  http_port: 9200
-  minimum_master_nodes: 2
-  recover_after_nodes: 2
-  recover_after_time: 1m
-  send_logs_to_logstash: false
-  short_cluster_name: omega
-  transport_tcp_port: 9300
-  unicast_hosts:
-  - toolsbeta-elastic7-1.toolsbeta.eqiad.wmflabs
-  - toolsbeta-elastic7-2.toolsbeta.eqiad.wmflabs
-  - toolsbeta-elastic7-3.toolsbeta.eqiad.wmflabs
-profile::elasticsearch::config_version: '7'
-profile::elasticsearch::dc_settings:
-  awareness_attributes: ''
-profile::elasticsearch::instances: {}
-profile::elasticsearch::rack: placeholder
-profile::elasticsearch::row: placeholder
-profile::elasticsearch::version: '7.4'
 profile::mail::default_mail_relay::enabled: false
 profile::openstack::base::ldap_user_dn: <unavailable here>
 profile::openstack::eqiad1::cumin::project_masters:
