@@ -4,5 +4,6 @@ profile::puppet::agent::dns_alt_names:
 profile::puppet::agent::force_puppet7: true
 profile::puppetserver::autosign: /usr/local/sbin/validatecloudvpsfqdn.py
 profile::puppetserver::java_max_mem: 26g
+profile::puppetserver::scripts::realm_override: cloudvps
 profile::puppetserver::server_certname: puppetmaster.cloudinfra.wmflabs.org
 puppetmaster: cloudinfra-internal-puppetserver-1.cloudinfra.eqiad1.wikimedia.cloud
