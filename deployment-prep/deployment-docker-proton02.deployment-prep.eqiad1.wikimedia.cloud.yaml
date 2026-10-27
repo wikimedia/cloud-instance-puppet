@@ -64,4 +64,4 @@ profile::docker::runner::service_defs:
     namespace: wikimedia
     override_cmd: -c /etc/mediawiki-services-chromium-render/config.yaml
     port: 3030
-    version: 2024-02-05-181957-production
+    version: 2026-10-06-122838-production
