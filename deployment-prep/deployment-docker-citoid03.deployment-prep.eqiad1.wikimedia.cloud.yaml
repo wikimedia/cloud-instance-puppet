@@ -30,7 +30,7 @@ profile::docker::runner::service_defs:
     port: 1970
     version: 2026-10-23-150123-production
   mediawiki-services-zotero:
-    image: zotero
+    image_name: zotero
     namespace: repos/mediawiki/services
     port: 1969
     version: 2026-10-23-150942-production
