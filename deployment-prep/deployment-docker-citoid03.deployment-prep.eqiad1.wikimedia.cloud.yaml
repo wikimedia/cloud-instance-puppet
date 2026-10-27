@@ -28,7 +28,7 @@ profile::docker::runner::service_defs:
     namespace: wikimedia
     override_cmd: -c /etc/mediawiki-services-citoid/config.yaml
     port: 1970
-    version: 2026-08-30-081358-production
+    version: 2026-10-23-150123-production
   mediawiki-services-zotero:
     namespace: wikimedia
     port: 1969
