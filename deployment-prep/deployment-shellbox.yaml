@@ -19,7 +19,7 @@ profile::docker::runner::service_defs:
     namespace: wikimedia
     override_cmd: --nodaemonize
     port: 8081
-    version: 2024-06-13-133425-video
+    version: 2026-10-22-141212-video85
     volume: true
 profile::envoy::ensure: present
 profile::tlsproxy::envoy::access_log: true
