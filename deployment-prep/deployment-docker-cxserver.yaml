@@ -42,4 +42,4 @@ profile::docker::runner::service_defs:
     namespace: wikimedia
     override_cmd: -c /etc/mediawiki-services-cxserver/config.yaml
     port: 8080
-    version: 2026-10-14-154858-production
+    version: 2026-10-28-122929-production
