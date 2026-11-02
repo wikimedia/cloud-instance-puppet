@@ -3063,8 +3063,6 @@ profile::swift::storage::object_replicator_interval: 1800
 profile::swift::storage::object_server_default_workers: 12
 profile::swift::storage::statsd_host: localhost
 profile::swift::storagehosts:
-- deployment-ms-be07
-- deployment-ms-be08
 - deployment-ms-be09
 - deployment-ms-be10
 profile::syslog::remote::central_hosts_tls: {}
