@@ -1,6 +1,9 @@
 deployment_group: wikidev
 deployment_hosts:
 - 172.16.18.215
+profile::confd::instances:
+  main:
+    interval: 300
 profile::gitlab::local_gems:
   /srv/gitlab-wmf-gems:
   - gitlab_phorge
