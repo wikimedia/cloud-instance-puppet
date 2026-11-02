@@ -2977,6 +2977,7 @@ profile::swift::global_account_keys:
     mw_media: abracadabra
     performance_arclamp: ei1Aib4efoTh0ooxh8Et
 profile::swift::hash_path_suffix: abcdef
+profile::swift::proxy::dispersion_account: dispersion
 profile::swift::proxy::memcached_servers:
 - deployment-ms-fe05.deployment-prep.eqiad1.wikimedia.cloud
 profile::swift::proxy::private_container_list: []
