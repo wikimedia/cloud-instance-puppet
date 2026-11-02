@@ -3323,7 +3323,7 @@ swift_aux_partitions: []
 swift_clusters:
   deployment-prep:
     cluster_name: deployment-prep
-    ring_manager: deployment-ms-fe04.deployment-prep.eqiad1.wikimedia.cloud
+    ring_manager: deployment-ms-fe05.deployment-prep.eqiad1.wikimedia.cloud
 udp2log_aggregator: mwlog.svc.deployment-prep.eqiad1.wikimedia.cloud:8420
 zookeeper_clusters:
   main-deployment-prep:
