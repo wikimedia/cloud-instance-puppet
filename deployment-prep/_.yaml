@@ -2980,7 +2980,7 @@ profile::swift::hash_path_suffix: abcdef
 profile::swift::proxy::memcached_servers:
 - deployment-ms-fe05.deployment-prep.eqiad1.wikimedia.cloud
 profile::swift::proxy::private_container_list: []
-profile::swift::proxy::proxy_service_host: ms-fe.svc.deployment-prep.eqiad1.wikimedia.cloud
+profile::swift::proxy::proxy_service_host: deployment-ms-fe05.deployment-prep.eqiad1.wikimedia.cloud
 profile::swift::proxy::rewrite_account: mw_media
 profile::swift::proxy::shard_container_list:
 - global-data-math-render
