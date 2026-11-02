@@ -1,3 +1,4 @@
+__COMMENT__: MANAGED WITH TOFU. EDITS VIA HORIZON WILL BE LOST.
 profile::envoy::ensure: present
 profile::lvs::realserver::pools:
   swift:
