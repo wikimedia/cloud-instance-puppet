@@ -2978,9 +2978,9 @@ profile::swift::global_account_keys:
     performance_arclamp: ei1Aib4efoTh0ooxh8Et
 profile::swift::hash_path_suffix: abcdef
 profile::swift::proxy::memcached_servers:
-- deployment-ms-fe04.deployment-prep.eqiad1.wikimedia.cloud
+- deployment-ms-fe05.deployment-prep.eqiad1.wikimedia.cloud
 profile::swift::proxy::private_container_list: []
-profile::swift::proxy::proxy_service_host: deployment-ms-fe04.deployment-prep.eqiad1.wikimedia.cloud
+profile::swift::proxy::proxy_service_host: ms-fe.svc.deployment-prep.eqiad1.wikimedia.cloud
 profile::swift::proxy::rewrite_account: mw_media
 profile::swift::proxy::shard_container_list:
 - global-data-math-render
