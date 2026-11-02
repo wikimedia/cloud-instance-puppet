@@ -17,6 +17,9 @@ profile::docker::runner::service_defs:
       - port: 9102
         type: prometheus
       port: 8192
+      possible_event_dt_fields:
+      - client_dt
+      - dt
       schema_base_uris:
       - http://schema-beta.wmcloud.org/repositories/primary/jsonschema/
       - http://schema-beta.wmcloud.org/repositories/secondary/jsonschema/
@@ -61,6 +64,9 @@ profile::docker::runner::service_defs:
       - port: 9103
         type: prometheus
       port: 8492
+      possible_event_dt_fields:
+      - client_dt
+      - dt
       schema_base_uris:
       - http://schema-beta.wmcloud.org/repositories/primary/jsonschema/
       - http://schema-beta.wmcloud.org/repositories/secondary/jsonschema/
@@ -106,6 +112,9 @@ profile::docker::runner::service_defs:
       - port: 9104
         type: prometheus
       port: 8992
+      possible_event_dt_fields:
+      - client_dt
+      - dt
       schema_base_uris:
       - http://schema-beta.wmcloud.org/repositories/primary/jsonschema/
       schema_precache_uris:
@@ -139,6 +148,9 @@ profile::docker::runner::service_defs:
       - port: 9105
         type: prometheus
       num_workers: 0
+      possible_event_dt_fields:
+      - client_dt
+      - dt
       service_name: eventgate-main
       services:
       - conf:
