@@ -18,6 +18,7 @@ profile::tlsproxy::envoy::services:
 profile::tlsproxy::envoy::sni_support: 'no'
 profile::tlsproxy::envoy::ssl_provider: cfssl
 profile::tlsproxy::envoy::tls_port: 443
+profile::tlsproxy::envoy::upstream_addr: '%{facts.networking.ip}'
 service::catalog:
   swift:
     aliases:
