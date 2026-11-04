@@ -1,3 +1,4 @@
+docker::gvisor::ensure: absent
 profile::cassandra::instances:
   deployment-sessionstore06.deployment-prep.eqiad1.wikimedia.cloud: {}
   deployment-sessionstore07.deployment-prep.eqiad1.wikimedia.cloud: {}
