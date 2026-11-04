@@ -1,6 +1,5 @@
 docker::gvisor::ensure: absent
 profile::cassandra::instances:
-  deployment-sessionstore06.deployment-prep.eqiad1.wikimedia.cloud: {}
   deployment-sessionstore07.deployment-prep.eqiad1.wikimedia.cloud: {}
 profile::cassandra::rack: rack1
 profile::cassandra::settings:
@@ -9,7 +8,7 @@ profile::cassandra::settings:
     rpc_address: '%{::ipaddress}'
   listen_address: '%{::ipaddress}'
   logstash_host: logs-api.svc.logging.eqiad1.wikimedia.cloud
-  storage_compatibility_mode: CASSANDRA_4
+  storage_compatibility_mode: UPGRADING
   target_version: 5.x
 profile::docker::engine::declare_service: true
 profile::docker::engine::version: 18.09.1+dfsg1-7.1+deb10u3
