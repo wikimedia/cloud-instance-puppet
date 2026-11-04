@@ -1,5 +1,6 @@
 profile::cassandra::instances:
   deployment-sessionstore06.deployment-prep.eqiad1.wikimedia.cloud: {}
+  deployment-sessionstore07.deployment-prep.eqiad1.wikimedia.cloud: {}
 profile::cassandra::rack: rack1
 profile::cassandra::settings:
   cluster_name: sessions-beta
