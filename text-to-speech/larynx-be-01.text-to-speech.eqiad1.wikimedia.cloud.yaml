@@ -1,4 +1,0 @@
-mount_nfs: true
-profile::docker::engine::settings:
-  data-root: /srv/docker
-  log-driver: journald
