@@ -8,7 +8,7 @@ profile::cassandra::settings:
     rpc_address: '%{::ipaddress}'
   listen_address: '%{::ipaddress}'
   logstash_host: logs-api.svc.logging.eqiad1.wikimedia.cloud
-  storage_compatibility_mode: UPGRADING
+  storage_compatibility_mode: NONE
   target_version: 5.x
 profile::docker::engine::declare_service: true
 profile::docker::engine::version: 18.09.1+dfsg1-7.1+deb10u3
