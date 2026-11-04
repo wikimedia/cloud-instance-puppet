@@ -7,7 +7,8 @@ profile::cassandra::settings:
     rpc_address: '%{::ipaddress}'
   listen_address: '%{::ipaddress}'
   logstash_host: logs-api.svc.logging.eqiad1.wikimedia.cloud
-  target_version: 4.x
+  storage_compatibility_mode: CASSANDRA_4
+  target_version: 5.x
 profile::docker::engine::declare_service: true
 profile::docker::engine::version: 18.09.1+dfsg1-7.1+deb10u3
 profile::docker::runner::service_defs:
@@ -33,4 +34,4 @@ profile::docker::runner::service_defs:
     version: v1.0.10
 profile::java::java_packages:
 - variant: jdk
-  version: '11'
+  version: '17'
