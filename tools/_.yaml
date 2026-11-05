@@ -10,8 +10,6 @@ dynamicproxy::blocked_referer_regex: hasty\.ai
 dynamicproxy::blocked_user_agent_regex: TweetmemeBot|Chrome/38\.0\.2125\.104|Applebot|QIHU
   360SE|RepoLookoutBot
 passwords::root::extra_keys:
-  bd808: ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDb8nsxA3thqd87nLu+1mA0Jc1KY90t5qW7N+jRQksc4NLzlFqBTrld+Qm2FRVbLm37HZ9TRBZb2nuTYJIZhkNU7rRPEKs3cIUbh1pB7BbYv0aJ3F0qBD6UtHqOUIJhqVNYJ/ssobzFh2QrcrOM3eS8PrIPtL/CQSUmKmUjG8zhCocAiQZDFeIQLSyGyCWVrRg14SPjED0+wIQTGoTtCabL4B5AlLcTf2L5ztDUtaoXDObUpDJ5Tw6VUUzDoUjV+Y5AtxK4erwLRHeFEcSzmWWl0Sruhnp/TzaF4vGijl6Wcyi2O9TClBhGmp7gTl4CtMj8MDDm+7NO3dQmQMseded1
-    bd808+labs@wmf-bd808-mbp01.local
   lucaswerkmeister: ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIGlea7OT1F2xmoBqc3rv7XXCAPlPG2PodtGhunbwd036
     lucaswerkmeister@theoden
 profile::base::core_dump_pattern: core
