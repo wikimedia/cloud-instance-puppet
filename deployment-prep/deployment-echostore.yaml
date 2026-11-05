@@ -1,0 +1,40 @@
+__COMMENT__: MANAGED WITH TOFU. EDITS VIA HORIZON WILL BE LOST.
+docker::gvisor::ensure: absent
+profile::cassandra::instances:
+  deployment-echostore03.deployment-prep.eqiad1.wikimedia.cloud: {}
+profile::cassandra::rack: rack1
+profile::cassandra::settings:
+  cluster_name: echostore-beta
+  default_instance_params:
+    rpc_address: '%{::ipaddress}'
+  listen_address: '%{::ipaddress}'
+  logstash_host: logs-api.svc.logging.eqiad1.wikimedia.cloud
+  storage_compatibility_mode: NONE
+  target_version: 5.x
+profile::docker::engine::declare_service: true
+profile::docker::engine::version: 20.10.24+dfsg1-1+deb12u1
+profile::docker::runner::service_defs:
+  mediawiki-services-kask:
+    config:
+      base_uri: /echoseen/v1
+      cassandra:
+        authentication:
+          password: cassandra
+          username: cassandra
+        hosts:
+        - deployment-echostore03.deployment-prep.eqiad1.wikimedia.cloud
+        keyspace: kask
+        table: values
+      default_ttl: 84000
+      listen_address: 0.0.0.0
+      listen_port: 8080
+      openapi_spec: /go/src/gerrit.wikimedia.org/r/mediawiki/services/kask/openapi.yaml
+      service_name: echostore
+    image_name: kask
+    namespace: repos/mediawiki/services
+    override_cmd: ./kask --config /etc/mediawiki-services-kask/config.yaml
+    port: 8080
+    version: v1.0.19
+profile::java::java_packages:
+- variant: jdk
+  version: '17'
