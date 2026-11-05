@@ -3052,7 +3052,6 @@ profile::swift::proxy::shard_container_list:
 profile::swift::proxy::statsd_host: localhost
 profile::swift::proxy::thumborhost: deployment-imagescaler04.deployment-prep.eqiad1.wikimedia.cloud:8888
 profile::swift::proxyhosts:
-- deployment-ms-fe04
 - deployment-ms-fe05
 profile::swift::replication_accounts:
   mw_media:
