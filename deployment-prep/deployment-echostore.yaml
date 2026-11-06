@@ -22,7 +22,7 @@ profile::docker::runner::service_defs:
           password: cassandra
           username: cassandra
         hosts:
-        - deployment-echostore03.deployment-prep.eqiad1.wikimedia.cloud
+        - 172.16.20.50
         keyspace: kask
         table: values
       default_ttl: 84000
