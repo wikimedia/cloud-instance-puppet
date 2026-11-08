@@ -1,3 +1,4 @@
+__COMMENT__: MANAGED WITH TOFU. EDITS VIA HORIZON WILL BE LOST.
 profile::etcd::v3::adv_client_port: 2379
 profile::etcd::v3::allow_from: $DOMAIN_NETWORKS
 profile::etcd::v3::cluster_bootstrap: false
