@@ -1,0 +1,2 @@
+__COMMENT__: MANAGED WITH TOFU. EDITS VIA HORIZON WILL BE LOST.
+profile::zookeeper::use_zookeeper34: true
