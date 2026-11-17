@@ -174,7 +174,7 @@ profile::docker::runner::service_defs:
           schema_uri_field: $schema
           stream_config_object_path: streams
           stream_config_ttl: 60
-          stream_config_uri: https://meta.wikimedia.beta.wmcloud.org/w/api.php?action=streamconfigs&format=json&constraints=destination_event_service=eventgate-main
+          stream_config_uri: https://en.wikipedia.beta.wmcloud.org/w/api.php?action=streamconfigs&format=json&any_constraints=destination_event_service=eventgate-main|producers[mediawiki_eventbus][event_service_name]=eventgate-main
           stream_field: meta.stream
           test_events:
           - $schema: /test/event/1.0.0
