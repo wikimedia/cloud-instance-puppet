@@ -23,7 +23,7 @@ profile::restbase::logging_label: restbase
 profile::restbase::mathoid_uri: http://deployment-docker-mathoid03.deployment-prep.eqiad1.wikimedia.cloud:10044
 profile::restbase::mobileapps_uri: http://deployment-docker-mobileapps02.deployment-prep.eqiad1.wikimedia.cloud:8888
 profile::restbase::monitor_domain: en.wikipedia.org
-profile::restbase::parsoid_uri: https://phabricator.wikimedia.org/T385902
+profile::restbase::parsoid_uri: http://appservers.svc.deployment-prep.eqiad1.wikimedia.cloud/w/rest.php
 profile::restbase::proton_uri: http://deployment-docker-proton02.deployment-prep.eqiad1.wikimedia.cloud:3030
 profile::restbase::recommendation_uri: http://deployment-sca01.deployment-prep.eqiad.wmflabs:9632
 profile::restbase::salt_key: secretkey
