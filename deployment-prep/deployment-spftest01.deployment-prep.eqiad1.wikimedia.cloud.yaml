@@ -6,5 +6,5 @@ profile::docker::runner::service_defs:
       myconfig: true
     image_name: envoy
     override_cmd: -c /etc/rest-gateway/config.yaml
-    port: 80
+    port: 8080
     version: 1.40.1-1-20261115
