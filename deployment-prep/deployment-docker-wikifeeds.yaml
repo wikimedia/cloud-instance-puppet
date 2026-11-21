@@ -27,12 +27,6 @@ profile::docker::runner::service_defs:
             method: post
             uri: http://appservers.svc.deployment-prep.eqiad1.wikimedia.cloud/w/api.php
           port: 8889
-          restbase_req:
-            body: '{{request.body}}'
-            headers: '{{request.headers}}'
-            method: '{{request.method}}'
-            query: '{{ default(request.query, {}) }}'
-            uri: http://deployment-restbase05.deployment-prep.eqiad1.wikimedia.cloud:7231/{{domain}}/v1/{+path}
           usecorepagehtml: true
           user_agent: WMF Wikifeeds beta
         module: ./app.js
