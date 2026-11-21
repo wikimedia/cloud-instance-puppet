@@ -33,6 +33,7 @@ profile::docker::runner::service_defs:
             method: '{{request.method}}'
             query: '{{ default(request.query, {}) }}'
             uri: http://deployment-restbase05.deployment-prep.eqiad1.wikimedia.cloud:7231/{{domain}}/v1/{+path}
+          usecorepagehtml: true
           user_agent: WMF Wikifeeds beta
         module: ./app.js
         name: wikifeeds
