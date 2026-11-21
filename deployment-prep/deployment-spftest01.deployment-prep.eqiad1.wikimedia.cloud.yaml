@@ -6,3 +6,5 @@ profile::docker::runner::service_defs:
     port: 8080
     version: 1.40.1-1-20261115
     volume: true
+  rest-gateway:
+    ensure: absent
