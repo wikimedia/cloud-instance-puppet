@@ -1,0 +1,10 @@
+__COMMENT__: MANAGED WITH TOFU. EDITS VIA HORIZON WILL BE LOST.
+profile::docker::engine::declare_service: true
+profile::docker::runner::service_defs:
+  rest-gateway:
+    config:
+      myconfig: true
+    image_name: envoy
+    override_cmd: -c /etc/rest-gateway/config.yaml
+    port: 80
+    version: 1.40.1-1-20261115
