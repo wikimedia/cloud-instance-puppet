@@ -3,6 +3,6 @@ profile::docker::engine::declare_service: true
 profile::docker::runner::service_defs:
   envoy:
     image_name: envoy
-    port: 8080
+    port: 8087
     version: 1.40.1-1-20261115
     volume: true
