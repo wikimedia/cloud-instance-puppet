@@ -1,6 +1,5 @@
 __COMMENT__: MANAGED WITH TOFU. EDITS VIA HORIZON WILL BE LOST.
 profile::docker::engine::declare_service: true
-profile::docker::engine::version: 26.1.5+dfsg1-9+deb13u1+b1
 profile::docker::runner::service_defs:
   mediawiki-services-wikifeeds:
     config:
