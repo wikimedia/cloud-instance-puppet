@@ -65,6 +65,11 @@ profile::wmcs::novaproxy::supported_zones:
     id: 4a581638-b09a-4897-bfe9-db5f0981d48f
     project: tools
     shared: false
+  tools.wmflabs.org.:
+    acmechief_cert: customtools-legacy
+    id: eae60a3b-a0df-47b2-9492-5fab480514fe
+    project: tools
+    shared: false
   wikilovesmonuments.az.:
     acmechief_cert: customwlmaz
     apex: true
