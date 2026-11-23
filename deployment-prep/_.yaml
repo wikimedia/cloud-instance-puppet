@@ -2328,32 +2328,6 @@ eventlogging_host: 10.68.18.111
 eventlogging_statsd_host: prometheus-labmon.eqiad.wmnet
 has_lvs: false
 kafka_clusters:
-  jumbo-deployment-prep:
-    brokers:
-      deployment-kafka-jumbo-5.deployment-prep.eqiad1.wikimedia.cloud:
-        id: 1
-        rack: A
-      deployment-kafka-jumbo-8.deployment-prep.eqiad1.wikimedia.cloud:
-        id: 2
-        rack: B
-      deployment-kafka-jumbo-9.deployment-prep.eqiad1.wikimedia.cloud:
-        id: 3
-        rack: C
-    ipv6: false
-    zookeeper_cluster_name: main-deployment-prep
-  jumbo-eqiad:
-    brokers:
-      deployment-kafka-jumbo-5.deployment-prep.eqiad1.wikimedia.cloud:
-        id: 1
-        rack: A
-      deployment-kafka-jumbo-8.deployment-prep.eqiad1.wikimedia.cloud:
-        id: 2
-        rack: B
-      deployment-kafka-jumbo-9.deployment-prep.eqiad1.wikimedia.cloud:
-        id: 3
-        rack: C
-    ipv6: false
-    zookeeper_cluster_name: main-deployment-prep
   logging-codfw:
     brokers:
       deployment-kafka-logging01.deployment-prep.eqiad1.wikimedia.cloud:
