@@ -65,7 +65,7 @@ profile::acme_chief::certificates:
     - '*.wiktionary.beta.math.wmflabs.org'
     authorized_regexes:
     - ^.+\.project-proxy\.eqiad1\.wikimedia\.cloud$
-    challenge: http-01
+    challenge: dns-01
   customo11y:
     CN: o11y.wmcloud.org
     SNI:
