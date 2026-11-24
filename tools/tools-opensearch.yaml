@@ -3,6 +3,9 @@ profile::opensearch::base_data_dir: /srv/opensearch
 profile::opensearch::common_settings:
   auto_create_index: true
   awareness_attributes: ''
+  bind_networks:
+  - 0.0.0.0
+  - '::'
   cluster_hosts:
   - tools-opensearch-1.tools.eqiad1.wikimedia.cloud
   - tools-opensearch-2.tools.eqiad1.wikimedia.cloud
