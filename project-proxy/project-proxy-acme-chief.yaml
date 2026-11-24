@@ -36,6 +36,36 @@ profile::acme_chief::certificates:
     authorized_regexes:
     - ^.+\.project-proxy\.eqiad1\.wikimedia\.cloud$
     challenge: http-01
+  custommath:
+    CN: math.wmcloud.org
+    SNI:
+    - math.wmcloud.org
+    - '*.math.wmcloud.org'
+    - '*.beta.math.wmcloud.org'
+    - '*.wiki.beta.math.wmcloud.org'
+    - '*.wikibooks.beta.math.wmcloud.org'
+    - '*.wikimedia.beta.math.wmcloud.org'
+    - '*.wikinews.beta.math.wmcloud.org'
+    - '*.wikiquote.beta.math.wmcloud.org'
+    - '*.wikisource.beta.math.wmcloud.org'
+    - '*.wikiversity.beta.math.wmcloud.org'
+    - '*.wikivoyage.beta.math.wmcloud.org'
+    - '*.wiktionary.beta.math.wmcloud.org'
+    - math.wmflabs.org
+    - '*.math.wmflabs.org'
+    - '*.beta.math.wmflabs.org'
+    - '*.wiki.beta.math.wmflabs.org'
+    - '*.wikibooks.beta.math.wmflabs.org'
+    - '*.wikimedia.beta.math.wmflabs.org'
+    - '*.wikinews.beta.math.wmflabs.org'
+    - '*.wikiquote.beta.math.wmflabs.org'
+    - '*.wikisource.beta.math.wmflabs.org'
+    - '*.wikiversity.beta.math.wmflabs.org'
+    - '*.wikivoyage.beta.math.wmflabs.org'
+    - '*.wiktionary.beta.math.wmflabs.org'
+    authorized_regexes:
+    - ^.+\.project-proxy\.eqiad1\.wikimedia\.cloud$
+    challenge: http-01
   customo11y:
     CN: o11y.wmcloud.org
     SNI:
