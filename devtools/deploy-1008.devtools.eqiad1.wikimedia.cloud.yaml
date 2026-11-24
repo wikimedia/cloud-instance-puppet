@@ -9,7 +9,7 @@ profile::gitlab::local_gems:
   - gitlab_phorge
 profile::mediawiki::common::load_geoip_data_from_puppetserver: false
 profile::mediawiki::php::php_versions:
-- '8.2'
+- '8.3'
 profile::mediawiki::scap_client::is_master: true
 profile::openstack::eqiad1::cumin::project_masters:
 - 172.16.5.216
