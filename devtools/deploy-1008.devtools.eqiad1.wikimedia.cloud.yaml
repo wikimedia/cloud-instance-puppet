@@ -1,6 +1,8 @@
 deployment_group: wikidev
 deployment_hosts:
 - 172.16.18.215
+profile::ci::php::php_prefix: php8.2
+profile::ci::php::php_version: 8.2
 profile::confd::instances:
   main:
     interval: 300
