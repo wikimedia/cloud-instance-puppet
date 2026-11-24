@@ -25,6 +25,19 @@ profile::wmcs::novaproxy::mariadb_host: cloudinfra-db-5.cloudinfra.eqiad1.wikime
 profile::wmcs::novaproxy::mariadb_username: webproxy
 profile::wmcs::novaproxy::proxy_dns_ipv4: 185.15.56.49
 profile::wmcs::novaproxy::supported_zones:
+  beta.math.wmcloud.org.:
+    acmechief_cert: custommath
+    apex: true
+    id: 22991e48-1e0e-46ef-831b-c0b4554cc908
+    project: math
+    shared: false
+  beta.math.wmflabs.org.:
+    acmechief_cert: custommath
+    apex: true
+    deprecated: true
+    id: 29af92fc-c69a-44d4-a539-f08211d88c01
+    project: math
+    shared: false
   catalyst-dev.wmcloud.org.:
     acmechief_cert: customcatalyst-dev
     id: c7e04b6c-8774-4ec8-979c-74fa0d72d076
@@ -50,6 +63,19 @@ profile::wmcs::novaproxy::supported_zones:
     apex: true
     project: d4223c92baa3400e8c4be04a96e61f7f
     shared: false
+  math.wmcloud.org.:
+    acmechief_cert: custommath
+    apex: true
+    id: 22991e48-1e0e-46ef-831b-c0b4554cc908
+    project: math
+    shared: false
+  math.wmflabs.org.:
+    acmechief_cert: custommath
+    apex: true
+    deprecated: true
+    id: 29af92fc-c69a-44d4-a539-f08211d88c01
+    project: math
+    shared: false
   o11y.wmcloud.org.:
     acmechief_cert: customo11y
     id: 2bcf4348-890a-45f6-94e5-f280da089bae
@@ -70,10 +96,127 @@ profile::wmcs::novaproxy::supported_zones:
     id: eae60a3b-a0df-47b2-9492-5fab480514fe
     project: tools
     shared: false
+  wiki.beta.math.wmcloud.org.:
+    acmechief_cert: custommath
+    apex: true
+    id: 22991e48-1e0e-46ef-831b-c0b4554cc908
+    project: math
+    shared: false
+  wiki.beta.math.wmflabs.org.:
+    acmechief_cert: custommath
+    apex: true
+    deprecated: true
+    id: 29af92fc-c69a-44d4-a539-f08211d88c01
+    project: math
+    shared: false
+  wikibooks.beta.math.wmcloud.org.:
+    acmechief_cert: custommath
+    apex: true
+    id: 22991e48-1e0e-46ef-831b-c0b4554cc908
+    project: math
+    shared: false
+  wikibooks.beta.math.wmflabs.org.:
+    acmechief_cert: custommath
+    apex: true
+    deprecated: true
+    id: 29af92fc-c69a-44d4-a539-f08211d88c01
+    project: math
+    shared: false
   wikilovesmonuments.az.:
     acmechief_cert: customwlmaz
     apex: true
     project: c1070625e313481a8e32bb636910ec44
+    shared: false
+  wikimedia.beta.math.wmcloud.org.:
+    acmechief_cert: custommath
+    apex: true
+    id: 22991e48-1e0e-46ef-831b-c0b4554cc908
+    project: math
+    shared: false
+  wikimedia.beta.math.wmflabs.org.:
+    acmechief_cert: custommath
+    apex: true
+    deprecated: true
+    id: 29af92fc-c69a-44d4-a539-f08211d88c01
+    project: math
+    shared: false
+  wikinews.beta.math.wmcloud.org.:
+    acmechief_cert: custommath
+    apex: true
+    id: 22991e48-1e0e-46ef-831b-c0b4554cc908
+    project: math
+    shared: false
+  wikinews.beta.math.wmflabs.org.:
+    acmechief_cert: custommath
+    apex: true
+    deprecated: true
+    id: 29af92fc-c69a-44d4-a539-f08211d88c01
+    project: math
+    shared: false
+  wikiquote.beta.math.wmcloud.org.:
+    acmechief_cert: custommath
+    apex: true
+    id: 22991e48-1e0e-46ef-831b-c0b4554cc908
+    project: math
+    shared: false
+  wikiquote.beta.math.wmflabs.org.:
+    acmechief_cert: custommath
+    apex: true
+    deprecated: true
+    id: 29af92fc-c69a-44d4-a539-f08211d88c01
+    project: math
+    shared: false
+  wikisource.beta.math.wmcloud.org.:
+    acmechief_cert: custommath
+    apex: true
+    id: 22991e48-1e0e-46ef-831b-c0b4554cc908
+    project: math
+    shared: false
+  wikisource.beta.math.wmflabs.org.:
+    acmechief_cert: custommath
+    apex: true
+    deprecated: true
+    id: 29af92fc-c69a-44d4-a539-f08211d88c01
+    project: math
+    shared: false
+  wikiversity.beta.math.wmcloud.org.:
+    acmechief_cert: custommath
+    apex: true
+    id: 22991e48-1e0e-46ef-831b-c0b4554cc908
+    project: math
+    shared: false
+  wikiversity.beta.math.wmflabs.org.:
+    acmechief_cert: custommath
+    apex: true
+    deprecated: true
+    id: 29af92fc-c69a-44d4-a539-f08211d88c01
+    project: math
+    shared: false
+  wikivoyage.beta.math.wmcloud.org.:
+    acmechief_cert: custommath
+    apex: true
+    id: 22991e48-1e0e-46ef-831b-c0b4554cc908
+    project: math
+    shared: false
+  wikivoyage.beta.math.wmflabs.org.:
+    acmechief_cert: custommath
+    apex: true
+    deprecated: true
+    id: 29af92fc-c69a-44d4-a539-f08211d88c01
+    project: math
+    shared: false
+  wiktionary.beta.math.wmcloud.org.:
+    acmechief_cert: custommath
+    apex: true
+    id: 22991e48-1e0e-46ef-831b-c0b4554cc908
+    project: math
+    shared: false
+  wiktionary.beta.math.wmflabs.org.:
+    acmechief_cert: custommath
+    apex: true
+    deprecated: true
+    id: 29af92fc-c69a-44d4-a539-f08211d88c01
+    project: math
     shared: false
   wma.wmcloud.org.:
     acmechief_cert: wma
