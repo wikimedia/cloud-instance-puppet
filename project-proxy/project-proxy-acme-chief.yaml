@@ -142,6 +142,7 @@ profile::acme_chief::cloud::designate_sync_project_names:
 - catalyst-qte
 - cloudinfra
 - maps
+- math
 - o11y
 - project-proxy
 - tools
