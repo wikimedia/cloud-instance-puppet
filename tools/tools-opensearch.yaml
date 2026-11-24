@@ -5,7 +5,7 @@ profile::opensearch::common_settings:
   awareness_attributes: ''
   bind_networks:
   - 0.0.0.0
-  - '::'
+  - '[::]'
   cluster_hosts:
   - tools-opensearch-1.tools.eqiad1.wikimedia.cloud
   - tools-opensearch-2.tools.eqiad1.wikimedia.cloud
