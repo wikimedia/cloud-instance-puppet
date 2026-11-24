@@ -4,6 +4,9 @@ deployment_hosts:
 profile::confd::instances:
   main:
     interval: 300
+profile::debdeploy::client::filter_services:
+  php8.2-fpm:
+  - '*'
 profile::gitlab::local_gems:
   /srv/gitlab-wmf-gems:
   - gitlab_phorge
