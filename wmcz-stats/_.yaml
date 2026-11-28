@@ -1,3 +1,4 @@
 passwords::root::extra_keys:
   urbanecm: ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDyVFZYeptB8iLXQoi2MWghYMFMXjRssdiPJqzGcPToExs8aAG5culIxi7LuA0+qknhXQ4qcC1CLTcJDkhqC5U/2jFKpuFFJ9u+34nQUEz6Qc3ZeH5fmzU18cX4C8JNT/7OQW18yoqH5vlgLuz7YdTzioOSQfJOyiBSYteR6kCM3VK+FuC4PzuDH/dl+4Ugo3TxOKKCEVVVMnkO3o7HMnzwflU/Nl4fz7rXg3Ho1nUh20BWcO3ApgYipf0POF+RRQUC8tKuxtszEAyAIz9NK5MYuRfyj7SjhXG5wgRrE7EIA3/78WXF2niJ2geiy03hwnkRMzB2cGGjyG3n4m2Ue6i1
     urbanecm@notebook
+  urbanecm2: ssh-rsa test invalid@key
